@@ -52,6 +52,12 @@
 		</InputField>
 		<InputField name="ИНН" id="3">
 			<DataPath>ИНН</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УНП</v8:content>
+				</v8:item>
+			</Title>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<HorizontalStretch>false</HorizontalStretch>
 			<ContextMenu name="ИННКонтекстноеМеню" id="4"/>
@@ -59,6 +65,7 @@
 		</InputField>
 		<InputField name="КПП" id="5">
 			<DataPath>КПП</DataPath>
+			<Visible>false</Visible>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<HorizontalStretch>false</HorizontalStretch>
 			<ContextMenu name="КППКонтекстноеМеню" id="6"/>
@@ -132,7 +139,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>ИНН</v8:content>
+					<v8:content>УНП</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

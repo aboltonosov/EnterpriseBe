@@ -3768,6 +3768,20 @@
 																	<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="1585"/>
 																	<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="1586"/>
 																</InputField>
+																<InputField name="РозничнаяСтавкаНДС" id="1743">
+																	<DataPath>Объект.РозничнаяСтавкаНДС</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Розн. cтавка НДС</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>Left</TitleLocation>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>6</MaxWidth>
+																	<ContextMenu name="РозничнаяСтавкаНДСКонтекстноеМеню" id="1744"/>
+																	<ExtendedTooltip name="РозничнаяСтавкаНДСРасширеннаяПодсказка" id="1745"/>
+																</InputField>
 																<CheckBoxField name="ПодакцизныйТовар" id="1587">
 																	<DataPath>Объект.ПодакцизныйТовар</DataPath>
 																	<Title>
@@ -4461,7 +4475,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Группа заголовок финансовый учет</v8:content>
+															<v8:content>Группа заголовок классификаторы</v8:content>
 														</v8:item>
 													</Title>
 													<Group>Horizontal</Group>
@@ -4518,7 +4532,7 @@
 															<Title formatted="false">
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Общероссийские классификаторы</v8:content>
+																	<v8:content>Общегосударственные классификаторы</v8:content>
 																</v8:item>
 															</Title>
 															<ContextMenu name="ДекорацияЗаголовокКлассификаторыКонтекстноеМеню" id="1710"/>
@@ -4530,7 +4544,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Общероссийские классификаторы</v8:content>
+															<v8:content>Общегосударственные классификаторы</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
@@ -4550,14 +4564,14 @@
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>ОКВЭД</v8:content>
+																	<v8:content>ОКЭД</v8:content>
 																</v8:item>
 															</Title>
 															<TitleLocation>Left</TitleLocation>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Общероссийский классификатор видов экономической деятельности</v8:content>
+																	<v8:content>Общегосударственны1 классификатор видов экономической деятельности</v8:content>
 																</v8:item>
 															</ToolTip>
 															<AutoMaxWidth>false</AutoMaxWidth>

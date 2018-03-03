@@ -135,17 +135,16 @@
 						</Button>
 						<Button name="ОткрытьКлассификаторОКОФ" id="62">
 							<Type>Hyperlink</Type>
+							<Visible>false</Visible>
 							<CommandName>Form.Command.ОткрытьКлассификаторОКОФ</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="ОткрытьКлассификаторОКОФРасширеннаяПодсказка" id="63"/>
 						</Button>
-						<Button name="ОткрытьСобытияОС" id="66">
+						<Button name="ОткрытьКлассификторЕНАОФ" id="64">
 							<Type>Hyperlink</Type>
-							<CommandName>Form.Command.ОткрытьСобытияОС</CommandName>
+							<CommandName>Form.Command.ОткрытьКлассификторЕНАОФ</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="ОткрытьСобытияОСРасширеннаяПодсказка" id="67">
-								<AutoMaxWidth>false</AutoMaxWidth>
-							</ExtendedTooltip>
+							<ExtendedTooltip name="ОткрытьКлассификторЕНАОФРасширеннаяПодсказка" id="65"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -174,11 +173,13 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="ОткрытьПоказателиНаработкиРасширеннаяПодсказка" id="61"/>
 						</Button>
-						<Button name="ОткрытьКлассификторЕНАОФ" id="64">
+						<Button name="ОткрытьСобытияОС" id="66">
 							<Type>Hyperlink</Type>
-							<CommandName>Form.Command.ОткрытьКлассификторЕНАОФ</CommandName>
+							<CommandName>Form.Command.ОткрытьСобытияОС</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="ОткрытьКлассификторЕНАОФРасширеннаяПодсказка" id="65"/>
+							<ExtendedTooltip name="ОткрытьСобытияОСРасширеннаяПодсказка" id="67">
+								<AutoMaxWidth>false</AutoMaxWidth>
+							</ExtendedTooltip>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -337,7 +338,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Общероссийский классификатор основных фондов.</v8:content>
+					<v8:content>Общегосударственный классификатор основных фондов.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьКлассификаторОКОФ</Action>
@@ -350,13 +351,13 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Классификатор ЕНАОФ</v8:content>
+					<v8:content>Классификатор НССОС</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Единые нормы амортизационных отчислений основных фондов.</v8:content>
+					<v8:content>Нормативные сроки службы основных средств.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьКлассификторЕНАОФ</Action>

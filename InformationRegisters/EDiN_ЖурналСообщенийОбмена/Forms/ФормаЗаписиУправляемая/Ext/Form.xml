@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДокумент" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДокументРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Документ" id="4">
+					<DataPath>Запись.Документ</DataPath>
+					<ContextMenu name="ДокументКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТипСообщения" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тип сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тип сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТипСообщенияРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="ТипСообщения" id="7">
+					<DataPath>Запись.ТипСообщения</DataPath>
+					<ContextMenu name="ТипСообщенияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ТипСообщенияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Направление" id="13">
+					<DataPath>Запись.Направление</DataPath>
+					<ContextMenu name="НаправлениеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ID" id="10">
+			<DataPath>Запись.ID</DataPath>
+			<ContextMenu name="IDКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="IDРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="НомерСообщения" id="16">
+			<DataPath>Запись.НомерСообщения</DataPath>
+			<ContextMenu name="НомерСообщенияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НомерСообщенияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="ГруппаКодСообщения" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодСообщенияРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="КодСообщения" id="19">
+					<DataPath>Запись.КодСообщения</DataPath>
+					<ContextMenu name="КодСообщенияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодСообщенияРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<CheckBoxField name="ФлагПринят" id="25">
+					<DataPath>Запись.ФлагПринят</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФлагПринятКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ФлагПринятРасширеннаяПодсказка" id="27"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Статус" id="28">
+			<DataPath>Запись.Статус</DataPath>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Описание" id="22">
+			<DataPath>Запись.Описание</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.EDiN_ЖурналСообщенийОбмена</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

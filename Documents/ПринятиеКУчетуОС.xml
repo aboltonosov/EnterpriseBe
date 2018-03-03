@@ -315,7 +315,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Амортизационная группа основных средств</v8:content>
+							<v8:content>Нормативный срок службы основных средств</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -1860,7 +1860,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Шифр по ЕНАОФ</v8:content>
+							<v8:content>Шифр по НССОС</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1873,7 +1873,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код по классификатору единых норм амортизации основных фондов</v8:content>
+							<v8:content>Код по классификатору нормативных сроков службы основных средств</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -2265,7 +2265,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">ChartOfAccounts.Хозрасчетный.ОСвОрганизации_ЦФ</FillValue>
+					<FillValue xsi:type="xr:DesignTimeRef">6f58a5c7-f511-498f-abeb-390cf5afab39.6f09b5e6-07d5-415b-9229-ad311f11390b</FillValue>
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks>
@@ -2333,7 +2333,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">ChartOfAccounts.Хозрасчетный.АмортизацияОС_01_ЦФ</FillValue>
+					<FillValue xsi:type="xr:DesignTimeRef">6f58a5c7-f511-498f-abeb-390cf5afab39.70ac5720-e329-47c0-8f96-f40ab8965b7e</FillValue>
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks>
@@ -3385,6 +3385,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Template>ПФ_MXL_ПротоколКомиссииПоАП_Локализация</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

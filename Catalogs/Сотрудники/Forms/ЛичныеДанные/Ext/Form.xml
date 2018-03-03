@@ -170,20 +170,6 @@
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<InputField name="ГражданствоФизическихЛицИНН" id="126">
-									<DataPath>ГражданствоФизическихЛиц.ИНН</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ИНН в стране гражданства</v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="ГражданствоФизическихЛицИННКонтекстноеМеню" id="127"/>
-									<ExtendedTooltip name="ГражданствоФизическихЛицИННРасширеннаяПодсказка" id="128"/>
-									<Events>
-										<Event name="OnChange">ГражданствоФизическихЛицИННПриИзменении</Event>
-									</Events>
-								</InputField>
 								<InputField name="ГражданствоФизическихЛицПериод" id="75">
 									<DataPath>ГражданствоФизическихЛицПериод</DataPath>
 									<Title>
@@ -220,7 +206,88 @@
 								<InputField name="ДокументыФизическихЛицВидДокумента" id="32">
 									<DataPath>ДокументыФизическихЛиц.ВидДокумента</DataPath>
 									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
 									<AutoMarkIncomplete>false</AutoMarkIncomplete>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Паспорт гражданина Республики Беларусь</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ПаспортРФ</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content> Национальный паспорт иностранного гражданина</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ПаспортИностранногоГражданина</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Свидетельство о рождении (для граждан Республики Беларусь, не достигших шестнадцатилетнего возраста и не имеющих паспортов граждан Республики Беларусь</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.СвидетельствоОРождении</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удостоверение беженца</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.УдостоверениеБеженца</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Вид на жительство в Республике Беларусь</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ВидНаЖительство</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Иной документ, удостоверяющий личность</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ИнойДокумент</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
 									<ContextMenu name="ДокументыФизическихЛицВидДокументаКонтекстноеМеню" id="33"/>
 									<ExtendedTooltip name="ДокументыФизическихЛицВидДокументаExtendedTooltip" id="104"/>
 									<Events>
@@ -258,6 +325,11 @@
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
+								<InputField name="ДокументыФизическихЛицЛичныйНомер" id="126">
+									<DataPath>ДокументыФизическихЛиц.ЛичныйНомер</DataPath>
+									<ContextMenu name="ДокументыФизическихЛицЛичныйНомерКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ДокументыФизическихЛицЛичныйНомерРасширеннаяПодсказка" id="128"/>
+								</InputField>
 								<InputField name="ДокументыФизическихЛицКемВыдан" id="50">
 									<DataPath>ДокументыФизическихЛиц.КемВыдан</DataPath>
 									<Width>1</Width>

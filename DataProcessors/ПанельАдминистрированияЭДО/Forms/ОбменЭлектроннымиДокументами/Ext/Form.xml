@@ -67,6 +67,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ЗаголовокГруппаУправлениеОбменомЭД" id="1950">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -256,6 +257,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНастройкиОбменаСКонтрагентами" id="1890">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -333,51 +335,6 @@
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаИспользоватьОбменМеждуОрганизациями" id="1251">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа использовать обмен между организациями</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа использовать обмен между организациями</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Width>43</Width>
-							<HorizontalStretch>false</HorizontalStretch>
-							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИспользоватьОбменМеждуОрганизациямиРасширеннаяПодсказка" id="1750"/>
-							<ChildItems>
-								<CheckBoxField name="ИспользоватьОбменЭДМеждуОрганизациями" id="801">
-									<DataPath>НаборКонстант.ИспользоватьОбменЭДМеждуОрганизациями</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Обмен электронными документами между организациями</v8:content>
-										</v8:item>
-									</Title>
-									<TitleLocation>Right</TitleLocation>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Формирование электронных документов с электронными подписями при передаче товаров между организациями.</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ИспользоватьОбменЭДМеждуОрганизациямиКонтекстноеМеню" id="802"/>
-									<ExtendedTooltip name="ИспользоватьОбменЭДМеждуОрганизациямиExtendedTooltip" id="1751"/>
-									<Events>
-										<Event name="OnChange">ИспользоватьОбменЭДМеждуОрганизациямиПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
-							</ChildItems>
-						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаНастроекЭДО" id="1960">
@@ -451,6 +408,51 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<ExtendedTooltip name="ОткрытьТиповыеСоглашенияОбИспользованииЭДExtendedTooltip" id="1763"/>
 								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИспользоватьОбменМеждуОрганизациями" id="1251">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать обмен между организациями</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать обмен между организациями</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИспользоватьОбменМеждуОрганизациямиРасширеннаяПодсказка" id="1750"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьОбменЭДМеждуОрганизациями" id="801">
+									<DataPath>НаборКонстант.ИспользоватьОбменЭДМеждуОрганизациями</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обмен электронными документами между организациями</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формирование электронных документов с электронными подписями при передаче товаров между организациями.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьОбменЭДМеждуОрганизациямиКонтекстноеМеню" id="802"/>
+									<ExtendedTooltip name="ИспользоватьОбменЭДМеждуОрганизациямиExtendedTooltip" id="1751"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьОбменЭДМеждуОрганизациямиПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1108,6 +1110,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНастройкиИнтеграцияСЯндексКассой" id="1970">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

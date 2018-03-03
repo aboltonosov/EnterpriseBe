@@ -23,6 +23,9 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>ДокументыОснования</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ДокументыОснованияКонтекстноеМеню" id="3"/>
 			<AutoCommandBar name="ДокументыОснованияКоманднаяПанель" id="4"/>
@@ -79,6 +82,18 @@
 					<ContextMenu name="ДокументыОснованияДокументОснованиеКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="ДокументыОснованияДокументОснованиеExtendedTooltip" id="9"/>
 				</InputField>
+				<InputField name="ДокументыОснованияСуммаНДС" id="19">
+					<DataPath>ДокументыОснования.СуммаНДС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОснованияСуммаНДСКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДокументыОснованияСуммаНДСРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ДокументыОснованияСуммаДокумента" id="22">
+					<DataPath>ДокументыОснования.СуммаДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыОснованияСуммаДокументаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДокументыОснованияСуммаДокументаРасширеннаяПодсказка" id="24"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -116,6 +131,38 @@
 						<v8:Type>cfg:DocumentRef.ВозвратТоваровМеждуОрганизациями</v8:Type>
 						<v8:Type>cfg:DocumentRef.ПередачаТоваровМеждуОрганизациями</v8:Type>
 						<v8:Type>cfg:DocumentRef.ВыкупВозвратнойТарыУПоставщика</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаНДС" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма НДС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаДокумента" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Column>
 			</Columns>

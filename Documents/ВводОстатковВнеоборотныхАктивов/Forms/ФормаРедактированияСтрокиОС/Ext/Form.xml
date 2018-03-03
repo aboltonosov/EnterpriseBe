@@ -775,6 +775,7 @@
 												</InputField>
 												<InputField name="КодОКОФ" id="599">
 													<DataPath>КодПоОКОФ</DataPath>
+													<Visible>false</Visible>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>28</MaxWidth>
 													<ChoiceButton>true</ChoiceButton>
@@ -787,6 +788,12 @@
 												</InputField>
 												<InputField name="ШифрЕНАОФ" id="602">
 													<DataPath>ШифрПоЕНАОФ</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шифр по НССОС</v8:content>
+														</v8:item>
+													</Title>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>28</MaxWidth>
 													<ChoiceButton>true</ChoiceButton>
@@ -797,152 +804,6 @@
 													<DataPath>АмортизационнаяГруппа</DataPath>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>28</MaxWidth>
-													<ListChoiceMode>true</ListChoiceMode>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Первая группа (от 1 года до 2 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ПерваяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Вторая группа (свыше 2 лет до 3 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ВтораяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Третья группа (свыше 3 лет до 5 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ТретьяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Четвертая группа (свыше 5 лет до 7 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ЧетвертаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Пятая группа (свыше 7 лет до 10 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ПятаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Шестая группа (свыше 10 лет до 15 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ШестаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Седьмая группа (свыше 15 лет до 20 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.СедьмаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Восьмая группа (свыше 20 лет до 25 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ВосьмаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Девятая группа (свыше 25 лет до 30 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ДевятаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Десятая группа (свыше 30 лет)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ДесятаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Отдельная группа (п.1, ст.322 НК РФ)</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xr:DesignTimeRef">Enum.АмортизационныеГруппы.EnumValue.ОтдельнаяГруппа</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
 													<ContextMenu name="АмортизационнаяГруппаКонтекстноеМеню" id="597"/>
 													<ExtendedTooltip name="АмортизационнаяГруппаРасширеннаяПодсказка" id="598"/>
 												</InputField>
@@ -3398,6 +3259,7 @@
 											<ExtendedTooltip name="СпециальныйКоэффициентНУExtendedTooltip" id="524"/>
 										</InputField>
 										<UsualGroup name="ГруппаДО2009" id="647">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -3443,6 +3305,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаАмортизационнаяПремия" id="775">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -3729,6 +3592,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаОтражениеПремия" id="783">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>

@@ -234,6 +234,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОперативногоУчетаРабочегоВремениСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РасчетыНалогоплательщиковСБюджетомПоНДФЛ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДанныеОВремениДляРасчетаСреднегоФСС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОНачисленияхДляРасчетаСреднегоЗаработкаОтпуск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОВремениДляРасчетаСреднегоОтпуск</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗначенияПоказателейУдержаний</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВзаиморасчетыССотрудниками</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОтработанноеВремяПоСотрудникамАвансом</xr:Item>
@@ -246,6 +248,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОВремениДляРасчетаСреднегоОбщий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВытесняемоеПлановоеВремяСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ФактическиеОтпуска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОВремениДляРасчетаСреднегоФСЗН</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОДоходахСтраховыеВзносы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ИмущественныеВычетыНДФЛ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОНачисленияхДляРасчетаСреднегоЗаработкаОбщий</xr:Item>
@@ -265,6 +268,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПараметрыПериодовСтажаПФР</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПлановыеНачисления</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеТабельногоУчетаРабочегоВремениСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РабочееВремяСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДанныеОНачисленияхДляРасчетаСреднегоЗаработкаФСС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.АвансовыеПлатежиИностранцевПоНДФЛ</xr:Item>
 			</RegisterRecords>
@@ -279,7 +283,7 @@
 			<ListPresentation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Командировки (Т-9)</v8:content>
+					<v8:content>Командировки</v8:content>
 				</v8:item>
 			</ListPresentation>
 			<ExtendedListPresentation/>
@@ -5576,7 +5580,7 @@
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
 									<v8:Digits>10</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:FractionDigits>2</v8:FractionDigits>
 									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
 							</Type>
@@ -5648,11 +5652,11 @@
 					</Attribute>
 					<Attribute uuid="956f77cd-3ad4-4798-b861-9a847f171c6a">
 						<Properties>
-							<Name>УдалитьНалогКЗачетуВозврату</Name>
+							<Name>НалогКЗачетуВозврату</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>(Не используется) налог к зачету возврату</v8:content>
+									<v8:content>Налог к зачету возврату</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -5660,7 +5664,7 @@
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
 									<v8:Digits>10</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:FractionDigits>2</v8:FractionDigits>
 									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
 							</Type>
@@ -6011,6 +6015,164 @@
 							<Comment/>
 							<Type>
 								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="9b3cbd38-140b-4ef9-b7a6-e56b82ddd3d3">
+						<Properties>
+							<Name>ПримененныйВычетЛичныйВторой</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Примененный вычет личный второй</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>(локализация)</Comment>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>12</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="ee4c5e1e-a721-4a23-a4c6-1402455a6a58">
+						<Properties>
+							<Name>ПримененныйВычетЛичныйВторойКодВычета</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Примененный вычет личный второй код вычета</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>(локализация)</Comment>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="53919513-8dc3-4cb8-853c-af5bd21260e9">
+						<Properties>
+							<Name>ПримененныйВычетЛичныйВторойКЗачетуВозврату</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Размер</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>(локализация)</Comment>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>12</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="917b4ed9-3646-41f4-b4dc-eb23d3e9c47b">
+						<Properties>
+							<Name>ПримененныйВычетЛичныйВторойКЗачетуВозвратуКодВычета</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>(локализация)</Comment>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -6604,6 +6766,95 @@
 							<Format/>
 							<EditFormat/>
 							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c0cce3d5-d600-42d8-a9e7-b68a73d6b2e4">
+						<Properties>
+							<Name>НормаДней</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Норма дней</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>(локализация)</Comment>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>7</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="86913bac-e7ba-43a8-94ce-d84eb93bee13">
+						<Properties>
+							<Name>НормаЧасов</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Норма часов</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>(локализация)</Comment>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>5</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Норма часов, исходя из пятидневной рабочей недели</v8:content>
+								</v8:item>
+							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
 							<MultiLine>false</MultiLine>

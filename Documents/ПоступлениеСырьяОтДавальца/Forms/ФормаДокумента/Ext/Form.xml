@@ -1445,6 +1445,91 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПараметрыПравоExtendedTooltip" id="1109"/>
 									<ChildItems>
+										<UsualGroup name="ГруппаВходящийДокумент" id="1183">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Входящий документ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Входящий документ</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВходящийДокументExtendedTooltip" id="1184"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСерияНомерВходящегоДокумента" id="1185">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа серия номер входящего документа</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа серия номер входящего документа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСерияНомерВходящегоДокументаРасширеннаяПодсказка" id="1186"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияСерияНомерВходящегоДокумента" id="1187">
+															<Width>10</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Серия и номер документа:</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ДекорацияСерияНомерВходящегоДокументаКонтекстноеМеню" id="1188"/>
+															<ExtendedTooltip name="ДекорацияСерияНомерВходящегоДокументаРасширеннаяПодсказка" id="1189"/>
+														</LabelDecoration>
+														<InputField name="СерияВходящегоДокумента" id="1190">
+															<DataPath>Объект.СерияВходящегоДокумента</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>2</Width>
+															<ContextMenu name="СерияВходящегоДокументаКонтекстноеМеню" id="1191"/>
+															<ExtendedTooltip name="СерияВходящегоДокументаРасширеннаяПодсказка" id="1192"/>
+														</InputField>
+														<InputField name="НомерВходящегоДокумента" id="1193">
+															<DataPath>Объект.НомерВходящегоДокумента</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Номер</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>11</Width>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="1194"/>
+															<ExtendedTooltip name="НомерВходящегоДокументаРасширеннаяПодсказка" id="1195"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="ДатаВходящегоДокумента" id="1196">
+													<DataPath>Объект.ДатаВходящегоДокумента</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>от</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="1197"/>
+													<ExtendedTooltip name="ДатаВходящегоДокументаExtendedTooltip" id="1198"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаТара" id="1127">
 											<Title>
 												<v8:item>
@@ -1538,52 +1623,6 @@
 													<Events>
 														<Event name="OnChange">ВалютаПриИзменении</Event>
 													</Events>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="ГруппаВходящийДокумент" id="268">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Входящий документ</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Входящий документ</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>Horizontal</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаВходящийДокументExtendedTooltip" id="1112"/>
-											<ChildItems>
-												<InputField name="НомерВходящегоДокумента" id="269">
-													<DataPath>Объект.НомерВходящегоДокумента</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Номер входящего
-документа</v8:content>
-														</v8:item>
-													</Title>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>14</MaxWidth>
-													<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="270"/>
-													<ExtendedTooltip name="НомерВходящегоДокументаExtendedTooltip" id="1113"/>
-												</InputField>
-												<InputField name="ДатаВходящегоДокумента" id="271">
-													<DataPath>Объект.ДатаВходящегоДокумента</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>от</v8:content>
-														</v8:item>
-													</Title>
-													<Width>10</Width>
-													<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="272"/>
-													<ExtendedTooltip name="ДатаВходящегоДокументаExtendedTooltip" id="1114"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>

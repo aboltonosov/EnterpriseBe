@@ -174,7 +174,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Применяется ПБУ 18/02 "Учет расчетов по налогу на прибыль"</v8:content>
+											<v8:content>Использование постоянных и временных разниц</v8:content>
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
@@ -324,7 +324,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Организация применяет освобождение от уплаты НДС по ст. 145 или 145.1 НК РФ</v8:content>
+										<v8:content>Организация применяет освобождение от уплаты НДС по п. 3.12 ст. 286 Особенной части НК РБ</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -371,6 +371,7 @@
 						</LabelDecoration>
 						<CheckBoxField name="Учитывать5ПроцентныйПорог" id="116">
 							<DataPath>Объект.Учитывать5ПроцентныйПорог</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -745,19 +746,6 @@
 															</v8:item>
 														</Presentation>
 														<Value xsi:type="xr:DesignTimeRef">Enum.ОбъектыНалогообложенияПоУСН.EnumValue.Доходы</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation>
-															<v8:item>
-																<v8:lang>ru</v8:lang>
-																<v8:content>Доходы минус расходы</v8:content>
-															</v8:item>
-														</Presentation>
-														<Value xsi:type="xr:DesignTimeRef">Enum.ОбъектыНалогообложенияПоУСН.EnumValue.ДоходыМинусРасходы</Value>
 													</xr:Value>
 												</xr:Item>
 											</ChoiceList>

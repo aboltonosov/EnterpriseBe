@@ -2,10 +2,7 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
-		<ExcludedCommand>Change</ExcludedCommand>
 		<ExcludedCommand>Copy</ExcludedCommand>
-		<ExcludedCommand>Create</ExcludedCommand>
-		<ExcludedCommand>Delete</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -21,6 +18,7 @@
 					<v8:content>Группа пользовательских настроек</v8:content>
 				</v8:item>
 			</Title>
+			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -67,7 +65,6 @@
 			<CommandSet>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
 			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -113,8 +110,6 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="34"/>
 			</SearchControlAddition>
 			<Events>
-				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
-				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
 				<Event name="BeforeLoadUserSettingsAtServer">СписокПередЗагрузкойПользовательскихНастроекНаСервере</Event>
 				<Event name="OnUpdateUserSettingSetAtServer">СписокПриОбновленииСоставаПользовательскихНастроекНаСервере</Event>
 			</Events>
@@ -130,46 +125,42 @@
 					<ContextMenu name="ВидТарифаКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="ВидТарифаExtendedTooltip" id="20"/>
 				</LabelField>
-				<LabelField name="ПФР" id="8">
-					<DataPath>Список.ПФР</DataPath>
-					<Width>10</Width>
-					<ContextMenu name="ПФРКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ПФРExtendedTooltip" id="21"/>
+				<InputField name="ФСЗН" id="46">
+					<DataPath>Список.ФСЗН</DataPath>
+					<ContextMenu name="ФСЗНКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ФСЗНРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<LabelField name="ФСЗНИнГрЕАЭС" id="49">
+					<DataPath>Список.ФСЗНИнГрЕАЭС</DataPath>
+					<ContextMenu name="ФСЗНИнГрЕАЭСКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ФСЗНИнГрЕАЭСРасширеннаяПодсказка" id="51"/>
 				</LabelField>
-				<LabelField name="ПФРНакопительная" id="10">
-					<DataPath>Список.ПФРНакопительная</DataPath>
+				<LabelField name="ПенсионныйФонд" id="52">
+					<DataPath>Список.ПенсионныйФонд</DataPath>
+					<ContextMenu name="ПенсионныйФондКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПенсионныйФондРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+				<LabelField name="ПС" id="55">
+					<DataPath>Список.ПС</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПФР, накопит. часть</v8:content>
+							<v8:content>Пенсионное страхование</v8:content>
 						</v8:item>
 					</Title>
-					<Width>15</Width>
-					<ContextMenu name="ПФРНакопительнаяКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ПФРНакопительнаяExtendedTooltip" id="22"/>
+					<ContextMenu name="ПСКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПСРасширеннаяПодсказка" id="57"/>
 				</LabelField>
-				<LabelField name="ФСС" id="12">
-					<DataPath>Список.ФСС</DataPath>
-					<Width>10</Width>
-					<ContextMenu name="ФССКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="ФССExtendedTooltip" id="23"/>
-				</LabelField>
-				<LabelField name="ФССсИностранцев" id="37">
-					<DataPath>Список.ФССсИностранцев</DataPath>
-					<ContextMenu name="ФССсИностранцевКонтекстноеМеню" id="38"/>
-					<ExtendedTooltip name="ФССсИностранцевРасширеннаяПодсказка" id="39"/>
-				</LabelField>
-				<LabelField name="ФФОМС" id="14">
-					<DataPath>Список.ФФОМС</DataPath>
-					<Width>10</Width>
-					<ContextMenu name="ФФОМСКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ФФОМСExtendedTooltip" id="24"/>
-				</LabelField>
-				<LabelField name="ТФОМС" id="16">
-					<DataPath>Список.ТФОМС</DataPath>
-					<Width>10</Width>
-					<ContextMenu name="ТФОМСКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ТФОМСExtendedTooltip" id="25"/>
+				<LabelField name="СС" id="58">
+					<DataPath>Список.СС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Социальное страхование</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ССКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ССРасширеннаяПодсказка" id="60"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

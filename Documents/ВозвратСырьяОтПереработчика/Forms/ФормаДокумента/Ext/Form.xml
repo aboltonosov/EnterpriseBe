@@ -1020,7 +1020,7 @@
 											<ContextMenu name="ВозвратПереданнойМногооборотнойТарыКонтекстноеМеню" id="848"/>
 											<ExtendedTooltip name="ВозвратПереданнойМногооборотнойТарыExtendedTooltip" id="849"/>
 										</CheckBoxField>
-										<UsualGroup name="ГруппаВходящийДокумент" id="839">
+										<UsualGroup name="ГруппаВходящийДокумент" id="987">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1030,24 +1030,62 @@
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаВходящийДокументExtendedTooltip" id="840"/>
+											<ExtendedTooltip name="ГруппаВходящийДокументExtendedTooltip" id="988"/>
 											<ChildItems>
-												<InputField name="НомерВходящегоДокумента" id="841">
-													<DataPath>Объект.НомерВходящегоДокумента</DataPath>
+												<UsualGroup name="ГруппаСерияНомерВходящегоДокумента" id="989">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Номер входящего
-документа</v8:content>
+															<v8:content>Группа серия номер входящего документа</v8:content>
 														</v8:item>
 													</Title>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>10</MaxWidth>
-													<HorizontalStretch>false</HorizontalStretch>
-													<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="842"/>
-													<ExtendedTooltip name="НомерВходящегоДокументаExtendedTooltip" id="843"/>
-												</InputField>
-												<InputField name="ДатаВходящегоДокумента" id="844">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа серия номер входящего документа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСерияНомерВходящегоДокументаРасширеннаяПодсказка" id="990"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияСерияНомерВходящегоДокумента" id="991">
+															<Width>12</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Серия и номер документа:</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ДекорацияСерияНомерВходящегоДокументаКонтекстноеМеню" id="992"/>
+															<ExtendedTooltip name="ДекорацияСерияНомерВходящегоДокументаРасширеннаяПодсказка" id="993"/>
+														</LabelDecoration>
+														<InputField name="СерияВходящегоДокумента" id="994">
+															<DataPath>Объект.СерияВходящегоДокумента</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="СерияВходящегоДокументаКонтекстноеМеню" id="995"/>
+															<ExtendedTooltip name="СерияВходящегоДокументаРасширеннаяПодсказка" id="996"/>
+														</InputField>
+														<InputField name="НомерВходящегоДокумента" id="997">
+															<DataPath>Объект.НомерВходящегоДокумента</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Номер входящего
+документа</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>15</Width>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="998"/>
+															<ExtendedTooltip name="НомерВходящегоДокументаExtendedTooltip" id="999"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="ДатаВходящегоДокумента" id="1000">
 													<DataPath>Объект.ДатаВходящегоДокумента</DataPath>
 													<Title>
 														<v8:item>
@@ -1055,10 +1093,9 @@
 															<v8:content>от</v8:content>
 														</v8:item>
 													</Title>
-													<Width>14</Width>
-													<HorizontalStretch>false</HorizontalStretch>
-													<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="845"/>
-													<ExtendedTooltip name="ДатаВходящегоДокументаExtendedTooltip" id="846"/>
+													<Width>10</Width>
+													<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="1001"/>
+													<ExtendedTooltip name="ДатаВходящегоДокументаExtendedTooltip" id="1002"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>

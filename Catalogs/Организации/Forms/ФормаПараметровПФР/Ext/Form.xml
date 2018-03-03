@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Реквизиты Белгосстраха</v8:content>
+		</v8:item>
+	</Title>
+	<Width>73</Width>
+	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -23,6 +31,124 @@
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаКонтрагентИДоговорБелгосстрах" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа контрагент и договор белгосстрах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа контрагент и договор белгосстрах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКонтрагентИДоговорБелгосстрахРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация2" id="59">
+					<Width>8</Width>
+					<Height>3</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<PictureSize>Stretch</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.БелГосстрах</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="61"/>
+				</PictureDecoration>
+				<UsualGroup name="ГруппаКонтрагентДоговор" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контрагент договор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контрагент договор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтрагентДоговорРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<InputField name="КонтрагентБелгосстрах" id="48">
+							<DataPath>КонтрагентБелгосстрах</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контрагент Белгосстрах</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КонтрагентБелгосстрахКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="КонтрагентБелгосстрахРасширеннаяПодсказка" id="50"/>
+							<Events>
+								<Event name="OnChange">КонтрагентБелгосстрахПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДоговорБелгосстрах" id="51">
+							<DataPath>ДоговорБелгосстрах</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Договор обязательного страхования</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceForm>Catalog.ДоговорыКонтрагентов.Form.ФормаВыбора</ChoiceForm>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Контрагент</xr:Name>
+									<xr:DataPath xsi:type="xs:string">КонтрагентБелгосстрах</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+								<xr:Link>
+									<xr:Name>Отбор.Организация</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Организация</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ChoiceParameters>
+								<app:item name="Отбор.УчетАгентскогоНДС">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:boolean">false</Value>
+									</app:value>
+								</app:item>
+								<app:item name="Отбор.Статус">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыДоговоровКонтрагентов.EnumValue.Действует</Value>
+									</app:value>
+								</app:item>
+								<app:item name="Отбор.ТипДоговора">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДоговоров.EnumValue.СПоставщиком</Value>
+									</app:value>
+								</app:item>
+								<app:item name="Отбор.ПорядокРасчетов">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокРасчетов.EnumValue.ПоДоговорамКонтрагентов</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<TypeLink>
+								<xr:DataPath>КонтрагентБелгосстрах</xr:DataPath>
+								<xr:LinkItem>0</xr:LinkItem>
+							</TypeLink>
+							<ContextMenu name="ДоговорБелгосстрахКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ДоговорБелгосстрахРасширеннаяПодсказка" id="53"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаОтступРеквизитыПФР" id="16">
 			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 			<Group>Horizontal</Group>
@@ -49,37 +175,39 @@
 					<ChildItems>
 						<InputField name="КодОрганаПФР" id="2">
 							<DataPath>КодОрганаПФР</DataPath>
+							<Visible>false</Visible>
 							<ContextMenu name="КодОрганаПФРКонтекстноеМеню" id="3"/>
 							<ExtendedTooltip name="КодОрганаПФРExtendedTooltip" id="33"/>
 						</InputField>
-						<InputField name="НаименованиеТерриториальногоОрганаПФР" id="4">
+						<LabelField name="НаименованиеТерриториальногоОрганаПФР" id="4">
 							<DataPath>НаименованиеТерриториальногоОрганаПФР</DataPath>
 							<TitleLocation>Left</TitleLocation>
 							<TitleHeight>2</TitleHeight>
 							<Height>2</Height>
 							<ContextMenu name="НаименованиеТерриториальногоОрганаПФРКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="НаименованиеТерриториальногоОрганаПФРExtendedTooltip" id="34"/>
-						</InputField>
+						</LabelField>
 						<InputField name="РегистрационныйНомерПФР" id="6">
 							<DataPath>ИсторияРегистрацийВОрганеПФР.РегистрационныйНомерПФР</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Регистрационный номер</v8:content>
+									<v8:content>Регистрационный номер страхового свидетельства Белгосстраха</v8:content>
 								</v8:item>
 							</Title>
+							<TitleLocation>Left</TitleLocation>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>12 цифр, указан в Уведомлении о регистрации в территориальном органе ПФР</v8:content>
+									<v8:content>Указан в Уведомлении о регистрации в территориальном органе "Белгосстрах"</v8:content>
 								</v8:item>
 							</ToolTip>
-							<HorizontalStretch>false</HorizontalStretch>
-							<Mask>999-999-999999</Mask>
+							<Mask>999999999999</Mask>
 							<ContextMenu name="РегистрационныйНомерПФРКонтекстноеМеню" id="7"/>
 							<ExtendedTooltip name="РегистрационныйНомерПФРExtendedTooltip" id="32"/>
 							<Events>
 								<Event name="OnChange">РегистрационныйНомерПФРПриИзменении</Event>
+								<Event name="TextEditEnd">РегистрационныйНомерПФРОкончаниеВводаТекста</Event>
 							</Events>
 						</InputField>
 						<UsualGroup name="ГруппаРегистрационныйНомерИИстория" id="41">
@@ -180,8 +308,17 @@
 					<ChildItems>
 						<InputField name="ИПРегистрационныйНомерПФР" id="25">
 							<DataPath>ИПРегистрационныйНомерПФР</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистрационный номер страхового свидетельства Белгосстраха</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="ИПРегистрационныйНомерПФРКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ИПРегистрационныйНомерПФРExtendedTooltip" id="38"/>
+							<Events>
+								<Event name="TextEditEnd">ИПРегистрационныйНомерПФРОкончаниеВводаТекста</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -332,6 +469,28 @@
 				</v8:StringQualifiers>
 			</Type>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КонтрагентБелгосстрах" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент белгосстрах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоговорБелгосстрах" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор белгосстрах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

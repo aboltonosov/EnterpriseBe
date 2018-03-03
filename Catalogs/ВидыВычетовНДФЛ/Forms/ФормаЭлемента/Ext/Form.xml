@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Top</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
@@ -12,7 +12,15 @@
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
 	</CommandSet>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОК" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.OK</CommandName>
+				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -26,6 +34,7 @@
 		<InputField name="ПолноеНаименование" id="32">
 			<DataPath>Объект.ПолноеНаименование</DataPath>
 			<TitleLocation>Left</TitleLocation>
+			<Width>50</Width>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="33"/>
 			<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="34"/>
@@ -69,6 +78,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="НеПредоставляетсяНерезидентам" id="35">
 					<DataPath>Объект.НеПредоставляетсяНерезидентам</DataPath>
+					<Visible>false</Visible>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="НеПредоставляетсяНерезидентамКонтекстноеМеню" id="36"/>
@@ -77,6 +87,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="КодыПрименяемыеВНалоговойОтчетности" id="14">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

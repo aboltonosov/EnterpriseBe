@@ -191,10 +191,25 @@
 					<ContextMenu name="ДатаКонтекстноеМеню" id="72"/>
 					<ExtendedTooltip name="ДатаExtendedTooltip" id="73"/>
 				</LabelField>
+				<LabelField name="ТипСчетаФактуры" id="86">
+					<DataPath>Список.ТипСчетаФактуры</DataPath>
+					<ContextMenu name="ТипСчетаФактурыКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ТипСчетаФактурыРасширеннаяПодсказка" id="88"/>
+				</LabelField>
 				<LabelField name="Организация" id="8">
 					<DataPath>Список.Организация</DataPath>
 					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="9"/>
 					<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="42"/>
+				</LabelField>
+				<LabelField name="Статус" id="89">
+					<DataPath>Список.Статус</DataPath>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+				<LabelField name="Поставщик" id="92">
+					<DataPath>Список.Поставщик</DataPath>
+					<ContextMenu name="ПоставщикКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="94"/>
 				</LabelField>
 				<InputField name="ДокументОснование" id="16">
 					<DataPath>Список.ДокументОснование</DataPath>
@@ -202,11 +217,37 @@
 					<ExtendedTooltip name="ДокументОснованиеExtendedTooltip" id="43"/>
 				</InputField>
 				<LabelField name="Ссылка" id="47">
+					<DataPath>Список.Статус</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="СерияИсходящегоДокумента" id="98">
+					<DataPath>Список.СерияИсходящегоДокумента</DataPath>
+					<ContextMenu name="СерияИсходящегоДокументаКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="СерияИсходящегоДокументаРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="НомерИсходящегоДокумента" id="95">
+					<DataPath>Список.НомерИсходящегоДокумента</DataPath>
+					<ContextMenu name="НомерИсходящегоДокументаКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="НомерИсходящегоДокументаРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="СуммаНДС" id="83">
+					<DataPath>Список.СуммаНДС</DataPath>
+					<ContextMenu name="СуммаНДСКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="СуммаДокумента" id="80">
+					<DataPath>Список.СуммаДокумента</DataPath>
+					<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="СуммаАкциза" id="77">
+					<DataPath>Список.СуммаАкциза</DataPath>
+					<ContextMenu name="СуммаАкцизаКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СуммаАкцизаРасширеннаяПодсказка" id="79"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -232,9 +273,19 @@
 	СчетФактураНалоговыйАгент.Организация,
 	СчетФактураНалоговыйАгент.ДокументОснование,
 	СчетФактураНалоговыйАгент.СтрокаПлатежноРасчетныеДокументы,
-	СчетФактураНалоговыйАгент.МоментВремени
+	СчетФактураНалоговыйАгент.МоментВремени,
+	СчетФактураНалоговыйАгент.Поставщик,
+	СостоянияЭД.СостояниеВерсииЭД КАК Статус,
+	СчетФактураНалоговыйАгент.СерияИсходящегоДокумента,
+	СчетФактураНалоговыйАгент.НомерИсходящегоДокумента,
+	СчетФактураНалоговыйАгент.ТипСчетаФактуры,
+	СчетФактураНалоговыйАгент.СуммаАкциза,
+	СчетФактураНалоговыйАгент.СуммаДокумента,
+	СчетФактураНалоговыйАгент.СуммаНДС
 ИЗ
-	Документ.СчетФактураНалоговыйАгент КАК СчетФактураНалоговыйАгент</QueryText>
+	Документ.СчетФактураНалоговыйАгент КАК СчетФактураНалоговыйАгент
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭСЧФ КАК СостоянияЭД
+		ПО (СостоянияЭД.СсылкаНаОбъект = СчетФактураНалоговыйАгент.Ссылка)}</QueryText>
 				<MainTable>Document.СчетФактураНалоговыйАгент</MainTable>
 				<ListSettings>
 					<dcsset:filter>

@@ -95,13 +95,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КраткоеНаименованиеДатаВводаРасширеннаяПодсказка" id="301"/>
 			<ChildItems>
-				<InputField name="НаименованиеКраткое" id="144">
-					<DataPath>Объект.НаименованиеКраткое</DataPath>
-					<ToolTipRepresentation>Button</ToolTipRepresentation>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="НаименованиеКраткоеКонтекстноеМеню" id="145"/>
-					<ExtendedTooltip name="НаименованиеКраткоеРасширеннаяПодсказка" id="146"/>
-				</InputField>
 				<UsualGroup name="ДатаВводаГруппа" id="42">
 					<Title>
 						<v8:item>
@@ -145,6 +138,13 @@
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
+				<InputField name="НаименованиеКраткое" id="144">
+					<DataPath>Объект.НаименованиеКраткое</DataPath>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НаименованиеКраткоеКонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="НаименованиеКраткоеРасширеннаяПодсказка" id="146"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаОсновныеСвойства" id="185">

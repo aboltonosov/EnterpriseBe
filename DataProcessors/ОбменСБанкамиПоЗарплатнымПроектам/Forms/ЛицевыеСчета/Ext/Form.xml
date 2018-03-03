@@ -218,6 +218,7 @@
 					</SearchControlAddition>
 					<Events>
 						<Event name="OnEditEnd">ЛицевыеСчетаПриОкончанииРедактирования</Event>
+						<Event name="BeforeAddRow">ЛицевыеСчетаПередНачаломДобавления</Event>
 						<Event name="OnActivateRow">ЛицевыеСчетаПриАктивизацииСтроки</Event>
 					</Events>
 					<ChildItems>
@@ -226,8 +227,8 @@
 							<EditMode>EnterOnInput</EditMode>
 							<ChoiceParameterLinks>
 								<xr:Link>
-									<xr:Name>Отбор.Организация</xr:Name>
-									<xr:DataPath xsi:type="xs:string">3</xr:DataPath>
+									<xr:Name>Отбор.ГоловнаяОрганизация</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Объект.Организация</xr:DataPath>
 									<xr:ValueChange>Clear</xr:ValueChange>
 								</xr:Link>
 							</ChoiceParameterLinks>
@@ -241,7 +242,7 @@
 							<DataPath>ЛицевыеСчета.НомерЛицевогоСчета</DataPath>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<EditMode>EnterOnInput</EditMode>
-							<Mask>99999999999999999999</Mask>
+							<Mask>UUUUUUUUUUUUUUUUUUUUUUUUUUUU</Mask>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="НомерЛицевогоСчетаКонтекстноеМеню" id="13"/>
 							<ExtendedTooltip name="НомерЛицевогоСчетаExtendedTooltip" id="46"/>
@@ -321,7 +322,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>20</v8:Length>
+							<v8:Length>28</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>

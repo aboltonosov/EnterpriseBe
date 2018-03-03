@@ -11,13 +11,13 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ОК</CommandName>
-				<ExtendedTooltip name="КнопкаОКExtendedTooltip" id="11"/>
+				<ExtendedTooltip name="КнопкаОКРасширеннаяПодсказка" id="11"/>
 			</Button>
 			<Button name="Отмена" id="10">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
-				<ExtendedTooltip name="ОтменаExtendedTooltip" id="12"/>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="12"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -37,23 +37,30 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ИННКППExtendedTooltip" id="13"/>
+			<ExtendedTooltip name="ИННКППРасширеннаяПодсказка" id="13"/>
 			<ChildItems>
 				<InputField name="ИНН" id="2">
 					<DataPath>ИНН</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УНП</v8:content>
+						</v8:item>
+					</Title>
 					<HorizontalStretch>false</HorizontalStretch>
 					<DropListButton>true</DropListButton>
 					<Mask>999999999999</Mask>
 					<AutoMarkIncomplete>true</AutoMarkIncomplete>
 					<ChoiceListButton>true</ChoiceListButton>
 					<ContextMenu name="ИННКонтекстноеМеню" id="3"/>
-					<ExtendedTooltip name="ИННExtendedTooltip" id="14"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="14"/>
 					<Events>
 						<Event name="TextEditEnd">ИННОкончаниеВводаТекста</Event>
 					</Events>
 				</InputField>
 				<InputField name="КПП" id="4">
 					<DataPath>КПП</DataPath>
+					<Visible>false</Visible>
 					<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>12</MaxWidth>
@@ -64,7 +71,7 @@
 					<ChoiceListButton>true</ChoiceListButton>
 					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 					<ContextMenu name="КППКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="КППExtendedTooltip" id="15"/>
+					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="15"/>
 					<Events>
 						<Event name="OnChange">КПППриИзменении</Event>
 						<Event name="Creating">РегистрацияВНалоговомОрганеСоздание</Event>

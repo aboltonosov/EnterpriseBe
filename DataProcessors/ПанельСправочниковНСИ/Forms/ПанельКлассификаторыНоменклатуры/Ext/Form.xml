@@ -114,6 +114,20 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияВидыНоменклатуры" id="78">
+									<Width>43</Width>
+									<Height>3</Height>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификация номенклатуры по ассортиментным группам. Номенклатура, относящаяся к одному виду имеет общие параметры учета и набор свойств, которыми она описывается.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияВидыНоменклатурыКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ДекорацияВидыНоменклатурыExtendedTooltip" id="249"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаПолитикиУчетаСерий" id="80">
@@ -146,6 +160,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияПолитикиУчетаСерий" id="82">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Политики учета серий определяют необходимость указания серий при оформлении складских операций.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияПолитикиУчетаСерийКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ДекорацияПолитикиУчетаСерийExtendedTooltip" id="252"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -194,11 +221,24 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Классификатор единиц измерения, основывающийся на Общероссийском классификаторе единиц измерения.</v8:content>
+												<v8:content>Классификатор единиц измерения, основывающийся на Общегосударственном классификаторе единиц измерения.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияЕдиницыИзмерения" id="88">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор единиц измерения, основывающийся на Общегосударственный классификатор Республики Беларусь "Единицы измерения и счета" (ОКЕИ).</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияЕдиницыИзмеренияКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ДекорацияЕдиницыИзмеренияExtendedTooltip" id="256"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаНаборыУпаковок" id="90">
@@ -230,6 +270,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияНаборыУпаковок" id="92">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ведение общего для нескольких позиций номенклатуры перечня упаковок.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияНаборыУпаковокКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ДекорацияНаборыУпаковокExtendedTooltip" id="259"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -283,6 +336,21 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСкладскиеГруппыНоменклатуры" id="100">
+									<Width>43</Width>
+									<Height>3</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификация номенклатуры по признаку одинаковых условий хранения и размещения на складе. Например, "Молочные продукты", "Бытовая химия".</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСкладскиеГруппыНоменклатурыКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ДекорацияСкладскиеГруппыНоменклатурыExtendedTooltip" id="263"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаСкладскиеГруппыУпаковок" id="94">
@@ -314,6 +382,21 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСкладскиеГруппыУпаковок" id="96">
+									<Width>43</Width>
+									<Height>3</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификация упаковок номенклатуры по признаку одинаковой складской обработки и размещения на складе. Например, "Штуки", "Коробки", "Паллеты".</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСкладскиеГруппыУпаковокКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ДекорацияСкладскиеГруппыУпаковокExtendedTooltip" id="266"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -424,6 +507,19 @@
 										<MaxWidth>43</MaxWidth>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияТипоразмерыУпаковок" id="151">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор типоразмеров упаковок номенклатуры.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияТипоразмерыУпаковокКонтекстноеМеню" id="152"/>
+									<ExtendedTooltip name="ДекорацияТипоразмерыУпаковокExtendedTooltip" id="270"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаАналитическийУчет" id="379">
@@ -514,6 +610,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияГруппыДоступаНоменклатуры" id="104">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор деления номенклатуры на группы, по которым можно ограничивать доступ на добавление и изменение.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияГруппыДоступаНоменклатурыКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ДекорацияГруппыДоступаНоменклатурыExtendedTooltip" id="278"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаСегментыНоменклатуры" id="406">
@@ -602,13 +711,26 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСезонныеГруппы" id="331">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор деления номенклатуры на группы, по которым можно указать коэффициенты сезонности, используемые при планировании продаж.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСезонныеГруппыКонтекстноеМеню" id="332"/>
+									<ExtendedTooltip name="ДекорацияСезонныеГруппыРасширеннаяПодсказка" id="333"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаОКВЭД" id="383">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Общероссийский классификатор видов экономической деятельности</v8:content>
+									<v8:content>Общегосударственный классификатор видов экономической деятельности</v8:content>
 								</v8:item>
 							</Title>
 							<Width>43</Width>
@@ -628,7 +750,7 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Общероссийская классификация номенклатуры по видам экономической деятельности.</v8:content>
+												<v8:content>Общегосударственная классификация номенклатуры по видам экономической деятельности.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -663,6 +785,12 @@
 									<v8:content>Группа номенклатура вид алкоголя</v8:content>
 								</v8:item>
 							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номенклатура вид алкоголя</v8:content>
+								</v8:item>
+							</ToolTip>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -685,6 +813,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияВидыАлкогольнойПродукции" id="203">
+									<Width>43</Width>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Классификатор, используемый при заполнении журнала и деклараций об объемах розничной продажи алкогольной и спиртосодержащей продукции.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияВидыАлкогольнойПродукцииКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="ДекорацияВидыАлкогольнойПродукцииExtendedTooltip" id="288"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаТНВЭД" id="387">
@@ -787,7 +928,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Общероссийский классификатор продукции</v8:content>
+									<v8:content>Общегосударственный классификатор продукции</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -813,7 +954,7 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Классификация номенклатуры по общероссийскому классификатору продукции.</v8:content>
+												<v8:content>Классификация номенклатуры по общегосударственному классификатору продукции.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -1101,13 +1242,13 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>ОКП</v8:content>
+					<v8:content>ОК РБ</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть общероссийский классификатор продукции</v8:content>
+					<v8:content>Открыть общегосударственный классификатор Республики Беларусь</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьОбщероссийскийКлассификаторПродукции</Action>

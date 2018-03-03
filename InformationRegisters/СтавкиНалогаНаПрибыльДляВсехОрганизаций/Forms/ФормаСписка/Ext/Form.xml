@@ -48,7 +48,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Для организаций применяются разные ставки налога на прибыль, уплачиваемого в бюджет субъектов РФ.</v8:content>
+							<v8:content>Для организаций применяются разные ставки налога на прибыль, уплачиваемого в бюджет</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="ПодсказкаПрименяютсяРазныеСтавкиНалогаНаПрибыльКонтекстноеМеню" id="5"/>
@@ -153,11 +153,18 @@
 						</LabelField>
 						<LabelField name="СтавкиДляВсехОрганизацийСтавкаФБ" id="30">
 							<DataPath>СтавкиДляВсехОрганизаций.СтавкаФБ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В государственный бюджет</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="СтавкиДляВсехОрганизацийСтавкаФБКонтекстноеМеню" id="31"/>
 							<ExtendedTooltip name="СтавкиДляВсехОрганизацийСтавкаФБExtendedTooltip" id="48"/>
 						</LabelField>
 						<LabelField name="СтавкиДляВсехОрганизацийСтавкаСубъектРФ" id="32">
 							<DataPath>СтавкиДляВсехОрганизаций.СтавкаСубъектРФ</DataPath>
+							<Visible>false</Visible>
 							<ContextMenu name="СтавкиДляВсехОрганизацийСтавкаСубъектРФКонтекстноеМеню" id="33"/>
 							<ExtendedTooltip name="СтавкиДляВсехОрганизацийСтавкаСубъектРФExtendedTooltip" id="49"/>
 						</LabelField>
@@ -169,7 +176,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ставки налога на прибыль в бюджет субъектов РФ</v8:content>
+					<v8:content>Ставки налога на прибыль в бюджет</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -243,6 +250,12 @@
 						</LabelField>
 						<LabelField name="СтавкиВБюджетСубъектовРФСтавкаСубъектРФ" id="40">
 							<DataPath>СтавкиВБюджетСубъектовРФ.СтавкаСубъектРФ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В государственный бюджет</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="СтавкиВБюджетСубъектовРФСтавкаСубъектРФКонтекстноеМеню" id="41"/>
 							<ExtendedTooltip name="СтавкиВБюджетСубъектовРФСтавкаСубъектРФExtendedTooltip" id="54"/>
 						</LabelField>

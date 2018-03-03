@@ -9,6 +9,7 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -21,14 +22,102 @@
 				<Event name="OnChange">НаименованиеПриИзменении</Event>
 			</Events>
 		</InputField>
-		<InputField name="НаименованиеПолное" id="4">
+		<UsualGroup name="Общая" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ЕТС" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЕТС</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЕТС</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЕТСРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<InputField name="РазрядЕТС" id="8">
+							<DataPath>Объект.РазрядЕТС</DataPath>
+							<ContextMenu name="РазрядЕТСКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="РазрядЕТСРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="OnChange">РазрядЕТСПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="КоэффициентЕТС" id="11">
+							<DataPath>Объект.Коэффициент</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КоэффициентЕТСКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="КоэффициентЕТСРасширеннаяПодсказка" id="13"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПовышенияПоЕТС" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повышения по ЕТС</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повышения по ЕТС</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПовышенияПоЕТСРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<InputField name="ПовышающийКоэффициент" id="16">
+							<DataPath>Объект.ПовышающийКоэффициент</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ПовышающийКоэффициентКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПовышающийКоэффициентРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ПроцентПовышения" id="19">
+							<DataPath>Объект.ПроцентПовышения</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПроцентПовышенияКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПроцентПовышенияРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НаименованиеПолное" id="22">
 			<DataPath>Объект.НаименованиеПолное</DataPath>
-			<TitleLocation>Left</TitleLocation>
 			<TitleHeight>2</TitleHeight>
 			<ToolTipRepresentation>Button</ToolTipRepresentation>
 			<MultiLine>true</MultiLine>
-			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="6"/>
+			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="24"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

@@ -272,6 +272,12 @@
 							<ContextMenu name="ТаблицаУслугСуммаРучнойСкидкиКонтекстноеМеню" id="159"/>
 							<ExtendedTooltip name="ТаблицаУслугСуммаРучнойСкидкиExtendedTooltip" id="208"/>
 						</InputField>
+						<InputField name="ТаблицаУслугЦенаСоСкидкой" id="235">
+							<DataPath>ТаблицаУслуг.ЦенаСоСкидкой</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаУслугЦенаСоСкидкойКонтекстноеМеню" id="236"/>
+							<ExtendedTooltip name="ТаблицаУслугЦенаСоСкидкойРасширеннаяПодсказка" id="237"/>
+						</InputField>
 						<InputField name="ТаблицаУслугСумма" id="150">
 							<DataPath>ТаблицаУслуг.Сумма</DataPath>
 							<ReadOnly>true</ReadOnly>
@@ -781,6 +787,22 @@
 					<FunctionalOptions>
 						<Item>FunctionalOption.ИспользоватьНаборы</Item>
 					</FunctionalOptions>
+				</Column>
+				<Column name="ЦенаСоСкидкой" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена со скидкой</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
 				</Column>
 			</Columns>
 		</Attribute>

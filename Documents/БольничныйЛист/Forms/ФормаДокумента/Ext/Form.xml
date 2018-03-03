@@ -161,7 +161,6 @@
 								<InputField name="Сотрудник" id="13">
 									<DataPath>Объект.Сотрудник</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="СотрудникКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="СотрудникExtendedTooltip" id="577"/>
 									<Events>
@@ -223,6 +222,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНомерЛисткаНетрудоспособности" id="1258">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -288,6 +288,10 @@
 					<ExtendedTooltip name="ОсновноеСтраницаExtendedTooltip" id="605"/>
 					<ChildItems>
 						<UsualGroup name="СтажиНеЗаданыГруппа" id="780">
+							<Visible>false</Visible>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -399,6 +403,73 @@
 														<InputField name="ПричинаНетрудоспособности" id="17">
 															<DataPath>Объект.ПричинаНетрудоспособности</DataPath>
 															<EditMode>EnterOnInput</EditMode>
+															<ListChoiceMode>true</ListChoiceMode>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.ОбщееЗаболевание</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.ОбщееЗаболеваниеАлкоголь</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.ПоБеременностиИРодам</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.ТравмаНаПроизводстве</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.Профзаболевание</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.ПоУходуЗаВзрослым</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.Карантин</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ПричиныНетрудоспособности.EnumValue.Протезирование</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
 															<ContextMenu name="ПричинаНетрудоспособностиКонтекстноеМеню" id="18"/>
 															<ExtendedTooltip name="ПричинаНетрудоспособностиExtendedTooltip" id="580"/>
 															<Events>
@@ -459,6 +530,7 @@
 														</UsualGroup>
 														<CheckBoxField name="УчитыватьЗаработокПредыдущихСтрахователей" id="503">
 															<DataPath>Объект.УчитыватьЗаработокПредыдущихСтрахователей</DataPath>
+															<Visible>false</Visible>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="УчитыватьЗаработокПредыдущихСтрахователейКонтекстноеМеню" id="504"/>
@@ -561,6 +633,7 @@
 									</Events>
 								</CheckBoxField>
 								<Pages name="ДоплатаДоСреднегоСтраницы" id="788">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -721,19 +794,24 @@
 												</InputField>
 												<InputField name="НачисленоРаботодатель" id="294">
 													<DataPath>НачисленоРаботодатель</DataPath>
+													<Visible>false</Visible>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
 													<ReadOnly>true</ReadOnly>
 													<HorizontalAlign>Right</HorizontalAlign>
 													<Width>10</Width>
 													<ContextMenu name="НачисленоРаботодательКонтекстноеМеню" id="295"/>
 													<ExtendedTooltip name="НачисленоРаботодательExtendedTooltip" id="643"/>
 												</InputField>
-												<InputField name="НачисленоФСС" id="296">
+												<InputField name="НачисленоФСС" id="1276">
 													<DataPath>НачисленоФСС</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<HorizontalAlign>Right</HorizontalAlign>
-													<Width>10</Width>
-													<ContextMenu name="НачисленоФССКонтекстноеМеню" id="297"/>
-													<ExtendedTooltip name="НачисленоФССExtendedTooltip" id="644"/>
+													<Visible>false</Visible>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="НачисленоФССКонтекстноеМеню" id="1277"/>
+													<ExtendedTooltip name="НачисленоФССРасширеннаяПодсказка" id="1278"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -782,6 +860,12 @@
 														<InputField name="НДФЛ" id="525">
 															<DataPath>НДФЛ</DataPath>
 															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ПН</v8:content>
+																</v8:item>
+															</Title>
 															<Width>10</Width>
 															<ContextMenu name="НДФЛКонтекстноеМеню" id="526"/>
 															<ExtendedTooltip name="НДФЛExtendedTooltip" id="649"/>
@@ -1038,6 +1122,10 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="КорректировкаВыплатыГруппа" id="1251">
+							<Visible>false</Visible>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1432,6 +1520,10 @@
 									<ChildItems>
 										<LabelField name="НадписьСтаж" id="553">
 											<DataPath>НадписьСтаж</DataPath>
+											<Visible>false</Visible>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1457,6 +1549,41 @@
 										<InputField name="ОграничениеПособия" id="388">
 											<DataPath>Объект.ОграничениеПособия</DataPath>
 											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВидыОграниченияПособия.EnumValue.ОбщееОграничение</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВидыОграниченияПособия.EnumValue.ОграничениеВРазмереММОТ</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВидыОграниченияПособия.EnumValue.ОднократноеОграничение</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВидыОграниченияПособия.EnumValue.БезОграничений</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
 											<ContextMenu name="ОграничениеПособияКонтекстноеМеню" id="389"/>
 											<ExtendedTooltip name="ОграничениеПособияExtendedTooltip" id="616"/>
 											<Events>
@@ -1563,53 +1690,10 @@
 													</Events>
 												</CheckBoxField>
 												<InputField name="ФинансированиеФедеральнымБюджетом" id="559">
-													<DataPath>Объект.ФинансированиеФедеральнымБюджетом</DataPath>
+													<DataPath>Объект.ЛьготыОплатыПособий</DataPath>
 													<TitleLocation>None</TitleLocation>
 													<HorizontalStretch>false</HorizontalStretch>
-													<ListChoiceMode>true</ListChoiceMode>
 													<ChooseType>false</ChooseType>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияФинансированияПособияФедеральнымБюджетом.EnumValue.Семипалатинск</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияФинансированияПособияФедеральнымБюджетом.EnumValue.Чернобыль</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияФинансированияПособияФедеральнымБюджетом.EnumValue.Маяк</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияФинансированияПособияФедеральнымБюджетом.EnumValue.ПодразделенияОсобогоРиска</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияФинансированияПособияФедеральнымБюджетом.EnumValue.ЗачетНестраховыхПериодов</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
 													<ContextMenu name="ФинансированиеФедеральнымБюджетомКонтекстноеМеню" id="560"/>
 													<ExtendedTooltip name="ФинансированиеФедеральнымБюджетомExtendedTooltip" id="623"/>
 													<Events>
@@ -1619,6 +1703,10 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаУсловияОплатыСЛьготами" id="566">
+											<Visible>false</Visible>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1661,9 +1749,18 @@
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
+										<InputField name="РасчетПремии" id="1273">
+											<DataPath>Объект.РасчетПремии</DataPath>
+											<ContextMenu name="РасчетПремииКонтекстноеМеню" id="1274"/>
+											<ExtendedTooltip name="РасчетПремииРасширеннаяПодсказка" id="1275"/>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаУсловияИсчисления" id="1216">
+									<Visible>false</Visible>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1746,29 +1843,60 @@
 												<Event name="OnChange">ДатаНачалаСобытияПриИзменении</Event>
 											</Events>
 										</InputField>
-										<InputField name="ДатаНарушенияРежима" id="33">
-											<DataPath>Объект.ДатаНарушенияРежима</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Нарушение режима с</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ДатаНарушенияРежимаКонтекстноеМеню" id="34"/>
-											<ExtendedTooltip name="ДатаНарушенияРежимаExtendedTooltip" id="630"/>
-											<Events>
-												<Event name="OnChange">ДатаНарушенияРежимаПриИзменении</Event>
-											</Events>
-										</InputField>
 										<InputField name="ДатаНачалаПоловиннойОплаты" id="488">
 											<DataPath>Объект.ДатаНачалаПоловиннойОплаты</DataPath>
+											<Visible>false</Visible>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
 											<ContextMenu name="ДатаНачалаПоловиннойОплатыКонтекстноеМеню" id="489"/>
 											<ExtendedTooltip name="ДатаНачалаПоловиннойОплатыExtendedTooltip" id="600"/>
 											<Events>
 												<Event name="OnChange">ДатаНачалаПоловиннойОплатыПриИзменении</Event>
 											</Events>
 										</InputField>
+										<UsualGroup name="ДатаНачисленияРежимаГруппа" id="1279">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата начисления режима группа</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ДатаНачисленияРежимаГруппаРасширеннаяПодсказка" id="1280"/>
+											<ChildItems>
+												<InputField name="ДатаНарушенияРежима" id="33">
+													<DataPath>Объект.ДатаНарушенияРежима</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нарушение режима с</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Left</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДатаНарушенияРежимаКонтекстноеМеню" id="34"/>
+													<ExtendedTooltip name="ДатаНарушенияРежимаExtendedTooltip" id="630"/>
+													<Events>
+														<Event name="OnChange">ДатаНарушенияРежимаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ДатаНарушенияРежимаОкончание" id="1281">
+													<DataPath>Объект.ДатаНарушенияРежимаОкончание</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>по</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Left</TitleLocation>
+													<ContextMenu name="ДатаНарушенияРежимаОкончаниеКонтекстноеМеню" id="1282"/>
+													<ExtendedTooltip name="ДатаНарушенияРежимаОкончаниеРасширеннаяПодсказка" id="1283"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ИспользуемыеНачисленияГруппа" id="548">
@@ -1787,7 +1915,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>За счет ФСС</v8:content>
+													<v8:content>Вид оплаты пособия</v8:content>
 												</v8:item>
 											</Title>
 											<ContextMenu name="ВидОплатыПособияКонтекстноеМеню" id="396"/>
@@ -1937,6 +2065,7 @@
 								</InputField>
 								<InputField name="НачисленияРезультатВТомЧислеЗаСчетФБ" id="824">
 									<DataPath>Объект.Начисления.РезультатВТомЧислеЗаСчетФБ</DataPath>
+									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияРезультатВТомЧислеЗаСчетФБКонтекстноеМеню" id="825"/>
 									<ExtendedTooltip name="НачисленияРезультатВТомЧислеЗаСчетФБРасширеннаяПодсказка" id="826"/>

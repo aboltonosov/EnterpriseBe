@@ -245,6 +245,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КоличествоДнейВГодГруппаРасширеннаяПодсказка" id="81"/>
 			<ChildItems>
 				<UsualGroup name="ПостоянноГруппа" id="108">
@@ -268,6 +269,7 @@
 					<ChildItems>
 						<RadioButtonField name="ХарактерЗависимостиДнейОтпускаПостоянно" id="82">
 							<DataPath>Объект.ХарактерЗависимостиДнейОтпуска</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -300,7 +302,12 @@
 						</RadioButtonField>
 						<InputField name="КоличествоДнейВГод" id="7">
 							<DataPath>Объект.КоличествоДнейВГод</DataPath>
-							<TitleLocation>None</TitleLocation>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество дней в год</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -335,6 +342,7 @@
 					<ChildItems>
 						<RadioButtonField name="ХарактерЗависимостиДнейОтпускаЗависитОтРабочегоМеста" id="102">
 							<DataPath>Объект.ХарактерЗависимостиДнейОтпуска</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -388,6 +396,7 @@
 					<ChildItems>
 						<RadioButtonField name="ХарактерЗависимостиДнейОтпускаЗависитОтСтажа" id="105">
 							<DataPath>Объект.ХарактерЗависимостиДнейОтпуска</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>

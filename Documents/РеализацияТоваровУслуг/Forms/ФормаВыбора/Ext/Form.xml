@@ -295,6 +295,48 @@
 					<ContextMenu name="СписокРеализацииТоваровУслугНомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="СписокРеализацииТоваровУслугНомерExtendedTooltip" id="141"/>
 				</InputField>
+				<ColumnGroup name="ГруппаСерияНомер" id="179">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСерияНомерРасширеннаяПодсказка" id="180"/>
+					<ChildItems>
+						<LabelField name="СписокРеализацииТоваровУслугСерияИсходящегоДокумента" id="181">
+							<DataPath>СписокРеализацииТоваровУслуг.СерияИсходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия</v8:content>
+								</v8:item>
+							</Title>
+							<Width>2</Width>
+							<ContextMenu name="СписокРеализацииТоваровУслугСерияИсходящегоДокументаКонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="СписокРеализацииТоваровУслугСерияИсходящегоДокументаРасширеннаяПодсказка" id="183"/>
+						</LabelField>
+						<LabelField name="СписокРеализацииТоваровУслугНомерИсходящегоДокумента" id="184">
+							<DataPath>СписокРеализацииТоваровУслуг.НомерИсходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№ исх. документа</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="СписокРеализацииТоваровУслугНомерИсходящегоДокументаКонтекстноеМеню" id="185"/>
+							<ExtendedTooltip name="СписокРеализацииТоваровУслугНомерИсходящегоДокументаРасширеннаяПодсказка" id="186"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="СписокРеализацииТоваровУслугДата" id="4">
 					<DataPath>СписокРеализацииТоваровУслуг.Date</DataPath>
 					<DefaultItem>true</DefaultItem>

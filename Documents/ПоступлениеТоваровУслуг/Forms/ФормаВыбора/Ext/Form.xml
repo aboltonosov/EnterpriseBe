@@ -241,21 +241,63 @@
 					<ContextMenu name="СписокДокументыПоступленияДатаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="СписокДокументыПоступленияДатаExtendedTooltip" id="115"/>
 				</InputField>
-				<LabelField name="НомерВходящегоДокумента" id="102">
-					<DataPath>СписокДокументыПоступления.НомерВходящегоДокумента</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<Width>10</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="103"/>
-					<ExtendedTooltip name="НомерВходящегоДокументаExtendedTooltip" id="116"/>
-				</LabelField>
+				<ColumnGroup name="ГруппаСерияНомер" id="147">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСерияНомерРасширеннаяПодсказка" id="148"/>
+					<ChildItems>
+						<LabelField name="СерияВходящегоДокумента" id="144">
+							<DataPath>СписокДокументыПоступления.СерияВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия</v8:content>
+								</v8:item>
+							</Title>
+							<Width>2</Width>
+							<ContextMenu name="СерияВходящегоДокументаКонтекстноеМеню" id="145"/>
+							<ExtendedTooltip name="СерияВходящегоДокументаРасширеннаяПодсказка" id="146"/>
+						</LabelField>
+						<LabelField name="НомерВходящегоДокумента" id="102">
+							<DataPath>СписокДокументыПоступления.НомерВходящегоДокумента</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№ вх. документа</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="НомерВходящегоДокументаExtendedTooltip" id="116"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<LabelField name="ДатаВходящегоДокумента" id="104">
 					<DataPath>СписокДокументыПоступления.ДатаВходящегоДокумента</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата вх. документа</v8:content>
+						</v8:item>
+					</Title>
 					<Width>14</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="105"/>

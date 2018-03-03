@@ -147,8 +147,15 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="КодExtendedTooltip" id="20"/>
 				</InputField>
+				<LabelField name="ЦБУ" id="48">
+					<DataPath>Список.ЦБУ</DataPath>
+					<Width>10</Width>
+					<ContextMenu name="ЦБУКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ЦБУРасширеннаяПодсказка" id="50"/>
+				</LabelField>
 				<InputField name="КоррСчет" id="10">
 					<DataPath>Список.КоррСчет</DataPath>
+					<Visible>false</Visible>
 					<Wrap>false</Wrap>
 					<ContextMenu name="КоррСчетКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="КоррСчетExtendedTooltip" id="21"/>
@@ -162,6 +169,7 @@
 				</InputField>
 				<InputField name="Адрес" id="12">
 					<DataPath>Список.Адрес</DataPath>
+					<Visible>false</Visible>
 					<Wrap>false</Wrap>
 					<ContextMenu name="АдресКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="АдресExtendedTooltip" id="23"/>

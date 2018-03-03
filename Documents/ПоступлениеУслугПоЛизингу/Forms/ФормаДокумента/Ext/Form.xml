@@ -252,7 +252,7 @@
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="НомерДатаExtendedTooltip" id="8"/>
+											<ExtendedTooltip name="НомерДатаРасширеннаяПодсказка" id="8"/>
 											<ChildItems>
 												<InputField name="Номер" id="9">
 													<DataPath>Объект.Number</DataPath>
@@ -260,7 +260,7 @@
 													<MaxWidth>9</MaxWidth>
 													<Wrap>false</Wrap>
 													<ContextMenu name="НомерКонтекстноеМеню" id="10"/>
-													<ExtendedTooltip name="НомерExtendedTooltip" id="11"/>
+													<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="11"/>
 												</InputField>
 												<InputField name="Дата" id="12">
 													<DataPath>Объект.Date</DataPath>
@@ -274,7 +274,7 @@
 													<MaxWidth>14</MaxWidth>
 													<Wrap>false</Wrap>
 													<ContextMenu name="ДатаКонтекстноеМеню" id="13"/>
-													<ExtendedTooltip name="ДатаExtendedTooltip" id="14"/>
+													<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="14"/>
 													<Events>
 														<Event name="OnChange">ДатаПриИзменении</Event>
 													</Events>
@@ -413,7 +413,7 @@
 											<ContextMenu name="АвторКонтекстноеМеню" id="126"/>
 											<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="127"/>
 										</InputField>
-										<UsualGroup name="ГруппаВходящийДокумент" id="175">
+										<UsualGroup name="ГруппаВходящийДокумент" id="280">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -423,24 +423,62 @@
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаВходящийДокументExtendedTooltip" id="176"/>
+											<ExtendedTooltip name="ГруппаВходящийДокументРасширеннаяПодсказка" id="281"/>
 											<ChildItems>
-												<InputField name="НомерВходящегоДокумента" id="177">
-													<DataPath>Объект.НомерВходящегоДокумента</DataPath>
+												<UsualGroup name="ГруппаСерияНомерВходящегоДокумента" id="282">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Номер 
-входящего документа</v8:content>
+															<v8:content>Группа серия номер входящего документа</v8:content>
 														</v8:item>
 													</Title>
-													<TitleLocation>Left</TitleLocation>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>9</MaxWidth>
-													<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="178"/>
-													<ExtendedTooltip name="НомерВходящегоДокументаExtendedTooltip" id="179"/>
-												</InputField>
-												<InputField name="ДатаВходящегоДокумента" id="180">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа серия номер входящего документа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСерияНомерВходящегоДокументаРасширеннаяПодсказка" id="283"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияСерияНомерВходящегоДокумента" id="284">
+															<Width>10</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Серия и номер документа:</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ДекорацияСерияНомерВходящегоДокументаКонтекстноеМеню" id="285"/>
+															<ExtendedTooltip name="ДекорацияСерияНомерВходящегоДокументаРасширеннаяПодсказка" id="286"/>
+														</LabelDecoration>
+														<InputField name="СерияВходящегоДокумента" id="287">
+															<DataPath>Объект.СерияВходящегоДокумента</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>2</Width>
+															<ContextMenu name="СерияВходящегоДокументаКонтекстноеМеню" id="288"/>
+															<ExtendedTooltip name="СерияВходящегоДокументаРасширеннаяПодсказка" id="289"/>
+														</InputField>
+														<InputField name="НомерВходящегоДокумента" id="290">
+															<DataPath>Объект.НомерВходящегоДокумента</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Номер</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Width>9</Width>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="291"/>
+															<ExtendedTooltip name="НомерВходящегоДокументаРасширеннаяПодсказка" id="292"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="ДатаВходящегоДокумента" id="293">
 													<DataPath>Объект.ДатаВходящегоДокумента</DataPath>
 													<Title>
 														<v8:item>
@@ -448,11 +486,9 @@
 															<v8:content>от</v8:content>
 														</v8:item>
 													</Title>
-													<Width>15</Width>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>14</MaxWidth>
-													<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="181"/>
-													<ExtendedTooltip name="ДатаВходящегоДокументаExtendedTooltip" id="182"/>
+													<Width>11</Width>
+													<ContextMenu name="ДатаВходящегоДокументаКонтекстноеМеню" id="294"/>
+													<ExtendedTooltip name="ДатаВходящегоДокументаРасширеннаяПодсказка" id="295"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -624,7 +660,7 @@
 							<Representation>NormalSeparation</Representation>
 							<United>false</United>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="218"/>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="218"/>
 						</UsualGroup>
 						<LabelField name="НадписьВалюты" id="277">
 							<DataPath>НадписьВалюты</DataPath>
@@ -671,7 +707,7 @@
 									<VerticalStretch>false</VerticalStretch>
 									<Wrap>false</Wrap>
 									<ContextMenu name="КомментарийКонтекстноеМеню" id="79"/>
-									<ExtendedTooltip name="КомментарийExtendedTooltip" id="80"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="80"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -874,7 +910,7 @@
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="82"/>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="82"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаИтогоРасчеты" id="86">
 					<ToolTip>
@@ -909,7 +945,7 @@
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<BackColor>#F0F0F0</BackColor>
-							<ExtendedTooltip name="ГруппаПоДокументуExtendedTooltip" id="92"/>
+							<ExtendedTooltip name="ГруппаПоДокументуРасширеннаяПодсказка" id="92"/>
 							<ChildItems>
 								<Pages name="ГруппаСтраницыНДС" id="93">
 									<Title>
@@ -926,7 +962,7 @@
 									</ToolTip>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="ГруппаСтраницыНДСExtendedTooltip" id="94"/>
+									<ExtendedTooltip name="ГруппаСтраницыНДСРасширеннаяПодсказка" id="94"/>
 									<ChildItems>
 										<Page name="СтраницаСНДС" id="95">
 											<Title>
@@ -942,7 +978,7 @@
 												</v8:item>
 											</ToolTip>
 											<VerticalAlign>Center</VerticalAlign>
-											<ExtendedTooltip name="СтраницаСНДСExtendedTooltip" id="96"/>
+											<ExtendedTooltip name="СтраницаСНДСРасширеннаяПодсказка" id="96"/>
 											<ChildItems>
 												<InputField name="СуммаНДС" id="97">
 													<DataPath>Объект.Начисления.TotalСуммаНДС</DataPath>
@@ -963,7 +999,7 @@
 														</v8:item>
 													</Format>
 													<ContextMenu name="СуммаНДСКонтекстноеМеню" id="98"/>
-													<ExtendedTooltip name="СуммаНДСExtendedTooltip" id="99"/>
+													<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="99"/>
 												</InputField>
 											</ChildItems>
 										</Page>
@@ -982,7 +1018,7 @@
 											</ToolTip>
 											<VerticalStretch>true</VerticalStretch>
 											<VerticalAlign>Center</VerticalAlign>
-											<ExtendedTooltip name="СтраницаБезНДСExtendedTooltip" id="101"/>
+											<ExtendedTooltip name="СтраницаБезНДСРасширеннаяПодсказка" id="101"/>
 											<ChildItems>
 												<LabelField name="ПолеБезНДС" id="105">
 													<DataPath>Объект.Начисления.TotalСумма</DataPath>
@@ -1003,7 +1039,7 @@
 														</v8:item>
 													</Format>
 													<ContextMenu name="ПолеБезНДСКонтекстноеМеню" id="106"/>
-													<ExtendedTooltip name="ПолеБезНДСExtendedTooltip" id="107"/>
+													<ExtendedTooltip name="ПолеБезНДСРасширеннаяПодсказка" id="107"/>
 												</LabelField>
 											</ChildItems>
 										</Page>
@@ -1023,7 +1059,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="ГруппаСтраницыВсегоExtendedTooltip" id="109"/>
+									<ExtendedTooltip name="ГруппаСтраницыВсегоРасширеннаяПодсказка" id="109"/>
 									<ChildItems>
 										<Page name="СтраницаВсегоСНДС" id="110">
 											<Title>
@@ -1038,7 +1074,7 @@
 													<v8:content>Страница с НДС</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницаВсегоСНДСExtendedTooltip" id="111"/>
+											<ExtendedTooltip name="СтраницаВсегоСНДСРасширеннаяПодсказка" id="111"/>
 											<ChildItems>
 												<InputField name="СуммаВсегоСНДС" id="112">
 													<DataPath>Объект.Начисления.TotalСуммаСНДС</DataPath>
@@ -1059,7 +1095,7 @@
 														</v8:item>
 													</Format>
 													<ContextMenu name="СуммаВсегоСНДСКонтекстноеМеню" id="113"/>
-													<ExtendedTooltip name="СуммаВсегоСНДСExtendedTooltip" id="114"/>
+													<ExtendedTooltip name="СуммаВсегоСНДСРасширеннаяПодсказка" id="114"/>
 												</InputField>
 											</ChildItems>
 										</Page>
@@ -1076,7 +1112,7 @@
 													<v8:content>Страница без НДС</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницаВсегоБезНДСExtendedTooltip" id="116"/>
+											<ExtendedTooltip name="СтраницаВсегоБезНДСРасширеннаяПодсказка" id="116"/>
 											<ChildItems>
 												<InputField name="СуммаВсегоБезНДС" id="117">
 													<DataPath>Объект.Начисления.TotalСуммаСНДС</DataPath>
@@ -1097,7 +1133,7 @@
 														</v8:item>
 													</Format>
 													<ContextMenu name="СуммаВсегоБезНДСКонтекстноеМеню" id="118"/>
-													<ExtendedTooltip name="СуммаВсегоБезНДСExtendedTooltip" id="119"/>
+													<ExtendedTooltip name="СуммаВсегоБезНДСРасширеннаяПодсказка" id="119"/>
 												</InputField>
 											</ChildItems>
 										</Page>
@@ -1132,7 +1168,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСчетФактураExtendedTooltip" id="268"/>
+					<ExtendedTooltip name="ГруппаСчетФактураРасширеннаяПодсказка" id="268"/>
 					<ChildItems>
 						<PictureDecoration name="ПроблемаПроверкаКонтрагентаСчетФактура" id="269">
 							<Visible>false</Visible>
@@ -1159,7 +1195,7 @@
 							</Title>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="ТекстСчетФактураКонтекстноеМеню" id="273"/>
-							<ExtendedTooltip name="ТекстСчетФактураExtendedTooltip" id="274"/>
+							<ExtendedTooltip name="ТекстСчетФактураРасширеннаяПодсказка" id="274"/>
 							<Events>
 								<Event name="URLProcessing">ТекстСчетФактураОбработкаНавигационнойСсылки</Event>
 							</Events>

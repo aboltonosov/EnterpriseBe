@@ -341,6 +341,21 @@
 									<ContextMenu name="ПрочиеАктивыПассивыАналитикаКонтекстноеМеню" id="56"/>
 									<ExtendedTooltip name="ПрочиеАктивыПассивыАналитикаExtendedTooltip" id="68"/>
 								</InputField>
+								<InputField name="ПрочиеАктивыПассивыСуммаРегл" id="125">
+									<DataPath>Объект.ПрочиеАктивыПассивы.СуммаРегл</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма (регл.)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрочиеАктивыПассивыСуммаРеглКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ПрочиеАктивыПассивыСуммаРеглРасширеннаяПодсказка" id="127"/>
+									<Events>
+										<Event name="OnChange">ПрочиеАктивыПассивыСуммаРеглПриИзменении</Event>
+									</Events>
+								</InputField>
 								<InputField name="ПрочиеАктивыПассивыСумма" id="57">
 									<DataPath>Объект.ПрочиеАктивыПассивы.Сумма</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -406,6 +421,22 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+		</Attribute>
+		<Attribute name="КоэффициентПересчетаИзВалютыРеглВУпр" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент пересчета из валюты регл в упр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<CommandInterface>

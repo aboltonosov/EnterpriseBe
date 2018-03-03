@@ -6,8 +6,6 @@
 		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>Delete</ExcludedCommand>
 		<ExcludedCommand>Reread</ExcludedCommand>
-		<ExcludedCommand>Write</ExcludedCommand>
-		<ExcludedCommand>WriteAndClose</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -21,18 +19,48 @@
 		</InputField>
 		<InputField name="РазмерПФР" id="7">
 			<DataPath>Запись.РазмерПФР</DataPath>
+			<Visible>false</Visible>
 			<ContextMenu name="РазмерПФРКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="РазмерПФРРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<InputField name="РазмерФОМС" id="10">
 			<DataPath>Запись.РазмерФОМС</DataPath>
+			<Visible>false</Visible>
 			<ContextMenu name="РазмерФОМСКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="РазмерФОМСРасширеннаяПодсказка" id="12"/>
 		</InputField>
 		<InputField name="РазмерФСС" id="3">
 			<DataPath>Запись.РазмерФСС</DataPath>
+			<Visible>false</Visible>
 			<ContextMenu name="РазмерФССКонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="РазмерФССРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="РазмерФСЗН" id="13">
+			<DataPath>Запись.РазмерФСЗН</DataPath>
+			<ContextMenu name="РазмерФСЗНКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="РазмерФСЗНРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="РасмерСреднейЗПпоРБ" id="16">
+			<DataPath>Запись.РасмерСреднейЗПпоРБ</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средняя ЗП по РБ</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="РасмерСреднейЗПпоРБКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="РасмерСреднейЗПпоРБРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="РазмерМинимальнойЗПпоРБ" id="19">
+			<DataPath>Запись.РазмерМинимальнойЗПпоРБ</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальная ЗП по РБ</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="РазмерМинимальнойЗПпоРБКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РазмерМинимальнойЗПпоРБРасширеннаяПодсказка" id="21"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

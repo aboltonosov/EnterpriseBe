@@ -26,6 +26,7 @@
 		</InputField>
 		<CheckBoxField name="ОблагаетсяВзносамиЧастично" id="15">
 			<DataPath>Объект.ОблагаетсяВзносамиЧастично</DataPath>
+			<Visible>false</Visible>
 			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ОблагаетсяВзносамиЧастичноКонтекстноеМеню" id="16"/>
@@ -44,6 +45,7 @@
 			<ChildItems>
 				<CheckBoxField name="ВходитВБазуПФР" id="5">
 					<DataPath>Объект.ВходитВБазуПФР</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -58,6 +60,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="ВходитВБазуФСС" id="3">
 					<DataPath>Объект.ВходитВБазуФСС</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -72,6 +75,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="ВходитВБазуФСС_НС" id="18">
 					<DataPath>Объект.ВходитВБазуФСС_НС</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -85,6 +89,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="ВходитВБазуФОМС" id="8">
 					<DataPath>Объект.ВходитВБазуФОМС</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -96,6 +101,76 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВходитВБазуФОМСКонтекстноеМеню" id="9"/>
 					<ExtendedTooltip name="ВходитВБазуФОМСExtendedTooltip" id="14"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуФСЗН" id="30">
+					<DataPath>Объект.ВходитВБазуФСЗН</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуФСЗНКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ВходитВБазуФСЗНРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуБелгосстрах" id="27">
+					<DataPath>Объект.ВходитВБазуБелгосстрах</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагается взносами в Белгосстрах</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуБелгосстрахКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ВходитВБазуБелгосстрахРасширеннаяПодсказка" id="29"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуСС" id="21">
+					<DataPath>Объект.ВходитВБазуСС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагается взносами на Социальное страхование (СС)</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуССКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ВходитВБазуССРасширеннаяПодсказка" id="23"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуПС" id="24">
+					<DataPath>Объект.ВходитВБазуПС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагается взносами на Пенсионное страхование (ПС)</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуПСКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ВходитВБазуПСРасширеннаяПодсказка" id="26"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуППС" id="36">
+					<DataPath>Объект.ВходитВБазуППС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагается взносами на Профессиональное пенсионное страхование (ППС)</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуППСКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ВходитВБазуППСРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуПенсионныйФонд" id="33">
+					<DataPath>Объект.ВходитВБазуПенсионныйФонд</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагается взносами в Пенсионный фонд</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуПенсионныйФондКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ВходитВБазуПенсионныйФондРасширеннаяПодсказка" id="35"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>

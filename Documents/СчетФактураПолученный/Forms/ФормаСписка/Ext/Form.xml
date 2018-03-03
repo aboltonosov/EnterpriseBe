@@ -95,7 +95,7 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаПользовательскихНастроек" id="77">
+		<UsualGroup name="ГруппаПользовательскихНастроек" id="91">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -110,7 +110,7 @@
 			</ToolTip>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="78"/>
+			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="92"/>
 		</UsualGroup>
 		<Table name="Список" id="1">
 			<Representation>List</Representation>
@@ -134,7 +134,6 @@
 			<ShowRoot>true</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
-			<UserSettingsGroup>ГруппаПользовательскихНастроек</UserSettingsGroup>
 			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
@@ -206,8 +205,35 @@
 					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ДатаExtendedTooltip" id="36"/>
 				</LabelField>
+				<LabelField name="Контрагент" id="79">
+					<DataPath>Список.Контрагент</DataPath>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="81"/>
+				</LabelField>
+				<LabelField name="ДокументОснование" id="76">
+					<DataPath>Список.ДокументОснование</DataPath>
+					<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="78"/>
+				</LabelField>
+				<LabelField name="СуммаНДС" id="88">
+					<DataPath>Список.СуммаНДС</DataPath>
+					<ContextMenu name="СуммаНДСКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+				<LabelField name="СуммаДокумента" id="85">
+					<DataPath>Список.СуммаДокумента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма по ЭСЧФ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="87"/>
+				</LabelField>
 				<LabelField name="НомерИсправления" id="12">
 					<DataPath>Список.НомерИсправления</DataPath>
+					<Visible>false</Visible>
 					<Width>10</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерИсправленияКонтекстноеМеню" id="13"/>
@@ -215,6 +241,7 @@
 				</LabelField>
 				<LabelField name="ДатаИсправления" id="14">
 					<DataPath>Список.ДатаИсправления</DataPath>
+					<Visible>false</Visible>
 					<Width>14</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Format>
@@ -235,11 +262,19 @@
 				</LabelField>
 				<LabelField name="ДатаЗаписиКнигиПокупок" id="61">
 					<DataPath>Список.ДатаЗаписиКнигиПокупок</DataPath>
+					<Visible>false</Visible>
 					<ContextMenu name="ДатаЗаписиКнигиПокупокКонтекстноеМеню" id="62"/>
 					<ExtendedTooltip name="ДатаЗаписиКнигиПокупокРасширеннаяПодсказка" id="63"/>
 				</LabelField>
 				<CheckBoxField name="Корректировочный" id="20">
 					<DataPath>Список.Корректировочный</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный/исправленный</v8:content>
+						</v8:item>
+					</Title>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="КорректировочныйКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="КорректировочныйExtendedTooltip" id="40"/>
@@ -249,23 +284,34 @@
 					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="9"/>
 					<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="41"/>
 				</LabelField>
-				<ColumnGroup name="СостояниеЭДО" id="31">
+				<LabelField name="СостояниеВерсииЭД" id="82">
+					<DataPath>Список.СостояниеВерсииЭД</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние ЭДО</v8:content>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СостояниеВерсииЭДКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="СостояниеВерсииЭДРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+				<ColumnGroup name="СостояниеЭД" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние ЭД</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние ЭДО</v8:content>
+							<v8:content>Состояние ЭД</v8:content>
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
 					<ShowInHeader>true</ShowInHeader>
 					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
-					<ExtendedTooltip name="СостояниеЭДОРасширеннаяПодсказка" id="43"/>
+					<ExtendedTooltip name="СостояниеЭДExtendedTooltip" id="43"/>
 					<ChildItems>
 						<LabelField name="ДействияСНашейСтороны" id="27">
 							<DataPath>Список.ДействияСНашейСтороны</DataPath>
@@ -318,16 +364,21 @@
 	ДокументСчетФактураПолученный.Дата КАК ДатаПолучения,
 	ДокументСчетФактураПолученный.ДатаЗаписиКнигиПокупок,
 	ДокументСчетФактураПолученный.КодВидаОперации,
+	СостоянияЭД.СостояниеВерсииЭД,
 	СостоянияЭД.ДействияСНашейСтороны,
 	СостоянияЭД.ДействияСоСтороныДругогоУчастника,
 	ВЫБОР
-		КОГДА ДокументыСОшибкамиПроверкиКонтрагентов.Документ ЕСТЬ NULL 
+		КОГДА ДокументыСОшибкамиПроверкиКонтрагентов.Документ ЕСТЬ NULL
 			ТОГДА 3
 		ИНАЧЕ 0
-	КОНЕЦ КАК СодержитНекоректныхКонтрагентов
+	КОНЕЦ КАК СодержитНекоректныхКонтрагентов,
+	ДокументСчетФактураПолученный.ДокументОснование,
+	ДокументСчетФактураПолученный.Контрагент,
+	ДокументСчетФактураПолученный.СуммаДокумента,
+	ДокументСчетФактураПолученный.СуммаНДС
 ИЗ
 	Документ.СчетФактураПолученный КАК ДокументСчетФактураПолученный
-		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭД КАК СостоянияЭД
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭСЧФ КАК СостоянияЭД
 		ПО (СостоянияЭД.СсылкаНаОбъект = ДокументСчетФактураПолученный.Ссылка)
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДокументыСОшибкамиПроверкиКонтрагентов КАК ДокументыСОшибкамиПроверкиКонтрагентов
 		ПО ДокументСчетФактураПолученный.Ссылка = ДокументыСОшибкамиПроверкиКонтрагентов.Документ

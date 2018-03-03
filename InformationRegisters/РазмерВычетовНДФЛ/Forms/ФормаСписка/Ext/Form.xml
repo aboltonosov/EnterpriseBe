@@ -64,11 +64,6 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-			<CommandSet>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
-			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -113,8 +108,6 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="25"/>
 			</SearchControlAddition>
 			<Events>
-				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
-				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
 				<Event name="BeforeLoadUserSettingsAtServer">СписокПередЗагрузкойПользовательскихНастроекНаСервере</Event>
 				<Event name="OnUpdateUserSettingSetAtServer">СписокПриОбновленииСоставаПользовательскихНастроекНаСервере</Event>
 			</Events>

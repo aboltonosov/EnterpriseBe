@@ -89,7 +89,7 @@
 							<Representation>None</Representation>
 							<ChildItemsWidth>Equal</ChildItemsWidth>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="КолонкиExtendedTooltip" id="176"/>
+							<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="176"/>
 							<ChildItems>
 								<UsualGroup name="ПраваяКолонкаШапка" id="272">
 									<Group>Vertical</Group>
@@ -102,7 +102,7 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="172"/>
+											<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="172"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаНаименование" id="397">
 													<Group>Horizontal</Group>
@@ -115,7 +115,7 @@
 															<DefaultItem>true</DefaultItem>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
-															<ExtendedTooltip name="НаименованиеExtendedTooltip" id="173"/>
+															<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="173"/>
 															<Events>
 																<Event name="OnChange">НаименованиеПриИзменении</Event>
 															</Events>
@@ -131,7 +131,7 @@
 													<DataPath>Объект.Code</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-													<ExtendedTooltip name="КодExtendedTooltip" id="174"/>
+													<ExtendedTooltip name="КодРасширеннаяПодсказка" id="174"/>
 												</InputField>
 												<UsualGroup name="ДатаСозданияСПодсказкой" id="40">
 													<Title>
@@ -142,7 +142,7 @@
 													</Title>
 													<Group>Horizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ДатаСозданияСПодсказкойExtendedTooltip" id="225"/>
+													<ExtendedTooltip name="ДатаСозданияСПодсказкойРасширеннаяПодсказка" id="225"/>
 													<ChildItems>
 														<CheckBoxField name="Сформировано" id="46">
 															<DataPath>Объект.Сформировано</DataPath>
@@ -155,7 +155,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="СформированоКонтекстноеМеню" id="47"/>
-															<ExtendedTooltip name="СформированоExtendedTooltip" id="224"/>
+															<ExtendedTooltip name="СформированоРасширеннаяПодсказка" id="224"/>
 															<Events>
 																<Event name="OnChange">СформированоПриИзменении</Event>
 															</Events>
@@ -173,7 +173,7 @@
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="20"/>
-															<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="226"/>
+															<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="226"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -202,12 +202,13 @@
 													<EditMode>EnterOnInput</EditMode>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ОбособленноеПодразделениеКонтекстноеМеню" id="14"/>
-													<ExtendedTooltip name="ОбособленноеПодразделениеExtendedTooltip" id="179"/>
+													<ExtendedTooltip name="ОбособленноеПодразделениеРасширеннаяПодсказка" id="179"/>
 													<Events>
 														<Event name="OnChange">ОбособленноеПодразделениеПриИзменении</Event>
 													</Events>
 												</CheckBoxField>
 												<UsualGroup name="РКГруппа" id="319">
+													<Visible>false</Visible>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -237,7 +238,7 @@
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<ChoiceButton>false</ChoiceButton>
 															<ContextMenu name="РайонныйКоэффициентРФКонтекстноеМеню" id="38"/>
-															<ExtendedTooltip name="РайонныйКоэффициентРФExtendedTooltip" id="182"/>
+															<ExtendedTooltip name="РайонныйКоэффициентРФРасширеннаяПодсказка" id="182"/>
 															<Events>
 																<Event name="OnChange">РайонныйКоэффициентРФПриИзменении</Event>
 															</Events>
@@ -248,7 +249,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<ChoiceButton>false</ChoiceButton>
 															<ContextMenu name="РайонныйКоэффициентКонтекстноеМеню" id="12"/>
-															<ExtendedTooltip name="РайонныйКоэффициентExtendedTooltip" id="181"/>
+															<ExtendedTooltip name="РайонныйКоэффициентРасширеннаяПодсказка" id="181"/>
 															<Events>
 																<Event name="OnChange">РайонныйКоэффициентПриИзменении</Event>
 															</Events>
@@ -256,6 +257,7 @@
 													</ChildItems>
 												</UsualGroup>
 												<UsualGroup name="ГруппаПроцентЗаОсобыеКлиматическиеУсловия" id="332">
+													<Visible>false</Visible>
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -277,6 +279,7 @@
 												</UsualGroup>
 												<InputField name="ТерриториальныеУсловияПФРТерриториальныеУсловияПФР" id="233">
 													<DataPath>ТерриториальныеУсловияПФР.ТерриториальныеУсловияПФР</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -295,6 +298,7 @@
 													</Events>
 												</InputField>
 												<UsualGroup name="ГруппаТерриториальныеУсловияПФРПериодИстория" id="236">
+													<Visible>false</Visible>
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -333,7 +337,7 @@
 													<Representation>NormalSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ThroughAlign>Use</ThroughAlign>
-													<ExtendedTooltip name="ГруппаРегистрацияВНалоговомОрганеExtendedTooltip" id="244"/>
+													<ExtendedTooltip name="ГруппаРегистрацияВНалоговомОрганеРасширеннаяПодсказка" id="244"/>
 													<ChildItems>
 														<InputField name="ПредставлениеРегистрацииВНалоговомОргане" id="245">
 															<DataPath>ПредставлениеРегистрацииВНалоговомОргане</DataPath>
@@ -343,17 +347,18 @@
 															<VerticalStretch>false</VerticalStretch>
 															<TextColor>style:ПоясняющийТекст</TextColor>
 															<ContextMenu name="ПредставлениеРегистрацииВНалоговомОрганеКонтекстноеМеню" id="246"/>
-															<ExtendedTooltip name="ПредставлениеРегистрацииВНалоговомОрганеExtendedTooltip" id="247"/>
+															<ExtendedTooltip name="ПредставлениеРегистрацииВНалоговомОрганеРасширеннаяПодсказка" id="247"/>
 														</InputField>
 														<Button name="ИзменитьРегистрациюВНалоговомОргане" id="248">
 															<Type>Hyperlink</Type>
 															<CommandName>Form.Command.ИзменитьРегистрациюВНалоговомОргане</CommandName>
-															<ExtendedTooltip name="ИзменитьРегистрациюВНалоговомОрганеExtendedTooltip" id="249"/>
+															<ExtendedTooltip name="ИзменитьРегистрациюВНалоговомОрганеРасширеннаяПодсказка" id="249"/>
 														</Button>
 													</ChildItems>
 												</UsualGroup>
 												<CheckBoxField name="ИмеетНомерТерриториальногоОрганаРосстата" id="264">
 													<DataPath>Объект.ИмеетНомерТерриториальногоОрганаРосстата</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -370,6 +375,7 @@
 												</CheckBoxField>
 												<InputField name="КодОрганаФСГС" id="403">
 													<DataPath>Объект.КодОрганаФСГС</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -389,6 +395,7 @@
 												</InputField>
 												<InputField name="НомерТерриториальногоОрганаРосстата" id="267">
 													<DataPath>Объект.НомерТерриториальногоОрганаРосстата</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -428,7 +435,7 @@
 													<SkipOnInput>true</SkipOnInput>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ВладелецКонтекстноеМеню" id="6"/>
-													<ExtendedTooltip name="ВладелецExtendedTooltip" id="169"/>
+													<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="169"/>
 													<Events>
 														<Event name="OnChange">ВладелецПриИзменении</Event>
 													</Events>
@@ -443,13 +450,14 @@
 													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
-													<ExtendedTooltip name="РодительExtendedTooltip" id="170"/>
+													<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="170"/>
 													<Events>
 														<Event name="OnChange">РодительПриИзменении</Event>
 													</Events>
 												</InputField>
 												<CheckBoxField name="СоответствуетСудамЗарегистрированнымВРоссийскомМеждународномРеестреСудов" id="49">
 													<DataPath>Объект.СоответствуетСудамЗарегистрированнымВРоссийскомМеждународномРеестреСудов</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -459,7 +467,7 @@
 													<TitleLocation>Right</TitleLocation>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="СоответствуетСудамЗарегистрированнымВРоссийскомМеждународномРеестреСудовКонтекстноеМеню" id="50"/>
-													<ExtendedTooltip name="СоответствуетСудамЗарегистрированнымВРоссийскомМеждународномРеестреСудовExtendedTooltip" id="193"/>
+													<ExtendedTooltip name="СоответствуетСудамЗарегистрированнымВРоссийскомМеждународномРеестреСудовРасширеннаяПодсказка" id="193"/>
 												</CheckBoxField>
 											</ChildItems>
 										</UsualGroup>
@@ -474,7 +482,7 @@
 													<DataPath>Объект.ГрафикРаботыСотрудников</DataPath>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ГрафикРаботыСотрудниковКонтекстноеМеню" id="163"/>
-													<ExtendedTooltip name="ГрафикРаботыСотрудниковExtendedTooltip" id="175"/>
+													<ExtendedTooltip name="ГрафикРаботыСотрудниковРасширеннаяПодсказка" id="175"/>
 												</InputField>
 												<UsualGroup name="ГруппаОКВЭД1" id="406">
 													<Title>
@@ -499,11 +507,11 @@
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<Width>10</Width>
 															<ContextMenu name="КодОКВЭДКонтекстноеМеню" id="409"/>
-															<ExtendedTooltip name="КодОКВЭДExtendedTooltip" id="410">
+															<ExtendedTooltip name="КодОКВЭДРасширеннаяПодсказка" id="410">
 																<Title formatted="false">
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
-																		<v8:content>Код по Общероссийскому классификатору видов экономической деятельности (ОКВЭД), редакция 1.</v8:content>
+																		<v8:content>Код по Общегосударственному классификатору видов экономической деятельности (ОКВЭД), редакция 1.</v8:content>
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
@@ -543,7 +551,7 @@
 																<Title formatted="false">
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
-																		<v8:content>Код по Общероссийскому классификатору видов экономической деятельности (ОКВЭД), редакция 2. 
+																		<v8:content>Код по Общегосударственному классификатору видов экономической деятельности (ОКВЭД), редакция 2. 
 Выдается после 11.07.2016 г.</v8:content>
 																	</v8:item>
 																</Title>
@@ -571,7 +579,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="230"/>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="230"/>
 						</UsualGroup>
 						<UsualGroup name="РасформированоГруппа" id="276">
 							<ToolTip>
@@ -597,7 +605,7 @@
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="РасформированоКонтекстноеМеню" id="22"/>
-									<ExtendedTooltip name="РасформированоExtendedTooltip" id="228"/>
+									<ExtendedTooltip name="РасформированоРасширеннаяПодсказка" id="228"/>
 									<Events>
 										<Event name="OnChange">РасформированоПриИзменении</Event>
 									</Events>
@@ -607,7 +615,7 @@
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДатаРасформированияКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="ДатаРасформированияExtendedTooltip" id="229"/>
+									<ExtendedTooltip name="ДатаРасформированияРасширеннаяПодсказка" id="229"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -634,14 +642,14 @@
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
-							<ExtendedTooltip name="ВыплатаЗарплатыГруппаExtendedTooltip" id="194"/>
+							<ExtendedTooltip name="ВыплатаЗарплатыГруппаРасширеннаяПодсказка" id="194"/>
 							<ChildItems>
 								<UsualGroup name="ВидыМестВыплатыЗарплаты" id="70">
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<United>false</United>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ВидыМестВыплатыЗарплатыExtendedTooltip" id="195"/>
+									<ExtendedTooltip name="ВидыМестВыплатыЗарплатыРасширеннаяПодсказка" id="195"/>
 									<ChildItems>
 										<RadioButtonField name="ВидМестаВыплатыЗарплатыКакВсем" id="71">
 											<DataPath>МестоВыплатыЗарплатыПодразделения.Вид</DataPath>
@@ -663,7 +671,7 @@
 												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="ВидМестаВыплатыЗарплатыКакВсемКонтекстноеМеню" id="72"/>
-											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКакВсемExtendedTooltip" id="196"/>
+											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКакВсемРасширеннаяПодсказка" id="196"/>
 											<Events>
 												<Event name="OnChange">ВидМестаВыплатыЗарплатыКакВсемПриИзменении</Event>
 											</Events>
@@ -683,7 +691,7 @@
 												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="ВидМестаВыплатыЗарплатыКассаКонтекстноеМеню" id="74"/>
-											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКассаExtendedTooltip" id="197"/>
+											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКассаРасширеннаяПодсказка" id="197"/>
 											<Events>
 												<Event name="OnChange">ВидМестаВыплатыЗарплатыКассаПриИзменении</Event>
 											</Events>
@@ -703,7 +711,7 @@
 												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="ВидМестаВыплатыЗарплатыЗарплатныйПроектКонтекстноеМеню" id="76"/>
-											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыЗарплатныйПроектExtendedTooltip" id="198"/>
+											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыЗарплатныйПроектРасширеннаяПодсказка" id="198"/>
 											<Events>
 												<Event name="OnChange">ВидМестаВыплатыЗарплатыЗарплатныйПроектПриИзменении</Event>
 											</Events>
@@ -723,7 +731,7 @@
 												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="ВидМестаВыплатыРаздатчикКонтекстноеМеню" id="78"/>
-											<ExtendedTooltip name="ВидМестаВыплатыРаздатчикExtendedTooltip" id="199"/>
+											<ExtendedTooltip name="ВидМестаВыплатыРаздатчикРасширеннаяПодсказка" id="199"/>
 											<Events>
 												<Event name="OnChange">ВидМестаВыплатыРаздатчикПриИзменении</Event>
 											</Events>
@@ -735,15 +743,15 @@
 									<Representation>None</Representation>
 									<United>false</United>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="МестаВыплатыЗарплатыExtendedTooltip" id="200"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыРасширеннаяПодсказка" id="200"/>
 									<ChildItems>
 										<Pages name="МестоВыплатыКакВсем" id="80">
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="МестоВыплатыКакВсемExtendedTooltip" id="201"/>
+											<ExtendedTooltip name="МестоВыплатыКакВсемРасширеннаяПодсказка" id="201"/>
 											<ChildItems>
 												<Page name="МестоВыплатыКакВсемДоступно" id="89">
 													<Group>Horizontal</Group>
-													<ExtendedTooltip name="МестоВыплатыКакВсемДоступноExtendedTooltip" id="202"/>
+													<ExtendedTooltip name="МестоВыплатыКакВсемДоступноРасширеннаяПодсказка" id="202"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыКакВсемДоступноВид" id="156">
 															<DataPath>МестоВыплатыЗарплатыВладельца.Вид</DataPath>
@@ -752,7 +760,7 @@
 															<HorizontalStretch>false</HorizontalStretch>
 															<AutoMarkIncomplete>false</AutoMarkIncomplete>
 															<ContextMenu name="МестоВыплатыКакВсемДоступноВидКонтекстноеМеню" id="157"/>
-															<ExtendedTooltip name="МестоВыплатыКакВсемДоступноВидExtendedTooltip" id="203"/>
+															<ExtendedTooltip name="МестоВыплатыКакВсемДоступноВидРасширеннаяПодсказка" id="203"/>
 														</InputField>
 														<InputField name="МестоВыплатыКакВсемДоступноМесто" id="158">
 															<DataPath>МестоВыплатыЗарплатыВладельца.МестоВыплаты</DataPath>
@@ -760,14 +768,14 @@
 															<TitleLocation>None</TitleLocation>
 															<AutoMarkIncomplete>false</AutoMarkIncomplete>
 															<ContextMenu name="МестоВыплатыКакВсемДоступноМестоКонтекстноеМеню" id="159"/>
-															<ExtendedTooltip name="МестоВыплатыКакВсемДоступноМестоExtendedTooltip" id="204"/>
+															<ExtendedTooltip name="МестоВыплатыКакВсемДоступноМестоРасширеннаяПодсказка" id="204"/>
 														</InputField>
 													</ChildItems>
 												</Page>
 												<Page name="МестоВыплатыКакВсемНеДоступно" id="86">
 													<Group>Horizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноExtendedTooltip" id="205"/>
+													<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноРасширеннаяПодсказка" id="205"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыКакВсемНеДоступноВид" id="154">
 															<DataPath>МестоВыплатыЗарплатыВладельца.Вид</DataPath>
@@ -776,7 +784,7 @@
 															<AutoMarkIncomplete>false</AutoMarkIncomplete>
 															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
 															<ContextMenu name="МестоВыплатыКакВсемНеДоступноВидКонтекстноеМеню" id="155"/>
-															<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноВидExtendedTooltip" id="206"/>
+															<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноВидРасширеннаяПодсказка" id="206"/>
 														</InputField>
 														<InputField name="МестоВыплатыКакВсемНеДоступноМесто" id="160">
 															<DataPath>МестоВыплатыЗарплатыВладельца.МестоВыплаты</DataPath>
@@ -785,7 +793,7 @@
 															<AutoMarkIncomplete>false</AutoMarkIncomplete>
 															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
 															<ContextMenu name="МестоВыплатыКакВсемНеДоступноМестоКонтекстноеМеню" id="161"/>
-															<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноМестоExtendedTooltip" id="207"/>
+															<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноМестоРасширеннаяПодсказка" id="207"/>
 														</InputField>
 													</ChildItems>
 												</Page>
@@ -799,7 +807,7 @@
 												</v8:item>
 											</Title>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="МестоВыплатыКассаExtendedTooltip" id="208"/>
+											<ExtendedTooltip name="МестоВыплатыКассаРасширеннаяПодсказка" id="208"/>
 											<ChildItems>
 												<Page name="МестоВыплатыКассаДоступно" id="120">
 													<Title>
@@ -809,7 +817,7 @@
 														</v8:item>
 													</Title>
 													<Group>Horizontal</Group>
-													<ExtendedTooltip name="МестоВыплатыКассаДоступноExtendedTooltip" id="209"/>
+													<ExtendedTooltip name="МестоВыплатыКассаДоступноРасширеннаяПодсказка" id="209"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыКассаДоступноПоле" id="123">
 															<DataPath>МестоВыплатыЗарплатыПодразделения.МестоВыплаты</DataPath>
@@ -822,7 +830,7 @@
 																</xr:Link>
 															</ChoiceParameterLinks>
 															<ContextMenu name="МестоВыплатыКассаДоступноПолеКонтекстноеМеню" id="124"/>
-															<ExtendedTooltip name="МестоВыплатыКассаДоступноПолеExtendedTooltip" id="210"/>
+															<ExtendedTooltip name="МестоВыплатыКассаДоступноПолеРасширеннаяПодсказка" id="210"/>
 															<Events>
 																<Event name="Opening">МестоВыплатыКассаДоступноПолеОткрытие</Event>
 															</Events>
@@ -837,7 +845,7 @@
 														</v8:item>
 													</Title>
 													<Group>Horizontal</Group>
-													<ExtendedTooltip name="МестоВыплатыКассаНеДоступноExtendedTooltip" id="211"/>
+													<ExtendedTooltip name="МестоВыплатыКассаНеДоступноРасширеннаяПодсказка" id="211"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыКассаНеДоступноПоле" id="128">
 															<DataPath>МестоВыплатыЗарплатыПодразделения.МестоВыплаты</DataPath>
@@ -845,7 +853,7 @@
 															<TitleLocation>None</TitleLocation>
 															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
 															<ContextMenu name="МестоВыплатыКассаНеДоступноПолеКонтекстноеМеню" id="129"/>
-															<ExtendedTooltip name="МестоВыплатыКассаНеДоступноПолеExtendedTooltip" id="212"/>
+															<ExtendedTooltip name="МестоВыплатыКассаНеДоступноПолеРасширеннаяПодсказка" id="212"/>
 															<Events>
 																<Event name="Opening">МестоВыплатыКассаНеДоступноПолеОткрытие</Event>
 															</Events>
@@ -862,7 +870,7 @@
 												</v8:item>
 											</Title>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектExtendedTooltip" id="213"/>
+											<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектРасширеннаяПодсказка" id="213"/>
 											<ChildItems>
 												<Page name="МестоВыплатыЗарплатныйПроектДоступно" id="131">
 													<Title>
@@ -873,7 +881,7 @@
 													</Title>
 													<Group>Horizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноExtendedTooltip" id="214"/>
+													<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноРасширеннаяПодсказка" id="214"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыЗарплатныйПроектДоступноПоле" id="132">
 															<DataPath>МестоВыплатыЗарплатыПодразделения.МестоВыплаты</DataPath>
@@ -886,7 +894,7 @@
 																</xr:Link>
 															</ChoiceParameterLinks>
 															<ContextMenu name="МестоВыплатыЗарплатныйПроектДоступноПолеКонтекстноеМеню" id="133"/>
-															<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноПолеExtendedTooltip" id="215"/>
+															<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноПолеРасширеннаяПодсказка" id="215"/>
 															<Events>
 																<Event name="Opening">МестоВыплатыЗарплатныйПроектДоступноПолеОткрытие</Event>
 															</Events>
@@ -902,7 +910,7 @@
 													</Title>
 													<Group>Horizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноExtendedTooltip" id="216"/>
+													<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноРасширеннаяПодсказка" id="216"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыЗарплатныйПроектНеДоступноПоле" id="137">
 															<DataPath>МестоВыплатыЗарплатыПодразделения.МестоВыплаты</DataPath>
@@ -911,7 +919,7 @@
 															<TitleLocation>None</TitleLocation>
 															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
 															<ContextMenu name="МестоВыплатыЗарплатныйПроектНеДоступноПолеКонтекстноеМеню" id="138"/>
-															<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноПолеExtendedTooltip" id="217"/>
+															<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноПолеРасширеннаяПодсказка" id="217"/>
 															<Events>
 																<Event name="Opening">МестоВыплатыЗарплатныйПроектНеДоступноПолеОткрытие</Event>
 															</Events>
@@ -928,7 +936,7 @@
 												</v8:item>
 											</Title>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="МестоВыплатыРаздатчикExtendedTooltip" id="218"/>
+											<ExtendedTooltip name="МестоВыплатыРаздатчикРасширеннаяПодсказка" id="218"/>
 											<ChildItems>
 												<Page name="МестоВыплатыРаздатчикДоступно" id="142">
 													<Title>
@@ -939,7 +947,7 @@
 													</Title>
 													<Group>Horizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноExtendedTooltip" id="219"/>
+													<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноРасширеннаяПодсказка" id="219"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыРаздатчикДоступноПоле" id="145">
 															<DataPath>МестоВыплатыЗарплатыПодразделения.МестоВыплаты</DataPath>
@@ -962,7 +970,7 @@
 																</app:item>
 															</ChoiceParameters>
 															<ContextMenu name="МестоВыплатыРаздатчикДоступноПолеКонтекстноеМеню" id="146"/>
-															<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноПолеExtendedTooltip" id="220"/>
+															<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноПолеРасширеннаяПодсказка" id="220"/>
 															<Events>
 																<Event name="Opening">МестоВыплатыРаздатчикДоступноПолеОткрытие</Event>
 															</Events>
@@ -978,7 +986,7 @@
 													</Title>
 													<Group>Horizontal</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноExtendedTooltip" id="221"/>
+													<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноРасширеннаяПодсказка" id="221"/>
 													<ChildItems>
 														<InputField name="МестоВыплатыРаздатчикНеДоступноПоле" id="150">
 															<DataPath>МестоВыплатыЗарплатыПодразделения.МестоВыплаты</DataPath>
@@ -986,7 +994,7 @@
 															<TitleLocation>None</TitleLocation>
 															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
 															<ContextMenu name="МестоВыплатыРаздатчикНеДоступноПолеКонтекстноеМеню" id="151"/>
-															<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноПолеExtendedTooltip" id="222"/>
+															<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноПолеРасширеннаяПодсказка" id="222"/>
 															<Events>
 																<Event name="Opening">МестоВыплатыРаздатчикНеДоступноПолеОткрытие</Event>
 															</Events>
@@ -1008,7 +1016,7 @@
 							</Title>
 							<Group>Vertical</Group>
 							<Representation>NormalSeparation</Representation>
-							<ExtendedTooltip name="БухучетГруппаExtendedTooltip" id="187"/>
+							<ExtendedTooltip name="БухучетГруппаРасширеннаяПодсказка" id="187"/>
 							<ChildItems>
 								<UsualGroup name="ДатаБухучетаИстория" id="274">
 									<Title>
@@ -1039,7 +1047,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ChoiceButtonPicture>
 											<ContextMenu name="БухучетЗарплатыПодразделенийПериодСтрокойКонтекстноеМеню" id="58"/>
-											<ExtendedTooltip name="БухучетЗарплатыПодразделенийПериодСтрокойExtendedTooltip" id="190"/>
+											<ExtendedTooltip name="БухучетЗарплатыПодразделенийПериодСтрокойРасширеннаяПодсказка" id="190"/>
 											<Events>
 												<Event name="OnChange">БухучетЗарплатыПодразделенийПериодСтрокойПриИзменении</Event>
 												<Event name="AutoComplete">БухучетЗарплатыПодразделенийПериодСтрокойАвтоПодбор</Event>
@@ -1052,7 +1060,7 @@
 											<Type>Hyperlink</Type>
 											<Height>1</Height>
 											<CommandName>Form.Command.БухучетЗарплатыПодразделенияИстория</CommandName>
-											<ExtendedTooltip name="БухучетЗарплатыПодразделенияИсторияExtendedTooltip" id="191"/>
+											<ExtendedTooltip name="БухучетЗарплатыПодразделенияИсторияРасширеннаяПодсказка" id="191"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -1293,7 +1301,7 @@
 														</v8:item>
 													</InputHint>
 													<ContextMenu name="СпособОтраженияЗарплатыВБухучетеКонтекстноеМеню" id="53"/>
-													<ExtendedTooltip name="СпособОтраженияЗарплатыВБухучетеExtendedTooltip" id="188"/>
+													<ExtendedTooltip name="СпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка" id="188"/>
 													<Events>
 														<Event name="OnChange">СпособОтраженияЗарплатыВБухучетеПриИзменении</Event>
 													</Events>
@@ -1313,7 +1321,7 @@
 														</v8:item>
 													</InputHint>
 													<ContextMenu name="ОтношениеКЕНВДКонтекстноеМеню" id="55"/>
-													<ExtendedTooltip name="ОтношениеКЕНВДExtendedTooltip" id="189"/>
+													<ExtendedTooltip name="ОтношениеКЕНВДРасширеннаяПодсказка" id="189"/>
 													<Events>
 														<Event name="OnChange">ОтношениеКЕНВДПриИзменении</Event>
 													</Events>

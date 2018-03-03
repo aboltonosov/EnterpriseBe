@@ -139,6 +139,7 @@
 				</LabelField>
 				<CheckBoxField name="ВходитВБазуПФР" id="8">
 					<DataPath>Список.ВходитВБазуПФР</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -151,6 +152,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="ВходитВБазуФСС" id="12">
 					<DataPath>Список.ВходитВБазуФСС</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -163,6 +165,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="ВходитВБазуФСС_НС" id="46">
 					<DataPath>Список.ВходитВБазуФСС_НС</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -175,6 +178,7 @@
 				</CheckBoxField>
 				<CheckBoxField name="ВходитВБазуФОМС" id="10">
 					<DataPath>Список.ВходитВБазуФОМС</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -184,6 +188,48 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВходитВБазуФОМСКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ВходитВБазуФОМСExtendedTooltip" id="18"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуФСЗН" id="49">
+					<DataPath>Список.ВходитВБазуФСЗН</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуФСЗНКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ВходитВБазуФСЗНРасширеннаяПодсказка" id="51"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуБелгосстрах" id="52">
+					<DataPath>Список.ВходитВБазуБелгосстрах</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуБелгосстрахКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ВходитВБазуБелгосстрахРасширеннаяПодсказка" id="54"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуСС" id="55">
+					<DataPath>Список.ВходитВБазуСС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуССКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ВходитВБазуССРасширеннаяПодсказка" id="57"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуПС" id="58">
+					<DataPath>Список.ВходитВБазуПС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуПСКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ВходитВБазуПСРасширеннаяПодсказка" id="60"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуПенсионныйФонд" id="61">
+					<DataPath>Список.ВходитВБазуПенсионныйФонд</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагается взносами в Пенсионный фонд</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуПенсионныйФондКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ВходитВБазуПенсионныйФондРасширеннаяПодсказка" id="63"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВходитВБазуППС" id="64">
+					<DataPath>Список.ВходитВБазуППС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВходитВБазуППСКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ВходитВБазуППСРасширеннаяПодсказка" id="66"/>
 				</CheckBoxField>
 			</ChildItems>
 		</Table>

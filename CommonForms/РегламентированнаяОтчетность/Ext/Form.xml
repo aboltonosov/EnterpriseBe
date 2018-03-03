@@ -112,6 +112,7 @@
 							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ГиперссылкаУведомления" id="1979">
+							<Visible>false</Visible>
 							<TextColor>#000000</TextColor>
 							<Title formatted="false">
 								<v8:item>
@@ -128,6 +129,7 @@
 							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ГиперссылкаПисьма" id="1982">
+							<Visible>false</Visible>
 							<TextColor>#000000</TextColor>
 							<Title formatted="false">
 								<v8:item>
@@ -144,6 +146,7 @@
 							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ГиперссылкаСверки" id="1985">
+							<Visible>false</Visible>
 							<TextColor>#000000</TextColor>
 							<Title formatted="false">
 								<v8:item>
@@ -160,6 +163,7 @@
 							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ГиперссылкаЕГРЮЛ" id="1988">
+							<Visible>false</Visible>
 							<TextColor>#000000</TextColor>
 							<Title formatted="false">
 								<v8:item>
@@ -176,6 +180,7 @@
 							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ГиперссылкаВходящие" id="1991">
+							<Visible>false</Visible>
 							<TextColor>#000000</TextColor>
 							<Title formatted="false">
 								<v8:item>
@@ -192,6 +197,7 @@
 							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ГиперссылкаСервисы" id="1994">
+							<Visible>false</Visible>
 							<TextColor>#000000</TextColor>
 							<Title formatted="false">
 								<v8:item>
@@ -1012,6 +1018,7 @@
 											</Popup>
 											<Button name="ОтчетыОтправитьОтчет" id="1144">
 												<Type>CommandBarButton</Type>
+												<Visible>false</Visible>
 												<CommandName>Form.Command.ОтправитьОтчет</CommandName>
 												<ExtendedTooltip name="ОтчетыОтправитьОтчетРасширеннаяПодсказка" id="1145"/>
 											</Button>
@@ -4870,6 +4877,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаДвухмерногоШтрихкода" id="504">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -4911,6 +4919,7 @@
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаОтчетовВРосстат" id="508">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -4966,6 +4975,7 @@
 									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="1931"/>
 								</PictureDecoration>
 								<UsualGroup name="НастройкиЭлектронногоДокументооборота" id="500">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -5934,11 +5944,6 @@
 							</dcsset:filter>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:use>false</dcscor:use>
-									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string"> </dcscor:value>
-								</dcscor:item>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Отображать</dcscor:parameter>
 									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 								</dcscor:item>
@@ -6175,7 +6180,7 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string"> </dcscor:value>
+									<dcscor:value xsi:type="xs:string"/>
 								</dcscor:item>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:use>false</dcscor:use>
@@ -6817,7 +6822,7 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string"> </dcscor:value>
+									<dcscor:value xsi:type="xs:string"/>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>

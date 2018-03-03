@@ -20,6 +20,62 @@
 			<DefaultItem>true</DefaultItem>
 			<Wrap>false</Wrap>
 			<OpenButton>false</OpenButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ПаспортРФ</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Свидетельство о рождении</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.СвидетельствоОРождении</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.39d3af5c-72aa-4871-8874-c5bfc986798d</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.a1a0b971-cf80-453f-b93d-539b8be305f4</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.39d3af5c-72aa-4871-8874-c5bfc986798d</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.37a374e7-cd6e-4826-b564-9a4005c4dd7e</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
 			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="ВидДокументаExtendedTooltip" id="28"/>
 			<Events>
@@ -39,6 +95,7 @@
 					<v8:content>Серия и номер</v8:content>
 				</v8:item>
 			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -46,6 +103,7 @@
 			<ChildItems>
 				<InputField name="Серия" id="7">
 					<DataPath>Запись.Серия</DataPath>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<Wrap>false</Wrap>
 					<ContextMenu name="СерияКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="СерияExtendedTooltip" id="30"/>

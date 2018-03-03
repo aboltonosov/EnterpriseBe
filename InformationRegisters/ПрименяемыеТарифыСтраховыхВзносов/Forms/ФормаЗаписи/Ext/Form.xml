@@ -22,7 +22,62 @@
 		</InputField>
 		<InputField name="ВидТарифа" id="5">
 			<DataPath>Запись.ВидТарифа</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
 			<QuickChoice>true</QuickChoice>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Коммерч. орг., зарегистр. на террит. юго-вост. региона Могилевской обл. с 01.07.2015 по 31.12.2020</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыТарифовСтраховыхВзносов.КоммОргМогилевскОбл</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Организации, занятые производством с.-х. продукции</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыТарифовСтраховыхВзносов.СельХозПроизводители</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Организации, применяющие основной тариф обязательных страховых взносов</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыТарифовСтраховыхВзносов.ОбщийНалоговыйРежим</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Организации, применяющие труд инвалидов</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыТарифовСтраховыхВзносов.ОрганизацияИнвалидов</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
 			<ContextMenu name="ВидТарифаКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="ВидТарифаExtendedTooltip" id="9"/>
 		</InputField>

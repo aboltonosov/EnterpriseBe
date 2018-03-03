@@ -274,6 +274,57 @@
 									<ContextMenu name="СписокНомерКонтекстноеМеню" id="26"/>
 									<ExtendedTooltip name="СписокНомерРасширеннаяПодсказка" id="27"/>
 								</LabelField>
+								<LabelField name="СписокНомерЭД" id="255">
+									<DataPath>Список.НомерЭД</DataPath>
+									<Width>22</Width>
+									<ContextMenu name="СписокНомерЭДКонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="СписокНомерЭДРасширеннаяПодсказка" id="257"/>
+								</LabelField>
+								<ColumnGroup name="ГруппаБСО" id="258">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа БСО</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа БСО</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ГруппаБСОРасширеннаяПодсказка" id="259"/>
+									<ChildItems>
+										<LabelField name="СписокСерияИсходящегоДокумента" id="260">
+											<DataPath>Список.СерияИсходящегоДокумента</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Серия</v8:content>
+												</v8:item>
+											</Title>
+											<Width>2</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СписокСерияИсходящегоДокументаКонтекстноеМеню" id="261"/>
+											<ExtendedTooltip name="СписокСерияИсходящегоДокументаРасширеннаяПодсказка" id="262"/>
+										</LabelField>
+										<LabelField name="СписокНомерИсходящегоДокумента" id="263">
+											<DataPath>Список.НомерИсходящегоДокумента</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>номер документа</v8:content>
+												</v8:item>
+											</Title>
+											<Width>10</Width>
+											<ContextMenu name="СписокНомерИсходящегоДокументаКонтекстноеМеню" id="264"/>
+											<ExtendedTooltip name="СписокНомерИсходящегоДокументаРасширеннаяПодсказка" id="265"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
 								<LabelField name="СписокДата" id="-22">
 									<DataPath>Список.Дата</DataPath>
 									<DefaultItem>true</DefaultItem>
@@ -283,6 +334,7 @@
 								</LabelField>
 								<LabelField name="СписокНомерИсправления" id="28">
 									<DataPath>Список.НомерИсправления</DataPath>
+									<Visible>false</Visible>
 									<Width>10</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="СписокНомерИсправленияКонтекстноеМеню" id="29"/>
@@ -290,6 +342,7 @@
 								</LabelField>
 								<LabelField name="СписокДатаИсправления" id="31">
 									<DataPath>Список.ДатаИсправления</DataPath>
+									<Visible>false</Visible>
 									<Width>14</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="СписокДатаИсправленияКонтекстноеМеню" id="32"/>
@@ -302,8 +355,31 @@
 									<ContextMenu name="СписокДатаВыставленияКонтекстноеМеню" id="35"/>
 									<ExtendedTooltip name="СписокДатаВыставленияРасширеннаяПодсказка" id="36"/>
 								</LabelField>
+								<LabelField name="СписокСуммаНДС" id="269">
+									<DataPath>Список.СуммаНДС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>НДС</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокСуммаНДСКонтекстноеМеню" id="270"/>
+									<ExtendedTooltip name="СписокСуммаНДСРасширеннаяПодсказка" id="271"/>
+								</LabelField>
+								<LabelField name="СписокСуммаДокумента" id="272">
+									<DataPath>Список.СуммаДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокСуммаДокументаКонтекстноеМеню" id="273"/>
+									<ExtendedTooltip name="СписокСуммаДокументаРасширеннаяПодсказка" id="274"/>
+								</LabelField>
 								<CheckBoxField name="СписокКорректировочный" id="37">
 									<DataPath>Список.Корректировочный</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -329,6 +405,11 @@
 									<DataPath>Список.Контрагент</DataPath>
 									<ContextMenu name="СписокКонтрагентКонтекстноеМеню" id="44"/>
 									<ExtendedTooltip name="СписокКонтрагентРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="СписокСтатус" id="266">
+									<DataPath>Список.Статус</DataPath>
+									<ContextMenu name="СписокСтатусКонтекстноеМеню" id="267"/>
+									<ExtendedTooltip name="СписокСтатусРасширеннаяПодсказка" id="268"/>
 								</LabelField>
 								<LabelField name="СписокДокументОснование" id="46">
 									<DataPath>Список.ДокументОснование</DataPath>
@@ -588,6 +669,48 @@
 									<ContextMenu name="СписокСчетовФактурыНаОформлениеНомерКонтекстноеМеню" id="200"/>
 									<ExtendedTooltip name="СписокСчетовФактурыНаОформлениеНомерРасширеннаяПодсказка" id="201"/>
 								</LabelField>
+								<ColumnGroup name="СписокСчетовФактурыНаОформлениеГруппаБСО" id="275">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список счетов фактуры на оформление группа БСО</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список счетов фактуры на оформление группа БСО</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокСчетовФактурыНаОформлениеГруппаБСОРасширеннаяПодсказка" id="276"/>
+									<ChildItems>
+										<LabelField name="СписокСчетовФактурыНаОформлениеСерияИсходящегоДокумента" id="277">
+											<DataPath>СписокСчетовФактурыНаОформление.СерияИсходящегоДокумента</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Серия</v8:content>
+												</v8:item>
+											</Title>
+											<Width>2</Width>
+											<ContextMenu name="СписокСчетовФактурыНаОформлениеСерияИсходящегоДокументаКонтекстноеМеню" id="278"/>
+											<ExtendedTooltip name="СписокСчетовФактурыНаОформлениеСерияИсходящегоДокументаРасширеннаяПодсказка" id="279"/>
+										</LabelField>
+										<LabelField name="СписокСчетовФактурыНаОформлениеНомерИсходящегоДокумента" id="280">
+											<DataPath>СписокСчетовФактурыНаОформление.НомерИсходящегоДокумента</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>номер документа</v8:content>
+												</v8:item>
+											</Title>
+											<Width>10</Width>
+											<ContextMenu name="СписокСчетовФактурыНаОформлениеНомерИсходящегоДокументаКонтекстноеМеню" id="281"/>
+											<ExtendedTooltip name="СписокСчетовФактурыНаОформлениеНомерИсходящегоДокументаРасширеннаяПодсказка" id="282"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
 								<LabelField name="СписокСчетовФактурыНаОформлениеДатаПродажи" id="175">
 									<DataPath>СписокСчетовФактурыНаОформление.ДатаПродажи</DataPath>
 									<Title>
@@ -765,8 +888,14 @@
 	СчетФактураВыданный.СтрокаПлатежноРасчетныеДокументы,
 	СчетФактураВыданный.МоментВремени,
 	СчетФактураВыданный.ДатаВыставления,
+	СчетФактураВыданный.НомерИсходящегоДокумента,
+	СчетФактураВыданный.СерияИсходящегоДокумента,
+	СчетФактураВыданный.СуммаНДС,
+	СчетФактураВыданный.СуммаДокумента,
 	СостоянияЭД.ДействияСНашейСтороны,
 	СостоянияЭД.ДействияСоСтороныДругогоУчастника,
+	СостоянияЭД.НомерЭД КАК НомерЭД,
+	СостоянияЭД.СостояниеВерсииЭД КАК Статус,
 	ВЫБОР
 		КОГДА ДокументыСОшибкамиПроверкиКонтрагентов.Документ ЕСТЬ NULL 
 			ТОГДА ЛОЖЬ
@@ -777,7 +906,7 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК ИсходныйСчетФактура
 		ПО СчетФактураВыданный.Исправление
 			И ИсходныйСчетФактура.Ссылка = СчетФактураВыданный.СчетФактураОснование
-		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭД КАК СостоянияЭД
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭСЧФ КАК СостоянияЭД
 		ПО (СостоянияЭД.СсылкаНаОбъект = СчетФактураВыданный.Ссылка)
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДокументыСОшибкамиПроверкиКонтрагентов КАК ДокументыСОшибкамиПроверкиКонтрагентов
 		ПО СчетФактураВыданный.Ссылка = ДокументыСОшибкамиПроверкиКонтрагентов.Документ
@@ -895,6 +1024,8 @@
 				<QueryText>ВЫБРАТЬ
 	НЕОПРЕДЕЛЕНО КАК Ссылка,
 	"" КАК Номер,
+	"" КАК НомерИсходящегоДокумента,
+	"" КАК СерияИсходящегоДокумента,
 	ДАТАВРЕМЯ(1,1,1) КАК ДатаПродажи,
 	ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка) КАК Организация,
 	ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка) КАК Валюта,

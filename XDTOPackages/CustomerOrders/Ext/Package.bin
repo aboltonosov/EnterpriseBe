@@ -12,6 +12,10 @@
 	</valueType>
 	<valueType name="EnumRef.СтавкиНДС" base="xs:string" variety="Atomic">
 		<enumeration/>
+		<enumeration xsi:type="xs:string">НДС25</enumeration>
+		<enumeration xsi:type="xs:string">НДС25_125</enumeration>
+		<enumeration xsi:type="xs:string">НДС20</enumeration>
+		<enumeration xsi:type="xs:string">НДС20_120</enumeration>
 		<enumeration>НДС18</enumeration>
 		<enumeration>НДС18_118</enumeration>
 		<enumeration>НДС10</enumeration>
@@ -51,7 +55,7 @@
 		<enumeration>ЮрЛицоНеРезидент</enumeration>
 		<enumeration>ИндивидуальныйПредприниматель</enumeration>
 	</valueType>
-	<valueType xmlns:d2p1="http://www.1c.ru/CustomerOrders/Exchange" name="ДокументОснованиеЗаявка" variety="Union" memberTypes="d2p1:DocumentRef.ЗаказКлиента d2p1:DocumentRef.ЗаданиеТорговомуПредставителю"/>
+	<valueType name="ДокументОснованиеЗаявка" variety="Union" memberTypes="{http://www.1c.ru/CustomerOrders/Exchange}DocumentRef.ЗаказКлиента {http://www.1c.ru/CustomerOrders/Exchange}DocumentRef.ЗаданиеТорговомуПредставителю"/>
 	<objectType name="CatalogObject.Валюты">
 		<property name="ref" type="xs:string"/>
 		<property name="DeletionMark" type="xs:boolean"/>

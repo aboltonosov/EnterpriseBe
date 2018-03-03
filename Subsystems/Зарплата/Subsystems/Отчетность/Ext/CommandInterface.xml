@@ -3,7 +3,7 @@
 	<CommandsVisibility>
 		<Command name="Document.СправкиНДФЛДляПередачиВНалоговыйОрган.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ПособияВыплачиваемыеФСС.Command.ПособияВыплачиваемыеФСС">
@@ -41,6 +41,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DocumentJournal.ДобровольноеПенсионноеСтрахованиеПФР.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.РеестрДанныхЭЛНЗаполняемыхРаботодателем.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -52,6 +57,11 @@
 			</Visibility>
 		</Command>
 		<Command name="Document.ПачкаДокументовДСВ_1.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПачкаДокументовСПВ_2.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -101,9 +111,19 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="CommonCommand.СообщенияВКонтролирующиеОрганы">
+		<Command name="CommonCommand.РегламентированныеОтчеты">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ОткрытьФормуУправлениеОтчетностью">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.СообщенияВКонтролирующиеОрганы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="0:96e391ed-01d0-4ca0-a8e8-216647448ddb">
@@ -118,12 +138,7 @@
 		</Command>
 		<Command name="CommonCommand.КвартальнаяОтчетностьВПФР">
 			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="0:a7528b8f-1eb5-42d2-83f8-e481067196a1">
-			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>
@@ -140,6 +155,10 @@
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="CommonCommand.РегламентированныеОтчеты">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="0:96e391ed-01d0-4ca0-a8e8-216647448ddb">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 			<Placement>Auto</Placement>
@@ -150,10 +169,6 @@
 		</Command>
 		<Command name="CommonCommand.КвартальнаяОтчетностьВПФР">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="0:a7528b8f-1eb5-42d2-83f8-e481067196a1">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
@@ -236,6 +251,9 @@
 		<Command name="Document.РеестрСЗВ_6_2.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
+		<Command name="CommonCommand.РегламентированныеОтчеты">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
 		<Command name="CommonCommand.СообщенияВКонтролирующиеОрганы">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 		</Command>
@@ -247,12 +265,6 @@
 		</Command>
 		<Command name="CommonCommand.КвартальнаяОтчетностьВПФР">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-		</Command>
-		<Command name="0:a7528b8f-1eb5-42d2-83f8-e481067196a1">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="0:1fb8c695-b64d-4dd6-ac9f-22623da506da">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 	</CommandsOrder>
 	<SubsystemsOrder>

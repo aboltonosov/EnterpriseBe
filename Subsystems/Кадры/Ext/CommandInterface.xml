@@ -1,87 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<CommandsVisibility>
-		<Command name="CommonCommand.ДополнительныеОтчетыКадры">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.ПриемНаРаботу.StandardCommand.Create">
+		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.Сотрудники.StandardCommand.Create">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.Увольнение.StandardCommand.Create">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.Премия.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DocumentJournal.РаботаСверхурочно.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.РаботаСверхурочно.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.РегистрацияПереработок.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DocumentJournal.АнкетыПерсонифицированногоУчета.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.Файлы.Command.Файлы">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.Файлы.Command.ВсеФайлы">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="Catalog.Файлы.Command.РедактируемыеФайлы">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DocumentJournal.СогласияНаОбработкуПерсональныхДанных.StandardCommand.OpenList">
+		<Command name="DocumentJournal.КадровыеДокументы.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -226,70 +151,98 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
+		<Command name="Document.Премия.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DocumentJournal.КадровыеДокументы.StandardCommand.OpenList">
+		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.РаботаСверхурочно.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РаботаСверхурочно.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РегистрацияПереработок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.АнкетыПерсонифицированногоУчета.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Файлы.Command.Файлы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Файлы.Command.ВсеФайлы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Файлы.Command.РедактируемыеФайлы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.СогласияНаОбработкуПерсональныхДанных.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.НачальнаяШтатнаяРасстановка.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПриемНаРаботу.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Сотрудники.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Увольнение.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыКадры">
+			<Visibility>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
-		<Command name="Document.Премия.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="DocumentJournal.РаботаСверхурочно.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Document.РаботаСверхурочно.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Document.РегистрацияПереработок.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="DocumentJournal.АнкетыПерсонифицированногоУчета.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Catalog.Файлы.Command.Файлы">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Catalog.Файлы.Command.ВсеФайлы">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="Catalog.Файлы.Command.РедактируемыеФайлы">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
-		<Command name="DocumentJournal.СогласияНаОбработкуПерсональныхДанных.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
 		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
@@ -298,175 +251,72 @@
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
-	</CommandsPlacement>
-	<CommandsOrder>
-		<Command name="DataProcessor.ОбъединениеКарточекСЛичнымиДанными.StandardCommand.Open">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="CommonCommand.ДополнительныеОбработкиКадры">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="Document.ПриемНаРаботу.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.КадровыйПеревод.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.БольничныйЛист.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ОтпускПоУходуЗаРебенком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПеремещениеВДругоеПодразделение.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Catalog.Сотрудники.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Catalog.ФизическиеЛица.StandardCommand.CreateFolder">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Catalog.ФизическиеЛица.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.Увольнение.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.Командировка.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ОплатаПоСреднемуЗаработку.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ОтпускБезСохраненияОплаты.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.Отпуск.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПрогулНеявка.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ВозвратИзОтпускаПоУходуЗаРебенком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПростойСотрудников.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ОтменаДоплатыДоСреднегоЗаработка.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПриказНаДоплатуДоСреднегоЗаработка.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.РаботаСверхурочно.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.Совмещение.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.КомандировкиСотрудников.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ОтпускаСотрудников.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ГрафикОтпусков.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПереносОтпуска.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.Премия.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.НазначениеПодработки.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПрекращениеПодработки.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПриемНаРаботуСписком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ПеремещениеМеждуТерриториями.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.КадровыйПереводСписком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.УвольнениеСписком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ИзменениеГрафикаРаботыСписком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.Отгул.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.РегистрацияПереработок.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ВосстановлениеВДолжности.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ОтпускБезСохраненияОплатыСписком.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Document.ВводНачальныхОстатковОтпусков.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
 		<Command name="Document.Премия.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DocumentJournal.РаботаСверхурочно.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Document.РаботаСверхурочно.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Document.РегистрацияПереработок.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DocumentJournal.АнкетыПерсонифицированногоУчета.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Catalog.Файлы.Command.Файлы">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Catalog.Файлы.Command.ВсеФайлы">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Catalog.Файлы.Command.РедактируемыеФайлы">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DocumentJournal.СогласияНаОбработкуПерсональныхДанных.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.НачальнаяШтатнаяРасстановка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.РаботаСКадрами">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.КадровыеДокументы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
 		<Command name="CommonCommand.ПанельОтчетовКадры">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
@@ -597,14 +447,179 @@
 		<Command name="Document.ВводНачальныхОстатковОтпусков.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="CommonCommand.РаботаСКадрами">
-			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		<Command name="Document.Премия.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 		</Command>
-		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 		</Command>
-		<Command name="DocumentJournal.КадровыеДокументы.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		<Command name="DocumentJournal.РаботаСверхурочно.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.РаботаСверхурочно.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.РегистрацияПереработок.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.АнкетыПерсонифицированногоУчета.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.Файлы.Command.Файлы">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.Файлы.Command.ВсеФайлы">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.Файлы.Command.РедактируемыеФайлы">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.СогласияНаОбработкуПерсональныхДанных.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.НачальнаяШтатнаяРасстановка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.ПриемНаРаботу.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КадровыйПеревод.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.БольничныйЛист.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ОтпускПоУходуЗаРебенком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПеремещениеВДругоеПодразделение.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Сотрудники.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПереводКДругомуРаботодателю.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.Увольнение.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.Командировка.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ОплатаПоСреднемуЗаработку.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ОтпускБезСохраненияОплаты.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.Отпуск.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПрогулНеявка.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ВозвратИзОтпускаПоУходуЗаРебенком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПростойСотрудников.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ОтменаДоплатыДоСреднегоЗаработка.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПриказНаДоплатуДоСреднегоЗаработка.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РаботаВВыходныеИПраздничныеДни.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РаботаСверхурочно.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.Совмещение.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КомандировкиСотрудников.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ОтпускаСотрудников.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ГрафикОтпусков.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПереносОтпуска.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.Премия.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.НазначениеПодработки.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПрекращениеПодработки.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПродлениеКонтрактаДоговора.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПриемНаРаботуСписком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПеремещениеМеждуТерриториями.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КадровыйПереводСписком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.УвольнениеСписком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ИзменениеГрафикаРаботыСписком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.Отгул.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РегистрацияПереработок.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ВосстановлениеВДолжности.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ОтпускБезСохраненияОплатыСписком.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ВводНачальныхОстатковОтпусков.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.НачальнаяШтатнаяРасстановка.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбъединениеКарточекСЛичнымиДанными.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиКадры">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 	</CommandsOrder>
 	<SubsystemsOrder>
@@ -613,12 +628,13 @@
 		<Subsystem>Subsystem.Кадры.Subsystem.АнализВоинскогоУчета</Subsystem>
 		<Subsystem>Subsystem.Кадры.Subsystem.ОтчетностьДляВоенкоматов</Subsystem>
 		<Subsystem>Subsystem.Кадры.Subsystem.ОтчетностьДляВоенкоматовБронирование</Subsystem>
+		<Subsystem>Subsystem.Кадры.Subsystem.ТарифнаяСетка</Subsystem>
 	</SubsystemsOrder>
 	<GroupsOrder>
-		<Group>ActionsPanelTools</Group>
-		<Group>ActionsPanelCreate</Group>
-		<Group>NavigationPanelSeeAlso</Group>
-		<Group>NavigationPanelOrdinary</Group>
 		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
 	</GroupsOrder>
 </CommandInterface>

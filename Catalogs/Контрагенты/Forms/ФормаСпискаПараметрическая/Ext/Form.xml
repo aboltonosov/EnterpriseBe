@@ -5,7 +5,7 @@
 			<Button name="ФормаИзменитьВыделенные" id="26">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
-				<ExtendedTooltip name="ФормаИзменитьВыделенныеExtendedTooltip" id="28"/>
+				<ExtendedTooltip name="ФормаИзменитьВыделенныеРасширеннаяПодсказка" id="28"/>
 			</Button>
 			<Popup name="ПодменюПечать" id="52">
 				<Title>
@@ -77,12 +77,12 @@
 					<Button name="СписокКонтекстноеМенюИзменитьВыделенные" id="27">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
-						<ExtendedTooltip name="СписокКонтекстноеМенюИзменитьВыделенныеExtendedTooltip" id="29"/>
+						<ExtendedTooltip name="СписокКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="29"/>
 					</Button>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="30"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="30"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="40">
 				<AdditionSource>
 					<Item>Список</Item>
@@ -137,13 +137,13 @@
 					<DefaultItem>true</DefaultItem>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="31"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="31"/>
 				</InputField>
 				<InputField name="НаименованиеПолное" id="6">
 					<DataPath>Список.НаименованиеПолное</DataPath>
 					<Wrap>false</Wrap>
 					<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="НаименованиеПолноеExtendedTooltip" id="32"/>
+					<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="32"/>
 				</InputField>
 				<InputField name="ВидКонтрагента" id="8">
 					<DataPath>Список.ВидКонтрагента</DataPath>
@@ -153,18 +153,13 @@
 				</InputField>
 				<InputField name="ИНН" id="10">
 					<DataPath>Список.ИНН</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИНН</v8:content>
-						</v8:item>
-					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ИННКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ИННExtendedTooltip" id="34"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="34"/>
 				</InputField>
 				<InputField name="КПП" id="12">
 					<DataPath>Список.КПП</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -173,7 +168,7 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="КППКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="КППExtendedTooltip" id="35"/>
+					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="35"/>
 				</InputField>
 				<InputField name="КодПоОКПО" id="14">
 					<DataPath>Список.КодПоОКПО</DataPath>
@@ -185,7 +180,7 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="КодПоОКПОКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="КодПоОКПОExtendedTooltip" id="36"/>
+					<ExtendedTooltip name="КодПоОКПОРасширеннаяПодсказка" id="36"/>
 				</InputField>
 				<LabelField name="ГоловнойКонтрагент" id="49">
 					<DataPath>Список.ГоловнойКонтрагент</DataPath>
@@ -202,7 +197,7 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ПартнерКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПартнерExtendedTooltip" id="37"/>
+					<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="37"/>
 				</InputField>
 				<PictureField name="ЭДО" id="83">
 					<DataPath>Список.ЭДО</DataPath>
@@ -225,7 +220,7 @@
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="25"/>
-					<ExtendedTooltip name="СсылкаExtendedTooltip" id="38"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="38"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -240,7 +235,7 @@
 			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ПоказыватьГрупповыеКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="ПоказыватьГрупповыеExtendedTooltip" id="39"/>
+			<ExtendedTooltip name="ПоказыватьГрупповыеРасширеннаяПодсказка" id="39"/>
 			<Events>
 				<Event name="OnChange">ПоказыватьГрупповыеПриИзменении</Event>
 			</Events>

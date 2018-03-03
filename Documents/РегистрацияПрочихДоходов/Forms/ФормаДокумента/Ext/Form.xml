@@ -72,7 +72,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ПериодРегистрацииКонтекстноеМеню" id="138"/>
-							<ExtendedTooltip name="ПериодРегистрацииExtendedTooltip" id="139"/>
+							<ExtendedTooltip name="ПериодРегистрацииРасширеннаяПодсказка" id="139"/>
 							<Events>
 								<Event name="OnChange">ПериодРегистрацииПриИзменении</Event>
 								<Event name="AutoComplete">ПериодРегистрацииАвтоПодбор</Event>
@@ -85,7 +85,7 @@
 							<DataPath>Объект.Организация</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
-							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="55"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="55"/>
 							<Events>
 								<Event name="OnChange">ОрганизацияПриИзменении</Event>
 							</Events>
@@ -100,7 +100,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСведенияДоходExtendedTooltip" id="62"/>
+							<ExtendedTooltip name="ГруппаСведенияДоходРасширеннаяПодсказка" id="62"/>
 							<ChildItems>
 								<InputField name="ВидПрочегоДохода" id="7">
 									<DataPath>Объект.ВидПрочегоДохода</DataPath>
@@ -112,7 +112,7 @@
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ВидПрочегоДоходаКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="ВидПрочегоДоходаExtendedTooltip" id="63"/>
+									<ExtendedTooltip name="ВидПрочегоДоходаРасширеннаяПодсказка" id="63"/>
 									<Events>
 										<Event name="OnChange">ВидПрочегоДоходаПриИзменении</Event>
 									</Events>
@@ -121,7 +121,7 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаНДФЛExtendedTooltip" id="64"/>
+									<ExtendedTooltip name="ГруппаНДФЛРасширеннаяПодсказка" id="64"/>
 									<ChildItems>
 										<InputField name="КодДоходаНДФЛ" id="9">
 											<DataPath>Объект.ВидПрочегоДохода.КодДоходаНДФЛ</DataPath>
@@ -129,7 +129,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Код НДФЛ</v8:content>
+													<v8:content>Код ПН</v8:content>
 												</v8:item>
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
@@ -137,7 +137,7 @@
 											<MaxWidth>8</MaxWidth>
 											<AutoMarkIncomplete>false</AutoMarkIncomplete>
 											<ContextMenu name="КодДоходаНДФЛКонтекстноеМеню" id="10"/>
-											<ExtendedTooltip name="КодДоходаНДФЛExtendedTooltip" id="65"/>
+											<ExtendedTooltip name="КодДоходаНДФЛРасширеннаяПодсказка" id="65"/>
 										</InputField>
 										<InputField name="КодВычетаНДФЛ" id="11">
 											<DataPath>Объект.КодВычетаНДФЛ</DataPath>
@@ -154,7 +154,7 @@
 											<ChoiceButton>false</ChoiceButton>
 											<ChoiceListButton>true</ChoiceListButton>
 											<ContextMenu name="КодВычетаНДФЛКонтекстноеМеню" id="12"/>
-											<ExtendedTooltip name="КодВычетаНДФЛExtendedTooltip" id="66"/>
+											<ExtendedTooltip name="КодВычетаНДФЛРасширеннаяПодсказка" id="66"/>
 											<Events>
 												<Event name="OnChange">КодВычетаНДФЛПриИзменении</Event>
 											</Events>
@@ -174,7 +174,7 @@
 									<ChoiceButton>false</ChoiceButton>
 									<AutoMarkIncomplete>false</AutoMarkIncomplete>
 									<ContextMenu name="КодДоходаСтраховыеВзносыКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="КодДоходаСтраховыеВзносыExtendedTooltip" id="67"/>
+									<ExtendedTooltip name="КодДоходаСтраховыеВзносыРасширеннаяПодсказка" id="67"/>
 								</InputField>
 								<InputField name="ПланируемаяДатаВыплаты" id="51">
 									<DataPath>Объект.ПланируемаяДатаВыплаты</DataPath>
@@ -185,7 +185,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="ПланируемаяДатаВыплатыКонтекстноеМеню" id="52"/>
-									<ExtendedTooltip name="ПланируемаяДатаВыплатыExtendedTooltip" id="79"/>
+									<ExtendedTooltip name="ПланируемаяДатаВыплатыРасширеннаяПодсказка" id="79"/>
 									<Events>
 										<Event name="OnChange">ПланируемаяДатаВыплатыПриИзменении</Event>
 									</Events>
@@ -222,7 +222,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ДатаНомерExtendedTooltip" id="57"/>
+							<ExtendedTooltip name="ДатаНомерРасширеннаяПодсказка" id="57"/>
 							<ChildItems>
 								<InputField name="Дата" id="3">
 									<DataPath>Объект.Date</DataPath>
@@ -230,7 +230,7 @@
 									<Width>10</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
-									<ExtendedTooltip name="ДатаExtendedTooltip" id="58"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="58"/>
 									<Events>
 										<Event name="OnChange">ДатаПриИзменении</Event>
 									</Events>
@@ -240,7 +240,7 @@
 									<EditMode>EnterOnInput</EditMode>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="НомерExtendedTooltip" id="59"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="59"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -297,7 +297,7 @@
 								</v8:item>
 							</InputHint>
 							<ContextMenu name="СпособОтраженияЗарплатыВБухучетеКонтекстноеМеню" id="40"/>
-							<ExtendedTooltip name="СпособОтраженияЗарплатыВБухучетеExtendedTooltip" id="70"/>
+							<ExtendedTooltip name="СпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка" id="70"/>
 						</InputField>
 						<InputField name="ОтношениеКЕНВД" id="105">
 							<DataPath>Объект.ОтношениеКЕНВД</DataPath>
@@ -345,7 +345,7 @@
 								</v8:item>
 							</InputHint>
 							<ContextMenu name="ПодразделениеКонтекстноеМеню" id="38"/>
-							<ExtendedTooltip name="ПодразделениеExtendedTooltip" id="69"/>
+							<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="69"/>
 							<Events>
 								<Event name="OnChange">ПодразделениеПриИзменении</Event>
 							</Events>
@@ -473,7 +473,7 @@
 					<EditMode>EnterOnInput</EditMode>
 					<FixingInTable>Left</FixingInTable>
 					<ContextMenu name="НачисленияНомерСтрокиКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="НачисленияНомерСтрокиExtendedTooltip" id="73"/>
+					<ExtendedTooltip name="НачисленияНомерСтрокиРасширеннаяПодсказка" id="73"/>
 				</LabelField>
 				<InputField name="НачисленияФизическоеЛицо" id="24">
 					<DataPath>Объект.НачисленияУдержанияВзносы.ФизическоеЛицо</DataPath>
@@ -486,7 +486,7 @@
 					<EditMode>EnterOnInput</EditMode>
 					<FixingInTable>Left</FixingInTable>
 					<ContextMenu name="НачисленияФизическоеЛицоКонтекстноеМеню" id="25"/>
-					<ExtendedTooltip name="НачисленияФизическоеЛицоExtendedTooltip" id="74"/>
+					<ExtendedTooltip name="НачисленияФизическоеЛицоРасширеннаяПодсказка" id="74"/>
 					<Events>
 						<Event name="OnChange">НачисленияФизическоеЛицоПриИзменении</Event>
 					</Events>
@@ -496,7 +496,7 @@
 					<EditMode>EnterOnInput</EditMode>
 					<FooterDataPath>Объект.НачисленияУдержанияВзносы.TotalНачислено</FooterDataPath>
 					<ContextMenu name="НачисленияНачисленоКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="НачисленияНачисленоExtendedTooltip" id="75"/>
+					<ExtendedTooltip name="НачисленияНачисленоРасширеннаяПодсказка" id="75"/>
 					<Events>
 						<Event name="OnChange">НачисленияНачисленоПриИзменении</Event>
 					</Events>
@@ -506,7 +506,7 @@
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="НачисленияСуммаВычетаКонтекстноеМеню" id="43"/>
-					<ExtendedTooltip name="НачисленияСуммаВычетаExtendedTooltip" id="76"/>
+					<ExtendedTooltip name="НачисленияСуммаВычетаРасширеннаяПодсказка" id="76"/>
 					<Events>
 						<Event name="OnChange">НачисленияСуммаВычетаПриИзменении</Event>
 					</Events>
@@ -517,7 +517,7 @@
 					<EditMode>EnterOnInput</EditMode>
 					<FooterDataPath>Объект.НачисленияУдержанияВзносы.TotalНДФЛ</FooterDataPath>
 					<ContextMenu name="НачисленияНДФЛКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="НачисленияНДФЛExtendedTooltip" id="77"/>
+					<ExtendedTooltip name="НачисленияНДФЛРасширеннаяПодсказка" id="77"/>
 				</InputField>
 				<InputField name="НачисленияКВыплате" id="91">
 					<DataPath>Объект.НачисленияУдержанияВзносы.КВыплате</DataPath>
@@ -589,14 +589,14 @@
 					<EditMode>EnterOnInput</EditMode>
 					<Height>1</Height>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="80"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="80"/>
 				</InputField>
 				<InputField name="Ответственный" id="15">
 					<DataPath>Объект.Ответственный</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="60"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="60"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

@@ -459,7 +459,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>НДФЛ</v8:content>
+					<v8:content>Подоходный налог</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -493,6 +493,12 @@
 						<Button name="КнопкаВидыДоходовНДФЛ" id="4">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьСправочникВидыДоходовНДФЛ</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Виды доходов подоходного налога</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаВидыДоходовНДФЛExtendedTooltip" id="111">
 								<HorizontalStretch>true</HorizontalStretch>
@@ -507,13 +513,19 @@
 						<Button name="КнопкаВидыВычетовПоНДФЛ" id="10">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьСправочникВидыВычетовПоНДФЛ</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Виды вычетов по подоходному налогу</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаВидыВычетовПоНДФЛExtendedTooltip" id="113">
 								<HorizontalStretch>true</HorizontalStretch>
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Список действующих вычетов по НДФЛ, соответствующий текущему классификатору, утвержденному налоговыми органами.</v8:content>
+										<v8:content>Список действующих вычетов по подоходному налогу, соответствующий текущему классификатору, утвержденному налоговыми органами.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -541,13 +553,19 @@
 						<Button name="КнопкаВычетыКДоходамПоНДФЛ" id="7">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьРегистрСведенийВычетыКДоходамПоНДФЛ</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вычеты к доходам по подоходному налогу</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаВычетыКДоходамПоНДФЛExtendedTooltip" id="116">
 								<HorizontalStretch>true</HorizontalStretch>
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Список вычетов к доходам по НДФЛ, для которых предусмотрена такая возможность по Налоговому кодексу.</v8:content>
+										<v8:content>Список вычетов к доходам по подоходному налогу, для которых предусмотрена такая возможность по Налоговому кодексу.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -555,6 +573,12 @@
 						<Button name="КнопкаРазмерВычетовНДФЛ" id="13">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьРегистрСведенийРазмерВычетовНДФЛ</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Размер вычетов подоходнного налога</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаРазмерВычетовНДФЛExtendedTooltip" id="118">
 								<HorizontalStretch>true</HorizontalStretch>
@@ -614,7 +638,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Действующие ставки страховых взносов в ПФР,ФОМС и ФСС для различных тарифов.</v8:content>
+										<v8:content>Действующие ставки страховых взносов в ФЗСН для различных тарифов.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -695,6 +719,12 @@
 						<Button name="КнопкаОсобыеУсловияТрудаПФР" id="134">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьСправочникОсобыеУсловияТрудаПФР</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Особые условия труда</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаОсобыеУсловияТрудаПФРРасширеннаяПодсказка" id="135">
 								<HorizontalStretch>true</HorizontalStretch>
@@ -754,8 +784,20 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПерсонифицированныйУчетСправаРасширеннаяПодсказка" id="133"/>
 					<ChildItems>
+						<Button name="КнопкаВидыДеятельности" id="189">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьСправочникВидыДеятельности</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Виды деятельности</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаВидыДеятельностиРасширеннаяПодсказка" id="190"/>
+						</Button>
 						<Button name="КнопкаТерриториальныеУсловияПФР" id="144">
 							<Type>Hyperlink</Type>
+							<Visible>false</Visible>
 							<CommandName>Form.Command.ОткрытьСправочникТерриториальныеУсловияПФР</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаТерриториальныеУсловияПФРРасширеннаяПодсказка" id="145">
@@ -770,6 +812,7 @@
 						</Button>
 						<Button name="КнопкаПараметрыИсчисляемогоСтраховогоСтажа" id="146">
 							<Type>Hyperlink</Type>
+							<Visible>false</Visible>
 							<CommandName>Form.Command.ОткрытьСправочникПараметрыИсчисляемогоСтраховогоСтажа</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаПараметрыИсчисляемогоСтраховогоСтажаРасширеннаяПодсказка" id="147">
@@ -784,6 +827,7 @@
 						</Button>
 						<Button name="КнопкаОснованияИсчисляемогоСтраховогоСтажа" id="148">
 							<Type>Hyperlink</Type>
+							<Visible>false</Visible>
 							<CommandName>Form.Command.ОткрытьСправочникОснованияИсчисляемогоСтраховогоСтажа</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="КнопкаОснованияИсчисляемогоСтраховогоСтажаРасширеннаяПодсказка" id="149">
@@ -1308,6 +1352,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьСпособыОкругления</Action>
+		</Command>
+		<Command name="ОткрытьСправочникВидыДеятельности" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник виды деятельности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник виды деятельности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСправочникВидыДеятельности</Action>
 		</Command>
 	</Commands>
 </Form>

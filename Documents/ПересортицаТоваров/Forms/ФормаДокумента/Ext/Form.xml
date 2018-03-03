@@ -405,6 +405,16 @@
 											<ContextMenu name="ВидДеятельностиНДСКонтекстноеМеню" id="227"/>
 											<ExtendedTooltip name="ВидДеятельностиНДСРасширеннаяПодсказка" id="228"/>
 										</InputField>
+										<InputField name="Валюта" id="234">
+											<DataPath>Объект.Валюта</DataPath>
+											<Width>8</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВалютаКонтекстноеМеню" id="235"/>
+											<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="236"/>
+											<Events>
+												<Event name="OnChange">ВалютаПриИзменении</Event>
+											</Events>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1259,6 +1269,28 @@
 			</Title>
 			<Type>
 				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Валюта" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВалютаРегламентированногоУчета" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта регламентированного учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

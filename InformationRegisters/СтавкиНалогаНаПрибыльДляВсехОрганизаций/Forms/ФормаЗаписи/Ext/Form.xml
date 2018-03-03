@@ -17,12 +17,19 @@
 		</InputField>
 		<InputField name="СтавкаФБ" id="3">
 			<DataPath>Запись.СтавкаФБ</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В государственный бюджет</v8:content>
+				</v8:item>
+			</Title>
 			<ChoiceButton>false</ChoiceButton>
 			<ContextMenu name="СтавкаФБКонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="СтавкаФБExtendedTooltip" id="8"/>
 		</InputField>
 		<InputField name="СтавкаСубъектРФ" id="5">
 			<DataPath>Запись.СтавкаСубъектРФ</DataPath>
+			<Visible>false</Visible>
 			<ChoiceButton>false</ChoiceButton>
 			<ContextMenu name="СтавкаСубъектРФКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="СтавкаСубъектРФExtendedTooltip" id="9"/>

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<DataProcessor uuid="41d9a2d5-24bb-4432-b4b5-25bbf39e73a7">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ЭлектронныеСчетФактуры" category="Object">
+				<xr:TypeId>d07e4b6c-9efe-4d9e-80bf-c56948d41810</xr:TypeId>
+				<xr:ValueId>e0e55e7f-fe7c-4f0b-845f-48ed907bcbf0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ЭлектронныеСчетФактуры" category="Manager">
+				<xr:TypeId>80c0067e-0c11-415d-a06e-85a789324d29</xr:TypeId>
+				<xr:ValueId>aabcfb87-59aa-493a-a20b-f56623f1ca90</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЭлектронныеСчетФактуры</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронные счет фактуры (локализация)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(локализация)</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ПанельАдминистрированияЭСЧФ</Form>
+			<Form>Форма</Form>
+			<Command uuid="a492279d-990e-4c03-a2cc-8441167ab71a">
+				<Properties>
+					<Name>ЗагрузитьИзXML</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузить из XML</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураПолученный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомитента</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="e0d9c71f-a614-454f-be19-a75f33ff9cf9">
+				<Properties>
+					<Name>ЗагрузитьСПортала</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузить с портала</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураПолученный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомитента</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="d056223c-aca1-4008-8a85-81123268f88d">
+				<Properties>
+					<Name>ОбновитьСтатусы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить статусы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураВыданный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомиссионеру</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураПолученный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураНалоговыйАгент</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомитента</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="b27aaf55-8802-4475-b90d-43f5071958ff">
+				<Properties>
+					<Name>ПодписатьИОтправитьВыданные</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписать и отправить</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураВыданный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомиссионеру</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураНалоговыйАгент</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="bdc57fc5-2c0a-44c5-b919-2c9941bd8ca2">
+				<Properties>
+					<Name>ПодписатьИОтправитьПолученные</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписать и отправить</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураПолученный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомитента</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="a9485cf9-cfbd-407a-ad83-1e96ab3ac05f">
+				<Properties>
+					<Name>СохранитьВXML</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить в XML</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураВыданный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомиссионеру</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураПолученный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураНалоговыйАгент</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомитента</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="37af207a-16b7-457b-bfcc-d1df499342cf">
+				<Properties>
+					<Name>Сформировать</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сформировать</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Документы</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СчетФактураВыданный</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураКомиссионеру</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураНалоговыйАгент</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="b40cd682-7b31-4b08-a310-27bb70460075">
+				<Properties>
+					<Name>ОткрытьПанельАдминистрирования</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен ЭСЧФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelImportant</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки работы с элетронными счетами-факутрами</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

@@ -21,6 +21,7 @@
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаЛевая" id="1">
@@ -588,6 +589,12 @@
 									<Type>Hyperlink</Type>
 									<Height>2</Height>
 									<CommandName>Form.Command.СотрудникСправка2НДФЛ</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Справка о доходах</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="СотрудникСправка2НДФЛExtendedTooltip" id="270"/>
 								</Button>
 							</ChildItems>
@@ -612,6 +619,7 @@
 								</LabelField>
 								<LabelField name="СотрудникИНН" id="83">
 									<DataPath>СотрудникИНН</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -627,7 +635,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>СНИЛС</v8:content>
+											<v8:content>Страховой номер</v8:content>
 										</v8:item>
 									</Title>
 									<HorizontalStretch>true</HorizontalStretch>
@@ -1396,11 +1404,6 @@
 						<dcsset:item xsi:type="dcsset:FilterItemGroup">
 							<dcsset:groupType>OrGroup</dcsset:groupType>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
 								<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
 								<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
 								<dcsset:viewMode>Inaccessible</dcsset:viewMode>
@@ -1439,38 +1442,7 @@
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">ДатаРождения</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
 									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
-								</dcsset:item>
-							</dcsset:filter>
-							<dcsset:appearance>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">ИНН</dcscor:value>
-								</dcscor:item>
-							</dcsset:appearance>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:selection>
-								<dcsset:item>
-									<dcsset:field>ПредставлениеОшибки</dcsset:field>
-								</dcsset:item>
-							</dcsset:selection>
-							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРождения</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
@@ -1493,11 +1465,7 @@
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">ДатаРождения</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
@@ -1507,61 +1475,7 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">СНИЛС</dcscor:value>
-								</dcscor:item>
-							</dcsset:appearance>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:selection>
-								<dcsset:item>
-									<dcsset:field>ПредставлениеОшибки</dcsset:field>
-								</dcsset:item>
-							</dcsset:selection>
-							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРождения</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
-								</dcsset:item>
-							</dcsset:filter>
-							<dcsset:appearance>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">дата рождения, ИНН</dcscor:value>
-								</dcscor:item>
-							</dcsset:appearance>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:selection>
-								<dcsset:item>
-									<dcsset:field>ПредставлениеОшибки</dcsset:field>
-								</dcsset:item>
-							</dcsset:selection>
-							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРождения</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-									<dcsset:comparisonType>Filled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-							</dcsset:filter>
-							<dcsset:appearance>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">дата рождения, СНИЛС</dcscor:value>
+									<dcscor:value xsi:type="xs:string">дата рождения, страховой номер</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -1577,10 +1491,6 @@
 									<dcsset:comparisonType>Filled</dcsset:comparisonType>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
 									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
 								</dcsset:item>
@@ -1588,34 +1498,7 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">ИНН, СНИЛС</dcscor:value>
-								</dcscor:item>
-							</dcsset:appearance>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:selection>
-								<dcsset:item>
-									<dcsset:field>ПредставлениеОшибки</dcsset:field>
-								</dcsset:item>
-							</dcsset:selection>
-							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРождения</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">СтраховойНомерПФР</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-							</dcsset:filter>
-							<dcsset:appearance>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="xs:string">дата рождения, ИНН, СНИЛС</dcscor:value>
+									<dcscor:value xsi:type="xs:string">страховой номер</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>

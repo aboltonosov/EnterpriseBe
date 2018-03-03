@@ -1045,6 +1045,49 @@
 					<ContextMenu name="СписокДокументыЗакупкиНомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="СписокДокументыЗакупкиНомерРасширеннаяПодсказка" id="145"/>
 				</InputField>
+				<ColumnGroup name="ГруппаСерияНомер" id="897">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСерияНомерРасширеннаяПодсказка" id="898"/>
+					<ChildItems>
+						<LabelField name="СписокДокументыЗакупкиСерияВходящегоДокумента" id="899">
+							<DataPath>СписокДокументыЗакупки.СерияВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия</v8:content>
+								</v8:item>
+							</Title>
+							<Width>2</Width>
+							<ContextMenu name="СписокДокументыЗакупкиСерияВходящегоДокументаКонтекстноеМеню" id="900"/>
+							<ExtendedTooltip name="СписокДокументыЗакупкиСерияВходящегоДокументаРасширеннаяПодсказка" id="901"/>
+						</LabelField>
+						<LabelField name="СписокДокументыЗакупкиНомерВходящегоДокумента" id="100">
+							<DataPath>СписокДокументыЗакупки.НомерВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№ вх. документа</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СписокДокументыЗакупкиНомерВходящегоДокументаКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="СписокДокументыЗакупкиНомерВходящегоДокументаРасширеннаяПодсказка" id="147"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="СписокДокументыЗакупкиДата" id="227">
 					<DataPath>СписокДокументыЗакупки.Дата</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -1095,23 +1138,22 @@
 						</LabelField>
 					</ChildItems>
 				</ColumnGroup>
-				<LabelField name="СписокДокументыЗакупкиНомерВходящегоДокумента" id="100">
-					<DataPath>СписокДокументыЗакупки.НомерВходящегоДокумента</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<Width>10</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="СписокДокументыЗакупкиНомерВходящегоДокументаКонтекстноеМеню" id="101"/>
-					<ExtendedTooltip name="СписокДокументыЗакупкиНомерВходящегоДокументаРасширеннаяПодсказка" id="147"/>
-				</LabelField>
 				<LabelField name="СписокДокументыЗакупкиДатаВходящегоДокумента" id="98">
 					<DataPath>СписокДокументыЗакупки.ДатаВходящегоДокумента</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата вх. документа</v8:content>
+						</v8:item>
+					</Title>
 					<Width>9</Width>
 					<HorizontalStretch>false</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
 					<ContextMenu name="СписокДокументыЗакупкиДатаВходящегоДокументаКонтекстноеМеню" id="99"/>
 					<ExtendedTooltip name="СписокДокументыЗакупкиДатаВходящегоДокументаРасширеннаяПодсказка" id="148"/>
 				</LabelField>
@@ -1354,6 +1396,7 @@
 	РеестрДокументов.Сумма КАК СуммаДокумента,
 	РеестрДокументов.Ответственный КАК Менеджер,
 	РеестрДокументов.Комментарий,
+	РеестрДокументов.СерияПервичногоДокумента КАК СерияВходящегоДокумента,
 	РеестрДокументов.НомерПервичногоДокумента КАК НомерВходящегоДокумента,
 	РеестрДокументов.ДатаПервичногоДокумента КАК ДатаВходящегоДокумента,
 	РеестрДокументов.Дополнительно,

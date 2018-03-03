@@ -15,7 +15,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="2129"/>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="2129"/>
 			<ChildItems>
 				<LabelDecoration name="ОписаниеРаздела" id="1553">
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -28,18 +28,18 @@
 					</Title>
 					<VerticalAlign>Top</VerticalAlign>
 					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="1554"/>
-					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="2130"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="2130"/>
 				</LabelDecoration>
 				<LabelDecoration name="ДекорацияЗаголовка" id="1959">
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="ДекорацияЗаголовкаКонтекстноеМеню" id="1960"/>
-					<ExtendedTooltip name="ДекорацияЗаголовкаExtendedTooltip" id="2131"/>
+					<ExtendedTooltip name="ДекорацияЗаголовкаРасширеннаяПодсказка" id="2131"/>
 				</LabelDecoration>
 				<Button name="Справка" id="1962">
 					<Type>UsualButton</Type>
 					<Representation>Picture</Representation>
 					<CommandName>Form.StandardCommand.Help</CommandName>
-					<ExtendedTooltip name="СправкаExtendedTooltip" id="2133"/>
+					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="2133"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -90,7 +90,7 @@
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
 			<Representation>NormalSeparation</Representation>
-			<ExtendedTooltip name="ГруппаУправлениеОптовымиПродажамиExtendedTooltip" id="2151"/>
+			<ExtendedTooltip name="ГруппаУправлениеОптовымиПродажамиРасширеннаяПодсказка" id="2151"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаИспользованиеСоглашенийСКлиентами" id="1732">
 					<Title>
@@ -108,7 +108,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользованиеСоглашенийСКлиентамиExtendedTooltip" id="2152"/>
+					<ExtendedTooltip name="ГруппаИспользованиеСоглашенийСКлиентамиРасширеннаяПодсказка" id="2152"/>
 					<ChildItems>
 						<InputField name="ИспользованиеСоглашенийСКлиентами" id="1733">
 							<DataPath>НаборКонстант.ИспользованиеСоглашенийСКлиентами</DataPath>
@@ -116,7 +116,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<TextEdit>false</TextEdit>
 							<ContextMenu name="ИспользованиеСоглашенийСКлиентамиКонтекстноеМеню" id="1734"/>
-							<ExtendedTooltip name="ИспользованиеСоглашенийСКлиентамиExtendedTooltip" id="2153">
+							<ExtendedTooltip name="ИспользованиеСоглашенийСКлиентамиРасширеннаяПодсказка" id="2153">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -180,6 +180,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаАвтоПостановкаКлиентовНаМониторингСПАРК" id="3029">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -227,7 +228,7 @@
 								<Event name="OnChange">АвтоПостановкаКлиентовНаМониторингСПАРКПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
-						<Button name="ОбработкаНастройкаПостановкиКонтрагентовНаМониторингСПАРКНастройкаСПАРККлиенты" id="3034">
+						<Button name="ОбработкаНастройкаПостановкиКонтрагентовНаМониторингСПАРКНастройкаСПАРККлиенты" id="3109">
 							<Type>Hyperlink</Type>
 							<CommandName>DataProcessor.НастройкаПостановкиКонтрагентовНаМониторингСПАРК.Command.НастройкаСПАРК</CommandName>
 							<Title>
@@ -236,7 +237,7 @@
 									<v8:content>Настроить</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ОбработкаНастройкаПостановкиКонтрагентовНаМониторингСПАРКНастройкаСПАРККлиентыРасширеннаяПодсказка" id="3035"/>
+							<ExtendedTooltip name="ОбработкаНастройкаПостановкиКонтрагентовНаМониторингСПАРКНастройкаСПАРККлиентыРасширеннаяПодсказка" id="3110"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -318,7 +319,7 @@
 					<Representation>None</Representation>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаУправлениеЗаказамиКлиентовExtendedTooltip" id="2156"/>
+					<ExtendedTooltip name="ГруппаУправлениеЗаказамиКлиентовРасширеннаяПодсказка" id="2156"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаУправлениеЗаказамиКлиентов1" id="945">
 							<Title>
@@ -336,7 +337,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаУправлениеЗаказамиКлиентов1ExtendedTooltip" id="2157"/>
+							<ExtendedTooltip name="ГруппаУправлениеЗаказамиКлиентов1РасширеннаяПодсказка" id="2157"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаИспользоватьЗаказыКлиентов" id="913">
 									<Title>
@@ -354,7 +355,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаИспользоватьЗаказыКлиентовExtendedTooltip" id="2158"/>
+									<ExtendedTooltip name="ГруппаИспользоватьЗаказыКлиентовРасширеннаяПодсказка" id="2158"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьЗаказыКлиентов" id="74">
 											<DataPath>НаборКонстант.ИспользоватьЗаказыКлиентов</DataPath>
@@ -368,7 +369,7 @@
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьЗаказыКлиентовКонтекстноеМеню" id="75"/>
-											<ExtendedTooltip name="ИспользоватьЗаказыКлиентовExtendedTooltip" id="2159">
+											<ExtendedTooltip name="ИспользоватьЗаказыКлиентовРасширеннаяПодсказка" id="2159">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -493,7 +494,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаУправлениеЗаказамиКлиентов2ExtendedTooltip" id="2167"/>
+							<ExtendedTooltip name="ГруппаУправлениеЗаказамиКлиентов2РасширеннаяПодсказка" id="2167"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаУправлениеВозвратамиКлиентов" id="971">
 									<Title>
@@ -511,7 +512,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаУправлениеВозвратамиКлиентовExtendedTooltip" id="2216"/>
+									<ExtendedTooltip name="ГруппаУправлениеВозвратамиКлиентовРасширеннаяПодсказка" id="2216"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьЗаявкиНаВозвратТоваровОтКлиентов" id="321">
 											<DataPath>НаборКонстант.ИспользоватьЗаявкиНаВозвратТоваровОтКлиентов</DataPath>
@@ -525,7 +526,7 @@
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьЗаявкиНаВозвратТоваровОтКлиентовКонтекстноеМеню" id="322"/>
-											<ExtendedTooltip name="ИспользоватьЗаявкиНаВозвратТоваровОтКлиентовExtendedTooltip" id="2217">
+											<ExtendedTooltip name="ИспользоватьЗаявкиНаВозвратТоваровОтКлиентовРасширеннаяПодсказка" id="2217">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -752,13 +753,13 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСтатусыИЗакрытиеЗаказовЛевоExtendedTooltip" id="2178"/>
+							<ExtendedTooltip name="ГруппаСтатусыИЗакрытиеЗаказовЛевоРасширеннаяПодсказка" id="2178"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаНеЗакрыватьЗаказыКлиентовБезПолнойОтгрузки" id="1912">
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаНеЗакрыватьЗаказыКлиентовБезПолнойОтгрузкиExtendedTooltip" id="2179"/>
+									<ExtendedTooltip name="ГруппаНеЗакрыватьЗаказыКлиентовБезПолнойОтгрузкиРасширеннаяПодсказка" id="2179"/>
 									<ChildItems>
 										<CheckBoxField name="НеЗакрыватьЗаказыКлиентовБезПолнойОтгрузки" id="1906">
 											<DataPath>НаборКонстант.НеЗакрыватьЗаказыКлиентовБезПолнойОтгрузки</DataPath>
@@ -772,7 +773,7 @@
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="НеЗакрыватьЗаказыКлиентовБезПолнойОтгрузкиКонтекстноеМеню" id="1907"/>
-											<ExtendedTooltip name="НеЗакрыватьЗаказыКлиентовБезПолнойОтгрузкиExtendedTooltip" id="2180">
+											<ExtendedTooltip name="НеЗакрыватьЗаказыКлиентовБезПолнойОтгрузкиРасширеннаяПодсказка" id="2180">
 												<AutoMaxWidth>false</AutoMaxWidth>
 												<MaxWidth>38</MaxWidth>
 												<HorizontalStretch>true</HorizontalStretch>
@@ -805,7 +806,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаИспользоватьПричиныОтменыЗаказовКлиентовExtendedTooltip" id="2164"/>
+									<ExtendedTooltip name="ГруппаИспользоватьПричиныОтменыЗаказовКлиентовРасширеннаяПодсказка" id="2164"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьПричиныОтменыЗаказовКлиентов" id="1949">
 											<DataPath>НаборКонстант.ИспользоватьПричиныОтменыЗаказовКлиентов</DataPath>
@@ -819,7 +820,7 @@
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьПричиныОтменыЗаказовКлиентовКонтекстноеМеню" id="1950"/>
-											<ExtendedTooltip name="ИспользоватьПричиныОтменыЗаказовКлиентовExtendedTooltip" id="2165">
+											<ExtendedTooltip name="ИспользоватьПричиныОтменыЗаказовКлиентовРасширеннаяПодсказка" id="2165">
 												<AutoMaxWidth>false</AutoMaxWidth>
 												<MaxWidth>38</MaxWidth>
 												<HorizontalStretch>true</HorizontalStretch>
@@ -842,7 +843,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНеЗакрыватьЗаказыКлиентовБезПолнойОплатыExtendedTooltip" id="2183"/>
+							<ExtendedTooltip name="ГруппаНеЗакрыватьЗаказыКлиентовБезПолнойОплатыРасширеннаяПодсказка" id="2183"/>
 							<ChildItems>
 								<CheckBoxField name="НеЗакрыватьЗаказыКлиентовБезПолнойОплаты" id="1908">
 									<DataPath>НаборКонстант.НеЗакрыватьЗаказыКлиентовБезПолнойОплаты</DataPath>
@@ -856,7 +857,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="НеЗакрыватьЗаказыКлиентовБезПолнойОплатыКонтекстноеМеню" id="1909"/>
-									<ExtendedTooltip name="НеЗакрыватьЗаказыКлиентовБезПолнойОплатыExtendedTooltip" id="2184">
+									<ExtendedTooltip name="НеЗакрыватьЗаказыКлиентовБезПолнойОплатыРасширеннаяПодсказка" id="2184">
 										<HorizontalStretch>true</HorizontalStretch>
 										<Title formatted="false">
 											<v8:item>
@@ -902,7 +903,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИспользоватьРеализациюПоНесколькимЗаказамExtendedTooltip" id="2161"/>
+							<ExtendedTooltip name="ГруппаИспользоватьРеализациюПоНесколькимЗаказамРасширеннаяПодсказка" id="2161"/>
 							<ChildItems>
 								<CheckBoxField name="ИспользоватьРеализациюПоНесколькимЗаказам" id="561">
 									<DataPath>НаборКонстант.ИспользоватьРеализациюПоНесколькимЗаказам</DataPath>
@@ -916,7 +917,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИспользоватьРеализациюПоНесколькимЗаказамКонтекстноеМеню" id="562"/>
-									<ExtendedTooltip name="ИспользоватьРеализациюПоНесколькимЗаказамExtendedTooltip" id="2162">
+									<ExtendedTooltip name="ИспользоватьРеализациюПоНесколькимЗаказамРасширеннаяПодсказка" id="2162">
 										<HorizontalStretch>true</HorizontalStretch>
 										<Title formatted="false">
 											<v8:item>
@@ -947,7 +948,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИспользоватьАктыВыполненныхРаботПоНесколькимЗаказамExtendedTooltip" id="2171"/>
+							<ExtendedTooltip name="ГруппаИспользоватьАктыВыполненныхРаботПоНесколькимЗаказамРасширеннаяПодсказка" id="2171"/>
 							<ChildItems>
 								<CheckBoxField name="ИспользоватьАктыВыполненныхРаботПоНесколькимЗаказам" id="583">
 									<DataPath>НаборКонстант.ИспользоватьАктыВыполненныхРаботПоНесколькимЗаказам</DataPath>
@@ -961,7 +962,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИспользоватьАктыВыполненныхРаботПоНесколькимЗаказамКонтекстноеМеню" id="584"/>
-									<ExtendedTooltip name="ИспользоватьАктыВыполненныхРаботПоНесколькимЗаказамExtendedTooltip" id="2172">
+									<ExtendedTooltip name="ИспользоватьАктыВыполненныхРаботПоНесколькимЗаказамРасширеннаяПодсказка" id="2172">
 										<HorizontalStretch>true</HorizontalStretch>
 										<Title formatted="false">
 											<v8:item>
@@ -994,7 +995,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКомментарийИспользоватьРеализациюПоНесколькимЗаказамExtendedTooltip" id="2174"/>
+					<ExtendedTooltip name="ГруппаКомментарийИспользоватьРеализациюПоНесколькимЗаказамРасширеннаяПодсказка" id="2174"/>
 					<ChildItems>
 						<PictureDecoration name="Декорация18" id="1576">
 							<Picture>
@@ -1002,7 +1003,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="Декорация18КонтекстноеМеню" id="1577"/>
-							<ExtendedTooltip name="Декорация18ExtendedTooltip" id="2175"/>
+							<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="2175"/>
 						</PictureDecoration>
 						<LabelDecoration name="КомментарийИспользоватьРеализациюПоНесколькимЗаказам" id="563">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -1013,7 +1014,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="КомментарийИспользоватьРеализациюПоНесколькимЗаказамКонтекстноеМеню" id="564"/>
-							<ExtendedTooltip name="КомментарийИспользоватьРеализациюПоНесколькимЗаказамExtendedTooltip" id="2176"/>
+							<ExtendedTooltip name="КомментарийИспользоватьРеализациюПоНесколькимЗаказамРасширеннаяПодсказка" id="2176"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -1034,7 +1035,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКомментарийКонтролироватьЗакрытиеExtendedTooltip" id="2186"/>
+					<ExtendedTooltip name="ГруппаКомментарийКонтролироватьЗакрытиеРасширеннаяПодсказка" id="2186"/>
 					<ChildItems>
 						<PictureDecoration name="Декорация19" id="1938">
 							<Picture>
@@ -1042,7 +1043,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="Декорация19КонтекстноеМеню" id="1939"/>
-							<ExtendedTooltip name="Декорация19ExtendedTooltip" id="2187"/>
+							<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="2187"/>
 						</PictureDecoration>
 						<LabelDecoration name="КомментарийКонтролироватьЗакрытие" id="1940">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -1053,7 +1054,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="КомментарийКонтролироватьЗакрытиеКонтекстноеМеню" id="1941"/>
-							<ExtendedTooltip name="КомментарийКонтролироватьЗакрытиеExtendedTooltip" id="2188"/>
+							<ExtendedTooltip name="КомментарийКонтролироватьЗакрытиеРасширеннаяПодсказка" id="2188"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -1073,7 +1074,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьСчетаНаОплатуКлиентамExtendedTooltip" id="2168"/>
+					<ExtendedTooltip name="ГруппаИспользоватьСчетаНаОплатуКлиентамРасширеннаяПодсказка" id="2168"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьСчетаНаОплатуКлиентам" id="33">
 							<DataPath>НаборКонстант.ИспользоватьСчетаНаОплатуКлиентам</DataPath>
@@ -1087,7 +1088,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьСчетаНаОплатуКлиентамКонтекстноеМеню" id="34"/>
-							<ExtendedTooltip name="ИспользоватьСчетаНаОплатуКлиентамExtendedTooltip" id="2169">
+							<ExtendedTooltip name="ИспользоватьСчетаНаОплатуКлиентамРасширеннаяПодсказка" id="2169">
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
@@ -1117,7 +1118,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьКоммерческиеПредложенияКлиентамExtendedTooltip" id="2201"/>
+					<ExtendedTooltip name="ГруппаИспользоватьКоммерческиеПредложенияКлиентамРасширеннаяПодсказка" id="2201"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьКоммерческиеПредложенияКлиентам" id="31">
 							<DataPath>НаборКонстант.ИспользоватьКоммерческиеПредложенияКлиентам</DataPath>
@@ -1131,7 +1132,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьКоммерческиеПредложенияКлиентамКонтекстноеМеню" id="32"/>
-							<ExtendedTooltip name="ИспользоватьКоммерческиеПредложенияКлиентамExtendedTooltip" id="2202">
+							<ExtendedTooltip name="ИспользоватьКоммерческиеПредложенияКлиентамРасширеннаяПодсказка" id="2202">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -1173,7 +1174,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаУправлениеКомиссиейПриПродажахExtendedTooltip" id="2204"/>
+					<ExtendedTooltip name="ГруппаУправлениеКомиссиейПриПродажахРасширеннаяПодсказка" id="2204"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьКомиссиюПриПродажах" id="304">
 							<DataPath>НаборКонстант.ИспользоватьКомиссиюПриПродажах</DataPath>
@@ -1187,7 +1188,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьКомиссиюПриПродажахКонтекстноеМеню" id="305"/>
-							<ExtendedTooltip name="ИспользоватьКомиссиюПриПродажахExtendedTooltip" id="2205">
+							<ExtendedTooltip name="ИспользоватьКомиссиюПриПродажахРасширеннаяПодсказка" id="2205">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -1459,7 +1460,7 @@
 					<Representation>None</Representation>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользованиеСтатусовДокументовПродажExtendedTooltip" id="2261"/>
+					<ExtendedTooltip name="ГруппаИспользованиеСтатусовДокументовПродажРасширеннаяПодсказка" id="2261"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьСтатусыРеализацийТоваровУслуг" id="1931">
 							<DataPath>НаборКонстант.ИспользоватьСтатусыРеализацийТоваровУслуг</DataPath>
@@ -1479,7 +1480,7 @@
 							</WarningOnEdit>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьСтатусыРеализацийТоваровУслугКонтекстноеМеню" id="1932"/>
-							<ExtendedTooltip name="ИспользоватьСтатусыРеализацийТоваровУслугExtendedTooltip" id="2270">
+							<ExtendedTooltip name="ИспользоватьСтатусыРеализацийТоваровУслугРасширеннаяПодсказка" id="2270">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -1510,7 +1511,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаУправлениеПродажамиНаЭкспортExtendedTooltip" id="2207"/>
+					<ExtendedTooltip name="ГруппаУправлениеПродажамиНаЭкспортРасширеннаяПодсказка" id="2207"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьПродажиНаЭкспортСырьевыхТоваровУслуг" id="3015">
 							<DataPath>НаборКонстант.ИспользоватьПродажиНаЭкспортСырьевыхТоваровУслуг</DataPath>
@@ -1685,7 +1686,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьСкладыВТабличнойЧастиДокументовПродажиExtendedTooltip" id="2210"/>
+					<ExtendedTooltip name="ГруппаИспользоватьСкладыВТабличнойЧастиДокументовПродажиРасширеннаяПодсказка" id="2210"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьСкладыВТабличнойЧастиДокументовПродажи" id="502">
 							<DataPath>НаборКонстант.ИспользоватьСкладыВТабличнойЧастиДокументовПродажи</DataPath>
@@ -1699,7 +1700,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьСкладыВТабличнойЧастиДокументовПродажиКонтекстноеМеню" id="503"/>
-							<ExtendedTooltip name="ИспользоватьСкладыВТабличнойЧастиДокументовПродажиExtendedTooltip" id="2211">
+							<ExtendedTooltip name="ИспользоватьСкладыВТабличнойЧастиДокументовПродажиРасширеннаяПодсказка" id="2211">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -1730,7 +1731,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКомментарийИспользоватьСкладыВТабличнойЧастиДокументовПродажиExtendedTooltip" id="2213"/>
+					<ExtendedTooltip name="ГруппаКомментарийИспользоватьСкладыВТабличнойЧастиДокументовПродажиРасширеннаяПодсказка" id="2213"/>
 					<ChildItems>
 						<PictureDecoration name="Декорация20" id="1954">
 							<Picture>
@@ -1738,7 +1739,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="Декорация20КонтекстноеМеню" id="1955"/>
-							<ExtendedTooltip name="Декорация20ExtendedTooltip" id="2214"/>
+							<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="2214"/>
 						</PictureDecoration>
 						<LabelDecoration name="КомментарийИспользоватьСкладыВТабличнойЧастиДокументовПродажи" id="1956">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -1749,7 +1750,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="КомментарийИспользоватьСкладыВТабличнойЧастиДокументовПродажиКонтекстноеМеню" id="1957"/>
-							<ExtendedTooltip name="КомментарийИспользоватьСкладыВТабличнойЧастиДокументовПродажиExtendedTooltip" id="2215"/>
+							<ExtendedTooltip name="КомментарийИспользоватьСкладыВТабличнойЧастиДокументовПродажиРасширеннаяПодсказка" id="2215"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -1757,7 +1758,7 @@
 					<Group>Vertical</Group>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользованиеЗапретовОтгрузкиExtendedTooltip" id="2233"/>
+					<ExtendedTooltip name="ГруппаИспользованиеЗапретовОтгрузкиРасширеннаяПодсказка" id="2233"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьЗапретОтгрузки" id="2078">
 							<DataPath>НаборКонстант.ИспользоватьЗапретОтгрузки</DataPath>
@@ -1771,7 +1772,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьЗапретОтгрузкиКонтекстноеМеню" id="2079"/>
-							<ExtendedTooltip name="ИспользоватьЗапретОтгрузкиExtendedTooltip" id="2234">
+							<ExtendedTooltip name="ИспользоватьЗапретОтгрузкиРасширеннаяПодсказка" id="2234">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -1989,7 +1990,7 @@
 					<Representation>None</Representation>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСтоимостьТоваровПриОценкеРентабельностиПродажиExtendedTooltip" id="2239"/>
+					<ExtendedTooltip name="ГруппаСтоимостьТоваровПриОценкеРентабельностиПродажиРасширеннаяПодсказка" id="2239"/>
 					<ChildItems>
 						<LabelDecoration name="Декорация2" id="2120">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -2006,7 +2007,7 @@
 								</v8:item>
 							</ToolTip>
 							<ContextMenu name="Декорация2КонтекстноеМеню" id="2121"/>
-							<ExtendedTooltip name="Декорация2ExtendedTooltip" id="2240"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="2240"/>
 						</LabelDecoration>
 						<LabelDecoration name="ПояснениеСтоимостьТоваровПриОценкеРентабельностиПродажиОбщее" id="2122">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -2019,7 +2020,7 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ПояснениеСтоимостьТоваровПриОценкеРентабельностиПродажиОбщееКонтекстноеМеню" id="2123"/>
-							<ExtendedTooltip name="ПояснениеСтоимостьТоваровПриОценкеРентабельностиПродажиОбщееExtendedTooltip" id="2241"/>
+							<ExtendedTooltip name="ПояснениеСтоимостьТоваровПриОценкеРентабельностиПродажиОбщееРасширеннаяПодсказка" id="2241"/>
 						</LabelDecoration>
 						<UsualGroup name="ГруппаГоризонтальная" id="2124">
 							<Title>
@@ -2037,12 +2038,12 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаГоризонтальнаяExtendedTooltip" id="2242"/>
+							<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="2242"/>
 							<ChildItems>
 								<LabelDecoration name="Декорация3" id="2126">
 									<Width>1</Width>
 									<ContextMenu name="Декорация3КонтекстноеМеню" id="2127"/>
-									<ExtendedTooltip name="Декорация3ExtendedTooltip" id="2243"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="2243"/>
 								</LabelDecoration>
 								<UsualGroup name="ГруппаВертикальная" id="2125">
 									<Title>
@@ -2060,7 +2061,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаВертикальнаяExtendedTooltip" id="2244"/>
+									<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="2244"/>
 									<ChildItems>
 										<RadioButtonField name="СтоимостьТоваровПриОценкеРентабельностиПродажи1" id="2128">
 											<DataPath>НаборКонстант.СтоимостьТоваровПриОценкеРентабельностиПродажи</DataPath>
@@ -2083,7 +2084,7 @@
 												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="СтоимостьТоваровПриОценкеРентабельностиПродажи1КонтекстноеМеню" id="2090"/>
-											<ExtendedTooltip name="СтоимостьТоваровПриОценкеРентабельностиПродажи1ExtendedTooltip" id="2245">
+											<ExtendedTooltip name="СтоимостьТоваровПриОценкеРентабельностиПродажи1РасширеннаяПодсказка" id="2245">
 												<AutoMaxWidth>false</AutoMaxWidth>
 												<Title formatted="false">
 													<v8:item>
@@ -2117,7 +2118,7 @@
 												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="СтоимостьТоваровПриОценкеРентабельностиПродажи2КонтекстноеМеню" id="2119"/>
-											<ExtendedTooltip name="СтоимостьТоваровПриОценкеРентабельностиПродажи2ExtendedTooltip" id="2247">
+											<ExtendedTooltip name="СтоимостьТоваровПриОценкеРентабельностиПродажи2РасширеннаяПодсказка" id="2247">
 												<AutoMaxWidth>false</AutoMaxWidth>
 												<Title formatted="false">
 													<v8:item>
@@ -2144,7 +2145,7 @@
 												</v8:item>
 											</ToolTip>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="ГруппаСтраницыНормативныйВидЦенExtendedTooltip" id="2249"/>
+											<ExtendedTooltip name="ГруппаСтраницыНормативныйВидЦенРасширеннаяПодсказка" id="2249"/>
 											<ChildItems>
 												<Page name="ГруппаНормативныйВидЦенГруппаПоРасчетнойСебестоимости" id="2105">
 													<Title>
@@ -2159,11 +2160,11 @@
 															<v8:content>Группа плановый вид цен по плановому виду цен</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="ГруппаНормативныйВидЦенГруппаПоРасчетнойСебестоимостиExtendedTooltip" id="2250"/>
+													<ExtendedTooltip name="ГруппаНормативныйВидЦенГруппаПоРасчетнойСебестоимостиРасширеннаяПодсказка" id="2250"/>
 													<ChildItems>
 														<LabelDecoration name="ДекорацияНормативныйВидЦен" id="2106">
 															<ContextMenu name="ДекорацияНормативныйВидЦенКонтекстноеМеню" id="2107"/>
-															<ExtendedTooltip name="ДекорацияНормативныйВидЦенExtendedTooltip" id="2251"/>
+															<ExtendedTooltip name="ДекорацияНормативныйВидЦенРасширеннаяПодсказка" id="2251"/>
 														</LabelDecoration>
 													</ChildItems>
 												</Page>
@@ -2180,7 +2181,7 @@
 															<v8:content>Группа нормативный вид цен по нормативному виду цен</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="ГруппаНормативныйВидЦенПоНормативномуВидуЦенExtendedTooltip" id="2252"/>
+													<ExtendedTooltip name="ГруппаНормативныйВидЦенПоНормативномуВидуЦенРасширеннаяПодсказка" id="2252"/>
 													<ChildItems>
 														<InputField name="НормативныйВидЦен" id="2099">
 															<DataPath>НаборКонстант.НормативныйВидЦен</DataPath>
@@ -2194,7 +2195,7 @@
 																</app:item>
 															</ChoiceParameters>
 															<ContextMenu name="НормативныйВидЦенКонтекстноеМеню" id="2100"/>
-															<ExtendedTooltip name="НормативныйВидЦенExtendedTooltip" id="2253"/>
+															<ExtendedTooltip name="НормативныйВидЦенРасширеннаяПодсказка" id="2253"/>
 															<Events>
 																<Event name="OnChange">НормативныйВидЦенПриИзменении</Event>
 															</Events>
@@ -2225,7 +2226,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажиExtendedTooltip" id="2254"/>
+					<ExtendedTooltip name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажиРасширеннаяПодсказка" id="2254"/>
 					<ChildItems>
 						<PictureDecoration name="Декорация22" id="2109">
 							<Picture>
@@ -2233,7 +2234,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="Декорация22КонтекстноеМеню" id="2110"/>
-							<ExtendedTooltip name="Декорация22ExtendedTooltip" id="2255"/>
+							<ExtendedTooltip name="Декорация22РасширеннаяПодсказка" id="2255"/>
 						</PictureDecoration>
 						<Pages name="ГруппаСтраницыКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи" id="2113">
 							<Title>
@@ -2249,7 +2250,7 @@
 								</v8:item>
 							</ToolTip>
 							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="ГруппаСтраницыКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажиExtendedTooltip" id="2256"/>
+							<ExtendedTooltip name="ГруппаСтраницыКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажиРасширеннаяПодсказка" id="2256"/>
 							<ChildItems>
 								<Page name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1" id="2114">
 									<Title>
@@ -2264,7 +2265,7 @@
 											<v8:content>Группа комментарий стоимость товаров при оценке рентабельности продажи1</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1ExtendedTooltip" id="2257"/>
+									<ExtendedTooltip name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1РасширеннаяПодсказка" id="2257"/>
 									<ChildItems>
 										<LabelDecoration name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1" id="2111">
 											<AutoMaxWidth>false</AutoMaxWidth>
@@ -2275,7 +2276,7 @@
 												</v8:item>
 											</Title>
 											<ContextMenu name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1КонтекстноеМеню" id="2112"/>
-											<ExtendedTooltip name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1ExtendedTooltip" id="2258"/>
+											<ExtendedTooltip name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи1РасширеннаяПодсказка" id="2258"/>
 										</LabelDecoration>
 									</ChildItems>
 								</Page>
@@ -2292,7 +2293,7 @@
 											<v8:content>Группа комментарий метод предварительной оценки стоимости товаров1</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи2ExtendedTooltip" id="2259"/>
+									<ExtendedTooltip name="ГруппаКомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи2РасширеннаяПодсказка" id="2259"/>
 									<ChildItems>
 										<LabelDecoration name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи2" id="2116">
 											<AutoMaxWidth>false</AutoMaxWidth>
@@ -2304,7 +2305,7 @@
 											</Title>
 											<VerticalAlign>Top</VerticalAlign>
 											<ContextMenu name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи2КонтекстноеМеню" id="2117"/>
-											<ExtendedTooltip name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи2ExtendedTooltip" id="2260"/>
+											<ExtendedTooltip name="КомментарийСтоимостьТоваровПриОценкеРентабельностиПродажи2РасширеннаяПодсказка" id="2260"/>
 										</LabelDecoration>
 									</ChildItems>
 								</Page>
@@ -2328,7 +2329,7 @@
 					<Group>Horizontal</Group>
 					<Representation>NormalSeparation</Representation>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
-					<ExtendedTooltip name="ГруппаСогласованиеДокументовПродажExtendedTooltip" id="2272"/>
+					<ExtendedTooltip name="ГруппаСогласованиеДокументовПродажРасширеннаяПодсказка" id="2272"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаГруппаСогласованиеДокументовПродаж1" id="983">
 							<Title>
@@ -2346,7 +2347,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаГруппаСогласованиеДокументовПродаж1ExtendedTooltip" id="2273"/>
+							<ExtendedTooltip name="ГруппаГруппаСогласованиеДокументовПродаж1РасширеннаяПодсказка" id="2273"/>
 							<ChildItems>
 								<CheckBoxField name="ИспользоватьСогласованиеЗаказовКлиентов" id="1840">
 									<DataPath>НаборКонстант.ИспользоватьСогласованиеЗаказовКлиентов</DataPath>
@@ -2359,7 +2360,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИспользоватьСогласованиеЗаказовКлиентовКонтекстноеМеню" id="1841"/>
-									<ExtendedTooltip name="ИспользоватьСогласованиеЗаказовКлиентовExtendedTooltip" id="2274"/>
+									<ExtendedTooltip name="ИспользоватьСогласованиеЗаказовКлиентовРасширеннаяПодсказка" id="2274"/>
 									<Events>
 										<Event name="OnChange">ИспользоватьСогласованиеЗаказовКлиентовПриИзменении</Event>
 									</Events>
@@ -2375,7 +2376,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИспользоватьСогласованиеЗаявокНаВозвратТоваровОтКлиентовКонтекстноеМеню" id="324"/>
-									<ExtendedTooltip name="ИспользоватьСогласованиеЗаявокНаВозвратТоваровОтКлиентовExtendedTooltip" id="2275"/>
+									<ExtendedTooltip name="ИспользоватьСогласованиеЗаявокНаВозвратТоваровОтКлиентовРасширеннаяПодсказка" id="2275"/>
 									<Events>
 										<Event name="OnChange">ИспользоватьСогласованиеЗаявокНаВозвратТоваровОтКлиентовПриИзменении</Event>
 									</Events>
@@ -2389,7 +2390,7 @@
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.НазначитьОтветственныхЗаСогласованиеЛогистическихУсловийДокументовПродажи</CommandName>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеЛогистическихУсловийДокументовПродажиExtendedTooltip" id="2277">
+											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеЛогистическихУсловийДокументовПродажиРасширеннаяПодсказка" id="2277">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2403,7 +2404,7 @@
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.НазначитьОтветственныхЗаСогласованиеФинансовыхУсловийДокументовПродажи</CommandName>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеФинансовыхУсловийДокументовПродажиExtendedTooltip" id="2279">
+											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеФинансовыхУсловийДокументовПродажиРасширеннаяПодсказка" id="2279">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2417,7 +2418,7 @@
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.НазначитьОтветственныхЗаСогласованиеЗаявокНаВозврат</CommandName>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеЗаявокНаВозвратExtendedTooltip" id="2281">
+											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеЗаявокНаВозвратРасширеннаяПодсказка" id="2281">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2438,7 +2439,7 @@
 												</v8:item>
 											</Title>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<ExtendedTooltip name="ВключитьВерсионированиеДокументовПродажиExtendedTooltip" id="2283">
+											<ExtendedTooltip name="ВключитьВерсионированиеДокументовПродажиРасширеннаяПодсказка" id="2283">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2468,7 +2469,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаГруппаСогласованиеДокументовПродаж2ExtendedTooltip" id="2285"/>
+							<ExtendedTooltip name="ГруппаГруппаСогласованиеДокументовПродаж2РасширеннаяПодсказка" id="2285"/>
 							<ChildItems>
 								<CheckBoxField name="ИспользоватьСогласованиеКоммерческихПредложений" id="1842">
 									<DataPath>НаборКонстант.ИспользоватьСогласованиеКоммерческихПредложений</DataPath>
@@ -2481,7 +2482,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИспользоватьСогласованиеКоммерческихПредложенийКонтекстноеМеню" id="1843"/>
-									<ExtendedTooltip name="ИспользоватьСогласованиеКоммерческихПредложенийExtendedTooltip" id="2286"/>
+									<ExtendedTooltip name="ИспользоватьСогласованиеКоммерческихПредложенийРасширеннаяПодсказка" id="2286"/>
 									<Events>
 										<Event name="OnChange">ИспользоватьСогласованиеКоммерческихПредложенийПриИзменении</Event>
 									</Events>
@@ -2497,7 +2498,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИспользоватьСогласованиеСоглашенийСКлиентамиКонтекстноеМеню" id="1845"/>
-									<ExtendedTooltip name="ИспользоватьСогласованиеСоглашенийСКлиентамиExtendedTooltip" id="2287"/>
+									<ExtendedTooltip name="ИспользоватьСогласованиеСоглашенийСКлиентамиРасширеннаяПодсказка" id="2287"/>
 									<Events>
 										<Event name="OnChange">ИспользоватьСогласованиеСоглашенийСКлиентамиПриИзменении</Event>
 									</Events>
@@ -2511,7 +2512,7 @@
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.НазначитьОтветственныхЗаСогласованиеЦеновыхУсловийДокументовПродажи</CommandName>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеЦеновыхУсловийДокументовПродажиExtendedTooltip" id="2289">
+											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеЦеновыхУсловийДокументовПродажиРасширеннаяПодсказка" id="2289">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2525,7 +2526,7 @@
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.НазначитьОтветственныхЗаСогласованиеКоммерческихУсловийДокументовПродажи</CommandName>
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеКоммерческихУсловийДокументовПродажиExtendedTooltip" id="2291">
+											<ExtendedTooltip name="НазначитьОтветственныхЗаСогласованиеКоммерческихУсловийДокументовПродажиРасширеннаяПодсказка" id="2291">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2562,7 +2563,7 @@
 			<ControlRepresentation>Picture</ControlRepresentation>
 			<Representation>NormalSeparation</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
-			<ExtendedTooltip name="ГруппаУправлениеРозничнымиПродажамиExtendedTooltip" id="2293"/>
+			<ExtendedTooltip name="ГруппаУправлениеРозничнымиПродажамиРасширеннаяПодсказка" id="2293"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаРозничныеПродажи" id="2883">
 					<Title>
@@ -2598,7 +2599,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаУправлениеРозничнымиПродажами1ExtendedTooltip" id="2294"/>
+							<ExtendedTooltip name="ГруппаУправлениеРозничнымиПродажами1РасширеннаяПодсказка" id="2294"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаИспользоватьРозничныеПродажи" id="2045">
 									<Title>
@@ -2616,7 +2617,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаИспользоватьРозничныеПродажиExtendedTooltip" id="2295"/>
+									<ExtendedTooltip name="ГруппаИспользоватьРозничныеПродажиРасширеннаяПодсказка" id="2295"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьРозничныеПродажи" id="2046">
 											<DataPath>НаборКонстант.ИспользоватьРозничныеПродажи</DataPath>
@@ -2630,7 +2631,7 @@
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьРозничныеПродажиКонтекстноеМеню" id="2047"/>
-											<ExtendedTooltip name="ИспользоватьРозничныеПродажиExtendedTooltip" id="2296">
+											<ExtendedTooltip name="ИспользоватьРозничныеПродажиРасширеннаяПодсказка" id="2296">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2661,14 +2662,14 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаКоличествоДнейХраненияОтложенныхЧековExtendedTooltip" id="2298"/>
+									<ExtendedTooltip name="ГруппаКоличествоДнейХраненияОтложенныхЧековРасширеннаяПодсказка" id="2298"/>
 									<ChildItems>
 										<UsualGroup name="Группа8" id="2051">
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа8ExtendedTooltip" id="2299">
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="2299">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2688,7 +2689,7 @@
 													</Title>
 													<SpinButton>true</SpinButton>
 													<ContextMenu name="КоличествоДнейХраненияОтложенныхЧековКонтекстноеМеню" id="2053"/>
-													<ExtendedTooltip name="КоличествоДнейХраненияОтложенныхЧековExtendedTooltip" id="2300"/>
+													<ExtendedTooltip name="КоличествоДнейХраненияОтложенныхЧековРасширеннаяПодсказка" id="2300"/>
 													<Events>
 														<Event name="OnChange">КоличествоДнейХраненияОтложенныхЧековПриИзменении</Event>
 													</Events>
@@ -2702,7 +2703,7 @@
 														</v8:item>
 													</Title>
 													<ContextMenu name="НадписьДнейКонтекстноеМеню" id="2055"/>
-													<ExtendedTooltip name="НадписьДнейExtendedTooltip" id="2301"/>
+													<ExtendedTooltip name="НадписьДнейРасширеннаяПодсказка" id="2301"/>
 												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
@@ -2724,14 +2725,14 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаКоличествоДнейХраненияЗаархивированныхЧековExtendedTooltip" id="2303"/>
+									<ExtendedTooltip name="ГруппаКоличествоДнейХраненияЗаархивированныхЧековРасширеннаяПодсказка" id="2303"/>
 									<ChildItems>
 										<UsualGroup name="Группа9" id="2059">
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа9ExtendedTooltip" id="2304">
+											<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="2304">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2751,7 +2752,7 @@
 													</Title>
 													<SpinButton>true</SpinButton>
 													<ContextMenu name="КоличествоДнейХраненияЗаархивированныхЧековКонтекстноеМеню" id="2061"/>
-													<ExtendedTooltip name="КоличествоДнейХраненияЗаархивированныхЧековExtendedTooltip" id="2305"/>
+													<ExtendedTooltip name="КоличествоДнейХраненияЗаархивированныхЧековРасширеннаяПодсказка" id="2305"/>
 													<Events>
 														<Event name="OnChange">КоличествоДнейХраненияОтложенныхЧековПриИзменении</Event>
 													</Events>
@@ -2765,7 +2766,7 @@
 														</v8:item>
 													</Title>
 													<ContextMenu name="НадписьДней1КонтекстноеМеню" id="2063"/>
-													<ExtendedTooltip name="НадписьДней1ExtendedTooltip" id="2306"/>
+													<ExtendedTooltip name="НадписьДней1РасширеннаяПодсказка" id="2306"/>
 												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
@@ -2787,7 +2788,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаИспользоватьПодарочныеСертификатыExtendedTooltip" id="2308"/>
+									<ExtendedTooltip name="ГруппаИспользоватьПодарочныеСертификатыРасширеннаяПодсказка" id="2308"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьПодарочныеСертификаты" id="2088">
 											<DataPath>НаборКонстант.ИспользоватьПодарочныеСертификаты</DataPath>
@@ -2808,7 +2809,7 @@
 											</WarningOnEdit>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьПодарочныеСертификатыКонтекстноеМеню" id="2089"/>
-											<ExtendedTooltip name="ИспользоватьПодарочныеСертификатыExtendedTooltip" id="2309">
+											<ExtendedTooltip name="ИспользоватьПодарочныеСертификатыРасширеннаяПодсказка" id="2309">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -2955,7 +2956,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаУправлениеРозничнымиПродажами2ExtendedTooltip" id="2311"/>
+							<ExtendedTooltip name="ГруппаУправлениеРозничнымиПродажами2РасширеннаяПодсказка" id="2311"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаНазначатьСкидкиПоКнопкеРасчетВЧекеККМ" id="2067">
 									<Title>
@@ -2973,7 +2974,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаНазначатьСкидкиПоКнопкеРасчетВЧекеККМExtendedTooltip" id="2312"/>
+									<ExtendedTooltip name="ГруппаНазначатьСкидкиПоКнопкеРасчетВЧекеККМРасширеннаяПодсказка" id="2312"/>
 									<ChildItems>
 										<CheckBoxField name="НазначатьСкидкиПоКнопкеРасчетВЧекеККМ" id="2068">
 											<DataPath>НаборКонстант.НазначатьСкидкиПоКнопкеРасчетВЧекеККМ</DataPath>
@@ -2987,7 +2988,7 @@
 											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="НазначатьСкидкиПоКнопкеРасчетВЧекеККМКонтекстноеМеню" id="2069"/>
-											<ExtendedTooltip name="НазначатьСкидкиПоКнопкеРасчетВЧекеККМExtendedTooltip" id="2313">
+											<ExtendedTooltip name="НазначатьСкидкиПоКнопкеРасчетВЧекеККМРасширеннаяПодсказка" id="2313">
 												<HorizontalStretch>true</HorizontalStretch>
 												<Title formatted="false">
 													<v8:item>
@@ -3013,7 +3014,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаОперацииПриЗакрытииКассовойСменыExtendedTooltip" id="2315">
+									<ExtendedTooltip name="ГруппаОперацииПриЗакрытииКассовойСменыРасширеннаяПодсказка" id="2315">
 										<HorizontalStretch>true</HorizontalStretch>
 										<Title formatted="false">
 											<v8:item>
@@ -3028,7 +3029,7 @@
 											<TitleLocation>Top</TitleLocation>
 											<TextEdit>false</TextEdit>
 											<ContextMenu name="ОперацияПриЗакрытииКассовойСменыКонтекстноеМеню" id="2074"/>
-											<ExtendedTooltip name="ОперацияПриЗакрытииКассовойСменыExtendedTooltip" id="2316"/>
+											<ExtendedTooltip name="ОперацияПриЗакрытииКассовойСменыРасширеннаяПодсказка" id="2316"/>
 											<Events>
 												<Event name="OnChange">ОперацияПриЗакрытииКассовойСменыПриИзменении</Event>
 												<Event name="Clearing">ОперацияПриЗакрытииКассовойСменыОчистка</Event>
@@ -3062,7 +3063,7 @@
 						<Button name="ОткрытьШаблоныЭтикетокИЦенников" id="2943">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьШаблоныЭтикетокИЦенников</CommandName>
-							<ExtendedTooltip name="ОткрытьШаблоныЭтикетокИЦенниковExtendedTooltip" id="2944"/>
+							<ExtendedTooltip name="ОткрытьШаблоныЭтикетокИЦенниковРасширеннаяПодсказка" id="2944"/>
 						</Button>
 						<LabelDecoration name="ПояснениеОткрытьШаблоныЭтикетокИЦенников" id="2945">
 							<TextColor>style:ПоясняющийТекст</TextColor>
@@ -3074,11 +3075,12 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ПояснениеОткрытьШаблоныЭтикетокИЦенниковКонтекстноеМеню" id="2946"/>
-							<ExtendedTooltip name="ПояснениеОткрытьШаблоныЭтикетокИЦенниковExtendedTooltip" id="2947"/>
+							<ExtendedTooltip name="ПояснениеОткрытьШаблоныЭтикетокИЦенниковРасширеннаяПодсказка" id="2947"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаФЗ54" id="3081">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3326,6 +3328,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаАлкоголь" id="2846">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3379,7 +3382,7 @@
 									</WarningOnEdit>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ВестиСведенияДляДекларацийАлкоВРозницеКонтекстноеМеню" id="3039"/>
-									<ExtendedTooltip name="ВестиСведенияДляДекларацийАлкоВРозницеExtendedTooltip" id="3040">
+									<ExtendedTooltip name="ВестиСведенияДляДекларацийАлкоВРозницеРасширеннаяПодсказка" id="3040">
 										<Height>3</Height>
 										<HorizontalStretch>true</HorizontalStretch>
 										<Title formatted="false">
@@ -3810,7 +3813,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаВедетсяРаботаЧерезТорговыхПредставителейExtendedTooltip" id="2497"/>
+					<ExtendedTooltip name="ГруппаВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="2497"/>
 					<ChildItems>
 						<CheckBoxField name="ВедетсяРаботаЧерезТорговыхПредставителей" id="2498">
 							<DataPath>НаборКонстант.ВедетсяРаботаЧерезТорговыхПредставителей</DataPath>
@@ -3824,7 +3827,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВедетсяРаботаЧерезТорговыхПредставителейКонтекстноеМеню" id="2499"/>
-							<ExtendedTooltip name="ВедетсяРаботаЧерезТорговыхПредставителейExtendedTooltip" id="2500">
+							<ExtendedTooltip name="ВедетсяРаботаЧерезТорговыхПредставителейРасширеннаяПодсказка" id="2500">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -3856,7 +3859,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользованиеЗаданийТПExtendedTooltip" id="2505"/>
+					<ExtendedTooltip name="ГруппаИспользованиеЗаданийТПРасширеннаяПодсказка" id="2505"/>
 					<ChildItems>
 						<InputField name="ИспользованиеЗаданийТорговымПредставителям" id="2506">
 							<DataPath>НаборКонстант.ИспользованиеЗаданийТорговымПредставителям</DataPath>
@@ -3871,7 +3874,7 @@
 							<ClearButton>false</ClearButton>
 							<TextEdit>false</TextEdit>
 							<ContextMenu name="ИспользованиеЗаданийТорговымПредставителямКонтекстноеМеню" id="2507"/>
-							<ExtendedTooltip name="ИспользованиеЗаданийТорговымПредставителямExtendedTooltip" id="2508">
+							<ExtendedTooltip name="ИспользованиеЗаданийТорговымПредставителямРасширеннаяПодсказка" id="2508">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -3924,7 +3927,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДетализироватьЗаданияТорговымПредставителямПоНоменклатуреExtendedTooltip" id="2518"/>
+							<ExtendedTooltip name="ГруппаДетализироватьЗаданияТорговымПредставителямПоНоменклатуреРасширеннаяПодсказка" id="2518"/>
 							<ChildItems>
 								<CheckBoxField name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуре" id="2519">
 									<DataPath>НаборКонстант.ДетализироватьЗаданияТорговымПредставителямПоНоменклатуре</DataPath>
@@ -3938,7 +3941,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуреКонтекстноеМеню" id="2520"/>
-									<ExtendedTooltip name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуреExtendedTooltip" id="2521">
+									<ExtendedTooltip name="ДетализироватьЗаданияТорговымПредставителямПоНоменклатуреРасширеннаяПодсказка" id="2521">
 										<AutoMaxWidth>false</AutoMaxWidth>
 										<Title formatted="false">
 											<v8:item>
@@ -3970,7 +3973,7 @@
 					</ToolTip>
 					<Group>Vertical</Group>
 					<Representation>NormalSeparation</Representation>
-					<ExtendedTooltip name="НастройкиДляРасширенияДляКПКExtendedTooltip" id="2526"/>
+					<ExtendedTooltip name="НастройкиДляРасширенияДляКПКРасширеннаяПодсказка" id="2526"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаУправлениеМобильнымиПриложениями" id="2527">
 							<Title>
@@ -3989,7 +3992,7 @@
 							<Representation>NormalSeparation</Representation>
 							<ChildItemsWidth>Equal</ChildItemsWidth>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениямиExtendedTooltip" id="2528"/>
+							<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениямиРасширеннаяПодсказка" id="2528"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаУправлениеМобильнымиПриложениями1" id="2529">
 									<Title>
@@ -4007,7 +4010,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениями1ExtendedTooltip" id="2530"/>
+									<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениями1РасширеннаяПодсказка" id="2530"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаОткрытьМобильныеПриложения" id="2531">
 											<Title>
@@ -4025,13 +4028,13 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаОткрытьМобильныеПриложенияExtendedTooltip" id="2532"/>
+											<ExtendedTooltip name="ГруппаОткрытьМобильныеПриложенияРасширеннаяПодсказка" id="2532"/>
 											<ChildItems>
 												<Button name="ОткрытьМобильныеПриложения" id="2533">
 													<Type>Hyperlink</Type>
 													<CommandName>Form.Command.ОткрытьМобильныеПриложения</CommandName>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-													<ExtendedTooltip name="ОткрытьМобильныеПриложенияExtendedTooltip" id="2534">
+													<ExtendedTooltip name="ОткрытьМобильныеПриложенияРасширеннаяПодсказка" id="2534">
 														<HorizontalStretch>true</HorizontalStretch>
 														<Title formatted="false">
 															<v8:item>
@@ -4059,13 +4062,13 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПКExtendedTooltip" id="2539"/>
+											<ExtendedTooltip name="ГруппаОбщаяКомандаНастройкиКомпонентыОбменаДаннымиСКПКРасширеннаяПодсказка" id="2539"/>
 											<ChildItems>
 												<Button name="ОткрытьНастройкиКомпонентыОбменаДаннымиСКПК" id="2540">
 													<Type>Hyperlink</Type>
 													<CommandName>Form.Command.ОткрытьНастройкиКомпонентыОбменаДаннымиСКПК</CommandName>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-													<ExtendedTooltip name="ОткрытьНастройкиКомпонентыОбменаДаннымиСКПКExtendedTooltip" id="2541">
+													<ExtendedTooltip name="ОткрытьНастройкиКомпонентыОбменаДаннымиСКПКРасширеннаяПодсказка" id="2541">
 														<HorizontalStretch>true</HorizontalStretch>
 														<Title formatted="false">
 															<v8:item>
@@ -4095,7 +4098,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениями2ExtendedTooltip" id="2546"/>
+									<ExtendedTooltip name="ГруппаУправлениеМобильнымиПриложениями2РасширеннаяПодсказка" id="2546"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаОткрытьМобильныеКомпьютеры" id="2547">
 											<Title>
@@ -4113,7 +4116,7 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаОткрытьМобильныеКомпьютерыExtendedTooltip" id="2548"/>
+											<ExtendedTooltip name="ГруппаОткрытьМобильныеКомпьютерыРасширеннаяПодсказка" id="2548"/>
 											<ChildItems>
 												<Button name="ОткрытьМобильныеКомпьютеры" id="2549">
 													<Type>Hyperlink</Type>
@@ -4125,7 +4128,7 @@
 														</v8:item>
 													</Title>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-													<ExtendedTooltip name="ОткрытьМобильныеКомпьютерыExtendedTooltip" id="2550">
+													<ExtendedTooltip name="ОткрытьМобильныеКомпьютерыРасширеннаяПодсказка" id="2550">
 														<HorizontalStretch>true</HorizontalStretch>
 														<Title formatted="false">
 															<v8:item>
@@ -4153,13 +4156,13 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаОткрытьНастройкиТорговыхПредставителейExtendedTooltip" id="2555"/>
+											<ExtendedTooltip name="ГруппаОткрытьНастройкиТорговыхПредставителейРасширеннаяПодсказка" id="2555"/>
 											<ChildItems>
 												<Button name="ОткрытьНастройкиТорговыхПредставителей" id="2556">
 													<Type>Hyperlink</Type>
 													<CommandName>Form.Command.ОткрытьНастройкиТорговыхПредставителей</CommandName>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-													<ExtendedTooltip name="ОткрытьНастройкиТорговыхПредставителейExtendedTooltip" id="2557">
+													<ExtendedTooltip name="ОткрытьНастройкиТорговыхПредставителейРасширеннаяПодсказка" id="2557">
 														<HorizontalStretch>true</HorizontalStretch>
 														<Title formatted="false">
 															<v8:item>
@@ -4215,7 +4218,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьПроизводствоИзДавальческогоСырьяExtendedTooltip" id="2776"/>
+					<ExtendedTooltip name="ГруппаИспользоватьПроизводствоИзДавальческогоСырьяРасширеннаяПодсказка" id="2776"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьПроизводствоИзДавальческогоСырья" id="2777">
 							<DataPath>НаборКонстант.ИспользоватьПроизводствоИзДавальческогоСырья</DataPath>
@@ -4229,7 +4232,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьПроизводствоИзДавальческогоСырьяКонтекстноеМеню" id="2778"/>
-							<ExtendedTooltip name="ИспользоватьПроизводствоИзДавальческогоСырьяExtendedTooltip" id="2779">
+							<ExtendedTooltip name="ИспользоватьПроизводствоИзДавальческогоСырьяРасширеннаяПодсказка" id="2779">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -4305,7 +4308,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьОтчетДавальцуПоНесколькимЗаказамExtendedTooltip" id="2784"/>
+					<ExtendedTooltip name="ГруппаИспользоватьОтчетДавальцуПоНесколькимЗаказамРасширеннаяПодсказка" id="2784"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьОтчетДавальцуПоНесколькимЗаказам" id="2785">
 							<DataPath>НаборКонстант.ИспользоватьОтчетДавальцуПоНесколькимЗаказам</DataPath>
@@ -4318,7 +4321,7 @@
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьОтчетДавальцуПоНесколькимЗаказамКонтекстноеМеню" id="2786"/>
-							<ExtendedTooltip name="ИспользоватьОтчетДавальцуПоНесколькимЗаказамExtendedTooltip" id="2787"/>
+							<ExtendedTooltip name="ИспользоватьОтчетДавальцуПоНесколькимЗаказамРасширеннаяПодсказка" id="2787"/>
 							<Events>
 								<Event name="OnChange">ИспользоватьОтчетДавальцуПоНесколькимЗаказамПриИзменении</Event>
 							</Events>
@@ -4341,7 +4344,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКомментарийИспользоватьОтчетДавальцуПоНесколькимЗаказамExtendedTooltip" id="2789"/>
+					<ExtendedTooltip name="ГруппаКомментарийИспользоватьОтчетДавальцуПоНесколькимЗаказамРасширеннаяПодсказка" id="2789"/>
 					<ChildItems>
 						<PictureDecoration name="Декорация23" id="2790">
 							<Picture>
@@ -4360,7 +4363,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="КомментарийИспользоватьОтчетДавальцуПоНесколькимЗаказамКонтекстноеМеню" id="2794"/>
-							<ExtendedTooltip name="КомментарийИспользоватьОтчетДавальцуПоНесколькимЗаказамExtendedTooltip" id="2795"/>
+							<ExtendedTooltip name="КомментарийИспользоватьОтчетДавальцуПоНесколькимЗаказамРасширеннаяПодсказка" id="2795"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -4689,13 +4692,13 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаОткрытьНастройкиПечатиОбъектовExtendedTooltip" id="2935"/>
+					<ExtendedTooltip name="ГруппаОткрытьНастройкиПечатиОбъектовРасширеннаяПодсказка" id="2935"/>
 					<ChildItems>
 						<Button name="ОткрытьНастройкиПечатиОбъектов" id="2936">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ОткрытьНастрокиПечатиОбъектов</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="ОткрытьНастройкиПечатиОбъектовExtendedTooltip" id="2937">
+							<ExtendedTooltip name="ОткрытьНастройкиПечатиОбъектовРасширеннаяПодсказка" id="2937">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -4724,7 +4727,7 @@
 					<Group>Vertical</Group>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаДополнительнаяКолонкаПечатныхФормДокументовExtendedTooltip" id="2949">
+					<ExtendedTooltip name="ГруппаДополнительнаяКолонкаПечатныхФормДокументовРасширеннаяПодсказка" id="2949">
 						<AutoMaxWidth>false</AutoMaxWidth>
 						<Title formatted="false">
 							<v8:item>
@@ -4752,7 +4755,7 @@
 							<HorizontalStretch>false</HorizontalStretch>
 							<TextEdit>false</TextEdit>
 							<ContextMenu name="ДополнительнаяКолонкаПечатныхФормДокументовКонтекстноеМеню" id="2951"/>
-							<ExtendedTooltip name="ДополнительнаяКолонкаПечатныхФормДокументовExtendedTooltip" id="2952"/>
+							<ExtendedTooltip name="ДополнительнаяКолонкаПечатныхФормДокументовРасширеннаяПодсказка" id="2952"/>
 							<Events>
 								<Event name="OnChange">ДополнительнаяКолонкаПечатныхФормДокументовПриИзменении</Event>
 								<Event name="Clearing">ДополнительнаяКолонкаПечатныхФормДокументовОчистка</Event>
@@ -4823,7 +4826,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьШтрихкодированиеПечатныхФормОбъектовExtendedTooltip" id="2965"/>
+					<ExtendedTooltip name="ГруппаИспользоватьШтрихкодированиеПечатныхФормОбъектовРасширеннаяПодсказка" id="2965"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьШтрихкодированиеПечатныхФормОбъектов" id="2966">
 							<DataPath>НаборКонстант.ИспользоватьШтрихкодированиеПечатныхФормОбъектов</DataPath>
@@ -4837,7 +4840,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьШтрихкодированиеПечатныхФормОбъектовКонтекстноеМеню" id="2967"/>
-							<ExtendedTooltip name="ИспользоватьШтрихкодированиеПечатныхФормОбъектовExtendedTooltip" id="2968">
+							<ExtendedTooltip name="ИспользоватьШтрихкодированиеПечатныхФормОбъектовРасширеннаяПодсказка" id="2968">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -4868,14 +4871,14 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьТТНExtendedTooltip" id="2973"/>
+					<ExtendedTooltip name="ГруппаИспользоватьТТНРасширеннаяПодсказка" id="2973"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьТТН" id="2974">
 							<DataPath>НаборКонстант.ИспользоватьТТН</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Товарно-транспортные накладные</v8:content>
+									<v8:content>Товарно-транспортные накладные ТТН-1</v8:content>
 								</v8:item>
 							</Title>
 							<TitleLocation>Right</TitleLocation>
@@ -4888,12 +4891,12 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИспользоватьТТНКонтекстноеМеню" id="2975"/>
-							<ExtendedTooltip name="ИспользоватьТТНExtendedTooltip" id="2976">
+							<ExtendedTooltip name="ИспользоватьТТНРасширеннаяПодсказка" id="2976">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Печать сопроводительных документов, необходимых при транспортировке товаров (ТТН и транспортных накладных).</v8:content>
+										<v8:content>Печать сопроводительных документов, необходимых при транспортировке товаров.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -4904,6 +4907,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаНаименованиеВидаНоменклатурыДляПечати" id="2980">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -4920,7 +4924,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаНаименованиеВидаНоменклатурыДляПечатиExtendedTooltip" id="2981">
+					<ExtendedTooltip name="ГруппаНаименованиеВидаНоменклатурыДляПечатиРасширеннаяПодсказка" id="2981">
 						<Title formatted="false">
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4940,7 +4944,7 @@
 							<Width>25</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="НаименованиеДляПечатиВидовНоменклатурыКонтекстноеМеню" id="2983"/>
-							<ExtendedTooltip name="НаименованиеДляПечатиВидовНоменклатурыExtendedTooltip" id="2984"/>
+							<ExtendedTooltip name="НаименованиеДляПечатиВидовНоменклатурыРасширеннаяПодсказка" id="2984"/>
 							<Events>
 								<Event name="OnChange">НаименованиеДляПечатиВидовНоменклатурыПриИзменении</Event>
 							</Events>
@@ -4963,26 +4967,26 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаФормироватьТорг12СчетФактуруВБазовыхЕдиницахExtendedTooltip" id="2989"/>
+					<ExtendedTooltip name="ГруппаФормироватьТорг12СчетФактуруВБазовыхЕдиницахРасширеннаяПодсказка" id="2989"/>
 					<ChildItems>
 						<CheckBoxField name="ВыводитьБазовыеЕдиницыИзмерения" id="2990">
 							<DataPath>НаборКонстант.ВыводитьБазовыеЕдиницыИзмерения</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Формировать ТОРГ-12, ТТН и счета-фактуры в базовых единицах измерения</v8:content>
+									<v8:content>Формировать ТН-2, ТТН-1 и счета-фактуры в базовых единицах измерения</v8:content>
 								</v8:item>
 							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВыводитьБазовыеЕдиницыИзмеренияКонтекстноеМеню" id="2991"/>
-							<ExtendedTooltip name="ВыводитьБазовыеЕдиницыИзмеренияExtendedTooltip" id="2992">
+							<ExtendedTooltip name="ВыводитьБазовыеЕдиницыИзмеренияРасширеннаяПодсказка" id="2992">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Выводить в ТОРГ-12, ТТН и счетах-фактурах количество в базовых единицах измерения вместо упаковок.</v8:content>
+										<v8:content>Выводить в ТН-2, ТТН-1 и счетах-фактурах количество в базовых единицах измерения вместо упаковок.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -4993,6 +4997,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаВестиОтдельнуюНумерациюСчетовФактурНаАвансы" id="2996">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -5008,7 +5013,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаВестиОтдельнуюНумерациюСчетовФактурНаАвансыExtendedTooltip" id="2997"/>
+					<ExtendedTooltip name="ГруппаВестиОтдельнуюНумерациюСчетовФактурНаАвансыРасширеннаяПодсказка" id="2997"/>
 					<ChildItems>
 						<CheckBoxField name="ВестиОтдельнуюНумерациюСчетовФактурНаАвансы" id="2998">
 							<DataPath>НаборКонстант.ВестиОтдельнуюНумерациюСчетовФактурНаАвансы</DataPath>
@@ -5022,7 +5027,7 @@
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВестиОтдельнуюНумерациюСчетовФактурНаАвансыКонтекстноеМеню" id="2999"/>
-							<ExtendedTooltip name="ВестиОтдельнуюНумерациюСчетовФактурНаАвансыExtendedTooltip" id="3000">
+							<ExtendedTooltip name="ВестиОтдельнуюНумерациюСчетовФактурНаАвансыРасширеннаяПодсказка" id="3000">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
 									<v8:item>
@@ -5049,7 +5054,7 @@
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ThroughAlign>DontUse</ThroughAlign>
-					<ExtendedTooltip name="ГруппаСкрыватьСкидкиВПечатныхФормахДокументовПродажиExtendedTooltip" id="3005">
+					<ExtendedTooltip name="ГруппаСкрыватьСкидкиВПечатныхФормахДокументовПродажиРасширеннаяПодсказка" id="3005">
 						<AutoMaxWidth>false</AutoMaxWidth>
 						<Title formatted="false">
 							<v8:item>
@@ -5073,7 +5078,7 @@
 							<HorizontalStretch>false</HorizontalStretch>
 							<TextEdit>false</TextEdit>
 							<ContextMenu name="ОтображениеСкидокВПечатныхФормахДокументовПродажиКонтекстноеМеню" id="3007"/>
-							<ExtendedTooltip name="ОтображениеСкидокВПечатныхФормахДокументовПродажиExtendedTooltip" id="3008"/>
+							<ExtendedTooltip name="ОтображениеСкидокВПечатныхФормахДокументовПродажиРасширеннаяПодсказка" id="3008"/>
 							<Events>
 								<Event name="OnChange">ОтображениеСкидокВПечатныхФормахДокументовПродажи</Event>
 								<Event name="Clearing">ОтображениеСкидокВПечатныхФормахДокументовПродажиОчистка</Event>
@@ -5092,22 +5097,14 @@
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
 				<Field>НаборКонстант.АвтоматическиСоздаватьПартнеровПриОтправкеЭлектронногоЧекаПокупателю</Field>
-				<Field>НаборКонстант.ВариантОбособленияМатериаловВПроизводстве.Ref</Field>
-				<Field>НаборКонстант.ВариантПриемкиТоваров.Ref</Field>
 				<Field>НаборКонстант.ВестиСведенияДляДекларацийАлкоВРознице</Field>
 				<Field>НаборКонстант.ВестиСведенияДляДекларацийПоАлкогольнойПродукции</Field>
-				<Field>НаборКонстант.ВидКонтроляТоваровОрганизаций.Ref</Field>
 				<Field>НаборКонстант.ВыгружатьПродажиНемаркируемойПродукцииВЕГАИС</Field>
 				<Field>НаборКонстант.ДатаНачалаПримененияПриказа164</Field>
 				<Field>НаборКонстант.ДатаНачалаРегистрацииЗакупокПоЕГАИС</Field>
 				<Field>НаборКонстант.ДатаНачалаРегистрацииРозничныхПродажВЕГАИС</Field>
 				<Field>НаборКонстант.ДатаНачалаРегистрацииРозничныхПродажВЕГАИСВСельскойМестности</Field>
-				<Field>НаборКонстант.ДополнительнаяКолонкаПечатныхФормДокументов.Ref</Field>
-				<Field>НаборКонстант.ИспользованиеЗаданийТорговымПредставителям.Ref</Field>
-				<Field>НаборКонстант.ИспользованиеСоглашенийСКлиентами.Ref</Field>
-				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВЗакупках.Ref</Field>
 				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВПродажах</Field>
-				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВПродажах.Ref</Field>
 				<Field>НаборКонстант.ИспользоватьАвтоматическиеСкидкиВПродажах</Field>
 				<Field>НаборКонстант.ИспользоватьАктыНаПередачуПрав</Field>
 				<Field>НаборКонстант.ИспользоватьАктыРасхожденийПослеОтгрузкиПоРеализациям</Field>
@@ -5132,36 +5129,16 @@
 				<Field>НаборКонстант.ИспользоватьСделкиСКлиентами</Field>
 				<Field>НаборКонстант.ИспользоватьСоглашенияСКлиентами</Field>
 				<Field>НаборКонстант.ИспользоватьУправлениеСделками</Field>
-				<Field>НаборКонстант.МетодикаУправленияПроизводством.Ref</Field>
 				<Field>НаборКонстант.НеЗакрыватьЗаказыДавальцевБезПолнойОплаты</Field>
 				<Field>НаборКонстант.НеЗакрыватьЗаказыДавальцевБезПолнойОтработки</Field>
 				<Field>НаборКонстант.НеПечататьФискальныйЧекПриОтправкеЭлектронногоЧекаПокупателю</Field>
 				<Field>НаборКонстант.НормативныйВидЦен</Field>
-				<Field>НаборКонстант.ОперацияПриЗакрытииКассовойСмены.Ref</Field>
-				<Field>НаборКонстант.ОтображениеСкидокВПечатныхФормахДокументовПродажи.Ref</Field>
 				<Field>НаборКонстант.ОтправкаЭлектронныхЧековПослеПробитияЧека</Field>
 				<Field>НаборКонстант.ОтправлятьЭлектронныеЧекиПоEmailЧерезОФД</Field>
 				<Field>НаборКонстант.ОтправлятьЭлектронныеЧекиПоSMSЧерезОФД</Field>
-				<Field>НаборКонстант.ПериодABCКлассификацииНоменклатуры.Ref</Field>
-				<Field>НаборКонстант.ПериодABCКлассификацииПартнеров.Ref</Field>
-				<Field>НаборКонстант.ПериодXYZКлассификацииНоменклатуры.Ref</Field>
-				<Field>НаборКонстант.ПериодXYZКлассификацииПартнеров.Ref</Field>
-				<Field>НаборКонстант.ПериодРасчетаТоварныхОграничений.Ref</Field>
-				<Field>НаборКонстант.ПериодичностьВводаСезонныхКоэффициентов.Ref</Field>
-				<Field>НаборКонстант.ПериодичностьДляАнализаНоменклатурыПродаваемойСовместно.Ref</Field>
-				<Field>НаборКонстант.ПодпериодXYZКлассификацииНоменклатуры.Ref</Field>
-				<Field>НаборКонстант.ПодпериодXYZКлассификацииПартнеров.Ref</Field>
-				<Field>НаборКонстант.ПорядокОформленияНакладныхРасходныхОрдеров.Ref</Field>
-				<Field>НаборКонстант.ПровайдерSMS.Ref</Field>
 				<Field>НаборКонстант.РазрешатьПродажуАлкогольнойПродукцииБезСопоставленияЕГАИС</Field>
 				<Field>НаборКонстант.РазрешитьВыборВерсииФФДПриПечатиЧеков</Field>
-				<Field>НаборКонстант.РежимИспользованияИнформационнойБазы.Ref</Field>
-				<Field>НаборКонстант.РежимФормированияРасходныхОрдеров.Ref</Field>
 				<Field>НаборКонстант.СтоимостьТоваровПриОценкеРентабельностиПродажи</Field>
-				<Field>НаборКонстант.СтоимостьТоваровПриОценкеРентабельностиПродажи.Ref</Field>
-				<Field>НаборКонстант.УдалитьКонтекстАвторизации.Ref</Field>
-				<Field>НаборКонстант.УдалитьКонтекстКриптографии.Ref</Field>
-				<Field>НаборКонстант.ФорматСохраненияРегистровУчета.Ref</Field>
 			</UseAlways>
 		</Attribute>
 		<Attribute name="РежимРаботы" id="2">

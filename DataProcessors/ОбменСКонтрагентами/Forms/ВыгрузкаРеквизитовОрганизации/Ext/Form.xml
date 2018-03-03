@@ -44,11 +44,18 @@
 		</LabelField>
 		<LabelField name="ИНН" id="7">
 			<DataPath>ИНН</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УНП</v8:content>
+				</v8:item>
+			</Title>
 			<ContextMenu name="ИННКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ИННExtendedTooltip" id="74"/>
 		</LabelField>
 		<LabelField name="КПП" id="68">
 			<DataPath>КПП</DataPath>
+			<Visible>false</Visible>
 			<ContextMenu name="КППКонтекстноеМеню" id="69"/>
 			<ExtendedTooltip name="КППExtendedTooltip" id="75"/>
 		</LabelField>

@@ -1,19 +1,15 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><meta name="GENERATOR" content="MSHTML 11.00.9600.17690"></meta></head><body>
-<p align="left"><font size="4" face="Verdana">О сервисе проверки контрагентов ФНС</font></p>
-<p><font size="2" face="Verdana">В программе реализована проверка контрагентов через Интернет посредством специализированного веб-сервиса ФНС. Сервис "Проверка реквизитов контрагентов" ФНС позволяет в <span class="SpellE">онлайн-режиме</span> проверять существование контрагента по его ключевым реквизитам - ИНН и КПП.</font></p>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body>
+<p align="left"><font size="4" face="Verdana">О сервисе проверки контрагентов МНС</font></p>
+<p><font size="2" face="Verdana">В программе реализована проверка контрагентов через Интернет посредством специализированного веб-сервиса МНС. Сервис "Проверка реквизитов контрагентов" МНС позволяет в <span class="SpellE">онлайн-режиме</span> проверять существование контрагента по его ключевому реквизиту - УНП.</font></p>
 <p><font size="2" face="Verdana">Включить использование проверки контрагентов можно в разделе "Администрирование" - "Общие настройки".</font></p>
 <p><img src="8eb4fad1-1fa6-403e-970f-2c12dbb43e23_files/ВключениеНастроек.png"></img></p><span lang="X-NONE" style="mso-ansi-language: X-NONE"><o:p><!--сообщение про тестовый режим--><p></p>
-<div><font size="2"><font face="Verdana">Проверка контрагентов осуществляется по ЕГРН (Единому государственному реестру налогоплательщиков), р</font></font><font size="2"><font face="Verdana">езультатом проверки может являться один из следующих статусов:</font></font></div>
+<div><font size="2"><font face="Verdana">Проверка контрагентов осуществляется по ЕГР (Единому государственному регистру юридических лиц и индивидуальных предпринимателей), р</font></font><font size="2"><font face="Verdana">езультатом проверки может являться один из следующих статусов:</font></font></div>
 <p><span style="COLOR: black"><font face="Verdana"><font size="2">
 <table width="100%"><tbody><tr><td valign="top" width="20%"><font color="#64b010" size="2">Контрагент есть в базе ФНС</font></td>
 <td valign="top" width="2%">-</td>
-<td valign="top"><font size="2">означает, что налогоплательщик зарегистрирован в ЕГРН и имеет статус действующего в интервале ± 6 дней от даты запроса</font></td></tr><tr><td valign="top"><font color="#807a59" size="2">Не действует или изменен КПП</font></td>
+<td valign="top"><font size="2">означает, что налогоплательщик зарегистрирован в ЕГР и имеет статус действующего в интервале ± 6 дней от даты запроса</font></td></tr><tr><td valign="top"><font color="#e12828" size="2">Контрагент отсутствует в базе ФНС</font></td>
 <td valign="top">-</td>
-<td valign="top"><font size="2">означает, что налогоплательщик зарегистрирован в ЕГРН, но не имеет статус действующего в интервале ± 6 дней от даты запроса. <br>Такой ответ можно интерпретировать следующим образом: либо контрагент с указанной комбинацией ИНН и КПП прекратил деятельность, либо указанный КПП был изменен, то есть, ранее комбинация ИНН и КПП была действительной, но теперь она недействительна</font></td></tr><tr><td valign="top"><font color="#e12828" size="2">КПП не соответствует данным базы ФНС</font></td>
-<td valign="top">-</td>
-<td valign="top"><font size="2">означает, что КПП налогоплательщика не соотвествует тому ИНН, который был указан в запросе. <br>Такое сообщение означает, что такой комбинации ИНН и КПП в ЕГРН нет и никогда не было</font></td></tr><tr><td valign="top"><font color="#e12828" size="2">Контрагент отсутствует в базе ФНС</font></td>
-<td valign="top">-</td>
-<td valign="top"><font size="2">означает, что налогоплательщик с указанным ИНН не зарегистрирован в ЕГРН</font></td></tr></tbody></table></font></font></span><br></p>
+<td valign="top"><font size="2">означает, что налогоплательщик с указанным УНП не зарегистрирован в ЕГР </font></td></tr></tbody></table></font></font></span><br></p>
 <p><span style="COLOR: black"><font face="Verdana"><font size="2">Проверка производится при вводе нового контрагента и изменении реквизитов существующего. Статус проверки отображается в карточке контрагента, формах списка и выбора справочника контрагентов.<br></font></font></span><font face="Verdana"><font size="2"><span style="COLOR: black">Результат проверки контрагента выводится в карточке в явном виде</span><span style="FONT-SIZE: 7.5pt; FONT-FAMILY: Verdana; COLOR: black">.</span></font></font></p>
 <p><font face="Verdana"><font size="2"><span style="FONT-SIZE: 7.5pt; FONT-FAMILY: Verdana; COLOR: black"><o:p><img src="8eb4fad1-1fa6-403e-970f-2c12dbb43e23_files/ФормаЭлементаКонтрагент1.png"></img></o:p></span></font></font></p>
 <p><span style="COLOR: black"><font size="2" face="Verdana"></font></span></p>

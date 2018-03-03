@@ -28,11 +28,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>УправлениеПредприятием</Name>
+			<Name>УправлениеПредприятиемДляБеларуси</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>1С:ERP Управление предприятием 2</v8:content>
+					<v8:content>1С:ERP Управление предприятием 2 для Беларуси</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -48,8 +48,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
-			<Vendor>Фирма "1С"</Vendor>
-			<Version>2.2.4.93</Version>
+			<Vendor>Группа компаний "Четыре Д", фирма "1С-Минск"</Vendor>
+			<Version>2.2.4.105</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -127,13 +127,13 @@
 			<BriefInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>1С:ERP Управление предприятием 2</v8:content>
+					<v8:content>1С:ERP Управление предприятием 2 для Беларуси</v8:content>
 				</v8:item>
 			</BriefInformation>
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>1С:ERP Управление предприятием 2</v8:content>
+					<v8:content>1С:ERP Управление предприятием 2 для Беларуси</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright>
@@ -208,6 +208,8 @@
 			<Subsystem>ТехнологияСервиса</Subsystem>
 			<Subsystem>ФинансовыйРезультатИКонтроллинг</Subsystem>
 			<Subsystem>ЭлектронноеВзаимодействие</Subsystem>
+			<Subsystem>СтандартныеПодсистемы_Локализация</Subsystem>
+			<Subsystem>КадрыЗарплата_Локализация</Subsystem>
 			<StyleItem>БазовыйЦветФонаЭтапаОтправки</StyleItem>
 			<StyleItem>БыстрыеОтборыФонГруппы</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряВоскресеньеЦвет</StyleItem>
@@ -1663,6 +1665,7 @@
 			<CommonPicture>ЯндексКарты</CommonPicture>
 			<CommonPicture>ЯндексКасса</CommonPicture>
 			<CommonPicture>Ярлык</CommonPicture>
+			<CommonPicture>БелГосстрах</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>АльтернативныйПодборСпискаСотрудников</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
@@ -2772,6 +2775,20 @@
 			<Role>ЧтениеЭД</Role>
 			<Role>ЧтениеЭтаповПроизводства</Role>
 			<Role>ЧтениеЭтаповПроизводства2_2</Role>
+			<Role>БазовыеПраваЗарплатаКадрыПриложения</Role>
+			<Role>ДобавлениеИзменениеБазовыхСправочныхДанных</Role>
+			<Role>ОтчетыИОбработкиКазначея_Локализация</Role>
+			<Role>ДобавлениеИзменениеБСО</Role>
+			<Role>ДобавлениеИзменениеИнвентаризацийБСО</Role>
+			<Role>ДобавлениеИзменениеТорговыхНадбавок</Role>
+			<Role>НастройкаРаботыССервисами</Role>
+			<Role>РаботаССервисами</Role>
+			<Role>ЧтениеБСО</Role>
+			<Role>ЧтениеИнвентаризацийБСО</Role>
+			<Role>EDiN_Интеграция</Role>
+			<Role>ЧтениеТорговыхНадбавок</Role>
+			<Role>ПросмотрЖурналаУчетаДоверенностей</Role>
+			<Role>ДобавлениеИзменениеЭСЧФ</Role>
 			<CommonTemplate>БюджетныйОтчет</CommonTemplate>
 			<CommonTemplate>ГеографическаяСхемаКартаМира</CommonTemplate>
 			<CommonTemplate>ГеографическаяСхемаРоссияРегионыИВсеГорода</CommonTemplate>
@@ -2913,6 +2930,9 @@
 			<CommonTemplate>ФорматПФР70XML</CommonTemplate>
 			<CommonTemplate>ЭД_ИдентификаторДокумента_ru</CommonTemplate>
 			<CommonTemplate>ЭД_Список_ru</CommonTemplate>
+			<CommonTemplate>ГеографическаяСхемаКартаБеларуси</CommonTemplate>
+			<CommonTemplate>КлассификаторОКПДТРДолжности_Локализация</CommonTemplate>
+			<CommonTemplate>КлассификаторОКПДТРПрофессии_Локализация</CommonTemplate>
 			<FilterCriterion>ВзаимодействияКонтакта</FilterCriterion>
 			<FilterCriterion>ДокументыПоНМА</FilterCriterion>
 			<FilterCriterion>ДокументыПоОС</FilterCriterion>
@@ -4528,6 +4548,28 @@
 			<CommonModule>ЭтапыОплатыКлиент</CommonModule>
 			<CommonModule>ЭтапыОплатыКлиентСервер</CommonModule>
 			<CommonModule>ЭтапыОплатыСервер</CommonModule>
+			<CommonModule>АдресныйКлассификаторКлиентСервер_Локализация</CommonModule>
+			<CommonModule>АдресныйКлассификаторСервер_Локализация</CommonModule>
+			<CommonModule>АдресныйКлассификаторСлужебный_Локализация</CommonModule>
+			<CommonModule>ДенежныеСредстваСервер_Локализация</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыУП_Локализация</CommonModule>
+			<CommonModule>РаботаСКурсамиВалютВызовСервера_Локализация</CommonModule>
+			<CommonModule>РозничныеПродажи_Локализация</CommonModule>
+			<CommonModule>РозничныеПродажиВызовСервера_Локализация</CommonModule>
+			<CommonModule>РозничныеПродажиКлиент_Локализация</CommonModule>
+			<CommonModule>РозничныеПродажиКлиентСервер_Локализация</CommonModule>
+			<CommonModule>УправлениеПечатьюУПВызовСервера</CommonModule>
+			<CommonModule>УправлениеПечатьюУПКлиент_Локализация</CommonModule>
+			<CommonModule>УправлениеПечатьюУППереопределяемый</CommonModule>
+			<CommonModule>УправлениеПечатьюУППереопределяемыйПовтИсп</CommonModule>
+			<CommonModule>УчетБланковСтрогойОтчетностиКлиент</CommonModule>
+			<CommonModule>УчетБланковСтрогойОтчетностиКлиентСервер</CommonModule>
+			<CommonModule>УчетБланковСтрогойОтчетностиСервер</CommonModule>
+			<CommonModule>ЭлектронныеСчетаФактуры</CommonModule>
+			<CommonModule>ЭлектронныеСчетаФактурыВызовСервера</CommonModule>
+			<CommonModule>ЭлектронныеСчетаФактурыКлиент</CommonModule>
+			<CommonModule>БанковскиеСчетаКлиент</CommonModule>
+			<CommonModule>ВТ_ГлобальныйСервер</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>ИнтеграцияС1СДокументооборотом</ExchangePlan>
@@ -4738,6 +4780,10 @@
 			<XDTOPackage>УправлениеТарифамиВМоделиСервиса_1_0_1_1</XDTOPackage>
 			<XDTOPackage>УправлениеТарифамиВМоделиСервиса_1_0_1_2</XDTOPackage>
 			<XDTOPackage>ФорматОбменаСБанкамиПоЗарплатнымПроектам</XDTOPackage>
+			<XDTOPackage>MNSATI_add_no_reference</XDTOPackage>
+			<XDTOPackage>MNSATI_additional</XDTOPackage>
+			<XDTOPackage>MNSATI_fixed</XDTOPackage>
+			<XDTOPackage>MNSATI_original</XDTOPackage>
 			<WebService>CustomerOrdersExchange</WebService>
 			<WebService>EnterpriseDataExchange_1_0_1_1</WebService>
 			<WebService>EnterpriseDataUpload_1_0_1_1</WebService>
@@ -4755,6 +4801,7 @@
 			<WebService>RemoteControl</WebService>
 			<WebService>WMSMobileClientExchange</WebService>
 			<WSReference>UpdateFilesApiImplService</WSReference>
+			<WSReference>WSСсылкаНБРБ</WSReference>
 			<EventSubscription>АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанных</EventSubscription>
 			<EventSubscription>АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхДокумент</EventSubscription>
 			<EventSubscription>АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхКонстанта</EventSubscription>
@@ -5084,6 +5131,10 @@
 			<EventSubscription>УстановитьФООрганизацииБазовая</EventSubscription>
 			<EventSubscription>УстановитьФОУчетСтраховыхВзносов</EventSubscription>
 			<EventSubscription>УчетнаяПолитикаОрганизацииПриЗаписи</EventSubscription>
+			<EventSubscription>ПриПроведенииБСО</EventSubscription>
+			<EventSubscription>ПриПроведенииИспользованныеБСО</EventSubscription>
+			<EventSubscription>ЗаписатьДанныеБСОПередЗаписью</EventSubscription>
+			<EventSubscription>ОбновитьДанныеБСОПриПроведении</EventSubscription>
 			<ScheduledJob>ABCКлассификацияНоменклатуры</ScheduledJob>
 			<ScheduledJob>ABCКлассификацияПартнеров</ScheduledJob>
 			<ScheduledJob>XYZКлассификацияНоменклатуры</ScheduledJob>
@@ -5829,6 +5880,9 @@
 			<FunctionalOption>ФормироватьУправленческийБаланс</FunctionalOption>
 			<FunctionalOption>ФормироватьФинансовыйРезультат</FunctionalOption>
 			<FunctionalOption>ХранитьФайлыВТомахНаДиске</FunctionalOption>
+			<FunctionalOption>ИспользоватьРоссийскиеМакеты</FunctionalOption>
+			<FunctionalOption>ИспользоватьТорговыеНадбавки</FunctionalOption>
+			<FunctionalOption>ПрименятьСкидкиКЦене</FunctionalOption>
 			<FunctionalOptionsParameter>ДополнительныеОтчетыИОбработкиОбъектНазначения</FunctionalOptionsParameter>
 			<FunctionalOptionsParameter>ДополнительныеОтчетыИОбработкиТипФормы</FunctionalOptionsParameter>
 			<FunctionalOptionsParameter>МодельБюджетирования</FunctionalOptionsParameter>
@@ -6323,6 +6377,9 @@
 			<CommonCommand>ФункциональнаяМодельПроизводство</CommonCommand>
 			<CommonCommand>ФункциональнаяМодельРегламентированныйУчет</CommonCommand>
 			<CommonCommand>ФункциональнаяМодельСклад</CommonCommand>
+			<CommonCommand>ВозвратТоваровПоставщикуБСО</CommonCommand>
+			<CommonCommand>ПоступлениеБСО</CommonCommand>
+			<CommonCommand>РегламентированныеОтчеты</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
 			<CommandGroup>Документооборот</CommandGroup>
 			<CommandGroup>Документы</CommandGroup>
@@ -7046,6 +7103,11 @@
 			<Constant>ШаблонЭтикеткиДляДоставки</Constant>
 			<Constant>ШаблонЭтикеткиУпаковочногоЛиста</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
+			<Constant>АдресВебСервисаЭСЧФ</Constant>
+			<Constant>ИспользоватьРоссийскиеМакеты</Constant>
+			<Constant>ИспользоватьТорговыеНадбавки</Constant>
+			<Constant>ПрименятьСкидкиКЦене</Constant>
+			<Constant>ТаймаутПодключенияКВебСервисуЭСЧФ</Constant>
 			<CommonForm>АвтоматическийОбменСПодключаемымОборудованиемOffline</CommonForm>
 			<CommonForm>АвтономнаяРабота</CommonForm>
 			<CommonForm>АвтономнаяРаботаВМоделиСервиса</CommonForm>
@@ -7353,6 +7415,8 @@
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
 			<CommonForm>ЭтапыОплатыКлиентом</CommonForm>
 			<CommonForm>ЭтапыОплатыПоставщику</CommonForm>
+			<CommonForm>ВводДанныхДляРасчетаСреднегоЗаработка</CommonForm>
+			<CommonForm>ФормаСтавкиВРознице</CommonForm>
 			<Catalog>АвансовыйОтчетПрисоединенныеФайлы</Catalog>
 			<Catalog>АктВыполненныхРаботПрисоединенныеФайлы</Catalog>
 			<Catalog>АктОРасхожденияхПослеОтгрузкиПрисоединенныеФайлы</Catalog>
@@ -7943,6 +8007,15 @@
 			<Catalog>ЭтапыПодготовкиБюджетовПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭтапыПроизводства</Catalog>
 			<Catalog>ЯзыкиНародовМира</Catalog>
+			<Catalog>ВидыДокументовЭСЧФ</Catalog>
+			<Catalog>ДополнительныеДанныеЭСЧФ</Catalog>
+			<Catalog>ЕдинаяТарифнаяСетка</Catalog>
+			<Catalog>СостоянияВерсийЭСЧФ</Catalog>
+			<Catalog>СтатусыПолучателяЭСЧФ</Catalog>
+			<Catalog>СтатусыПоставщикаЭСЧФ</Catalog>
+			<Catalog>ТипыЭСЧФ</Catalog>
+			<Catalog>EDiN_СтатусыОбмена</Catalog>
+			<Catalog>ГруппыПереоценкиОС</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АвансовыйПлатежИностранцаПоНДФЛ</Document>
 			<Document>АктВыполненныхРабот</Document>
@@ -8374,6 +8447,8 @@
 			<Document>ЭлектронныйДокументВходящий</Document>
 			<Document>ЭлектронныйДокументИсходящий</Document>
 			<Document>ЭтапПроизводства2_2</Document>
+			<Document>ИнвентаризацияБСО</Document>
+			<Document>РегистрацияТорговыхНадбавок</Document>
 			<DocumentNumerator>ДенежныеДокументы</DocumentNumerator>
 			<DocumentNumerator>ДокументыРеализацииТоваров</DocumentNumerator>
 			<DocumentNumerator>ОтчетыКомиссионеров</DocumentNumerator>
@@ -8433,6 +8508,7 @@
 			<DocumentJournal>СогласияНаОбработкуПерсональныхДанных</DocumentJournal>
 			<DocumentJournal>СчетаФактурыИТаможенныеДокументы</DocumentJournal>
 			<DocumentJournal>ЧекиККМ</DocumentJournal>
+			<DocumentJournal>ДокументыПоБСО</DocumentJournal>
 			<Enum>ABCКлассификация</Enum>
 			<Enum>XYZКлассификация</Enum>
 			<Enum>АмортизационныеГруппы</Enum>
@@ -9324,6 +9400,17 @@
 			<Enum>ЭтапыПроверкиДокументаВРеглУчете</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ЮрФизЛицо</Enum>
+			<Enum>ВидыПлатежейВСоциальныеФонды</Enum>
+			<Enum>ВидыСписанияБСО</Enum>
+			<Enum>ВидыТрудовыхДоговоров</Enum>
+			<Enum>ВидыУчетаВремени</Enum>
+			<Enum>ГруппыВоинскогоУчета</Enum>
+			<Enum>ГруппыИнвалидности</Enum>
+			<Enum>ЛьготыОплатыПособий</Enum>
+			<Enum>ПорядокРасчетаСреднегоЗаработкаОтпуск</Enum>
+			<Enum>СпособыРаспределенияДопРасходов_Локализация</Enum>
+			<Enum>УчетНачисленийВСреднемЗаработкеОтпуск</Enum>
+			<Enum>ВидыРасходовПоПереводу</Enum>
 			<Report>ABCXYZАнализНоменклатуры</Report>
 			<Report>ABCXYZРаспределениеКлиентов</Report>
 			<Report>АнализВерсийОбъектов</Report>
@@ -9969,6 +10056,10 @@
 			<Report>ШтатноеРасписание</Report>
 			<Report>ШтатноеРасписаниеНачисления</Report>
 			<Report>ЭффективностьСделокСКлиентами</Report>
+			<Report>ВедомостьПоУчетуБСО</Report>
+			<Report>ДвиженияОстаткиБСО</Report>
+			<Report>КарточкаСправкаБСО</Report>
+			<Report>ПриходноРасходнаяКнигаБСО</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>АнализНДФЛКВозврату</DataProcessor>
@@ -10044,6 +10135,7 @@
 			<DataProcessor>КартаМаршрутаБизнесПроцесса</DataProcessor>
 			<DataProcessor>Классификация</DataProcessor>
 			<DataProcessor>КлиентБанк</DataProcessor>
+			<DataProcessor>КлиентБанк_Локализация</DataProcessor>
 			<DataProcessor>КонвертацияОбъектовXDTO</DataProcessor>
 			<DataProcessor>КонвертацияОбъектовИнформационныхБаз</DataProcessor>
 			<DataProcessor>КонвертацияОбъектовРаспределенныхИнформационныхБаз</DataProcessor>
@@ -10187,8 +10279,8 @@
 			<DataProcessor>ПооперационноеПланирование</DataProcessor>
 			<DataProcessor>ПособияВыплачиваемыеФСС</DataProcessor>
 			<DataProcessor>ПрайсЛист</DataProcessor>
-			<DataProcessor>ПрайсЛистПоставщика</DataProcessor>
 			<DataProcessor>ПредпросмотрЧека</DataProcessor>
+			<DataProcessor>ПрайсЛистПоставщика</DataProcessor>
 			<DataProcessor>ПроведениеДокументовПоВидамУчета</DataProcessor>
 			<DataProcessor>ПроверкаКоличестваТоваровВДокументе</DataProcessor>
 			<DataProcessor>ПроверкаКоличестваТоваровВПриходномОрдере</DataProcessor>
@@ -10251,6 +10343,8 @@
 			<DataProcessor>ФормированиеЗаказовПоставщикам</DataProcessor>
 			<DataProcessor>ФормированиеЗаказовПоставщикуПоПлану</DataProcessor>
 			<DataProcessor>ФормированиеРасписанияРабочихЦентров</DataProcessor>
+			<DataProcessor>ПодборБСО</DataProcessor>
+			<DataProcessor>ЭлектронныеСчетФактуры</DataProcessor>
 			<InformationRegister>ABCXYZКлассификацияКлиентов</InformationRegister>
 			<InformationRegister>ABCXYZКлассификацияНоменклатуры</InformationRegister>
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
@@ -11020,6 +11114,20 @@
 			<InformationRegister>ШаблоныПечатиМашиночитаемыхФорм</InformationRegister>
 			<InformationRegister>ШаблоныЭВФОтчетовСтатистики</InformationRegister>
 			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
+			<InformationRegister>ДанныеОВремениДляРасчетаСреднегоОтпускКорректировка</InformationRegister>
+			<InformationRegister>ДанныеОВремениДляРасчетаСреднегоФСЗНКорректировка</InformationRegister>
+			<InformationRegister>ИспользованныеБСО</InformationRegister>
+			<InformationRegister>ПравилаЗаполненияПолейЭСЧФ</InformationRegister>
+			<InformationRegister>СведенияОВремениДляРасчетаСреднегоОтпуск</InformationRegister>
+			<InformationRegister>СведенияОНачисленияхДляРасчетаСреднегоЗаработкаОтпуск</InformationRegister>
+			<InformationRegister>СостоянияЭСЧФ</InformationRegister>
+			<InformationRegister>ТорговыеНадбавки</InformationRegister>
+			<InformationRegister>EDiN_ЖурналСообщенийОбмена</InformationRegister>
+			<InformationRegister>EDiN_ДанныеСтатистики</InformationRegister>
+			<InformationRegister>EDiN_СохраненныеЗначенияПользователей</InformationRegister>
+			<InformationRegister>EDI_ДанныеВходящихДокументов</InformationRegister>
+			<InformationRegister>СведенияОВремениДляРасчетаСреднегоФСЗН</InformationRegister>
+			<InformationRegister>КоэффициентыПереоценкиОС</InformationRegister>
 			<AccumulationRegister>АвансовыеПлатежиИностранцевПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>БракВПроизводстве</AccumulationRegister>
@@ -11187,6 +11295,11 @@
 			<AccumulationRegister>ФактическиеОтпуска</AccumulationRegister>
 			<AccumulationRegister>ФинансовыеРезультаты</AccumulationRegister>
 			<AccumulationRegister>ЭтапыПроизводства</AccumulationRegister>
+			<AccumulationRegister>ДанныеОВремениДляРасчетаСреднегоОтпуск</AccumulationRegister>
+			<AccumulationRegister>ДанныеОВремениДляРасчетаСреднегоФСЗН</AccumulationRegister>
+			<AccumulationRegister>ДанныеОНачисленияхДляРасчетаСреднегоЗаработкаОтпуск</AccumulationRegister>
+			<AccumulationRegister>БланкиСтрогойОтчетности</AccumulationRegister>
+			<AccumulationRegister>РабочееВремяСотрудников</AccumulationRegister>
 			<ChartOfCharacteristicTypes>АналитикиСтатейБюджетов</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ВидыСубконтоМеждународные</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ВидыСубконтоХозрасчетные</ChartOfCharacteristicTypes>

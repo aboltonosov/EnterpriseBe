@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Величина прожиточного минимума</v8:content>
+					<v8:content>Бюджет прожиточного минимума</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -167,7 +167,7 @@
 			<Explanation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Размеры прожиточного минимума</v8:content>
+					<v8:content>Размеры бюджета прожиточного минимума</v8:content>
 				</v8:item>
 			</Explanation>
 			<DataHistory>DontUse</DataHistory>
@@ -251,7 +251,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xr:DesignTimeRef">Catalog.ПрожиточныеМинимумы.ПрожиточныйМинимумРБ</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -270,6 +270,7 @@
 				</Properties>
 			</Dimension>
 			<Form>РедактированиеИстории</Form>
+			<Template>БюджетПрожиточногоМинимума</Template>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

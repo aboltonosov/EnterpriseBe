@@ -45,6 +45,55 @@
 							<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
 							<ExtendedTooltip name="ГруппаГлобальныеКомандыРасширеннаяПодсказка" id="206"/>
 						</ButtonGroup>
+						<Popup name="ПодменюОтчеты" id="297">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>PictureAndText</Representation>
+							<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="298"/>
+							<ChildItems>
+								<ButtonGroup name="ПодменюОтчетыВажное" id="299">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подменю отчеты важное</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПодменюОтчетыВажноеРасширеннаяПодсказка" id="300"/>
+								</ButtonGroup>
+								<ButtonGroup name="ПодменюОтчетыПерейти" id="301">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подменю отчеты важное</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПодменюОтчетыПерейтиРасширеннаяПодсказка" id="302"/>
+								</ButtonGroup>
+								<ButtonGroup name="ПодменюОтчетыСмТакже" id="303">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подменю отчеты важное</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПодменюОтчетыСмТакжеРасширеннаяПодсказка" id="304"/>
+								</ButtonGroup>
+							</ChildItems>
+						</Popup>
 					</ChildItems>
 				</CommandBar>
 				<UsualGroup name="ШапкаГоризонтальная" id="199">
@@ -601,6 +650,7 @@
 											</Events>
 										</InputField>
 										<ColumnGroup name="ПКУГруппа" id="265">
+											<Visible>false</Visible>
 											<Group>Horizontal</Group>
 											<ExtendedTooltip name="ПКУГруппаРасширеннаяПодсказка" id="266"/>
 											<ChildItems>
@@ -636,6 +686,7 @@
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ГруппаКоэффициент" id="67">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -684,6 +735,7 @@
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ГруппаТариф" id="69">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -728,6 +780,60 @@
 											<TextColor>style:ПоясняющийТекст</TextColor>
 											<ContextMenu name="ТарифыТекущийТарифПредставлениеКонтекстноеМеню" id="270"/>
 											<ExtendedTooltip name="ТарифыТекущийТарифПредставлениеРасширеннаяПодсказка" id="271"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаЕТС" id="305">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ЕТС</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ЕТС</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаЕТСРасширеннаяПодсказка" id="306"/>
+									<ChildItems>
+										<LabelField name="ТарифыРазрядКатегорияРазрядЕТС" id="307">
+											<DataPath>Объект.Тарифы.РазрядКатегория.РазрядЕТС</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТарифыРазрядКатегорияРазрядЕТСКонтекстноеМеню" id="308"/>
+											<ExtendedTooltip name="ТарифыРазрядКатегорияРазрядЕТСРасширеннаяПодсказка" id="309"/>
+										</LabelField>
+										<LabelField name="ТарифыРазрядКатегорияКоэффициентЕТС" id="310">
+											<DataPath>Объект.Тарифы.РазрядКатегория.Коэффициент</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТарифыРазрядКатегорияКоэффициентЕТСКонтекстноеМеню" id="311"/>
+											<ExtendedTooltip name="ТарифыРазрядКатегорияКоэффициентЕТСРасширеннаяПодсказка" id="312"/>
+										</LabelField>
+										<LabelField name="ТарифыРазрядКатегорияПовышающийКоэффициент" id="313">
+											<DataPath>Объект.Тарифы.РазрядКатегория.ПовышающийКоэффициент</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТарифыРазрядКатегорияПовышающийКоэффициентКонтекстноеМеню" id="314"/>
+											<ExtendedTooltip name="ТарифыРазрядКатегорияПовышающийКоэффициентРасширеннаяПодсказка" id="315"/>
+										</LabelField>
+										<InputField name="ТарифыТарифныйОклад" id="316">
+											<DataPath>Объект.Тарифы.ТарифныйОклад</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТарифыТарифныйОкладКонтекстноеМеню" id="317"/>
+											<ExtendedTooltip name="ТарифыТарифныйОкладРасширеннаяПодсказка" id="318"/>
+										</InputField>
+										<LabelField name="ТарифыРазрядКатегорияПроцентПовышения" id="319">
+											<DataPath>Объект.Тарифы.РазрядКатегория.ПроцентПовышения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТарифыРазрядКатегорияПроцентПовышенияКонтекстноеМеню" id="320"/>
+											<ExtendedTooltip name="ТарифыРазрядКатегорияПроцентПовышенияРасширеннаяПодсказка" id="321"/>
+										</LabelField>
+										<InputField name="ТарифыДолжностнойОклад" id="322">
+											<DataPath>Объект.Тарифы.ДолжностнойОклад</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТарифыДолжностнойОкладКонтекстноеМеню" id="323"/>
+											<ExtendedTooltip name="ТарифыДолжностнойОкладРасширеннаяПодсказка" id="324"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>

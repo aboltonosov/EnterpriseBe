@@ -147,6 +147,12 @@
 						<Event name="Clearing">ИнформацияОРасчетеСкидокПоСтрокеЗначениеОчистка</Event>
 					</Events>
 				</InputField>
+				<InputField name="ИнформацияОРасчетеСкидокПоСтрокеПроцентСкидкиНаценки" id="127">
+					<DataPath>ИнформацияОРасчетеСкидокПоСтроке.ПроцентСкидкиНаценки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИнформацияОРасчетеСкидокПоСтрокеПроцентСкидкиНаценкиКонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="ИнформацияОРасчетеСкидокПоСтрокеПроцентСкидкиНаценкиРасширеннаяПодсказка" id="129"/>
+				</InputField>
 				<InputField name="ИнформацияОРасчетеСкидокПоСтрокеСумма" id="58">
 					<DataPath>ИнформацияОРасчетеСкидокПоСтроке.СуммаАвтоматическойСкидки</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -557,6 +563,22 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПроцентСкидкиНаценки" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>%</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Column>
 			</Columns>

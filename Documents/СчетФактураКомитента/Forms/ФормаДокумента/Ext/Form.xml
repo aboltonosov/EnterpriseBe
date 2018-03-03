@@ -235,6 +235,7 @@
 										</LabelDecoration>
 										<CheckBoxField name="Исправление" id="10">
 											<DataPath>Объект.Исправление</DataPath>
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -249,6 +250,22 @@
 												<Event name="OnChange">ИсправлениеПриИзменении</Event>
 											</Events>
 										</CheckBoxField>
+										<LabelDecoration name="ЗаголовокДатаПраваНаВычет" id="271">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата права на вычет:</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>[todo Декорация для заголовка]</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="ЗаголовокДатаПраваНаВычетКонтекстноеМеню" id="272"/>
+											<ExtendedTooltip name="ЗаголовокДатаПраваНаВычетРасширеннаяПодсказка" id="273"/>
+										</LabelDecoration>
 										<LabelDecoration name="ЗаголовокДата" id="195">
 											<Title formatted="false">
 												<v8:item>
@@ -427,6 +444,7 @@
 																			</ChildItems>
 																		</UsualGroup>
 																		<UsualGroup name="ГруппаНомерДатаИсправления" id="15">
+																			<Visible>false</Visible>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
@@ -486,6 +504,12 @@
 																		</UsualGroup>
 																	</ChildItems>
 																</UsualGroup>
+																<InputField name="ДатаПраваНаВычет" id="274">
+																	<DataPath>Объект.ДатаПраваНаВычет</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<ContextMenu name="ДатаПраваНаВычетКонтекстноеМеню" id="275"/>
+																	<ExtendedTooltip name="ДатаПраваНаВычетРасширеннаяПодсказка" id="276"/>
+																</InputField>
 																<UsualGroup name="ГруппаПолучен" id="29">
 																	<Title>
 																		<v8:item>
@@ -681,6 +705,7 @@
 																</UsualGroup>
 																<InputField name="Валюта" id="51">
 																	<DataPath>Объект.Валюта</DataPath>
+																	<Visible>false</Visible>
 																	<ToolTip>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -692,6 +717,18 @@
 																	<OpenButton>false</OpenButton>
 																	<ContextMenu name="ВалютаКонтекстноеМеню" id="52"/>
 																	<ExtendedTooltip name="ВалютаExtendedTooltip" id="53"/>
+																</InputField>
+																<InputField name="ТипСчетФактуры" id="268">
+																	<DataPath>Объект.ТипСчетаФактуры</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Тип </v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ТипСчетФактурыКонтекстноеМеню" id="269"/>
+																	<ExtendedTooltip name="ТипСчетФактурыРасширеннаяПодсказка" id="270"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>

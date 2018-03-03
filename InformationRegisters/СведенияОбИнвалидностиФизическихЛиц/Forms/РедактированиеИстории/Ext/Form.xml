@@ -99,12 +99,25 @@
 				<Event name="OnStartEdit">НаборЗаписейПриНачалеРедактирования</Event>
 			</Events>
 			<ChildItems>
+				<CheckBoxField name="НаборЗаписейЕстьСправка" id="54">
+					<DataPath>НаборЗаписей.ЕстьСправка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть справка об инвалидности</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НаборЗаписейЕстьСправкаКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="НаборЗаписейЕстьСправкаРасширеннаяПодсказка" id="56"/>
+				</CheckBoxField>
 				<InputField name="НаборЗаписейИнвалидность" id="25">
 					<DataPath>НаборЗаписей.Инвалидность</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Есть справка об инвалидности</v8:content>
+							<v8:content>Предоставляется льгота по ФСЗН</v8:content>
 						</v8:item>
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
@@ -139,6 +152,12 @@
 					</ChoiceList>
 					<ContextMenu name="НаборЗаписейИнвалидностьКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="НаборЗаписейИнвалидностьExtendedTooltip" id="38"/>
+				</InputField>
+				<InputField name="НаборЗаписейГруппаИнвалидности" id="57">
+					<DataPath>НаборЗаписей.ГруппаИнвалидности</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаборЗаписейГруппаИнвалидностиКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="НаборЗаписейГруппаИнвалидностиРасширеннаяПодсказка" id="59"/>
 				</InputField>
 				<InputField name="НаборЗаписейДатаВыдачи" id="31">
 					<DataPath>НаборЗаписей.ДатаВыдачи</DataPath>

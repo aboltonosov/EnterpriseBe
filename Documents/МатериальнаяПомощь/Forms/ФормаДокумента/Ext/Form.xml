@@ -105,7 +105,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ШапкаExtendedTooltip" id="95"/>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="95"/>
 			<ChildItems>
 				<UsualGroup name="ОсновныеРеквизиты" id="50">
 					<Title>
@@ -117,7 +117,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОсновныеРеквизитыExtendedTooltip" id="96"/>
+					<ExtendedTooltip name="ОсновныеРеквизитыРасширеннаяПодсказка" id="96"/>
 					<ChildItems>
 						<InputField name="ПериодРегистрации" id="51">
 							<DataPath>МесяцНачисленияСтрокой</DataPath>
@@ -130,7 +130,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ПериодРегистрацииКонтекстноеМеню" id="52"/>
-							<ExtendedTooltip name="ПериодРегистрацииExtendedTooltip" id="97"/>
+							<ExtendedTooltip name="ПериодРегистрацииРасширеннаяПодсказка" id="97"/>
 							<Events>
 								<Event name="OnChange">МесяцНачисленияСтрокойПриИзменении</Event>
 								<Event name="AutoComplete">МесяцНачисленияСтрокойАвтоПодбор</Event>
@@ -143,7 +143,7 @@
 							<DataPath>Объект.Организация</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="54"/>
-							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="98"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="98"/>
 							<Events>
 								<Event name="OnChange">ОрганизацияПриИзменении</Event>
 							</Events>
@@ -179,7 +179,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="АвторизацияExtendedTooltip" id="100"/>
+					<ExtendedTooltip name="АвторизацияРасширеннаяПодсказка" id="100"/>
 					<ChildItems>
 						<UsualGroup name="ДатаНомер" id="75">
 							<Title>
@@ -191,7 +191,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ДатаНомерExtendedTooltip" id="101"/>
+							<ExtendedTooltip name="ДатаНомерРасширеннаяПодсказка" id="101"/>
 							<ChildItems>
 								<InputField name="Дата" id="58">
 									<DataPath>Объект.Date</DataPath>
@@ -199,14 +199,14 @@
 									<Width>10</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="59"/>
-									<ExtendedTooltip name="ДатаExtendedTooltip" id="102"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="102"/>
 								</InputField>
 								<InputField name="Номер" id="60">
 									<DataPath>Объект.Number</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерКонтекстноеМеню" id="61"/>
-									<ExtendedTooltip name="НомерExtendedTooltip" id="103"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="103"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -409,7 +409,7 @@
 								<Button name="ПодробнееОРасчетеУдержаний" id="73">
 									<Type>Hyperlink</Type>
 									<CommandName>Form.Command.ПодробнееОРасчетеУдержаний</CommandName>
-									<ExtendedTooltip name="ПодробнееОРасчетеУдержанийExtendedTooltip" id="119"/>
+									<ExtendedTooltip name="ПодробнееОРасчетеУдержанийРасширеннаяПодсказка" id="119"/>
 								</Button>
 								<CommandBar name="КомандыНачисления" id="305">
 									<Title>
@@ -617,6 +617,12 @@
 								<InputField name="НачисленияНДФЛ" id="289">
 									<DataPath>Объект.Начисления.НДФЛ</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подоходный налог</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияНДФЛКонтекстноеМеню" id="290"/>
 									<ExtendedTooltip name="НачисленияНДФЛРасширеннаяПодсказка" id="291"/>
@@ -863,7 +869,7 @@
 		<UsualGroup name="ВыплатаГруппа" id="74">
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ВыплатаГруппаExtendedTooltip" id="128"/>
+			<ExtendedTooltip name="ВыплатаГруппаРасширеннаяПодсказка" id="128"/>
 		</UsualGroup>
 		<UsualGroup name="ПодписиГруппа" id="341">
 			<Title>
@@ -914,14 +920,14 @@
 					<Height>1</Height>
 					<VerticalStretch>false</VerticalStretch>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="129"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="129"/>
 				</InputField>
 				<InputField name="Ответственный" id="62">
 					<DataPath>Объект.Ответственный</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="104"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="104"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -938,7 +944,7 @@
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.НДФЛ">
-					<Column name="МесяцНалоговогоПериодаСтрокой" id="1">
+					<Column name="МесяцНалоговогоПериодаСтрокой" id="6">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -955,7 +961,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.НачисленияПерерасчет">
-					<Column name="ДоступенВыборОснования" id="1">
+					<Column name="ДоступенВыборОснования" id="7">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -966,7 +972,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПериодДействияСтрокой" id="2">
+					<Column name="ПериодДействияСтрокой" id="9">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -983,7 +989,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.КорректировкиВыплаты">
-					<Column name="РезультатРаспределения" id="1">
+					<Column name="РезультатРаспределения" id="8">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -992,7 +998,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="КомандаРедактированияРаспределения" id="2">
+					<Column name="КомандаРедактированияРаспределения" id="10">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1020,7 +1026,7 @@
 							<v8:Type>xs:decimal</v8:Type>
 							<v8:NumberQualifiers>
 								<v8:Digits>10</v8:Digits>
-								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:FractionDigits>2</v8:FractionDigits>
 								<v8:AllowedSign>Any</v8:AllowedSign>
 							</v8:NumberQualifiers>
 						</Type>

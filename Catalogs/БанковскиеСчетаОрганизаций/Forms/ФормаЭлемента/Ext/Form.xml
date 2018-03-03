@@ -89,7 +89,7 @@
 										<Presentation>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>В Российской Федерации</v8:content>
+												<v8:content>В Республике Беларусь</v8:content>
 											</v8:item>
 										</Presentation>
 										<Value xsi:type="xs:decimal">0</Value>
@@ -154,7 +154,7 @@
 							<Width>25</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Wrap>false</Wrap>
-							<Mask>!!!!!!!!!!!!!!!!!!!!</Mask>
+							<Mask>!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Mask>
 							<ContextMenu name="НомерСчетаКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="НомерСчетаExtendedTooltip" id="103"/>
 							<Events>
@@ -182,6 +182,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаГосударственныеКонтракты" id="269">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -370,6 +371,7 @@
 								</UsualGroup>
 								<InputField name="КоррСчетБанка" id="81">
 									<DataPath>КоррСчетБанка</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -381,6 +383,7 @@
 								</InputField>
 								<InputField name="СчетВБанкеДляРасчетов" id="251">
 									<DataPath>Объект.СчетВБанкеДляРасчетов</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -528,6 +531,7 @@
 								</UsualGroup>
 								<InputField name="КоррСчетБанкаДляРасчетов" id="91">
 									<DataPath>КоррСчетБанкаДляРасчетов</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1022,9 +1026,6 @@
 												</RadioButtonField>
 												<InputField name="Программа" id="193">
 													<DataPath>Объект.Программа</DataPath>
-													<UserVisible>
-														<xr:Common>false</xr:Common>
-													</UserVisible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1224,7 +1225,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>9</v8:Length>
+					<v8:Length>11</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -1252,7 +1253,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>9</v8:Length>
+					<v8:Length>11</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>

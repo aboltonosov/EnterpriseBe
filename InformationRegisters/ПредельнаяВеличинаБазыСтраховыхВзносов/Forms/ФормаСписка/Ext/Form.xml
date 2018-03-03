@@ -66,8 +66,6 @@
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<CommandSet>
 				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
 			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -127,18 +125,48 @@
 				</LabelField>
 				<LabelField name="РазмерПФР" id="22">
 					<DataPath>Список.РазмерПФР</DataPath>
+					<Visible>false</Visible>
 					<ContextMenu name="РазмерПФРКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="РазмерПФРРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="РазмерФОМС" id="25">
 					<DataPath>Список.РазмерФОМС</DataPath>
+					<Visible>false</Visible>
 					<ContextMenu name="РазмерФОМСКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="РазмерФОМСРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="РазмерФСС" id="6">
 					<DataPath>Список.РазмерФСС</DataPath>
+					<Visible>false</Visible>
 					<ContextMenu name="РазмерФССКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="РазмерФССРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="РазмерФСЗН" id="34">
+					<DataPath>Список.РазмерФСЗН</DataPath>
+					<ContextMenu name="РазмерФСЗНКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="РазмерФСЗНРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="РасмерСреднейЗПпоРБ" id="37">
+					<DataPath>Список.РасмерСреднейЗПпоРБ</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Средняя ЗП</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РасмерСреднейЗПпоРБКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="РасмерСреднейЗПпоРБРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="РазмерМинимальнойЗПпоРБ" id="40">
+					<DataPath>Список.РазмерМинимальнойЗПпоРБ</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Минимальная ЗП</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РазмерМинимальнойЗПпоРБКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="РазмерМинимальнойЗПпоРБРасширеннаяПодсказка" id="42"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

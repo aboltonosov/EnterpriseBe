@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Реквизиты фонда социальной защиты населения</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -61,6 +68,7 @@
 						</InputField>
 						<InputField name="КодПодчиненностиФСС" id="12">
 							<DataPath>КодПодчиненностиФСС</DataPath>
+							<Visible>false</Visible>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -80,9 +88,13 @@
 							</ToolTip>
 							<ContextMenu name="РегистрационныйНомерФССКонтекстноеМеню" id="15"/>
 							<ExtendedTooltip name="РегистрационныйНомерФССExtendedTooltip" id="46"/>
+							<Events>
+								<Event name="TextEditEnd">РегистрационныйНомерФССОкончаниеВводаТекста</Event>
+							</Events>
 						</InputField>
 						<InputField name="ДополнительныйКодФСС" id="28">
 							<DataPath>ДополнительныйКодФСС</DataPath>
+							<Visible>false</Visible>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -140,6 +152,7 @@
 					<ChildItems>
 						<InputField name="ИПРегистрационныйНомерФСС" id="35">
 							<DataPath>ИПКодПодчиненностиФСС</DataPath>
+							<Visible>false</Visible>
 							<ContextMenu name="ИПРегистрационныйНомерФССКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="ИПРегистрационныйНомерФССExtendedTooltip" id="51"/>
 						</InputField>
@@ -147,6 +160,9 @@
 							<DataPath>ИПРегистрационныйНомерФСС</DataPath>
 							<ContextMenu name="ИПКодПодчиненностиФССКонтекстноеМеню" id="38"/>
 							<ExtendedTooltip name="ИПКодПодчиненностиФССExtendedTooltip" id="52"/>
+							<Events>
+								<Event name="TextEditEnd">ИПКодПодчиненностиФССОкончаниеВводаТекста</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>

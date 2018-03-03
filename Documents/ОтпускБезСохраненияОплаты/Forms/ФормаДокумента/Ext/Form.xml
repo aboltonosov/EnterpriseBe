@@ -693,10 +693,18 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="Причина" id="1102">
+							<DataPath>Объект.Причина</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<Width>100</Width>
+							<ContextMenu name="ПричинаКонтекстноеМеню" id="1103"/>
+							<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="1104"/>
+						</InputField>
 						<InputField name="Основание" id="257">
 							<DataPath>Объект.Основание</DataPath>
 							<Width>100</Width>
 							<HorizontalStretch>false</HorizontalStretch>
+							<MultiLine>true</MultiLine>
 							<ContextMenu name="ОснованиеКонтекстноеМеню" id="258"/>
 							<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="259"/>
 						</InputField>

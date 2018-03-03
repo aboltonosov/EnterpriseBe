@@ -134,7 +134,7 @@
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftWide</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ШапкаExtendedTooltip" id="193"/>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="193"/>
 			<ChildItems>
 				<UsualGroup name="Основное" id="1">
 					<Title>
@@ -146,7 +146,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОсновноеExtendedTooltip" id="194"/>
+					<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="194"/>
 					<ChildItems>
 						<UsualGroup name="МесяцОрганизация" id="278">
 							<Group>Horizontal</Group>
@@ -171,7 +171,7 @@
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</ChoiceButtonPicture>
 									<ContextMenu name="МесяцНачисленияСтрокойКонтекстноеМеню" id="4"/>
-									<ExtendedTooltip name="МесяцНачисленияСтрокойExtendedTooltip" id="195"/>
+									<ExtendedTooltip name="МесяцНачисленияСтрокойРасширеннаяПодсказка" id="195"/>
 									<Events>
 										<Event name="OnChange">МесяцНачисленияСтрокойПриИзменении</Event>
 										<Event name="AutoComplete">МесяцНачисленияСтрокойАвтоПодбор</Event>
@@ -193,7 +193,7 @@
 						<InputField name="Подразделение" id="180">
 							<DataPath>Объект.Подразделение</DataPath>
 							<ContextMenu name="ПодразделениеКонтекстноеМеню" id="181"/>
-							<ExtendedTooltip name="ПодразделениеExtendedTooltip" id="197"/>
+							<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="197"/>
 							<Events>
 								<Event name="OnChange">ПодразделениеПриИзменении</Event>
 							</Events>
@@ -210,7 +210,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ДополнительноExtendedTooltip" id="198"/>
+					<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="198"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаДатаНомер" id="139">
 							<Title>
@@ -222,19 +222,19 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДатаНомерExtendedTooltip" id="199"/>
+							<ExtendedTooltip name="ГруппаДатаНомерРасширеннаяПодсказка" id="199"/>
 							<ChildItems>
 								<InputField name="Дата" id="12">
 									<DataPath>Объект.Date</DataPath>
 									<Width>10</Width>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="13"/>
-									<ExtendedTooltip name="ДатаExtendedTooltip" id="200"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="200"/>
 								</InputField>
 								<InputField name="Номер" id="10">
 									<DataPath>Объект.Number</DataPath>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерКонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="НомерExtendedTooltip" id="201"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="201"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -252,7 +252,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="УсловияПростояExtendedTooltip" id="204"/>
+			<ExtendedTooltip name="УсловияПростояРасширеннаяПодсказка" id="204"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаВидПростояИнфонадпись" id="145">
 					<Title>
@@ -264,7 +264,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаВидПростояИнфонадписьExtendedTooltip" id="205"/>
+					<ExtendedTooltip name="ГруппаВидПростояИнфонадписьРасширеннаяПодсказка" id="205"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаВидПростояВнутрисменныйПростой" id="337">
 							<Group>Horizontal</Group>
@@ -350,7 +350,7 @@
 									</ToolTip>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ВнутрисменныйПростойКонтекстноеМеню" id="157"/>
-									<ExtendedTooltip name="ВнутрисменныйПростойExtendedTooltip" id="213"/>
+									<ExtendedTooltip name="ВнутрисменныйПростойРасширеннаяПодсказка" id="213"/>
 									<Events>
 										<Event name="OnChange">ВнутрисменныйПростойПриИзменении</Event>
 									</Events>
@@ -361,7 +361,7 @@
 							<DataPath>Объект.Начисление</DataPath>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="НачислениеКонтекстноеМеню" id="153"/>
-							<ExtendedTooltip name="НачислениеExtendedTooltip" id="210"/>
+							<ExtendedTooltip name="НачислениеРасширеннаяПодсказка" id="210"/>
 							<Events>
 								<Event name="OnChange">ВидРасчетаПриИзменении</Event>
 							</Events>
@@ -380,7 +380,7 @@
 										</v8:item>
 									</Title>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="УсловияПростояСтраницыExtendedTooltip" id="215"/>
+									<ExtendedTooltip name="УсловияПростояСтраницыРасширеннаяПодсказка" id="215"/>
 									<ChildItems>
 										<Page name="ЦелодневныйПростойСтраница" id="161">
 											<Title>
@@ -396,14 +396,14 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="ЦелодневныйПростойСтраницаExtendedTooltip" id="216"/>
+											<ExtendedTooltip name="ЦелодневныйПростойСтраницаРасширеннаяПодсказка" id="216"/>
 											<ChildItems>
 												<InputField name="ДатаНачала" id="163">
 													<DataPath>Объект.ДатаНачала</DataPath>
 													<HorizontalStretch>false</HorizontalStretch>
 													<AutoMarkIncomplete>false</AutoMarkIncomplete>
 													<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="164"/>
-													<ExtendedTooltip name="ДатаНачалаExtendedTooltip" id="218"/>
+													<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="218"/>
 													<Events>
 														<Event name="OnChange">ДатаНачалаПриИзменении</Event>
 													</Events>
@@ -413,7 +413,7 @@
 													<HorizontalStretch>false</HorizontalStretch>
 													<AutoMarkIncomplete>false</AutoMarkIncomplete>
 													<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="166"/>
-													<ExtendedTooltip name="ДатаОкончанияExtendedTooltip" id="219"/>
+													<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="219"/>
 													<Events>
 														<Event name="OnChange">ДатаОкончанияПриИзменении</Event>
 													</Events>
@@ -434,7 +434,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="ВнутрисменныйПростойСтраницаExtendedTooltip" id="220"/>
+											<ExtendedTooltip name="ВнутрисменныйПростойСтраницаРасширеннаяПодсказка" id="220"/>
 											<ChildItems>
 												<InputField name="ДатаПростоя" id="169">
 													<DataPath>Объект.ДатаПростоя</DataPath>
@@ -446,7 +446,7 @@
 													</Title>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ДатаПростояКонтекстноеМеню" id="170"/>
-													<ExtendedTooltip name="ДатаПростояExtendedTooltip" id="222"/>
+													<ExtendedTooltip name="ДатаПростояРасширеннаяПодсказка" id="222"/>
 													<Events>
 														<Event name="OnChange">ДатаПростояПриИзменении</Event>
 													</Events>
@@ -461,7 +461,7 @@
 													</Title>
 													<Width>11</Width>
 													<ContextMenu name="ЧасыПростояКонтекстноеМеню" id="172"/>
-													<ExtendedTooltip name="ЧасыПростояExtendedTooltip" id="223"/>
+													<ExtendedTooltip name="ЧасыПростояРасширеннаяПодсказка" id="223"/>
 													<Events>
 														<Event name="OnChange">ЧасыПростояПриИзменении</Event>
 													</Events>
@@ -489,7 +489,7 @@
 					<TextEdit>false</TextEdit>
 					<ChoiceListButton>false</ChoiceListButton>
 					<ContextMenu name="ВидВремениЗамещаемыйПредставлениеКонтекстноеМеню" id="174"/>
-					<ExtendedTooltip name="ВидВремениЗамещаемыйПредставлениеExtendedTooltip" id="224"/>
+					<ExtendedTooltip name="ВидВремениЗамещаемыйПредставлениеРасширеннаяПодсказка" id="224"/>
 					<Events>
 						<Event name="StartChoice">ВидВремениЗамещаемыйПредставлениеНачалоВыбора</Event>
 						<Event name="ChoiceProcessing">ВидВремениЗамещаемыйПредставлениеОбработкаВыбора</Event>
@@ -504,7 +504,7 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
-			<ExtendedTooltip name="СтраницыExtendedTooltip" id="228"/>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="228"/>
 			<ChildItems>
 				<Page name="НачисленияСтраница" id="35">
 					<Title>
@@ -519,7 +519,7 @@
 							<v8:content>Начисления страница</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НачисленияСтраницаExtendedTooltip" id="229"/>
+					<ExtendedTooltip name="НачисленияСтраницаРасширеннаяПодсказка" id="229"/>
 					<ChildItems>
 						<UsualGroup name="ВсеКоманды" id="140">
 							<Title>
@@ -537,12 +537,12 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ВсеКомандыExtendedTooltip" id="230"/>
+							<ExtendedTooltip name="ВсеКомандыРасширеннаяПодсказка" id="230"/>
 							<ChildItems>
 								<Button name="СотрудникиПодбор" id="141">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.ПодборСотрудников</CommandName>
-									<ExtendedTooltip name="СотрудникиПодборExtendedTooltip" id="231"/>
+									<ExtendedTooltip name="СотрудникиПодборРасширеннаяПодсказка" id="231"/>
 								</Button>
 								<Button name="НачисленияДобавить" id="305">
 									<Type>UsualButton</Type>
@@ -558,12 +558,12 @@
 								<Button name="НачисленияПодробно" id="135">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.НачисленияПодробно</CommandName>
-									<ExtendedTooltip name="НачисленияПодробноExtendedTooltip" id="233"/>
+									<ExtendedTooltip name="НачисленияПодробноРасширеннаяПодсказка" id="233"/>
 								</Button>
 								<Button name="ПодробнееОРасчетеУдержаний" id="131">
 									<Type>Hyperlink</Type>
 									<CommandName>Form.Command.ПодробнееОРасчетеУдержаний</CommandName>
-									<ExtendedTooltip name="ПодробнееОРасчетеУдержанийExtendedTooltip" id="243"/>
+									<ExtendedTooltip name="ПодробнееОРасчетеУдержанийРасширеннаяПодсказка" id="243"/>
 								</Button>
 								<CommandBar name="КомандыНачисления" id="142">
 									<Title>
@@ -578,7 +578,7 @@
 											<v8:content>Команды начисления</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="КомандыНачисленияExtendedTooltip" id="232"/>
+									<ExtendedTooltip name="КомандыНачисленияРасширеннаяПодсказка" id="232"/>
 									<ChildItems>
 										<Button name="Добавить" id="333">
 											<Type>CommandBarButton</Type>
@@ -683,7 +683,7 @@
 							<AutoCommandBar name="НачисленияКоманднаяПанель" id="18">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="НачисленияExtendedTooltip" id="234"/>
+							<ExtendedTooltip name="НачисленияРасширеннаяПодсказка" id="234"/>
 							<SearchStringAddition name="НачисленияСтрокаПоиска" id="339">
 								<AdditionSource>
 									<Item>Начисления</Item>
@@ -722,13 +722,13 @@
 									<DataPath>Объект.Начисления.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияНомерСтрокиКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="НачисленияНомерСтрокиExtendedTooltip" id="235"/>
+									<ExtendedTooltip name="НачисленияНомерСтрокиРасширеннаяПодсказка" id="235"/>
 								</LabelField>
 								<InputField name="НачисленияСотрудник" id="21">
 									<DataPath>Объект.Начисления.Сотрудник</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияСотрудникКонтекстноеМеню" id="22"/>
-									<ExtendedTooltip name="НачисленияСотрудникExtendedTooltip" id="236"/>
+									<ExtendedTooltip name="НачисленияСотрудникРасширеннаяПодсказка" id="236"/>
 									<Events>
 										<Event name="OnChange">НачисленияСотрудникПриИзменении</Event>
 									</Events>
@@ -737,7 +737,7 @@
 									<DataPath>Объект.Начисления.Результат</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияРезультатКонтекстноеМеню" id="28"/>
-									<ExtendedTooltip name="НачисленияРезультатExtendedTooltip" id="237"/>
+									<ExtendedTooltip name="НачисленияРезультатРасширеннаяПодсказка" id="237"/>
 								</InputField>
 								<ColumnGroup name="ГруппаКолонокНачисленияМежрасчетныйПериод" id="276">
 									<Title>
@@ -758,23 +758,29 @@
 										<InputField name="НачисленияНДФЛ" id="124">
 											<DataPath>Объект.Начисления.НДФЛ</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ПН</v8:content>
+												</v8:item>
+											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="НачисленияНДФЛКонтекстноеМеню" id="125"/>
-											<ExtendedTooltip name="НачисленияНДФЛExtendedTooltip" id="238"/>
+											<ExtendedTooltip name="НачисленияНДФЛРасширеннаяПодсказка" id="238"/>
 										</InputField>
 										<InputField name="НачисленияУдержания" id="126">
 											<DataPath>Объект.Начисления.Удержания</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="НачисленияУдержанияКонтекстноеМеню" id="127"/>
-											<ExtendedTooltip name="НачисленияУдержанияExtendedTooltip" id="239"/>
+											<ExtendedTooltip name="НачисленияУдержанияРасширеннаяПодсказка" id="239"/>
 										</InputField>
 										<InputField name="НачисленияКВыплате" id="128">
 											<DataPath>Объект.Начисления.КВыплате</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="НачисленияКВыплатеКонтекстноеМеню" id="129"/>
-											<ExtendedTooltip name="НачисленияКВыплатеExtendedTooltip" id="240"/>
+											<ExtendedTooltip name="НачисленияКВыплатеРасширеннаяПодсказка" id="240"/>
 										</InputField>
 										<InputField name="НачисленияКорректировкаВыплаты" id="1088">
 											<DataPath>Объект.Начисления.КорректировкаВыплаты</DataPath>
@@ -805,7 +811,7 @@
 							<v8:content>Начисления перерасчет страница</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НачисленияПерерасчетСтраницаExtendedTooltip" id="244"/>
+					<ExtendedTooltip name="НачисленияПерерасчетСтраницаРасширеннаяПодсказка" id="244"/>
 					<ChildItems>
 						<Table name="НачисленияПерерасчет" id="37">
 							<Representation>List</Representation>
@@ -825,11 +831,11 @@
 									<Button name="НачисленияПерерасчетПодробно" id="134">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПерерасчетПодробно</CommandName>
-										<ExtendedTooltip name="НачисленияПерерасчетПодробноExtendedTooltip" id="245"/>
+										<ExtendedTooltip name="НачисленияПерерасчетПодробноРасширеннаяПодсказка" id="245"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
-							<ExtendedTooltip name="НачисленияПерерасчетExtendedTooltip" id="246"/>
+							<ExtendedTooltip name="НачисленияПерерасчетРасширеннаяПодсказка" id="246"/>
 							<SearchStringAddition name="НачисленияПерерасчетСтрокаПоиска" id="348">
 								<AdditionSource>
 									<Item>НачисленияПерерасчет</Item>
@@ -868,25 +874,25 @@
 									<DataPath>Объект.НачисленияПерерасчет.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетНомерСтрокиКонтекстноеМеню" id="64"/>
-									<ExtendedTooltip name="НачисленияПерерасчетНомерСтрокиExtendedTooltip" id="247"/>
+									<ExtendedTooltip name="НачисленияПерерасчетНомерСтрокиРасширеннаяПодсказка" id="247"/>
 								</LabelField>
 								<InputField name="НачисленияПерерасчетСотрудник" id="65">
 									<DataPath>Объект.НачисленияПерерасчет.Сотрудник</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетСотрудникКонтекстноеМеню" id="66"/>
-									<ExtendedTooltip name="НачисленияПерерасчетСотрудникExtendedTooltip" id="249"/>
+									<ExtendedTooltip name="НачисленияПерерасчетСотрудникРасширеннаяПодсказка" id="249"/>
 								</InputField>
 								<InputField name="НачисленияПерерасчетПодразделение" id="67">
 									<DataPath>Объект.НачисленияПерерасчет.Подразделение</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетПодразделениеКонтекстноеМеню" id="68"/>
-									<ExtendedTooltip name="НачисленияПерерасчетПодразделениеExtendedTooltip" id="250"/>
+									<ExtendedTooltip name="НачисленияПерерасчетПодразделениеРасширеннаяПодсказка" id="250"/>
 								</InputField>
 								<InputField name="НачисленияПерерасчетНачисление" id="69">
 									<DataPath>Объект.НачисленияПерерасчет.Начисление</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетНачислениеКонтекстноеМеню" id="70"/>
-									<ExtendedTooltip name="НачисленияПерерасчетНачислениеExtendedTooltip" id="251"/>
+									<ExtendedTooltip name="НачисленияПерерасчетНачислениеРасширеннаяПодсказка" id="251"/>
 									<Events>
 										<Event name="OnChange">НачисленияПерерасчетНачислениеПриИзменении</Event>
 									</Events>
@@ -895,7 +901,7 @@
 									<DataPath>Объект.НачисленияПерерасчет.Результат</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетРезультатКонтекстноеМеню" id="72"/>
-									<ExtendedTooltip name="НачисленияПерерасчетРезультатExtendedTooltip" id="252"/>
+									<ExtendedTooltip name="НачисленияПерерасчетРезультатРасширеннаяПодсказка" id="252"/>
 								</InputField>
 								<ColumnGroup name="ДатыНачисленияПерерасчет" id="841">
 									<ToolTip>
@@ -999,7 +1005,7 @@
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="НаходитьсяНаРабочихМестахКонтекстноеМеню" id="179"/>
-							<ExtendedTooltip name="НаходитьсяНаРабочихМестахExtendedTooltip" id="227"/>
+							<ExtendedTooltip name="НаходитьсяНаРабочихМестахРасширеннаяПодсказка" id="227"/>
 						</CheckBoxField>
 						<InputField name="ПричиныПростоя" id="176">
 							<DataPath>Объект.ПричиныПростоя</DataPath>
@@ -1009,7 +1015,7 @@
 							<VerticalStretch>true</VerticalStretch>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ПричиныПростояКонтекстноеМеню" id="177"/>
-							<ExtendedTooltip name="ПричиныПростояExtendedTooltip" id="226"/>
+							<ExtendedTooltip name="ПричиныПростояРасширеннаяПодсказка" id="226"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -1019,7 +1025,7 @@
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ПодвалExtendedTooltip" id="261"/>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="261"/>
 		</UsualGroup>
 		<UsualGroup name="ВыплатаРасчетчикГруппа" id="271">
 			<ToolTip>
@@ -1036,7 +1042,7 @@
 				<UsualGroup name="ВыплатаГруппа" id="136">
 					<Group>Vertical</Group>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ВыплатаГруппаExtendedTooltip" id="260"/>
+					<ExtendedTooltip name="ВыплатаГруппаРасширеннаяПодсказка" id="260"/>
 				</UsualGroup>
 				<UsualGroup name="РасчетчикГруппа" id="143">
 					<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
@@ -1070,7 +1076,7 @@
 						<InputField name="Руководитель" id="189">
 							<DataPath>Объект.Руководитель</DataPath>
 							<ContextMenu name="РуководительКонтекстноеМеню" id="190"/>
-							<ExtendedTooltip name="РуководительExtendedTooltip" id="266"/>
+							<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="266"/>
 							<Events>
 								<Event name="OnChange">РуководительПриИзменении</Event>
 							</Events>
@@ -1094,7 +1100,7 @@
 						<InputField name="Исполнитель" id="184">
 							<DataPath>Объект.Исполнитель</DataPath>
 							<ContextMenu name="ИсполнительКонтекстноеМеню" id="185"/>
-							<ExtendedTooltip name="ИсполнительExtendedTooltip" id="263"/>
+							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="263"/>
 							<Events>
 								<Event name="OnChange">ИсполнительПриИзменении</Event>
 							</Events>
@@ -1110,7 +1116,7 @@
 						<InputField name="ДолжностьРуководителя" id="191">
 							<DataPath>Объект.ДолжностьРуководителя</DataPath>
 							<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="192"/>
-							<ExtendedTooltip name="ДолжностьРуководителяExtendedTooltip" id="267"/>
+							<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="267"/>
 						</InputField>
 						<LabelField name="ЗаглушкаДолжностиГлавногоБухгалтера" id="363">
 							<DataPath>ЗаглушкаБюджетнойДолжности</DataPath>
@@ -1127,7 +1133,7 @@
 						<InputField name="ДолжностьИсполнителя" id="186">
 							<DataPath>Объект.ДолжностьИсполнителя</DataPath>
 							<ContextMenu name="ДолжностьИсполнителяКонтекстноеМеню" id="187"/>
-							<ExtendedTooltip name="ДолжностьИсполнителяExtendedTooltip" id="264"/>
+							<ExtendedTooltip name="ДолжностьИсполнителяРасширеннаяПодсказка" id="264"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -1136,7 +1142,7 @@
 		<UsualGroup name="ГруппаИсправление" id="137">
 			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИсправлениеExtendedTooltip" id="270"/>
+			<ExtendedTooltip name="ГруппаИсправлениеРасширеннаяПодсказка" id="270"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКомментарийОтветственный" id="138">
 			<Group>Horizontal</Group>
@@ -1153,12 +1159,12 @@
 					<MultiLine>true</MultiLine>
 					<ExtendedEdit>true</ExtendedEdit>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="121"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="269"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="269"/>
 				</InputField>
 				<InputField name="Ответственный" id="14">
 					<DataPath>Объект.Ответственный</DataPath>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="202"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="202"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -1175,7 +1181,7 @@
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.НачисленияПерерасчет">
-					<Column name="ДоступенВыборОснования" id="1">
+					<Column name="ДоступенВыборОснования" id="5">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1186,7 +1192,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПериодДействияСтрокой" id="2">
+					<Column name="ПериодДействияСтрокой" id="7">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1203,7 +1209,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Начисления">
-					<Column name="НДФЛ" id="1">
+					<Column name="НДФЛ" id="6">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1222,7 +1228,7 @@
 							<Item>FunctionalOption.ИспользоватьРасчетЗарплатыРасширенная</Item>
 						</FunctionalOptions>
 					</Column>
-					<Column name="Удержания" id="2">
+					<Column name="Удержания" id="8">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>

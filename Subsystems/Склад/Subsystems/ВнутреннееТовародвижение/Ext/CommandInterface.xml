@@ -11,6 +11,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.Панель1СМаркировка.Command.МаркировкаСклад">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.Панель1СМаркировка.Command.МаркировкаПродажи">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -27,6 +32,11 @@
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ПанельОбменСЕГАИС.Command.ОбменЕГАИСПродажи">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПанельОбменСЕГАИС.Command.ОбменЕГАИССклад">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -182,6 +192,9 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="Document.ПеремаркировкаТоваровГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеПеремещениемОбособленныхТоваров.Command.УправлениеПеремещениемОбособленныхТоваров">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 	</CommandsOrder>

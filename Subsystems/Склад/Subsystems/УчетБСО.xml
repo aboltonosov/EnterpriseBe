@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="72e8c61f-3f57-4b90-a4c0-063a28c409fb">
+		<Properties>
+			<Name>УчетБСО</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланки строгой отчетности</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(локализация)</Comment>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнутреннееПотреблениеТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеВЭксплуатации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеИзЭксплуатации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетБланковСтрогойОтчетностиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетБланковСтрогойОтчетностиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетБланковСтрогойОтчетностиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БланкиСтрогойОтчетности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.БланкиСтрогойОтчетности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">fa4621b2-2925-4523-aef3-9ab1acbd2ee9</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f74dbb7c-3325-41e4-a558-05d565d9c3cb</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3c01cdd3-f8d9-4ca1-af1c-8f455aa4ac8f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c8ce21ad-0dcd-4f8c-9f67-a40085018d39</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">7b3fdf0c-ad42-42b4-8118-7c1ad722a881</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОприходованиеИзлишковТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриПроведенииБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИспользованныеБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИнвентаризацияБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.Хозрасчетный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыСписанияБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfAccounts.Хозрасчетный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриПроведенииИспользованныеБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеИнвентаризацийБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеИнвентаризацийБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеБСО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаписатьДанныеБСОПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОбновитьДанныеБСОПриПроведении</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ДокументыПоБСО</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

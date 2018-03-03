@@ -95,7 +95,7 @@
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftWide</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ШапкаExtendedTooltip" id="323"/>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="323"/>
 			<ChildItems>
 				<UsualGroup name="ОсновныеРеквизиты" id="185">
 					<Title>
@@ -107,7 +107,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОсновныеРеквизитыExtendedTooltip" id="324"/>
+					<ExtendedTooltip name="ОсновныеРеквизитыРасширеннаяПодсказка" id="324"/>
 					<ChildItems>
 						<UsualGroup name="МесяцОрганизация" id="486">
 							<Group>Horizontal</Group>
@@ -126,7 +126,7 @@
 										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ChoiceButtonPicture>
 									<ContextMenu name="ПериодРегистрацииКонтекстноеМеню" id="183"/>
-									<ExtendedTooltip name="ПериодРегистрацииExtendedTooltip" id="325"/>
+									<ExtendedTooltip name="ПериодРегистрацииРасширеннаяПодсказка" id="325"/>
 									<Events>
 										<Event name="OnChange">МесяцНачисленияСтрокойПриИзменении</Event>
 										<Event name="AutoComplete">МесяцНачисленияСтрокойАвтоПодбор</Event>
@@ -139,7 +139,7 @@
 									<DataPath>Объект.Организация</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="326"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="326"/>
 									<Events>
 										<Event name="OnChange">ОрганизацияПриИзменении</Event>
 									</Events>
@@ -150,7 +150,7 @@
 							<DataPath>Объект.Сотрудник</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="СотрудникКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="СотрудникExtendedTooltip" id="327"/>
+							<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="327"/>
 							<Events>
 								<Event name="OnChange">СотрудникПриИзменении</Event>
 							</Events>
@@ -167,7 +167,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОбязательныеРеквизитыExtendedTooltip" id="328"/>
+					<ExtendedTooltip name="ОбязательныеРеквизитыРасширеннаяПодсказка" id="328"/>
 					<ChildItems>
 						<UsualGroup name="ДатаВремя" id="309">
 							<Title>
@@ -179,21 +179,21 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ДатаВремяExtendedTooltip" id="329"/>
+							<ExtendedTooltip name="ДатаВремяРасширеннаяПодсказка" id="329"/>
 							<ChildItems>
 								<InputField name="Дата" id="3">
 									<DataPath>Объект.Date</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<Width>10</Width>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
-									<ExtendedTooltip name="ДатаExtendedTooltip" id="330"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="330"/>
 								</InputField>
 								<InputField name="Номер" id="1">
 									<DataPath>Объект.Number</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="НомерExtendedTooltip" id="331"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="331"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -226,7 +226,7 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
-			<ExtendedTooltip name="СтраницыExtendedTooltip" id="334"/>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="334"/>
 			<ChildItems>
 				<Page name="ПредоставлениеОтпускаСтраница" id="187">
 					<Title>
@@ -235,7 +235,7 @@
 							<v8:content>Основной отпуск</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ПредоставлениеОтпускаСтраницаExtendedTooltip" id="335"/>
+					<ExtendedTooltip name="ПредоставлениеОтпускаСтраницаРасширеннаяПодсказка" id="335"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаСведенияГоризонтальная" id="478">
 							<Group>Horizontal</Group>
@@ -279,7 +279,7 @@
 													<EditMode>EnterOnInput</EditMode>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ПредоставитьОсновнойОтпускКонтекстноеМеню" id="48"/>
-													<ExtendedTooltip name="ПредоставитьОсновнойОтпускExtendedTooltip" id="339"/>
+													<ExtendedTooltip name="ПредоставитьОсновнойОтпускРасширеннаяПодсказка" id="339"/>
 													<Events>
 														<Event name="OnChange">ОсновнойОтпускПриИзменении</Event>
 													</Events>
@@ -294,7 +294,7 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ОсновнойОтпускExtendedTooltip" id="340"/>
+													<ExtendedTooltip name="ОсновнойОтпускРасширеннаяПодсказка" id="340"/>
 													<ChildItems>
 														<InputField name="ДатаНачалаОсновногоОтпуска" id="19">
 															<DataPath>Объект.ДатаНачалаОсновногоОтпуска</DataPath>
@@ -307,7 +307,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<AutoMarkIncomplete>false</AutoMarkIncomplete>
 															<ContextMenu name="ДатаНачалаОсновногоОтпускаКонтекстноеМеню" id="20"/>
-															<ExtendedTooltip name="ДатаНачалаОсновногоОтпускаExtendedTooltip" id="342"/>
+															<ExtendedTooltip name="ДатаНачалаОсновногоОтпускаРасширеннаяПодсказка" id="342"/>
 															<Events>
 																<Event name="OnChange">ДатаНачалаПриИзменении</Event>
 															</Events>
@@ -323,7 +323,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<AutoMarkIncomplete>false</AutoMarkIncomplete>
 															<ContextMenu name="ДатаОкончанияОсновногоОтпускаКонтекстноеМеню" id="22"/>
-															<ExtendedTooltip name="ДатаОкончанияОсновногоОтпускаExtendedTooltip" id="343"/>
+															<ExtendedTooltip name="ДатаОкончанияОсновногоОтпускаРасширеннаяПодсказка" id="343"/>
 															<Events>
 																<Event name="OnChange">ДатаОкончанияОсновногоОтпускаПриИзменении</Event>
 															</Events>
@@ -345,7 +345,7 @@
 															<Width>3</Width>
 															<HorizontalStretch>false</HorizontalStretch>
 															<ContextMenu name="НадписьДнейКонтекстноеМеню" id="294"/>
-															<ExtendedTooltip name="НадписьДнейExtendedTooltip" id="345"/>
+															<ExtendedTooltip name="НадписьДнейРасширеннаяПодсказка" id="345"/>
 														</LabelField>
 													</ChildItems>
 												</UsualGroup>
@@ -361,7 +361,7 @@
 											</Title>
 											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="ВидРасчетаОсновногоОтпускаКонтекстноеМеню" id="277"/>
-											<ExtendedTooltip name="ВидРасчетаОсновногоОтпускаExtendedTooltip" id="346"/>
+											<ExtendedTooltip name="ВидРасчетаОсновногоОтпускаРасширеннаяПодсказка" id="346"/>
 											<Events>
 												<Event name="OnChange">ВидРасчетаОсновногоОтпускаПриИзменении</Event>
 											</Events>
@@ -383,7 +383,7 @@
 													<TitleLocation>Right</TitleLocation>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ПредоставитьКомпенсациюОсновногоОтпускаКонтекстноеМеню" id="286"/>
-													<ExtendedTooltip name="ПредоставитьКомпенсациюОсновногоОтпускаExtendedTooltip" id="348"/>
+													<ExtendedTooltip name="ПредоставитьКомпенсациюОсновногоОтпускаРасширеннаяПодсказка" id="348"/>
 													<Events>
 														<Event name="OnChange">ПредоставитьКомпенсациюОсновногоОтпускаПриИзменении</Event>
 													</Events>
@@ -407,7 +407,7 @@
 															<Width>3</Width>
 															<ChoiceButton>false</ChoiceButton>
 															<ContextMenu name="ДнейЧасовКомпенсацииОтпускаКонтекстноеМеню" id="40"/>
-															<ExtendedTooltip name="ДнейЧасовКомпенсацииОтпускаExtendedTooltip" id="352"/>
+															<ExtendedTooltip name="ДнейЧасовКомпенсацииОтпускаРасширеннаяПодсказка" id="352"/>
 															<Events>
 																<Event name="OnChange">ДнейЧасовКомпенсацииОтпускаПриИзменении</Event>
 															</Events>
@@ -434,7 +434,7 @@
 											</Title>
 											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="ВидРасчетаКомпенсацииОсновногоОтпускаКонтекстноеМеню" id="279"/>
-											<ExtendedTooltip name="ВидРасчетаКомпенсацииОсновногоОтпускаExtendedTooltip" id="354"/>
+											<ExtendedTooltip name="ВидРасчетаКомпенсацииОсновногоОтпускаРасширеннаяПодсказка" id="354"/>
 											<Events>
 												<Event name="OnChange">ВидРасчетаКомпенсацииОсновногоОтпускаПриИзменении</Event>
 											</Events>
@@ -657,7 +657,7 @@
 													<TitleLocation>Right</TitleLocation>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ПредоставитьМатериальнуюПомощьПриОтпускеКонтекстноеМеню" id="305"/>
-													<ExtendedTooltip name="ПредоставитьМатериальнуюПомощьПриОтпускеExtendedTooltip" id="373"/>
+													<ExtendedTooltip name="ПредоставитьМатериальнуюПомощьПриОтпускеРасширеннаяПодсказка" id="373"/>
 													<Events>
 														<Event name="OnChange">ПредоставитьМатериальнуюПомощьПриОтпускеПриИзменении</Event>
 													</Events>
@@ -672,7 +672,7 @@
 													</Title>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ВидРасчетаМатериальнойПомощиПриОтпускеКонтекстноеМеню" id="307"/>
-													<ExtendedTooltip name="ВидРасчетаМатериальнойПомощиПриОтпускеExtendedTooltip" id="374"/>
+													<ExtendedTooltip name="ВидРасчетаМатериальнойПомощиПриОтпускеРасширеннаяПодсказка" id="374"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -690,7 +690,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ПериодЗаКоторыйПредоставляетсяОтпускExtendedTooltip" id="369"/>
+							<ExtendedTooltip name="ПериодЗаКоторыйПредоставляетсяОтпускРасширеннаяПодсказка" id="369"/>
 							<ChildItems>
 								<InputField name="НачалоПериодаЗаКоторыйПредоставляетсяОтпуск" id="43">
 									<DataPath>Объект.НачалоПериодаЗаКоторыйПредоставляетсяОтпуск</DataPath>
@@ -702,7 +702,7 @@
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачалоПериодаЗаКоторыйПредоставляетсяОтпускКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="НачалоПериодаЗаКоторыйПредоставляетсяОтпускExtendedTooltip" id="370"/>
+									<ExtendedTooltip name="НачалоПериодаЗаКоторыйПредоставляетсяОтпускРасширеннаяПодсказка" id="370"/>
 								</InputField>
 								<InputField name="КонецПериодаЗаКоторыйПредоставляетсяОтпуск" id="45">
 									<DataPath>Объект.КонецПериодаЗаКоторыйПредоставляетсяОтпуск</DataPath>
@@ -714,14 +714,14 @@
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="КонецПериодаЗаКоторыйПредоставляетсяОтпускКонтекстноеМеню" id="46"/>
-									<ExtendedTooltip name="КонецПериодаЗаКоторыйПредоставляетсяОтпускExtendedTooltip" id="371"/>
+									<ExtendedTooltip name="КонецПериодаЗаКоторыйПредоставляетсяОтпускРасширеннаяПодсказка" id="371"/>
 								</InputField>
 								<LabelField name="РасшифровкаОстаткаОтпуска" id="442">
 									<DataPath>РасшифровкаОстаткаОтпуска</DataPath>
 									<TitleLocation>None</TitleLocation>
 									<Hiperlink>true</Hiperlink>
 									<ContextMenu name="РасшифровкаОстаткаОтпускаКонтекстноеМеню" id="443"/>
-									<ExtendedTooltip name="РасшифровкаОстаткаОтпускаExtendedTooltip" id="444"/>
+									<ExtendedTooltip name="РасшифровкаОстаткаОтпускаРасширеннаяПодсказка" id="444"/>
 									<Events>
 										<Event name="Click">РасшифровкаОстаткаОтпускаНажатие</Event>
 									</Events>
@@ -787,7 +787,7 @@
 													</Title>
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
-													<ExtendedTooltip name="НачисленоГруппаExtendedTooltip" id="376"/>
+													<ExtendedTooltip name="НачисленоГруппаРасширеннаяПодсказка" id="376"/>
 													<ChildItems>
 														<InputField name="НачисленоИтог" id="219">
 															<DataPath>НачисленоИтог</DataPath>
@@ -795,7 +795,7 @@
 															<TitleLocation>None</TitleLocation>
 															<Width>10</Width>
 															<ContextMenu name="НачисленоИтогКонтекстноеМеню" id="220"/>
-															<ExtendedTooltip name="НачисленоИтогExtendedTooltip" id="377"/>
+															<ExtendedTooltip name="НачисленоИтогРасширеннаяПодсказка" id="377"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -844,7 +844,7 @@
 											</ToolTip>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
-											<ExtendedTooltip name="УдержаноГруппаExtendedTooltip" id="378"/>
+											<ExtendedTooltip name="УдержаноГруппаРасширеннаяПодсказка" id="378"/>
 											<ChildItems>
 												<InputField name="Удержано" id="314">
 													<DataPath>УдержаноИтог</DataPath>
@@ -857,7 +857,7 @@
 													</Title>
 													<Width>10</Width>
 													<ContextMenu name="УдержаноКонтекстноеМеню" id="315"/>
-													<ExtendedTooltip name="УдержаноExtendedTooltip" id="379"/>
+													<ExtendedTooltip name="УдержаноРасширеннаяПодсказка" id="379"/>
 												</InputField>
 												<UsualGroup name="НДФЛИзменить" id="319">
 													<Title>
@@ -875,20 +875,26 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="НДФЛИзменитьExtendedTooltip" id="380"/>
+													<ExtendedTooltip name="НДФЛИзменитьРасширеннаяПодсказка" id="380"/>
 													<ChildItems>
 														<InputField name="НДФЛ" id="312">
 															<DataPath>НДФЛ</DataPath>
 															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ПН</v8:content>
+																</v8:item>
+															</Title>
 															<Width>10</Width>
 															<ContextMenu name="НДФЛКонтекстноеМеню" id="313"/>
-															<ExtendedTooltip name="НДФЛExtendedTooltip" id="381"/>
+															<ExtendedTooltip name="НДФЛРасширеннаяПодсказка" id="381"/>
 														</InputField>
 														<Button name="ПодробнееОРасчетеНДФЛ" id="316">
 															<Type>Hyperlink</Type>
 															<GroupVerticalAlign>Center</GroupVerticalAlign>
 															<CommandName>Form.Command.ПодробнееОРасчетеНДФЛ</CommandName>
-															<ExtendedTooltip name="ПодробнееОРасчетеНДФЛExtendedTooltip" id="382"/>
+															<ExtendedTooltip name="ПодробнееОРасчетеНДФЛРасширеннаяПодсказка" id="382"/>
 														</Button>
 													</ChildItems>
 												</UsualGroup>
@@ -908,20 +914,20 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="УдержанияИзменитьExtendedTooltip" id="383"/>
+													<ExtendedTooltip name="УдержанияИзменитьРасширеннаяПодсказка" id="383"/>
 													<ChildItems>
 														<InputField name="ПрочиеУдержания" id="320">
 															<DataPath>ПрочиеУдержания</DataPath>
 															<ReadOnly>true</ReadOnly>
 															<Width>10</Width>
 															<ContextMenu name="ПрочиеУдержанияКонтекстноеМеню" id="321"/>
-															<ExtendedTooltip name="ПрочиеУдержанияExtendedTooltip" id="384"/>
+															<ExtendedTooltip name="ПрочиеУдержанияРасширеннаяПодсказка" id="384"/>
 														</InputField>
 														<Button name="ПодробнееОРасчетеУдержаний" id="317">
 															<Type>Hyperlink</Type>
 															<GroupVerticalAlign>Center</GroupVerticalAlign>
 															<CommandName>Form.Command.ПодробнееОРасчетеУдержаний</CommandName>
-															<ExtendedTooltip name="ПодробнееОРасчетеУдержанийExtendedTooltip" id="385"/>
+															<ExtendedTooltip name="ПодробнееОРасчетеУдержанийРасширеннаяПодсказка" id="385"/>
 														</Button>
 													</ChildItems>
 												</UsualGroup>
@@ -936,7 +942,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
-											<ExtendedTooltip name="ПерерасчетГруппаExtendedTooltip" id="386"/>
+											<ExtendedTooltip name="ПерерасчетГруппаРасширеннаяПодсказка" id="386"/>
 											<ChildItems>
 												<InputField name="ПерерасчетИтог" id="229">
 													<DataPath>ПерерасчетИтог</DataPath>
@@ -950,7 +956,7 @@
 													<TitleLocation>None</TitleLocation>
 													<Width>10</Width>
 													<ContextMenu name="ПерерасчетИтогКонтекстноеМеню" id="230"/>
-													<ExtendedTooltip name="ПерерасчетИтогExtendedTooltip" id="387"/>
+													<ExtendedTooltip name="ПерерасчетИтогРасширеннаяПодсказка" id="387"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -979,7 +985,7 @@
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="СреднийЗаработокПоказательExtendedTooltip" id="395"/>
+											<ExtendedTooltip name="СреднийЗаработокПоказательРасширеннаяПодсказка" id="395"/>
 											<ChildItems>
 												<InputField name="СреднийЗаработок" id="215">
 													<DataPath>Объект.СреднийЗаработок</DataPath>
@@ -999,7 +1005,7 @@
 														</v8:item>
 													</Format>
 													<ContextMenu name="СреднийЗаработокКонтекстноеМеню" id="216"/>
-													<ExtendedTooltip name="СреднийЗаработокExtendedTooltip" id="396"/>
+													<ExtendedTooltip name="СреднийЗаработокРасширеннаяПодсказка" id="396"/>
 												</InputField>
 												<InputField name="СреднийЗаработокПоРабочимДням" id="1223">
 													<DataPath>Объект.СреднийЗаработокПоРабочимДням</DataPath>
@@ -1016,7 +1022,7 @@
 													<Type>Hyperlink</Type>
 													<GroupVerticalAlign>Center</GroupVerticalAlign>
 													<CommandName>Form.Command.ОткрытьСреднийЗаработок</CommandName>
-													<ExtendedTooltip name="ОткрытьСреднийЗаработокExtendedTooltip" id="397"/>
+													<ExtendedTooltip name="ОткрытьСреднийЗаработокРасширеннаяПодсказка" id="397"/>
 												</Button>
 											</ChildItems>
 										</UsualGroup>
@@ -1053,7 +1059,7 @@
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ЗаполненностьДанныхИнфоExtendedTooltip" id="392"/>
+											<ExtendedTooltip name="ЗаполненностьДанныхИнфоРасширеннаяПодсказка" id="392"/>
 											<ChildItems>
 												<PictureField name="ЗаполненностьДанныхКартинка" id="289">
 													<DataPath>ЗаполненностьДанныхКартинка</DataPath>
@@ -1066,7 +1072,7 @@
 														<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
 													</Border>
 													<ContextMenu name="ЗаполненностьДанныхКартинкаКонтекстноеМеню" id="290"/>
-													<ExtendedTooltip name="ЗаполненностьДанныхКартинкаExtendedTooltip" id="393"/>
+													<ExtendedTooltip name="ЗаполненностьДанныхКартинкаРасширеннаяПодсказка" id="393"/>
 												</PictureField>
 												<LabelField name="ЗаполненностьДанныхИнформационныйТекст" id="212">
 													<DataPath>ЗаполненностьДанныхИнформационныйТекст</DataPath>
@@ -1075,7 +1081,7 @@
 													<VerticalStretch>false</VerticalStretch>
 													<TextColor>style:ПоясняющийТекст</TextColor>
 													<ContextMenu name="ЗаполненностьДанныхИнформационныйТекстКонтекстноеМеню" id="213"/>
-													<ExtendedTooltip name="ЗаполненностьДанныхИнформационныйТекстExtendedTooltip" id="394"/>
+													<ExtendedTooltip name="ЗаполненностьДанныхИнформационныйТекстРасширеннаяПодсказка" id="394"/>
 													<Events>
 														<Event name="URLProcessing">ЗаполненностьДанныхИнформационныйТекстОбработкаНавигационнойСсылки</Event>
 													</Events>
@@ -1121,7 +1127,7 @@
 								<UsualGroup name="ВыплатаГруппа" id="310">
 									<Group>Vertical</Group>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ВыплатаГруппаExtendedTooltip" id="430"/>
+									<ExtendedTooltip name="ВыплатаГруппаРасширеннаяПодсказка" id="430"/>
 								</UsualGroup>
 								<UsualGroup name="РасчетчикГруппа" id="322">
 									<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
@@ -1196,7 +1202,7 @@
 							<EditMode>EnterOnInput</EditMode>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ПредоставитьДополнительныйОтпускКонтекстноеМеню" id="50"/>
-							<ExtendedTooltip name="ПредоставитьДополнительныйОтпускExtendedTooltip" id="356"/>
+							<ExtendedTooltip name="ПредоставитьДополнительныйОтпускРасширеннаяПодсказка" id="356"/>
 							<Events>
 								<Event name="OnChange">ДополнительныйОтпускПриИзменении</Event>
 							</Events>
@@ -1213,7 +1219,7 @@
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ДополнительныеОтпускаКонтекстноеМеню" id="248"/>
 							<AutoCommandBar name="ДополнительныеОтпускаКоманднаяПанель" id="249"/>
-							<ExtendedTooltip name="ДополнительныеОтпускаExtendedTooltip" id="359"/>
+							<ExtendedTooltip name="ДополнительныеОтпускаРасширеннаяПодсказка" id="359"/>
 							<SearchStringAddition name="ДополнительныеОтпускаСтрокаПоиска" id="536">
 								<AdditionSource>
 									<Item>ДополнительныеОтпуска</Item>
@@ -1250,7 +1256,7 @@
 									<Width>2</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДополнительныеОтпускаНомерСтрокиКонтекстноеМеню" id="251"/>
-									<ExtendedTooltip name="ДополнительныеОтпускаНомерСтрокиExtendedTooltip" id="360"/>
+									<ExtendedTooltip name="ДополнительныеОтпускаНомерСтрокиРасширеннаяПодсказка" id="360"/>
 								</LabelField>
 								<ColumnGroup name="ДополнительныеОтпускаГруппаВидОтпускаНачисление" id="437">
 									<Title>
@@ -1267,7 +1273,7 @@
 											<EditMode>EnterOnInput</EditMode>
 											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="ДополнительныеОтпускаВидОтпускаКонтекстноеМеню" id="253"/>
-											<ExtendedTooltip name="ДополнительныеОтпускаВидОтпускаExtendedTooltip" id="361"/>
+											<ExtendedTooltip name="ДополнительныеОтпускаВидОтпускаРасширеннаяПодсказка" id="361"/>
 											<Events>
 												<Event name="OnChange">ДополнительныеОтпускаВидОтпускаПриИзменении</Event>
 												<Event name="StartChoice">ДополнительныеОтпускаВидОтпускаНачалоВыбора</Event>
@@ -1278,7 +1284,7 @@
 											<SkipOnInput>true</SkipOnInput>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДополнительныеОтпускаВидРасчетаКонтекстноеМеню" id="255"/>
-											<ExtendedTooltip name="ДополнительныеОтпускаВидРасчетаExtendedTooltip" id="366"/>
+											<ExtendedTooltip name="ДополнительныеОтпускаВидРасчетаРасширеннаяПодсказка" id="366"/>
 											<Events>
 												<Event name="OnChange">ДополнительныеОтпускаВидРасчетаПриИзменении</Event>
 											</Events>
@@ -1293,14 +1299,14 @@
 										</v8:item>
 									</Title>
 									<ShowInHeader>true</ShowInHeader>
-									<ExtendedTooltip name="ПериодОтпускаExtendedTooltip" id="362"/>
+									<ExtendedTooltip name="ПериодОтпускаРасширеннаяПодсказка" id="362"/>
 									<ChildItems>
 										<InputField name="ДополнительныеОтпускаДатаНачала" id="262">
 											<DataPath>Объект.ДополнительныеОтпуска.ДатаНачала</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ShowInHeader>false</ShowInHeader>
 											<ContextMenu name="ДополнительныеОтпускаДатаНачалаКонтекстноеМеню" id="263"/>
-											<ExtendedTooltip name="ДополнительныеОтпускаДатаНачалаExtendedTooltip" id="363"/>
+											<ExtendedTooltip name="ДополнительныеОтпускаДатаНачалаРасширеннаяПодсказка" id="363"/>
 											<Events>
 												<Event name="OnChange">ДополнительныеОтпускаДатаНачалаПриИзменении</Event>
 											</Events>
@@ -1316,7 +1322,7 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ShowInHeader>false</ShowInHeader>
 											<ContextMenu name="ДополнительныеОтпускаДатаОкончанияКонтекстноеМеню" id="265"/>
-											<ExtendedTooltip name="ДополнительныеОтпускаДатаОкончанияExtendedTooltip" id="364"/>
+											<ExtendedTooltip name="ДополнительныеОтпускаДатаОкончанияРасширеннаяПодсказка" id="364"/>
 											<Events>
 												<Event name="OnChange">ДополнительныеОтпускаДатаОкончанияПриИзменении</Event>
 											</Events>
@@ -1327,7 +1333,7 @@
 									<DataPath>Объект.ДополнительныеОтпуска.КоличествоДней</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДополнительныеОтпускаКоличествоДнейКонтекстноеМеню" id="261"/>
-									<ExtendedTooltip name="ДополнительныеОтпускаКоличествоДнейExtendedTooltip" id="365"/>
+									<ExtendedTooltip name="ДополнительныеОтпускаКоличествоДнейРасширеннаяПодсказка" id="365"/>
 									<Events>
 										<Event name="OnChange">ДополнительныеОтпускаКоличествоДнейПриИзменении</Event>
 									</Events>
@@ -1346,7 +1352,7 @@
 									<SkipOnInput>true</SkipOnInput>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДополнительныеОтпускаВидРасчетаКомпенсацииКонтекстноеМеню" id="275"/>
-									<ExtendedTooltip name="ДополнительныеОтпускаВидРасчетаКомпенсацииExtendedTooltip" id="368"/>
+									<ExtendedTooltip name="ДополнительныеОтпускаВидРасчетаКомпенсацииРасширеннаяПодсказка" id="368"/>
 									<Events>
 										<Event name="OnChange">ДополнительныеОтпускаВидРасчетаКомпенсацииПриИзменении</Event>
 									</Events>
@@ -1497,7 +1503,7 @@
 							<v8:content>Начислено (подробно)</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="НачисленияСтраницаExtendedTooltip" id="399"/>
+					<ExtendedTooltip name="НачисленияСтраницаРасширеннаяПодсказка" id="399"/>
 					<ChildItems>
 						<Table name="Начисления" id="61">
 							<Representation>List</Representation>
@@ -1521,7 +1527,7 @@
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
-							<ExtendedTooltip name="НачисленияExtendedTooltip" id="400"/>
+							<ExtendedTooltip name="НачисленияРасширеннаяПодсказка" id="400"/>
 							<SearchStringAddition name="НачисленияСтрокаПоиска" id="545">
 								<AdditionSource>
 									<Item>Начисления</Item>
@@ -1560,14 +1566,14 @@
 									<DataPath>Объект.Начисления.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияНомерСтрокиКонтекстноеМеню" id="65"/>
-									<ExtendedTooltip name="НачисленияНомерСтрокиExtendedTooltip" id="401"/>
+									<ExtendedTooltip name="НачисленияНомерСтрокиРасширеннаяПодсказка" id="401"/>
 								</LabelField>
 								<InputField name="НачисленияВидРасчета" id="66">
 									<DataPath>Объект.Начисления.Начисление</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияВидРасчетаКонтекстноеМеню" id="67"/>
-									<ExtendedTooltip name="НачисленияВидРасчетаExtendedTooltip" id="402"/>
+									<ExtendedTooltip name="НачисленияВидРасчетаРасширеннаяПодсказка" id="402"/>
 									<Events>
 										<Event name="OnChange">НачисленияНачислениеПриИзменении</Event>
 									</Events>
@@ -1577,7 +1583,7 @@
 									<EditMode>EnterOnInput</EditMode>
 									<FooterDataPath>Объект.Начисления.TotalРезультат</FooterDataPath>
 									<ContextMenu name="НачисленияРезультатКонтекстноеМеню" id="73"/>
-									<ExtendedTooltip name="НачисленияРезультатExtendedTooltip" id="403"/>
+									<ExtendedTooltip name="НачисленияРезультатРасширеннаяПодсказка" id="403"/>
 									<Events>
 										<Event name="OnChange">НачисленияРезультатПриИзменении</Event>
 									</Events>
@@ -1589,7 +1595,7 @@
 											<v8:content>Период</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ДатыНачисленияExtendedTooltip" id="404"/>
+									<ExtendedTooltip name="ДатыНачисленияРасширеннаяПодсказка" id="404"/>
 									<ChildItems>
 										<ColumnGroup name="НачисленияПериод" id="1080">
 											<Group>Horizontal</Group>
@@ -1605,7 +1611,7 @@
 													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="НачисленияДатаНачалаКонтекстноеМеню" id="69"/>
-													<ExtendedTooltip name="НачисленияДатаНачалаExtendedTooltip" id="405"/>
+													<ExtendedTooltip name="НачисленияДатаНачалаРасширеннаяПодсказка" id="405"/>
 													<Events>
 														<Event name="OnChange">НачисленияДатаНачалаПриИзменении</Event>
 													</Events>
@@ -1616,7 +1622,7 @@
 													<ShowInHeader>false</ShowInHeader>
 													<ShowInFooter>false</ShowInFooter>
 													<ContextMenu name="НачисленияДатаОкончанияКонтекстноеМеню" id="71"/>
-													<ExtendedTooltip name="НачисленияДатаОкончанияExtendedTooltip" id="406"/>
+													<ExtendedTooltip name="НачисленияДатаОкончанияРасширеннаяПодсказка" id="406"/>
 													<Events>
 														<Event name="OnChange">НачисленияДатаОкончанияПриИзменении</Event>
 													</Events>
@@ -1859,7 +1865,7 @@
 							<v8:content>Пересчет прошлого периода</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="НачисленияПерерасчетСтраницаExtendedTooltip" id="412"/>
+					<ExtendedTooltip name="НачисленияПерерасчетСтраницаРасширеннаяПодсказка" id="412"/>
 					<ChildItems>
 						<Table name="НачисленияПерерасчет" id="125">
 							<Representation>List</Representation>
@@ -1878,11 +1884,11 @@
 									<Button name="НачисленияПерерасчетПодробно" id="246">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПерерасчетПодробно</CommandName>
-										<ExtendedTooltip name="НачисленияПерерасчетПодробноExtendedTooltip" id="413"/>
+										<ExtendedTooltip name="НачисленияПерерасчетПодробноРасширеннаяПодсказка" id="413"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
-							<ExtendedTooltip name="НачисленияПерерасчетExtendedTooltip" id="414"/>
+							<ExtendedTooltip name="НачисленияПерерасчетРасширеннаяПодсказка" id="414"/>
 							<SearchStringAddition name="НачисленияПерерасчетСтрокаПоиска" id="554">
 								<AdditionSource>
 									<Item>НачисленияПерерасчет</Item>
@@ -1922,13 +1928,13 @@
 									<DataPath>Объект.НачисленияПерерасчет.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетНомерСтрокиКонтекстноеМеню" id="129"/>
-									<ExtendedTooltip name="НачисленияПерерасчетНомерСтрокиExtendedTooltip" id="415"/>
+									<ExtendedTooltip name="НачисленияПерерасчетНомерСтрокиРасширеннаяПодсказка" id="415"/>
 								</LabelField>
 								<InputField name="НачисленияПерерасчетНачисление" id="134">
 									<DataPath>Объект.НачисленияПерерасчет.Начисление</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияПерерасчетНачислениеКонтекстноеМеню" id="135"/>
-									<ExtendedTooltip name="НачисленияПерерасчетНачислениеExtendedTooltip" id="416"/>
+									<ExtendedTooltip name="НачисленияПерерасчетНачислениеРасширеннаяПодсказка" id="416"/>
 									<Events>
 										<Event name="OnChange">НачисленияПерерасчетНачислениеПриИзменении</Event>
 									</Events>
@@ -1938,7 +1944,7 @@
 									<EditMode>EnterOnInput</EditMode>
 									<FooterDataPath>Объект.НачисленияПерерасчет.TotalРезультат</FooterDataPath>
 									<ContextMenu name="НачисленияПерерасчетРезультатКонтекстноеМеню" id="137"/>
-									<ExtendedTooltip name="НачисленияПерерасчетРезультатExtendedTooltip" id="417"/>
+									<ExtendedTooltip name="НачисленияПерерасчетРезультатРасширеннаяПодсказка" id="417"/>
 									<Events>
 										<Event name="OnChange">НачисленияПерерасчетРезультатПриИзменении</Event>
 									</Events>
@@ -2170,7 +2176,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИсправлениеExtendedTooltip" id="432"/>
+			<ExtendedTooltip name="ГруппаИсправлениеРасширеннаяПодсказка" id="432"/>
 		</UsualGroup>
 		<UsualGroup name="ПодписиГруппа" id="512">
 			<Title>
@@ -2372,7 +2378,7 @@
 			</Title>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
-			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="623"/>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="623"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКомментарийОтветственный" id="472">
 			<Group>Horizontal</Group>
@@ -2391,7 +2397,7 @@
 					<ExtendedEdit>true</ExtendedEdit>
 					<ChoiceButton>true</ChoiceButton>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="КомментарийExtendedTooltip" id="431"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="431"/>
 					<Events>
 						<Event name="StartChoice">КомментарийНачалоВыбора</Event>
 					</Events>
@@ -2400,7 +2406,7 @@
 					<DataPath>Объект.Ответственный</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="12"/>
-					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="332"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="332"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -2417,7 +2423,7 @@
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.ДенежноеСодержание">
-					<Column name="Значение1" id="1">
+					<Column name="Значение1" id="49">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2428,7 +2434,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение2" id="2">
+					<Column name="Значение2" id="57">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2439,7 +2445,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение3" id="3">
+					<Column name="Значение3" id="64">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2450,7 +2456,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение4" id="4">
+					<Column name="Значение4" id="68">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2461,7 +2467,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение5" id="5">
+					<Column name="Значение5" id="72">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2472,7 +2478,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение6" id="6">
+					<Column name="Значение6" id="76">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2483,7 +2489,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Показатель1" id="7">
+					<Column name="Показатель1" id="80">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2494,7 +2500,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель2" id="8">
+					<Column name="Показатель2" id="84">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2505,7 +2511,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель3" id="9">
+					<Column name="Показатель3" id="88">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2516,7 +2522,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель4" id="10">
+					<Column name="Показатель4" id="92">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2527,7 +2533,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель5" id="11">
+					<Column name="Показатель5" id="96">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2538,7 +2544,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель6" id="12">
+					<Column name="Показатель6" id="100">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2549,7 +2555,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя1" id="13">
+					<Column name="ПредставлениеПоказателя1" id="104">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2564,7 +2570,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя2" id="14">
+					<Column name="ПредставлениеПоказателя2" id="108">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2579,7 +2585,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя3" id="15">
+					<Column name="ПредставлениеПоказателя3" id="112">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2594,7 +2600,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя4" id="16">
+					<Column name="ПредставлениеПоказателя4" id="116">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2609,7 +2615,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя5" id="17">
+					<Column name="ПредставлениеПоказателя5" id="120">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2624,7 +2630,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя6" id="18">
+					<Column name="ПредставлениеПоказателя6" id="124">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2639,7 +2645,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя1" id="19">
+					<Column name="ТочностьПоказателя1" id="128">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2654,7 +2660,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя2" id="20">
+					<Column name="ТочностьПоказателя2" id="132">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2669,7 +2675,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя3" id="21">
+					<Column name="ТочностьПоказателя3" id="136">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2684,7 +2690,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя4" id="22">
+					<Column name="ТочностьПоказателя4" id="140">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2699,7 +2705,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя5" id="23">
+					<Column name="ТочностьПоказателя5" id="144">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2714,7 +2720,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя6" id="24">
+					<Column name="ТочностьПоказателя6" id="148">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2729,7 +2735,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки1" id="25">
+					<Column name="КомандаРасшифровки1" id="152">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2744,7 +2750,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки2" id="26">
+					<Column name="КомандаРасшифровки2" id="156">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2759,7 +2765,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки3" id="27">
+					<Column name="КомандаРасшифровки3" id="160">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2774,7 +2780,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки4" id="28">
+					<Column name="КомандаРасшифровки4" id="164">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2789,7 +2795,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки5" id="29">
+					<Column name="КомандаРасшифровки5" id="168">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2804,7 +2810,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки6" id="30">
+					<Column name="КомандаРасшифровки6" id="172">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2819,7 +2825,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПериодаДействия" id="31">
+					<Column name="ПредставлениеПериодаДействия" id="176">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2834,7 +2840,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПустаяСтрокаЗаголовка" id="32">
+					<Column name="ПустаяСтрокаЗаголовка" id="180">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2849,7 +2855,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ФиксированнаяСумма" id="33">
+					<Column name="ФиксированнаяСумма" id="184">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2860,7 +2866,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="РезультатРаспределения" id="34">
+					<Column name="РезультатРаспределения" id="188">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2869,7 +2875,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="РаспределениеПоТерриториямУсловиямТруда" id="35">
+					<Column name="РаспределениеПоТерриториямУсловиямТруда" id="192">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2878,7 +2884,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="КомандаРедактированияРаспределения" id="36">
+					<Column name="КомандаРедактированияРаспределения" id="196">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2895,7 +2901,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.УправленческиеНачисления">
-					<Column name="ПериодДействияСтрокой" id="1">
+					<Column name="ПериодДействияСтрокой" id="50">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2910,7 +2916,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="Значение1" id="2">
+					<Column name="Значение1" id="58">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2921,7 +2927,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение2" id="3">
+					<Column name="Значение2" id="65">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2932,7 +2938,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение3" id="4">
+					<Column name="Значение3" id="69">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2943,7 +2949,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение4" id="5">
+					<Column name="Значение4" id="73">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2954,7 +2960,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение6" id="6">
+					<Column name="Значение6" id="77">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2965,7 +2971,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение5" id="7">
+					<Column name="Значение5" id="81">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2976,7 +2982,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Показатель1" id="8">
+					<Column name="Показатель1" id="85">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2987,7 +2993,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель2" id="9">
+					<Column name="Показатель2" id="89">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -2998,7 +3004,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель3" id="10">
+					<Column name="Показатель3" id="93">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3009,7 +3015,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель4" id="11">
+					<Column name="Показатель4" id="97">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3020,7 +3026,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель5" id="12">
+					<Column name="Показатель5" id="101">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3031,7 +3037,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель6" id="13">
+					<Column name="Показатель6" id="105">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3042,7 +3048,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя1" id="14">
+					<Column name="ПредставлениеПоказателя1" id="109">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3057,7 +3063,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя2" id="15">
+					<Column name="ПредставлениеПоказателя2" id="113">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3072,7 +3078,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя3" id="16">
+					<Column name="ПредставлениеПоказателя3" id="117">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3087,7 +3093,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя4" id="17">
+					<Column name="ПредставлениеПоказателя4" id="121">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3102,7 +3108,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя5" id="18">
+					<Column name="ПредставлениеПоказателя5" id="125">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3117,7 +3123,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя6" id="19">
+					<Column name="ПредставлениеПоказателя6" id="129">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3132,7 +3138,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя2" id="20">
+					<Column name="ТочностьПоказателя2" id="133">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3147,7 +3153,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя1" id="21">
+					<Column name="ТочностьПоказателя1" id="137">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3162,7 +3168,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя3" id="22">
+					<Column name="ТочностьПоказателя3" id="141">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3177,7 +3183,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя4" id="23">
+					<Column name="ТочностьПоказателя4" id="145">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3192,7 +3198,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя5" id="24">
+					<Column name="ТочностьПоказателя5" id="149">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3207,7 +3213,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя6" id="25">
+					<Column name="ТочностьПоказателя6" id="153">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3222,7 +3228,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки2" id="26">
+					<Column name="КомандаРасшифровки2" id="157">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3237,7 +3243,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки1" id="27">
+					<Column name="КомандаРасшифровки1" id="161">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3252,7 +3258,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки3" id="28">
+					<Column name="КомандаРасшифровки3" id="165">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3267,7 +3273,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки4" id="29">
+					<Column name="КомандаРасшифровки4" id="169">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3282,7 +3288,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки5" id="30">
+					<Column name="КомандаРасшифровки5" id="173">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3297,7 +3303,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки6" id="31">
+					<Column name="КомандаРасшифровки6" id="177">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3312,7 +3318,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ВидВремени" id="32">
+					<Column name="ВидВремени" id="181">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3323,7 +3329,7 @@
 							<v8:Type>cfg:EnumRef.ВидыРабочегоВремениСотрудников</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ЕдиницаИзмеренияВремени" id="33">
+					<Column name="ЕдиницаИзмеренияВремени" id="185">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3338,7 +3344,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ФизическоеЛицо" id="34">
+					<Column name="ФизическоеЛицо" id="189">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3349,7 +3355,7 @@
 							<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ФиксированнаяСумма" id="35">
+					<Column name="ФиксированнаяСумма" id="193">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3360,7 +3366,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ДоступенВыборОснования" id="36">
+					<Column name="ДоступенВыборОснования" id="197">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3371,7 +3377,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ИспользованиеПериода" id="37">
+					<Column name="ИспользованиеПериода" id="200">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3384,7 +3390,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.ПогашениеЗаймов">
-					<Column name="РезультатРаспределения" id="1">
+					<Column name="РезультатРаспределения" id="51">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3393,7 +3399,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="КомандаРедактированияРаспределения" id="2">
+					<Column name="КомандаРедактированияРаспределения" id="59">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3410,7 +3416,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.НачисленияПерерасчет">
-					<Column name="Значение1" id="1">
+					<Column name="Значение1" id="52">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3421,7 +3427,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение2" id="2">
+					<Column name="Значение2" id="60">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3432,7 +3438,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение3" id="3">
+					<Column name="Значение3" id="66">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3443,7 +3449,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение4" id="4">
+					<Column name="Значение4" id="70">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3454,7 +3460,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение5" id="5">
+					<Column name="Значение5" id="74">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3465,7 +3471,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение6" id="6">
+					<Column name="Значение6" id="78">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3476,7 +3482,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Показатель1" id="7">
+					<Column name="Показатель1" id="82">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3487,7 +3493,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель2" id="8">
+					<Column name="Показатель2" id="86">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3498,7 +3504,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель3" id="9">
+					<Column name="Показатель3" id="90">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3509,7 +3515,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель4" id="10">
+					<Column name="Показатель4" id="94">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3520,7 +3526,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель5" id="11">
+					<Column name="Показатель5" id="98">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3531,7 +3537,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель6" id="12">
+					<Column name="Показатель6" id="102">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3542,7 +3548,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя1" id="13">
+					<Column name="ПредставлениеПоказателя1" id="106">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3557,7 +3563,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя2" id="14">
+					<Column name="ПредставлениеПоказателя2" id="110">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3572,7 +3578,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя3" id="15">
+					<Column name="ПредставлениеПоказателя3" id="114">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3587,7 +3593,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя4" id="16">
+					<Column name="ПредставлениеПоказателя4" id="118">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3602,7 +3608,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя5" id="17">
+					<Column name="ПредставлениеПоказателя5" id="122">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3617,7 +3623,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя6" id="18">
+					<Column name="ПредставлениеПоказателя6" id="126">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3632,7 +3638,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя1" id="19">
+					<Column name="ТочностьПоказателя1" id="130">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3647,7 +3653,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя2" id="20">
+					<Column name="ТочностьПоказателя2" id="134">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3662,7 +3668,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя3" id="21">
+					<Column name="ТочностьПоказателя3" id="138">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3677,7 +3683,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя4" id="22">
+					<Column name="ТочностьПоказателя4" id="142">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3692,7 +3698,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя5" id="23">
+					<Column name="ТочностьПоказателя5" id="146">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3707,7 +3713,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя6" id="24">
+					<Column name="ТочностьПоказателя6" id="150">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3722,7 +3728,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки1" id="25">
+					<Column name="КомандаРасшифровки1" id="154">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3737,7 +3743,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки2" id="26">
+					<Column name="КомандаРасшифровки2" id="158">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3752,7 +3758,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки3" id="27">
+					<Column name="КомандаРасшифровки3" id="162">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3767,7 +3773,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки4" id="28">
+					<Column name="КомандаРасшифровки4" id="166">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3782,7 +3788,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки5" id="29">
+					<Column name="КомандаРасшифровки5" id="170">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3797,7 +3803,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки6" id="30">
+					<Column name="КомандаРасшифровки6" id="174">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3812,7 +3818,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ВидВремени" id="31">
+					<Column name="ВидВремени" id="178">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3823,7 +3829,7 @@
 							<v8:Type>cfg:EnumRef.ВидыРабочегоВремениСотрудников</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ЕдиницаИзмеренияВремени" id="32">
+					<Column name="ЕдиницаИзмеренияВремени" id="182">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3838,7 +3844,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПериодаДействия" id="34">
+					<Column name="ПредставлениеПериодаДействия" id="190">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3853,7 +3859,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПустаяСтрокаЗаголовка" id="35">
+					<Column name="ПустаяСтрокаЗаголовка" id="194">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3868,7 +3874,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ФиксированнаяСумма" id="36">
+					<Column name="ФиксированнаяСумма" id="198">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3879,7 +3885,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="РаспределениеПоТерриториямУсловиямТруда" id="37">
+					<Column name="РаспределениеПоТерриториямУсловиямТруда" id="201">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3888,7 +3894,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="ПредставлениеРаспределенияПоТерриториямУсловиямТруда" id="38">
+					<Column name="ПредставлениеРаспределенияПоТерриториямУсловиямТруда" id="202">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3903,7 +3909,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда1" id="39">
+					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда1" id="203">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3918,7 +3924,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда2" id="40">
+					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда2" id="204">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3933,7 +3939,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда3" id="41">
+					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда3" id="205">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3948,7 +3954,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда4" id="42">
+					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда4" id="206">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3963,7 +3969,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда5" id="43">
+					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда5" id="207">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3978,7 +3984,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда6" id="44">
+					<Column name="ПредставлениеЗначенийПоТерриториямУсловиямТруда6" id="208">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -3993,7 +3999,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="РезультатРаспределения" id="45">
+					<Column name="РезультатРаспределения" id="209">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4002,7 +4008,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="КомандаРедактированияРаспределения" id="46">
+					<Column name="КомандаРедактированияРаспределения" id="210">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4017,7 +4023,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ДоступенВыборОснования" id="47">
+					<Column name="ДоступенВыборОснования" id="211">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4028,7 +4034,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ИспользованиеПериода" id="33">
+					<Column name="ИспользованиеПериода" id="186">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4039,7 +4045,7 @@
 							<v8:Type>cfg:EnumRef.ВариантыИспользованияПериодаНачисления</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПериодДействияСтрокой" id="48">
+					<Column name="ПериодДействияСтрокой" id="212">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4056,7 +4062,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Удержания">
-					<Column name="Значение1" id="1">
+					<Column name="Значение1" id="53">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4067,7 +4073,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение2" id="2">
+					<Column name="Значение2" id="61">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4078,7 +4084,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение3" id="3">
+					<Column name="Значение3" id="67">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4089,7 +4095,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение4" id="4">
+					<Column name="Значение4" id="71">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4100,7 +4106,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение5" id="5">
+					<Column name="Значение5" id="75">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4111,7 +4117,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение6" id="6">
+					<Column name="Значение6" id="79">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4122,7 +4128,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Показатель1" id="7">
+					<Column name="Показатель1" id="83">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4133,7 +4139,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель2" id="8">
+					<Column name="Показатель2" id="87">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4144,7 +4150,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель3" id="9">
+					<Column name="Показатель3" id="91">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4155,7 +4161,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель4" id="10">
+					<Column name="Показатель4" id="95">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4166,7 +4172,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель5" id="11">
+					<Column name="Показатель5" id="99">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4177,7 +4183,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="Показатель6" id="12">
+					<Column name="Показатель6" id="103">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4188,7 +4194,7 @@
 							<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя1" id="13">
+					<Column name="ПредставлениеПоказателя1" id="107">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4203,7 +4209,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя2" id="14">
+					<Column name="ПредставлениеПоказателя2" id="111">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4218,7 +4224,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя3" id="15">
+					<Column name="ПредставлениеПоказателя3" id="115">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4233,7 +4239,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя4" id="16">
+					<Column name="ПредставлениеПоказателя4" id="119">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4248,7 +4254,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя5" id="17">
+					<Column name="ПредставлениеПоказателя5" id="123">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4263,7 +4269,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПоказателя6" id="18">
+					<Column name="ПредставлениеПоказателя6" id="127">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4278,7 +4284,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя1" id="19">
+					<Column name="ТочностьПоказателя1" id="131">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4293,7 +4299,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя2" id="20">
+					<Column name="ТочностьПоказателя2" id="135">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4308,7 +4314,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя3" id="21">
+					<Column name="ТочностьПоказателя3" id="139">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4323,7 +4329,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя4" id="22">
+					<Column name="ТочностьПоказателя4" id="143">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4338,7 +4344,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя5" id="23">
+					<Column name="ТочностьПоказателя5" id="147">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4353,7 +4359,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ТочностьПоказателя6" id="24">
+					<Column name="ТочностьПоказателя6" id="151">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4368,7 +4374,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки1" id="25">
+					<Column name="КомандаРасшифровки1" id="155">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4383,7 +4389,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки2" id="26">
+					<Column name="КомандаРасшифровки2" id="159">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4398,7 +4404,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки3" id="27">
+					<Column name="КомандаРасшифровки3" id="163">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4413,7 +4419,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки4" id="28">
+					<Column name="КомандаРасшифровки4" id="167">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4428,7 +4434,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки5" id="29">
+					<Column name="КомандаРасшифровки5" id="171">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4443,7 +4449,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="КомандаРасшифровки6" id="30">
+					<Column name="КомандаРасшифровки6" id="175">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4458,7 +4464,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПредставлениеПериодаДействия" id="31">
+					<Column name="ПредставлениеПериодаДействия" id="179">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4473,7 +4479,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ПустаяСтрокаЗаголовка" id="32">
+					<Column name="ПустаяСтрокаЗаголовка" id="183">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4488,7 +4494,7 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="ФиксированнаяСумма" id="33">
+					<Column name="ФиксированнаяСумма" id="187">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4499,7 +4505,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="КатегорияУдержания" id="34">
+					<Column name="КатегорияУдержания" id="191">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4510,7 +4516,7 @@
 							<v8:Type>cfg:EnumRef.КатегорииУдержаний</v8:Type>
 						</Type>
 					</Column>
-					<Column name="РезультатРаспределения" id="35">
+					<Column name="РезультатРаспределения" id="195">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4519,7 +4525,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="КомандаРедактированияРаспределения" id="36">
+					<Column name="КомандаРедактированияРаспределения" id="199">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4536,7 +4542,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Начисления">
-					<Column name="Значение1" id="1">
+					<Column name="Значение1" id="54">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -4547,7 +4553,7 @@
 							<v8:TypeSet>cfg:DefinedType.ЗначениеПоказателяРасчетаЗарплаты</v8:TypeSet>
 						</Type>
 					</Column>
-					<Column name="Значение2" id="2">
+					<Column name="Значение2" id="62">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -5182,7 +5188,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.КорректировкиВыплаты">
-					<Column name="РезультатРаспределения" id="1">
+					<Column name="РезультатРаспределения" id="55">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -5191,7 +5197,7 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="КомандаРедактированияРаспределения" id="2">
+					<Column name="КомандаРедактированияРаспределения" id="63">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -5208,7 +5214,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.НДФЛ">
-					<Column name="РезультатРаспределения" id="1">
+					<Column name="РезультатРаспределения" id="56">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>

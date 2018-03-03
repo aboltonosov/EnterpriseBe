@@ -18,30 +18,25 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="НаименованиеКодГруппа" id="10">
-			<Group>Horizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="НаименованиеКодГруппаРасширеннаяПодсказка" id="11"/>
 			<ChildItems>
-				<InputField name="Наименование" id="3">
-					<DataPath>Объект.Description</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="8"/>
-				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="КодExtendedTooltip" id="7"/>
 				</InputField>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="8"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="ФасетОКИН" id="5">
-			<DataPath>Объект.ФасетОКИН</DataPath>
-			<ContextMenu name="ФасетОКИНКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="ФасетОКИНExtendedTooltip" id="9"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

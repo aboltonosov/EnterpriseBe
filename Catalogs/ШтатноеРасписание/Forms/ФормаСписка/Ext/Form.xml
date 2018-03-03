@@ -22,17 +22,6 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<CheckBoxField name="ПоказыватьПозицииНаДату" id="127">
-			<DataPath>ПоказыватьПозицииНаДату</DataPath>
-			<Visible>false</Visible>
-			<TitleLocation>Right</TitleLocation>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ПоказыватьПозицииНаДатуКонтекстноеМеню" id="128"/>
-			<ExtendedTooltip name="ПоказыватьПозицииНаДатуРасширеннаяПодсказка" id="129"/>
-			<Events>
-				<Event name="OnChange">ПоказыватьПозицииНаДатуПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="164">
 			<Title>
 				<v8:item>
@@ -45,6 +34,100 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="165"/>
 		</UsualGroup>
+		<UsualGroup name="ГруппаОтборов" id="202">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборовExtendedTooltip" id="203"/>
+			<ChildItems>
+				<InputField name="ОтборОрганизация" id="204">
+					<DataPath>ОтборОрганизация</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="ОтборОрганизацияРасширеннаяПодсказка" id="206"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ГруппаФлажков" id="207">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФлажковExtendedTooltip" id="208"/>
+					<ChildItems>
+						<CheckBoxField name="ПоказыватьПозицииНаДату1" id="209">
+							<DataPath>ПоказыватьПозицииНаДату</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоказыватьПозицииНаДату1КонтекстноеМеню" id="210"/>
+							<ExtendedTooltip name="ПоказыватьПозицииНаДату1РасширеннаяПодсказка" id="211"/>
+							<Events>
+								<Event name="OnChange">ПоказыватьПозицииНаДатуПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаФлажковГоризонтальная1" id="212">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа флажков горизонтальная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа флажков горизонтальная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФлажковГоризонтальная1РасширеннаяПодсказка" id="213"/>
+							<ChildItems>
+								<CheckBoxField name="ПоказыватьНовыеПозиции1" id="214">
+									<DataPath>ПоказыватьНовыеПозиции</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказыватьНовыеПозиции1КонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="ПоказыватьНовыеПозиции1РасширеннаяПодсказка" id="216"/>
+									<Events>
+										<Event name="OnChange">ПоказыватьНовыеПозицииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ПоказыватьЗакрытыеПозиции1" id="217">
+									<DataPath>ПоказыватьЗакрытыеПозиции</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказыватьЗакрытыеПозиции1КонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="ПоказыватьЗакрытыеПозиции1РасширеннаяПодсказка" id="219"/>
+									<Events>
+										<Event name="OnChange">ПоказыватьЗакрытыеПозицииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ПоказыватьПозицииНаДату" id="127">
+			<DataPath>ПоказыватьПозицииНаДату</DataPath>
+			<Visible>false</Visible>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоказыватьПозицииНаДатуКонтекстноеМеню" id="128"/>
+			<ExtendedTooltip name="ПоказыватьПозицииНаДатуРасширеннаяПодсказка" id="129"/>
+			<Events>
+				<Event name="OnChange">ПоказыватьПозицииНаДатуПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
 		<UsualGroup name="СписокНастройкиОтбора" id="166">
 			<Title>
 				<v8:item>
@@ -501,34 +584,6 @@
 						</LabelField>
 					</ChildItems>
 				</Table>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаФлажковГоризонтальная" id="130">
-			<Group>Horizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаФлажковГоризонтальнаяРасширеннаяПодсказка" id="131"/>
-			<ChildItems>
-				<CheckBoxField name="ПоказыватьНовыеПозиции" id="24">
-					<DataPath>ПоказыватьНовыеПозиции</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПоказыватьНовыеПозицииКонтекстноеМеню" id="25"/>
-					<ExtendedTooltip name="ПоказыватьНовыеПозицииExtendedTooltip" id="75"/>
-					<Events>
-						<Event name="OnChange">ПоказыватьНовыеПозицииПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
-				<CheckBoxField name="ПоказыватьЗакрытыеПозиции" id="26">
-					<DataPath>ПоказыватьЗакрытыеПозиции</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПоказыватьЗакрытыеПозицииКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ПоказыватьЗакрытыеПозицииExtendedTooltip" id="76"/>
-					<Events>
-						<Event name="OnChange">ПоказыватьЗакрытыеПозицииПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>

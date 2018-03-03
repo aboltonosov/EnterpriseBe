@@ -298,6 +298,22 @@
 							<ContextMenu name="НаправлениеДеятельностиКонтекстноеМеню" id="223"/>
 							<ExtendedTooltip name="НаправлениеДеятельностиРасширеннаяПодсказка" id="224"/>
 						</InputField>
+						<CheckBoxField name="РежимИспользованияБСО" id="225">
+							<DataPath>Объект.РежимИспользованияБСО</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Бланки строгой отчетности</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РежимИспользованияБСОКонтекстноеМеню" id="226"/>
+							<ExtendedTooltip name="РежимИспользованияБСОРасширеннаяПодсказка" id="227"/>
+							<Events>
+								<Event name="OnChange">РежимИспользованияБСОПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>

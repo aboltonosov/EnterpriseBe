@@ -22,6 +22,7 @@
 		</InputField>
 		<InputField name="КПП" id="9">
 			<DataPath>Объект.КПП</DataPath>
+			<Visible>false</Visible>
 			<EditMode>EnterOnInput</EditMode>
 			<HorizontalStretch>false</HorizontalStretch>
 			<ContextMenu name="КППКонтекстноеМеню" id="10"/>
@@ -197,6 +198,11 @@
 			<ContextMenu name="НаименованиеОбособленногоПодразделелнияКонтекстноеМеню" id="144"/>
 			<ExtendedTooltip name="НаименованиеОбособленногоПодразделелнияРасширеннаяПодсказка" id="145"/>
 		</InputField>
+		<InputField name="Код" id="32">
+			<DataPath>Объект.Code</DataPath>
+			<ContextMenu name="КодКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="КодExtendedTooltip" id="66"/>
+		</InputField>
 		<UsualGroup name="ГруппаКодыНалоговогоОргана" id="31">
 			<Title>
 				<v8:item>
@@ -210,13 +216,9 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКодыНалоговогоОрганаExtendedTooltip" id="65"/>
 			<ChildItems>
-				<InputField name="Код" id="32">
-					<DataPath>Объект.Code</DataPath>
-					<ContextMenu name="КодКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="КодExtendedTooltip" id="66"/>
-				</InputField>
 				<InputField name="КодПоОКТМО" id="140">
 					<DataPath>Объект.КодПоОКТМО</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -228,6 +230,7 @@
 				</InputField>
 				<InputField name="КодПоОКАТО" id="34">
 					<DataPath>Объект.КодПоОКАТО</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -243,6 +246,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаЦифровойИндексОбособленногоПодразделения" id="124">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

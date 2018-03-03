@@ -1551,6 +1551,7 @@
 											<ChildItems>
 												<RadioButtonField name="ИсточникДанныхФИАССервис1С" id="1869">
 													<DataPath>НаборКонстант.ИсточникДанныхАдресногоКлассификатора</DataPath>
+													<Visible>false</Visible>
 													<TitleLocation>None</TitleLocation>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 													<RadioButtonType>Auto</RadioButtonType>
@@ -1586,6 +1587,7 @@
 												</RadioButtonField>
 												<RadioButtonField name="ИсточникДанныхФИАСЛокально" id="1875">
 													<DataPath>НаборКонстант.ИсточникДанныхАдресногоКлассификатора</DataPath>
+													<Visible>false</Visible>
 													<TitleLocation>None</TitleLocation>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 													<RadioButtonType>Auto</RadioButtonType>
@@ -1626,6 +1628,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаАдресныйКлассификаторПраваяКолонка" id="1881">
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1835,8 +1838,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Загрузка классификатора банков РФ с диска 1С:ИТС 
-или сайта 1С.</v8:content>
+										<v8:content>Загрузка классификатора банков РБ с сайта 1С.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -1860,7 +1862,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Загрузка курсов выбранных валют за указанный период с сайта 1С.</v8:content>
+										<v8:content>Загрузка курсов выбранных валют за указанный период с сайта НБ РБ.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -1870,6 +1872,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаЗащитаПерсональныхДанных" id="1608">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -2081,7 +2084,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Автоматически проверять контрагентов по ЕГРН</v8:content>
+											<v8:content>Автоматически проверять контрагентов по УНП</v8:content>
 										</v8:item>
 									</Title>
 									<TitleLocation>Right</TitleLocation>
@@ -2130,6 +2133,7 @@
 									<ExtendedTooltip name="ПроверитьДоступКСервисуРасширеннаяПодсказка" id="1925"/>
 								</Button>
 								<LabelDecoration name="ПредупреждениеПроТестовыйРежимПроверкиКонтрагента" id="1917">
+									<Visible>false</Visible>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<Title formatted="false">
 										<v8:item>

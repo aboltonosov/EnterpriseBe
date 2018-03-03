@@ -164,6 +164,7 @@
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
@@ -254,6 +255,9 @@
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
 													<ExtendedTooltip name="НомерExtendedTooltip" id="146"/>
+													<Events>
+														<Event name="OnChange">НомерПриИзменении</Event>
+													</Events>
 												</InputField>
 												<InputField name="Дата" id="3">
 													<DataPath>Объект.Дата</DataPath>
@@ -267,6 +271,9 @@
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
 													<ExtendedTooltip name="ДатаExtendedTooltip" id="147"/>
+													<Events>
+														<Event name="OnChange">ДатаПриИзменении</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -280,6 +287,7 @@
 											</Title>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>28</MaxWidth>
+											<DropListButton>true</DropListButton>
 											<ContextMenu name="НаименованиеКонтекстноеМеню" id="42"/>
 											<ExtendedTooltip name="НаименованиеExtendedTooltip" id="148"/>
 											<Events>

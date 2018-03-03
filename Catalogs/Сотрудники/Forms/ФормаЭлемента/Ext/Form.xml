@@ -141,6 +141,12 @@
 						<Button name="НалогНаДоходы" id="1465">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.НалогНаДоходы</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подоходный налог</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="НалогНаДоходыExtendedTooltip" id="1466"/>
 						</Button>
 						<Button name="ОбщаяКомандаПрисоединенныеФайлыКОбъекту" id="1528">
@@ -192,6 +198,11 @@
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ВыплатаЗарплаты</CommandName>
 							<ExtendedTooltip name="ВыплатаЗарплатыExtendedTooltip" id="1464"/>
+						</Button>
+						<Button name="ЛицевыеСчета" id="1530">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЛицевыеСчета</CommandName>
+							<ExtendedTooltip name="ЛицевыеСчетаРасширеннаяПодсказка" id="1531"/>
 						</Button>
 						<UsualGroup name="ГруппаОхранаТруда" id="1524">
 							<Title>
@@ -496,10 +507,17 @@
 									<ChildItems>
 										<InputField name="ФизлицоИНН" id="1302">
 											<DataPath>ФизическоеЛицо.ИНН</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>УНП</v8:content>
+												</v8:item>
+											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>ИНН, присвоенный налоговым органом</v8:content>
+													<v8:content>УНП, присвоенный налоговым органом</v8:content>
 												</v8:item>
 											</ToolTip>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
@@ -516,7 +534,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>СНИЛС</v8:content>
+													<v8:content>Страховой номер</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
@@ -3339,6 +3357,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Склонения</Action>
+		</Command>
+		<Command name="ЛицевыеСчета" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лицевые счета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лицевые счета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЛицевыеСчета</Action>
 		</Command>
 	</Commands>
 	<Parameters>

@@ -127,7 +127,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>При выборе контрагента Наименование, ИНН и КПП заполнятся автоматически</v8:content>
+							<v8:content>При выборе контрагента Наименование и УНП заполнятся автоматически</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="КонтрагентПодсказкаКонтекстноеМеню" id="143"/>
@@ -253,7 +253,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>ИНН</v8:content>
+													<v8:content>УНП</v8:content>
 												</v8:item>
 											</Title>
 											<TitleLocation>Left</TitleLocation>
@@ -289,7 +289,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>ИНН</v8:content>
+											<v8:content>УНП</v8:content>
 										</v8:item>
 									</Title>
 									<TitleLocation>Left</TitleLocation>
@@ -299,6 +299,7 @@
 								</InputField>
 								<InputField name="ЮрЛицоКПП" id="76">
 									<DataPath>ЮрЛицоКПП</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>

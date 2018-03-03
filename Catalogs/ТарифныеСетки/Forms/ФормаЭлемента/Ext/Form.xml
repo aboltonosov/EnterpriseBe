@@ -22,19 +22,18 @@
 		</InputField>
 		<InputField name="НаименованиеПолное" id="58">
 			<DataPath>Объект.НаименованиеПолное</DataPath>
-			<ToolTipRepresentation>Button</ToolTipRepresentation>
 			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="59"/>
 			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="60"/>
 		</InputField>
 		<InputField name="ВидТарифнойСетки" id="68">
 			<DataPath>Объект.ВидТарифнойСетки</DataPath>
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Вид тарифной группы</v8:content>
 				</v8:item>
 			</Title>
-			<HorizontalStretch>false</HorizontalStretch>
 			<ContextMenu name="ВидТарифнойСеткиКонтекстноеМеню" id="69"/>
 			<ExtendedTooltip name="ВидТарифнойСеткиРасширеннаяПодсказка" id="70"/>
 			<Events>
@@ -58,7 +57,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Размеры тарифов устанавливаются в привязке к базовому тарифу</v8:content>
+							<v8:content>Размеры тарифов устанавливаются в привязке к тарифной ставке первого разряда</v8:content>
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
@@ -70,8 +69,8 @@
 						<Title formatted="false">
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Установите флажок, если размеры всех тарифов устанавливаются в привязке к базовому тарифу. 
-Если флажок не установлен, то размеры тарифов будут задаваться независимо.</v8:content>
+								<v8:content>Установите флажок, если размеры всех тарифов устанавливаются в привязке к тарифной ставке первого разряда. 
+Если флажок не установлен размеры тарифов будут задаваться независимо.</v8:content>
 							</v8:item>
 						</Title>
 					</ExtendedTooltip>
@@ -79,6 +78,60 @@
 						<Event name="OnChange">ПрименениеТарифныхКоэффициентовПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
+				<UsualGroup name="ГруппаОкладГруппы" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа оклад группы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа оклад группы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОкладГруппыРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<InputField name="БазовыйТарифГруппы" id="65">
+							<DataPath>БазовыйТарифГруппы</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тарифная ставка первого разряда</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="БазовыйТарифГруппыКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="БазовыйТарифГруппыРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<CommandBar name="КоманднаяПанельРазрядыТарифнойСетки" id="88">
+							<HorizontalLocation>Right</HorizontalLocation>
+							<CommandSource>Item.РазрядыТарифнойСетки</CommandSource>
+							<ExtendedTooltip name="КоманднаяПанельРазрядыТарифнойСеткиРасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<Button name="РазрядыТарифнойСеткиПереместитьВверх" id="90">
+									<Type>CommandBarButton</Type>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>Form.Item.РазрядыТарифнойСетки.StandardCommand.MoveUp</CommandName>
+									<ExtendedTooltip name="РазрядыТарифнойСеткиПереместитьВверхРасширеннаяПодсказка" id="91"/>
+								</Button>
+								<Button name="РазрядыТарифнойСеткиПереместитьВниз" id="92">
+									<Type>CommandBarButton</Type>
+									<OnlyInAllActions>true</OnlyInAllActions>
+									<CommandName>Form.Item.РазрядыТарифнойСетки.StandardCommand.MoveDown</CommandName>
+									<ExtendedTooltip name="РазрядыТарифнойСеткиПереместитьВнизРасширеннаяПодсказка" id="93"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="СведенияСуществующегоГруппа" id="94">
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
@@ -116,54 +169,6 @@
 									<CommandName>Form.Command.ВсеИзмененияТарифнойСетки</CommandName>
 									<ExtendedTooltip name="ВсеИзмененияТарифнойСеткиРасширеннаяПодсказка" id="55"/>
 								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаОкладГруппы" id="63">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа оклад группы</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа оклад группы</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаОкладГруппыРасширеннаяПодсказка" id="64"/>
-							<ChildItems>
-								<InputField name="БазовыйТарифГруппы" id="65">
-									<DataPath>БазовыйТарифГруппы</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<Width>10</Width>
-									<HorizontalStretch>false</HorizontalStretch>
-									<ChoiceButton>false</ChoiceButton>
-									<ContextMenu name="БазовыйТарифГруппыКонтекстноеМеню" id="66"/>
-									<ExtendedTooltip name="БазовыйТарифГруппыРасширеннаяПодсказка" id="67"/>
-								</InputField>
-								<CommandBar name="КоманднаяПанельРазрядыТарифнойСетки" id="88">
-									<HorizontalLocation>Right</HorizontalLocation>
-									<CommandSource>Item.РазрядыТарифнойСетки</CommandSource>
-									<ExtendedTooltip name="КоманднаяПанельРазрядыТарифнойСеткиРасширеннаяПодсказка" id="89"/>
-									<ChildItems>
-										<Button name="РазрядыТарифнойСеткиПереместитьВверх" id="90">
-											<Type>CommandBarButton</Type>
-											<OnlyInAllActions>true</OnlyInAllActions>
-											<CommandName>Form.Item.РазрядыТарифнойСетки.StandardCommand.MoveUp</CommandName>
-											<ExtendedTooltip name="РазрядыТарифнойСеткиПереместитьВверхРасширеннаяПодсказка" id="91"/>
-										</Button>
-										<Button name="РазрядыТарифнойСеткиПереместитьВниз" id="92">
-											<Type>CommandBarButton</Type>
-											<OnlyInAllActions>true</OnlyInAllActions>
-											<CommandName>Form.Item.РазрядыТарифнойСетки.StandardCommand.MoveDown</CommandName>
-											<ExtendedTooltip name="РазрядыТарифнойСеткиПереместитьВнизРасширеннаяПодсказка" id="93"/>
-										</Button>
-									</ChildItems>
-								</CommandBar>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаРазрядыТарифнойСетки" id="29">
@@ -230,6 +235,12 @@
 												<InputField name="РазрядыТарифнойСеткиРазрядКатегория" id="20">
 													<DataPath>РазрядыТарифнойСетки.РазрядКатегория</DataPath>
 													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Уровень</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="РазрядыТарифнойСеткиРазрядКатегорияКонтекстноеМеню" id="21"/>
 													<ExtendedTooltip name="РазрядыТарифнойСеткиРазрядКатегорияРасширеннаяПодсказка" id="22"/>
@@ -240,6 +251,7 @@
 													<ChildItems>
 														<InputField name="РазрядыТарифнойСеткиРазрядНаименование" id="82">
 															<DataPath>РазрядыТарифнойСетки.РазрядНаименование</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<Width>20</Width>
 															<ContextMenu name="РазрядыТарифнойСеткиРазрядНаименованиеКонтекстноеМеню" id="83"/>
@@ -261,19 +273,43 @@
 												</ColumnGroup>
 											</ChildItems>
 										</ColumnGroup>
-										<InputField name="РазрядыТарифнойСеткиРазрядныйКоэффициент" id="23">
-											<DataPath>РазрядыТарифнойСетки.РазрядныйКоэффициент</DataPath>
+										<InputField name="РазрядыТарифнойСеткиРазарядЕТС" id="23">
+											<DataPath>РазрядыТарифнойСетки.РазрядЕТС</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РазрядыТарифнойСеткиРазрядныйКоэффициентКонтекстноеМеню" id="24"/>
-											<ExtendedTooltip name="РазрядыТарифнойСеткиРазрядныйКоэффициентРасширеннаяПодсказка" id="25"/>
+											<ContextMenu name="РазрядыТарифнойСеткиРазарядЕТСКонтекстноеМеню" id="24"/>
+											<ExtendedTooltip name="РазрядыТарифнойСеткиРазарядЕТСРасширеннаяПодсказка" id="25"/>
 										</InputField>
-										<InputField name="РазрядыТарифнойСеткиТариф" id="26">
-											<DataPath>РазрядыТарифнойСетки.Тариф</DataPath>
+										<InputField name="РазрядыТарифнойСеткиКоэффициент" id="26">
+											<DataPath>РазрядыТарифнойСетки.Коэффициент</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РазрядыТарифнойСеткиТарифКонтекстноеМеню" id="27"/>
-											<ExtendedTooltip name="РазрядыТарифнойСеткиТарифРасширеннаяПодсказка" id="28"/>
+											<ContextMenu name="РазрядыТарифнойСеткиКоэффициентКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="РазрядыТарифнойСеткиКоэффициентРасширеннаяПодсказка" id="28"/>
+										</InputField>
+										<InputField name="РазрядыТарифнойСеткиПовышающийКоэффициент" id="108">
+											<DataPath>РазрядыТарифнойСетки.ПовышающийКоэффициент</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РазрядыТарифнойСеткиПовышающийКоэффициентКонтекстноеМеню" id="109"/>
+											<ExtendedTooltip name="РазрядыТарифнойСеткиПовышающийКоэффициентРасширеннаяПодсказка" id="110"/>
+										</InputField>
+										<InputField name="РазрядыТарифнойСеткиТарифныйОклад" id="111">
+											<DataPath>РазрядыТарифнойСетки.ТарифныйОклад</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РазрядыТарифнойСеткиТарифныйОкладКонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="РазрядыТарифнойСеткиТарифныйОкладРасширеннаяПодсказка" id="113"/>
+										</InputField>
+										<InputField name="РазрядыТарифнойСеткиПроцентПовышения" id="114">
+											<DataPath>РазрядыТарифнойСетки.ПроцентПовышения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РазрядыТарифнойСеткиПроцентПовышенияКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="РазрядыТарифнойСеткиПроцентПовышенияРасширеннаяПодсказка" id="116"/>
+										</InputField>
+										<InputField name="РазрядыТарифнойСеткиДолжностнойОклад" id="117">
+											<DataPath>РазрядыТарифнойСетки.ДолжностнойОклад</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РазрядыТарифнойСеткиДолжностнойОкладКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="РазрядыТарифнойСеткиДолжностнойОкладРасширеннаяПодсказка" id="119"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -308,14 +344,25 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Разряд (категория)</v8:content>
+							<v8:content>Разряд </v8:content>
 						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.РазрядыКатегорииДолжностей</v8:Type>
 					</Type>
 				</Column>
-				<Column name="РазрядныйКоэффициент" id="2">
+				<Column name="РазрядЕТС" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разряд ЕТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЕдинаяТарифнаяСетка</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Коэффициент" id="3">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -325,23 +372,7 @@
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-				<Column name="Тариф" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Тариф</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
+							<v8:Digits>4</v8:Digits>
 							<v8:FractionDigits>2</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
@@ -389,6 +420,70 @@
 						<v8:NumberQualifiers>
 							<v8:Digits>3</v8:Digits>
 							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПовышающийКоэффициент" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повышающий коэффициент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТарифныйОклад" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тарифный оклад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПроцентПовышения" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент повышения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДолжностнойОклад" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должностной оклад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
@@ -543,16 +638,4 @@
 			<Action>ИзменитьТарифы</Action>
 		</Command>
 	</Commands>
-	<CommandInterface>
-		<NavigationPanel>
-			<Item>
-				<Command>CommonCommand.ИсторияИзменений</Command>
-				<Type>Auto</Type>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
-		</NavigationPanel>
-	</CommandInterface>
 </Form>

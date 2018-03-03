@@ -23,8 +23,8 @@
 					<v8:content>Группы ОС</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<Comment>(Регл)</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
 			<StandardAttributes>
 				<xr:StandardAttribute name="Order">
 					<xr:LinkByType/>
@@ -116,25 +116,25 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="c08540c9-d6cc-4025-a8b1-c3756db7ff47">
+				<Properties>
+					<Name>ПередаточныеУстройства</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Передаточные устройства</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="1d82004e-6083-4559-a3c5-2f576f80eb65">
 				<Properties>
 					<Name>МашиныИОборудование</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Машины и оборудование (кроме офисного)</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="5de7e832-bf5c-45fa-9dc4-06efafa90d63">
-				<Properties>
-					<Name>ОфисноеОборудование</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Офисное оборудование</v8:content>
+							<v8:content>Машины и оборудование</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -152,6 +152,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="85a53f0b-0a75-44e0-84e9-807004dc905d">
+				<Properties>
+					<Name>Инструмент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инструмент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="b106894f-6e3e-4c39-896b-dbb65200e2d6">
 				<Properties>
 					<Name>ПроизводственныйИХозяйственныйИнвентарь</Name>
@@ -159,6 +171,30 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Производственный и хозяйственный инвентарь</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="702e16ff-ed0d-43b1-b738-36d464206feb">
+				<Properties>
+					<Name>ДругиеВидыОсновныхСелькоеЛесноеХозяйство</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие основные средства, используемые в сельском и лесном хозяйстве</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b6969817-1806-4d33-a35a-1f2f97290f2a">
+				<Properties>
+					<Name>ДругиеВидыОсновныхСредств</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Другие виды основных средств</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -248,13 +284,61 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="b6969817-1806-4d33-a35a-1f2f97290f2a">
+			<EnumValue uuid="5de7e832-bf5c-45fa-9dc4-06efafa90d63">
 				<Properties>
-					<Name>ДругиеВидыОсновныхСредств</Name>
+					<Name>ОфисноеОборудование</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Другие виды основных средств</v8:content>
+							<v8:content>Офисное оборудование</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="aedfe7ec-efc0-49f7-8e82-c0596708a056">
+				<Properties>
+					<Name>ИнвентарьИПринадлежности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инвентарь и принадлежности</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f69230da-159d-4390-a660-8a0531fda448">
+				<Properties>
+					<Name>РабочийСкотИЖивотныеОсновногоСтада</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочий скот и животные основного стада</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="44905671-02f3-4ac8-b13b-565f6b45f7c7">
+				<Properties>
+					<Name>КапитальныеЗатратыПоУлучшениюЗемель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Капитальные затраты по улучшению земель</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="43e7f5d4-0237-40af-8cce-746e5c7d8038">
+				<Properties>
+					<Name>ВычислительнаяТехникаИОргтехника</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вычислительная техника и оргтехника</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -592,6 +592,12 @@
 								</InputField>
 								<InputField name="НачисленияНДФЛ" id="145">
 									<DataPath>Объект.Начисления.НДФЛ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подоходный налог</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НачисленияНДФЛКонтекстноеМеню" id="146"/>
 									<ExtendedTooltip name="НачисленияНДФЛРасширеннаяПодсказка" id="147"/>
@@ -623,7 +629,7 @@
 							<v8:content>Начисления перерасчет страница</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НачисленияПерерасчетСтраницаExtendedTooltip" id="191"/>
+					<ExtendedTooltip name="НачисленияПерерасчетСтраницаРасширеннаяПодсказка" id="191"/>
 					<ChildItems>
 						<Table name="НачисленияПерерасчет" id="192">
 							<Representation>List</Representation>
@@ -643,7 +649,7 @@
 									<Button name="НачисленияПерерасчетПодробно" id="243">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПерерасчетПодробно</CommandName>
-										<ExtendedTooltip name="НачисленияПерерасчетПодробноExtendedTooltip" id="244"/>
+										<ExtendedTooltip name="НачисленияПерерасчетПодробноРасширеннаяПодсказка" id="244"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -833,7 +839,7 @@
 								<InputField name="Руководитель" id="102">
 									<DataPath>Объект.Руководитель</DataPath>
 									<ContextMenu name="РуководительКонтекстноеМеню" id="103"/>
-									<ExtendedTooltip name="РуководительExtendedTooltip" id="104"/>
+									<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="104"/>
 									<Events>
 										<Event name="OnChange">РуководительПриИзменении</Event>
 									</Events>
@@ -847,7 +853,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="111"/>
-									<ExtendedTooltip name="ДолжностьРуководителяExtendedTooltip" id="112"/>
+									<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="112"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -902,7 +908,7 @@
 								<InputField name="Исполнитель" id="99">
 									<DataPath>Объект.Исполнитель</DataPath>
 									<ContextMenu name="ИсполнительКонтекстноеМеню" id="100"/>
-									<ExtendedTooltip name="ИсполнительExtendedTooltip" id="101"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="101"/>
 									<Events>
 										<Event name="OnChange">ИсполнительПриИзменении</Event>
 									</Events>
@@ -916,7 +922,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДолжностьИсполнителяКонтекстноеМеню" id="108"/>
-									<ExtendedTooltip name="ДолжностьИсполнителяExtendedTooltip" id="109"/>
+									<ExtendedTooltip name="ДолжностьИсполнителяРасширеннаяПодсказка" id="109"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -927,7 +933,7 @@
 		<UsualGroup name="ГруппаИсправление" id="134">
 			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИсправлениеExtendedTooltip" id="135"/>
+			<ExtendedTooltip name="ГруппаИсправлениеРасширеннаяПодсказка" id="135"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКомментарийОтветственный" id="47">
 			<Group>Horizontal</Group>
@@ -965,7 +971,7 @@
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.НачисленияПерерасчет">
-					<Column name="ДоступенВыборОснования" id="1">
+					<Column name="ДоступенВыборОснования" id="3">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -976,7 +982,7 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="ПериодДействияСтрокой" id="2">
+					<Column name="ПериодДействияСтрокой" id="5">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -993,7 +999,7 @@
 					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Начисления">
-					<Column name="НДФЛ" id="1">
+					<Column name="НДФЛ" id="4">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1009,7 +1015,7 @@
 							</v8:NumberQualifiers>
 						</Type>
 					</Column>
-					<Column name="КорректировкаВыплаты" id="2">
+					<Column name="КорректировкаВыплаты" id="6">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>

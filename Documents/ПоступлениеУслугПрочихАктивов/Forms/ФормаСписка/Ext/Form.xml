@@ -303,6 +303,48 @@
 					<ContextMenu name="СписокНомерКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="СписокНомерExtendedTooltip" id="55"/>
 				</InputField>
+				<ColumnGroup name="ГруппаСерияНомер" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСерияНомерРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<LabelField name="СерияВходящегоДокумента" id="115">
+							<DataPath>Список.СерияВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия</v8:content>
+								</v8:item>
+							</Title>
+							<Width>2</Width>
+							<ContextMenu name="СерияВходящегоДокументаКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="СерияВходящегоДокументаРасширеннаяПодсказка" id="117"/>
+						</LabelField>
+						<LabelField name="НомерВходящегоДокумента" id="112">
+							<DataPath>Список.НомерВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№ вх. документа</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="НомерВходящегоДокументаКонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="НомерВходящегоДокументаРасширеннаяПодсказка" id="114"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<LabelField name="СписокДата" id="102">
 					<DataPath>Список.Date</DataPath>
 					<Width>9</Width>
@@ -418,10 +460,11 @@
 	ДокументПоступлениеУслугПрочихАктивов.ХозяйственнаяОперация,
 	СостоянияЭД.СостояниеВерсииЭД,
 	ВЫБОР
-		КОГДА ДокументыСОшибкамиПроверкиКонтрагентов.Документ ЕСТЬ NULL 
+		КОГДА ДокументыСОшибкамиПроверкиКонтрагентов.Документ ЕСТЬ NULL
 			ТОГДА ЛОЖЬ
 		ИНАЧЕ ИСТИНА
-	КОНЕЦ КАК ЕстьОшибкиПроверкиКонтрагентов
+	КОНЕЦ КАК ЕстьОшибкиПроверкиКонтрагентов,
+	ДокументПоступлениеУслугПрочихАктивов.СерияВходящегоДокумента
 ИЗ
 	Документ.ПоступлениеУслугПрочихАктивов КАК ДокументПоступлениеУслугПрочихАктивов
 		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭД КАК СостоянияЭД

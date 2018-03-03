@@ -296,6 +296,34 @@
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектам" id="524">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать электронный обмен с банками по зарплатным проектам</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать электронный обмен с банками по зарплатным проектам</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектамРасширеннаяПодсказка" id="525"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектам" id="529">
+							<DataPath>ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектам</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектамКонтекстноеМеню" id="530"/>
+							<ExtendedTooltip name="ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектамРасширеннаяПодсказка" id="531"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектамПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="ГруппаРассчитыватьДокументыПриРедактировании" id="379">
 					<Group>Vertical</Group>
 					<Representation>NormalSeparation</Representation>
@@ -1875,6 +1903,28 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:InformationRegisterRecordManager.НастройкиВзаиморасчетовССотрудниками</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектам" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать электронный обмен с банками по зарплатным проектам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьЭлектронныйОбменСБанкамиПоЗарплатнымПроектамПрежняя" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать электронный обмен с банками по зарплатным проектам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

@@ -406,7 +406,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Реализация / акт / счет-фактура</v8:content>
+									<v8:content>Реализация / акт</v8:content>
 								</v8:item>
 							</Title>
 							<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
@@ -503,7 +503,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Печатать реализацию / счет-фактуру</v8:content>
+															<v8:content>Печатать реализацию</v8:content>
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
@@ -517,7 +517,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Печатать акт / счет-фактуру</v8:content>
+															<v8:content>Печатать акт</v8:content>
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
@@ -528,6 +528,7 @@
 												</CheckBoxField>
 												<CheckBoxField name="ПечататьСчетФактуру" id="43">
 													<DataPath>ПечататьСчетФактуру</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -669,6 +670,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаДоверенностьРеализация" id="230">
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -706,7 +708,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Транспортная накладная</v8:content>
+									<v8:content>Товарно-транспортная накладная</v8:content>
 								</v8:item>
 							</Title>
 							<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
@@ -1434,7 +1436,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Создавать транспортную накладную по умолчанию</v8:content>
+					<v8:content>Создавать товарно-транспортную накладную по умолчанию</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

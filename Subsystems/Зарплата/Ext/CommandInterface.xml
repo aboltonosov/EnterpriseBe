@@ -88,7 +88,17 @@
 		</Command>
 		<Command name="Document.КомпенсацияЗаЗадержкуЗарплаты.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Отгул.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ОтражениеЗарплатыВФинансовомУчете.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Document.СторнированиеНачислений.StandardCommand.OpenList">
@@ -111,14 +121,34 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.НачислениеЗарплаты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="CommonCommand.ДоначисленияПерерасчеты">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.НачислениеПоДоговорам.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.БольничныйЛист.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.Отпуска.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Document.НачислениеЗаПервуюПоловинуМесяца.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Document.Отпуск.StandardCommand.OpenList">
@@ -127,6 +157,11 @@
 			</Visibility>
 		</Command>
 		<Command name="Document.ОтпускаСотрудников.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.Командировки.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -142,6 +177,11 @@
 			</Visibility>
 		</Command>
 		<Command name="Document.ОтпускБезСохраненияОплаты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Премия.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -166,6 +206,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.ДанныеДляРасчетаЗарплаты.Command.ДанныеДляРасчетаЗарплаты">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.ПриемНаРаботу.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -182,6 +227,11 @@
 			</Visibility>
 		</Command>
 		<Command name="Document.УвольнениеСписком.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ИзменениеОплатыСотрудников.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -216,6 +266,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.ПрекращениеПлановогоНачисления.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.ИзменениеМестРаботы.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -246,12 +301,47 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.ИзменениеАванса.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ДоговорыГражданскоПравовогоХарактера.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.ДоговорРаботыУслуги.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Document.ДоговорАвторскогоЗаказа.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктПриемкиВыполненныхРаботОказанныхУслуг.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.МатериальнаяПомощь.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ДоходВНатуральнойФорме.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РазовоеНачисление.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ОтпускаПоУходуЗаРебенком.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -271,6 +361,21 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.РаспределениеОсновногоЗаработка.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПереносЗатратНаПерсоналМеждуСтатьями.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.НачислениеОценочныхОбязательствПоОтпускам.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Document.ЕдиновременноеПособиеЗаСчетФСС.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -281,7 +386,22 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="CommonCommand.УтверждениеТарифнойСеткиВХозрасчете">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DocumentJournal.НачислениеЗарплаты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовЗарплата">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПанельСправочниковЗарплата.Command.РазделСправочниковЗарплата">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -352,6 +472,18 @@
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="CommonCommand.ПанельОтчетовЗарплата">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ПанельСправочниковЗарплата.Command.РазделСправочниковЗарплата">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.НачислениеЗаПервуюПоловинуМесяца.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 	</CommandsPlacement>
 	<CommandsOrder>
 		<Command name="DataProcessor.УправлениеПерерасчетами.StandardCommand.Open">
@@ -418,9 +550,6 @@
 			<CommandGroup>ActionsPanelCreate</CommandGroup>
 		</Command>
 		<Command name="Catalog.ГрафикиРаботыСотрудников.StandardCommand.Create">
-			<CommandGroup>ActionsPanelCreate</CommandGroup>
-		</Command>
-		<Command name="Catalog.ГрафикиРаботыСотрудников.StandardCommand.CreateFolder">
 			<CommandGroup>ActionsPanelCreate</CommandGroup>
 		</Command>
 		<Command name="Document.ИзменениеУсловийДоговораЗаймаСотруднику.StandardCommand.Create">
@@ -586,10 +715,10 @@
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 		</Command>
 		<Command name="CommonCommand.ПанельОтчетовЗарплата">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.ПанельСправочниковЗарплата.Command.РазделСправочниковЗарплата">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
 		<Command name="Document.НачислениеЗарплаты.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
@@ -598,7 +727,7 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="Document.НачислениеЗаПервуюПоловинуМесяца.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
 		<Command name="Document.НачислениеПоДоговорам.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
@@ -773,7 +902,12 @@
 		<Subsystem>Subsystem.Зарплата.Subsystem.ВыплатыПеречисления</Subsystem>
 		<Subsystem>Subsystem.Зарплата.Subsystem.НалогиИВзносы</Subsystem>
 		<Subsystem>Subsystem.Зарплата.Subsystem.Отчетность</Subsystem>
+		<Subsystem>Subsystem.Зарплата.Subsystem.ДоговорыГПХ</Subsystem>
+		<Subsystem>Subsystem.Зарплата.Subsystem.КадровыеДокументы</Subsystem>
+		<Subsystem>Subsystem.Зарплата.Subsystem.Неявки</Subsystem>
+		<Subsystem>Subsystem.Зарплата.Subsystem.Отпуска</Subsystem>
 		<Subsystem>Subsystem.Зарплата.Subsystem.ПерваяПоловинаМесяца</Subsystem>
+		<Subsystem>Subsystem.Зарплата.Subsystem.РасчетныеДокументы</Subsystem>
 	</SubsystemsOrder>
 	<GroupsOrder>
 		<Group>ActionsPanelTools</Group>

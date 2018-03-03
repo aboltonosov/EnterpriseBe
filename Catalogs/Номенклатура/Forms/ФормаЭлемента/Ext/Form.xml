@@ -1481,6 +1481,11 @@
 															<ContextMenu name="МаркаКонтекстноеМеню" id="129"/>
 															<ExtendedTooltip name="МаркаExtendedTooltip" id="130"/>
 														</InputField>
+														<InputField name="СтранаПроисхождения" id="1463">
+															<DataPath>Объект.СтранаПроисхождения</DataPath>
+															<ContextMenu name="СтранаПроисхожденияКонтекстноеМеню" id="1464"/>
+															<ExtendedTooltip name="СтранаПроисхожденияРасширеннаяПодсказка" id="1465"/>
+														</InputField>
 														<UsualGroup name="ГруппаАгентскиеУслуги" id="373">
 															<Title>
 																<v8:item>
@@ -4154,7 +4159,21 @@
 																	<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="31"/>
 																	<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="32"/>
 																</InputField>
+																<InputField name="РозничнаяСтавкаНДС" id="1466">
+																	<DataPath>Объект.РозничнаяСтавкаНДС</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Розн. ставка НДС</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Width>9</Width>
+																	<MaxHeight>3</MaxHeight>
+																	<ContextMenu name="РозничнаяСтавкаНДСКонтекстноеМеню" id="1467"/>
+																	<ExtendedTooltip name="РозничнаяСтавкаНДСРасширеннаяПодсказка" id="1468"/>
+																</InputField>
 																<PictureDecoration name="ДекорацияНДСАкцизОтспуп" id="33">
+																	<Visible>false</Visible>
 																	<Width>2</Width>
 																	<Height>1</Height>
 																	<HorizontalStretch>false</HorizontalStretch>
@@ -4772,7 +4791,7 @@
 															<Title formatted="false">
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Общероссийские классификаторы</v8:content>
+																	<v8:content>Общегосударственные классификаторы</v8:content>
 																</v8:item>
 															</Title>
 															<ContextMenu name="ДекорацияЗаголовокКлассификаторыКонтекстноеМеню" id="614"/>
@@ -4784,7 +4803,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Общероссийские классификаторы</v8:content>
+															<v8:content>Общегосударственные классификаторы</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
@@ -4803,13 +4822,13 @@
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>ОКВЭД</v8:content>
+																	<v8:content>ОКЭД</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Общероссийский классификатор видов экономической деятельности</v8:content>
+																	<v8:content>Общегосударственный классификатор видов экономической деятельности</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Width>12</Width>
@@ -4861,7 +4880,7 @@
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Общероссийский классификатор продукции</v8:content>
+																	<v8:content>Общегосударственный классификатор продукции</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Width>12</Width>

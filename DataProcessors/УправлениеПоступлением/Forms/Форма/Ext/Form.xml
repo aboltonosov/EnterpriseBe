@@ -603,15 +603,29 @@
 															<Group>InCell</Group>
 															<ExtendedTooltip name="РаспоряженияНаПоступлениеГруппа1РасширеннаяПодсказка" id="601"/>
 															<ChildItems>
+																<InputField name="РаспоряженияНаПоступлениеСерияВходящегоДокумента" id="641">
+																	<DataPath>РаспоряженияНаПоступление.СерияВходящегоДокумента</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Серия</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>2</Width>
+																	<ContextMenu name="РаспоряженияНаПоступлениеСерияВходящегоДокументаКонтекстноеМеню" id="642"/>
+																	<ExtendedTooltip name="РаспоряженияНаПоступлениеСерияВходящегоДокументаРасширеннаяПодсказка" id="643"/>
+																</InputField>
 																<LabelField name="РаспоряженияНаПоступлениеНомерВходящегоДокумента" id="611">
 																	<DataPath>РаспоряженияНаПоступление.НомерВходящегоДокумента</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Номер и дата входящего документа</v8:content>
+																			<v8:content>номер и дата вх. документа</v8:content>
 																		</v8:item>
 																	</Title>
 																	<EditMode>EnterOnInput</EditMode>
+																	<Width>10</Width>
 																	<ContextMenu name="РаспоряженияНаПоступлениеНомерВходящегоДокументаКонтекстноеМеню" id="612"/>
 																	<ExtendedTooltip name="РаспоряженияНаПоступлениеНомерВходящегоДокументаРасширеннаяПодсказка" id="613"/>
 																</LabelField>
@@ -619,6 +633,13 @@
 																	<DataPath>РаспоряженияНаПоступление.ДатаВходящегоДокумента</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
 																	<ShowInHeader>false</ShowInHeader>
+																	<Width>9</Width>
+																	<Format>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ДФ=dd.MM.yyyy</v8:content>
+																		</v8:item>
+																	</Format>
 																	<ContextMenu name="РаспоряженияНаПоступлениеДатаВходящегоДокументаКонтекстноеМеню" id="606"/>
 																	<ExtendedTooltip name="РаспоряженияНаПоступлениеДатаВходящегоДокументаРасширеннаяПодсказка" id="607"/>
 																</LabelField>
@@ -2285,6 +2306,21 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СерияВходящегоДокумента" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия входящего документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>2</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройки электронных счетов-фактур</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГоризонтальнаяГруппировкаПанели" id="2122">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Горизонтальная группировка панели</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГоризонтальнаяГруппировкаПанелиРасширеннаяПодсказка" id="2123"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЭСЧФ" id="2124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЭСЧФ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЭСЧФ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЭСЧФРасширеннаяПодсказка" id="2125"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройкиЭСЧФ" id="2050">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки электронных счетов-фактур</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки ЭСЧФ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ExtendedTooltip name="ГруппаНастройкиЭСЧФРасширеннаяПодсказка" id="2051"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПравилаЭСЧФ" id="2171">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Правила проверки заполнения полей</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правила ЭСЧФ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаПравилаЭСЧФРасширеннаяПодсказка" id="2172"/>
+									<ChildItems>
+										<Button name="ОткрытьПравила" id="2173">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьПравила</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открыть список правил</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьПравилаРасширеннаяПодсказка" id="2174"/>
+										</Button>
+										<LabelDecoration name="ДекорацияОткрытьПравила" id="2177">
+											<Height>1</Height>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открыть для просмотра и редактирования правила проверки заполнения реквизитов документа "Счет-фактура выданный".</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<TitleHeight>4</TitleHeight>
+											<ContextMenu name="ДекорацияОткрытьПравилаКонтекстноеМеню" id="2178"/>
+											<ExtendedTooltip name="ДекорацияОткрытьПравилаРасширеннаяПодсказка" id="2179"/>
+										</LabelDecoration>
+										<Button name="ОбновитьПравила" id="2175">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОбновитьПравила</CommandName>
+											<ExtendedTooltip name="ОбновитьПравилаРасширеннаяПодсказка" id="2176"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСервисЭСЧФ" id="2169">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Веб-сервис портала ЭСЧФ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сервис ЭСЧФ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаСервисЭСЧФРасширеннаяПодсказка" id="2170"/>
+									<ChildItems>
+										<InputField name="АдресПодключения" id="2166">
+											<DataPath>НаборКонстант.АдресВебСервисаЭСЧФ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес веб-сервиса</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="АдресПодключенияКонтекстноеМеню" id="2167"/>
+											<ExtendedTooltip name="АдресПодключенияРасширеннаяПодсказка" id="2168"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияПояснениеЭСЧФ" id="2158">
+											<Height>1</Height>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес веб-сервиса по обмену ЭСЧФ портала МНС. По умолчанию - https://ws.vat.gov.by:443/InvoicesWS/services/InvoicesPort.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<TitleHeight>4</TitleHeight>
+											<ContextMenu name="ДекорацияПояснениеЭСЧФКонтекстноеМеню" id="2159"/>
+											<ExtendedTooltip name="ДекорацияПояснениеЭСЧФРасширеннаяПодсказка" id="2160"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаТаймаут" id="2145">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа таймаут</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаТаймаутРасширеннаяПодсказка" id="2146"/>
+											<ChildItems>
+												<InputField name="ТаймаутПодключения" id="2147">
+													<DataPath>НаборКонстант.ТаймаутПодключенияКВебСервисуЭСЧФ</DataPath>
+													<SpinButton>true</SpinButton>
+													<ContextMenu name="ТаймаутПодключенияКонтекстноеМеню" id="2148"/>
+													<ExtendedTooltip name="ТаймаутПодключенияExtendedTooltip" id="2149"/>
+												</InputField>
+												<LabelDecoration name="ДекорацияТаймаут" id="2150">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>сек.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияТаймаутКонтекстноеМеню" id="2151"/>
+													<ExtendedTooltip name="ДекорацияТаймаутExtendedTooltip" id="2152"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="ДекорацияПояснениеТаймаут" id="2161">
+											<Height>1</Height>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Максимальное время в секундах, в течение которого необходимо ожидать соединение с сервером ЭСЧФ.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<TitleHeight>2</TitleHeight>
+											<ContextMenu name="ДекорацияПояснениеТаймаутКонтекстноеМеню" id="2162"/>
+											<ExtendedTooltip name="ДекорацияПояснениеТаймаутExtendedTooltip" id="2163"/>
+										</LabelDecoration>
+										<Button name="НастройкиПроксиСервера" id="2126">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.НастройкиПроксиСервера</CommandName>
+											<ExtendedTooltip name="НастройкиПроксиСервераРасширеннаяПодсказка" id="2127"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="ГруппаСправка" id="1765">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="1832"/>
+					<ChildItems>
+						<Button name="Справка" id="1766">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="1833"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="АвтоматическаяПроверкаОбновлений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическая проверка обновлений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДетализироватьОбновлениеИБВЖурналеРегистрации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Детализировать обновление ИБВЖурнале регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогДистрибутиваПлатформы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последний полученный дистрибутив платформы сохранен в каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаборКонстант" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.АдресВебСервисаЭСЧФ</Field>
+				<Field>НаборКонстант.ВариантОбособленияМатериаловВПроизводстве.Ref</Field>
+				<Field>НаборКонстант.ВариантПриемкиТоваров.Ref</Field>
+				<Field>НаборКонстант.МетодикаУправленияПроизводством.Ref</Field>
+				<Field>НаборКонстант.ТаймаутПодключенияКВебСервисуЭСЧФ</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы (фиксированная структура)</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Edit>
+				<xr:Common>false</xr:Common>
+			</Edit>
+		</Attribute>
+		<Attribute name="ДанныеАутентификации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные аутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьПравила" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть правила</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть правила</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПравила</Action>
+		</Command>
+		<Command name="ОбновитьПравила" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить правила</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить правила</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПравила</Action>
+		</Command>
+		<Command name="НастройкиПроксиСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить параметры прокси-сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки прокси сервера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиПроксиСервера</Action>
+		</Command>
+	</Commands>
+</Form>

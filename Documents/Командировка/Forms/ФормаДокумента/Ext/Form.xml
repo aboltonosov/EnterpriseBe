@@ -742,6 +742,12 @@
 												<InputField name="НДФЛ" id="370">
 													<DataPath>НДФЛ</DataPath>
 													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ПН</v8:content>
+														</v8:item>
+													</Title>
 													<Width>10</Width>
 													<ContextMenu name="НДФЛКонтекстноеМеню" id="371"/>
 													<ExtendedTooltip name="НДФЛExtendedTooltip" id="418"/>
@@ -1369,6 +1375,7 @@
 					</ChildItems>
 				</Page>
 				<Page name="СтажПФРСтраница" id="570">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1627,9 +1634,11 @@
 								</InputField>
 								<InputField name="ОснованиеКомандировки" id="479">
 									<DataPath>Объект.Основание</DataPath>
-									<Width>35</Width>
+									<TitleLocation>Left</TitleLocation>
+									<Width>40</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<VerticalStretch>false</VerticalStretch>
+									<MultiLine>true</MultiLine>
 									<ContextMenu name="ОснованиеКомандировкиКонтекстноеМеню" id="480"/>
 									<ExtendedTooltip name="ОснованиеКомандировкиРасширеннаяПодсказка" id="481"/>
 								</InputField>

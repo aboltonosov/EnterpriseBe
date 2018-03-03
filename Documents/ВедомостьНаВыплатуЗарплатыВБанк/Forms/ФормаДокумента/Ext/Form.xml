@@ -59,7 +59,7 @@
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftWidest</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ШапкаExtendedTooltip" id="196"/>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="196"/>
 			<ChildItems>
 				<UsualGroup name="ШапкаОсновное" id="95">
 					<Title>
@@ -85,7 +85,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ПериодРегистрацииКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="ПериодРегистрацииExtendedTooltip" id="198"/>
+							<ExtendedTooltip name="ПериодРегистрацииРасширеннаяПодсказка" id="198"/>
 							<Events>
 								<Event name="OnChange">ПериодРегистрацииПриИзменении</Event>
 								<Event name="AutoComplete">ПериодРегистрацииАвтоПодбор</Event>
@@ -98,7 +98,7 @@
 							<DataPath>Объект.Организация</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
-							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="199"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="199"/>
 							<Events>
 								<Event name="OnChange">ОрганизацияПриИзменении</Event>
 							</Events>
@@ -109,7 +109,7 @@
 							<ClearButton>true</ClearButton>
 							<OpenButton>false</OpenButton>
 							<ContextMenu name="ПодразделениеОрганизацииКонтекстноеМеню" id="16"/>
-							<ExtendedTooltip name="ПодразделениеОрганизацииExtendedTooltip" id="200"/>
+							<ExtendedTooltip name="ПодразделениеОрганизацииРасширеннаяПодсказка" id="200"/>
 						</InputField>
 						<UsualGroup name="ФинансированиеГруппа" id="302">
 							<ToolTip>
@@ -172,7 +172,7 @@
 									<OpenButton>true</OpenButton>
 									<ChoiceListButton>false</ChoiceListButton>
 									<ContextMenu name="СпособВыплатыКонтекстноеМеню" id="66"/>
-									<ExtendedTooltip name="СпособВыплатыExtendedTooltip" id="202"/>
+									<ExtendedTooltip name="СпособВыплатыРасширеннаяПодсказка" id="202"/>
 									<Events>
 										<Event name="OnChange">СпособВыплатыПриИзменении</Event>
 									</Events>
@@ -245,7 +245,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияПроцентКонтекстноеМеню" id="427"/>
-									<ExtendedTooltip name="ДекорацияПроцентExtendedTooltip" id="428"/>
+									<ExtendedTooltip name="ДекорацияПроцентРасширеннаяПодсказка" id="428"/>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
@@ -282,20 +282,20 @@
 									<Width>10</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
-									<ExtendedTooltip name="ДатаExtendedTooltip" id="204"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="204"/>
 								</InputField>
 								<InputField name="Номер" id="1">
 									<DataPath>Объект.Number</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="НомерExtendedTooltip" id="205"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="205"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="ЗарплатныйПроект" id="86">
 							<DataPath>Объект.ЗарплатныйПроект</DataPath>
 							<ContextMenu name="ЗарплатныйПроектКонтекстноеМеню" id="87"/>
-							<ExtendedTooltip name="ЗарплатныйПроектExtendedTooltip" id="201"/>
+							<ExtendedTooltip name="ЗарплатныйПроектРасширеннаяПодсказка" id="201"/>
 							<Events>
 								<Event name="OnChange">ЗарплатныйПроектПриИзменении</Event>
 							</Events>
@@ -321,7 +321,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ЗаполнениеГруппаExtendedTooltip" id="209"/>
+			<ExtendedTooltip name="ЗаполнениеГруппаРасширеннаяПодсказка" id="209"/>
 			<ChildItems>
 				<Button name="Заполнить" id="59">
 					<Type>UsualButton</Type>
@@ -334,7 +334,7 @@
 							<v8:content>Заполнить</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ЗаполнитьExtendedTooltip" id="210"/>
+					<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="210"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -349,7 +349,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ДекорацияВводНачальныхДанныхКонтекстноеМеню" id="74"/>
-			<ExtendedTooltip name="ДекорацияВводНачальныхДанныхExtendedTooltip" id="214"/>
+			<ExtendedTooltip name="ДекорацияВводНачальныхДанныхРасширеннаяПодсказка" id="214"/>
 		</LabelDecoration>
 		<UsualGroup name="ЗарплатаГруппа" id="57">
 			<Title>
@@ -363,7 +363,7 @@
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ЗарплатаГруппаExtendedTooltip" id="215"/>
+			<ExtendedTooltip name="ЗарплатаГруппаРасширеннаяПодсказка" id="215"/>
 			<ChildItems>
 				<UsualGroup name="ЗарплатаКоманды" id="354">
 					<Title>
@@ -544,7 +544,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>НДФЛ к перечислению</v8:content>
+									<v8:content>Подоходный налог  к перечислению</v8:content>
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
@@ -604,7 +604,7 @@
 			<Collapsed>true</Collapsed>
 			<Representation>None</Representation>
 			<ShowLeftMargin>false</ShowLeftMargin>
-			<ExtendedTooltip name="ПодписиГруппаExtendedTooltip" id="224"/>
+			<ExtendedTooltip name="ПодписиГруппаРасширеннаяПодсказка" id="224"/>
 			<ChildItems>
 				<UsualGroup name="ПодписьРуководителяГруппа" id="439">
 					<Title>
@@ -627,7 +627,7 @@
 						<InputField name="Руководитель" id="77">
 							<DataPath>Объект.Руководитель</DataPath>
 							<ContextMenu name="РуководительКонтекстноеМеню" id="78"/>
-							<ExtendedTooltip name="РуководительExtendedTooltip" id="226"/>
+							<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="226"/>
 							<Events>
 								<Event name="OnChange">РуководительПриИзменении</Event>
 							</Events>
@@ -641,7 +641,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="80"/>
-							<ExtendedTooltip name="ДолжностьРуководителяExtendedTooltip" id="227"/>
+							<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="227"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -666,7 +666,7 @@
 						<InputField name="ГлавныйБухгалтер" id="75">
 							<DataPath>Объект.ГлавныйБухгалтер</DataPath>
 							<ContextMenu name="ГлавныйБухгалтерКонтекстноеМеню" id="76"/>
-							<ExtendedTooltip name="ГлавныйБухгалтерExtendedTooltip" id="229"/>
+							<ExtendedTooltip name="ГлавныйБухгалтерРасширеннаяПодсказка" id="229"/>
 							<Events>
 								<Event name="OnChange">ГлавныйБухгалтерПриИзменении</Event>
 							</Events>
@@ -694,7 +694,7 @@
 						<InputField name="Бухгалтер" id="84">
 							<DataPath>Объект.Бухгалтер</DataPath>
 							<ContextMenu name="БухгалтерКонтекстноеМеню" id="85"/>
-							<ExtendedTooltip name="БухгалтерExtendedTooltip" id="230"/>
+							<ExtendedTooltip name="БухгалтерРасширеннаяПодсказка" id="230"/>
 							<Events>
 								<Event name="OnChange">БухгалтерПриИзменении</Event>
 							</Events>
@@ -732,15 +732,15 @@
 					<Collapsed>true</Collapsed>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ВыплатаЗарплатыГруппаExtendedTooltip" id="232"/>
+					<ExtendedTooltip name="ВыплатаЗарплатыГруппаРасширеннаяПодсказка" id="232"/>
 					<ChildItems>
 						<Pages name="ВыплатаЗарплатыСтраницы" id="190">
 							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="ВыплатаЗарплатыСтраницыExtendedTooltip" id="236"/>
+							<ExtendedTooltip name="ВыплатаЗарплатыСтраницыРасширеннаяПодсказка" id="236"/>
 							<ChildItems>
 								<Page name="ВыплатаЗарплатыСтраницыПолностью" id="191">
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ВыплатаЗарплатыСтраницыПолностьюExtendedTooltip" id="237"/>
+									<ExtendedTooltip name="ВыплатаЗарплатыСтраницыПолностьюРасширеннаяПодсказка" id="237"/>
 									<ChildItems>
 										<UsualGroup name="ВыплатаЗарплатыПолностьюГруппа" id="317">
 											<Title>
@@ -798,19 +798,19 @@
 												</v8:item>
 											</Title>
 											<ContextMenu name="ВыплатаЗарплатыПолностьюИнфоКонтекстноеМеню" id="166"/>
-											<ExtendedTooltip name="ВыплатаЗарплатыПолностьюИнфоExtendedTooltip" id="238"/>
+											<ExtendedTooltip name="ВыплатаЗарплатыПолностьюИнфоРасширеннаяПодсказка" id="238"/>
 										</LabelDecoration>
 										<Button name="СоздатьСведенияОНезачисленнойЗарплате" id="188">
 											<Type>Hyperlink</Type>
 											<CommandName>0</CommandName>
 											<DataPath>Объект.Ref</DataPath>
-											<ExtendedTooltip name="СоздатьСведенияОНезачисленнойЗарплатеExtendedTooltip" id="239"/>
+											<ExtendedTooltip name="СоздатьСведенияОНезачисленнойЗарплатеРасширеннаяПодсказка" id="239"/>
 										</Button>
 									</ChildItems>
 								</Page>
 								<Page name="ВыплатаЗарплатыСтраницыЧастично" id="192">
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ВыплатаЗарплатыСтраницыЧастичноExtendedTooltip" id="240"/>
+									<ExtendedTooltip name="ВыплатаЗарплатыСтраницыЧастичноРасширеннаяПодсказка" id="240"/>
 									<ChildItems>
 										<UsualGroup name="ВыплатаЗарплатыЧастичноГруппа" id="325">
 											<Title>
@@ -861,7 +861,7 @@
 											<Type>Hyperlink</Type>
 											<CommandName>0</CommandName>
 											<DataPath>Объект.Ref</DataPath>
-											<ExtendedTooltip name="ОткрытьСведенияОНезачисленнойЗарплатеExtendedTooltip" id="242"/>
+											<ExtendedTooltip name="ОткрытьСведенияОНезачисленнойЗарплатеРасширеннаяПодсказка" id="242"/>
 										</Button>
 									</ChildItems>
 								</Page>
@@ -893,7 +893,7 @@
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ПеречислениеНДФЛВыполненоКонтекстноеМеню" id="171"/>
-							<ExtendedTooltip name="ПеречислениеНДФЛВыполненоExtendedTooltip" id="244"/>
+							<ExtendedTooltip name="ПеречислениеНДФЛВыполненоРасширеннаяПодсказка" id="244"/>
 							<Events>
 								<Event name="OnChange">ПеречислениеНДФЛВыполненоПриИзменении</Event>
 							</Events>
@@ -908,14 +908,14 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="ПеречислениеНДФЛПолностьюИнфоКонтекстноеМеню" id="173"/>
-							<ExtendedTooltip name="ПеречислениеНДФЛПолностьюИнфоExtendedTooltip" id="245"/>
+							<ExtendedTooltip name="ПеречислениеНДФЛПолностьюИнфоРасширеннаяПодсказка" id="245"/>
 						</LabelDecoration>
 						<Pages name="ПеречислениеНДФЛСтраницы" id="174">
 							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="ПеречислениеНДФЛСтраницыExtendedTooltip" id="246"/>
+							<ExtendedTooltip name="ПеречислениеНДФЛСтраницыРасширеннаяПодсказка" id="246"/>
 							<ChildItems>
 								<Page name="ПеречислениеНДФЛСтраницаПолностью" id="175">
-									<ExtendedTooltip name="ПеречислениеНДФЛСтраницаПолностьюExtendedTooltip" id="247"/>
+									<ExtendedTooltip name="ПеречислениеНДФЛСтраницаПолностьюРасширеннаяПодсказка" id="247"/>
 									<ChildItems>
 										<InputField name="ПеречислениеНДФЛРеквизитыПоле" id="176">
 											<DataPath>Объект.ПеречислениеНДФЛРеквизиты</DataPath>
@@ -934,18 +934,18 @@
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<Width>20</Width>
 											<ContextMenu name="ПеречислениеНДФЛРеквизитыПолеКонтекстноеМеню" id="177"/>
-											<ExtendedTooltip name="ПеречислениеНДФЛРеквизитыПолеExtendedTooltip" id="248"/>
+											<ExtendedTooltip name="ПеречислениеНДФЛРеквизитыПолеРасширеннаяПодсказка" id="248"/>
 										</InputField>
 									</ChildItems>
 								</Page>
 								<Page name="ПеречислениеНДФЛСтраницаЧастично" id="180">
-									<ExtendedTooltip name="ПеречислениеНДФЛСтраницаЧастичноExtendedTooltip" id="250"/>
+									<ExtendedTooltip name="ПеречислениеНДФЛСтраницаЧастичноРасширеннаяПодсказка" id="250"/>
 									<ChildItems>
 										<Button name="ВводДанныхОПеречисленииНДФЛ" id="189">
 											<Type>Hyperlink</Type>
 											<CommandName>0</CommandName>
 											<DataPath>Объект.Ref</DataPath>
-											<ExtendedTooltip name="ВводДанныхОПеречисленииНДФЛExtendedTooltip" id="251"/>
+											<ExtendedTooltip name="ВводДанныхОПеречисленииНДФЛРасширеннаяПодсказка" id="251"/>
 										</Button>
 									</ChildItems>
 								</Page>
@@ -993,7 +993,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="КомментарийГруппаExtendedTooltip" id="338"/>
+			<ExtendedTooltip name="КомментарийГруппаРасширеннаяПодсказка" id="338"/>
 			<ChildItems>
 				<InputField name="Комментарий" id="339">
 					<DataPath>Объект.Комментарий</DataPath>
@@ -1014,7 +1014,7 @@
 					<EditMode>EnterOnInput</EditMode>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="92"/>
-					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="206"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="206"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -1031,7 +1031,7 @@
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.Зарплата">
-					<Column name="КВыдаче" id="1">
+					<Column name="КВыдаче" id="6">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1109,8 +1109,8 @@
 						<Type>
 							<v8:Type>xs:decimal</v8:Type>
 							<v8:NumberQualifiers>
-								<v8:Digits>12</v8:Digits>
-								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:Digits>14</v8:Digits>
+								<v8:FractionDigits>2</v8:FractionDigits>
 								<v8:AllowedSign>Any</v8:AllowedSign>
 							</v8:NumberQualifiers>
 						</Type>

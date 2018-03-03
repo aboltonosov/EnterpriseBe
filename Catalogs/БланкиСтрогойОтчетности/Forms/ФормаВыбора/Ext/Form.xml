@@ -13,6 +13,9 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -64,9 +67,6 @@
 				</LabelField>
 				<LabelField name="Код" id="6">
 					<DataPath>Список.Code</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
 					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="КодExtendedTooltip" id="10"/>
 				</LabelField>

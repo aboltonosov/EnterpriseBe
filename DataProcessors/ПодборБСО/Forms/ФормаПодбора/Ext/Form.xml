@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПеренестиВДокумент" id="12">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.ПеренестиВДокумент</CommandName>
+				<ExtendedTooltip name="ПеренестиВДокументExtendedTooltip" id="13"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Отборы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОтборыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ОтборДата" id="3">
+					<DataPath>ОтборДата</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтборДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ОтборДатаРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ОтборДатаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборПоСкладу" id="6">
+					<DataPath>ОтборПоСкладу</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтборПоСкладуКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ОтборПоСкладуРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ОтборПоСкладуПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборФизическоеЛицо" id="9">
+					<DataPath>ОтборФизическоеЛицо</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтборФизическоеЛицоКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ОтборФизическоеЛицоРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ОтборФизическоеЛицоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборПоТипу" id="106">
+					<DataPath>ОтборПоТипу</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтборПоТипуКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ОтборПоТипуРасширеннаяПодсказка" id="108"/>
+					<Events>
+						<Event name="OnChange">ОтборПоТипуПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборСерия" id="103">
+					<DataPath>ОтборСерия</DataPath>
+					<ClearButton>true</ClearButton>
+					<Mask>!!!!!!!!!!</Mask>
+					<ContextMenu name="ОтборСерияКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ОтборСерияРасширеннаяПодсказка" id="105"/>
+					<Events>
+						<Event name="OnChange">ОтборСерияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаБСО" id="109">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаБСО</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаБСОКонтекстноеМеню" id="110"/>
+			<AutoCommandBar name="ТаблицаБСОКоманднаяПанель" id="111"/>
+			<ExtendedTooltip name="ТаблицаБСОРасширеннаяПодсказка" id="112"/>
+			<SearchStringAddition name="ТаблицаБСОСтрокаПоиска" id="113">
+				<AdditionSource>
+					<Item>ТаблицаБСО</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаБСОСтрокаПоискаКонтекстноеМеню" id="114"/>
+				<ExtendedTooltip name="ТаблицаБСОСтрокаПоискаРасширеннаяПодсказка" id="115"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаБСОСостояниеПросмотра" id="116">
+				<AdditionSource>
+					<Item>ТаблицаБСО</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаБСОСостояниеПросмотраКонтекстноеМеню" id="117"/>
+				<ExtendedTooltip name="ТаблицаБСОСостояниеПросмотраРасширеннаяПодсказка" id="118"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаБСОУправлениеПоиском" id="119">
+				<AdditionSource>
+					<Item>ТаблицаБСО</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаБСОУправлениеПоискомКонтекстноеМеню" id="120"/>
+				<ExtendedTooltip name="ТаблицаБСОУправлениеПоискомРасширеннаяПодсказка" id="121"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТаблицаБСОВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаБСОСклад" id="125">
+					<DataPath>Объект.ТаблицаБСО.Склад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОСкладКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ТаблицаБСОСкладРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="ТаблицаБСОФизическоеЛицо" id="128">
+					<DataPath>Объект.ТаблицаБСО.ФизическоеЛицо</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОФизическоеЛицоКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ТаблицаБСОФизическоеЛицоРасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ТаблицаБСОНоменклатура" id="131">
+					<DataPath>Объект.ТаблицаБСО.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОНоменклатураКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ТаблицаБСОНоменклатураРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ТаблицаБСОХарактеристика" id="134">
+					<DataPath>Объект.ТаблицаБСО.Характеристика</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОХарактеристикаКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ТаблицаБСОХарактеристикаРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<InputField name="ТаблицаБСОТип" id="137">
+					<DataPath>Объект.ТаблицаБСО.Тип</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОТипКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="ТаблицаБСОТипРасширеннаяПодсказка" id="139"/>
+				</InputField>
+				<InputField name="ТаблицаБСОСерия" id="140">
+					<DataPath>Объект.ТаблицаБСО.Серия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОСерияКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="ТаблицаБСОСерияРасширеннаяПодсказка" id="142"/>
+				</InputField>
+				<InputField name="ТаблицаБСОНачальныйНомерБСО" id="143">
+					<DataPath>Объект.ТаблицаБСО.НачальныйНомерБСО</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОНачальныйНомерБСОКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ТаблицаБСОНачальныйНомерБСОРасширеннаяПодсказка" id="145"/>
+				</InputField>
+				<InputField name="ТаблицаБСОКонечныйНомерБСО" id="146">
+					<DataPath>Объект.ТаблицаБСО.КонечныйНомерБСО</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаБСОКонечныйНомерБСОКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="ТаблицаБСОКонечныйНомерБСОРасширеннаяПодсказка" id="148"/>
+				</InputField>
+				<InputField name="ТаблицаБСОКоличество" id="149">
+					<DataPath>Объект.ТаблицаБСО.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ТаблицаБСО.TotalКоличество</FooterDataPath>
+					<ContextMenu name="ТаблицаБСОКоличествоКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="ТаблицаБСОКоличествоРасширеннаяПодсказка" id="151"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="Корзина" id="57">
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Корзина</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КорзинаКонтекстноеМеню" id="58"/>
+			<AutoCommandBar name="КорзинаКоманднаяПанель" id="59"/>
+			<ExtendedTooltip name="КорзинаРасширеннаяПодсказка" id="60"/>
+			<SearchStringAddition name="КорзинаСтрокаПоиска" id="61">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаСтрокаПоискаКонтекстноеМеню" id="62"/>
+				<ExtendedTooltip name="КорзинаСтрокаПоискаРасширеннаяПодсказка" id="63"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КорзинаСостояниеПросмотра" id="64">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаСостояниеПросмотраКонтекстноеМеню" id="65"/>
+				<ExtendedTooltip name="КорзинаСостояниеПросмотраРасширеннаяПодсказка" id="66"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КорзинаУправлениеПоиском" id="67">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаУправлениеПоискомКонтекстноеМеню" id="68"/>
+				<ExtendedTooltip name="КорзинаУправлениеПоискомРасширеннаяПодсказка" id="69"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="DragCheck">КорзинаПроверкаПеретаскивания</Event>
+				<Event name="BeforeAddRow">КорзинаПередНачаломДобавления</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="КорзинаСклад" id="73">
+					<DataPath>Объект.Корзина.Склад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаСкладКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="КорзинаСкладРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="КорзинаФизическоеЛицо" id="76">
+					<DataPath>Объект.Корзина.ФизическоеЛицо</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаФизическоеЛицоКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="КорзинаФизическоеЛицоРасширеннаяПодсказка" id="78"/>
+				</InputField>
+				<InputField name="КорзинаНоменклатура" id="79">
+					<DataPath>Объект.Корзина.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаНоменклатураКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="КорзинаНоменклатураРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="КорзинаХарактеристика" id="82">
+					<DataPath>Объект.Корзина.Характеристика</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаХарактеристикаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="КорзинаХарактеристикаРасширеннаяПодсказка" id="84"/>
+				</InputField>
+				<InputField name="КорзинаТип" id="85">
+					<DataPath>Объект.Корзина.Тип</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="КорзинаТипКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="КорзинаТипРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="КорзинаСерия" id="88">
+					<DataPath>Объект.Корзина.Серия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<Mask>!!!!!!!!!!</Mask>
+					<ContextMenu name="КорзинаСерияКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="КорзинаСерияРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="КорзинаНачальныйНомерБСО" id="152">
+					<DataPath>Объект.Корзина.НачальныйНомерБСО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<Mask>9999999999</Mask>
+					<ContextMenu name="КорзинаНачальныйНомерБСОКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="КорзинаНачальныйНомерБСОРасширеннаяПодсказка" id="154"/>
+					<Events>
+						<Event name="OnChange">КорзинаНачальныйНомерБСОПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорзинаКонечныйНомерБСО" id="155">
+					<DataPath>Объект.Корзина.КонечныйНомерБСО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<Mask>9999999999</Mask>
+					<ContextMenu name="КорзинаКонечныйНомерБСОКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="КорзинаКонечныйНомерБСОРасширеннаяПодсказка" id="157"/>
+					<Events>
+						<Event name="OnChange">КорзинаКонечныйНомерБСОПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорзинаКоличество" id="94">
+					<DataPath>Объект.Корзина.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Корзина.TotalКоличество</FooterDataPath>
+					<ContextMenu name="КорзинаКоличествоКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="КорзинаКоличествоРасширеннаяПодсказка" id="96"/>
+					<Events>
+						<Event name="OnChange">КорзинаКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПодборБСО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОтборДата" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоСкладу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборФизическоеЛицо" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Физ. лицо</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборСерия" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Серия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоТипу" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БланкиСтрогойОтчетности</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеИспользоватьПустоеФизическоеЛицо" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не использовать пустое физическое лицо</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеИспользоватьПустойСклад" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не использовать пустой склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиВДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВДокумент</Action>
+		</Command>
+	</Commands>
+</Form>

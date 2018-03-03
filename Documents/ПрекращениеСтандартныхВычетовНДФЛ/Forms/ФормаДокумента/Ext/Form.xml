@@ -281,6 +281,49 @@
 						</LabelField>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ДополнительныйЛичныйВычетГруппа" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прекращаемый дполнительный личный вычет</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный личный вычет группа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ДополнительныйЛичныйВычетГруппаРасширеннаяПодсказка" id="108"/>
+					<ChildItems>
+						<LabelField name="КодВычетаЛичныйДополнительный" id="109">
+							<DataPath>КодВычетаЛичныйДополнительный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование вычета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="КодВычетаЛичныйДополнительныйКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="КодВычетаЛичныйДополнительныйРасширеннаяПодсказка" id="111">
+								<Height>2</Height>
+								<HorizontalStretch>true</HorizontalStretch>
+							</ExtendedTooltip>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="КомментарийГруппа" id="63">
@@ -421,6 +464,17 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="КодВычетаЛичныйДополнительный" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код вычета дополнительный личный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Parameters>

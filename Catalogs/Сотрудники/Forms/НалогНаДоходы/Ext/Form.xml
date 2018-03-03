@@ -357,66 +357,37 @@
 													<ExtendedTooltip name="ПодтверждениеИмущественныхВычетовНалоговыйПериодРасширеннаяПодсказка" id="102"/>
 												</InputField>
 												<InputField name="ПодтверждениеИмущественныхВычетовРасходы" id="38">
-													<DataPath>ИмущественныеВычетыНДФЛРасходыНаСтроительствоПриобретение</DataPath>
+													<DataPath>ИмущественныеВычетыНДФЛРасходы</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имущественный</v8:content>
+														</v8:item>
+													</Title>
 													<ContextMenu name="ПодтверждениеИмущественныхВычетовРасходыКонтекстноеМеню" id="39"/>
 													<ExtendedTooltip name="ПодтверждениеИмущественныхВычетовРасходыРасширеннаяПодсказка" id="103"/>
 												</InputField>
-												<InputField name="ПодтверждениеИмущественныхВычетовПроцентыПоКредитам" id="40">
-													<DataPath>ИмущественныеВычетыНДФЛПроцентыПоКредитам</DataPath>
-													<ContextMenu name="ПодтверждениеИмущественныхВычетовПроцентыПоКредитамКонтекстноеМеню" id="41"/>
-													<ExtendedTooltip name="ПодтверждениеИмущественныхВычетовПроцентыПоКредитамРасширеннаяПодсказка" id="104"/>
-												</InputField>
-												<InputField name="ПодтверждениеИмущественныхВычетовПроцентыПриПерекредитовании" id="42">
-													<DataPath>ИмущественныеВычетыНДФЛПроцентыПриПерекредитовании</DataPath>
+												<InputField name="ПодтверждениеИмущественыхРаходыНаОбразование" id="131">
+													<DataPath>ИмущественныеВычетыНДФЛРасходыНаОбразование</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Проц. при перекредит.</v8:content>
+															<v8:content>Социальный</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="ПодтверждениеИмущественныхВычетовПроцентыПриПерекредитованииКонтекстноеМеню" id="43"/>
-													<ExtendedTooltip name="ПодтверждениеИмущественныхВычетовПроцентыПриПерекредитованииРасширеннаяПодсказка" id="105"/>
+													<ContextMenu name="ПодтверждениеИмущественыхРаходыНаОбразованиеКонтекстноеМеню" id="132"/>
+													<ExtendedTooltip name="ПодтверждениеИмущественыхРаходыНаОбразованиеРасширеннаяПодсказка" id="133"/>
 												</InputField>
-												<InputField name="ИмущественныеВычетыНДФЛРасходыНаСвоеОбучение" id="131">
-													<DataPath>ИмущественныеВычетыНДФЛРасходыНаСвоеОбучение</DataPath>
-													<ContextMenu name="ИмущественныеВычетыНДФЛРасходыНаСвоеОбучениеКонтекстноеМеню" id="132"/>
-													<ExtendedTooltip name="ИмущественныеВычетыНДФЛРасходыНаСвоеОбучениеРасширеннаяПодсказка" id="133"/>
-												</InputField>
-												<InputField name="ИмущественныеВычетыНДФЛРасходыНаОбучениеДетей" id="134">
-													<DataPath>ИмущественныеВычетыНДФЛРасходыНаОбучениеДетей</DataPath>
-													<ContextMenu name="ИмущественныеВычетыНДФЛРасходыНаОбучениеДетейКонтекстноеМеню" id="135"/>
-													<ExtendedTooltip name="ИмущественныеВычетыНДФЛРасходыНаОбучениеДетейРасширеннаяПодсказка" id="136"/>
-												</InputField>
-												<InputField name="ИмущественныеВычетыНДФЛРасходыНаЛечение" id="137">
-													<DataPath>ИмущественныеВычетыНДФЛРасходыНаЛечение</DataPath>
-													<ContextMenu name="ИмущественныеВычетыНДФЛРасходыНаЛечениеКонтекстноеМеню" id="138"/>
-													<ExtendedTooltip name="ИмущественныеВычетыНДФЛРасходыНаЛечениеРасширеннаяПодсказка" id="139"/>
-												</InputField>
-												<InputField name="ИмущественныеВычетыНДФЛСтраховыеВзносыНаМедУслуги" id="140">
-													<DataPath>ИмущественныеВычетыНДФЛСтраховыеВзносыНаМедУслуги</DataPath>
-													<ContextMenu name="ИмущественныеВычетыНДФЛСтраховыеВзносыНаМедУслугиКонтекстноеМеню" id="141"/>
-													<ExtendedTooltip name="ИмущественныеВычетыНДФЛСтраховыеВзносыНаМедУслугиРасширеннаяПодсказка" id="142"/>
-												</InputField>
-												<InputField name="ИмущественныеВычетыНДФЛРасходыНаДорогостоящееЛечение" id="143">
-													<DataPath>ИмущественныеВычетыНДФЛРасходыНаДорогостоящееЛечение</DataPath>
-													<ContextMenu name="ИмущественныеВычетыНДФЛРасходыНаДорогостоящееЛечениеКонтекстноеМеню" id="144"/>
-													<ExtendedTooltip name="ИмущественныеВычетыНДФЛРасходыНаДорогостоящееЛечениеРасширеннаяПодсказка" id="145"/>
-												</InputField>
-												<InputField name="ИмущественныеВычетыНДФЛВзносыНаДобровольноеСтрахованиеЖизни" id="166">
-													<DataPath>ИмущественныеВычетыНДФЛВзносыНаДобровольноеСтрахованиеЖизни</DataPath>
-													<ContextMenu name="ИмущественныеВычетыНДФЛВзносыНаДобровольноеСтрахованиеЖизниКонтекстноеМеню" id="167"/>
-													<ExtendedTooltip name="ИмущественныеВычетыНДФЛВзносыНаДобровольноеСтрахованиеЖизниРасширеннаяПодсказка" id="168"/>
-												</InputField>
-												<InputField name="ПодтверждениеИмущественныхВычетовКодНалоговогоОргана" id="44">
-													<DataPath>ИмущественныеВычетыНДФЛКодНалоговогоОргана</DataPath>
+												<InputField name="ПодтверждениеИмущественыхРаходыНаСтрахование" id="134">
+													<DataPath>ИмущественныеВычетыНДФЛРасходыНаСтрахование</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Код ИФНС</v8:content>
+															<v8:content>Социальный на страхование</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="ПодтверждениеИмущественныхВычетовКодНалоговогоОрганаКонтекстноеМеню" id="45"/>
-													<ExtendedTooltip name="ПодтверждениеИмущественныхВычетовКодНалоговогоОрганаРасширеннаяПодсказка" id="106"/>
+													<ContextMenu name="ПодтверждениеИмущественыхРаходыНаСтрахованиеКонтекстноеМеню" id="135"/>
+													<ExtendedTooltip name="ПодтверждениеИмущественыхРаходыНаСтрахованиеРасширеннаяПодсказка" id="136"/>
 												</InputField>
 												<Button name="НовоеУведомлениеОПравеНаИмущественныйВычет" id="46">
 													<Type>Hyperlink</Type>
@@ -502,6 +473,61 @@
 								<InputField name="СтатусФизическихЛицКакНалогоплательщиковНДФЛСтатус" id="59">
 									<DataPath>СтатусФизическихЛицКакНалогоплательщиковНДФЛ.Статус</DataPath>
 									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Гражданин Республики Беларусь</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыНалогоплательщиковПоНДФЛ.Резидент</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Иностранный гражданин или лицо без гражданства, постоянно проживающие в Республике Беларусь</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыНалогоплательщиковПоНДФЛ.Нерезидент</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Белорусский индивидуальный предприниматель</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыНалогоплательщиковПоНДФЛ.ИностранныйГражданин</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Иностранный гражданин или лицо без гражданства</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыНалогоплательщиковПоНДФЛ.ИндивидуальныйПредприниматель</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
 									<ContextMenu name="СтатусФизическихЛицКакНалогоплательщиковНДФЛСтатусКонтекстноеМеню" id="60"/>
 									<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковНДФЛСтатусExtendedTooltip" id="118"/>
 									<Events>
@@ -531,99 +557,6 @@
 									<Type>Hyperlink</Type>
 									<CommandName>Form.Command.СтатусФизическихЛицКакНалогоплательщиковНДФЛИстория</CommandName>
 									<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковНДФЛИсторияExtendedTooltip" id="120"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="УведомлениеНаАвансовыеПлатежи" id="146">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Уведомление на авансовые платежи по патентам</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<ExtendedTooltip name="УведомлениеНаАвансовыеПлатежиРасширеннаяПодсказка" id="147"/>
-							<ChildItems>
-								<UsualGroup name="УведомлениеНаАвансовыеПлатежиКодИФНСГруппа" id="164">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Уведомление на авансовые платежи код ИФНСГруппа</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Horizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="УведомлениеНаАвансовыеПлатежиКодИФНСГруппаРасширеннаяПодсказка" id="165"/>
-									<ChildItems>
-										<InputField name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейГод" id="148">
-											<DataPath>РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежей.Год</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Налоговый период (год)</v8:content>
-												</v8:item>
-											</Title>
-											<SpinButton>true</SpinButton>
-											<MinValue xsi:type="xs:decimal">2000</MinValue>
-											<MaxValue xsi:type="xs:decimal">2100</MaxValue>
-											<ContextMenu name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейГодКонтекстноеМеню" id="149"/>
-											<ExtendedTooltip name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейГодРасширеннаяПодсказка" id="150"/>
-											<Events>
-												<Event name="OnChange">РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейГодПриИзменении</Event>
-												<Event name="Tuning">РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейГодРегулирование</Event>
-											</Events>
-										</InputField>
-										<InputField name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейКодНалоговогоОргана" id="157">
-											<DataPath>РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежей.КодНалоговогоОргана</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Код ИФНС</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейКодНалоговогоОрганаКонтекстноеМеню" id="158"/>
-											<ExtendedTooltip name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейКодНалоговогоОрганаРасширеннаяПодсказка" id="159"/>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="УведомлениеНаАвансовыеПлатежиНомерДатаГруппа" id="160">
-									<Group>Horizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="УведомлениеНаАвансовыеПлатежиНомерДатаГруппаРасширеннаяПодсказка" id="161"/>
-									<ChildItems>
-										<InputField name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейНомерУведомления" id="151">
-											<DataPath>РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежей.НомерУведомления</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Номер</v8:content>
-												</v8:item>
-											</Title>
-											<Width>12</Width>
-											<HorizontalStretch>false</HorizontalStretch>
-											<ContextMenu name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейНомерУведомленияКонтекстноеМеню" id="152"/>
-											<ExtendedTooltip name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейНомерУведомленияРасширеннаяПодсказка" id="153"/>
-										</InputField>
-										<InputField name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейДатаУведомления" id="154">
-											<DataPath>РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежей.ДатаУведомления</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>От</v8:content>
-												</v8:item>
-											</Title>
-											<Width>10</Width>
-											<ContextMenu name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейДатаУведомленияКонтекстноеМеню" id="155"/>
-											<ExtendedTooltip name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейДатаУведомленияРасширеннаяПодсказка" id="156"/>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-								<Button name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейПодробнее" id="162">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейПодробнее</CommandName>
-									<ExtendedTooltip name="РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежейПодробнееРасширеннаяПодсказка" id="163"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
@@ -1534,6 +1467,54 @@
 				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
 			</FunctionalOptions>
 		</Attribute>
+		<Attribute name="ИмущественныеВычетыНДФЛРасходы" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмущественныеВычетыНДФЛРасходыНаОбразование" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходы на образование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмущественныеВычетыНДФЛРасходыНаСтрахование" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имущественные вычеты расходы на страхование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ДоходыСПредыдущегоМестаРаботы" id="1">
@@ -1599,7 +1580,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ввести новое уведомление нал.органа о праве на вычет</v8:content>
+					<v8:content>Ввести новое уведомление о праве на имущественный и социальный вычет</v8:content>
 				</v8:item>
 			</Title>
 			<Use>

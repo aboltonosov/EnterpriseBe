@@ -311,6 +311,48 @@
 					<ContextMenu name="СписокНомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="СписокНомерExtendedTooltip" id="52"/>
 				</InputField>
+				<ColumnGroup name="ГруппаСерияНомер" id="95">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСерияНомерРасширеннаяПодсказка" id="96"/>
+					<ChildItems>
+						<LabelField name="СерияИсходящегоДокумента" id="100">
+							<DataPath>Список.СерияИсходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия</v8:content>
+								</v8:item>
+							</Title>
+							<Width>2</Width>
+							<ContextMenu name="СерияИсходящегоДокументаКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="СерияИсходящегоДокументаРасширеннаяПодсказка" id="102"/>
+						</LabelField>
+						<LabelField name="НомерИсходящегоДокумента" id="97">
+							<DataPath>Список.НомерИсходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№ исх. документа</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="НомерИсходящегоДокументаКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="НомерИсходящегоДокументаРасширеннаяПодсказка" id="99"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="СписокДата" id="77">
 					<DataPath>Список.Date</DataPath>
 					<DefaultItem>true</DefaultItem>

@@ -71,7 +71,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКодНаименованиеExtendedTooltip" id="618"/>
+			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="618"/>
 			<ChildItems>
 				<InputField name="Наименование" id="3">
 					<DataPath>Объект.Description</DataPath>
@@ -79,7 +79,7 @@
 					<Width>40</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="619"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="619"/>
 					<Events>
 						<Event name="OnChange">НаименованиеПриИзменении</Event>
 					</Events>
@@ -88,14 +88,14 @@
 					<DataPath>Объект.Code</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="КодExtendedTooltip" id="620"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="620"/>
 				</InputField>
 				<CheckBoxField name="ВАрхиве" id="372">
 					<DataPath>Объект.ВАрхиве</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВАрхивеКонтекстноеМеню" id="373"/>
-					<ExtendedTooltip name="ВАрхивеExtendedTooltip" id="811"/>
+					<ExtendedTooltip name="ВАрхивеРасширеннаяПодсказка" id="811"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
@@ -112,7 +112,7 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="СтраницыExtendedTooltip" id="621"/>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="621"/>
 			<ChildItems>
 				<Page name="Описание" id="121">
 					<Title>
@@ -129,7 +129,7 @@
 					</ToolTip>
 					<Group>Horizontal</Group>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
-					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="622"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="622"/>
 					<ChildItems>
 						<UsualGroup name="НастройкаВыполненияГруппа" id="420">
 							<Title>
@@ -147,7 +147,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НастройкаВыполненияГруппаExtendedTooltip" id="623"/>
+							<ExtendedTooltip name="НастройкаВыполненияГруппаРасширеннаяПодсказка" id="623"/>
 							<ChildItems>
 								<UsualGroup name="Начислять" id="134">
 									<Title>
@@ -164,7 +164,7 @@
 									</ToolTip>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="НачислятьExtendedTooltip" id="624"/>
+									<ExtendedTooltip name="НачислятьРасширеннаяПодсказка" id="624"/>
 									<ChildItems>
 										<InputField name="КатегорияНачисленияИлиНеоплаченногоВремени" id="520">
 											<DataPath>Объект.КатегорияНачисленияИлиНеоплаченногоВремени</DataPath>
@@ -175,8 +175,395 @@
 												</v8:item>
 											</Title>
 											<TitleLocation>Top</TitleLocation>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПовременнаяОплатаТруда</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.СдельнаяОплатаТруда</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаТрудаВНатуральнойФорме</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ДоходВНатуральнойФорме</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.КомпенсационныеВыплаты</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.Премия</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаОтпуска</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.КомпенсацияОтпуска</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ЕдиновременнаяВыплатаКОтпуску</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.МатериальнаяПомощьПриОтпуске</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОтпускБезОплаты</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.НеявкаПоНевыясненнымПричинам</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.Прогул</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПростойПоВинеРаботника</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаПростояПоВинеРаботодателя</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаПростояПоНезависящимОтРаботодателяПричинам</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаКомандировки</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаПредыдущимиДокументами</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.СохраняемоеДенежноеСодержание</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаПоСреднемуЗаработку</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ДоплатаДоСреднегоЗаработка</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаБольничногоЛиста</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаБольничногоЛистаОтТарифногоОклада</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОтпускПоБеременностиИРодам</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОтпускПоБеременностиИРодамОтТарифногоОклада</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ДоплатаДоСреднегоЗаработкаЗаДниБолезни</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ДоплатаЗаСовмещение</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.БолезньБезОплаты</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОтпускПоБеременностиИРодамБезОплаты</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.МатериальнаяПомощь</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.Прочее</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.КомпенсацияМоральногоВреда</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.Льгота</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.НадбавкаЗаВредность</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.Отгул</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеПоУходуЗаРебенкомДоТрехЛет</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ОплатаДнейУходаЗаДетьмиИнвалидами</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеПоУходуЗаРебенкомДо3Лет50ПроцентовБПМ</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеПоУходуЗаРебенкомДоТрехНаРебенкаИнвалида</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеНаВичИнфицРебенка</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалида</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалида</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеНаРебенкаСтарше3Лет</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалида</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалида</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ВыходноеПособиеЗа2недели</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.ВыходноеПособиеЗа3Месяца</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
 											<ContextMenu name="КатегорияНачисленияИлиНеоплаченногоВремениКонтекстноеМеню" id="521"/>
-											<ExtendedTooltip name="КатегорияНачисленияИлиНеоплаченногоВремениExtendedTooltip" id="625"/>
+											<ExtendedTooltip name="КатегорияНачисленияИлиНеоплаченногоВремениРасширеннаяПодсказка" id="625"/>
 											<Events>
 												<Event name="OnChange">КатегорияНачисленияИлиНеоплаченногоВремениПриИзменении</Event>
 											</Events>
@@ -191,7 +578,7 @@
 											<VerticalStretch>true</VerticalStretch>
 											<TextColor>style:ПоясняющийТекст</TextColor>
 											<ContextMenu name="НазначениеНачисленияИнфоКонтекстноеМеню" id="528"/>
-											<ExtendedTooltip name="НазначениеНачисленияИнфоExtendedTooltip" id="629"/>
+											<ExtendedTooltip name="НазначениеНачисленияИнфоРасширеннаяПодсказка" id="629"/>
 										</LabelField>
 										<Pages name="НазначениеСтраницы" id="523">
 											<Title>
@@ -208,7 +595,7 @@
 											</ToolTip>
 											<Height>7</Height>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="НазначениеСтраницыExtendedTooltip" id="626"/>
+											<ExtendedTooltip name="НазначениеСтраницыРасширеннаяПодсказка" id="626"/>
 											<ChildItems>
 												<Page name="СпособВыполнения" id="522">
 													<Title>
@@ -223,7 +610,7 @@
 															<v8:content>Способ выполнения</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="СпособВыполненияExtendedTooltip" id="630"/>
+													<ExtendedTooltip name="СпособВыполненияРасширеннаяПодсказка" id="630"/>
 													<ChildItems>
 														<UsualGroup name="СпособВыполненияНачисленияГруппа" id="1336">
 															<Group>Horizontal</Group>
@@ -241,7 +628,7 @@
 																	</Title>
 																	<TitleLocation>Top</TitleLocation>
 																	<ContextMenu name="СпособВыполненияНачисленияКонтекстноеМеню" id="192"/>
-																	<ExtendedTooltip name="СпособВыполненияНачисленияExtendedTooltip" id="631"/>
+																	<ExtendedTooltip name="СпособВыполненияНачисленияРасширеннаяПодсказка" id="631"/>
 																	<Events>
 																		<Event name="OnChange">СпособВыполненияНачисленияПриИзменении</Event>
 																	</Events>
@@ -262,7 +649,7 @@
 																</v8:item>
 															</ToolTip>
 															<PagesRepresentation>None</PagesRepresentation>
-															<ExtendedTooltip name="ГруппаСпособВыполненияНачисленияExtendedTooltip" id="634"/>
+															<ExtendedTooltip name="ГруппаСпособВыполненияНачисленияРасширеннаяПодсказка" id="634"/>
 															<ChildItems>
 																<Page name="ГруппаЕжемесячно" id="194">
 																	<Title>
@@ -277,7 +664,7 @@
 																			<v8:content>Группа ежемесячно</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ГруппаЕжемесячноExtendedTooltip" id="635"/>
+																	<ExtendedTooltip name="ГруппаЕжемесячноРасширеннаяПодсказка" id="635"/>
 																	<ChildItems>
 																		<Pages name="ПостоянноСтраницы" id="550">
 																			<Title>
@@ -293,7 +680,7 @@
 																				</v8:item>
 																			</ToolTip>
 																			<PagesRepresentation>None</PagesRepresentation>
-																			<ExtendedTooltip name="ПостоянноСтраницыExtendedTooltip" id="636"/>
+																			<ExtendedTooltip name="ПостоянноСтраницыРасширеннаяПодсказка" id="636"/>
 																			<ChildItems>
 																				<Page name="ЕжемесячноСтраница" id="551">
 																					<Title>
@@ -308,7 +695,7 @@
 																							<v8:content>Ежемесячно страница</v8:content>
 																						</v8:item>
 																					</ToolTip>
-																					<ExtendedTooltip name="ЕжемесячноСтраницаExtendedTooltip" id="637"/>
+																					<ExtendedTooltip name="ЕжемесячноСтраницаРасширеннаяПодсказка" id="637"/>
 																					<ChildItems>
 																						<LabelDecoration name="ДекорацияЕжемесячно" id="132">
 																							<AutoMaxWidth>false</AutoMaxWidth>
@@ -321,7 +708,7 @@
 																							</Title>
 																							<VerticalAlign>Top</VerticalAlign>
 																							<ContextMenu name="ДекорацияЕжемесячноКонтекстноеМеню" id="133"/>
-																							<ExtendedTooltip name="ДекорацияЕжемесячноExtendedTooltip" id="638"/>
+																							<ExtendedTooltip name="ДекорацияЕжемесячноРасширеннаяПодсказка" id="638"/>
 																						</LabelDecoration>
 																					</ChildItems>
 																				</Page>
@@ -338,7 +725,7 @@
 																							<v8:content>В заданные месяцы страница</v8:content>
 																						</v8:item>
 																					</ToolTip>
-																					<ExtendedTooltip name="ВЗаданныеМесяцыСтраницаExtendedTooltip" id="639"/>
+																					<ExtendedTooltip name="ВЗаданныеМесяцыСтраницаРасширеннаяПодсказка" id="639"/>
 																					<ChildItems>
 																						<LabelDecoration name="ДекорацияВЗаданныеМесяцы" id="139">
 																							<AutoMaxWidth>false</AutoMaxWidth>
@@ -351,7 +738,7 @@
 																							</Title>
 																							<VerticalAlign>Top</VerticalAlign>
 																							<ContextMenu name="ДекорацияВЗаданныеМесяцыКонтекстноеМеню" id="140"/>
-																							<ExtendedTooltip name="ДекорацияВЗаданныеМесяцыExtendedTooltip" id="640"/>
+																							<ExtendedTooltip name="ДекорацияВЗаданныеМесяцыРасширеннаяПодсказка" id="640"/>
 																						</LabelDecoration>
 																						<UsualGroup name="ГруппаМесяцыНачисления" id="149">
 																							<Title>
@@ -369,7 +756,7 @@
 																							<Group>Horizontal</Group>
 																							<Representation>None</Representation>
 																							<ShowTitle>false</ShowTitle>
-																							<ExtendedTooltip name="ГруппаМесяцыНачисленияExtendedTooltip" id="641"/>
+																							<ExtendedTooltip name="ГруппаМесяцыНачисленияРасширеннаяПодсказка" id="641"/>
 																							<ChildItems>
 																								<UsualGroup name="Квартал1" id="145">
 																									<Title>
@@ -387,14 +774,14 @@
 																									<Group>Vertical</Group>
 																									<Representation>None</Representation>
 																									<ShowTitle>false</ShowTitle>
-																									<ExtendedTooltip name="Квартал1ExtendedTooltip" id="642"/>
+																									<ExtendedTooltip name="Квартал1РасширеннаяПодсказка" id="642"/>
 																									<ChildItems>
 																										<CheckBoxField name="МесяцНачисления01" id="141">
 																											<DataPath>НачисляетсяВМесяце01</DataPath>
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления01КонтекстноеМеню" id="142"/>
-																											<ExtendedTooltip name="МесяцНачисления01ExtendedTooltip" id="643"/>
+																											<ExtendedTooltip name="МесяцНачисления01РасширеннаяПодсказка" id="643"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления01ПриИзменении</Event>
 																											</Events>
@@ -404,7 +791,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления02КонтекстноеМеню" id="144"/>
-																											<ExtendedTooltip name="МесяцНачисления02ExtendedTooltip" id="644"/>
+																											<ExtendedTooltip name="МесяцНачисления02РасширеннаяПодсказка" id="644"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления02ПриИзменении</Event>
 																											</Events>
@@ -414,7 +801,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления03КонтекстноеМеню" id="151"/>
-																											<ExtendedTooltip name="МесяцНачисления03ExtendedTooltip" id="645"/>
+																											<ExtendedTooltip name="МесяцНачисления03РасширеннаяПодсказка" id="645"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления03ПриИзменении</Event>
 																											</Events>
@@ -437,14 +824,14 @@
 																									<Group>Vertical</Group>
 																									<Representation>None</Representation>
 																									<ShowTitle>false</ShowTitle>
-																									<ExtendedTooltip name="Квартал2ExtendedTooltip" id="646"/>
+																									<ExtendedTooltip name="Квартал2РасширеннаяПодсказка" id="646"/>
 																									<ChildItems>
 																										<CheckBoxField name="МесяцНачисления04" id="152">
 																											<DataPath>НачисляетсяВМесяце04</DataPath>
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления04КонтекстноеМеню" id="153"/>
-																											<ExtendedTooltip name="МесяцНачисления04ExtendedTooltip" id="647"/>
+																											<ExtendedTooltip name="МесяцНачисления04РасширеннаяПодсказка" id="647"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления04ПриИзменении</Event>
 																											</Events>
@@ -454,7 +841,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления05КонтекстноеМеню" id="155"/>
-																											<ExtendedTooltip name="МесяцНачисления05ExtendedTooltip" id="648"/>
+																											<ExtendedTooltip name="МесяцНачисления05РасширеннаяПодсказка" id="648"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления05ПриИзменении</Event>
 																											</Events>
@@ -464,7 +851,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления06КонтекстноеМеню" id="157"/>
-																											<ExtendedTooltip name="МесяцНачисления06ExtendedTooltip" id="649"/>
+																											<ExtendedTooltip name="МесяцНачисления06РасширеннаяПодсказка" id="649"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления06ПриИзменении</Event>
 																											</Events>
@@ -487,14 +874,14 @@
 																									<Group>Vertical</Group>
 																									<Representation>None</Representation>
 																									<ShowTitle>false</ShowTitle>
-																									<ExtendedTooltip name="Квартал3ExtendedTooltip" id="650"/>
+																									<ExtendedTooltip name="Квартал3РасширеннаяПодсказка" id="650"/>
 																									<ChildItems>
 																										<CheckBoxField name="МесяцНачисления07" id="158">
 																											<DataPath>НачисляетсяВМесяце07</DataPath>
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления07КонтекстноеМеню" id="159"/>
-																											<ExtendedTooltip name="МесяцНачисления07ExtendedTooltip" id="651"/>
+																											<ExtendedTooltip name="МесяцНачисления07РасширеннаяПодсказка" id="651"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления07ПриИзменении</Event>
 																											</Events>
@@ -504,7 +891,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления08КонтекстноеМеню" id="161"/>
-																											<ExtendedTooltip name="МесяцНачисления08ExtendedTooltip" id="652"/>
+																											<ExtendedTooltip name="МесяцНачисления08РасширеннаяПодсказка" id="652"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления08ПриИзменении</Event>
 																											</Events>
@@ -514,7 +901,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления09КонтекстноеМеню" id="163"/>
-																											<ExtendedTooltip name="МесяцНачисления09ExtendedTooltip" id="653"/>
+																											<ExtendedTooltip name="МесяцНачисления09РасширеннаяПодсказка" id="653"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления09ПриИзменении</Event>
 																											</Events>
@@ -537,14 +924,14 @@
 																									<Group>Vertical</Group>
 																									<Representation>None</Representation>
 																									<ShowTitle>false</ShowTitle>
-																									<ExtendedTooltip name="Квартал4ExtendedTooltip" id="654"/>
+																									<ExtendedTooltip name="Квартал4РасширеннаяПодсказка" id="654"/>
 																									<ChildItems>
 																										<CheckBoxField name="МесяцНачисления10" id="164">
 																											<DataPath>НачисляетсяВМесяце10</DataPath>
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления10КонтекстноеМеню" id="165"/>
-																											<ExtendedTooltip name="МесяцНачисления10ExtendedTooltip" id="655"/>
+																											<ExtendedTooltip name="МесяцНачисления10РасширеннаяПодсказка" id="655"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления10ПриИзменении</Event>
 																											</Events>
@@ -554,7 +941,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления11КонтекстноеМеню" id="167"/>
-																											<ExtendedTooltip name="МесяцНачисления11ExtendedTooltip" id="656"/>
+																											<ExtendedTooltip name="МесяцНачисления11РасширеннаяПодсказка" id="656"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления11ПриИзменении</Event>
 																											</Events>
@@ -564,7 +951,7 @@
 																											<TitleLocation>Right</TitleLocation>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="МесяцНачисления12КонтекстноеМеню" id="169"/>
-																											<ExtendedTooltip name="МесяцНачисления12ExtendedTooltip" id="657"/>
+																											<ExtendedTooltip name="МесяцНачисления12РасширеннаяПодсказка" id="657"/>
 																											<Events>
 																												<Event name="OnChange">МесяцНачисления12ПриИзменении</Event>
 																											</Events>
@@ -591,7 +978,7 @@
 																							<Group>Vertical</Group>
 																							<Representation>None</Representation>
 																							<ShowTitle>false</ShowTitle>
-																							<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыГруппаExtendedTooltip" id="658"/>
+																							<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыГруппаРасширеннаяПодсказка" id="658"/>
 																						</UsualGroup>
 																					</ChildItems>
 																				</Page>
@@ -612,7 +999,7 @@
 																			<v8:content>Группа по приказу</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ГруппаПоПриказуExtendedTooltip" id="667"/>
+																	<ExtendedTooltip name="ГруппаПоПриказуРасширеннаяПодсказка" id="667"/>
 																	<ChildItems>
 																		<LabelDecoration name="ДекорацияПоПриказу" id="183">
 																			<TextColor>style:ПоясняющийТекст</TextColor>
@@ -624,7 +1011,7 @@
 																			</Title>
 																			<VerticalAlign>Top</VerticalAlign>
 																			<ContextMenu name="ДекорацияПоПриказуКонтекстноеМеню" id="184"/>
-																			<ExtendedTooltip name="ДекорацияПоПриказуExtendedTooltip" id="668"/>
+																			<ExtendedTooltip name="ДекорацияПоПриказуРасширеннаяПодсказка" id="668"/>
 																		</LabelDecoration>
 																		<Pages name="ГруппаВидДокументаНачисления" id="886">
 																			<Title>
@@ -706,7 +1093,7 @@
 																			<v8:content>Группа по показателям</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ГруппаПоПоказателямExtendedTooltip" id="669"/>
+																	<ExtendedTooltip name="ГруппаПоПоказателямРасширеннаяПодсказка" id="669"/>
 																	<ChildItems>
 																		<LabelDecoration name="ДекорацияПоУсловиюНаПоказатель" id="173">
 																			<AutoMaxWidth>false</AutoMaxWidth>
@@ -720,7 +1107,7 @@
 																			</Title>
 																			<VerticalAlign>Top</VerticalAlign>
 																			<ContextMenu name="ДекорацияПоУсловиюНаПоказательКонтекстноеМеню" id="174"/>
-																			<ExtendedTooltip name="ДекорацияПоУсловиюНаПоказательExtendedTooltip" id="670"/>
+																			<ExtendedTooltip name="ДекорацияПоУсловиюНаПоказательРасширеннаяПодсказка" id="670"/>
 																		</LabelDecoration>
 																		<Table name="СписокОпределяющихПоказателей" id="234">
 																			<Representation>List</Representation>
@@ -744,7 +1131,7 @@
 																				<Autofill>false</Autofill>
 																			</ContextMenu>
 																			<AutoCommandBar name="СписокОпределяющихПоказателейКоманднаяПанель" id="236"/>
-																			<ExtendedTooltip name="СписокОпределяющихПоказателейExtendedTooltip" id="671"/>
+																			<ExtendedTooltip name="СписокОпределяющихПоказателейРасширеннаяПодсказка" id="671"/>
 																			<SearchStringAddition name="СписокОпределяющихПоказателейСтрокаПоиска" id="1030">
 																				<AdditionSource>
 																					<Item>СписокОпределяющихПоказателей</Item>
@@ -784,20 +1171,20 @@
 																						</v8:item>
 																					</ToolTip>
 																					<Group>InCell</Group>
-																					<ExtendedTooltip name="СписокОпределяющихПоказателейГруппаКолонокExtendedTooltip" id="672"/>
+																					<ExtendedTooltip name="СписокОпределяющихПоказателейГруппаКолонокРасширеннаяПодсказка" id="672"/>
 																					<ChildItems>
 																						<CheckBoxField name="СписокОпределяющихПоказателейПометка" id="239">
 																							<DataPath>СписокОпределяющихПоказателей.Check</DataPath>
 																							<EditMode>EnterOnInput</EditMode>
 																							<CheckBoxType>Auto</CheckBoxType>
 																							<ContextMenu name="СписокОпределяющихПоказателейПометкаКонтекстноеМеню" id="240"/>
-																							<ExtendedTooltip name="СписокОпределяющихПоказателейПометкаExtendedTooltip" id="673"/>
+																							<ExtendedTooltip name="СписокОпределяющихПоказателейПометкаРасширеннаяПодсказка" id="673"/>
 																						</CheckBoxField>
 																						<LabelField name="СписокОпределяющихПоказателейЗначение" id="237">
 																							<DataPath>СписокОпределяющихПоказателей.Value</DataPath>
 																							<EditMode>EnterOnInput</EditMode>
 																							<ContextMenu name="СписокОпределяющихПоказателейЗначениеКонтекстноеМеню" id="238"/>
-																							<ExtendedTooltip name="СписокОпределяющихПоказателейЗначениеExtendedTooltip" id="674"/>
+																							<ExtendedTooltip name="СписокОпределяющихПоказателейЗначениеРасширеннаяПодсказка" id="674"/>
 																						</LabelField>
 																					</ChildItems>
 																				</ColumnGroup>
@@ -818,7 +1205,7 @@
 																			<v8:content>Группа по видам учета времени</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ГруппаПоВидамУчетаВремениExtendedTooltip" id="675"/>
+																	<ExtendedTooltip name="ГруппаПоВидамУчетаВремениРасширеннаяПодсказка" id="675"/>
 																	<ChildItems>
 																		<LabelDecoration name="ДекорацияПоУсловиюНаВидВремени" id="187">
 																			<AutoMaxWidth>false</AutoMaxWidth>
@@ -832,14 +1219,14 @@
 																			</Title>
 																			<VerticalAlign>Top</VerticalAlign>
 																			<ContextMenu name="ДекорацияПоУсловиюНаВидВремениКонтекстноеМеню" id="188"/>
-																			<ExtendedTooltip name="ДекорацияПоУсловиюНаВидВремениExtendedTooltip" id="676"/>
+																			<ExtendedTooltip name="ДекорацияПоУсловиюНаВидВремениРасширеннаяПодсказка" id="676"/>
 																		</LabelDecoration>
 																		<InputField name="ОбозначениеВТабелеУчетаРабочегоВремени1" id="258">
 																			<DataPath>Объект.ОбозначениеВТабелеУчетаРабочегоВремени</DataPath>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<ContextMenu name="ОбозначениеВТабелеУчетаРабочегоВремени1КонтекстноеМеню" id="259"/>
-																			<ExtendedTooltip name="ОбозначениеВТабелеУчетаРабочегоВремени1ExtendedTooltip" id="677"/>
+																			<ExtendedTooltip name="ОбозначениеВТабелеУчетаРабочегоВремени1РасширеннаяПодсказка" id="677"/>
 																			<Events>
 																				<Event name="OnChange">ОбозначениеВТабелеУчетаРабочегоВремениПриИзменении</Event>
 																			</Events>
@@ -911,7 +1298,7 @@
 															<v8:content>Отпуск</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="ОтпускExtendedTooltip" id="685"/>
+													<ExtendedTooltip name="ОтпускРасширеннаяПодсказка" id="685"/>
 													<ChildItems>
 														<InputField name="ВидОтпуска" id="47">
 															<DataPath>Объект.ВидОтпуска</DataPath>
@@ -924,7 +1311,7 @@
 															</ToolTip>
 															<HorizontalStretch>false</HorizontalStretch>
 															<ContextMenu name="ВидОтпускаКонтекстноеМеню" id="48"/>
-															<ExtendedTooltip name="ВидОтпускаExtendedTooltip" id="689"/>
+															<ExtendedTooltip name="ВидОтпускаРасширеннаяПодсказка" id="689"/>
 															<Events>
 																<Event name="Opening">ВидОтпускаОткрытие</Event>
 															</Events>
@@ -1256,7 +1643,7 @@
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="НачисляетсяПриРасчетеПервойПоловиныМесяцаКонтекстноеМеню" id="196"/>
-													<ExtendedTooltip name="НачисляетсяПриРасчетеПервойПоловиныМесяцаExtendedTooltip" id="681"/>
+													<ExtendedTooltip name="НачисляетсяПриРасчетеПервойПоловиныМесяцаРасширеннаяПодсказка" id="681"/>
 												</CheckBoxField>
 											</ChildItems>
 										</Page>
@@ -1301,7 +1688,7 @@
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НастройкаРасчетаГруппаExtendedTooltip" id="695"/>
+							<ExtendedTooltip name="НастройкаРасчетаГруппаРасширеннаяПодсказка" id="695"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаРасчетИПоказатели" id="1192">
 									<Title>
@@ -1329,7 +1716,7 @@
 											</ToolTip>
 											<VerticalStretch>false</VerticalStretch>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="НастройкиРасчетаExtendedTooltip" id="697"/>
+											<ExtendedTooltip name="НастройкиРасчетаРасширеннаяПодсказка" id="697"/>
 											<ChildItems>
 												<Page name="СтраницаФормулаРасчета" id="126">
 													<Title>
@@ -1344,7 +1731,7 @@
 															<v8:content>Страница формула расчета</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="СтраницаФормулаРасчетаExtendedTooltip" id="698"/>
+													<ExtendedTooltip name="СтраницаФормулаРасчетаРасширеннаяПодсказка" id="698"/>
 													<ChildItems>
 														<RadioButtonField name="РассчитыватьРезультат" id="985">
 															<DataPath>РассчитыватьРезультат</DataPath>
@@ -1418,7 +1805,7 @@
 																			<VerticalStretch>false</VerticalStretch>
 																			<MultiLine>true</MultiLine>
 																			<ContextMenu name="ФормулаРасчетаКонтекстноеМеню" id="124"/>
-																			<ExtendedTooltip name="ФормулаРасчетаExtendedTooltip" id="699"/>
+																			<ExtendedTooltip name="ФормулаРасчетаРасширеннаяПодсказка" id="699"/>
 																		</InputField>
 																		<UsualGroup name="ИзменитьФормулуГруппа" id="875">
 																			<Title>
@@ -1441,7 +1828,7 @@
 																				<Button name="ИзменитьФормулу" id="397">
 																					<Type>Hyperlink</Type>
 																					<CommandName>Form.Command.ИзменитьФормулу</CommandName>
-																					<ExtendedTooltip name="ИзменитьФормулуExtendedTooltip" id="700"/>
+																					<ExtendedTooltip name="ИзменитьФормулуРасширеннаяПодсказка" id="700"/>
 																				</Button>
 																				<PictureField name="ФормулаНеЗаполненаКартинка" id="877">
 																					<DataPath>ФормулаНеЗаполненаКартинка</DataPath>
@@ -1511,7 +1898,7 @@
 																							<ToolTip>
 																								<v8:item>
 																									<v8:lang>ru</v8:lang>
-																									<v8:content>Отмеченные ниже показатели вводятся в кадровых приказах при вводе данного начисления</v8:content>
+																									<v8:content>Отмеченные ниже показатели вводятся в кадровых приказах при вводе данного начисления или в тарифной сетке</v8:content>
 																								</v8:item>
 																							</ToolTip>
 																							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
@@ -1521,7 +1908,7 @@
 																							<RowFilter xsi:nil="true"/>
 																							<ContextMenu name="ПостоянныеПоказателиКонтекстноеМеню" id="508"/>
 																							<AutoCommandBar name="ПостоянныеПоказателиКоманднаяПанель" id="509"/>
-																							<ExtendedTooltip name="ПостоянныеПоказателиExtendedTooltip" id="663"/>
+																							<ExtendedTooltip name="ПостоянныеПоказателиРасширеннаяПодсказка" id="663"/>
 																							<SearchStringAddition name="ПостоянныеПоказателиСтрокаПоиска" id="1021">
 																								<AdditionSource>
 																									<Item>ПостоянныеПоказатели</Item>
@@ -1561,20 +1948,20 @@
 																										</v8:item>
 																									</ToolTip>
 																									<Group>InCell</Group>
-																									<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыГруппаКолонокExtendedTooltip" id="664"/>
+																									<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыГруппаКолонокРасширеннаяПодсказка" id="664"/>
 																									<ChildItems>
 																										<CheckBoxField name="ПостоянныеПоказателиВЗаданныеМесяцыЗапрашиватьПриВводе" id="511">
 																											<DataPath>Объект.Показатели.ЗапрашиватьПриВводе</DataPath>
 																											<EditMode>EnterOnInput</EditMode>
 																											<CheckBoxType>Auto</CheckBoxType>
 																											<ContextMenu name="ПостоянныеПоказателиВЗаданныеМесяцыЗапрашиватьПриВводеКонтекстноеМеню" id="512"/>
-																											<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыЗапрашиватьПриВводеExtendedTooltip" id="665"/>
+																											<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыЗапрашиватьПриВводеРасширеннаяПодсказка" id="665"/>
 																										</CheckBoxField>
 																										<LabelField name="ПостоянныеПоказателиВЗаданныеМесяцыПоказатель" id="513">
 																											<DataPath>Объект.Показатели.Показатель</DataPath>
 																											<EditMode>EnterOnInput</EditMode>
 																											<ContextMenu name="ПостоянныеПоказателиВЗаданныеМесяцыПоказательКонтекстноеМеню" id="514"/>
-																											<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыПоказательExtendedTooltip" id="666"/>
+																											<ExtendedTooltip name="ПостоянныеПоказателиВЗаданныеМесяцыПоказательРасширеннаяПодсказка" id="666"/>
 																										</LabelField>
 																									</ChildItems>
 																								</ColumnGroup>
@@ -1636,7 +2023,7 @@
 													</ToolTip>
 													<VerticalStretch>false</VerticalStretch>
 													<Group>Horizontal</Group>
-													<ExtendedTooltip name="СтраницаОписаниеСпособаРасчетаExtendedTooltip" id="701"/>
+													<ExtendedTooltip name="СтраницаОписаниеСпособаРасчетаРасширеннаяПодсказка" id="701"/>
 													<ChildItems>
 														<LabelField name="ОписаниеСпособаРасчета" id="244">
 															<DataPath>ОписаниеСпособаРасчета</DataPath>
@@ -1645,7 +2032,7 @@
 															<Height>2</Height>
 															<TextColor>style:ПоясняющийТекст</TextColor>
 															<ContextMenu name="ОписаниеСпособаРасчетаКонтекстноеМеню" id="245"/>
-															<ExtendedTooltip name="ОписаниеСпособаРасчетаExtendedTooltip" id="703"/>
+															<ExtendedTooltip name="ОписаниеСпособаРасчетаРасширеннаяПодсказка" id="703"/>
 														</LabelField>
 													</ChildItems>
 												</Page>
@@ -1765,7 +2152,7 @@
 												</v8:item>
 											</ToolTip>
 											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="НастройкаПериодаСреднегоЗаработкаСтраницыExtendedTooltip" id="704"/>
+											<ExtendedTooltip name="НастройкаПериодаСреднегоЗаработкаСтраницыРасширеннаяПодсказка" id="704"/>
 											<ChildItems>
 												<Page name="ПериодНастраиваетсяСтраница" id="491">
 													<Title>
@@ -1780,7 +2167,7 @@
 															<v8:content>Период настраивается страница</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="ПериодНастраиваетсяСтраницаExtendedTooltip" id="705"/>
+													<ExtendedTooltip name="ПериодНастраиваетсяСтраницаРасширеннаяПодсказка" id="705"/>
 													<ChildItems>
 														<UsualGroup name="НастройкаПериодаСреднегоЗаработкаГруппа" id="497">
 															<Title>
@@ -1797,7 +2184,7 @@
 															</ToolTip>
 															<Group>Vertical</Group>
 															<Representation>None</Representation>
-															<ExtendedTooltip name="НастройкаПериодаСреднегоЗаработкаГруппаExtendedTooltip" id="706"/>
+															<ExtendedTooltip name="НастройкаПериодаСреднегоЗаработкаГруппаРасширеннаяПодсказка" id="706"/>
 															<ChildItems>
 																<RadioButtonField name="ПорядокОпределенияРасчетногоПериодаСреднегоЗаработкаПоЗаконодательству" id="493">
 																	<DataPath>Объект.ПорядокОпределенияРасчетногоПериодаСреднегоЗаработка</DataPath>
@@ -1847,7 +2234,7 @@
 																	<Group>Horizontal</Group>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ПериодСреднегоЗаработкаГруппаExtendedTooltip" id="708"/>
+																	<ExtendedTooltip name="ПериодСреднегоЗаработкаГруппаРасширеннаяПодсказка" id="708"/>
 																	<ChildItems>
 																		<RadioButtonField name="ПорядокОпределенияРасчетногоПериодаСреднегоЗаработкаПоКолДоговору" id="1126">
 																			<DataPath>Объект.ПорядокОпределенияРасчетногоПериодаСреднегоЗаработка</DataPath>
@@ -1892,7 +2279,7 @@
 																			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
 																			<SpinButton>true</SpinButton>
 																			<ContextMenu name="КоличествоМесяцевРасчетаСреднегоЗаработкаКонтекстноеМеню" id="496"/>
-																			<ExtendedTooltip name="КоличествоМесяцевРасчетаСреднегоЗаработкаExtendedTooltip" id="709"/>
+																			<ExtendedTooltip name="КоличествоМесяцевРасчетаСреднегоЗаработкаРасширеннаяПодсказка" id="709"/>
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
@@ -1913,11 +2300,11 @@
 															<v8:content>Период не настраивается страница</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="ПериодНеНастраиваетсяСтраницаExtendedTooltip" id="711"/>
+													<ExtendedTooltip name="ПериодНеНастраиваетсяСтраницаРасширеннаяПодсказка" id="711"/>
 													<ChildItems>
 														<LabelDecoration name="ПустаяДекорацияРасчетаСреднегоЗаработка" id="502">
 															<ContextMenu name="ПустаяДекорацияРасчетаСреднегоЗаработкаКонтекстноеМеню" id="503"/>
-															<ExtendedTooltip name="ПустаяДекорацияРасчетаСреднегоЗаработкаExtendedTooltip" id="712"/>
+															<ExtendedTooltip name="ПустаяДекорацияРасчетаСреднегоЗаработкаРасширеннаяПодсказка" id="712"/>
 														</LabelDecoration>
 													</ChildItems>
 												</Page>
@@ -1960,7 +2347,7 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтношениеКДенежномуДовольствиюРасширеннаяПодсказка" id="1300"/>
 								</UsualGroup>
-								<UsualGroup name="ГруппаРасчетСохраняемогоДенежногоДовольствия" id="1446">
+								<UsualGroup name="ГруппаРасчетСохраняемогоДенежногоДовольствия" id="1508">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1976,7 +2363,7 @@
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="ГруппаРасчетСохраняемогоДенежногоДовольствияРасширеннаяПодсказка" id="1447"/>
+									<ExtendedTooltip name="ГруппаРасчетСохраняемогоДенежногоДовольствияРасширеннаяПодсказка" id="1509"/>
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
@@ -2043,7 +2430,7 @@
 					</ToolTip>
 					<Group>Horizontal</Group>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
-					<ExtendedTooltip name="РасчетБазыExtendedTooltip" id="713"/>
+					<ExtendedTooltip name="РасчетБазыРасширеннаяПодсказка" id="713"/>
 					<ChildItems>
 						<UsualGroup name="ПериодРасчетаБазыГруппа" id="388">
 							<EnableContentChange>true</EnableContentChange>
@@ -2061,7 +2448,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ПериодРасчетаБазыГруппаExtendedTooltip" id="716"/>
+							<ExtendedTooltip name="ПериодРасчетаБазыГруппаРасширеннаяПодсказка" id="716"/>
 							<ChildItems>
 								<Pages name="ПериодРасчетаБазыСтраницы" id="422">
 									<EnableContentChange>true</EnableContentChange>
@@ -2078,7 +2465,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="ПериодРасчетаБазыСтраницыExtendedTooltip" id="714"/>
+									<ExtendedTooltip name="ПериодРасчетаБазыСтраницыРасширеннаяПодсказка" id="714"/>
 									<ChildItems>
 										<Page name="ТекущийПериодНедоступенСтраница" id="423">
 											<EnableContentChange>true</EnableContentChange>
@@ -2323,7 +2710,7 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ДлительностьБазовогоПериодаГруппаExtendedTooltip" id="718"/>
+									<ExtendedTooltip name="ДлительностьБазовогоПериодаГруппаРасширеннаяПодсказка" id="718"/>
 									<ChildItems>
 										<InputField name="КоличествоМесяцевБазовогоПериода" id="79">
 											<DataPath>Объект.КоличествоМесяцевБазовогоПериода</DataPath>
@@ -2341,7 +2728,7 @@
 												</v8:item>
 											</EditFormat>
 											<ContextMenu name="КоличествоМесяцевБазовогоПериодаКонтекстноеМеню" id="80"/>
-											<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаExtendedTooltip" id="719"/>
+											<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаРасширеннаяПодсказка" id="719"/>
 											<Events>
 												<Event name="OnChange">КоличествоМесяцевБазовогоПериодаПриИзменении</Event>
 											</Events>
@@ -2355,7 +2742,7 @@
 												</v8:item>
 											</Title>
 											<ContextMenu name="КоличествоМесяцевБазовогоПериодаПодписьКонтекстноеМеню" id="396"/>
-											<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаПодписьExtendedTooltip" id="720"/>
+											<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаПодписьРасширеннаяПодсказка" id="720"/>
 										</LabelDecoration>
 									</ChildItems>
 								</UsualGroup>
@@ -2534,7 +2921,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="БазовыеНачисленияГруппаExtendedTooltip" id="721"/>
+							<ExtendedTooltip name="БазовыеНачисленияГруппаРасширеннаяПодсказка" id="721"/>
 							<ChildItems>
 								<LabelDecoration name="НадписьСписокБазовых" id="392">
 									<AutoMaxWidth>false</AutoMaxWidth>
@@ -2547,7 +2934,7 @@
 									</Title>
 									<VerticalAlign>Top</VerticalAlign>
 									<ContextMenu name="НадписьСписокБазовыхКонтекстноеМеню" id="393"/>
-									<ExtendedTooltip name="НадписьСписокБазовыхExtendedTooltip" id="722"/>
+									<ExtendedTooltip name="НадписьСписокБазовыхРасширеннаяПодсказка" id="722"/>
 								</LabelDecoration>
 								<Table name="БазовыеВидыРасчета" id="381">
 									<Header>false</Header>
@@ -2565,16 +2952,16 @@
 											<Button name="БазовыеВидыРасчетаПодборБазовых" id="390">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.ПодборБазовых</CommandName>
-												<ExtendedTooltip name="БазовыеВидыРасчетаПодборБазовыхExtendedTooltip" id="723"/>
+												<ExtendedTooltip name="БазовыеВидыРасчетаПодборБазовыхРасширеннаяПодсказка" id="723"/>
 											</Button>
 											<Button name="БазовыеВидыРасчетаУдалить" id="391">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Item.БазовыеВидыРасчета.StandardCommand.Delete</CommandName>
-												<ExtendedTooltip name="БазовыеВидыРасчетаУдалитьExtendedTooltip" id="724"/>
+												<ExtendedTooltip name="БазовыеВидыРасчетаУдалитьРасширеннаяПодсказка" id="724"/>
 											</Button>
 										</ChildItems>
 									</AutoCommandBar>
-									<ExtendedTooltip name="БазовыеВидыРасчетаExtendedTooltip" id="725"/>
+									<ExtendedTooltip name="БазовыеВидыРасчетаРасширеннаяПодсказка" id="725"/>
 									<SearchStringAddition name="БазовыеВидыРасчетаСтрокаПоиска" id="1039">
 										<AdditionSource>
 											<Item>БазовыеВидыРасчета</Item>
@@ -2607,7 +2994,7 @@
 											<DataPath>Объект.BaseCalculationTypes.CalculationType</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="БазовыеВидыРасчетаВидРасчетаКонтекстноеМеню" id="385"/>
-											<ExtendedTooltip name="БазовыеВидыРасчетаВидРасчетаExtendedTooltip" id="726"/>
+											<ExtendedTooltip name="БазовыеВидыРасчетаВидРасчетаРасширеннаяПодсказка" id="726"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -2629,7 +3016,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
-					<ExtendedTooltip name="УчетВремениExtendedTooltip" id="727"/>
+					<ExtendedTooltip name="УчетВремениРасширеннаяПодсказка" id="727"/>
 					<ChildItems>
 						<Pages name="ВидыВремениСтраницы" id="553">
 							<Title>
@@ -2645,7 +3032,7 @@
 								</v8:item>
 							</ToolTip>
 							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="ВидыВремениСтраницыExtendedTooltip" id="729"/>
+							<ExtendedTooltip name="ВидыВремениСтраницыРасширеннаяПодсказка" id="729"/>
 							<ChildItems>
 								<Page name="ВидыВремениОтработанного" id="554">
 									<Title>
@@ -2660,7 +3047,7 @@
 											<v8:content>Виды времени отработанного</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ВидыВремениОтработанногоExtendedTooltip" id="730"/>
+									<ExtendedTooltip name="ВидыВремениОтработанногоРасширеннаяПодсказка" id="730"/>
 									<ChildItems>
 										<UsualGroup name="ВидыОтработанногоВремениГруппа" id="560">
 											<Title>
@@ -2677,7 +3064,7 @@
 											</ToolTip>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
-											<ExtendedTooltip name="ВидыОтработанногоВремениГруппаExtendedTooltip" id="731"/>
+											<ExtendedTooltip name="ВидыОтработанногоВремениГруппаРасширеннаяПодсказка" id="731"/>
 											<ChildItems>
 												<RadioButtonField name="ВидВремениОтработанного" id="556">
 													<DataPath>Объект.ВидВремени</DataPath>
@@ -2739,7 +3126,7 @@
 														</xr:Item>
 													</ChoiceList>
 													<ContextMenu name="ВидВремениОтработанногоКонтекстноеМеню" id="557"/>
-													<ExtendedTooltip name="ВидВремениОтработанногоExtendedTooltip" id="732"/>
+													<ExtendedTooltip name="ВидВремениОтработанногоРасширеннаяПодсказка" id="732"/>
 													<Events>
 														<Event name="OnChange">ВидВремениОтработанногоПриИзменении</Event>
 													</Events>
@@ -2761,7 +3148,7 @@
 											<v8:content>Виды времени не отработанного</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ВидыВремениНеОтработанногоExtendedTooltip" id="733"/>
+									<ExtendedTooltip name="ВидыВремениНеОтработанногоРасширеннаяПодсказка" id="733"/>
 									<ChildItems>
 										<UsualGroup name="ВидВремениНеОтработанногоГруппа" id="561">
 											<Title>
@@ -2778,7 +3165,7 @@
 											</ToolTip>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
-											<ExtendedTooltip name="ВидВремениНеОтработанногоГруппаExtendedTooltip" id="734"/>
+											<ExtendedTooltip name="ВидВремениНеОтработанногоГруппаРасширеннаяПодсказка" id="734"/>
 											<ChildItems>
 												<RadioButtonField name="ВидВремениНеотработанного" id="558">
 													<DataPath>Объект.ВидВремени</DataPath>
@@ -2814,7 +3201,7 @@
 														</xr:Item>
 													</ChoiceList>
 													<ContextMenu name="ВидВремениНеотработанногоКонтекстноеМеню" id="559"/>
-													<ExtendedTooltip name="ВидВремениНеотработанногоExtendedTooltip" id="735"/>
+													<ExtendedTooltip name="ВидВремениНеотработанногоРасширеннаяПодсказка" id="735"/>
 													<Events>
 														<Event name="OnChange">ВидВремениНеОтработанногоПриИзменении</Event>
 													</Events>
@@ -2860,7 +3247,7 @@
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ОбозначениеВТабелеУчетаРабочегоВремениКонтекстноеМеню" id="32"/>
-									<ExtendedTooltip name="ОбозначениеВТабелеУчетаРабочегоВремениExtendedTooltip" id="737"/>
+									<ExtendedTooltip name="ОбозначениеВТабелеУчетаРабочегоВремениРасширеннаяПодсказка" id="737"/>
 									<Events>
 										<Event name="OnChange">ОбозначениеВТабелеУчетаРабочегоВремениПриИзменении</Event>
 									</Events>
@@ -2882,13 +3269,15 @@
 								</LabelDecoration>
 								<InputField name="ВидСтажаСЗВ" id="470">
 									<DataPath>Объект.ВидСтажаСЗВ</DataPath>
+									<Visible>false</Visible>
 									<TitleLocation>Left</TitleLocation>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ВидСтажаСЗВКонтекстноеМеню" id="471"/>
-									<ExtendedTooltip name="ВидСтажаСЗВExtendedTooltip" id="739"/>
+									<ExtendedTooltip name="ВидСтажаСЗВРасширеннаяПодсказка" id="739"/>
 								</InputField>
 								<InputField name="ВидСтажаПФР2015" id="1018">
 									<DataPath>Объект.ВидСтажаПФР2014</DataPath>
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -3137,7 +3526,7 @@
 					</ToolTip>
 					<Group>Horizontal</Group>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
-					<ExtendedTooltip name="ПоследовательностьРасчетаExtendedTooltip" id="740"/>
+					<ExtendedTooltip name="ПоследовательностьРасчетаРасширеннаяПодсказка" id="740"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаДо" id="277">
 							<Title>
@@ -3154,7 +3543,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаДоExtendedTooltip" id="741"/>
+							<ExtendedTooltip name="ГруппаДоРасширеннаяПодсказка" id="741"/>
 							<ChildItems>
 								<Table name="ВедущиеВидыРасчета" id="86">
 									<CommandBarLocation>Top</CommandBarLocation>
@@ -3186,17 +3575,17 @@
 													<xr:Ref>StdPicture.CreateListItem</xr:Ref>
 													<xr:LoadTransparent>true</xr:LoadTransparent>
 												</Picture>
-												<ExtendedTooltip name="ВедущиеВидыРасчетаПодборВедущихExtendedTooltip" id="744"/>
+												<ExtendedTooltip name="ВедущиеВидыРасчетаПодборВедущихРасширеннаяПодсказка" id="744"/>
 											</Button>
 											<Button name="ВедущиеВидыРасчетаУдалить" id="281">
 												<Type>CommandBarButton</Type>
 												<OnlyInAllActions>true</OnlyInAllActions>
 												<CommandName>Form.Item.ВедущиеВидыРасчета.StandardCommand.Delete</CommandName>
-												<ExtendedTooltip name="ВедущиеВидыРасчетаУдалитьExtendedTooltip" id="745"/>
+												<ExtendedTooltip name="ВедущиеВидыРасчетаУдалитьРасширеннаяПодсказка" id="745"/>
 											</Button>
 										</ChildItems>
 									</AutoCommandBar>
-									<ExtendedTooltip name="ВедущиеВидыРасчетаExtendedTooltip" id="746"/>
+									<ExtendedTooltip name="ВедущиеВидыРасчетаРасширеннаяПодсказка" id="746"/>
 									<SearchStringAddition name="ВедущиеВидыРасчетаСтрокаПоиска" id="1066">
 										<AdditionSource>
 											<Item>ВедущиеВидыРасчета</Item>
@@ -3230,7 +3619,7 @@
 											<TitleLocation>None</TitleLocation>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ВедущиеВидыРасчетаВидРасчетаКонтекстноеМеню" id="90"/>
-											<ExtendedTooltip name="ВедущиеВидыРасчетаВидРасчетаExtendedTooltip" id="747"/>
+											<ExtendedTooltip name="ВедущиеВидыРасчетаВидРасчетаРасширеннаяПодсказка" id="747"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -3251,7 +3640,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаПослеExtendedTooltip" id="748"/>
+							<ExtendedTooltip name="ГруппаПослеРасширеннаяПодсказка" id="748"/>
 							<ChildItems>
 								<Table name="СписокРассчитываемыхПосле" id="324">
 									<Representation>List</Representation>
@@ -3282,16 +3671,16 @@
 													<xr:Ref>StdPicture.CreateListItem</xr:Ref>
 													<xr:LoadTransparent>true</xr:LoadTransparent>
 												</Picture>
-												<ExtendedTooltip name="СписокРассчитываемыхПослеПодборРассчитываемыхПослеExtendedTooltip" id="751"/>
+												<ExtendedTooltip name="СписокРассчитываемыхПослеПодборРассчитываемыхПослеРасширеннаяПодсказка" id="751"/>
 											</Button>
 											<Button name="СписокРассчитываемыхПослеУдалить" id="332">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Item.СписокРассчитываемыхПосле.StandardCommand.Delete</CommandName>
-												<ExtendedTooltip name="СписокРассчитываемыхПослеУдалитьExtendedTooltip" id="752"/>
+												<ExtendedTooltip name="СписокРассчитываемыхПослеУдалитьРасширеннаяПодсказка" id="752"/>
 											</Button>
 										</ChildItems>
 									</AutoCommandBar>
-									<ExtendedTooltip name="СписокРассчитываемыхПослеExtendedTooltip" id="753"/>
+									<ExtendedTooltip name="СписокРассчитываемыхПослеРасширеннаяПодсказка" id="753"/>
 									<SearchStringAddition name="СписокРассчитываемыхПослеСтрокаПоиска" id="1075">
 										<AdditionSource>
 											<Item>СписокРассчитываемыхПосле</Item>
@@ -3324,7 +3713,7 @@
 											<DataPath>СписокРассчитываемыхПосле.ВидРасчета</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СписокРассчитываемыхПослеВидРасчетаКонтекстноеМеню" id="328"/>
-											<ExtendedTooltip name="СписокРассчитываемыхПослеВидРасчетаExtendedTooltip" id="754"/>
+											<ExtendedTooltip name="СписокРассчитываемыхПослеВидРасчетаРасширеннаяПодсказка" id="754"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -3340,7 +3729,7 @@
 						</v8:item>
 					</Title>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
-					<ExtendedTooltip name="ПорядокРасчетаExtendedTooltip" id="755"/>
+					<ExtendedTooltip name="ПорядокРасчетаРасширеннаяПодсказка" id="755"/>
 					<ChildItems>
 						<UsualGroup name="ПриоритетГруппа" id="1224">
 							<Title>
@@ -3369,7 +3758,7 @@
 									</ToolTip>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="ПриоритетВышеГруппаExtendedTooltip" id="756"/>
+									<ExtendedTooltip name="ПриоритетВышеГруппаРасширеннаяПодсказка" id="756"/>
 									<ChildItems>
 										<Table name="ВытесняющиеВидыРасчета" id="398">
 											<Header>false</Header>
@@ -3395,16 +3784,16 @@
 													<Button name="ВытесняющиеВидыРасчетаПодборВытесняющих" id="416">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ПодборВытесняющих</CommandName>
-														<ExtendedTooltip name="ВытесняющиеВидыРасчетаПодборВытесняющихExtendedTooltip" id="758"/>
+														<ExtendedTooltip name="ВытесняющиеВидыРасчетаПодборВытесняющихРасширеннаяПодсказка" id="758"/>
 													</Button>
 													<Button name="ВытесняющиеВидыРасчетаУдалить" id="418">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Item.ВытесняющиеВидыРасчета.StandardCommand.Delete</CommandName>
-														<ExtendedTooltip name="ВытесняющиеВидыРасчетаУдалитьExtendedTooltip" id="759"/>
+														<ExtendedTooltip name="ВытесняющиеВидыРасчетаУдалитьРасширеннаяПодсказка" id="759"/>
 													</Button>
 												</ChildItems>
 											</AutoCommandBar>
-											<ExtendedTooltip name="ВытесняющиеВидыРасчетаExtendedTooltip" id="760"/>
+											<ExtendedTooltip name="ВытесняющиеВидыРасчетаРасширеннаяПодсказка" id="760"/>
 											<SearchStringAddition name="ВытесняющиеВидыРасчетаСтрокаПоиска" id="1084">
 												<AdditionSource>
 													<Item>ВытесняющиеВидыРасчета</Item>
@@ -3438,7 +3827,7 @@
 													<DataPath>Объект.DisplacingCalculationTypes.CalculationType</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ВытесняющиеВидыРасчетаВидРасчетаКонтекстноеМеню" id="402"/>
-													<ExtendedTooltip name="ВытесняющиеВидыРасчетаВидРасчетаExtendedTooltip" id="761"/>
+													<ExtendedTooltip name="ВытесняющиеВидыРасчетаВидРасчетаРасширеннаяПодсказка" id="761"/>
 													<Events>
 														<Event name="OnChange">ВытесняющиеВидыРасчетаВидРасчетаПриИзменении</Event>
 													</Events>
@@ -3462,7 +3851,7 @@
 									</ToolTip>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="ПриоритетНижеГруппаExtendedTooltip" id="762"/>
+									<ExtendedTooltip name="ПриоритетНижеГруппаРасширеннаяПодсказка" id="762"/>
 									<ChildItems>
 										<Table name="СписокПриоритетНиже" id="409">
 											<Representation>List</Representation>
@@ -3489,16 +3878,16 @@
 													<Button name="СписокПриоритетНижеПодборПриоритетНиже" id="417">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ПодборПриоритетНиже</CommandName>
-														<ExtendedTooltip name="СписокПриоритетНижеПодборПриоритетНижеExtendedTooltip" id="764"/>
+														<ExtendedTooltip name="СписокПриоритетНижеПодборПриоритетНижеРасширеннаяПодсказка" id="764"/>
 													</Button>
 													<Button name="СписокПриоритетНижеУдалить" id="419">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Item.СписокПриоритетНиже.StandardCommand.Delete</CommandName>
-														<ExtendedTooltip name="СписокПриоритетНижеУдалитьExtendedTooltip" id="765"/>
+														<ExtendedTooltip name="СписокПриоритетНижеУдалитьРасширеннаяПодсказка" id="765"/>
 													</Button>
 												</ChildItems>
 											</AutoCommandBar>
-											<ExtendedTooltip name="СписокПриоритетНижеExtendedTooltip" id="766"/>
+											<ExtendedTooltip name="СписокПриоритетНижеРасширеннаяПодсказка" id="766"/>
 											<SearchStringAddition name="СписокПриоритетНижеСтрокаПоиска" id="1093">
 												<AdditionSource>
 													<Item>СписокПриоритетНиже</Item>
@@ -3532,7 +3921,7 @@
 													<DataPath>СписокПриоритетНиже.ВидРасчета</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="СписокПриоритетНижеВидРасчетаКонтекстноеМеню" id="413"/>
-													<ExtendedTooltip name="СписокПриоритетНижеВидРасчетаExtendedTooltip" id="767"/>
+													<ExtendedTooltip name="СписокПриоритетНижеВидРасчетаРасширеннаяПодсказка" id="767"/>
 													<Events>
 														<Event name="OnChange">СписокПриоритетНижеВидРасчетаПриИзменении</Event>
 													</Events>
@@ -3603,13 +3992,13 @@
 					</ToolTip>
 					<Group>Horizontal</Group>
 					<ChildItemsWidth>Equal</ChildItemsWidth>
-					<ExtendedTooltip name="СреднийЗаработокExtendedTooltip" id="768"/>
+					<ExtendedTooltip name="СреднийЗаработокРасширеннаяПодсказка" id="768"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаСреднийЗаработокОбщий" id="296">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Расчет оплаты отпусков, командировок и др.</v8:content>
+									<v8:content>Расчет оплаты командировок и др.</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -3620,7 +4009,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаСреднийЗаработокОбщийExtendedTooltip" id="769"/>
+							<ExtendedTooltip name="ГруппаСреднийЗаработокОбщийРасширеннаяПодсказка" id="769"/>
 							<ChildItems>
 								<Pages name="СтраницыСреднийЗаработокОбщий" id="333">
 									<Title>
@@ -3636,7 +4025,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыСреднийЗаработокОбщийExtendedTooltip" id="770"/>
+									<ExtendedTooltip name="СтраницыСреднийЗаработокОбщийРасширеннаяПодсказка" id="770"/>
 									<ChildItems>
 										<Page name="СреднийЗаработокОбщийПорядокРасчетаЕдинственный" id="334">
 											<Title>
@@ -3651,7 +4040,7 @@
 													<v8:content>Средний заработок общий порядок расчета единственный</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СреднийЗаработокОбщийПорядокРасчетаЕдинственныйExtendedTooltip" id="771"/>
+											<ExtendedTooltip name="СреднийЗаработокОбщийПорядокРасчетаЕдинственныйРасширеннаяПодсказка" id="771"/>
 											<ChildItems>
 												<CheckBoxField name="СреднийЗаработокОбщийИспользовать" id="340">
 													<DataPath>СреднийЗаработокОбщийИспользовать</DataPath>
@@ -3665,13 +4054,13 @@
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Учитывать при расчете среднего заработка для целей оплаты отпусков, командировок и пр.</v8:content>
+															<v8:content>Установите, если результаты начисления учитываются при расчете среднего заработка для целей оплаты командировок и других случаев сохранения среднего заработка</v8:content>
 														</v8:item>
 													</ToolTip>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="СреднийЗаработокОбщийИспользоватьКонтекстноеМеню" id="341"/>
-													<ExtendedTooltip name="СреднийЗаработокОбщийИспользоватьExtendedTooltip" id="772"/>
+													<ExtendedTooltip name="СреднийЗаработокОбщийИспользоватьРасширеннаяПодсказка" id="772"/>
 													<Events>
 														<Event name="OnChange">СреднийЗаработокОбщийИспользоватьПриИзменении</Event>
 													</Events>
@@ -3735,10 +4124,65 @@
 																	<v8:content>В базу начислений входит как</v8:content>
 																</v8:item>
 															</Title>
+															<ListChoiceMode>true</ListChoiceMode>
 															<ChooseType>false</ChooseType>
 															<TextEdit>false</TextEdit>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Общий заработок</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеОбщий.EnumValue.ОбщийЗаработок</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Премия годовая (полугодовая, квартальная)</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеОбщий.EnumValue.ПремияГодовая</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Премия месячная, учитываемая пропорционально отработанному времени</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеОбщий.EnumValue.ПремияМесячнаяПропорциональноОтработанномуВремени</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Премия месячная, учитываемая полностью</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеОбщий.EnumValue.ПремияМесячная</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
 															<ContextMenu name="СреднийЗаработокОбщийЗначениеЕдинственныйКонтекстноеМеню" id="337"/>
-															<ExtendedTooltip name="СреднийЗаработокОбщийЗначениеЕдинственныйExtendedTooltip" id="773"/>
+															<ExtendedTooltip name="СреднийЗаработокОбщийЗначениеЕдинственныйРасширеннаяПодсказка" id="773"/>
 															<Events>
 																<Event name="OnChange">СреднийЗаработокОбщийЗначениеЕдинственныйПриИзменении</Event>
 																<Event name="Clearing">СреднийЗаработокОбщийЗначениеЕдинственныйОчистка</Event>
@@ -3746,6 +4190,7 @@
 														</InputField>
 														<CheckBoxField name="СреднийЗаработокОбщийИндексируетсяЕдинственный" id="338">
 															<DataPath>СреднийЗаработокОбщийИндексируется</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -3755,7 +4200,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="СреднийЗаработокОбщийИндексируетсяЕдинственныйКонтекстноеМеню" id="339"/>
-															<ExtendedTooltip name="СреднийЗаработокОбщийИндексируетсяЕдинственныйExtendedTooltip" id="774"/>
+															<ExtendedTooltip name="СреднийЗаработокОбщийИндексируетсяЕдинственныйРасширеннаяПодсказка" id="774"/>
 														</CheckBoxField>
 														<Pages name="НастройкиПремииСтраницы" id="486">
 															<Title>
@@ -3790,7 +4235,7 @@
 																	<ChildItems>
 																		<LabelDecoration name="ПустаяДекорация" id="488">
 																			<ContextMenu name="ПустаяДекорацияКонтекстноеМеню" id="489"/>
-																			<ExtendedTooltip name="ПустаяДекорацияExtendedTooltip" id="777"/>
+																			<ExtendedTooltip name="ПустаяДекорацияРасширеннаяПодсказка" id="777"/>
 																		</LabelDecoration>
 																	</ChildItems>
 																</Page>
@@ -3878,218 +4323,6 @@
 																						</RadioButtonField>
 																					</ChildItems>
 																				</Page>
-																				<Page name="ПериодРасчетаПремииНеГодоваяСтраница" id="1287">
-																					<Title>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Период расчета премии не годовая страница</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ToolTip>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Период расчета премии не годовая страница</v8:content>
-																						</v8:item>
-																					</ToolTip>
-																					<ExtendedTooltip name="ПериодРасчетаПремииНеГодоваяСтраницаРасширеннаяПодсказка" id="1288"/>
-																					<ChildItems>
-																						<RadioButtonField name="ПериодРасчетаПремииНеГодовая" id="1289">
-																							<DataPath>Объект.ПериодРасчетаБазовыхНачислений</DataPath>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Премия начисляется за</v8:content>
-																								</v8:item>
-																							</Title>
-																							<RadioButtonType>Auto</RadioButtonType>
-																							<ColumnsCount>1</ColumnsCount>
-																							<ChoiceList>
-																								<xr:Item>
-																									<xr:Presentation/>
-																									<xr:CheckState>0</xr:CheckState>
-																									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																										<Presentation>
-																											<v8:item>
-																												<v8:lang>ru</v8:lang>
-																												<v8:content>Текущий месяц</v8:content>
-																											</v8:item>
-																										</Presentation>
-																										<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ТекущийМесяц</Value>
-																									</xr:Value>
-																								</xr:Item>
-																								<xr:Item>
-																									<xr:Presentation/>
-																									<xr:CheckState>0</xr:CheckState>
-																									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																										<Presentation>
-																											<v8:item>
-																												<v8:lang>ru</v8:lang>
-																												<v8:content>Предыдущий месяц</v8:content>
-																											</v8:item>
-																										</Presentation>
-																										<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ПредыдущийМесяц</Value>
-																									</xr:Value>
-																								</xr:Item>
-																								<xr:Item>
-																									<xr:Presentation/>
-																									<xr:CheckState>0</xr:CheckState>
-																									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																										<Presentation>
-																											<v8:item>
-																												<v8:lang>ru</v8:lang>
-																												<v8:content>Текущий квартал</v8:content>
-																											</v8:item>
-																										</Presentation>
-																										<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ТекущийКвартал</Value>
-																									</xr:Value>
-																								</xr:Item>
-																								<xr:Item>
-																									<xr:Presentation/>
-																									<xr:CheckState>0</xr:CheckState>
-																									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																										<Presentation>
-																											<v8:item>
-																												<v8:lang>ru</v8:lang>
-																												<v8:content>Предыдущий квартал</v8:content>
-																											</v8:item>
-																										</Presentation>
-																										<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ПредыдущийКвартал</Value>
-																									</xr:Value>
-																								</xr:Item>
-																								<xr:Item>
-																									<xr:Presentation/>
-																									<xr:CheckState>0</xr:CheckState>
-																									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																										<Presentation>
-																											<v8:item>
-																												<v8:lang>ru</v8:lang>
-																												<v8:content>Несколько предыдущих месяцев</v8:content>
-																											</v8:item>
-																										</Presentation>
-																										<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.НесколькоПредыдущихМесяцев</Value>
-																									</xr:Value>
-																								</xr:Item>
-																							</ChoiceList>
-																							<ContextMenu name="ПериодРасчетаПремииНеГодоваяКонтекстноеМеню" id="1290"/>
-																							<ExtendedTooltip name="ПериодРасчетаПремииНеГодоваяРасширеннаяПодсказка" id="1291"/>
-																							<Events>
-																								<Event name="OnChange">ПериодРасчетаПремииНеГодоваяПриИзменении</Event>
-																							</Events>
-																						</RadioButtonField>
-																						<UsualGroup name="ПериодПремииСдвигГруппа" id="1372">
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Период премии сдвиг группа</v8:content>
-																								</v8:item>
-																							</Title>
-																							<ToolTip>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Период премии сдвиг группа</v8:content>
-																								</v8:item>
-																							</ToolTip>
-																							<Group>Horizontal</Group>
-																							<Representation>None</Representation>
-																							<ShowTitle>false</ShowTitle>
-																							<ExtendedTooltip name="ПериодПремииСдвигГруппаРасширеннаяПодсказка" id="1373"/>
-																							<ChildItems>
-																								<UsualGroup name="ДлительностьБазовогоПериодаПремииГруппа" id="478">
-																									<Title>
-																										<v8:item>
-																											<v8:lang>ru</v8:lang>
-																											<v8:content>Длительность базового периода</v8:content>
-																										</v8:item>
-																									</Title>
-																									<ToolTip>
-																										<v8:item>
-																											<v8:lang>ru</v8:lang>
-																											<v8:content>Длительность базового периода</v8:content>
-																										</v8:item>
-																									</ToolTip>
-																									<Group>Horizontal</Group>
-																									<Representation>None</Representation>
-																									<ShowTitle>false</ShowTitle>
-																									<ExtendedTooltip name="ДлительностьБазовогоПериодаПремииГруппаExtendedTooltip" id="779"/>
-																									<ChildItems>
-																										<InputField name="КоличествоМесяцевБазовогоПериодаПремии" id="479">
-																											<DataPath>Объект.КоличествоМесяцевБазовогоПериода</DataPath>
-																											<Title>
-																												<v8:item>
-																													<v8:lang>ru</v8:lang>
-																													<v8:content>Премия начисляется за</v8:content>
-																												</v8:item>
-																											</Title>
-																											<ToolTip>
-																												<v8:item>
-																													<v8:lang>ru</v8:lang>
-																													<v8:content>мес.</v8:content>
-																												</v8:item>
-																											</ToolTip>
-																											<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
-																											<SpinButton>true</SpinButton>
-																											<EditFormat>
-																												<v8:item>
-																													<v8:lang>ru</v8:lang>
-																													<v8:content>ЧН=-</v8:content>
-																												</v8:item>
-																											</EditFormat>
-																											<ContextMenu name="КоличествоМесяцевБазовогоПериодаПремииКонтекстноеМеню" id="480"/>
-																											<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаПремииExtendedTooltip" id="780"/>
-																											<Events>
-																												<Event name="OnChange">КоличествоМесяцевБазовогоПериодаПремииПриИзменении</Event>
-																											</Events>
-																										</InputField>
-																									</ChildItems>
-																								</UsualGroup>
-																								<UsualGroup name="СдвигБазовогоПериодаПремииГруппа" id="1313">
-																									<Title>
-																										<v8:item>
-																											<v8:lang>ru</v8:lang>
-																											<v8:content>Сдвиг базового периода премии группа</v8:content>
-																										</v8:item>
-																									</Title>
-																									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-																									<Group>Horizontal</Group>
-																									<Representation>None</Representation>
-																									<ShowTitle>false</ShowTitle>
-																									<ExtendedTooltip name="СдвигБазовогоПериодаПремииГруппаРасширеннаяПодсказка" id="1314"/>
-																									<ChildItems>
-																										<InputField name="СдвигБазовогоПериодаПремии" id="1315">
-																											<DataPath>Объект.СдвигБазовогоПериода</DataPath>
-																											<Title>
-																												<v8:item>
-																													<v8:lang>ru</v8:lang>
-																													<v8:content>Сдвиг баз. периода</v8:content>
-																												</v8:item>
-																											</Title>
-																											<ToolTip>
-																												<v8:item>
-																													<v8:lang>ru</v8:lang>
-																													<v8:content>мес.</v8:content>
-																												</v8:item>
-																											</ToolTip>
-																											<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
-																											<SpinButton>true</SpinButton>
-																											<EditFormat>
-																												<v8:item>
-																													<v8:lang>ru</v8:lang>
-																													<v8:content>ЧН=-</v8:content>
-																												</v8:item>
-																											</EditFormat>
-																											<MinValue xsi:type="xs:decimal">1</MinValue>
-																											<ContextMenu name="СдвигБазовогоПериодаПремииКонтекстноеМеню" id="1316"/>
-																											<ExtendedTooltip name="СдвигБазовогоПериодаПремииРасширеннаяПодсказка" id="1317"/>
-																											<Events>
-																												<Event name="OnChange">СдвигБазовогоПериодаПремииПриИзменении</Event>
-																											</Events>
-																										</InputField>
-																									</ChildItems>
-																								</UsualGroup>
-																							</ChildItems>
-																						</UsualGroup>
-																					</ChildItems>
-																				</Page>
 																			</ChildItems>
 																		</Pages>
 																	</ChildItems>
@@ -4113,7 +4346,7 @@
 													<v8:content>Средний заработок общий порядок расчета множественный</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СреднийЗаработокОбщийПорядокРасчетаМножественныйExtendedTooltip" id="783"/>
+											<ExtendedTooltip name="СреднийЗаработокОбщийПорядокРасчетаМножественныйРасширеннаяПодсказка" id="783"/>
 											<ChildItems>
 												<Table name="СреднийЗаработокОбщий" id="353">
 													<Representation>List</Representation>
@@ -4145,7 +4378,7 @@
 													<RowFilter xsi:nil="true"/>
 													<ContextMenu name="СреднийЗаработокОбщийКонтекстноеМеню" id="354"/>
 													<AutoCommandBar name="СреднийЗаработокОбщийКоманднаяПанель" id="355"/>
-													<ExtendedTooltip name="СреднийЗаработокОбщийExtendedTooltip" id="784"/>
+													<ExtendedTooltip name="СреднийЗаработокОбщийРасширеннаяПодсказка" id="784"/>
 													<SearchStringAddition name="СреднийЗаработокОбщийСтрокаПоиска" id="1102">
 														<AdditionSource>
 															<Item>СреднийЗаработокОбщий</Item>
@@ -4176,7 +4409,7 @@
 															<ReadOnly>true</ReadOnly>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="СреднийЗаработокОбщийПорядокРасчетаКонтекстноеМеню" id="357"/>
-															<ExtendedTooltip name="СреднийЗаработокОбщийПорядокРасчетаExtendedTooltip" id="785"/>
+															<ExtendedTooltip name="СреднийЗаработокОбщийПорядокРасчетаРасширеннаяПодсказка" id="785"/>
 														</InputField>
 														<InputField name="СреднийЗаработокОбщийЗначение" id="358">
 															<DataPath>СреднийЗаработокОбщий.Значение</DataPath>
@@ -4240,7 +4473,7 @@
 																</xr:Item>
 															</ChoiceList>
 															<ContextMenu name="СреднийЗаработокОбщийЗначениеКонтекстноеМеню" id="359"/>
-															<ExtendedTooltip name="СреднийЗаработокОбщийЗначениеExtendedTooltip" id="786"/>
+															<ExtendedTooltip name="СреднийЗаработокОбщийЗначениеРасширеннаяПодсказка" id="786"/>
 															<Events>
 																<Event name="OnChange">СреднийЗаработокОбщийЗначениеПриИзменении</Event>
 																<Event name="Clearing">СреднийЗаработокОбщийЗначениеОчистка</Event>
@@ -4251,7 +4484,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="СреднийЗаработокОбщийИндексируетсяКонтекстноеМеню" id="361"/>
-															<ExtendedTooltip name="СреднийЗаработокОбщийИндексируетсяExtendedTooltip" id="787"/>
+															<ExtendedTooltip name="СреднийЗаработокОбщийИндексируетсяРасширеннаяПодсказка" id="787"/>
 														</CheckBoxField>
 													</ChildItems>
 												</Table>
@@ -4276,7 +4509,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаСреднийЗаработокФССExtendedTooltip" id="791"/>
+							<ExtendedTooltip name="ГруппаСреднийЗаработокФССРасширеннаяПодсказка" id="791"/>
 							<ChildItems>
 								<Pages name="СтраницыСреднийЗаработокФСС" id="606">
 									<Title>
@@ -4292,7 +4525,7 @@
 										</v8:item>
 									</ToolTip>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыСреднийЗаработокФССExtendedTooltip" id="792"/>
+									<ExtendedTooltip name="СтраницыСреднийЗаработокФССРасширеннаяПодсказка" id="792"/>
 									<ChildItems>
 										<Page name="СреднийЗаработокФССПорядокРасчетаЕдинственный" id="607">
 											<Title>
@@ -4307,28 +4540,89 @@
 													<v8:content>Средний заработок ФССПорядок расчета единственный</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СреднийЗаработокФССПорядокРасчетаЕдинственныйExtendedTooltip" id="793"/>
+											<ExtendedTooltip name="СреднийЗаработокФССПорядокРасчетаЕдинственныйРасширеннаяПодсказка" id="793"/>
 											<ChildItems>
 												<CheckBoxField name="СреднийЗаработокФССИспользовать" id="609">
 													<DataPath>СреднийЗаработокФССИспользовать</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Учитывать при расчете среднего заработка, по правилам для событий, произошедших в течение 2010 года</v8:content>
+															<v8:content>Включать в базу начислений при расчете среднего заработка</v8:content>
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Также учитывается при расчете среднего заработка для целей оплаты больничных и других пособий за счет ФСС по правилам для событий, произошедших после 1 января 2011 года</v8:content>
+															<v8:content>Установите, если результаты начисления учитываются при расчете среднего заработка для целей оплаты больничных листов</v8:content>
 														</v8:item>
 													</ToolTip>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="СреднийЗаработокФССИспользоватьКонтекстноеМеню" id="610"/>
-													<ExtendedTooltip name="СреднийЗаработокФССИспользоватьExtendedTooltip" id="794"/>
+													<ExtendedTooltip name="СреднийЗаработокФССИспользоватьРасширеннаяПодсказка" id="794"/>
+													<Events>
+														<Event name="OnChange">СреднийЗаработокФССИспользоватьПриИзменении</Event>
+													</Events>
 												</CheckBoxField>
+												<InputField name="СреднийЗаработокФССЗначениеЕдинственный" id="1446">
+													<DataPath>СреднийЗаработокФССЗначение</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В базу начислений входит как</v8:content>
+														</v8:item>
+													</Title>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ChooseType>false</ChooseType>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Общий заработок</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеФСС.EnumValue.ОбщийЗаработок</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Премия месячная (полугодовая, квартальная)</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеФСС.EnumValue.ПремияМесячная</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Премия годовая</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеФСС.EnumValue.ПремияГодовая</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="СреднийЗаработокФССЗначениеЕдинственныйКонтекстноеМеню" id="1447"/>
+													<ExtendedTooltip name="СреднийЗаработокФССЗначениеЕдинственныйРасширеннаяПодсказка" id="1448"/>
+													<Events>
+														<Event name="OnChange">СреднийЗаработокОщийЗначениеЕдинственныйПриИзменении</Event>
+													</Events>
+												</InputField>
 											</ChildItems>
 										</Page>
 										<Page name="СреднийЗаработокФССПорядокРасчетаМножественный" id="608">
@@ -4344,7 +4638,7 @@
 													<v8:content>Средний заработок ФССПорядок расчета множественный</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СреднийЗаработокФССПорядокРасчетаМножественныйExtendedTooltip" id="795"/>
+											<ExtendedTooltip name="СреднийЗаработокФССПорядокРасчетаМножественныйРасширеннаяПодсказка" id="795"/>
 											<ChildItems>
 												<Table name="СреднийЗаработокФСС" id="611">
 													<Representation>List</Representation>
@@ -4358,28 +4652,26 @@
 													<VerticalLines>false</VerticalLines>
 													<AutoInsertNewRow>true</AutoInsertNewRow>
 													<DataPath>СреднийЗаработокФСС</DataPath>
-													<RowPictureDataPath>СреднийЗаработокФСС.Picture</RowPictureDataPath>
+													<RowPictureDataPath>СреднийЗаработокФСС.Индексируется</RowPictureDataPath>
 													<CommandSet>
 														<ExcludedCommand>Add</ExcludedCommand>
 														<ExcludedCommand>Change</ExcludedCommand>
-														<ExcludedCommand>CheckAll</ExcludedCommand>
 														<ExcludedCommand>Copy</ExcludedCommand>
 														<ExcludedCommand>CopyToClipboard</ExcludedCommand>
 														<ExcludedCommand>Delete</ExcludedCommand>
 														<ExcludedCommand>EndEdit</ExcludedCommand>
 														<ExcludedCommand>MoveDown</ExcludedCommand>
 														<ExcludedCommand>MoveUp</ExcludedCommand>
-														<ExcludedCommand>Pickup</ExcludedCommand>
 														<ExcludedCommand>SortListAsc</ExcludedCommand>
 														<ExcludedCommand>SortListDesc</ExcludedCommand>
-														<ExcludedCommand>UncheckAll</ExcludedCommand>
 													</CommandSet>
 													<SearchStringLocation>None</SearchStringLocation>
 													<ViewStatusLocation>None</ViewStatusLocation>
 													<SearchControlLocation>None</SearchControlLocation>
+													<RowFilter xsi:nil="true"/>
 													<ContextMenu name="СреднийЗаработокФССКонтекстноеМеню" id="612"/>
 													<AutoCommandBar name="СреднийЗаработокФССКоманднаяПанель" id="613"/>
-													<ExtendedTooltip name="СреднийЗаработокФССExtendedTooltip" id="796"/>
+													<ExtendedTooltip name="СреднийЗаработокФССРасширеннаяПодсказка" id="796"/>
 													<SearchStringAddition name="СреднийЗаработокФСССтрокаПоиска" id="1111">
 														<AdditionSource>
 															<Item>СреднийЗаработокФСС</Item>
@@ -4405,19 +4697,542 @@
 														<ExtendedTooltip name="СреднийЗаработокФССУправлениеПоискомРасширеннаяПодсказка" id="1119"/>
 													</SearchControlAddition>
 													<ChildItems>
-														<CheckBoxField name="СреднийЗаработокФССПометка" id="616">
-															<DataPath>СреднийЗаработокФСС.Check</DataPath>
+														<InputField name="СреднийЗаработокФССПометка" id="616">
+															<DataPath>СреднийЗаработокФСС.Значение</DataPath>
 															<EditMode>EnterOnInput</EditMode>
-															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="СреднийЗаработокФССПометкаКонтекстноеМеню" id="617"/>
-															<ExtendedTooltip name="СреднийЗаработокФССПометкаExtendedTooltip" id="797"/>
-														</CheckBoxField>
+															<ExtendedTooltip name="СреднийЗаработокФССПометкаРасширеннаяПодсказка" id="797"/>
+														</InputField>
 														<InputField name="СреднийЗаработокФССЗначение" id="614">
-															<DataPath>СреднийЗаработокФСС.Value</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="СреднийЗаработокФССЗначениеКонтекстноеМеню" id="615"/>
-															<ExtendedTooltip name="СреднийЗаработокФССЗначениеExtendedTooltip" id="798"/>
+															<ExtendedTooltip name="СреднийЗаработокФССЗначениеРасширеннаяПодсказка" id="798"/>
 														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+										<Page name="ПериодРасчетаПремииНеГодоваяСтраница" id="1287">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период расчета премии не годовая страница</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период расчета премии не годовая страница</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ПериодРасчетаПремииНеГодоваяСтраницаРасширеннаяПодсказка" id="1288"/>
+											<ChildItems>
+												<RadioButtonField name="ПериодРасчетаПремииНеГодовая" id="1289">
+													<DataPath>Объект.ПериодРасчетаБазовыхНачислений</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Премия начисляется за</v8:content>
+														</v8:item>
+													</Title>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Текущий месяц</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ТекущийМесяц</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Предыдущий месяц</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ПредыдущийМесяц</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Текущий квартал</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ТекущийКвартал</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Предыдущий квартал</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ПредыдущийКвартал</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Несколько предыдущих месяцев</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.НесколькоПредыдущихМесяцев</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ПериодРасчетаПремииНеГодоваяКонтекстноеМеню" id="1290"/>
+													<ExtendedTooltip name="ПериодРасчетаПремииНеГодоваяРасширеннаяПодсказка" id="1291"/>
+													<Events>
+														<Event name="OnChange">ПериодРасчетаПремииНеГодоваяПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<UsualGroup name="ПериодПремииСдвигГруппа" id="1372">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Период премии сдвиг группа</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Период премии сдвиг группа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПериодПремииСдвигГруппаРасширеннаяПодсказка" id="1373"/>
+													<ChildItems>
+														<UsualGroup name="ДлительностьБазовогоПериодаПремииГруппа" id="478">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Длительность базового периода</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Длительность базового периода</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ДлительностьБазовогоПериодаПремииГруппаРасширеннаяПодсказка" id="779"/>
+															<ChildItems>
+																<InputField name="КоличествоМесяцевБазовогоПериодаПремии" id="479">
+																	<DataPath>Объект.КоличествоМесяцевБазовогоПериода</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Премия начисляется за</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>мес.</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+																	<SpinButton>true</SpinButton>
+																	<EditFormat>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ЧН=-</v8:content>
+																		</v8:item>
+																	</EditFormat>
+																	<ContextMenu name="КоличествоМесяцевБазовогоПериодаПремииКонтекстноеМеню" id="480"/>
+																	<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаПремииРасширеннаяПодсказка" id="780"/>
+																	<Events>
+																		<Event name="OnChange">КоличествоМесяцевБазовогоПериодаПремииПриИзменении</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="СдвигБазовогоПериодаПремииГруппа" id="1313">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сдвиг базового периода премии группа</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="СдвигБазовогоПериодаПремииГруппаРасширеннаяПодсказка" id="1314"/>
+															<ChildItems>
+																<InputField name="СдвигБазовогоПериодаПремии" id="1315">
+																	<DataPath>Объект.СдвигБазовогоПериода</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Сдвиг баз. периода</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>мес.</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+																	<SpinButton>true</SpinButton>
+																	<EditFormat>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ЧН=-</v8:content>
+																		</v8:item>
+																	</EditFormat>
+																	<MinValue xsi:type="xs:decimal">1</MinValue>
+																	<ContextMenu name="СдвигБазовогоПериодаПремииКонтекстноеМеню" id="1316"/>
+																	<ExtendedTooltip name="СдвигБазовогоПериодаПремииРасширеннаяПодсказка" id="1317"/>
+																	<Events>
+																		<Event name="OnChange">СдвигБазовогоПериодаПремииПриИзменении</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСреднийЗаработокОтпуск" id="1449">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расчет оплаты отпусков.</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использование при расчете среднего заработка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСреднийЗаработокОтпускРасширеннаяПодсказка" id="1450"/>
+							<ChildItems>
+								<Pages name="СтраницыСреднийЗаработокОтпуск" id="1451">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы средний заработок отпуск</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы средний заработок общий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыСреднийЗаработокОтпускРасширеннаяПодсказка" id="1452"/>
+									<ChildItems>
+										<Page name="СреднийЗаработокОтпускПорядокРасчетаЕдинственный" id="1453">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Средний заработок отпуск порядок расчета единственный</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Средний заработок общий порядок расчета единственный</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СреднийЗаработокОтпускПорядокРасчетаЕдинственныйРасширеннаяПодсказка" id="1454"/>
+											<ChildItems>
+												<CheckBoxField name="СреднийЗаработокОтпускИспользовать" id="1455">
+													<DataPath>СреднийЗаработокОтпускИспользовать</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Включать в базу начислений при расчете среднего заработка</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установите, если результаты начисления учитываются при расчете среднего заработка для целей оплаты отпуска</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СреднийЗаработокОтпускИспользоватьКонтекстноеМеню" id="1456"/>
+													<ExtendedTooltip name="СреднийЗаработокОтпускИспользоватьРасширеннаяПодсказка" id="1457"/>
+													<Events>
+														<Event name="OnChange">СреднийЗаработокОтпускИспользоватьПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<InputField name="СреднийЗаработокОтпускЗначениеЕдинственный" id="1505">
+													<DataPath>СреднийЗаработокОтпускЗначение</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В базу начислений входит как</v8:content>
+														</v8:item>
+													</Title>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ChooseType>false</ChooseType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Общий заработок</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеОтпуск.EnumValue.ОбщийЗаработок</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Годовая премия</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.УчетНачисленийВСреднемЗаработкеОтпуск.EnumValue.ПремияГодовая</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="СреднийЗаработокОтпускЗначениеЕдинственныйКонтекстноеМеню" id="1506"/>
+													<ExtendedTooltip name="СреднийЗаработокОтпускЗначениеЕдинственныйРасширеннаяПодсказка" id="1507"/>
+												</InputField>
+												<Pages name="КоличествоМесяцевПремииОтпускСтраницы" id="1461">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Количество месяцев премии страницы</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Количество месяцев премии страницы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="КоличествоМесяцевПремииОтпускСтраницыРасширеннаяПодсказка" id="1462"/>
+													<ChildItems>
+														<Page name="КоличествоМесяцевПремииОтпускВидимостьЛожь" id="1463">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Количество месяцев премии видимость ложь</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Количество месяцев премии видимость ложь</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="КоличествоМесяцевПремииОтпускВидимостьЛожьРасширеннаяПодсказка" id="1464"/>
+															<ChildItems>
+																<LabelDecoration name="ПустаяДекорация2" id="1465">
+																	<ContextMenu name="ПустаяДекорация2КонтекстноеМеню" id="1466"/>
+																	<ExtendedTooltip name="ПустаяДекорация2РасширеннаяПодсказка" id="1467"/>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+														<Page name="КоличествоМесяцевПремииОтпускВидимостьИстина" id="1468">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Количество месяцев премии видимость истина</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Количество месяцев премии видимость истина</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="КоличествоМесяцевПремииОтпускВидимостьИстинаРасширеннаяПодсказка" id="1469"/>
+															<ChildItems>
+																<UsualGroup name="ДлительностьБазовогоПериодаПремииОтпускГруппа" id="1470">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Длительность базового периода</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Длительность базового периода</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ДлительностьБазовогоПериодаПремииОтпускГруппаРасширеннаяПодсказка" id="1471"/>
+																	<ChildItems>
+																		<InputField name="КоличествоМесяцевБазовогоПериодаОтпускПремии" id="1472">
+																			<DataPath>Объект.КоличествоМесяцевБазовогоПериода</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Премия начисляется за</v8:content>
+																				</v8:item>
+																			</Title>
+																			<SpinButton>true</SpinButton>
+																			<EditFormat>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>ЧН=-</v8:content>
+																				</v8:item>
+																			</EditFormat>
+																			<ContextMenu name="КоличествоМесяцевБазовогоПериодаОтпускПремииКонтекстноеМеню" id="1473"/>
+																			<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаОтпускПремииРасширеннаяПодсказка" id="1474"/>
+																			<Events>
+																				<Event name="OnChange">КоличествоМесяцевБазовогоПериодаПремииПриИзменении</Event>
+																			</Events>
+																		</InputField>
+																		<LabelDecoration name="КоличествоМесяцевБазовогоПериодаПремииОтпсукПодпись" id="1475">
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>мес.</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ContextMenu name="КоличествоМесяцевБазовогоПериодаПремииОтпсукПодписьКонтекстноеМеню" id="1476"/>
+																			<ExtendedTooltip name="КоличествоМесяцевБазовогоПериодаПремииОтпсукПодписьРасширеннаяПодсказка" id="1477"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+																<LabelField name="ДлительностьБазовогоПериодаПремииОтпускИнформационныйТекст" id="1478">
+																	<DataPath>ДлительностьБазовогоПериодаПремииИнформационныйТекст</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<TextColor>style:ПоясняющийТекст</TextColor>
+																	<ContextMenu name="ДлительностьБазовогоПериодаПремииОтпускИнформационныйТекстКонтекстноеМеню" id="1479"/>
+																	<ExtendedTooltip name="ДлительностьБазовогоПериодаПремииОтпускИнформационныйТекстРасширеннаяПодсказка" id="1480"/>
+																</LabelField>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+											</ChildItems>
+										</Page>
+										<Page name="СреднийЗаработокОтпускПорядокРасчетаМножественный" id="1481">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Средний заработок отпуск порядок расчета множественный</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Средний заработок общий порядок расчета множественный</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СреднийЗаработокОтпускПорядокРасчетаМножественныйРасширеннаяПодсказка" id="1482"/>
+											<ChildItems>
+												<Table name="СреднийЗаработокОтпуск" id="1483">
+													<Representation>List</Representation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>УчитываетсяВСтатистике</DataPath>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="СреднийЗаработокОтпускКонтекстноеМеню" id="1484"/>
+													<AutoCommandBar name="СреднийЗаработокОтпускКоманднаяПанель" id="1485"/>
+													<ExtendedTooltip name="СреднийЗаработокОтпускРасширеннаяПодсказка" id="1486"/>
+													<SearchStringAddition name="СреднийЗаработокОтпускСтрокаПоиска" id="1487">
+														<AdditionSource>
+															<Item>СреднийЗаработокОтпуск</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СреднийЗаработокОтпускСтрокаПоискаКонтекстноеМеню" id="1488"/>
+														<ExtendedTooltip name="СреднийЗаработокОтпускСтрокаПоискаРасширеннаяПодсказка" id="1489"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="СреднийЗаработокОтпускСостояниеПросмотра" id="1490">
+														<AdditionSource>
+															<Item>СреднийЗаработокОтпуск</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СреднийЗаработокОтпускСостояниеПросмотраКонтекстноеМеню" id="1491"/>
+														<ExtendedTooltip name="СреднийЗаработокОтпускСостояниеПросмотраРасширеннаяПодсказка" id="1492"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="СреднийЗаработокОтпускУправлениеПоиском" id="1493">
+														<AdditionSource>
+															<Item>СреднийЗаработокОтпуск</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="СреднийЗаработокОтпускУправлениеПоискомКонтекстноеМеню" id="1494"/>
+														<ExtendedTooltip name="СреднийЗаработокОтпускУправлениеПоискомРасширеннаяПодсказка" id="1495"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="СреднийЗаработокОтпускПорядокРасчета" id="1496">
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СреднийЗаработокОтпускПорядокРасчетаКонтекстноеМеню" id="1497"/>
+															<ExtendedTooltip name="СреднийЗаработокОтпускПорядокРасчетаРасширеннаяПодсказка" id="1498"/>
+														</InputField>
+														<InputField name="СреднийЗаработокОтпускЗначение" id="1499">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Включать в базу как</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СреднийЗаработокОтпускЗначениеКонтекстноеМеню" id="1500"/>
+															<ExtendedTooltip name="СреднийЗаработокОтпускЗначениеРасширеннаяПодсказка" id="1501"/>
+														</InputField>
+														<CheckBoxField name="СреднийЗаработокОтпускИндексируется" id="1502">
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="СреднийЗаработокОтпускИндексируетсяКонтекстноеМеню" id="1503"/>
+															<ExtendedTooltip name="СреднийЗаработокОтпускИндексируетсяРасширеннаяПодсказка" id="1504"/>
+														</CheckBoxField>
 													</ChildItems>
 												</Table>
 											</ChildItems>
@@ -4441,7 +5256,7 @@
 							<v8:content>Налоговый и бухгалтерский учет</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="НалоговыйИБухгалтерскийУчетExtendedTooltip" id="802"/>
+					<ExtendedTooltip name="НалоговыйИБухгалтерскийУчетРасширеннаяПодсказка" id="802"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаХарактеристики" id="22">
 							<Title>
@@ -4454,7 +5269,7 @@
 							<Representation>None</Representation>
 							<ChildItemsWidth>Equal</ChildItemsWidth>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаХарактеристикиExtendedTooltip" id="803"/>
+							<ExtendedTooltip name="ГруппаХарактеристикиРасширеннаяПодсказка" id="803"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаНалогиИВзносы" id="23">
 									<Title>
@@ -4466,13 +5281,13 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаНалогиИВзносыExtendedTooltip" id="804"/>
+									<ExtendedTooltip name="ГруппаНалогиИВзносыРасширеннаяПодсказка" id="804"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаНДФЛ" id="1150">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>НДФЛ</v8:content>
+													<v8:content>Подоходный налог</v8:content>
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
@@ -4587,7 +5402,7 @@
 													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="КодДоходаСтраховыеВзносыКонтекстноеМеню" id="1166"/>
-													<ExtendedTooltip name="КодДоходаСтраховыеВзносыExtendedTooltip" id="1167"/>
+													<ExtendedTooltip name="КодДоходаСтраховыеВзносыРасширеннаяПодсказка" id="1167"/>
 													<Events>
 														<Event name="OnChange">КодДоходаСтраховыеВзносыПриИзменении</Event>
 													</Events>
@@ -4619,7 +5434,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Налог на прибыль, вид расхода по ст. 255 НК РФ</v8:content>
+													<v8:content>Налог на прибыль, вид расхода</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
@@ -4714,8 +5529,297 @@
 															<EditMode>EnterOnInput</EditMode>
 															<Width>15</Width>
 															<HorizontalStretch>false</HorizontalStretch>
+															<ListChoiceMode>true</ListChoiceMode>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Повременно-премиальная оплата труда</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп1ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Сдельно-премиальная оплата труда</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп2ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Премии, включаемые в основную заработную плату</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп3ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Доплаты за выполнение служебных обязанностей</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп4ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Надбавки за выполнение служебных обязанностей</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп5ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Доплата за сверхурочное время</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп6ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Доплата за вечерние и ночные часы</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп7ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Надбавки за выслугу лет</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп8ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Годовая премия по результатам работы</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп9ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Оплаты по среднему заработку</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп10ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Оплата простоев</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп12_1ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Оплата льготных часов подросткам, кормящим матерям</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп13ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Договоры на выполнение работ</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп14ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Оплата отпуска текущего периода</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп15ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Оплата отпуска будущего периода</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп16ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Учебный отпуск</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп17ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Компенсация неиспользованного отпуска</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп18ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Компенсация отпуска при увольнении</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп19ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Пособия по временной нетрудоспособности</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп20ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Пособия (выплаты) из ФСЗН</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп21ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Выплаты из прибыли</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп22ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Прочие выплаты</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xr:DesignTimeRef">Enum.ВидыНачисленийОплатыТрудаДляНУ.EnumValue.пп23ст255</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
 															<ContextMenu name="ВидНачисленияДляНУКонтекстноеМеню" id="1179"/>
-															<ExtendedTooltip name="ВидНачисленияДляНУExtendedTooltip" id="1180"/>
+															<ExtendedTooltip name="ВидНачисленияДляНУРасширеннаяПодсказка" id="1180"/>
 															<Events>
 																<Event name="OnChange">ВидНачисленияДляНУПриИзменении</Event>
 															</Events>
@@ -4728,7 +5832,7 @@
 													<Height>10</Height>
 													<TextColor>style:ПоясняющийТекст</TextColor>
 													<ContextMenu name="ПредставлениеВидаНачисленияПоНКРФКонтекстноеМеню" id="1182"/>
-													<ExtendedTooltip name="ПредставлениеВидаНачисленияПоНКРФExtendedTooltip" id="1183"/>
+													<ExtendedTooltip name="ПредставлениеВидаНачисленияПоНКРФРасширеннаяПодсказка" id="1183"/>
 												</LabelField>
 											</ChildItems>
 										</UsualGroup>
@@ -4753,6 +5857,7 @@
 									<ExtendedTooltip name="ГруппаОтражениеВБухучетеИСтатистикаРасширеннаяПодсказка" id="1319"/>
 									<ChildItems>
 										<UsualGroup name="СтатистическаяОтчетность" id="1320">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -4994,7 +6099,7 @@
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Отражение в бухгалтерском учете длорфыва </v8:content>
+																					<v8:content>Отражение в бухгалтерском учете </v8:content>
 																				</v8:item>
 																			</Title>
 																			<ExtendedTooltip name="ОтражениеВБухучетеНетБазыРасширеннаяПодсказка" id="827"/>
@@ -5289,10 +6394,11 @@
 																		</v8:item>
 																	</InputHint>
 																	<ContextMenu name="СпособОтраженияЗарплатыВБухучетеКонтекстноеМеню" id="319"/>
-																	<ExtendedTooltip name="СпособОтраженияЗарплатыВБухучетеExtendedTooltip" id="809"/>
+																	<ExtendedTooltip name="СпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка" id="809"/>
 																</InputField>
 																<InputField name="ОтношениеКЕНВД" id="320">
 																	<DataPath>Объект.ОтношениеКЕНВД</DataPath>
+																	<Visible>false</Visible>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -5306,7 +6412,7 @@
 																		</v8:item>
 																	</InputHint>
 																	<ContextMenu name="ОтношениеКЕНВДКонтекстноеМеню" id="321"/>
-																	<ExtendedTooltip name="ОтношениеКЕНВДExtendedTooltip" id="810"/>
+																	<ExtendedTooltip name="ОтношениеКЕНВДРасширеннаяПодсказка" id="810"/>
 																</InputField>
 															</ChildItems>
 														</Page>
@@ -5490,7 +6596,7 @@
 							<v8:content>Дополнительно</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="1298"/>
+					<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="1298"/>
 				</Page>
 			</ChildItems>
 		</Pages>
@@ -5763,9 +6869,44 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
+				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ПорядокРасчета" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок расчета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПорядокРасчетаСреднегоЗаработкаФСС</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.УчетНачисленийВСреднемЗаработкеФСС</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Индексируется" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индексируется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<Attribute name="СреднийЗаработокОбщий" id="28">
 			<Title>
@@ -6427,6 +7568,124 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ВидыИспользованияРабочегоВремени</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СреднийЗаработокОтпускЗначение" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок отпуск значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.УчетНачисленийВСреднемЗаработкеОтпуск</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СреднийЗаработокФССЗначение" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок ФСЗН значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.УчетНачисленийВСреднемЗаработкеФСС</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СреднийЗаработокОтпускИспользовать" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок отпуск использовать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СреднийЗаработокФССДоступностьПоКатегории" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок ФСЗН доступность по категории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СреднийЗаработокОтпуск" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок опуск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ПорядокРасчета" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок расчета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПорядокРасчетаСреднегоЗаработкаОтпуск</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.УчетНачисленийВСреднемЗаработкеОтпуск</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Индексируется" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индексируется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<FunctionalOptions>
+						<Item>FunctionalOption.ИспользоватьИндексациюЗаработка</Item>
+					</FunctionalOptions>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СреднийЗаработокОтпускДоступностьПоКатегории" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок Отпуск доступность по категории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СреднийЗаработокОтпускМножественныйВвод" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний заработок отпуск множественный ввод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

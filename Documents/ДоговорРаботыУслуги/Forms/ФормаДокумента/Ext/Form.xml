@@ -426,19 +426,6 @@
 												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыОплатыПоДоговоруГПХ.EnumValue.ПоАктамВыполненныхРабот</Value>
 											</xr:Value>
 										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>в конце срока с ежемесячными авансовыми платежами</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыОплатыПоДоговоруГПХ.EnumValue.ВКонцеСрокаСАвансовымиПлатежами</Value>
-											</xr:Value>
-										</xr:Item>
 									</ChoiceList>
 									<ContextMenu name="ВариантОплатыКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ВариантОплатыExtendedTooltip" id="91"/>
@@ -448,11 +435,19 @@
 								</RadioButtonField>
 								<InputField name="РазмерПлатежа" id="168">
 									<DataPath>Объект.РазмерПлатежа</DataPath>
+									<Visible>false</Visible>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
 									<ContextMenu name="РазмерПлатежаКонтекстноеМеню" id="169"/>
 									<ExtendedTooltip name="РазмерПлатежаРасширеннаяПодсказка" id="170"/>
 								</InputField>
 								<CheckBoxField name="ОблагаетсяФСС_НС" id="293">
 									<DataPath>Объект.ОблагаетсяФСС_НС</DataPath>
+									<Visible>false</Visible>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОблагаетсяФСС_НСКонтекстноеМеню" id="294"/>

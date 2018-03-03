@@ -142,6 +142,7 @@
 					<ExtendedTooltip name="СтраховыеВзносыГруппаExtendedTooltip" id="152"/>
 					<ChildItems>
 						<UsualGroup name="ПФРГруппа" id="94">
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -234,6 +235,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ОМС_ФССГруппа" id="122">
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -311,6 +313,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ЕНВДГруппа" id="121">
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -402,9 +405,80 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ФСЗНГруппа" id="300">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ФСЗН</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ФСЗНГруппа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ФСЗНГруппаРасширеннаяПодсказка" id="301"/>
+							<ChildItems>
+								<InputField name="ФСЗН" id="302">
+									<DataPath>Объект.ФСЗН</DataPath>
+									<ContextMenu name="ФСЗНКонтекстноеМеню" id="303"/>
+									<ExtendedTooltip name="ФСЗНРасширеннаяПодсказка" id="304"/>
+									<Events>
+										<Event name="OnChange">ФСЗНПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПенсионныйФонд" id="305">
+									<DataPath>Объект.ПенсионныйФонд</DataPath>
+									<ContextMenu name="ПенсионныйФондКонтекстноеМеню" id="306"/>
+									<ExtendedTooltip name="ПенсионныйФондРасширеннаяПодсказка" id="307"/>
+								</InputField>
+								<InputField name="ПС" id="308">
+									<DataPath>Объект.ПС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пенсионное страхование</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПСКонтекстноеМеню" id="309"/>
+									<ExtendedTooltip name="ПСРасширеннаяПодсказка" id="310"/>
+								</InputField>
+								<InputField name="СС" id="311">
+									<DataPath>Объект.СС</DataPath>
+									<ContextMenu name="ССКонтекстноеМеню" id="312"/>
+									<ExtendedTooltip name="ССРасширеннаяПодсказка" id="313"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="БелгосстрахГруппа" id="314">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Белгосстрах</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Белгосстрах группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="БелгосстрахГруппаРасширеннаяПодсказка" id="315"/>
+							<ChildItems>
+								<InputField name="Белгосстрах" id="316">
+									<DataPath>Объект.Белгосстрах</DataPath>
+									<ContextMenu name="БелгосстрахКонтекстноеМеню" id="317"/>
+									<ExtendedTooltip name="БелгосстрахРасширеннаяПодсказка" id="318"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ПФРПоДопТарифуГруппа" id="253">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -722,6 +796,7 @@
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаПособияПоСоциальномуСтрахованию" id="42">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -988,6 +1063,7 @@
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаПособияПоУходуЗаРебенком" id="64">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

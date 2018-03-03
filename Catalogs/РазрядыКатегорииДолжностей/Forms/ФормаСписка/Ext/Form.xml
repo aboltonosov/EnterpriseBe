@@ -14,6 +14,7 @@
 					<v8:content>Группа пользовательских настроек</v8:content>
 				</v8:item>
 			</Title>
+			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -161,6 +162,7 @@
 				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="19"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="СписокSearchControl" id="20">
+				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
@@ -180,13 +182,25 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="9"/>
 				</LabelField>
-				<LabelField name="Ссылка" id="23">
-					<DataPath>Список.Ref</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="СсылкаКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="25"/>
+				<LabelField name="РазрядЕТС" id="56">
+					<DataPath>Список.РазрядЕТС</DataPath>
+					<ContextMenu name="РазрядЕТСКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="РазрядЕТСРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="КоэффициентЕТС" id="59">
+					<DataPath>Список.Коэффициент</DataPath>
+					<ContextMenu name="КоэффициентЕТСКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="КоэффициентЕТСРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelField name="ПовышающийКоэффициент" id="62">
+					<DataPath>Список.ПовышающийКоэффициент</DataPath>
+					<ContextMenu name="ПовышающийКоэффициентКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПовышающийКоэффициентРасширеннаяПодсказка" id="64"/>
+				</LabelField>
+				<LabelField name="ПроцентПовышения" id="65">
+					<DataPath>Список.ПроцентПовышения</DataPath>
+					<ContextMenu name="ПроцентПовышенияКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПроцентПовышенияРасширеннаяПодсказка" id="67"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

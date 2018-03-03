@@ -293,7 +293,7 @@
 					</Title>
 					<ExtendedTooltip name="ПособияExtendedTooltip" id="296"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаДанныеРасчетаПособия" id="148">
+						<UsualGroup name="ГруппаДанныеРасчетаПособия" id="1374">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -308,12 +308,13 @@
 									<v8:content>Пособие до 1,5 лет</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДанныеРасчетаПособияExtendedTooltip" id="297"/>
+							<ExtendedTooltip name="ГруппаДанныеРасчетаПособияExtendedTooltip" id="1375"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаПособия" id="262">
+								<UsualGroup name="ГруппаПособия" id="1376">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -329,9 +330,10 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПособияExtendedTooltip" id="298"/>
+									<ExtendedTooltip name="ГруппаПособияExtendedTooltip" id="1377"/>
 									<ChildItems>
-										<UsualGroup name="ГруппаПособиеДоПолутораЛет" id="261">
+										<UsualGroup name="ГруппаПособиеДоПолутораЛет" id="1378">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -340,10 +342,9 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
-											<United>false</United>
-											<ExtendedTooltip name="ГруппаПособиеДоПолутораЛетExtendedTooltip" id="299"/>
+											<ExtendedTooltip name="ГруппаПособиеДоПолутораЛетExtendedTooltip" id="1379"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаФлажокДатаПолутораЛет" id="158">
+												<UsualGroup name="ГруппаФлажокДатаПолутораЛет" id="1380">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -359,9 +360,9 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаФлажокДатаПолутораЛетExtendedTooltip" id="300"/>
+													<ExtendedTooltip name="ГруппаФлажокДатаПолутораЛетExtendedTooltip" id="1381"/>
 													<ChildItems>
-														<CheckBoxField name="ВыплачиватьПособиеДоПолутораЛет" id="149">
+														<CheckBoxField name="ВыплачиватьПособиеДоПолутораЛет" id="1382">
 															<DataPath>Объект.ВыплачиватьПособиеДоПолутораЛет</DataPath>
 															<Title>
 																<v8:item>
@@ -371,33 +372,33 @@
 															</Title>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="ВыплачиватьПособиеДоПолутораЛетКонтекстноеМеню" id="150"/>
-															<ExtendedTooltip name="ВыплачиватьПособиеДоПолутораЛетExtendedTooltip" id="301"/>
+															<ContextMenu name="ВыплачиватьПособиеДоПолутораЛетКонтекстноеМеню" id="1383"/>
+															<ExtendedTooltip name="ВыплачиватьПособиеДоПолутораЛетExtendedTooltip" id="1384"/>
 															<Events>
 																<Event name="OnChange">ВыплачиватьПособиеДоПолутораЛетПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
-														<InputField name="ДатаОкончанияПособияДоПолутораЛет" id="151">
+														<InputField name="ДатаОкончанияПособияДоПолутораЛет" id="1385">
 															<DataPath>Объект.ДатаОкончанияПособияДоПолутораЛет</DataPath>
 															<TitleLocation>None</TitleLocation>
-															<Width>10</Width>
-															<ContextMenu name="ДатаОкончанияПособияДоПолутораЛетКонтекстноеМеню" id="152"/>
-															<ExtendedTooltip name="ДатаОкончанияПособияДоПолутораЛетExtendedTooltip" id="302"/>
+															<ContextMenu name="ДатаОкончанияПособияДоПолутораЛетКонтекстноеМеню" id="1386"/>
+															<ExtendedTooltip name="ДатаОкончанияПособияДоПолутораЛетExtendedTooltip" id="1387"/>
 															<Events>
 																<Event name="OnChange">ДатаОкончанияПособияДоПолутораЛетПриИзменении</Event>
 															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
-												<InputField name="ПособиеДоПолутораЛет" id="275">
+												<InputField name="ПособиеДоПолутораЛет" id="1388">
 													<DataPath>Объект.ПособиеДоПолутораЛет</DataPath>
-													<ContextMenu name="ПособиеДоПолутораЛетКонтекстноеМеню" id="276"/>
-													<ExtendedTooltip name="ПособиеДоПолутораЛетExtendedTooltip" id="303"/>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПособиеДоПолутораЛетКонтекстноеМеню" id="1389"/>
+													<ExtendedTooltip name="ПособиеДоПолутораЛетExtendedTooltip" id="1390"/>
 													<Events>
 														<Event name="OnChange">ПособиеДоПолутораЛетПриИзменении</Event>
 													</Events>
 												</InputField>
-												<UsualGroup name="ГруппаКоличествоДетей" id="163">
+												<UsualGroup name="ГруппаКоличествоДетей" id="1391">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -407,19 +408,19 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаКоличествоДетейExtendedTooltip" id="304"/>
+													<ExtendedTooltip name="ГруппаКоличествоДетейExtendedTooltip" id="1392"/>
 													<ChildItems>
-														<InputField name="КоличествоДетей" id="164">
+														<InputField name="КоличествоДетей" id="1393">
 															<DataPath>Объект.КоличествоДетей</DataPath>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<SpinButton>true</SpinButton>
-															<ContextMenu name="КоличествоДетейКонтекстноеМеню" id="165"/>
-															<ExtendedTooltip name="КоличествоДетейExtendedTooltip" id="305"/>
+															<ContextMenu name="КоличествоДетейКонтекстноеМеню" id="1394"/>
+															<ExtendedTooltip name="КоличествоДетейExtendedTooltip" id="1395"/>
 															<Events>
 																<Event name="OnChange">КоличествоДетейПриИзменении</Event>
 															</Events>
 														</InputField>
-														<CheckBoxField name="КоличествоПервыхДетей" id="166">
+														<CheckBoxField name="КоличествоПервыхДетей" id="1396">
 															<DataPath>Объект.КоличествоПервыхДетей</DataPath>
 															<Title>
 																<v8:item>
@@ -437,25 +438,25 @@
 															</ToolTip>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="КоличествоПервыхДетейКонтекстноеМеню" id="167"/>
-															<ExtendedTooltip name="КоличествоПервыхДетейExtendedTooltip" id="307"/>
+															<ContextMenu name="КоличествоПервыхДетейКонтекстноеМеню" id="1397"/>
+															<ExtendedTooltip name="КоличествоПервыхДетейExtendedTooltip" id="1398"/>
 															<Events>
 																<Event name="OnChange">КоличествоПервыхДетейПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
 													</ChildItems>
 												</UsualGroup>
-												<CheckBoxField name="УчитыватьЗаработокПредыдущихСтрахователей" id="267">
+												<CheckBoxField name="УчитыватьЗаработокПредыдущихСтрахователей" id="1399">
 													<DataPath>Объект.УчитыватьЗаработокПредыдущихСтрахователей</DataPath>
 													<TitleLocation>Right</TitleLocation>
 													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="УчитыватьЗаработокПредыдущихСтрахователейКонтекстноеМеню" id="268"/>
-													<ExtendedTooltip name="УчитыватьЗаработокПредыдущихСтрахователейExtendedTooltip" id="312"/>
+													<ContextMenu name="УчитыватьЗаработокПредыдущихСтрахователейКонтекстноеМеню" id="1400"/>
+													<ExtendedTooltip name="УчитыватьЗаработокПредыдущихСтрахователейExtendedTooltip" id="1401"/>
 													<Events>
 														<Event name="OnChange">УчитыватьЗаработокПредыдущихСтрахователейПриИзменении</Event>
 													</Events>
 												</CheckBoxField>
-												<UsualGroup name="ГруппаПрименятьЛьготыПриИсчисленииПособия" id="271">
+												<UsualGroup name="ГруппаПрименятьЛьготыПриИсчисленииПособия" id="1402">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -471,21 +472,22 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаПрименятьЛьготыПриИсчисленииПособияExtendedTooltip" id="313"/>
+													<ExtendedTooltip name="ГруппаПрименятьЛьготыПриИсчисленииПособияExtendedTooltip" id="1403"/>
 													<ChildItems>
-														<CheckBoxField name="ПрименятьЛьготыПриНачисленииПособия" id="168">
+														<CheckBoxField name="ПрименятьЛьготыПриНачисленииПособия" id="1404">
 															<DataPath>Объект.ПрименятьЛьготыПриНачисленииПособия</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="ПрименятьЛьготыПриНачисленииПособияКонтекстноеМеню" id="169"/>
-															<ExtendedTooltip name="ПрименятьЛьготыПриНачисленииПособияExtendedTooltip" id="314"/>
+															<ContextMenu name="ПрименятьЛьготыПриНачисленииПособияКонтекстноеМеню" id="1405"/>
+															<ExtendedTooltip name="ПрименятьЛьготыПриНачисленииПособияExtendedTooltip" id="1406"/>
 															<Events>
 																<Event name="OnChange">ПрименятьЛьготыПриНачисленииПособияПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
-														<InputField name="ФинансированиеФедеральнымБюджетом" id="272">
+														<InputField name="ФинансированиеФедеральнымБюджетом" id="1407">
 															<DataPath>Объект.ФинансированиеФедеральнымБюджетом</DataPath>
 															<TitleLocation>None</TitleLocation>
+															<HorizontalStretch>false</HorizontalStretch>
 															<ListChoiceMode>true</ListChoiceMode>
 															<ChooseType>false</ChooseType>
 															<ChoiceList>
@@ -514,12 +516,12 @@
 																	</xr:Value>
 																</xr:Item>
 															</ChoiceList>
-															<ContextMenu name="ФинансированиеФедеральнымБюджетомКонтекстноеМеню" id="273"/>
-															<ExtendedTooltip name="ФинансированиеФедеральнымБюджетомExtendedTooltip" id="315"/>
+															<ContextMenu name="ФинансированиеФедеральнымБюджетомКонтекстноеМеню" id="1408"/>
+															<ExtendedTooltip name="ФинансированиеФедеральнымБюджетомExtendedTooltip" id="1409"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
-												<UsualGroup name="ГруппаРасчетПоПравилам2010Года" id="762">
+												<UsualGroup name="ГруппаРасчетПоПравилам2010Года" id="1410">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -529,14 +531,14 @@
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаРасчетПоПравилам2010ГодаРасширеннаяПодсказка" id="763"/>
+													<ExtendedTooltip name="ГруппаРасчетПоПравилам2010ГодаРасширеннаяПодсказка" id="1411"/>
 													<ChildItems>
-														<CheckBoxField name="РасчетПоПравилам2010Года" id="269">
+														<CheckBoxField name="РасчетПоПравилам2010Года" id="1412">
 															<DataPath>Объект.РасчетПоПравилам2010Года</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="РасчетПоПравилам2010ГодаКонтекстноеМеню" id="270"/>
-															<ExtendedTooltip name="РасчетПоПравилам2010ГодаExtendedTooltip" id="311"/>
+															<ContextMenu name="РасчетПоПравилам2010ГодаКонтекстноеМеню" id="1413"/>
+															<ExtendedTooltip name="РасчетПоПравилам2010ГодаExtendedTooltip" id="1414"/>
 															<Events>
 																<Event name="OnChange">РасчетПоПравилам2010ГодаПриИзменении</Event>
 															</Events>
@@ -545,11 +547,11 @@
 												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
-										<UsualGroup name="ГруппаПособиеДоТрехЛет" id="153">
+										<UsualGroup name="ГруппаПособиеДоТрехЛет" id="1415">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Пособие до 3х лет (за счет работодателя)</v8:content>
+													<v8:content>Пособие до 3х лет на первого ребенка</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
@@ -558,12 +560,12 @@
 													<v8:content>Пособие до 3х лет</v8:content>
 												</v8:item>
 											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
-											<United>false</United>
-											<ExtendedTooltip name="ГруппаПособиеДоТрехЛетExtendedTooltip" id="316"/>
+											<ExtendedTooltip name="ГруппаПособиеДоТрехЛетExtendedTooltip" id="1416"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаФлажокДатаТрехЛет" id="277">
+												<UsualGroup name="ГруппаФлажокДатаТрехЛет" id="1417">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -579,9 +581,9 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаФлажокДатаТрехЛетExtendedTooltip" id="317"/>
+													<ExtendedTooltip name="ГруппаФлажокДатаТрехЛетExtendedTooltip" id="1418"/>
 													<ChildItems>
-														<CheckBoxField name="ВыплачиватьПособиеДоТрехЛет" id="154">
+														<CheckBoxField name="ВыплачиватьПособиеДоТрехЛет" id="1419">
 															<DataPath>Объект.ВыплачиватьПособиеДоТрехЛет</DataPath>
 															<Title>
 																<v8:item>
@@ -591,13 +593,13 @@
 															</Title>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="ВыплачиватьПособиеДоТрехЛетКонтекстноеМеню" id="155"/>
-															<ExtendedTooltip name="ВыплачиватьПособиеДоТрехЛетExtendedTooltip" id="318"/>
+															<ContextMenu name="ВыплачиватьПособиеДоТрехЛетКонтекстноеМеню" id="1420"/>
+															<ExtendedTooltip name="ВыплачиватьПособиеДоТрехЛетExtendedTooltip" id="1421"/>
 															<Events>
 																<Event name="OnChange">ВыплачиватьПособиеДоТрехЛетПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
-														<InputField name="ДатаОкончанияПособияДоТрехЛет" id="156">
+														<InputField name="ДатаОкончанияПособияДоТрехЛет" id="1422">
 															<DataPath>Объект.ДатаОкончанияПособияДоТрехЛет</DataPath>
 															<Title>
 																<v8:item>
@@ -606,24 +608,41 @@
 																</v8:item>
 															</Title>
 															<TitleLocation>None</TitleLocation>
-															<Width>10</Width>
-															<ContextMenu name="ДатаОкончанияПособияДоТрехЛетКонтекстноеМеню" id="157"/>
-															<ExtendedTooltip name="ДатаОкончанияПособияДоТрехЛетExtendedTooltip" id="319"/>
+															<ContextMenu name="ДатаОкончанияПособияДоТрехЛетКонтекстноеМеню" id="1423"/>
+															<ExtendedTooltip name="ДатаОкончанияПособияДоТрехЛетExtendedTooltip" id="1424"/>
 															<Events>
 																<Event name="OnChange">ДатаОкончанияПособияДоТрехЛетПриИзменении</Event>
 															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
-												<InputField name="ПособиеДоТрехЛет" id="278">
+												<InputField name="ПособиеДоТрехЛет" id="1425">
 													<DataPath>Объект.ПособиеДоТрехЛет</DataPath>
-													<ContextMenu name="ПособиеДоТрехЛетКонтекстноеМеню" id="279"/>
-													<ExtendedTooltip name="ПособиеДоТрехЛетExtendedTooltip" id="320"/>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пособие до 3-х лет</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПособиеДоТрехЛетКонтекстноеМеню" id="1426"/>
+													<ExtendedTooltip name="ПособиеДоТрехЛетExtendedTooltip" id="1427"/>
 													<Events>
 														<Event name="OnChange">ПособиеДоТрехЛетПриИзменении</Event>
 													</Events>
 												</InputField>
-												<Pages name="ГруппаПоказателиПособияДоТрехЛет" id="847">
+												<InputField name="ПроцентПособияДоТрехЛет" id="1428">
+													<DataPath>Объект.ПроцентПособияДоТрехЛет</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Процент пособия</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПроцентПособияДоТрехЛетКонтекстноеМеню" id="1429"/>
+													<ExtendedTooltip name="ПроцентПособияДоТрехЛетРасширеннаяПодсказка" id="1430"/>
+												</InputField>
+												<Pages name="ГруппаПоказателиПособияДоТрехЛет" id="1431">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -637,9 +656,9 @@
 														</v8:item>
 													</ToolTip>
 													<PagesRepresentation>None</PagesRepresentation>
-													<ExtendedTooltip name="ГруппаПоказателиПособияДоТрехЛетРасширеннаяПодсказка" id="848"/>
+													<ExtendedTooltip name="ГруппаПоказателиПособияДоТрехЛетРасширеннаяПодсказка" id="1432"/>
 													<ChildItems>
-														<Page name="ГруппаПособиеДоТрехЛетРассчитывается" id="849">
+														<Page name="ГруппаПособиеДоТрехЛетРассчитывается" id="1433">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -652,18 +671,18 @@
 																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетРассчитываетсяРасширеннаяПодсказка" id="850"/>
+															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетРассчитываетсяРасширеннаяПодсказка" id="1434"/>
 															<ChildItems>
-																<LabelField name="ГруппаПособиеДоТрехЛетРассчитываетсяДекорация" id="865">
+																<LabelField name="ГруппаПособиеДоТрехЛетРассчитываетсяДекорация" id="1435">
 																	<DataPath>ПустаяНадписьПособиеРассчитывается</DataPath>
 																	<TitleLocation>None</TitleLocation>
 																	<HorizontalStretch>false</HorizontalStretch>
-																	<ContextMenu name="ГруппаПособиеДоТрехЛетРассчитываетсяДекорацияКонтекстноеМеню" id="866"/>
-																	<ExtendedTooltip name="ГруппаПособиеДоТрехЛетРассчитываетсяДекорацияРасширеннаяПодсказка" id="867"/>
+																	<ContextMenu name="ГруппаПособиеДоТрехЛетРассчитываетсяДекорацияКонтекстноеМеню" id="1436"/>
+																	<ExtendedTooltip name="ГруппаПособиеДоТрехЛетРассчитываетсяДекорацияРасширеннаяПодсказка" id="1437"/>
 																</LabelField>
 															</ChildItems>
 														</Page>
-														<Page name="ГруппаПособиеДоТрехЛетНеРассчитывается" id="851">
+														<Page name="ГруппаПособиеДоТрехЛетНеРассчитывается" id="1438">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -677,9 +696,9 @@
 																</v8:item>
 															</ToolTip>
 															<Group>Horizontal</Group>
-															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНеРассчитываетсяРасширеннаяПодсказка" id="852"/>
+															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНеРассчитываетсяРасширеннаяПодсказка" id="1439"/>
 															<ChildItems>
-																<InputField name="РазмерПособияДоТрехЛетФиксированнойСуммой" id="853">
+																<InputField name="РазмерПособияДоТрехЛетФиксированнойСуммой" id="1440">
 																	<DataPath>Объект.РазмерПособияДоТрехЛетФиксированнойСуммой</DataPath>
 																	<Title>
 																		<v8:item>
@@ -687,16 +706,368 @@
 																			<v8:content>Размер</v8:content>
 																		</v8:item>
 																	</Title>
-																	<ContextMenu name="РазмерПособияДоТрехЛетФиксированнойСуммойКонтекстноеМеню" id="854"/>
-																	<ExtendedTooltip name="РазмерПособияДоТрехЛетФиксированнойСуммойРасширеннаяПодсказка" id="855"/>
+																	<ContextMenu name="РазмерПособияДоТрехЛетФиксированнойСуммойКонтекстноеМеню" id="1441"/>
+																	<ExtendedTooltip name="РазмерПособияДоТрехЛетФиксированнойСуммойРасширеннаяПодсказка" id="1442"/>
 																</InputField>
-																<LabelField name="НадписьВалютаПособияФиксированнойСуммой" id="862">
+																<LabelField name="НадписьВалютаПособияФиксированнойСуммой" id="1443">
 																	<DataPath>НадписьВалютаПособияФиксированнойСуммой</DataPath>
 																	<TitleLocation>None</TitleLocation>
 																	<Width>5</Width>
 																	<HorizontalStretch>false</HorizontalStretch>
-																	<ContextMenu name="НадписьВалютаПособияФиксированнойСуммойКонтекстноеМеню" id="863"/>
-																	<ExtendedTooltip name="НадписьВалютаПособияФиксированнойСуммойРасширеннаяПодсказка" id="864"/>
+																	<ContextMenu name="НадписьВалютаПособияФиксированнойСуммойКонтекстноеМеню" id="1444"/>
+																	<ExtendedTooltip name="НадписьВалютаПособияФиксированнойСуммойРасширеннаяПодсказка" id="1445"/>
+																</LabelField>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПособиеДоТрехЛетНаВторогоРебенка" id="1446">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пособие до 3х лет на второго и последующих детей</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пособие до 3х лет</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1447"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаФлажокДатаТрехЛетНаВторогоРебенка" id="1448">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа флажок дата трех лет</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа флажок дата трех лет</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаФлажокДатаТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1449"/>
+													<ChildItems>
+														<CheckBoxField name="ВыплачиватьПособиеДоТрехЛетНаВторогоРебенка" id="1450">
+															<DataPath>Объект.ВыплачиватьПособиеДоТрехЛетНаВторогоРебенка</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выплачивать по</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ВыплачиватьПособиеДоТрехЛетНаВторогоРебенкаКонтекстноеМеню" id="1451"/>
+															<ExtendedTooltip name="ВыплачиватьПособиеДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1452"/>
+															<Events>
+																<Event name="OnChange">ВыплачиватьПособиеДоТрехЛетНаВторогоРебенкаПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="ДатаОкончанияПособияДоТрехЛетНаВторогоРебенка" id="1453">
+															<DataPath>Объект.ДатаОкончанияПособияДоТрехЛетНаВторогоРебенка</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дата окончания пособия до 3х лет на воторго ребенка</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="ДатаОкончанияПособияДоТрехЛетНаВторогоРебенкаКонтекстноеМеню" id="1454"/>
+															<ExtendedTooltip name="ДатаОкончанияПособияДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1455"/>
+															<Events>
+																<Event name="OnChange">ДатаОкончанияПособияДоТрехЛетПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="ПособиеДоТрехЛетНаВторогоРебенка" id="1456">
+													<DataPath>Объект.ПособиеДоТрехЛетНаВторогоРебенка</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пособие до 3-х лет: на второго ребенка</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПособиеДоТрехЛетНаВторогоРебенкаКонтекстноеМеню" id="1457"/>
+													<ExtendedTooltip name="ПособиеДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1458"/>
+													<Events>
+														<Event name="OnChange">ПособиеДоТрехЛетНаВторогоРебенкаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ПроцентПособияДоТрехЛетНаВторогоРебенка" id="1459">
+													<DataPath>Объект.ПроцентПособияДоТрехЛетНаВторогоРебенка</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Процент пособия</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПроцентПособияДоТрехЛетНаВторогоРебенкаКонтекстноеМеню" id="1460"/>
+													<ExtendedTooltip name="ПроцентПособияДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1461"/>
+												</InputField>
+												<Pages name="ГруппаПоказателиПособияДоТрехЛетНаВторогоРебенка" id="1462">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа показатели пособия до трех лет</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Показатели пособия до трех лет</v8:content>
+														</v8:item>
+													</ToolTip>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="ГруппаПоказателиПособияДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="1463"/>
+													<ChildItems>
+														<Page name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаРассчитывается" id="1464">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаРассчитываетсяРасширеннаяПодсказка" id="1465"/>
+															<ChildItems>
+																<LabelField name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаРассчитываетсяДекорация" id="1466">
+																	<DataPath>ПустаяНадписьПособиеРассчитывается</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаРассчитываетсяДекорацияКонтекстноеМеню" id="1467"/>
+																	<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаРассчитываетсяДекорацияРасширеннаяПодсказка" id="1468"/>
+																</LabelField>
+															</ChildItems>
+														</Page>
+														<Page name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаНеРассчитывается" id="1469">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет не рассчитывается</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаВторогоРебенкаНеРассчитываетсяРасширеннаяПодсказка" id="1470"/>
+															<ChildItems>
+																<InputField name="РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммой" id="1471">
+																	<DataPath>Объект.РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммой</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Размер</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммойКонтекстноеМеню" id="1472"/>
+																	<ExtendedTooltip name="РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммойРасширеннаяПодсказка" id="1473"/>
+																</InputField>
+																<LabelField name="НадписьВалютаПособияФиксированнойСуммой1" id="1474">
+																	<DataPath>НадписьВалютаПособияФиксированнойСуммой</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<Width>5</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="НадписьВалютаПособияФиксированнойСуммой1КонтекстноеМеню" id="1475"/>
+																	<ExtendedTooltip name="НадписьВалютаПособияФиксированнойСуммой1РасширеннаяПодсказка" id="1476"/>
+																</LabelField>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалида" id="1477">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пособие до 3х лет на ребенка-инвалида</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пособие до 3х лет на ребенка-инвалида</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1478"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаФлажокДатаТрехЛетНаРебенкаИнвалида" id="1479">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа флажок дата трех лет ребенка инвалида</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа флажок дата трех лет на ребенка инвалида</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаФлажокДатаТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1480"/>
+													<ChildItems>
+														<CheckBoxField name="ВыплачиватьПособиеДоТрехЛетНаРебенкаИнвалида" id="1481">
+															<DataPath>Объект.ВыплачиватьПособиеДоТрехЛетНаРебенкаИнвалида</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выплачивать по</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ВыплачиватьПособиеДоТрехЛетНаРебенкаИнвалидаКонтекстноеМеню" id="1482"/>
+															<ExtendedTooltip name="ВыплачиватьПособиеДоТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1483"/>
+															<Events>
+																<Event name="OnChange">ВыплачиватьПособиеДоТрехЛетНаРебенкаИнвалидаПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="ДатаОкончанияПособияДоТрехЛетНаРебенкаИнвалида" id="1484">
+															<DataPath>Объект.ДатаОкончанияПособияДоТрехЛетНаРебенкаИнвалида</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дата окончания пособия до 3х лет на ребенка-инвалида</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="ДатаОкончанияПособияДоТрехЛетНаРебенкаИнвалидаКонтекстноеМеню" id="1485"/>
+															<ExtendedTooltip name="ДатаОкончанияПособияДоТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1486"/>
+															<Events>
+																<Event name="OnChange">ДатаОкончанияПособияДоТрехЛетНаРебенкаИнвалидаПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="ПособиеДоТрехЛетНаРебенкаИнвалида" id="1487">
+													<DataPath>Объект.ПособиеДоТрехЛетНаРебенкаИнвалида</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пособие до 3-х лет: на ребенка-инвалида</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПособиеДоТрехЛетНаРебенкаИнвалидаКонтекстноеМеню" id="1488"/>
+													<ExtendedTooltip name="ПособиеДоТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1489"/>
+													<Events>
+														<Event name="OnChange">ПособиеДоТрехЛетНаРебенкаИнвалидаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ПроцентПособияДоТрехЛетНаРебенкаИнвалида" id="1490">
+													<DataPath>Объект.ПроцентПособияДоТрехЛетНаРебенкаИнвалида</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Процент пособия</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПроцентПособияДоТрехЛетНаРебенкаИнвалидаКонтекстноеМеню" id="1491"/>
+													<ExtendedTooltip name="ПроцентПособияДоТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1492"/>
+												</InputField>
+												<Pages name="ГруппаПоказателиПособияДоТрехЛетНаРебенкаИнвалида" id="1493">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа показатели пособия до трех лет</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Показатели пособия до трех лет</v8:content>
+														</v8:item>
+													</ToolTip>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="ГруппаПоказателиПособияДоТрехЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="1494"/>
+													<ChildItems>
+														<Page name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаРебенкаРассчитывается" id="1495">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаРебенкаРассчитываетсяРасширеннаяПодсказка" id="1496"/>
+															<ChildItems>
+																<LabelField name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаРассчитываетсяДекорация" id="1497">
+																	<DataPath>ПустаяНадписьПособиеРассчитывается</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаРассчитываетсяДекорацияКонтекстноеМеню" id="1498"/>
+																	<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаРассчитываетсяДекорацияРасширеннаяПодсказка" id="1499"/>
+																</LabelField>
+															</ChildItems>
+														</Page>
+														<Page name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаНеРассчитывается" id="1500">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет не рассчитывается</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа пособие до трех лет рассчитывается</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ГруппаПособиеДоТрехЛетНаРебенкаИнвалидаНеРассчитываетсяРасширеннаяПодсказка" id="1501"/>
+															<ChildItems>
+																<InputField name="РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммой1" id="1502">
+																	<DataPath>Объект.РазмерПособияДоТрехЛетНаРебенкаИнвалидаФиксированнойСуммой</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Размер</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммой1КонтекстноеМеню" id="1503"/>
+																	<ExtendedTooltip name="РазмерПособияДоТрехЛетНаВторогоРебенкаФиксированнойСуммой1РасширеннаяПодсказка" id="1504"/>
+																</InputField>
+																<LabelField name="НадписьВалютаПособияФиксированнойСуммой2" id="1505">
+																	<DataPath>НадписьВалютаПособияФиксированнойСуммой</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<Width>5</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="НадписьВалютаПособияФиксированнойСуммой2КонтекстноеМеню" id="1506"/>
+																	<ExtendedTooltip name="НадписьВалютаПособияФиксированнойСуммой2РасширеннаяПодсказка" id="1507"/>
 																</LabelField>
 															</ChildItems>
 														</Page>
@@ -706,19 +1077,21 @@
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаПоказателиРасчетаПособия" id="211">
+								<UsualGroup name="ГруппаПоказателиРасчетаПособия" id="1508">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Показатели для расчета пособия</v8:content>
 										</v8:item>
 									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПоказателиРасчетаПособияРасширеннаяПодсказка" id="324"/>
+									<ExtendedTooltip name="ГруппаПоказателиРасчетаПособияРасширеннаяПодсказка" id="1509"/>
 									<ChildItems>
-										<UsualGroup name="СреднийЗаработокИнфо" id="368">
+										<UsualGroup name="СреднийЗаработокИнфо" id="1510">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -734,9 +1107,9 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="СреднийЗаработокИнфоРасширеннаяПодсказка" id="369"/>
+											<ExtendedTooltip name="СреднийЗаработокИнфоРасширеннаяПодсказка" id="1511"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаСреднийЗаработок" id="160">
+												<UsualGroup name="ГруппаСреднийЗаработок" id="1512">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -746,9 +1119,9 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаСреднийЗаработокExtendedTooltip" id="325"/>
+													<ExtendedTooltip name="ГруппаСреднийЗаработокExtendedTooltip" id="1513"/>
 													<ChildItems>
-														<InputField name="СреднедневнойЗаработок" id="161">
+														<InputField name="СреднедневнойЗаработок" id="1514">
 															<DataPath>Объект.СреднийДневнойЗаработок</DataPath>
 															<Title>
 																<v8:item>
@@ -757,30 +1130,30 @@
 																</v8:item>
 															</Title>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<ContextMenu name="СреднедневнойЗаработокКонтекстноеМеню" id="162"/>
-															<ExtendedTooltip name="СреднедневнойЗаработокExtendedTooltip" id="326"/>
+															<ContextMenu name="СреднедневнойЗаработокКонтекстноеМеню" id="1515"/>
+															<ExtendedTooltip name="СреднедневнойЗаработокExtendedTooltip" id="1516"/>
 														</InputField>
-														<Button name="Рассчитать" id="204">
+														<Button name="Рассчитать" id="1517">
 															<Type>UsualButton</Type>
 															<Representation>Picture</Representation>
+															<Width>3</Width>
 															<Height>1</Height>
 															<CommandName>Form.Command.Рассчитать</CommandName>
-															<ExtendedTooltip name="РассчитатьРасширеннаяПодсказка" id="327"/>
+															<ExtendedTooltip name="РассчитатьРасширеннаяПодсказка" id="1518"/>
 														</Button>
-														<Button name="ОткрытьСреднийЗаработок" id="220">
+														<Button name="ОткрытьСреднийЗаработок" id="1519">
 															<Type>Hyperlink</Type>
 															<UserVisible>
 																<xr:Common>false</xr:Common>
 																<xr:Value name="Role.ДобавлениеИзменениеРабочегоВремениНачисленнойЗарплаты">true</xr:Value>
 																<xr:Value name="Role.ПолныеПрава">true</xr:Value>
 															</UserVisible>
-															<GroupVerticalAlign>Center</GroupVerticalAlign>
 															<CommandName>Form.Command.ОткрытьСреднийЗаработок</CommandName>
-															<ExtendedTooltip name="ОткрытьСреднийЗаработокExtendedTooltip" id="328"/>
+															<ExtendedTooltip name="ОткрытьСреднийЗаработокExtendedTooltip" id="1520"/>
 														</Button>
 													</ChildItems>
 												</UsualGroup>
-												<UsualGroup name="ЗаполненностьДанныхИнфо" id="212">
+												<UsualGroup name="ЗаполненностьДанныхИнфо" id="1521">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -790,9 +1163,9 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ЗаполненностьДанныхИнфоExtendedTooltip" id="329"/>
+													<ExtendedTooltip name="ЗаполненностьДанныхИнфоExtendedTooltip" id="1522"/>
 													<ChildItems>
-														<PictureField name="ЗаполненностьДанныхКартинка" id="244">
+														<PictureField name="ЗаполненностьДанныхКартинка" id="1523">
 															<DataPath>ЗаполненностьДанныхКартинка</DataPath>
 															<TitleLocation>None</TitleLocation>
 															<Width>2</Width>
@@ -802,10 +1175,10 @@
 															<Border width="1">
 																<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
 															</Border>
-															<ContextMenu name="ЗаполненностьДанныхКартинкаКонтекстноеМеню" id="245"/>
-															<ExtendedTooltip name="ЗаполненностьДанныхКартинкаExtendedTooltip" id="330"/>
+															<ContextMenu name="ЗаполненностьДанныхКартинкаКонтекстноеМеню" id="1524"/>
+															<ExtendedTooltip name="ЗаполненностьДанныхКартинкаExtendedTooltip" id="1525"/>
 														</PictureField>
-														<LabelField name="ЗаполненностьДанныхИнформационныйТекст" id="215">
+														<LabelField name="ЗаполненностьДанныхИнформационныйТекст" id="1526">
 															<DataPath>ЗаполненностьДанныхИнформационныйТекст</DataPath>
 															<TitleLocation>None</TitleLocation>
 															<Width>50</Width>
@@ -813,8 +1186,8 @@
 															<HorizontalStretch>false</HorizontalStretch>
 															<VerticalStretch>false</VerticalStretch>
 															<TextColor>style:ПоясняющийТекст</TextColor>
-															<ContextMenu name="ЗаполненностьДанныхИнформационныйТекстКонтекстноеМеню" id="216"/>
-															<ExtendedTooltip name="ЗаполненностьДанныхИнформационныйТекстExtendedTooltip" id="331"/>
+															<ContextMenu name="ЗаполненностьДанныхИнформационныйТекстКонтекстноеМеню" id="1527"/>
+															<ExtendedTooltip name="ЗаполненностьДанныхИнформационныйТекстExtendedTooltip" id="1528"/>
 															<Events>
 																<Event name="URLProcessing">ЗаполненностьДанныхИнформационныйТекстОбработкаНавигационнойСсылки</Event>
 															</Events>
@@ -823,7 +1196,8 @@
 												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
-										<UsualGroup name="ГруппаДоляВремениРайонныйКоэффициент" id="370">
+										<UsualGroup name="ГруппаДоляВремениРайонныйКоэффициент" id="1529">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -833,31 +1207,12 @@
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаДоляВремениРайонныйКоэффициентРасширеннаяПодсказка" id="371"/>
-											<ChildItems>
-												<InputField name="ДоляНеполногоВремени" id="362">
-													<DataPath>Объект.ДоляНеполногоВремени</DataPath>
-													<Width>6</Width>
-													<ContextMenu name="ДоляНеполногоВремениКонтекстноеМеню" id="363"/>
-													<ExtendedTooltip name="ДоляНеполногоВремениРасширеннаяПодсказка" id="364"/>
-												</InputField>
-												<InputField name="РайонныйКоэффициентРФнаНачалоСобытия" id="365">
-													<DataPath>Объект.РайонныйКоэффициентРФнаНачалоСобытия</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Районный коэффициент</v8:content>
-														</v8:item>
-													</Title>
-													<Width>6</Width>
-													<ContextMenu name="РайонныйКоэффициентРФнаНачалоСобытияКонтекстноеМеню" id="366"/>
-													<ExtendedTooltip name="РайонныйКоэффициентРФнаНачалоСобытияРасширеннаяПодсказка" id="367"/>
-												</InputField>
-											</ChildItems>
+											<ExtendedTooltip name="ГруппаДоляВремениРайонныйКоэффициентРасширеннаяПодсказка" id="1530"/>
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="РассчитатьЗарплатуГруппа" id="742">
+								<UsualGroup name="РассчитатьЗарплатуГруппа" id="1531">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -873,9 +1228,9 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="РассчитатьЗарплатуГруппаРасширеннаяПодсказка" id="743"/>
+									<ExtendedTooltip name="РассчитатьЗарплатуГруппаРасширеннаяПодсказка" id="1532"/>
 									<ChildItems>
-										<CheckBoxField name="РассчитатьЗарплату" id="744">
+										<CheckBoxField name="РассчитатьЗарплату" id="1533">
 											<DataPath>Объект.РассчитатьЗарплату</DataPath>
 											<TitleLocation>Right</TitleLocation>
 											<ToolTip>
@@ -886,13 +1241,13 @@
 											</ToolTip>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="РассчитатьЗарплатуКонтекстноеМеню" id="745"/>
-											<ExtendedTooltip name="РассчитатьЗарплатуРасширеннаяПодсказка" id="746"/>
+											<ContextMenu name="РассчитатьЗарплатуКонтекстноеМеню" id="1534"/>
+											<ExtendedTooltip name="РассчитатьЗарплатуРасширеннаяПодсказка" id="1535"/>
 											<Events>
 												<Event name="OnChange">РассчитатьЗарплатуПриИзменении</Event>
 											</Events>
 										</CheckBoxField>
-										<UsualGroup name="ВыплатаГруппа" id="1036">
+										<UsualGroup name="ВыплатаГруппа" id="1536">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -907,7 +1262,7 @@
 											</ToolTip>
 											<Group>Vertical</Group>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ВыплатаГруппаРасширеннаяПодсказка" id="1037"/>
+											<ExtendedTooltip name="ВыплатаГруппаРасширеннаяПодсказка" id="1537"/>
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
@@ -2790,7 +3145,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НДФЛ</v8:content>
+							<v8:content>Подоходный налог</v8:content>
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
@@ -3188,193 +3543,6 @@
 										<Event name="TextEditEnd">ВзносыДатаПолученияДоходаОкончаниеВводаТекста</Event>
 									</Events>
 								</InputField>
-								<ColumnGroup name="ВзносыОПС" id="1159">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ПФР (на ОПС)</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Horizontal</Group>
-									<ShowInHeader>true</ShowInHeader>
-									<ExtendedTooltip name="ВзносыОПСРасширеннаяПодсказка" id="1160"/>
-									<ChildItems>
-										<InputField name="ВзносыПФРДоПредельнойВеличины" id="1161">
-											<DataPath>Объект.Взносы.ПФРДоПредельнойВеличины</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>С базы до превышения</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРДоПредельнойВеличиныКонтекстноеМеню" id="1162"/>
-											<ExtendedTooltip name="ВзносыПФРДоПредельнойВеличиныРасширеннаяПодсказка" id="1163"/>
-										</InputField>
-										<InputField name="ВзносыПФРСПревышения" id="1164">
-											<DataPath>Объект.Взносы.ПФРСПревышения</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>С базы сверх предела</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРСПревышенияКонтекстноеМеню" id="1165"/>
-											<ExtendedTooltip name="ВзносыПФРСПревышенияРасширеннаяПодсказка" id="1166"/>
-										</InputField>
-										<InputField name="ВзносыПФРПоСуммарномуТарифу" id="767">
-											<DataPath>Объект.Взносы.ПФРПоСуммарномуТарифу</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>По сумм. тарифу</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРПоСуммарномуТарифуКонтекстноеМеню" id="768"/>
-											<ExtendedTooltip name="ВзносыПФРПоСуммарномуТарифуРасширеннаяПодсказка" id="769"/>
-										</InputField>
-										<InputField name="ВзносыПФРНакопительная" id="718">
-											<DataPath>Объект.Взносы.ПФРНакопительная</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Накопительная</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРНакопительнаяКонтекстноеМеню" id="719"/>
-											<ExtendedTooltip name="ВзносыПФРНакопительнаяРасширеннаяПодсказка" id="720"/>
-										</InputField>
-										<InputField name="ВзносыПФРСтраховая" id="724">
-											<DataPath>Объект.Взносы.ПФРСтраховая</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страховая</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРСтраховаяКонтекстноеМеню" id="725"/>
-											<ExtendedTooltip name="ВзносыПФРСтраховаяРасширеннаяПодсказка" id="726"/>
-										</InputField>
-										<InputField name="ВзносыПФРДоПредельнойВеличиныЕНВД" id="1167">
-											<DataPath>Объект.Взносы.ПФРДоПредельнойВеличиныЕНВД</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>С базы до превышения (ЕНВД)</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРДоПредельнойВеличиныЕНВДКонтекстноеМеню" id="1168"/>
-											<ExtendedTooltip name="ВзносыПФРДоПредельнойВеличиныЕНВДРасширеннаяПодсказка" id="1169"/>
-										</InputField>
-										<InputField name="ВзносыПФРСПревышенияЕНВД" id="1170">
-											<DataPath>Объект.Взносы.ПФРСПревышенияЕНВД</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>С базы сверх предела (ЕНВД)</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРСПревышенияЕНВДКонтекстноеМеню" id="1171"/>
-											<ExtendedTooltip name="ВзносыПФРСПревышенияЕНВДРасширеннаяПодсказка" id="1172"/>
-										</InputField>
-										<InputField name="ВзносыПФРПоСуммарномуТарифуЕНВД" id="764">
-											<DataPath>Объект.Взносы.ПФРПоСуммарномуТарифуЕНВД</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>По сумм. тарифу (ЕНВД)</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРПоСуммарномуТарифуЕНВДКонтекстноеМеню" id="765"/>
-											<ExtendedTooltip name="ВзносыПФРПоСуммарномуТарифуЕНВДРасширеннаяПодсказка" id="766"/>
-										</InputField>
-										<InputField name="ВзносыПФРНакопительнаяЕНВД" id="721">
-											<DataPath>Объект.Взносы.ПФРНакопительнаяЕНВД</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Накопительная (ЕНВД)</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРНакопительнаяЕНВДКонтекстноеМеню" id="722"/>
-											<ExtendedTooltip name="ВзносыПФРНакопительнаяЕНВДРасширеннаяПодсказка" id="723"/>
-										</InputField>
-										<InputField name="ВзносыПФРСтраховаяЕНВД" id="727">
-											<DataPath>Объект.Взносы.ПФРСтраховаяЕНВД</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страховая (ЕНВД)</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРСтраховаяЕНВДКонтекстноеМеню" id="728"/>
-											<ExtendedTooltip name="ВзносыПФРСтраховаяЕНВДРасширеннаяПодсказка" id="729"/>
-										</InputField>
-									</ChildItems>
-								</ColumnGroup>
-								<InputField name="ВзносыФСС" id="709">
-									<DataPath>Объект.Взносы.ФСС</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыФССКонтекстноеМеню" id="710"/>
-									<ExtendedTooltip name="ВзносыФССРасширеннаяПодсказка" id="711"/>
-								</InputField>
-								<InputField name="ВзносыФССНесчастныеСлучаи" id="715">
-									<DataPath>Объект.Взносы.ФССНесчастныеСлучаи</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыФССНесчастныеСлучаиКонтекстноеМеню" id="716"/>
-									<ExtendedTooltip name="ВзносыФССНесчастныеСлучаиРасширеннаяПодсказка" id="717"/>
-								</InputField>
-								<InputField name="ВзносыФФОМС" id="697">
-									<DataPath>Объект.Взносы.ФФОМС</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыФФОМСКонтекстноеМеню" id="698"/>
-									<ExtendedTooltip name="ВзносыФФОМСРасширеннаяПодсказка" id="699"/>
-								</InputField>
-								<InputField name="ВзносыТФОМС" id="703">
-									<DataPath>Объект.Взносы.ТФОМС</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыТФОМСКонтекстноеМеню" id="704"/>
-									<ExtendedTooltip name="ВзносыТФОМСРасширеннаяПодсказка" id="705"/>
-								</InputField>
-								<InputField name="ВзносыФФОМСЕНВД" id="700">
-									<DataPath>Объект.Взносы.ФФОМСЕНВД</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыФФОМСЕНВДКонтекстноеМеню" id="701"/>
-									<ExtendedTooltip name="ВзносыФФОМСЕНВДРасширеннаяПодсказка" id="702"/>
-								</InputField>
-								<InputField name="ВзносыТФОМСЕНВД" id="706">
-									<DataPath>Объект.Взносы.ТФОМСЕНВД</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыТФОМСЕНВДКонтекстноеМеню" id="707"/>
-									<ExtendedTooltip name="ВзносыТФОМСЕНВДРасширеннаяПодсказка" id="708"/>
-								</InputField>
-								<InputField name="ВзносыФССЕНВД" id="712">
-									<DataPath>Объект.Взносы.ФССЕНВД</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыФССЕНВДКонтекстноеМеню" id="713"/>
-									<ExtendedTooltip name="ВзносыФССЕНВДРасширеннаяПодсказка" id="714"/>
-								</InputField>
-								<InputField name="ВзносыПФРНаДоплатуЛетчикам" id="730">
-									<DataPath>Объект.Взносы.ПФРНаДоплатуЛетчикам</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыПФРНаДоплатуЛетчикамКонтекстноеМеню" id="731"/>
-									<ExtendedTooltip name="ВзносыПФРНаДоплатуЛетчикамРасширеннаяПодсказка" id="732"/>
-								</InputField>
-								<InputField name="ВзносыПФРНаДоплатуШахтерам" id="733">
-									<DataPath>Объект.Взносы.ПФРНаДоплатуШахтерам</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВзносыПФРНаДоплатуШахтерамКонтекстноеМеню" id="734"/>
-									<ExtendedTooltip name="ВзносыПФРНаДоплатуШахтерамРасширеннаяПодсказка" id="735"/>
-								</InputField>
 								<ColumnGroup name="ВзносыГруппа1" id="772">
 									<Title>
 										<v8:item>
@@ -3385,44 +3553,6 @@
 									<Group>Horizontal</Group>
 									<ShowInHeader>true</ShowInHeader>
 									<ExtendedTooltip name="ВзносыГруппа1РасширеннаяПодсказка" id="773"/>
-									<ChildItems>
-										<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботах" id="736">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботах</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахКонтекстноеМеню" id="737"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахРасширеннаяПодсказка" id="738"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасный" id="776">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасный</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасныйКонтекстноеМеню" id="777"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасныйРасширеннаяПодсказка" id="778"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1" id="779">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1КонтекстноеМеню" id="780"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1РасширеннаяПодсказка" id="781"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2" id="782">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2КонтекстноеМеню" id="783"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2РасширеннаяПодсказка" id="784"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3" id="785">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3КонтекстноеМеню" id="786"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3РасширеннаяПодсказка" id="787"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4" id="788">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4КонтекстноеМеню" id="789"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4РасширеннаяПодсказка" id="790"/>
-										</InputField>
-									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ВзносыГруппа2" id="774">
 									<Title>
@@ -3434,45 +3564,43 @@
 									<Group>Horizontal</Group>
 									<ShowInHeader>true</ShowInHeader>
 									<ExtendedTooltip name="ВзносыГруппа2РасширеннаяПодсказка" id="775"/>
-									<ChildItems>
-										<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботах" id="739">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботах</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахКонтекстноеМеню" id="740"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахРасширеннаяПодсказка" id="741"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасный" id="791">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасный</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасныйКонтекстноеМеню" id="792"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасныйРасширеннаяПодсказка" id="793"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1" id="794">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1КонтекстноеМеню" id="795"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1РасширеннаяПодсказка" id="796"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2" id="797">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2КонтекстноеМеню" id="798"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2РасширеннаяПодсказка" id="799"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3" id="800">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3КонтекстноеМеню" id="801"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3РасширеннаяПодсказка" id="802"/>
-										</InputField>
-										<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4" id="803">
-											<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4КонтекстноеМеню" id="804"/>
-											<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4РасширеннаяПодсказка" id="805"/>
-										</InputField>
-									</ChildItems>
 								</ColumnGroup>
+								<InputField name="ВзносыФСЗН" id="1538">
+									<DataPath>Объект.Взносы.ФСЗН</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВзносыФСЗНКонтекстноеМеню" id="1539"/>
+									<ExtendedTooltip name="ВзносыФСЗНРасширеннаяПодсказка" id="1540"/>
+								</InputField>
+								<InputField name="ВзносыПенсионныйФонд" id="1541">
+									<DataPath>Объект.Взносы.ПенсионныйФонд</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВзносыПенсионныйФондКонтекстноеМеню" id="1542"/>
+									<ExtendedTooltip name="ВзносыПенсионныйФондРасширеннаяПодсказка" id="1543"/>
+								</InputField>
+								<InputField name="ВзносыБелгосстрах" id="1544">
+									<DataPath>Объект.Взносы.Белгосстрах</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВзносыБелгосстрахКонтекстноеМеню" id="1545"/>
+									<ExtendedTooltip name="ВзносыБелгосстрахРасширеннаяПодсказка" id="1546"/>
+								</InputField>
+								<InputField name="ВзносыПС" id="1547">
+									<DataPath>Объект.Взносы.ПС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пенсионное cтрахование</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВзносыПСКонтекстноеМеню" id="1548"/>
+									<ExtendedTooltip name="ВзносыПСРасширеннаяПодсказка" id="1549"/>
+								</InputField>
+								<InputField name="ВзносыСС" id="1550">
+									<DataPath>Объект.Взносы.СС</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВзносыССКонтекстноеМеню" id="1551"/>
+									<ExtendedTooltip name="ВзносыССРасширеннаяПодсказка" id="1552"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 						<Button name="КарточкаУчетаПоСтраховымВзносам" id="810">
@@ -3876,6 +4004,14 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ВведенныеНаДатуДокументыГруппаРасширеннаяПодсказка" id="819"/>
 		</UsualGroup>
+		<InputField name="Основание" id="1553">
+			<DataPath>Объект.Основание</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<Width>100</Width>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОснованиеКонтекстноеМеню" id="1554"/>
+			<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="1555"/>
+		</InputField>
 		<UsualGroup name="ПодписиГруппа" id="831">
 			<Title>
 				<v8:item>
@@ -8843,6 +8979,114 @@
 					<Type>
 						<v8:Type>cfg:ChartOfCalculationTypesRef.Начисления</v8:Type>
 						<v8:Type>cfg:ChartOfCalculationTypesRef.Удержания</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоказателиПособияДоТрехЛетНаВторогоРебенка" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатели пособия до трех лет на второго ребенка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Показатель" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяРеквизита" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Заголовок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоказателиПособияДоТрехЛетНаРебенкаИнвалида" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатели пособия до трех лет на ребенка-инвалида</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Показатель" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показатель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПоказателиРасчетаЗарплаты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяРеквизита" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Заголовок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>

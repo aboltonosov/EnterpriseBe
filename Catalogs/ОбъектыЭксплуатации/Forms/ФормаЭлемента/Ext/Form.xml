@@ -1039,6 +1039,7 @@
 					<ChildItems>
 						<RadioButtonField name="КлассификацияДМ4" id="253">
 							<DataPath>КлассификацияДМ4</DataPath>
+							<Visible>false</Visible>
 							<RadioButtonType>Auto</RadioButtonType>
 							<ColumnsCount>1</ColumnsCount>
 							<ChoiceList>
@@ -1145,8 +1146,16 @@
 									<ContextMenu name="ДрагоценныеМатериалыКоличествоКонтекстноеМеню" id="237"/>
 									<ExtendedTooltip name="ДрагоценныеМатериалыКоличествоРасширеннаяПодсказка" id="238"/>
 								</InputField>
+								<CheckBoxField name="ДрагоценныеМатериалыКомиссионно" id="358">
+									<DataPath>Объект.ДрагоценныеМатериалы.Комиссионно</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДрагоценныеМатериалыКомиссионноКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="ДрагоценныеМатериалыКомиссионноРасширеннаяПодсказка" id="360"/>
+								</CheckBoxField>
 								<InputField name="ДрагоценныеМатериалыРасположение" id="245">
 									<DataPath>Объект.ДрагоценныеМатериалы.Расположение</DataPath>
+									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДрагоценныеМатериалыРасположениеКонтекстноеМеню" id="246"/>
 									<ExtendedTooltip name="ДрагоценныеМатериалыРасположениеРасширеннаяПодсказка" id="247"/>

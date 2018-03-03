@@ -6,6 +6,7 @@
 			<v8:content>История изменения документа, удостоверяющего личность</v8:content>
 		</v8:item>
 	</Title>
+	<Width>105</Width>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>Bottom</CommandBarLocation>
@@ -104,6 +105,62 @@
 					<EditMode>EnterOnInput</EditMode>
 					<Width>30</Width>
 					<HorizontalStretch>true</HorizontalStretch>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ПаспортРФ</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Свидетельство о рождении</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.СвидетельствоОРождении</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.39d3af5c-72aa-4871-8874-c5bfc986798d</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.a1a0b971-cf80-453f-b93d-539b8be305f4</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.73680b7f-6ef0-417d-b9dd-5628c0054720</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">823333ea-90e6-4c1a-9396-f056da87be48.37a374e7-cd6e-4826-b564-9a4005c4dd7e</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
 					<ContextMenu name="НаборЗаписейВидДокументаКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="НаборЗаписейВидДокументаExtendedTooltip" id="56"/>
 				</InputField>

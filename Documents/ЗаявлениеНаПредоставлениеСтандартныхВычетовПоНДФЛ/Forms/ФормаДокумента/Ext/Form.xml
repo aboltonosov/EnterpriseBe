@@ -135,6 +135,7 @@
 				</InputField>
 				<LabelDecoration name="ИнформацияОВозможностиПроведения" id="102">
 					<Height>3</Height>
+					<HorizontalStretch>true</HorizontalStretch>
 					<TextColor>style:SpecialTextColor</TextColor>
 					<VerticalAlign>Top</VerticalAlign>
 					<ContextMenu name="ИнформацияОВозможностиПроведенияКонтекстноеМеню" id="103"/>
@@ -280,46 +281,119 @@
 					<v8:content>Личный вычет</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ExtendedTooltip name="ЛичныйВычетГруппаExtendedTooltip" id="85"/>
 			<ChildItems>
-				<CheckBoxField name="ИзменитьЛичныйВычет" id="51">
-					<DataPath>Объект.ИзменитьЛичныйВычет</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ИзменитьЛичныйВычетКонтекстноеМеню" id="52"/>
-					<ExtendedTooltip name="ИзменитьЛичныйВычетExtendedTooltip" id="86"/>
-					<Events>
-						<Event name="OnChange">ИзменитьЛичныйВычетПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
-				<InputField name="КодВычетаЛичный" id="11">
-					<DataPath>Объект.КодВычетаЛичный</DataPath>
+				<UsualGroup name="Группа1" id="113">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код</v8:content>
+							<v8:content>Группа1</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Наименование вычета</v8:content>
+							<v8:content>Группа1</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>10</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="КодВычетаЛичныйКонтекстноеМеню" id="12"/>
-					<ExtendedTooltip name="КодВычетаЛичныйExtendedTooltip" id="87">
-						<Height>2</Height>
-					</ExtendedTooltip>
-					<Events>
-						<Event name="OnChange">КодВычетаЛичныйПриИзменении</Event>
-					</Events>
-				</InputField>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="114"/>
+					<ChildItems>
+						<CheckBoxField name="ИзменитьЛичныйВычет" id="51">
+							<DataPath>Объект.ИзменитьЛичныйВычет</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИзменитьЛичныйВычетКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ИзменитьЛичныйВычетExtendedTooltip" id="86"/>
+							<Events>
+								<Event name="OnChange">ИзменитьЛичныйВычетПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="КодВычетаЛичный" id="11">
+							<DataPath>Объект.КодВычетаЛичный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование вычета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="КодВычетаЛичныйКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="КодВычетаЛичныйExtendedTooltip" id="87">
+								<Height>2</Height>
+								<HorizontalStretch>true</HorizontalStretch>
+								<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">КодВычетаЛичныйПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="115">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<CheckBoxField name="ИзменитьЛичныйВычетДополнительный" id="117">
+							<DataPath>Объект.ИзменитьЛичныйВычетДополнительный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изменить вычет дополнительный</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИзменитьЛичныйВычетДополнительныйКонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="ИзменитьЛичныйВычетДополнительныйРасширеннаяПодсказка" id="119"/>
+							<Events>
+								<Event name="OnChange">ИзменитьЛичныйВычетДополнительныйПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="КодВычетаЛичныйДополнительный" id="120">
+							<DataPath>Объект.КодВычетаЛичныйДополнительный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование вычета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="КодВычетаЛичныйДополнительныйКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="КодВычетаЛичныйДополнительныйРасширеннаяПодсказка" id="122">
+								<Height>2</Height>
+								<HorizontalStretch>true</HorizontalStretch>
+								<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">КодВычетаЛичныйДополнительныйПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ДокументПодтверждающийПравоНаЛичныйВычетГруппа" id="111">
@@ -472,16 +546,6 @@
 		</Parameter>
 	</Parameters>
 	<CommandInterface>
-		<NavigationPanel>
-			<Item>
-				<Command>CommonCommand.ИсторияИзменений</Command>
-				<Type>Auto</Type>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
-		</NavigationPanel>
 		<CommandBar>
 			<Item>
 				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>

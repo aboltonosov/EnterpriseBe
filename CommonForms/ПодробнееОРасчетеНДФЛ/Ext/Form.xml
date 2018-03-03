@@ -201,6 +201,51 @@
 				</InputField>
 			</ChildItems>
 		</Table>
+		<UsualGroup name="ГруппаКарточка" id="166">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаКарточкаExtendedTooltip" id="167"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКарточкаГруппаВычетыЛичные" id="170">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Личный</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаКарточкаГруппаВычетыЛичныеРасширеннаяПодсказка" id="171"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКарточкаГруппаВычетЛичный" id="172">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Личный</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Collapsible</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКарточкаГруппаВычетЛичныйРасширеннаяПодсказка" id="173"/>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКарточкаГруппаВычетЛичныйВторой" id="174">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Личный доп.</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Collapsible</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКарточкаГруппаВычетЛичныйВторойРасширеннаяПодсказка" id="175"/>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаПодвал" id="141">
 			<Title>
 				<v8:item>
@@ -493,7 +538,7 @@
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
 							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:FractionDigits>2</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
@@ -614,7 +659,7 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
-				<Column name="КомандаРедактированияРаспределения" id="14">
+				<Column name="КомандаРедактированияРаспределения" id="29">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -627,6 +672,60 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПримененныйВычетЛичныйВторой" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примененный вычет личный второй</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПримененныйВычетЛичныйВторойКодВычета" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примененный вычет личный второй код вычета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПримененныйВычетЛичныйВторойКЗачетуВозврату" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примененный вычет личный второй к зачету возврату</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПримененныйВычетЛичныйВторойКЗачетуВозвратуКодВычета" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примененный вычет личный второй к зачету возврату код вычета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
 					</Type>
 				</Column>
 				<Column name="ИдентификаторСтрокиНДФЛ" id="6">
@@ -791,7 +890,7 @@
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
 							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:FractionDigits>2</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>

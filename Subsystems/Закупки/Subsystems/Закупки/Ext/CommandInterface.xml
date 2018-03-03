@@ -16,12 +16,22 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.Панель1СМаркировка.Command.МаркировкаЗакупки">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.Панель1СМаркировка.Command.МаркировкаСклад">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.Панель1СМаркировка.Command.МаркировкаПродажи">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПанельОбменСЕГАИС.Command.ОбменЕГАИСЗакупки">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -127,6 +137,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.ТТНВходящаяЕГАИС.Command.ТТН_ЕГАИС">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.РабочееМестоМенеджераПоДоставке.Command.УправлениеДоставкой">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -140,6 +155,11 @@
 		<Command name="Document.ПоступлениеУслугПрочихАктивов.Command.ПоступленияУслугПрочихАктивов">
 			<Visibility>
 				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетФактураПолученный.Command.СчетаФактурыПолученные">
+			<Visibility>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>
@@ -162,6 +182,10 @@
 		</Command>
 		<Command name="Document.ПоступлениеУслугПрочихАктивов.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.СчетФактураПолученный.Command.СчетаФактурыПолученные">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
@@ -263,6 +287,9 @@
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.ЖурналДокументовЗакупки.Command.ДокументыЗакупки">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураПолученный.Command.СчетаФактурыПолученные">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
 	</CommandsOrder>

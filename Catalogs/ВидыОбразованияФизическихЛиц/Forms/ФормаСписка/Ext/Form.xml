@@ -124,12 +124,6 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="КодExtendedTooltip" id="12"/>
 				</LabelField>
-				<LabelField name="ФасетОКИН" id="8">
-					<DataPath>Список.ФасетОКИН</DataPath>
-					<Width>10</Width>
-					<ContextMenu name="ФасетОКИНКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ФасетОКИНExtendedTooltip" id="13"/>
-				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -140,8 +134,18 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникВидыОбразованияФизическихЛиц.Ссылка,
+	СправочникВидыОбразованияФизическихЛиц.ПометкаУдаления,
+	СправочникВидыОбразованияФизическихЛиц.Код,
+	СправочникВидыОбразованияФизическихЛиц.Наименование,
+	СправочникВидыОбразованияФизическихЛиц.ФасетОКИН,
+	СправочникВидыОбразованияФизическихЛиц.Предопределенный,
+	СправочникВидыОбразованияФизическихЛиц.ИмяПредопределенныхДанных
+ИЗ
+	Справочник.ВидыОбразованияФизическихЛиц КАК СправочникВидыОбразованияФизическихЛиц</QueryText>
 				<MainTable>Catalog.ВидыОбразованияФизическихЛиц</MainTable>
 				<ListSettings>
 					<dcsset:filter>

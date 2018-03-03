@@ -73,6 +73,12 @@
 				<Button name="НалогНаДоходы" id="485">
 					<Type>Hyperlink</Type>
 					<CommandName>Form.Command.НалогНаДоходы</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подоходный налог</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="НалогНаДоходыРасширеннаяПодсказка" id="486"/>
 				</Button>
 				<Button name="ВоинскийУчет" id="477">
@@ -300,7 +306,7 @@
 															<v8:content>Дата рождения</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
 													<Width>8</Width>
 													<ChoiceButton>false</ChoiceButton>
 													<ContextMenu name="ФизлицоДатаРожденияКонтекстноеМеню" id="186"/>
@@ -332,13 +338,17 @@
 											<ChildItems>
 												<InputField name="ФизлицоИНН" id="178">
 													<DataPath>ФизическоеЛицо.ИНН</DataPath>
+													<Visible>false</Visible>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>ИНН, присвоенный налоговым органом</v8:content>
+															<v8:content>УНП</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
 													<Width>12</Width>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ФизлицоИННКонтекстноеМеню" id="179"/>
@@ -352,13 +362,13 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>СНИЛС</v8:content>
+															<v8:content>Страховой номер</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Страховой номер ПФР</v8:content>
+															<v8:content>Страховой номер ФСЗН</v8:content>
 														</v8:item>
 													</ToolTip>
 													<ToolTipRepresentation>Button</ToolTipRepresentation>
@@ -484,6 +494,7 @@
 										</UsualGroup>
 										<InputField name="ГражданствоФизическихЛицИНН" id="524">
 											<DataPath>ГражданствоФизическихЛиц.ИНН</DataPath>
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -630,7 +641,88 @@
 											<DataPath>ДокументыФизическихЛиц.ВидДокумента</DataPath>
 											<HorizontalStretch>false</HorizontalStretch>
 											<OpenButton>false</OpenButton>
+											<ListChoiceMode>true</ListChoiceMode>
 											<AutoMarkIncomplete>false</AutoMarkIncomplete>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Паспорт гражданина Республики Беларусь</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ПаспортРФ</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Национальный паспорт иностранного гражданина</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ПаспортИностранногоГражданина</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Свидетельство о рождении (для граждан Республики Беларусь, не достигших шестнадцатилетнего возраста и не имеющих паспортов граждан Республики Беларусь</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.СвидетельствоОРождении</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Удостоверение беженца</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.УдостоверениеБеженца</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Вид на жительство в Республике Беларусь</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ВидНаЖительство</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Иной документ, удостоверяющий личность </v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыДокументовФизическихЛиц.ИнойДокумент</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
 											<ContextMenu name="ДокументыФизическихЛицВидДокументаКонтекстноеМеню" id="233"/>
 											<ExtendedTooltip name="ДокументыФизическихЛицВидДокументаExtendedTooltip" id="446"/>
 											<Events>
@@ -668,6 +760,12 @@
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
+										<InputField name="ДокументыФизическихЛицЛичныйНомер" id="529">
+											<DataPath>ДокументыФизическихЛиц.ЛичныйНомер</DataPath>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ДокументыФизическихЛицЛичныйНомерКонтекстноеМеню" id="530"/>
+											<ExtendedTooltip name="ДокументыФизическихЛицЛичныйНомерРасширеннаяПодсказка" id="531"/>
+										</InputField>
 										<InputField name="ДокументыФизическихЛицКемВыдан" id="238">
 											<DataPath>ДокументыФизическихЛиц.КемВыдан</DataPath>
 											<Width>1</Width>
@@ -694,6 +792,7 @@
 												</InputField>
 												<InputField name="ДокументыФизическихЛицКодПодразделения" id="240">
 													<DataPath>ДокументыФизическихЛиц.КодПодразделения</DataPath>
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>

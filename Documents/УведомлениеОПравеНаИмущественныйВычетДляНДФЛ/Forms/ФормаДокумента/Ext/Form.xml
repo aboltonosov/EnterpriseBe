@@ -191,6 +191,7 @@
 				</InputField>
 				<InputField name="КодНалоговогоОргана" id="22">
 					<DataPath>Объект.КодНалоговогоОргана</DataPath>
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -202,143 +203,112 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Pages name="СтраницыВычетов" id="92">
+		<UsualGroup name="ГруппаСотрудника" id="124">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Страницы вычетов</v8:content>
+					<v8:content>Документ уведомляющий права на вычеты</v8:content>
 				</v8:item>
 			</Title>
-			<ExtendedTooltip name="СтраницыВычетовРасширеннаяПодсказка" id="93"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сотрудника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСотрудникаРасширеннаяПодсказка" id="125"/>
 			<ChildItems>
-				<Page name="ИмущественныеВычеты" id="94">
+				<UsualGroup name="ГруппаРасходы" id="126">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имущественные вычеты</v8:content>
+							<v8:content>Размер вычетов</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ИмущественныеВычетыРасширеннаяПодсказка" id="95"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расходы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаРасходыРасширеннаяПодсказка" id="127"/>
 					<ChildItems>
-						<InputField name="Расходы" id="16">
+						<InputField name="Расходы" id="128">
 							<DataPath>Объект.РасходыНаСтроительствоПриобретение</DataPath>
-							<ContextMenu name="РасходыКонтекстноеМеню" id="17"/>
-							<ExtendedTooltip name="РасходыExtendedTooltip" id="81"/>
-						</InputField>
-						<InputField name="ПроцентыПоКредитам" id="18">
-							<DataPath>Объект.ПроцентыПоКредитам</DataPath>
-							<ContextMenu name="ПроцентыПоКредитамКонтекстноеМеню" id="19"/>
-							<ExtendedTooltip name="ПроцентыПоКредитамExtendedTooltip" id="82"/>
-						</InputField>
-						<InputField name="ПроцентыПриПерекредитовании" id="20">
-							<DataPath>Объект.ПроцентыПриПерекредитовании</DataPath>
-							<ContextMenu name="ПроцентыПриПерекредитованииКонтекстноеМеню" id="21"/>
-							<ExtendedTooltip name="ПроцентыПриПерекредитованииExtendedTooltip" id="83"/>
-						</InputField>
-					</ChildItems>
-				</Page>
-				<Page name="СоциальныеВычеты" id="96">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Социальные вычеты</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="СоциальныеВычетыРасширеннаяПодсказка" id="97"/>
-					<ChildItems>
-						<UsualGroup name="ГруппаВычетов" id="98">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа вычетов</v8:content>
+									<v8:content>Имущественный</v8:content>
 								</v8:item>
 							</Title>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаВычетовРасширеннаяПодсказка" id="99"/>
-							<ChildItems>
-								<UsualGroup name="Образование" id="100">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Образование</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<United>false</United>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ОбразованиеРасширеннаяПодсказка" id="101"/>
-									<ChildItems>
-										<InputField name="РасходыНаСвоеОбучение" id="102">
-											<DataPath>Объект.РасходыНаСвоеОбучение</DataPath>
-											<ContextMenu name="РасходыНаСвоеОбучениеКонтекстноеМеню" id="103"/>
-											<ExtendedTooltip name="РасходыНаСвоеОбучениеРасширеннаяПодсказка" id="104"/>
-										</InputField>
-										<InputField name="РасходыНаОбучениеДетей" id="105">
-											<DataPath>Объект.РасходыНаОбучениеДетей</DataPath>
-											<ContextMenu name="РасходыНаОбучениеДетейКонтекстноеМеню" id="106"/>
-											<ExtendedTooltip name="РасходыНаОбучениеДетейРасширеннаяПодсказка" id="107"/>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="Лечение" id="108">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Лечение</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<United>false</United>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ЛечениеРасширеннаяПодсказка" id="109"/>
-									<ChildItems>
-										<InputField name="РасходыНаЛечение" id="110">
-											<DataPath>Объект.РасходыНаЛечение</DataPath>
-											<ContextMenu name="РасходыНаЛечениеКонтекстноеМеню" id="111"/>
-											<ExtendedTooltip name="РасходыНаЛечениеРасширеннаяПодсказка" id="112"/>
-										</InputField>
-										<InputField name="СтраховыеВзносыНаМедУслуги" id="113">
-											<DataPath>Объект.СтраховыеВзносыНаМедУслуги</DataPath>
-											<ContextMenu name="СтраховыеВзносыНаМедУслугиКонтекстноеМеню" id="114"/>
-											<ExtendedTooltip name="СтраховыеВзносыНаМедУслугиРасширеннаяПодсказка" id="115"/>
-										</InputField>
-										<InputField name="РасходыНаДорогостоящееЛечение" id="116">
-											<DataPath>Объект.РасходыНаДорогостоящееЛечение</DataPath>
-											<ContextMenu name="РасходыНаДорогостоящееЛечениеКонтекстноеМеню" id="117"/>
-											<ExtendedTooltip name="РасходыНаДорогостоящееЛечениеРасширеннаяПодсказка" id="118"/>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="Группа2017" id="119">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа2017</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<United>false</United>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа2017РасширеннаяПодсказка" id="120"/>
-									<ChildItems>
-										<InputField name="ВзносыНаДобровольноеСтрахованиеЖизни" id="121">
-											<DataPath>Объект.ВзносыНаДобровольноеСтрахованиеЖизни</DataPath>
-											<ContextMenu name="ВзносыНаДобровольноеСтрахованиеЖизниКонтекстноеМеню" id="122"/>
-											<ExtendedTooltip name="ВзносыНаДобровольноеСтрахованиеЖизниРасширеннаяПодсказка" id="123"/>
-										</InputField>
-									</ChildItems>
-								</UsualGroup>
-							</ChildItems>
-						</UsualGroup>
+							<ContextMenu name="РасходыКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="РасходыРасширеннаяПодсказка" id="130">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Код 650</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="ПроцентыПоКредитам" id="131">
+							<DataPath>Объект.ПроцентыПоКредитам</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ПроцентыПоКредитамКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="ПроцентыПоКредитамРасширеннаяПодсказка" id="133"/>
+						</InputField>
+						<InputField name="ПроцентыПриПерекредитовании" id="134">
+							<DataPath>Объект.ПроцентыПриПерекредитовании</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ПроцентыПриПерекредитованииКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="ПроцентыПриПерекредитованииРасширеннаяПодсказка" id="136"/>
+						</InputField>
+						<InputField name="РасходыНаОбразование" id="137">
+							<DataPath>Объект.РасходыНаОбразование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Социальный</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РасходыНаОбразованиеКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="РасходыНаОбразованиеРасширеннаяПодсказка" id="139">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Код 630</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="РасходыНаСтрахование" id="140">
+							<DataPath>Объект.РасходыНаСтрахование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Социальный на страхование</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РасходыНаСтрахованиеКонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="РасходыНаСтрахованиеРасширеннаяПодсказка" id="142">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Код 640</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
 					</ChildItems>
-				</Page>
+				</UsualGroup>
 			</ChildItems>
-		</Pages>
+		</UsualGroup>
 		<UsualGroup name="КомментарийГруппа" id="61">
 			<Title>
 				<v8:item>

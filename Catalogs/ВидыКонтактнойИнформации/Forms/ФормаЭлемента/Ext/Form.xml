@@ -196,7 +196,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Только российский</v8:content>
+													<v8:content>Только белорусский</v8:content>
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
@@ -259,59 +259,20 @@
 																<Event name="OnChange">ПроверятьКорректностьАдресаПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
-														<RadioButtonField name="ПроверятьПоКлассификатору" id="121">
+														<CheckBoxField name="ПроверятьПоКлассификатору" id="121">
 															<DataPath>ПроверятьПоКлассификатору</DataPath>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Проверять по</v8:content>
+																	<v8:content>Проверять по реестру АТЕ и ТЕ</v8:content>
 																</v8:item>
 															</Title>
-															<TitleLocation>Left</TitleLocation>
+															<TitleLocation>Right</TitleLocation>
 															<ToolTipRepresentation>Button</ToolTipRepresentation>
-															<RadioButtonType>Auto</RadioButtonType>
-															<ChoiceList>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>ФИАС</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:decimal">0</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>КЛАДР</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:decimal">1</Value>
-																	</xr:Value>
-																</xr:Item>
-															</ChoiceList>
+															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПроверятьПоКлассификаторуКонтекстноеМеню" id="122"/>
-															<ExtendedTooltip name="ПроверятьПоКлассификаторуРасширеннаяПодсказка" id="123">
-																<Title formatted="false">
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>При проверке адреса по классификатору ФИАС выполняются дополнительные проверки:
-- "Округ" (между уровнями "Регион" и "Район"). 
-- "Внутригородской район" (между уровнями "Город" и "Населенный пункт")
-- Уровни дополнительных территорий (между "Улица", и номером дома или владения)
-- Дома, владения, корпуса, строения и т.п.</v8:content>
-																	</v8:item>
-																</Title>
-															</ExtendedTooltip>
-														</RadioButtonField>
+															<ExtendedTooltip name="ПроверятьПоКлассификаторуРасширеннаяПодсказка" id="123"/>
+														</CheckBoxField>
 														<CheckBoxField name="СкрыватьНеактуальныеАдреса" id="61">
 															<DataPath>Объект.СкрыватьНеактуальныеАдреса</DataPath>
 															<TitleLocation>Right</TitleLocation>
@@ -321,6 +282,7 @@
 														</CheckBoxField>
 														<CheckBoxField name="УказыватьОКТМОВручную" id="129">
 															<DataPath>Объект.УказыватьОКТМО</DataPath>
+															<Visible>false</Visible>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="УказыватьОКТМОВручнуюКонтекстноеМеню" id="130"/>

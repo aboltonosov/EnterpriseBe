@@ -649,7 +649,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Проверять контрагентов с помощью веб-сервиса ФНС</v8:content>
+													<v8:content>Проверять контрагентов с помощью веб-сервиса ИМНС</v8:content>
 												</v8:item>
 											</Title>
 											<TitleLocation>Right</TitleLocation>
@@ -661,7 +661,7 @@
 												<Title formatted="true">
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>&lt;color #807a59&gt;Проверка регистрации контрагентов в ЕГРН (Едином государственном реестре налогоплательщиков) &lt;/&gt;&lt;color #807a59&gt;по ИНН и КПП&lt;/&gt;
+														<v8:content>&lt;color #807a59&gt;Проверка регистрации контрагентов в ЕГР (Единый государственный регистр юридических лиц и индивидуальных предпринимателей) &lt;/&gt;&lt;color #807a59&gt;по УНП&lt;/&gt;
 &lt;link e1cib/app/Обработка.ИнструкцияПоИспользованиюПроверкиКонтрагента&gt;Подробнее о сервисе&lt;/&gt;</v8:content>
 													</v8:item>
 												</Title>
@@ -691,6 +691,7 @@
 									<ExtendedTooltip name="ПраваяКолонкаПервойГруппыРасширеннаяПодсказка" id="338"/>
 									<ChildItems>
 										<LabelDecoration name="ПредупреждениеПроТестовыйРежимПроверкиКонтрагента" id="339">
+											<Visible>false</Visible>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<Height>1</Height>
 											<Title formatted="false">

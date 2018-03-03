@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Стандартные вычеты физических лиц по НДФЛ испр</v8:content>
+					<v8:content>Стандартные вычеты физических лиц по подоходному налогу испр</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -223,6 +223,49 @@
 					<Comment/>
 					<Type>
 						<v8:Type>cfg:CatalogRef.УдалитьВидыВычетовНДФЛ</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters>
+						<app:item name="Отбор.ГруппаВычета">
+							<app:value xsi:type="xr:DesignTimeRef">Enum.ГруппыВычетовПоНДФЛ.EnumValue.Стандартные</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
+			<Resource uuid="fe3a32dc-3a1a-48bc-98c4-5f6c50c29b19">
+				<Properties>
+					<Name>КодВычетаЛичныйДополнительный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код вычета личный дополнительный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

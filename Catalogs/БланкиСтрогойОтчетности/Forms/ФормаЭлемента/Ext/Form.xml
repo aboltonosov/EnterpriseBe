@@ -30,9 +30,6 @@
 				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
 					<EditMode>EnterOnInput</EditMode>
 					<EditFormat>
 						<v8:item>
@@ -42,6 +39,37 @@
 					</EditFormat>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="8"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭСЧФ" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронные счета-фактуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ЭСЧФ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаЭСЧФРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<InputField name="ВидДокумента" id="11">
+					<DataPath>Объект.ВидДокумента</DataPath>
+					<ContextMenu name="ВидДокументаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="13"/>
+					<Events>
+						<Event name="OnChange">ВидДокументаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КодБланка" id="14">
+					<DataPath>Объект.КодБланка</DataPath>
+					<ContextMenu name="КодБланкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КодБланкаРасширеннаяПодсказка" id="16"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

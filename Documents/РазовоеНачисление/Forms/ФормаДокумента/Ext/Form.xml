@@ -602,6 +602,12 @@
 								<InputField name="НачисленияНДФЛ" id="124">
 									<DataPath>Объект.Начисления.НДФЛ</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подоходный налог</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterDataPath>ИтогНДФЛ</FooterDataPath>
 									<ContextMenu name="НачисленияНДФЛКонтекстноеМеню" id="125"/>
@@ -1350,7 +1356,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>CalculationRegister.Начисления.StandardCommand.OpenByRecorder</Command>
+				<Command>CommonCommand.ИсторияИзменений</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1358,7 +1364,15 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>CommonCommand.ИсторияИзменений</Command>
+				<Command>CalculationRegister.Удержания.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CalculationRegister.Начисления.StandardCommand.OpenByRecorder</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

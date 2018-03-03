@@ -30,7 +30,7 @@
 					<Wrap>false</Wrap>
 					<BorderColor>style:BorderColor</BorderColor>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="60"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="60"/>
 					<Events>
 						<Event name="OnChange">НаименованиеПриИзменении</Event>
 					</Events>
@@ -92,7 +92,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПолИДатаРожденияExtendedTooltip" id="63"/>
+			<ExtendedTooltip name="ГруппаПолИДатаРожденияРасширеннаяПодсказка" id="63"/>
 			<ChildItems>
 				<InputField name="Пол" id="44">
 					<DataPath>Объект.Пол</DataPath>
@@ -100,7 +100,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ПолКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="ПолExtendedTooltip" id="64"/>
+					<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="64"/>
 				</InputField>
 				<InputField name="ДатаРождения" id="42">
 					<DataPath>Объект.ДатаРождения</DataPath>
@@ -108,7 +108,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="43"/>
-					<ExtendedTooltip name="ДатаРожденияExtendedTooltip" id="65"/>
+					<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="65"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -132,13 +132,25 @@
 			<ChildItems>
 				<InputField name="ИНН" id="54">
 					<DataPath>Объект.ИНН</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УНП</v8:content>
+						</v8:item>
+					</Title>
 					<Width>15</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ИННКонтекстноеМеню" id="55"/>
-					<ExtendedTooltip name="ИННExtendedTooltip" id="66"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="66"/>
 				</InputField>
 				<InputField name="СтраховойНомерПФР" id="80">
 					<DataPath>Объект.СтраховойНомерПФР</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страховой номер</v8:content>
+						</v8:item>
+					</Title>
 					<Width>14</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="СтраховойНомерПФРКонтекстноеМеню" id="81"/>
@@ -152,13 +164,13 @@
 			<ClearButton>true</ClearButton>
 			<OpenButton>false</OpenButton>
 			<ContextMenu name="РодительКонтекстноеМеню" id="47"/>
-			<ExtendedTooltip name="РодительExtendedTooltip" id="67"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="67"/>
 		</InputField>
 		<InputField name="ГруппаДоступа" id="52">
 			<DataPath>Объект.ГруппаДоступа</DataPath>
 			<Wrap>false</Wrap>
 			<ContextMenu name="ГруппаДоступаКонтекстноеМеню" id="53"/>
-			<ExtendedTooltip name="ГруппаДоступаExtendedTooltip" id="68"/>
+			<ExtendedTooltip name="ГруппаДоступаРасширеннаяПодсказка" id="68"/>
 		</InputField>
 		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="51">
 			<ToolTip>
@@ -169,7 +181,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="69"/>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="69"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКонтактнаяИнформация" id="50">
 			<Title>
@@ -185,7 +197,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияExtendedTooltip" id="70"/>
+			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="70"/>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>

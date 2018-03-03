@@ -1,0 +1,65 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.w3schoolsa.com">
+	<property name="issuance">
+		<typeDef xsi:type="ObjectType">
+			<property name="sender" type="xs:string" lowerBound="1" form="Attribute"/>
+			<property xmlns:d4p1="http://www.w3schoolsa.com" name="general" type="d4p1:general"/>
+		</typeDef>
+	</property>
+	<valueType name="descriptionType" base="xs:string" variety="Atomic">
+		<enumeration>DEDUCTION_IN_FULL</enumeration>
+		<enumeration>VAT_EXEMPTION</enumeration>
+		<enumeration>OUTSIDE_RB</enumeration>
+		<enumeration>IMPORT_VAT</enumeration>
+	</valueType>
+	<valueType name="invoiceDocType" base="xs:string" variety="Atomic">
+		<enumeration>ORIGINAL</enumeration>
+		<enumeration>ADDITIONAL</enumeration>
+		<enumeration>FIXED</enumeration>
+		<enumeration>ADD_NO_REFERENCE</enumeration>
+	</valueType>
+	<valueType name="invoiceFormat" base="xs:string" variety="Atomic">
+		<pattern>\d{9}\-\d{4}\-\d{10}</pattern>
+	</valueType>
+	<valueType name="rateType" base="xs:string" variety="Atomic">
+		<enumeration>DECIMAL</enumeration>
+		<enumeration>ZERO</enumeration>
+		<enumeration>NO_VAT</enumeration>
+		<enumeration>CALCULATED</enumeration>
+	</valueType>
+	<objectType name="descriptionList">
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="description" type="d3p1:descriptionType" upperBound="-1"/>
+	</objectType>
+	<objectType name="general">
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="number" type="d3p1:invoiceFormat"/>
+		<property name="dateTransaction" type="xs:date"/>
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="documentType" type="d3p1:invoiceDocType"/>
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="invoice" type="d3p1:invoiceFormat"/>
+		<property name="sendToRecipient" type="xs:boolean" fixed="false" default="false"/>
+	</objectType>
+	<objectType name="rosterItem">
+		<property name="number" type="xs:integer" lowerBound="0"/>
+		<property name="name" type="xs:string"/>
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="code_oced" type="xs:integer" lowerBound="0"/>
+		<property name="units" type="xs:integer" lowerBound="0"/>
+		<property name="count" type="xs:decimal" lowerBound="0"/>
+		<property name="price" type="xs:decimal" lowerBound="0"/>
+		<property name="cost" type="xs:decimal"/>
+		<property name="summaExcise" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="vat" type="d3p1:vat"/>
+		<property name="costVat" type="xs:decimal"/>
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="descriptions" type="d3p1:descriptionList" lowerBound="0"/>
+	</objectType>
+	<objectType name="roster">
+		<property name="totalCostVat" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property name="totalExcise" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property name="totalVat" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property name="totalCost" type="xs:decimal" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="rosterItem" type="d3p1:rosterItem" upperBound="-1"/>
+	</objectType>
+	<objectType name="vat">
+		<property name="rate" type="xs:decimal"/>
+		<property xmlns:d3p1="http://www.w3schoolsa.com" name="rateType" type="d3p1:rateType"/>
+		<property name="summaVat" type="xs:decimal"/>
+	</objectType>
+</package>

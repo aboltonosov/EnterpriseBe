@@ -1323,6 +1323,3686 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="КодПлатежаВБюджет" id="1213">
+							<DataPath>Объект.КодПлатежаВБюджет</DataPath>
+							<Width>8</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<DropListButton>true</DropListButton>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0101(Подоходный налог с физических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0101</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0102(Подоходный налог с физических лиц, исчисленный с доходов, полученных от осуществления предпринимательской деятельности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0102</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0201(Налог на прибыль, уплачиваемый организациями, имущество которых находится в собственности Республики Беларусь, и организациями, в уставных фондах которых 50. И более процентов акций (долей) принадлежит Республике Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0201</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0202 (Налог на прибыль иных организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0202</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0301 (Налог на доходы от осуществления лотерейной деятельности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0301</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0302 (Налог на доходы от проведения электронных интерактивных игр)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0302</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0303 (Налог на доходы иностранных организаций, не осуществляющих деятельность в Республике Беларусь через постоянное представительство)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0303</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0701 (Налог на недвижимость на незавершенное строительство)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0701</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0801 (Земельный налог с организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0801</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0802 (Земельный налог с физических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0802</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0901 (Налог на недвижимость организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0901</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>0902 (Налог на недвижимость физических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">0902</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1001 (Налог на добавленную стоимость по оборотам по реализации товаров (работ, услуг), имущественных прав на  территории  Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1001</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1002 (Налог на добавленную стоимость на товары, ввозимые на территорию Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1002</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1003 (Налог на добавленную стоимость, уплачиваемый газо - и энергоснабжающими организациями)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1003</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1005 (Налог на добавленную стоимость на товары, ввозимые на территорию Республики Беларусь из Республики Казахстан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1005</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1007 (Налог на добавленную стоимость, уплачиваемый в фиксированной сумме)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1007</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1201 (Налог при упрощенной системе налогообложения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1201</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1202 (Единый налог с индивидуальных предпринимателей и иных физических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1202</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1203 (Единый налог для производителей сельскохозяйственной продукции)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1203</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1401 (Акцизы на спирт из пищевого сырья, водку, ликероводочные изделия, спиртосодержащие растворы(кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1401</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1402 (Акцизы на вермуты и вина (кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1402</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1403 (Акцизы на вина игристые и шампанские (кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1403</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1404 (Акцизы на коньяк, бренди, кальвадос, коньячные напитки (кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1404</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1405 (Акцизы на пиво (кроме импортированного))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1405</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1406 (Акцизы на спирт гидролизный технический)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1406</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1407 (Акцизы на табачные изделия (кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1407</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1408 (Акцизы на напитки слабоалкогольные и винные (кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1408</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1410 (Акцизы на масла моторные(кроме импортированных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1410</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1411 (Акцизы на автомобильное и иное, используемое в качестве автомобильного, топливо(кроме импортированного))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1411</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1416 (Плата за приобретение акцизных марок)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1416</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1418 (Акцизы на алкогольную продукцию и спиртосодержащие растворы импортированные)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1418</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1419 (Акцизы на пиво импортированное)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1419</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1420 (Акцизы на табачные изделия импортированные)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1420</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1421 (Акцизы на автомобили импортированные)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1421</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1422 (Акцизы на автомобильное и иное, используемое в качестве автомобильного, импортированное топливо)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1422</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1423 (Акцизы на масла моторные импортированные)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1423</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1424 (Акцизы на товары, ввозимые на территорию Республики Беларусь из Республики Казахстан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1424</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1601 (Налог на игорный бизнес)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1601</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1603 (Сбор с заготовителей)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1603</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1604 (Отчисления от доходов от оказания услуг электросвязи)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1604</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1605 (Единый торговый сбор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1605</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1700 (Налог за владение собаками)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1700</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1800 (Сбор за проезд автомобильных транспортных средств иностранных государств по автомобильным дорогам общего пользования Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1800</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1901 (Сборы за осуществление деятельности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1901</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1905 (Патентные пошлины)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">1905</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2001 (Экологический налог за выбросы загрязняющих веществ в атмосферный воздух)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2001</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2003 (Экологический налог за хранение, захоронение отходов производства)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2003</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2004 (Экологический налог за сброс сточных вод)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2004</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2009 (Экологический налог за ввоз на территорию Республики Беларусь озоноразрушающих веществ, в том числе содержащихся в продукции)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2009</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2101 (Налог на добычу (изъятие) нефти)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2101</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2102 (Налог на добычу (изъятие) соли калийной)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2102</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2103 (Налог на добычу (изъятие) иных природных ресурсов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2103</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2201 (Таможенные платежи, взимаемые с физических лиц при ввозе товаров для личного пользования)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2201</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2202 (Таможенные сборы за таможенное оформление)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2202</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2204 (Таможенные сборы за таможенное оформление товаров для личного пользования)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2204</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2207 (Специальные, антидемпинговые и компенсационные пошлины, взимаемые в соответствии с законодательством Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2207</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2208 (Ввозные таможенные пошлины, налоговое обязательство по уплате которых возникло до вступления в силу соглашения об установлении и применении в таможенном союзе порядка зачисления и распределения ввозных таможенных пошлин (иных пошлин, налогов и сборо</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2208</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2301 (Вывозные таможенные пошлины в отношении нефти сырой, добытой на территории Республики Беларусь и вывозимой с территории РБ за пределы таможенной территории таможенного союза)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2301</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2303 (Вывоз. Там. Пошл. При экспорте нефтепр-ов, обязанность по упл. К-рых возникла до вступ-ия в силу согл-ия о порядке упл. И зачис-ия вывоз. Там. Пошлин (иных пошлин, налогов и сборов, имеющих эквив-ое действие) при вывозе с тер. РБ за пределы там. Тер</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2303</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2304 (Вывозная таможенная пошлина на калийные удобрения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2304</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2305 (Вывоз. Там. Пошл. При экспорте нефти сырой и нефтепр-ов, подл. Переч-ию в бюджет РФ в соотв-ии с согл. О пор. Уплаты и зачис-ия вывоз. Там. Пошлин (иных пошлин, налогов и сборов, имеющих эквив-ое действие) при вывозе с террит. РБ за пределы там. Те</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2305</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2309 (Другие вывозные таможенные пошлины)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2309</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2401 (Поступления сумм, полученных в качестве выплат или иных льгот, предоставленных при вывозе товаров)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2401</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2403 (Прочие таможенные сборы и платежи)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2403</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2404 (Поступления от внешнеэкономической деятельности в рамках соглашения между правительством Республики Беларусь и правительством российской федерации о транзите товаров, перемещаемых между таможенными органами Республики Беларусь и таможенными органам</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2404</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2405 (Оффшорный сбор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2405</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2501 (Ввозные таможенные пошлины, поступившие от Республики Казахстан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2501</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2502 (Ввозные таможенные пошлины, поступившие от Российской Федерации)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2502</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2503 (Проценты, поступившие за неисполнение, несвоевременное исполнение обязательств Республики Казахстан по перечислению сумм от распределения ввозных таможенных пошлин)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2503</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2504 (Проценты, поступившие за неисполнение, несвоевременное исполнение обязательств российской федерации по перечислению сумм от распределения ввозных таможенных пошлин)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2504</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2505 (Специальные, антидемпинговые и компенсационные пошлины, поступившие от Республики Казахстан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2505</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2506 (Специальные, антидемпинговые и компенсационные пошлины, поступившие от Российской Федерации)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2506</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2507 (Проценты, поступившие за несвоевременное исполнение обязательств Республики Казахстан по перечислению сумм от распределения специальных, антидемпинговых, компенсационных пошлин)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2507</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2508 (Проценты, поступившие за несвоевременное исполнение обязательств Российской Федерации по перечислению сумм от распределения специальных, антидемпинговых, компенсационных пошлин)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2508</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2600 (Ввозные таможенные пошлины, уплаченные и зачисленные в связи с ввозом товаров на территорию Республики Беларусь в соответствии с соглашением об установлении и применении в таможенном союзе порядка зачисления и распределения ввозных таможенных пошлин</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2600</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2700 (Специальные, антидемпинговые и компенсационные пошлины, уплаченные и зачисленные в соответствии с таможенным законодательством таможенного союза)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2700</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2801 (Отчисления в инновационные фонды республиканских органов государственного управления, иных государственных организаций, подчиненных правительству Республики Беларусь, национальной академии наук Беларуси, Белорусского республиканского союза  потребит</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2801</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2803 (Отчисления в инновационные фонды областных и минского городского исполнительных комитетов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2803</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2901 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию от несчастных случаев на производстве и профессиональных заболеваний)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2901</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2902 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию гражданской ответственности владельцев транспортных средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2902</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2903 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию гражданской ответственности перевозчика перед пассажирами)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2903</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2904 (Отчисления в фонд предупредительных (превентивных) мероприятий по добровольному страхованию жизни)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2904</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2905 (Отчисления в фонд предупредительных (превентивных) мероприятий по добровольному страхованию медицинских расходов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2905</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2907 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному медицинскому страхованию иностранных граждан и лиц без гражданства, временно пребывающих или временно проживающих в Республике Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2907</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2908 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию строений, принадлежащих гражданам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2908</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2909 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию ответственности коммерческих организаций, осуществляющих риэлторскую деятельность, за причинение вреда в связи с ее осуществлением)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2909</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2910 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию с государственной поддержкой урожая сельскохозяйственных культур, скота, птицы)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2910</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2911 (Отчисления в фонд предупредительных (превентивных) мероприятий по обязательному страхованию гражданской ответственности временных (антикризисных) управляющих в производстве по делу об экономической несостоятельности (банкротстве))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">2911</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3001 (Государственная пошлина за совершение юридически значимых действий с организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3001</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3002 (Государственная пошлина за совершение юридически значимых действий с физических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3002</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3102 (Консульский сбор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3102</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3103 (Гербовый сбор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3103</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3104 (Курортный сбор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3104</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3105 (Поступления денежных средств при ввозе на территорию Республики Беларусь нефтяного жидкого топлива, иных товаров с территории государств-членов таможенного союза)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3105</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3107 (Средства от реализации контрольных (идентификационных) знаков, предназначенных для маркировки материальных носителей (аудио-, видеокассет, компакт-дисков и других носителей), содержащих фонограммы и (или) аудиовизуальные произведения, которые находя</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3107</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3108 (Средства от реализации контрольных (идентификационных) знаков (за исключением контрольных (идентификационных) знаков, предназначенных для маркировки материальных носителей (аудио-, видеокассет, компакт-дисков и других носителей), содержащих фонограм</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3108</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3109 (Поступления по отмененным налогам, сборам (пошлинам))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3109</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3111 (Средства гарантийных фондов, создаваемых страховыми организациями на случай невыполнения своих обязательств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3111</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3112 (Денежные средства, поступившие в качестве обеспечения уплаты таможенных пошлин, налогов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3112</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3113 (Денежные средства, взысканные за счет обеспечения уплаты таможенных пошлин, налогов и поступившие от Республики Казахстан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3113</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3114 (Денежные средства, взысканные за счет обеспечения уплаты таможенных пошлин, налогов и поступившие от Российской Федерации)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3114</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3115 (Предварительные специальные, предварительные антидемпинговые, предварительные компенсационные пошлины)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3115</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3116 (Специальные, антидемпинговые, компенсационные пошлины, уплаченные в порядке, установленном для взимания соответствующих предварительных видов пошлин)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3116</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3511 (Обязательные страховые взносы работодателей, Белгосстраха, работающих граждан и физических лиц, уплачивающих эти взносы самостоятельно)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3511</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3512 (Обязательные страховые взносы, уплачиваемые гражданами Республики Беларусь, иностранными гражданами и лицами без гражданства, осуществляющими предпринимательскую деятельность)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3512</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3600 (Взносы на профессиональное пенсионное страхование)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3600</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3801 (Проценты, уплачиваемые банками за пользование денежными средствами республиканского. И местных бюджетов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3801</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3802 (Проценты за пользование бюджетными займами, бюджетными кредитами, а также по платежам, произведенным из бюджета в соответствии с гарантиями правительства Республики Беларусь и местных исполнительных и распорядительных органов по кредитам, выдаваемы</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3802</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3803 (Проценты по кредитам, предоставленным предприятиям из средств кредитов международных финансовых организаций и иностранных кредиторов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3803</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3804 (Проценты, уплачиваемые банками за пользование денежными средствами государственного внебюджетного фонда социальной защиты населения  Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3804</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3805 (Доходы от капитализации средств государственного внебюджетного  фонда социальной защиты населения Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3805</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3806 (Доходы от размещения средств профессионального пенсионного страхования)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3806</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3901 (Дивиденды на доли (акции), находящиеся в государственной собственности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3901</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3902 (Доходы от перечисления национальным банком Республики Беларусь процентного дохода по облигациям местных исполнительных и распорядительных органов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3902</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3903 (Доходы от перечисления части прибыли унитарных предприятий, государственных объединений)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3903</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3904 (Доходы от перечисления части прибыли (дохода) отдельных высокорентабельных унитарных предприятий, государственных объединений и хозяйственных обществ)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3904</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3906 (Доходы от перечисления части прибыли в инновационные фонды республиканских органов государственного управления, иных государственных организаций, подчиненных правительству Республики Беларусь, национальной академии наук Беларуси, Белорусского респуб</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3906</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3908 (Доходы от перечисления части прибыли в инновационные фонды областных и минского городского исполнительных комитетов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3908</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>3911 (Доходы от перечисления части прибыли республиканского унитарного предприятия по аэронавигационному обслуживанию воздушного движения 'Белаэронавигация')</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">3911</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4001 (Арендная плата за пользование земельными участками)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4001</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4002 (Плата за право заключения договоров аренды земельных участков)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4002</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4101 (Поступления части средств, полученных от сдачи в аренду капитальных строений (зданий, сооружений), изолированных помещений, их частей, находящихся в государственной собственности и переданных в безвозмездное пользование акционерных обществ, республи</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4101</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4102 (Поступления средств (части средств), полученных от сдачи в аренду капитальных строений (зданий, сооружений), изолированных помещений, их частей, переданных в хозяйственное ведение или оперативное управление юридических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4102</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4103 (Поступления от сдачи в аренду предприятий (имущественных комплексов))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4103</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4104 (Поступления от производителей сельскохозяйственной продукции за пользование техникой, полученной на условиях долгосрочной (финансовой) аренды (лизинга))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4104</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4105 (Плата за право заключения договора аренды капитальных строений (зданий, сооружений), изолированных помещений, их частей, находящихся в государственной собственности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4105</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4106 (Плата за выделение и использование радиочастотного спектра)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4106</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4107 (Разовый платеж за право пользования недрами)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4107</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4303 (Плата за предоставление гарантий правительства Республики Беларусь и местных исполнительных и распорядительных органов по кредитам банков Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4303</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4304 (Плата за предоставление гарантии правительства Республики Беларусь  по внешним займам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4304</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4305 (Поступления средств на выплату вознаграждения за исполнение государственными служащими обязанностей представителя государства в хозяйственных обществах, акции (доли в уставных фондах) которых находятся в государственной собственности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4305</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4307 (Плата за пробирные работы и услуги)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4307</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4501 (Доходы от оказания платных услуг, получаемые государственными органами (их территориальными органами), зачисляемые в доход бюджетов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4501</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4601 (Плата за пользование учебниками и учебными пособиями)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4601</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4602 (Доходы, поступающие в возмещение расходов по содержанию лиц, помещенных в медицинские вытрезвители органов внутренних дел)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4602</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4603 (Плата за питание детей, получающих дошкольное образование, специальное образование  на уровне дошкольного образования)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4603</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4604 (Плата за пользование общежитиями государственных учреждений образования)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4604</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4605 (Доходы, поступающие в порядке возмещения расходов по содержанию граждан, находящихся на государственном обеспечении)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4605</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4606 (Плата за оздоровление детей  в образовательно-оздоровительных центрах, учреждении образования 'Национальный детский образовательно-оздоровительный центр 'Зубренок')</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4606</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4607 (Плата за получение дополнительного образования  детей и молодежи в государственных детских школах искусств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4607</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4608 (Доходы, поступающие в возмещение расходов по коммунальным услугам, связи, другим услугам, содержанию, эксплуатации, капитальному и текущему ремонту зданий, сооружений и помещений, сдаваемых в аренду или передаваемых в безвозмездное пользование)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4608</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4609 (Доходы, поступающие в возмещение расходов, связанных с хранением, реализацией и иным использованием имущества)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4609</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4610 (Доходы, поступающие в возмещение осужденными, гражданами расходов по их содержанию (пребыванию) в уголовно-исправительных учреждениях, лечебно-трудовых профилакториях министерства внутренних дел РБ)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4610</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4612 (Доходы от предоставления сводных статистических данных, оказания иных информационных услуг)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4612</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4613 (Доходы от оказания платных услуг фельдъегерской и правительственной связи)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4613</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4616 (Доходы, поступающие в возмещение расходов, связанных с организацией (подготовкой) и проведением аукционов и конкурсов по продаже имущества, аукционов по продаже права заключения договоров аренды зданий, сооружений и помещений, отводом и государствен</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4616</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4620 (Средства, получаемые  от выпуска и заимствования материальных ценностей государственного материального резерва)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4620</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4622 (Доходы, поступающие в возмещение затрат, понесенных государством на проведение геологоразведочных работ)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4622</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4630 (Прочие доходы, поступающие в счет компенсации расходов государства)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4630</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4640 (Средства, поступающие в счет компенсации расходов государственного внебюджетного фонда социальной защиты населения  Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4640</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4701 (Доходы от продажи жилых помещений)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4701</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4702 (Доходы от разбронирования материальных ценностей из мобилизационного материального резерва)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4702</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4704 (Доходы от реализации ценностей Госфонда (включая драгоценные металлы и камни, антиквариат, другие предметы искусства и прочие ценности))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4704</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4705 (Доходы от реализации имущественных прав на объекты интеллектуальной собственности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4705</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4706 (Доходы от отчуждения организациями (за исключением бюджетных) в процессе хозяйственной деятельности имущества, находящегося в государственной собственности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4706</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4707 (Доходы от отчуждения бюджетными организациями имущества, приобретенного за счет бюджетных средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4707</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4708 (Доходы от реализации высвобождаемых материальных ресурсов вооруженных сил, других войск, воинских формирований и военизированных организаций Республики Беларусь (кроме основных средств))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4708</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4709 (Доходы от реализации высвобождаемых материальных ресурсов вооруженных сил, других войск, воинских формирований и военизированных организаций Республики Беларусь (основные средства))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4709</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4712 (Доходы от реализации имущественных прав на фильмы)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4712</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4801 (Доходы от реализации (использования) товаров, транспортных средств и иных предметов, изъятых (арестованных, задержанных) таможенными органами и обращенных в доход государства  при нарушении таможенного законодательства)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4801</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4802 (Доходы от реализации конфискованных или иным образом обращенных в доход государства орудий охоты, добычи рыбы и других водных животных, а также от продажи, незаконно добытой с помощью этих орудий продукции)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4802</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4803 (Денежные средства, конфискованные или обращенные в доход государства иным способом)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4803</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4804 (Доходы от реализации конфискованных или обращенных в доход государства иным способом ценных бумаг)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4804</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4805 (Доходы от реализации (использования) иного конфискованного или иным способом обращенного в доход государства имущества)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4805</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4901 (Доходы от продажи земельных участков в частную собственность гражданам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4901</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>4902 (Доходы от продажи земельных участков в частную собственность негосударственным юридическим лицам, собственность иностранным государствам, международным организациям)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">4902</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5000 (Удержания из заработной платы осужденных и лиц, освобожденных от уголовной ответственности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5000</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5103 (Штрафы за нарушение порядка использования средств республиканского и местных бюджетов либо организации государственных закупок товаров (работ, услуг) за счет указанных средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5103</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5105 (Штрафы за нарушение правил дорожного движения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5105</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5106 (Штрафы за правонарушения против порядка таможенного регулирования (административные таможенные правонарушения))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5106</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5111 (Штрафы за нарушение законодательства о государственном социальном страховании и за нарушение порядка использования средств государственного внебюджетного фонда социальной защиты населения  Республики Беларусь либо организации государственных закупок</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5111</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5115 (Штрафы за совершение иных административных правонарушений)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5115</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5120 (Штрафы, налагаемые судами в соответствии с уголовным кодексом Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5120</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5201 (Возмещение потерь сельскохозяйственного производства, вызванных изъятием сельскохозяйственных земель)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5201</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5202 (Возмещение потерь лесохозяйственного производства, вызванных изъятием земель лесного фонда)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5202</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5203 (Возмещение вреда, причиненного окружающей среде)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5203</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5204 (Возмещение вреда, причиненного лесному хозяйству нарушением лесного законодательства)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5204</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5205 (Возмещение другого вреда, причиненного государственному имуществу)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5205</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5402 (Добровольные перечисления в государственный внебюджетный  фонд социальной защиты  населения Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5402</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5403 (Безвозмездная (спонсорская) помощь государственным органам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5403</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5404 (Поступления средств самообложения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5404</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5405 (Иные добровольные перечисления организаций и физических лиц)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5405</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5501 (Доходы от перечисления части чистой прибыли и иных платежей от осуществления лотерейной деятельности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5501</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5502 (Возврат средств, полученных и не использованных организациями в прошлом году)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5502</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5503 (Поступления капитализированных повременных платежей в возмещение вреда)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5503</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5504 (Средства фонда поддержки экспорта)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5504</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5505 (Плата за проезд тяжеловесных и крупногабаритных автомобильных транспортных средств по автомобильным дорогам общего пользования Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5505</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5506 (Залог денежных средств при осуществлении ввоза отходов в Республику Беларусь и (или) их транзита через территорию Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5506</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5507 (Плата за проезд по платным автомобильным дорогам и мостам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5507</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5508 (Прочие поступления в государственный внебюджетный фонд социальной защиты  населения Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5508</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5509 (Средства фонда президентских программ)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5509</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5510 (Доходы от перечисления невостребованных выигрышей по электронным интерактивным играм)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5510</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5511 (Поступления от продажи бланков счетов-справок на реализацию транспортных средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5511</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5512 (Прочие поступления в фонд национального развития)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5512</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5513 (Поступления в счет компенсации заказчиками (застройщиками) жилых домов стоимости жилых помещений, предназначенных для переселения граждан из жилых домов, подлежащих сносу, в связи с предоставлением земельных участков под жилищное строительство)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5513</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5514 (Поступления по пеням, начисленным за несвоевременный возврат бюджетных займов, бюджетных ссуд, бюджетных кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5514</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5515 (Прочие поступления в инновационные фонды республиканских органов государственного управления, иных государственных организаций, подчиненных правительству Республики Беларусь, национальной академии наук Беларуси, Белорусского республиканского союза </v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5515</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5517 (Прочие поступления в инновационные фонды областных и минского городского исполнительных комитетов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5517</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5519 (Плата за размещение (распространение) наружной рекламы (рекламы на транспортном средстве))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5519</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5520 (Иные неналоговые доходы)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5520</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5523 (Поступления средств, полученных от продажи единиц сокращения выбросов парниковых газов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5523</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5524 (Возврат средств в связи с отменой государственной поддержки, оказанной в виде предоставления финансовой помощи, возмещения юридическим лицам части процентов за пользование банковскими кредитами)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5524</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5600 (Текущие безвозмездные поступления от иностранных государств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5600</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5700 (Капитальные безвозмездные поступления от иностранных государств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5700</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5800 (Текущие безвозмездные поступления от международных организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5800</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5900 (Капитальные безвозмездные поступления от международных организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">5900</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6000 (Дотации)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6000</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6101 (Субвенции на финансирование расходов по преодолению последствий катастрофы на Чернобыльской АЭС)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6101</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6102 (Субвенции на финансирование расходов по индексированным жилищным квотам (именным приватизационным чекам'жилье'))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6102</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6103 (Субвенции на финансирование расходов по развитию сельского хозяйства  и рыбохозяйственной деятельности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6103</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6104 (Субвенции на финансирование расходов по сносу  военных городков)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6104</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6105 (Субвенции  на финансирование  расходов  по подготовке  и проведению республиканского фестиваля - ярмарки тружеников села 'Дажынки')</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6105</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6106 (Субвенции на  финансирование мероприятий по обеспечению занятости населения, передаваемые из государственного внебюджетного фонда социальной защиты населения Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6106</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6201 (Иные межбюджетные трансферты из вышестоящего бюджета нижестоящему бюджету)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6201</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6202 (Иные межбюджетные трансферты из нижестоящего бюджета вышестоящему бюджету)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6202</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6203 (Другие межбюджетные трансферты)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6203</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6301 (Субвенции  на финансирование расходов  по погашению кредитов  и уплате процентов за пользование кредитами, выданными  на проектирование, строительство и реконструкцию  объектов инженерной  и транспортной инфраструктуры  для районов жилой застройки, </v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6301</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6302 (Субвенции на финансирование расходов по проектированию и строительству новых уличных распределительных газопроводов от места присоединения к действующему уличному  распределительному газопроводу до отключающего устройства на вводе в жилой дом для г</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6302</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6303 (Субвенции на финансирование расходов по подготовке и проведению республиканского фестиваля-ярмарки тружеников села 'Дажынки')</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6303</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6304 (Субвенции на финансирование расходов  по развитию сельского хозяйства  и рыбохозяйственной деятельности)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6304</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6306 (Субвенции на финансирование развития стационарных учреждений социального обслуживания, передаваемые из государственного внебюджетного фонда социальной защиты населения  Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6306</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6401 (Иные межбюджетные трансферты из вышестоящего бюджета нижестоящему бюджету)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6401</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6402 (Иные межбюджетные трансферты из нижестоящего бюджета вышестоящему бюджету)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6402</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>6403 (Другие межбюджетные трансферты)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">6403</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>7002 (Возврат бюджетных займов, ссуд)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">7002</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8911 (Получение краткосрочных кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">8911</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8912 (Погашение основного долга по краткосрочным кредитам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">8912</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8913 (Получение долгосрочных кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">8913</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8914 (Погашение основного долга по долгосрочным кредитам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">8914</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8921 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">8921</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>8922 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">8922</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9011 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9011</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9012 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9012</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9021 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9021</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9022 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9022</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9031 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9031</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9032 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9032</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9041 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9041</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9042 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9042</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9051 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9051</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9052 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9052</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9111 (Получение бюджетных кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9111</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9112 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9112</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9121 (Получение бюджетных кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9121</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9122 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9122</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9201 (Получение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9201</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9202 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9202</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9310 (Поступления от реализации принадлежащего государству имущества (в том числе акций) в соответствии законодательством о приватизации)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9310</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9311 (Поступления от реализации принадлежащих государству акций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9311</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9312 (Поступления от продажи предприятий как имущественных комплексов государственных организаций (за исключением сельскохозяйственных))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9312</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9313 (Поступления от продажи предприятий как имущественных комплексов убыточных государственных сельскохозяйственных организаций)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9313</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9314 (Поступления от продажи принадлежащего государству имущества (в том числе акций), направляемые в государственный целевой бюджетный фонд национального развития)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9314</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9321 (Приобретение акций в собственность государства)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9321</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9322 (Увеличение доли государства в уставных фондах (за исключением приобретения акций))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9322</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9329 (Вложение средств в ценные бумаги (облигации))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9329</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9401 (Разница, образовавшаяся при изменении курса иностранной валюты (курсовая разница))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9401</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9402 (Операции по купле-продаже иностранной валюты)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9402</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9510 (Остатки на начало отчетного периода)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9510</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9511 (Остатки на начало отчетного периода по государственному внебюджетному фонду социальной защиты населения Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9511</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9520 (Остатки на конец отчетного периода)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9520</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9521 (Остатки на конец отчетного периода по государственному внебюджетному фонду социальной защиты населения Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9521</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9523 (Временно свободные средства республиканского бюджета, вложенные в срочные депозиты)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9523</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9524 (Временно свободные средства местных бюджетов, вложенные в срочные депозиты)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9524</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9529 (Средства местных бюджетов в пути)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9529</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9530 (Остатки средств профессионального пенсионного страхования, размещаемые в банках Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9530</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9599 (Остатки на начало отчетного периода по бюджету)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9599</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9601 (Использование кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9601</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9602 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9602</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9701 (Использование кредитов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9701</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9702 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9702</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9801 (Привлечение средств)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9801</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9802 (Погашение основного долга)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9802</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9910 (Операции  по гарантиям  правительства Республики Беларусь, местных исполнительных и распорядительных органов по кредитам банков Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9910</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9911 (Платежи правительства Республики Беларусь, местных исполнительных и распорядительных органов  в качестве гаранта по погашению и обслуживанию кредитов, выданных банками Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9911</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9912 (Возврат сумм, выплаченных правительством Республики Беларусь, местными исполнительными и распорядительными  органами  в счет выполнения гарантий по кредитам, выданным банками Республики Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9912</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9920 (Операции по гарантиям правительства Республики Беларусь по внешним займам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9920</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9921 (Платежи правительства Республики Беларусь в качестве гаранта по погашению и обслуживанию внешних займов)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9921</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9922 (Возврат сумм, выплаченных правительством Республики Беларусь в счет выполнения гарантий по внешним займам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9922</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9990 (Перечисление сумм)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9990</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9998 (Возврат финансирования прошлого года)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9998</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>9999 (Возврат финансирования текущего периода)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">9999</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КодПлатежаВБюджетКонтекстноеМеню" id="1214"/>
+							<ExtendedTooltip name="КодПлатежаВБюджетРасширеннаяПодсказка" id="1215"/>
+							<Events>
+								<Event name="StartChoice">КодПлатежаВБюджетНачалоВыбора</Event>
+							</Events>
+						</InputField>
 						<UsualGroup name="ГруппаДатаОтчета" id="619">
 							<Title>
 								<v8:item>
@@ -1382,6 +5062,10 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаПеречислениеВБюджет" id="1073">
+							<Visible>false</Visible>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1425,6 +5109,7 @@
 								</CheckBoxField>
 								<LabelField name="НадписьРеквизитыПлатежаВБюджет" id="1081">
 									<DataPath>НадписьРеквизитыПлатежаВБюджет</DataPath>
+									<Visible>false</Visible>
 									<TitleLocation>None</TitleLocation>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>60</MaxWidth>
@@ -1457,6 +5142,10 @@
 							<ChildItems>
 								<InputField name="ИдентификаторПлатежа" id="629">
 									<DataPath>Объект.ИдентификаторПлатежа</DataPath>
+									<Visible>false</Visible>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>

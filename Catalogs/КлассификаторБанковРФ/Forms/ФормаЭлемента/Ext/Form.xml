@@ -148,30 +148,63 @@
 									<v8:content>СВИФТ БИК</v8:content>
 								</v8:item>
 							</Title>
-							<Width>11</Width>
+							<Width>15</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="СВИФТКодКонтекстноеМеню" id="39"/>
 							<ExtendedTooltip name="СВИФТКодРасширеннаяПодсказка" id="40"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<InputField name="КоррСчет" id="7">
-					<DataPath>Объект.КоррСчет</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>24</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="КоррСчетКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="КоррСчетExtendedTooltip" id="31"/>
-				</InputField>
-				<InputField name="ИНН" id="45">
-					<DataPath>Объект.ИНН</DataPath>
-					<Width>12</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="ИННКонтекстноеМеню" id="46"/>
-					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="47"/>
-				</InputField>
+				<UsualGroup name="Коды1" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коды</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Коды1РасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<InputField name="ЦБУ" id="50">
+							<DataPath>Объект.ЦБУ</DataPath>
+							<Width>2</Width>
+							<ContextMenu name="ЦБУКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ЦБУРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="ИНН" id="45">
+							<DataPath>Объект.ИНН</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>УНП</v8:content>
+								</v8:item>
+							</Title>
+							<Width>12</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ИННКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="47"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="КоррСчет" id="7">
+			<DataPath>Объект.КоррСчет</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>24</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КоррСчетКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КоррСчетExtendedTooltip" id="31"/>
+		</InputField>
 		<InputField name="Город" id="9">
 			<DataPath>Объект.Город</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -182,6 +215,7 @@
 		</InputField>
 		<InputField name="Адрес" id="11">
 			<DataPath>Объект.Адрес</DataPath>
+			<Visible>false</Visible>
 			<EditMode>EnterOnInput</EditMode>
 			<Width>30</Width>
 			<ContextMenu name="АдресКонтекстноеМеню" id="12"/>
@@ -189,6 +223,7 @@
 		</InputField>
 		<InputField name="Телефоны" id="13">
 			<DataPath>Объект.Телефоны</DataPath>
+			<Visible>false</Visible>
 			<EditMode>EnterOnInput</EditMode>
 			<Width>20</Width>
 			<ContextMenu name="ТелефоныКонтекстноеМеню" id="14"/>

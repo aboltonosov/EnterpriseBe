@@ -74,12 +74,19 @@
 			<ChildItems>
 				<InputField name="ИНН" id="15">
 					<DataPath>Объект.ИНН</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УНП</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ИННКонтекстноеМеню" id="16"/>
 					<ExtendedTooltip name="ИННExtendedTooltip" id="46"/>
 				</InputField>
 				<InputField name="КПП" id="17">
 					<DataPath>Объект.КПП</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="КППКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="КППExtendedTooltip" id="47"/>

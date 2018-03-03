@@ -42,7 +42,7 @@
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаСписокПанельExtendedTooltip" id="151"/>
+			<ExtendedTooltip name="ГруппаСписокПанельРасширеннаяПодсказка" id="151"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаСписокОтборПоКонтрагенту" id="17">
 					<Title>
@@ -60,7 +60,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСписокОтборПоКонтрагентуExtendedTooltip" id="152"/>
+					<ExtendedTooltip name="ГруппаСписокОтборПоКонтрагентуРасширеннаяПодсказка" id="152"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаФильтры" id="18">
 							<Visible>false</Visible>
@@ -81,7 +81,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаФильтрыExtendedTooltip" id="153"/>
+							<ExtendedTooltip name="ГруппаФильтрыРасширеннаяПодсказка" id="153"/>
 							<ChildItems>
 								<InputField name="СтрокаПоиска" id="19">
 									<DataPath>СтрокаПоиска</DataPath>
@@ -99,7 +99,7 @@
 									<ClearButton>true</ClearButton>
 									<ChoiceListButton>true</ChoiceListButton>
 									<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="СтрокаПоискаExtendedTooltip" id="154"/>
+									<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="154"/>
 									<Events>
 										<Event name="OnChange">СтрокаПоискаПриИзменении</Event>
 										<Event name="AutoComplete">СтрокаПоискаАвтоПодбор</Event>
@@ -119,19 +119,19 @@
 										</v8:item>
 									</ToolTip>
 									<HorizontalStretch>false</HorizontalStretch>
-									<ExtendedTooltip name="ГруппаНайтиExtendedTooltip" id="155"/>
+									<ExtendedTooltip name="ГруппаНайтиРасширеннаяПодсказка" id="155"/>
 									<ChildItems>
 										<Button name="Найти" id="22">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.НайтиПП</CommandName>
-											<ExtendedTooltip name="НайтиExtendedTooltip" id="156"/>
+											<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="156"/>
 										</Button>
 									</ChildItems>
 								</CommandBar>
 								<LabelDecoration name="ДекорацияНайтиОтступ" id="23">
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДекорацияНайтиОтступКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="ДекорацияНайтиОтступExtendedTooltip" id="157"/>
+									<ExtendedTooltip name="ДекорацияНайтиОтступРасширеннаяПодсказка" id="157"/>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
@@ -152,7 +152,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСписокExtendedTooltip" id="158"/>
+							<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="158"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаПользовательскихНастроек" id="303">
 									<Title>
@@ -201,7 +201,7 @@
 									<UserSettingsGroup>ГруппаПользовательскихНастроек</UserSettingsGroup>
 									<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 									<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
-									<ExtendedTooltip name="СписокExtendedTooltip" id="159"/>
+									<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="159"/>
 									<SearchStringAddition name="СписокСтрокаПоиска" id="211">
 										<AdditionSource>
 											<Item>Список</Item>
@@ -250,7 +250,7 @@
 											<DataPath>Список.Description</DataPath>
 											<DefaultItem>true</DefaultItem>
 											<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-											<ExtendedTooltip name="НаименованиеExtendedTooltip" id="160"/>
+											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="160"/>
 										</LabelField>
 										<LabelField name="НаименованиеПолное" id="12">
 											<DataPath>Список.НаименованиеПолное</DataPath>
@@ -258,7 +258,7 @@
 												<xr:Common>false</xr:Common>
 											</UserVisible>
 											<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="13"/>
-											<ExtendedTooltip name="НаименованиеПолноеExtendedTooltip" id="161"/>
+											<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="161"/>
 										</LabelField>
 										<LabelField name="ВидКонтрагента" id="265">
 											<DataPath>Список.ВидКонтрагента</DataPath>
@@ -268,17 +268,17 @@
 										<LabelField name="ИНН" id="14">
 											<DataPath>Список.ИНН</DataPath>
 											<ContextMenu name="ИННКонтекстноеМеню" id="15"/>
-											<ExtendedTooltip name="ИННExtendedTooltip" id="162"/>
+											<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="162"/>
 										</LabelField>
 										<LabelField name="БизнесРегион" id="6">
 											<DataPath>Список.БизнесРегион</DataPath>
 											<ContextMenu name="БизнесРегионКонтекстноеМеню" id="7"/>
-											<ExtendedTooltip name="БизнесРегионExtendedTooltip" id="163"/>
+											<ExtendedTooltip name="БизнесРегионРасширеннаяПодсказка" id="163"/>
 										</LabelField>
 										<LabelField name="ДатаРегистрации" id="8">
 											<DataPath>Список.ДатаРегистрации</DataPath>
 											<ContextMenu name="ДатаРегистрацииКонтекстноеМеню" id="9"/>
-											<ExtendedTooltip name="ДатаРегистрацииExtendedTooltip" id="164"/>
+											<ExtendedTooltip name="ДатаРегистрацииРасширеннаяПодсказка" id="164"/>
 										</LabelField>
 										<LabelField name="КодПоОКПО" id="205">
 											<DataPath>Список.КодПоОКПО</DataPath>
@@ -290,6 +290,7 @@
 										</LabelField>
 										<LabelField name="КПП" id="208">
 											<DataPath>Список.КПП</DataPath>
+											<Visible>false</Visible>
 											<UserVisible>
 												<xr:Common>false</xr:Common>
 											</UserVisible>
@@ -299,7 +300,7 @@
 										<LabelField name="Код" id="10">
 											<DataPath>Список.Code</DataPath>
 											<ContextMenu name="КодКонтекстноеМеню" id="11"/>
-											<ExtendedTooltip name="КодExtendedTooltip" id="165"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="165"/>
 										</LabelField>
 										<LabelField name="ГоловнойКонтрагент" id="268">
 											<DataPath>Список.ГоловнойКонтрагент</DataPath>
@@ -478,7 +479,7 @@
 							<TitleLocation>None</TitleLocation>
 							<Hiperlink>true</Hiperlink>
 							<ContextMenu name="ОснованиеВыбораКонтекстноеМеню" id="62"/>
-							<ExtendedTooltip name="ОснованиеВыбораExtendedTooltip" id="167"/>
+							<ExtendedTooltip name="ОснованиеВыбораРасширеннаяПодсказка" id="167"/>
 							<Events>
 								<Event name="Click">ОснованиеВыбораНажатие</Event>
 							</Events>
@@ -495,7 +496,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПанельФильтрыExtendedTooltip" id="168"/>
+					<ExtendedTooltip name="ГруппаПанельФильтрыРасширеннаяПодсказка" id="168"/>
 					<ChildItems>
 						<LabelField name="НаименованиеПартнера" id="64">
 							<DataPath>НаименованиеТекущегоПартнера</DataPath>
@@ -503,13 +504,13 @@
 							<TitleLocation>None</TitleLocation>
 							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 							<ContextMenu name="НаименованиеПартнераКонтекстноеМеню" id="65"/>
-							<ExtendedTooltip name="НаименованиеПартнераExtendedTooltip" id="169"/>
+							<ExtendedTooltip name="НаименованиеПартнераРасширеннаяПодсказка" id="169"/>
 						</LabelField>
 						<LabelField name="ТекущийБизнесРегион" id="66">
 							<DataPath>ТекущийБизнесРегион</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="ТекущийБизнесРегионКонтекстноеМеню" id="67"/>
-							<ExtendedTooltip name="ТекущийБизнесРегионExtendedTooltip" id="170"/>
+							<ExtendedTooltip name="ТекущийБизнесРегионРасширеннаяПодсказка" id="170"/>
 						</LabelField>
 						<UsualGroup name="ГруппаСозданныеРеквизитыКИ" id="68">
 							<Title>
@@ -527,7 +528,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСозданныеРеквизитыКИExtendedTooltip" id="171"/>
+							<ExtendedTooltip name="ГруппаСозданныеРеквизитыКИРасширеннаяПодсказка" id="171"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаВидыКИ" id="69">
 									<ToolTip>
@@ -540,7 +541,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаВидыКИExtendedTooltip" id="172"/>
+									<ExtendedTooltip name="ГруппаВидыКИРасширеннаяПодсказка" id="172"/>
 								</UsualGroup>
 								<UsualGroup name="ГруппаЗначениеКИ" id="70">
 									<Title>
@@ -552,7 +553,7 @@
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаЗначениеКИExtendedTooltip" id="173"/>
+									<ExtendedTooltip name="ГруппаЗначениеКИРасширеннаяПодсказка" id="173"/>
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
@@ -560,14 +561,14 @@
 							<Type>Hyperlink</Type>
 							<CommandName>0</CommandName>
 							<DataPath>Items.Список.CurrentData.Партнер</DataPath>
-							<ExtendedTooltip name="ОтчетДосьеПартнераExtendedTooltip" id="174"/>
+							<ExtendedTooltip name="ОтчетДосьеПартнераРасширеннаяПодсказка" id="174"/>
 						</Button>
 						<LabelField name="КонтактныеЛицаПартнера" id="74">
 							<DataPath>КонтактныеЛицаПартнера</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<Hiperlink>true</Hiperlink>
 							<ContextMenu name="КонтактныеЛицаПартнераКонтекстноеМеню" id="75"/>
-							<ExtendedTooltip name="КонтактныеЛицаПартнераExtendedTooltip" id="175"/>
+							<ExtendedTooltip name="КонтактныеЛицаПартнераРасширеннаяПодсказка" id="175"/>
 							<Events>
 								<Event name="Click">КонтактныеЛицаПартнераНажатие</Event>
 							</Events>
@@ -606,7 +607,7 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаИспользоватьТипФильтраExtendedTooltip" id="177"/>
+									<ExtendedTooltip name="ГруппаИспользоватьТипФильтраРасширеннаяПодсказка" id="177"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьФильтр" id="79">
 											<DataPath>ИспользоватьФильтр</DataPath>
@@ -619,7 +620,7 @@
 											<TitleLocation>Right</TitleLocation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьФильтрКонтекстноеМеню" id="80"/>
-											<ExtendedTooltip name="ИспользоватьФильтрExtendedTooltip" id="178"/>
+											<ExtendedTooltip name="ИспользоватьФильтрРасширеннаяПодсказка" id="178"/>
 											<Events>
 												<Event name="OnChange">ИспользоватьФильтрПриИзменении</Event>
 											</Events>
@@ -633,7 +634,7 @@
 											<ListChoiceMode>true</ListChoiceMode>
 											<TextEdit>false</TextEdit>
 											<ContextMenu name="ТипФильтраКонтекстноеМеню" id="82"/>
-											<ExtendedTooltip name="ТипФильтраExtendedTooltip" id="179"/>
+											<ExtendedTooltip name="ТипФильтраРасширеннаяПодсказка" id="179"/>
 											<Events>
 												<Event name="OnChange">ТипФильтраПриИзменении</Event>
 												<Event name="Clearing">ТипФильтраОчистка</Event>
@@ -646,7 +647,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТолькоЗначимыеКонтекстноеМеню" id="84"/>
-									<ExtendedTooltip name="ТолькоЗначимыеExtendedTooltip" id="180"/>
+									<ExtendedTooltip name="ТолькоЗначимыеРасширеннаяПодсказка" id="180"/>
 									<Events>
 										<Event name="OnChange">ПоВсемПриИзменении</Event>
 									</Events>
@@ -667,7 +668,7 @@
 								</v8:item>
 							</ToolTip>
 							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="СтраницыТипФильтраExtendedTooltip" id="181"/>
+							<ExtendedTooltip name="СтраницыТипФильтраРасширеннаяПодсказка" id="181"/>
 							<ChildItems>
 								<Page name="СтраницаБизнесРегионы" id="86">
 									<Title>
@@ -682,7 +683,7 @@
 											<v8:content>Страница бизнес регионы</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаБизнесРегионыExtendedTooltip" id="182"/>
+									<ExtendedTooltip name="СтраницаБизнесРегионыРасширеннаяПодсказка" id="182"/>
 									<ChildItems>
 										<Table name="БизнесРегионы" id="87">
 											<SelectionMode>SingleRow</SelectionMode>
@@ -710,7 +711,7 @@
 											<AutoCommandBar name="БизнесРегионыКоманднаяПанель" id="89">
 												<Autofill>false</Autofill>
 											</AutoCommandBar>
-											<ExtendedTooltip name="БизнесРегионыExtendedTooltip" id="183"/>
+											<ExtendedTooltip name="БизнесРегионыРасширеннаяПодсказка" id="183"/>
 											<SearchStringAddition name="БизнесРегионыСтрокаПоиска" id="220">
 												<AdditionSource>
 													<Item>БизнесРегионы</Item>
@@ -744,7 +745,7 @@
 												<LabelField name="БизнесРегионыНаименование" id="127">
 													<DataPath>БизнесРегионы.Description</DataPath>
 													<ContextMenu name="БизнесРегионыНаименованиеКонтекстноеМеню" id="128"/>
-													<ExtendedTooltip name="БизнесРегионыНаименованиеExtendedTooltip" id="184"/>
+													<ExtendedTooltip name="БизнесРегионыНаименованиеРасширеннаяПодсказка" id="184"/>
 												</LabelField>
 											</ChildItems>
 										</Table>
@@ -763,7 +764,7 @@
 											<v8:content>Страница группы доступа</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаГруппыДоступаExtendedTooltip" id="185"/>
+									<ExtendedTooltip name="СтраницаГруппыДоступаРасширеннаяПодсказка" id="185"/>
 									<ChildItems>
 										<Table name="ГруппыДоступаПартнеров" id="93">
 											<Representation>Tree</Representation>
@@ -792,7 +793,7 @@
 											<AutoCommandBar name="ГруппыДоступаПартнеровКоманднаяПанель" id="95">
 												<Autofill>false</Autofill>
 											</AutoCommandBar>
-											<ExtendedTooltip name="ГруппыДоступаПартнеровExtendedTooltip" id="186"/>
+											<ExtendedTooltip name="ГруппыДоступаПартнеровРасширеннаяПодсказка" id="186"/>
 											<SearchStringAddition name="ГруппыДоступаПартнеровСтрокаПоиска" id="229">
 												<AdditionSource>
 													<Item>ГруппыДоступаПартнеров</Item>
@@ -826,7 +827,7 @@
 												<LabelField name="ГруппыДоступаПартнеровНаименование" id="131">
 													<DataPath>ГруппыДоступаПартнеров.Description</DataPath>
 													<ContextMenu name="ГруппыДоступаПартнеровНаименованиеКонтекстноеМеню" id="132"/>
-													<ExtendedTooltip name="ГруппыДоступаПартнеровНаименованиеExtendedTooltip" id="187"/>
+													<ExtendedTooltip name="ГруппыДоступаПартнеровНаименованиеРасширеннаяПодсказка" id="187"/>
 												</LabelField>
 											</ChildItems>
 										</Table>
@@ -845,7 +846,7 @@
 											<v8:content>Страница менеджеры</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаМенеджерыExtendedTooltip" id="188"/>
+									<ExtendedTooltip name="СтраницаМенеджерыРасширеннаяПодсказка" id="188"/>
 									<ChildItems>
 										<Table name="Менеджеры" id="99">
 											<Representation>Tree</Representation>
@@ -874,7 +875,7 @@
 											<AutoCommandBar name="МенеджерыКоманднаяПанель" id="101">
 												<Autofill>false</Autofill>
 											</AutoCommandBar>
-											<ExtendedTooltip name="МенеджерыExtendedTooltip" id="189"/>
+											<ExtendedTooltip name="МенеджерыРасширеннаяПодсказка" id="189"/>
 											<SearchStringAddition name="МенеджерыСтрокаПоиска" id="238">
 												<AdditionSource>
 													<Item>Менеджеры</Item>
@@ -908,7 +909,7 @@
 												<LabelField name="МенеджерыНаименование" id="139">
 													<DataPath>Менеджеры.Description</DataPath>
 													<ContextMenu name="МенеджерыНаименованиеКонтекстноеМеню" id="140"/>
-													<ExtendedTooltip name="МенеджерыНаименованиеExtendedTooltip" id="190"/>
+													<ExtendedTooltip name="МенеджерыНаименованиеРасширеннаяПодсказка" id="190"/>
 												</LabelField>
 											</ChildItems>
 										</Table>
@@ -927,7 +928,7 @@
 											<v8:content>Страница свойства</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаСвойстваExtendedTooltip" id="191"/>
+									<ExtendedTooltip name="СтраницаСвойстваРасширеннаяПодсказка" id="191"/>
 									<ChildItems>
 										<Table name="Свойства" id="105">
 											<Representation>Tree</Representation>
@@ -959,7 +960,7 @@
 											<AutoCommandBar name="СвойстваКоманднаяПанель" id="107">
 												<Autofill>false</Autofill>
 											</AutoCommandBar>
-											<ExtendedTooltip name="СвойстваExtendedTooltip" id="192"/>
+											<ExtendedTooltip name="СвойстваРасширеннаяПодсказка" id="192"/>
 											<SearchStringAddition name="СвойстваСтрокаПоиска" id="247">
 												<AdditionSource>
 													<Item>Свойства</Item>
@@ -1002,19 +1003,19 @@
 														</v8:item>
 													</ToolTip>
 													<Group>InCell</Group>
-													<ExtendedTooltip name="ГруппаПредставлениеНомерКартинкиExtendedTooltip" id="193"/>
+													<ExtendedTooltip name="ГруппаПредставлениеНомерКартинкиРасширеннаяПодсказка" id="193"/>
 													<ChildItems>
 														<InputField name="СвойстваПредставление" id="145">
 															<DataPath>Свойства.Представление</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="СвойстваПредставлениеКонтекстноеМеню" id="146"/>
-															<ExtendedTooltip name="СвойстваПредставлениеExtendedTooltip" id="194"/>
+															<ExtendedTooltip name="СвойстваПредставлениеРасширеннаяПодсказка" id="194"/>
 														</InputField>
 														<InputField name="СвойстваНомерКартинки" id="143">
 															<DataPath>Свойства.НомерКартинки</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="СвойстваНомерКартинкиКонтекстноеМеню" id="144"/>
-															<ExtendedTooltip name="СвойстваНомерКартинкиExtendedTooltip" id="195"/>
+															<ExtendedTooltip name="СвойстваНомерКартинкиРасширеннаяПодсказка" id="195"/>
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
@@ -1035,7 +1036,7 @@
 											<v8:content>Страница категории</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницаКатегорииExtendedTooltip" id="196"/>
+									<ExtendedTooltip name="СтраницаКатегорииРасширеннаяПодсказка" id="196"/>
 									<ChildItems>
 										<Table name="Категории" id="114">
 											<Representation>List</Representation>
@@ -1071,7 +1072,7 @@
 											<AutoCommandBar name="КатегорииКоманднаяПанель" id="116">
 												<Autofill>false</Autofill>
 											</AutoCommandBar>
-											<ExtendedTooltip name="КатегорииExtendedTooltip" id="197"/>
+											<ExtendedTooltip name="КатегорииРасширеннаяПодсказка" id="197"/>
 											<SearchStringAddition name="КатегорииСтрокаПоиска" id="256">
 												<AdditionSource>
 													<Item>Категории</Item>
@@ -1103,19 +1104,19 @@
 												<ColumnGroup name="КатегорииГруппаКолонок" id="117">
 													<ReadOnly>true</ReadOnly>
 													<Group>InCell</Group>
-													<ExtendedTooltip name="КатегорииГруппаКолонокExtendedTooltip" id="198"/>
+													<ExtendedTooltip name="КатегорииГруппаКолонокРасширеннаяПодсказка" id="198"/>
 													<ChildItems>
 														<InputField name="КатегорииПредставление" id="133">
 															<DataPath>Категории.Представление</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="КатегорииПредставлениеКонтекстноеМеню" id="134"/>
-															<ExtendedTooltip name="КатегорииПредставлениеExtendedTooltip" id="199"/>
+															<ExtendedTooltip name="КатегорииПредставлениеРасширеннаяПодсказка" id="199"/>
 														</InputField>
 														<InputField name="КатегорииНомерКартинки" id="137">
 															<DataPath>Категории.НомерКартинки</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="КатегорииНомерКартинкиКонтекстноеМеню" id="138"/>
-															<ExtendedTooltip name="КатегорииНомерКартинкиExtendedTooltip" id="200"/>
+															<ExtendedTooltip name="КатегорииНомерКартинкиРасширеннаяПодсказка" id="200"/>
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
@@ -1141,14 +1142,14 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаТолькоМоиСегментыExtendedTooltip" id="201"/>
+							<ExtendedTooltip name="ГруппаТолькоМоиСегментыРасширеннаяПодсказка" id="201"/>
 							<ChildItems>
 								<CheckBoxField name="ТолькоМои" id="123">
 									<DataPath>ТолькоМои</DataPath>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТолькоМоиКонтекстноеМеню" id="124"/>
-									<ExtendedTooltip name="ТолькоМоиExtendedTooltip" id="202"/>
+									<ExtendedTooltip name="ТолькоМоиРасширеннаяПодсказка" id="202"/>
 									<Events>
 										<Event name="OnChange">ТолькоМоиПриИзменении</Event>
 									</Events>
@@ -1162,7 +1163,7 @@
 									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 									<ChoiceListButton>true</ChoiceListButton>
 									<ContextMenu name="СегментКонтекстноеМеню" id="126"/>
-									<ExtendedTooltip name="СегментExtendedTooltip" id="203"/>
+									<ExtendedTooltip name="СегментРасширеннаяПодсказка" id="203"/>
 									<Events>
 										<Event name="OnChange">СегментПриИзменении</Event>
 									</Events>

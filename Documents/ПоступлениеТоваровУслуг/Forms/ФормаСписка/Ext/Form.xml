@@ -312,6 +312,59 @@
 					<ContextMenu name="СписокДокументыПоступленияДатаКонтекстноеМеню" id="159"/>
 					<ExtendedTooltip name="СписокДокументыПоступленияДатаExtendedTooltip" id="160"/>
 				</InputField>
+				<ColumnGroup name="ГруппаСерияНомер" id="166">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа серия номер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСерияНомерРасширеннаяПодсказка" id="167"/>
+					<ChildItems>
+						<LabelField name="СписокДокументыПоступленияСерияВходящегоДокумента" id="174">
+							<DataPath>СписокДокументыПоступления.СерияВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия</v8:content>
+								</v8:item>
+							</Title>
+							<Width>2</Width>
+							<ContextMenu name="СписокДокументыПоступленияСерияВходящегоДокументаКонтекстноеМеню" id="175"/>
+							<ExtendedTooltip name="СписокДокументыПоступленияСерияВходящегоДокументаРасширеннаяПодсказка" id="176"/>
+						</LabelField>
+						<LabelField name="СписокДокументыПоступленияНомерВходящегоДокумента" id="171">
+							<DataPath>СписокДокументыПоступления.НомерВходящегоДокумента</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>№ вх. документа</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="СписокДокументыПоступленияНомерВходящегоДокументаКонтекстноеМеню" id="172"/>
+							<ExtendedTooltip name="СписокДокументыПоступленияНомерВходящегоДокументаРасширеннаяПодсказка" id="173"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СписокДокументыПоступленияДатаВходящегоДокумента" id="168">
+					<DataPath>СписокДокументыПоступления.ДатаВходящегоДокумента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата вх. документа</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокДокументыПоступленияДатаВходящегоДокументаКонтекстноеМеню" id="169"/>
+					<ExtendedTooltip name="СписокДокументыПоступленияДатаВходящегоДокументаРасширеннаяПодсказка" id="170"/>
+				</LabelField>
 				<InputField name="СписокДокументыПоступленияСуммаДокумента" id="18">
 					<DataPath>СписокДокументыПоступления.СуммаДокумента</DataPath>
 					<Title>

@@ -99,6 +99,7 @@
 					</Popup>
 					<Button name="ПоказатьВзносыПодробно" id="79">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.ПоказатьВзносыПодробно</CommandName>
 						<ExtendedTooltip name="ПоказатьВзносыПодробноРасширеннаяПодсказка" id="80"/>
 					</Button>
@@ -244,8 +245,43 @@
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыВзносыВсегоКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыВзносыВсегоРасширеннаяПодсказка" id="40"/>
 				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыФСС" id="62">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ФСС</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФСЗН</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>9</Width>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыФССКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыФССРасширеннаяПодсказка" id="64"/>
+					<Events>
+						<Event name="OnChange">НачисленнаяЗарплатаИВзносыФССПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыПФРСтраховая" id="41">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРСтраховая</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Белгосстрах</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>9</Width>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыПФРСтраховаяКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыПФРСтраховаяРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">НачисленнаяЗарплатаИВзносыПФРСтраховаяПриИзменении</Event>
+					</Events>
+				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыПФРПоСуммарномуТарифу" id="47">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРПоСуммарномуТарифу</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыПФРПоСуммарномуТарифуКонтекстноеМеню" id="48"/>
@@ -256,6 +292,7 @@
 				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыПФРДоПредельнойВеличины" id="163">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРДоПредельнойВеличины</DataPath>
+					<Visible>false</Visible>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -272,6 +309,7 @@
 				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыПФРСПревышения" id="166">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРСПревышения</DataPath>
+					<Visible>false</Visible>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -286,18 +324,9 @@
 						<Event name="OnChange">НачисленнаяЗарплатаИВзносыПФРСПревышенияПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="НачисленнаяЗарплатаИВзносыПФРСтраховая" id="41">
-					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРСтраховая</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>9</Width>
-					<ContextMenu name="НачисленнаяЗарплатаИВзносыПФРСтраховаяКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыПФРСтраховаяРасширеннаяПодсказка" id="43"/>
-					<Events>
-						<Event name="OnChange">НачисленнаяЗарплатаИВзносыПФРСтраховаяПриИзменении</Event>
-					</Events>
-				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыПФРНакопительная" id="44">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРНакопительная</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыПФРНакопительнаяКонтекстноеМеню" id="45"/>
@@ -307,6 +336,7 @@
 					</Events>
 				</InputField>
 				<ColumnGroup name="ГруппаПФРЗаЗанятыхНаПодземныхИВредныхРаботах" id="169">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -356,6 +386,7 @@
 					</ChildItems>
 				</ColumnGroup>
 				<ColumnGroup name="ГруппаПФРЗаЗанятыхНаТяжелыхИПрочихРаботах" id="177">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -404,18 +435,9 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
-				<InputField name="НачисленнаяЗарплатаИВзносыФСС" id="62">
-					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ФСС</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>9</Width>
-					<ContextMenu name="НачисленнаяЗарплатаИВзносыФССКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыФССРасширеннаяПодсказка" id="64"/>
-					<Events>
-						<Event name="OnChange">НачисленнаяЗарплатаИВзносыФССПриИзменении</Event>
-					</Events>
-				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыФФОМС" id="65">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ФФОМС</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыФФОМСКонтекстноеМеню" id="66"/>
@@ -426,6 +448,7 @@
 				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыТФОМС" id="68">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ТФОМС</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыТФОМСКонтекстноеМеню" id="69"/>
@@ -436,6 +459,7 @@
 				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыПФРНаДоплатуЛетчикам" id="50">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРНаДоплатуЛетчикам</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыПФРНаДоплатуЛетчикамКонтекстноеМеню" id="51"/>
@@ -446,6 +470,7 @@
 				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыПФРНаДоплатуШахтерам" id="53">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПФРНаДоплатуШахтерам</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыПФРНаДоплатуШахтерамКонтекстноеМеню" id="54"/>
@@ -456,6 +481,7 @@
 				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыФССНесчастныеСлучаи" id="71">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ФССНесчастныеСлучаи</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>9</Width>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыФССНесчастныеСлучаиКонтекстноеМеню" id="72"/>
@@ -465,6 +491,7 @@
 					</Events>
 				</InputField>
 				<ColumnGroup name="ГруппаПФРВреднИТяжРаботыДо2017" id="185">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -515,6 +542,60 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
+				<InputField name="НачисленнаяЗарплатаИВзносыФСЗН" id="187">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ФСЗН</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыФСЗНКонтекстноеМеню" id="188"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыФСЗНРасширеннаяПодсказка" id="189"/>
+					<Events>
+						<Event name="OnChange">НачисленнаяЗарплатаИВзносыФСЗНПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыПенсионныйФонд" id="190">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПенсионныйФонд</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыПенсионныйФондКонтекстноеМеню" id="191"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыПенсионныйФондРасширеннаяПодсказка" id="192"/>
+					<Events>
+						<Event name="OnChange">НачисленнаяЗарплатаИВзносыПенсионныйФондПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыБелгосстрах" id="193">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.Белгосстрах</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыБелгосстрахКонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыБелгосстрахРасширеннаяПодсказка" id="195"/>
+					<Events>
+						<Event name="OnChange">НачисленнаяЗарплатаИВзносыБелгосстрахПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыПС" id="196">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ПС</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пенсионное страхование</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыПСКонтекстноеМеню" id="197"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыПСРасширеннаяПодсказка" id="198"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСС" id="199">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СС</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Социальное cтрахование</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыССКонтекстноеМеню" id="200"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыССРасширеннаяПодсказка" id="201"/>
+				</InputField>
 				<InputField name="НачисленнаяЗарплатаИВзносыВидНачисленияОплатыТрудаДляНУ" id="74">
 					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.ВидНачисленияОплатыТрудаДляНУ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -522,6 +603,149 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НачисленнаяЗарплатаИВзносыВидНачисленияОплатыТрудаДляНУКонтекстноеМеню" id="75"/>
 					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыВидНачисленияОплатыТрудаДляНУРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСпособОтраженияЗарплатыВБухучете" id="211">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СпособОтраженияЗарплатыВБухучете</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСпособОтраженияЗарплатыВБухучетеКонтекстноеМеню" id="212"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка" id="213"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходов" id="262">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходов</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовКонтекстноеМеню" id="263"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовРасширеннаяПодсказка" id="264"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходов" id="265">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходов</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовКонтекстноеМеню" id="266"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовРасширеннаяПодсказка" id="267"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФСС" id="271">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовФСС</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов ФСЗН</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФССКонтекстноеМеню" id="272"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФССРасширеннаяПодсказка" id="273"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовПФР" id="268">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовПФР</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов Белгосстрах</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовПФРКонтекстноеМеню" id="269"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовПФРРасширеннаяПодсказка" id="270"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФОМС" id="274">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовФОМС</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФОМСКонтекстноеМеню" id="275"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФОМСРасширеннаяПодсказка" id="276"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФСЗН" id="286">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовФСЗН</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФСЗНКонтекстноеМеню" id="287"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовФСЗНРасширеннаяПодсказка" id="288"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовБелгосстрах" id="292">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовБелгосстрах</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовБелгосстрахКонтекстноеМеню" id="293"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовБелгосстрахРасширеннаяПодсказка" id="294"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовПС" id="295">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовПС</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовПСКонтекстноеМеню" id="296"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовПСРасширеннаяПодсказка" id="297"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыСтатьяРасходовСС" id="298">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.СтатьяРасходовСС</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыСтатьяРасходовССКонтекстноеМеню" id="299"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыСтатьяРасходовССРасширеннаяПодсказка" id="300"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФСС" id="280">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовФСС</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов ФСЗН</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФССКонтекстноеМеню" id="281"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФССРасширеннаяПодсказка" id="282"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовПФР" id="277">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовПФР</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов Белгосстрах</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовПФРКонтекстноеМеню" id="278"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовПФРРасширеннаяПодсказка" id="279"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФОМС" id="283">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовФОМС</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФОМСКонтекстноеМеню" id="284"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФОМСРасширеннаяПодсказка" id="285"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФСЗН" id="289">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовФСЗН</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФСЗНКонтекстноеМеню" id="290"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовФСЗНРасширеннаяПодсказка" id="291"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовБелгосстрах" id="301">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовБелгосстрах</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовБелгосстрахКонтекстноеМеню" id="302"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовБелгосстрахРасширеннаяПодсказка" id="303"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовПС" id="304">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовПС</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовПСКонтекстноеМеню" id="305"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовПСРасширеннаяПодсказка" id="306"/>
+				</InputField>
+				<InputField name="НачисленнаяЗарплатаИВзносыАналитикаРасходовСС" id="307">
+					<DataPath>НачисленнаяЗарплатаИВзносыПоФизлицам.АналитикаРасходовСС</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачисленнаяЗарплатаИВзносыАналитикаРасходовССКонтекстноеМеню" id="308"/>
+					<ExtendedTooltip name="НачисленнаяЗарплатаИВзносыАналитикаРасходовССРасширеннаяПодсказка" id="309"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -1013,6 +1237,174 @@
 							<v8:FractionDigits>2</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФСЗН" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФСЗН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПенсионныйФонд" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пенсионный фонд</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Белгосстрах" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Белгосстрах</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПС" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СС" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатьяРасходовФСЗН" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АналитикаРасходовФСЗН" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СтатьяРасходовБелгосстрах" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АналитикаРасходовБелгосстрах" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СтатьяРасходовПС" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АналитикаРасходовПС" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СтатьяРасходовСС" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АналитикаРасходовСС" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
 					</Type>
 				</Column>
 			</Columns>

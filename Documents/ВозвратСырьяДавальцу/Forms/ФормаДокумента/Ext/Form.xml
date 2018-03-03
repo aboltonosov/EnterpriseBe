@@ -1187,147 +1187,17 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="1164"/>
 							<ChildItems>
-								<InputField name="Основание" id="1165">
-									<DataPath>Объект.Основание</DataPath>
-									<TitleLocation>Left</TitleLocation>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Текст поля "Основание" в печатных формах</v8:content>
-										</v8:item>
-									</ToolTip>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<MaxWidth>72</MaxWidth>
-									<Height>2</Height>
-									<VerticalStretch>false</VerticalStretch>
-									<MultiLine>true</MultiLine>
-									<ContextMenu name="ОснованиеКонтекстноеМеню" id="1166"/>
-									<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="1167"/>
-								</InputField>
-								<UsualGroup name="ГруппаПечать1" id="1168">
+								<Button name="РеквизитыПечатиТОРГ12" id="1259">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.РеквизитыПечатиТОРГ12</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа печать1</v8:content>
+											<v8:content>Реквизиты печати товарных накладных</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа печать1</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Horizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПечать1РасширеннаяПодсказка" id="1169"/>
-									<ChildItems>
-										<UsualGroup name="ГруппаПечатьЛево" id="1170">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Печать лево</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Печать лево</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаПечатьЛевоExtendedTooltip" id="1171"/>
-											<ChildItems>
-												<InputField name="Руководитель" id="1172">
-													<DataPath>Объект.Руководитель</DataPath>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>28</MaxWidth>
-													<ContextMenu name="РуководительКонтекстноеМеню" id="1173"/>
-													<ExtendedTooltip name="РуководительExtendedTooltip" id="1174"/>
-												</InputField>
-												<InputField name="ГлавныйБухгалтер" id="1175">
-													<DataPath>Объект.ГлавныйБухгалтер</DataPath>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>28</MaxWidth>
-													<ContextMenu name="ГлавныйБухгалтерКонтекстноеМеню" id="1176"/>
-													<ExtendedTooltip name="ГлавныйБухгалтерExtendedTooltip" id="1177"/>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="ГруппаПечатьПраво" id="1178">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Печать право</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Печать право</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаПечатьПравоExtendedTooltip" id="1179"/>
-											<ChildItems>
-												<InputField name="Отпустил" id="1180">
-													<DataPath>Объект.Отпустил</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Груз отпустил</v8:content>
-														</v8:item>
-													</Title>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>28</MaxWidth>
-													<DropListButton>false</DropListButton>
-													<ChoiceButton>true</ChoiceButton>
-													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-													<ChoiceParameters>
-														<app:item name="Отбор.Партнер">
-															<app:value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation/>
-																<Value xsi:type="xr:DesignTimeRef">Catalog.Партнеры.НашеПредприятие</Value>
-															</app:value>
-														</app:item>
-													</ChoiceParameters>
-													<ContextMenu name="ОтпустилКонтекстноеМеню" id="1181"/>
-													<ExtendedTooltip name="ОтпустилРасширеннаяПодсказка" id="1182"/>
-												</InputField>
-												<InputField name="ОтпустилДолжность" id="1183">
-													<DataPath>Объект.ОтпустилДолжность</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Отпустил (должность)</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Должность сотрудника, ответственного за отпуск груза. Выводится в печатные формы</v8:content>
-														</v8:item>
-													</ToolTip>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>28</MaxWidth>
-													<ChoiceParameterLinks>
-														<xr:Link>
-															<xr:Name>Отбор.Владелец</xr:Name>
-															<xr:DataPath xsi:type="xs:string">Основание</xr:DataPath>
-															<xr:ValueChange>Clear</xr:ValueChange>
-														</xr:Link>
-													</ChoiceParameterLinks>
-													<ContextMenu name="ОтпустилДолжностьКонтекстноеМеню" id="1184"/>
-													<ExtendedTooltip name="ОтпустилДолжностьРасширеннаяПодсказка" id="1185"/>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-									</ChildItems>
-								</UsualGroup>
+									<ExtendedTooltip name="РеквизитыПечатиТОРГ12ExtendedTooltip" id="1260"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="276">
@@ -2032,6 +1902,22 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПровестиДокумент</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="РеквизитыПечатиТОРГ12" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты печати товарных накладных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты печати товарных накладных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РеквизитыПечатиТОРГ12</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>

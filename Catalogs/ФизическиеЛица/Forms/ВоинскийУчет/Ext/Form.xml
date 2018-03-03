@@ -121,6 +121,61 @@
 										</InputField>
 										<InputField name="ВоинскийУчетГодность" id="14">
 											<DataPath>ВоинскийУчет.Годность</DataPath>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Г - годен к военной службе</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ГодностьКВоеннойСлужбе.EnumValue.Годен</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>ГО - годен к военной службе с незначительными ограничениями</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ГодностьКВоеннойСлужбе.EnumValue.ГоденСОграничениями</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>НГМ - негоден к военной службе в мирное время, ограниченно годен к военной службе в военное время</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ГодностьКВоеннойСлужбе.EnumValue.ОграниченноГоден</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>НГИ - негоден к военной службе с исключением с воинского учета</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ГодностьКВоеннойСлужбе.EnumValue.НеГоден</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
 											<ContextMenu name="ВоинскийУчетГодностьКонтекстноеМеню" id="15"/>
 											<ExtendedTooltip name="ВоинскийУчетГодностьExtendedTooltip" id="48"/>
 											<Events>

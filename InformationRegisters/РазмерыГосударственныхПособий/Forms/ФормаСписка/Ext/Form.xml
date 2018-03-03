@@ -20,6 +20,7 @@
 					<v8:content>Группа пользовательских настроек</v8:content>
 				</v8:item>
 			</Title>
+			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -43,23 +44,19 @@
 			<ExtendedTooltip name="СписокНастройкиОтбораРасширеннаяПодсказка" id="41"/>
 		</UsualGroup>
 		<CommandBar name="КоманднаяПанельФормы" id="42">
+			<Visible>false</Visible>
 			<CommandSource>Form</CommandSource>
 			<ExtendedTooltip name="КоманднаяПанельФормыРасширеннаяПодсказка" id="43"/>
 		</CommandBar>
 		<Table name="Список" id="1">
 			<Representation>List</Representation>
-			<CommandBarLocation>None</CommandBarLocation>
+			<CommandBarLocation>Top</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-			<CommandSet>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>Create</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
-			</CommandSet>
 			<SearchStringLocation>None</SearchStringLocation>
 			<SearchControlLocation>None</SearchControlLocation>
 			<AutoRefresh>false</AutoRefresh>
@@ -77,9 +74,7 @@
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
 			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
 			<ExtendedTooltip name="СписокExtendedTooltip" id="20"/>
 			<SearchStringAddition name="СписокSearchString" id="21">
 				<AdditionSource>
@@ -118,40 +113,88 @@
 					<ContextMenu name="ПериодКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ПериодExtendedTooltip" id="30"/>
 				</LabelField>
-				<LabelField name="ПриПостановкеНаУчетВРанниеСрокиБеременности" id="6">
-					<DataPath>Список.ПриПостановкеНаУчетВРанниеСрокиБеременности</DataPath>
-					<ContextMenu name="ПриПостановкеНаУчетВРанниеСрокиБеременностиКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ПриПостановкеНаУчетВРанниеСрокиБеременностиExtendedTooltip" id="31"/>
-				</LabelField>
-				<LabelField name="ПриРожденииРебенка" id="8">
-					<DataPath>Список.ПриРожденииРебенка</DataPath>
-					<ContextMenu name="ПриРожденииРебенкаКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ПриРожденииРебенкаExtendedTooltip" id="32"/>
-				</LabelField>
-				<LabelField name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет" id="10">
-					<DataPath>Список.МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет</DataPath>
-					<ContextMenu name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетExtendedTooltip" id="33"/>
-				</LabelField>
-				<LabelField name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет" id="12">
-					<DataPath>Список.МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет</DataPath>
-					<ContextMenu name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетExtendedTooltip" id="34"/>
-				</LabelField>
-				<LabelField name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет" id="14">
-					<DataPath>Список.МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет</DataPath>
-					<ContextMenu name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетExtendedTooltip" id="35"/>
-				</LabelField>
-				<LabelField name="ПоУходуЗаРебенкомДоТрехЛет" id="16">
+				<LabelField name="ПоУходуЗаРебенкомДоТрехЛет" id="44">
 					<DataPath>Список.ПоУходуЗаРебенкомДоТрехЛет</DataPath>
-					<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетExtendedTooltip" id="36"/>
+					<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетРасширеннаяПодсказка" id="46"/>
 				</LabelField>
-				<LabelField name="ВСвязиСоСмертью" id="18">
+				<InputField name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка" id="47">
+					<DataPath>Список.ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка</DataPath>
+					<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенкаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<LabelField name="ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалида" id="77">
+					<DataPath>Список.ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалида</DataPath>
+					<ContextMenu name="ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалидаКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="79"/>
+				</LabelField>
+				<InputField name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМ" id="50">
+					<DataPath>Список.ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМ</DataPath>
+					<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ПриРожденииРебенка" id="53">
+					<DataPath>Список.ПриРожденииРебенка</DataPath>
+					<ContextMenu name="ПриРожденииРебенкаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПриРожденииРебенкаРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<LabelField name="ПриРожденииВторогоИПоследующихДетей" id="56">
+					<DataPath>Список.ПриРожденииВторогоИПоследующихДетей</DataPath>
+					<ContextMenu name="ПриРожденииВторогоИПоследующихДетейКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПриРожденииВторогоИПоследующихДетейРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="ПособиеНаРебенкаСтарше3Лет" id="80">
+					<DataPath>Список.ПособиеНаРебенкаСтарше3Лет</DataPath>
+					<ContextMenu name="ПособиеНаРебенкаСтарше3ЛетКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ПособиеНаРебенкаСтарше3ЛетРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалида" id="83">
+					<DataPath>Список.ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалида</DataPath>
+					<ContextMenu name="ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалидаКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалидаРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалида" id="86">
+					<DataPath>Список.ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалида</DataPath>
+					<ContextMenu name="ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалидаКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="ПособиеНаВичИнфицРебенка" id="89">
+					<DataPath>Список.ПособиеНаВичИнфицРебенка</DataPath>
+					<ContextMenu name="ПособиеНаВичИнфицРебенкаКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ПособиеНаВичИнфицРебенкаРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+				<LabelField name="ПриПостановкеНаУчетВРанниеСрокиБеременности" id="59">
+					<DataPath>Список.ПриПостановкеНаУчетВРанниеСрокиБеременности</DataPath>
+					<ContextMenu name="ПриПостановкеНаУчетВРанниеСрокиБеременностиКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПриПостановкеНаУчетВРанниеСрокиБеременностиРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelField name="ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалида" id="92">
+					<DataPath>Список.ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалида</DataPath>
+					<ContextMenu name="ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалидаКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет" id="68">
+					<DataPath>Список.МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+				<LabelField name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет" id="65">
+					<DataPath>Список.МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+				<LabelField name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет" id="71">
+					<DataPath>Список.МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетРасширеннаяПодсказка" id="73"/>
+				</LabelField>
+				<LabelField name="ВСвязиСоСмертью" id="74">
 					<DataPath>Список.ВСвязиСоСмертью</DataPath>
-					<ContextMenu name="ВСвязиСоСмертьюКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ВСвязиСоСмертьюExtendedTooltip" id="37"/>
+					<ContextMenu name="ВСвязиСоСмертьюКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ВСвязиСоСмертьюРасширеннаяПодсказка" id="76"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

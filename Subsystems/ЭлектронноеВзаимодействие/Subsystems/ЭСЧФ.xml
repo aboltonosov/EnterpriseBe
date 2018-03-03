@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="29e6acb0-c13b-4355-822d-26388646b885">
+		<Properties>
+			<Name>ЭСЧФ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЭСЧФ </v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(локализация)</Comment>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MNSATI_original</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MNSATI_additional</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MNSATI_fixed</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MNSATI_add_no_reference</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресВебСервисаЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТаймаутПодключенияКВебСервисуЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДокументовЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеДанныеЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СостоянияВерсийЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатусыПолучателяЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатусыПоставщикаЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЭДПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЭлектронныеСчетФактуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПравилаЗаполненияПолейЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияЭСЧФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураВыданный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураПолученный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеСчетаФактуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеСчетаФактурыВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеСчетаФактурыКлиент</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

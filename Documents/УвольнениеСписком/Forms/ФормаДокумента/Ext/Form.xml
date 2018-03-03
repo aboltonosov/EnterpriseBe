@@ -41,7 +41,7 @@
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftWide</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ШапкаExtendedTooltip" id="213"/>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="213"/>
 			<ChildItems>
 				<UsualGroup name="ОсновныеРеквизиты" id="214">
 					<Title>
@@ -53,7 +53,7 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОсновныеРеквизитыExtendedTooltip" id="215"/>
+					<ExtendedTooltip name="ОсновныеРеквизитыРасширеннаяПодсказка" id="215"/>
 					<ChildItems>
 						<UsualGroup name="МесяцОрганизация" id="216">
 							<Group>Horizontal</Group>
@@ -104,7 +104,7 @@
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ДатаНомерГруппаExtendedTooltip" id="228"/>
+					<ExtendedTooltip name="ДатаНомерГруппаРасширеннаяПодсказка" id="228"/>
 					<ChildItems>
 						<InputField name="Дата" id="229">
 							<DataPath>Объект.Date</DataPath>
@@ -243,6 +243,12 @@
 								</InputField>
 								<InputField name="СотрудникиСтатьяТКРФ" id="105">
 									<DataPath>Объект.Сотрудники.СтатьяТКРФ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья ТК РБ</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="СотрудникиСтатьяТКРФКонтекстноеМеню" id="106"/>
 									<ExtendedTooltip name="СотрудникиСтатьяТКРФРасширеннаяПодсказка" id="107"/>
@@ -272,7 +278,7 @@
 		<UsualGroup name="ГруппаИсправление" id="235">
 			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИсправлениеExtendedTooltip" id="236"/>
+			<ExtendedTooltip name="ГруппаИсправлениеРасширеннаяПодсказка" id="236"/>
 		</UsualGroup>
 		<UsualGroup name="ПодписиГруппа" id="174">
 			<Title>
@@ -398,7 +404,7 @@
 			</Title>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
-			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="261"/>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="261"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКомментарийОтветственный" id="210">
 			<Group>Horizontal</Group>

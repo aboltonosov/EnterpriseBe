@@ -1,20 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
-	<CommandBarLocation>None</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
-		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>Delete</ExcludedCommand>
 		<ExcludedCommand>Reread</ExcludedCommand>
-		<ExcludedCommand>Write</ExcludedCommand>
-		<ExcludedCommand>WriteAndClose</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
-	<Events>
-		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаДата" id="27">
 			<Title>
@@ -47,7 +39,7 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаКолонки" id="31">
+		<UsualGroup name="ГруппаКолонки" id="29">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -63,9 +55,9 @@
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="32"/>
+			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="30"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаЛевая" id="33">
+				<UsualGroup name="ГруппаЛевая" id="31">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -81,9 +73,114 @@
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="34"/>
+					<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="32"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаПоУходу3" id="29">
+						<UsualGroup name="Группа1" id="33">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пособия семьям, воспитывающих детей</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<InputField name="ПоУходуЗаРебенкомДоТрехЛет" id="35">
+									<DataPath>Запись.ПоУходуЗаРебенкомДоТрехЛет</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия по уходу за ребенком в возрасте до 3 лет: на первого ребенка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетExtendedTooltip" id="37"/>
+								</InputField>
+								<InputField name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка" id="38">
+									<DataPath>Запись.ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия по уходу за ребенком в возрасте до 3 лет: на второго и последующих детей</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенкаКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенкаРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалида" id="77">
+									<DataPath>Запись.ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалида</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия по уходу за ребенком в возрасте до 3 лет: на ребенка-инвалида</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалидаКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ПособиеНаРебенкаДо3ЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="ПособиеНаРебенкаСтарше3Лет" id="80">
+									<DataPath>Запись.ПособиеНаРебенкаСтарше3Лет</DataPath>
+									<ContextMenu name="ПособиеНаРебенкаСтарше3ЛетКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ПособиеНаРебенкаСтарше3ЛетРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалида" id="83">
+									<DataPath>Запись.ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалида</DataPath>
+									<ContextMenu name="ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалидаКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ПособиеНаРебенкаСтарше3ЛетКромеРебенкаИнвалидаРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалида" id="86">
+									<DataPath>Запись.ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалида</DataPath>
+									<ContextMenu name="ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалидаКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ПособиеНаРебенкаСтарше3ЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ПособиеНаВичИнфицРебенка" id="89">
+									<DataPath>Запись.ПособиеНаВичИнфицРебенка</DataPath>
+									<ContextMenu name="ПособиеНаВичИнфицРебенкаКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ПособиеНаВичИнфицРебенкаРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалида" id="92">
+									<DataPath>Запись.ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалида</DataPath>
+									<ContextMenu name="ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалидаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ПособиеНаРебенкаДо18ЛетНаРебенкаИнвалидаРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<UsualGroup name="ГруппаПостоянныеПособия" id="41">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Постоянные пособия</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа постоянные пособия</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПостоянныеПособияРасширеннаяПодсказка" id="42"/>
+									<ChildItems>
+										<InputField name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМ" id="43">
+											<DataPath>Запись.ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Размер пособия по уходу за ребенком до трех лет 50 % БПМ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пособие семьям на детей в возрасте от 3 до 18 лет в период воспитания ребенка в возрасте до 3 лет (ежемесячное)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетНаВторогоРебенка50ПроцентовБПМРасширеннаяПодсказка" id="45"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоУходу3" id="46">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -98,22 +195,28 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаПоУходу3РасширеннаяПодсказка" id="30"/>
-							<ChildItems>
-								<InputField name="ПоУходуЗаРебенкомДоТрехЛет" id="13">
-									<DataPath>Запись.ПоУходуЗаРебенкомДоТрехЛет</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Минимальные размер</v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="ПоУходуЗаРебенкомДоТрехЛетКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="ПоУходуЗаРебенкомДоТрехЛетExtendedTooltip" id="23"/>
-								</InputField>
-							</ChildItems>
+							<ExtendedTooltip name="ГруппаПоУходу3РасширеннаяПодсказка" id="47"/>
 						</UsualGroup>
-						<UsualGroup name="ГруппаПоУходу15" id="25">
+						<UsualGroup name="ГруппаПоУходу4" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Размер пособия по уходу за ребенком до трех лет на второго ребенка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по уходу3</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПоУходу4РасширеннаяПодсказка" id="49"/>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоУходу15" id="50">
+							<Visible>false</Visible>
+							<Enabled>false</Enabled>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -128,9 +231,9 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаПоУходу15РасширеннаяПодсказка" id="26"/>
+							<ExtendedTooltip name="ГруппаПоУходу15РасширеннаяПодсказка" id="51"/>
 							<ChildItems>
-								<InputField name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет" id="7">
+								<InputField name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет" id="52">
 									<DataPath>Запись.МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛет</DataPath>
 									<Title>
 										<v8:item>
@@ -138,10 +241,10 @@
 											<v8:content>Первый ребенок</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетExtendedTooltip" id="20"/>
+									<ContextMenu name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="МинимумПособияПоУходуЗаПервымРебенкомДоПолутораЛетExtendedTooltip" id="54"/>
 								</InputField>
-								<InputField name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет" id="9">
+								<InputField name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет" id="55">
 									<DataPath>Запись.МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛет</DataPath>
 									<Title>
 										<v8:item>
@@ -149,10 +252,10 @@
 											<v8:content>Последующие дети</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетКонтекстноеМеню" id="10"/>
-									<ExtendedTooltip name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетExtendedTooltip" id="21"/>
+									<ContextMenu name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="МинимумПособияПоУходуЗаПоследующимРебенкомДоПолутораЛетExtendedTooltip" id="57"/>
 								</InputField>
-								<InputField name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет" id="11">
+								<InputField name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет" id="58">
 									<DataPath>Запись.МаксимумПособияПоУходуЗаРебенкомДоПолутораЛет</DataPath>
 									<Title>
 										<v8:item>
@@ -160,16 +263,16 @@
 											<v8:content>Максимальный размер</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетКонтекстноеМеню" id="12"/>
-									<ExtendedTooltip name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетExtendedTooltip" id="22"/>
+									<ContextMenu name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="МаксимумПособияПоУходуЗаРебенкомДоПолутораЛетExtendedTooltip" id="60"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаПрочее" id="37">
+						<UsualGroup name="ГруппаПрочее" id="61">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Прочие пособия</v8:content>
+									<v8:content>Единовременные пособия</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -179,31 +282,59 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="38"/>
+							<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="62"/>
 							<ChildItems>
-								<InputField name="ПриРожденииРебенка" id="5">
+								<InputField name="ПриРожденииРебенка" id="63">
 									<DataPath>Запись.ПриРожденииРебенка</DataPath>
-									<ContextMenu name="ПриРожденииРебенкаКонтекстноеМеню" id="6"/>
-									<ExtendedTooltip name="ПриРожденииРебенкаExtendedTooltip" id="19"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия в связи с рождением ребенка: на первого ребенка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПриРожденииРебенкаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПриРожденииРебенкаExtendedTooltip" id="65"/>
 								</InputField>
-								<InputField name="ПриПостановкеНаУчетВРанниеСрокиБеременности" id="3">
+								<InputField name="ПриРожденииВторогоИПоследующихДетей" id="66">
+									<DataPath>Запись.ПриРожденииВторогоИПоследующихДетей</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия в связи с рождением ребенка: на второго и последующих детей</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПриРожденииВторогоИПоследующихДетейКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПриРожденииВторогоИПоследующихДетейРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ПриПостановкеНаУчетВРанниеСрокиБеременности" id="69">
 									<DataPath>Запись.ПриПостановкеНаУчетВРанниеСрокиБеременности</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия женщинам, ставшим на учет до 12-недельного срока беременности</v8:content>
+										</v8:item>
+									</Title>
 									<TitleLocation>Left</TitleLocation>
 									<TitleHeight>2</TitleHeight>
-									<ContextMenu name="ПриПостановкеНаУчетВРанниеСрокиБеременностиКонтекстноеМеню" id="4"/>
-									<ExtendedTooltip name="ПриПостановкеНаУчетВРанниеСрокиБеременностиExtendedTooltip" id="18"/>
+									<ContextMenu name="ПриПостановкеНаУчетВРанниеСрокиБеременностиКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ПриПостановкеНаУчетВРанниеСрокиБеременностиExtendedTooltip" id="71"/>
 								</InputField>
-								<InputField name="ВСвязиСоСмертью" id="15">
+								<InputField name="ВСвязиСоСмертью" id="72">
 									<DataPath>Запись.ВСвязиСоСмертью</DataPath>
-									<ContextMenu name="ВСвязиСоСмертьюКонтекстноеМеню" id="16"/>
-									<ExtendedTooltip name="ВСвязиСоСмертьюExtendedTooltip" id="24"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер пособия на погребение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВСвязиСоСмертьюКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ВСвязиСоСмертьюExtendedTooltip" id="74"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ГруппаПравая" id="35">
+				<UsualGroup name="ГруппаПравая" id="75">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -219,7 +350,7 @@
 					<Group>Vertical</Group>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПраваяРасширеннаяПодсказка" id="36"/>
+					<ExtendedTooltip name="ГруппаПраваяРасширеннаяПодсказка" id="76"/>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>

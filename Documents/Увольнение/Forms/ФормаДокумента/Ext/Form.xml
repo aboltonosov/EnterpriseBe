@@ -944,6 +944,12 @@
 										<InputField name="УдержанНДФЛ" id="791">
 											<DataPath>УдержаноНДФЛ</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ПН</v8:content>
+												</v8:item>
+											</Title>
 											<TitleLocation>Left</TitleLocation>
 											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 											<AutoMaxWidth>false</AutoMaxWidth>
@@ -1662,13 +1668,15 @@
 														</InputField>
 														<InputField name="ПособияВТомЧислеЗаСчетФБ" id="867">
 															<DataPath>Объект.Пособия.РезультатВТомЧислеЗаСчетФБ</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияВТомЧислеЗаСчетФБКонтекстноеМеню" id="868"/>
-															<ExtendedTooltip name="ПособияВТомЧислеЗаСчетФБExtendedTooltip" id="984"/>
+															<ExtendedTooltip name="ПособияВТомЧислеЗаСчетФБРасширеннаяПодсказка" id="984"/>
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ГруппаПоУходуЗаПервымРебенком" id="869">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1679,6 +1687,7 @@
 													<ChildItems>
 														<InputField name="ПособияСуммаВсегоПоУходуЗаПервымРебенком" id="871">
 															<DataPath>Объект.Пособия.СуммаВсегоПоУходуЗаПервымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1691,6 +1700,7 @@
 														</InputField>
 														<InputField name="ПособияСуммаСверхНормПоУходуЗаПервымРебенком" id="873">
 															<DataPath>Объект.Пособия.СуммаСверхНормПоУходуЗаПервымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1704,6 +1714,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ГруппаПоХодуЗаПоследующимиДетьми" id="870">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1714,6 +1725,7 @@
 													<ChildItems>
 														<InputField name="ПособияСуммаВсегоПоУходуЗаВторымРебенком" id="875">
 															<DataPath>Объект.Пособия.СуммаВсегоПоУходуЗаВторымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1726,6 +1738,7 @@
 														</InputField>
 														<InputField name="ПособияСуммаСверхНормПоУходуЗаВторымРебенком" id="877">
 															<DataPath>Объект.Пособия.СуммаСверхНормПоУходуЗаВторымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1812,6 +1825,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ГруппаКоличествоДетей" id="1280">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1822,12 +1836,14 @@
 													<ChildItems>
 														<InputField name="ПособияКоличествоДетей" id="1269">
 															<DataPath>Объект.Пособия.КоличествоДетей</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияКоличествоДетейКонтекстноеМеню" id="1270"/>
 															<ExtendedTooltip name="ПособияКоличествоДетейРасширеннаяПодсказка" id="1271"/>
 														</InputField>
 														<InputField name="ПособияКоличествоПервыхДетей" id="1272">
 															<DataPath>Объект.Пособия.КоличествоПервыхДетей</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1841,6 +1857,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ГруппаДанныеДляРасчетаПособия" id="1261">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1851,12 +1868,14 @@
 													<ChildItems>
 														<InputField name="ПособияФинансированиеФедеральнымБюджетом" id="1263">
 															<DataPath>Объект.Пособия.ФинансированиеФедеральнымБюджетом</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияФинансированиеФедеральнымБюджетомКонтекстноеМеню" id="1264"/>
 															<ExtendedTooltip name="ПособияФинансированиеФедеральнымБюджетомРасширеннаяПодсказка" id="1265"/>
 														</InputField>
 														<InputField name="ПособияСтраховойСлучай" id="1266">
 															<DataPath>Объект.Пособия.СтраховойСлучай</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияСтраховойСлучайКонтекстноеМеню" id="1267"/>
 															<ExtendedTooltip name="ПособияСтраховойСлучайРасширеннаяПодсказка" id="1268"/>
@@ -2371,7 +2390,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>НДФЛ</v8:content>
+											<v8:content>ПН</v8:content>
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
@@ -2462,12 +2481,12 @@
 															<ExtendedTooltip name="НДФЛЗачтеноАвансовыхПлатежейРасширеннаяПодсказка" id="1448"/>
 														</InputField>
 														<InputField name="НДФЛНалогКЗачетуВозврату" id="812">
-															<DataPath>Объект.НДФЛ.УдалитьНалогКЗачетуВозврату</DataPath>
+															<DataPath>Объект.НДФЛ.НалогКЗачетуВозврату</DataPath>
 															<UserVisible>
 																<xr:Common>false</xr:Common>
 															</UserVisible>
 															<EditMode>EnterOnInput</EditMode>
-															<FooterDataPath>Объект.НДФЛ.TotalУдалитьНалогКЗачетуВозврату</FooterDataPath>
+															<FooterDataPath>Объект.НДФЛ.TotalНалогКЗачетуВозврату</FooterDataPath>
 															<ContextMenu name="НДФЛНалогКЗачетуВозвратуКонтекстноеМеню" id="813"/>
 															<ExtendedTooltip name="НДФЛНалогКЗачетуВозвратуExtendedTooltip" id="1012"/>
 														</InputField>
@@ -2512,14 +2531,40 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Личный</v8:content>
+															<v8:content>Личные</v8:content>
 														</v8:item>
 													</Title>
-													<Group>Horizontal</Group>
+													<Group>Vertical</Group>
 													<Behavior>Collapsible</Behavior>
 													<Collapsed>true</Collapsed>
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаКарточкаГруппаВычетыЛичныеРасширеннаяПодсказка" id="1158"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаКарточкаГруппаВычетЛичный" id="1779">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Личный</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Horizontal</Group>
+															<Behavior>Collapsible</Behavior>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="ГруппаКарточкаГруппаВычетЛичныйРасширеннаяПодсказка" id="1780"/>
+														</UsualGroup>
+														<UsualGroup name="ГруппаКарточкаГруппаВычетЛичныйВторой" id="1781">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Личный доп.</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Horizontal</Group>
+															<Behavior>Collapsible</Behavior>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="ГруппаКарточкаГруппаВычетЛичныйВторойРасширеннаяПодсказка" id="1782"/>
+														</UsualGroup>
+													</ChildItems>
 												</UsualGroup>
 												<UsualGroup name="ГруппаКарточкаГруппаВычетыКДоходам" id="1159">
 													<Title>
@@ -2786,6 +2831,7 @@
 													</Events>
 												</InputField>
 												<ColumnGroup name="ВзносыОПС" id="1522">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -2798,6 +2844,7 @@
 													<ChildItems>
 														<InputField name="ВзносыПФРДоПредельнойВеличины" id="1524">
 															<DataPath>Объект.Взносы.ПФРДоПредельнойВеличины</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2810,6 +2857,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРСПревышения" id="1530">
 															<DataPath>Объект.Взносы.ПФРСПревышения</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2822,6 +2870,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРПоСуммарномуТарифу" id="1096">
 															<DataPath>Объект.Взносы.ПФРПоСуммарномуТарифу</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2835,6 +2884,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРНакопительная" id="713">
 															<DataPath>Объект.Взносы.ПФРНакопительная</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2848,6 +2898,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРСтраховая" id="717">
 															<DataPath>Объект.Взносы.ПФРСтраховая</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2861,6 +2912,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРДоПредельнойВеличиныЕНВД" id="1527">
 															<DataPath>Объект.Взносы.ПФРДоПредельнойВеличиныЕНВД</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2873,6 +2925,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРСПревышенияЕНВД" id="1533">
 															<DataPath>Объект.Взносы.ПФРСПревышенияЕНВД</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2885,6 +2938,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРПоСуммарномуТарифуЕНВД" id="1099">
 															<DataPath>Объект.Взносы.ПФРПоСуммарномуТарифуЕНВД</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2898,6 +2952,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРНакопительнаяЕНВД" id="715">
 															<DataPath>Объект.Взносы.ПФРНакопительнаяЕНВД</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2911,6 +2966,7 @@
 														</InputField>
 														<InputField name="ВзносыПФРСтраховаяЕНВД" id="719">
 															<DataPath>Объект.Взносы.ПФРСтраховаяЕНВД</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2926,6 +2982,7 @@
 												</ColumnGroup>
 												<InputField name="ВзносыФСС" id="707">
 													<DataPath>Объект.Взносы.ФСС</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalФСС</FooterDataPath>
 													<ContextMenu name="ВзносыФССКонтекстноеМеню" id="708"/>
@@ -2933,6 +2990,7 @@
 												</InputField>
 												<InputField name="ВзносыФССНесчастныеСлучаи" id="711">
 													<DataPath>Объект.Взносы.ФССНесчастныеСлучаи</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalФССНесчастныеСлучаи</FooterDataPath>
 													<ContextMenu name="ВзносыФССНесчастныеСлучаиКонтекстноеМеню" id="712"/>
@@ -2940,6 +2998,7 @@
 												</InputField>
 												<InputField name="ВзносыФФОМС" id="699">
 													<DataPath>Объект.Взносы.ФФОМС</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalФФОМС</FooterDataPath>
 													<ContextMenu name="ВзносыФФОМСКонтекстноеМеню" id="700"/>
@@ -2947,6 +3006,7 @@
 												</InputField>
 												<InputField name="ВзносыТФОМС" id="703">
 													<DataPath>Объект.Взносы.ТФОМС</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalТФОМС</FooterDataPath>
 													<ContextMenu name="ВзносыТФОМСКонтекстноеМеню" id="704"/>
@@ -2954,6 +3014,7 @@
 												</InputField>
 												<InputField name="ВзносыФФОМСЕНВД" id="701">
 													<DataPath>Объект.Взносы.ФФОМСЕНВД</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalФФОМСЕНВД</FooterDataPath>
 													<ContextMenu name="ВзносыФФОМСЕНВДКонтекстноеМеню" id="702"/>
@@ -2961,6 +3022,7 @@
 												</InputField>
 												<InputField name="ВзносыТФОМСЕНВД" id="705">
 													<DataPath>Объект.Взносы.ТФОМСЕНВД</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalТФОМСЕНВД</FooterDataPath>
 													<ContextMenu name="ВзносыТФОМСЕНВДКонтекстноеМеню" id="706"/>
@@ -2968,6 +3030,7 @@
 												</InputField>
 												<InputField name="ВзносыФССЕНВД" id="709">
 													<DataPath>Объект.Взносы.ФССЕНВД</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalФССЕНВД</FooterDataPath>
 													<ContextMenu name="ВзносыФССЕНВДКонтекстноеМеню" id="710"/>
@@ -2975,6 +3038,7 @@
 												</InputField>
 												<InputField name="ВзносыПФРНаДоплатуЛетчикам" id="721">
 													<DataPath>Объект.Взносы.ПФРНаДоплатуЛетчикам</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalПФРНаДоплатуЛетчикам</FooterDataPath>
 													<ContextMenu name="ВзносыПФРНаДоплатуЛетчикамКонтекстноеМеню" id="722"/>
@@ -2982,12 +3046,44 @@
 												</InputField>
 												<InputField name="ВзносыПФРНаДоплатуШахтерам" id="723">
 													<DataPath>Объект.Взносы.ПФРНаДоплатуШахтерам</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<FooterDataPath>Объект.Взносы.TotalПФРНаДоплатуШахтерам</FooterDataPath>
 													<ContextMenu name="ВзносыПФРНаДоплатуШахтерамКонтекстноеМеню" id="724"/>
 													<ExtendedTooltip name="ВзносыПФРНаДоплатуШахтерамExtendedTooltip" id="1044"/>
 												</InputField>
+												<InputField name="ВзносыФСЗН" id="1764">
+													<DataPath>Объект.Взносы.ФСЗН</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВзносыФСЗНКонтекстноеМеню" id="1765"/>
+													<ExtendedTooltip name="ВзносыФСЗНРасширеннаяПодсказка" id="1766"/>
+												</InputField>
+												<InputField name="ВзносыПенсионныйФонд" id="1767">
+													<DataPath>Объект.Взносы.ПенсионныйФонд</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВзносыПенсионныйФондКонтекстноеМеню" id="1768"/>
+													<ExtendedTooltip name="ВзносыПенсионныйФондРасширеннаяПодсказка" id="1769"/>
+												</InputField>
+												<InputField name="ВзносыБелгосстрах" id="1770">
+													<DataPath>Объект.Взносы.Белгосстрах</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВзносыБелгосстрахКонтекстноеМеню" id="1771"/>
+													<ExtendedTooltip name="ВзносыБелгосстрахРасширеннаяПодсказка" id="1772"/>
+												</InputField>
+												<InputField name="ВзносыПС" id="1773">
+													<DataPath>Объект.Взносы.ПС</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВзносыПСКонтекстноеМеню" id="1774"/>
+													<ExtendedTooltip name="ВзносыПСРасширеннаяПодсказка" id="1775"/>
+												</InputField>
+												<InputField name="ВзносыСС" id="1776">
+													<DataPath>Объект.Взносы.СС</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВзносыССКонтекстноеМеню" id="1777"/>
+													<ExtendedTooltip name="ВзносыССРасширеннаяПодсказка" id="1778"/>
+												</InputField>
 												<ColumnGroup name="ВзносыГруппа1" id="1111">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -3000,6 +3096,7 @@
 													<ChildItems>
 														<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботах" id="768">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботах</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<FooterDataPath>Объект.Взносы.TotalПФРЗаЗанятыхНаПодземныхИВредныхРаботах</FooterDataPath>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахКонтекстноеМеню" id="769"/>
@@ -3007,30 +3104,35 @@
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасный" id="1115">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасный</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасныйКонтекстноеМеню" id="1116"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахОпасныйРасширеннаяПодсказка" id="1117"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1" id="1118">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1КонтекстноеМеню" id="1119"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный1РасширеннаяПодсказка" id="1120"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2" id="1121">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2КонтекстноеМеню" id="1122"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный2РасширеннаяПодсказка" id="1123"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3" id="1124">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3КонтекстноеМеню" id="1125"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный3РасширеннаяПодсказка" id="1126"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4" id="1127">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4КонтекстноеМеню" id="1128"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаПодземныхИВредныхРаботахВредный4РасширеннаяПодсказка" id="1129"/>
@@ -3038,6 +3140,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ВзносыГруппа2" id="1113">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -3050,6 +3153,7 @@
 													<ChildItems>
 														<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботах" id="770">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботах</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<FooterDataPath>Объект.Взносы.TotalПФРЗаЗанятыхНаТяжелыхИПрочихРаботах</FooterDataPath>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахКонтекстноеМеню" id="771"/>
@@ -3057,30 +3161,35 @@
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасный" id="1130">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасный</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасныйКонтекстноеМеню" id="1131"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахОпасныйРасширеннаяПодсказка" id="1132"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1" id="1133">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1КонтекстноеМеню" id="1134"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный1РасширеннаяПодсказка" id="1135"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2" id="1136">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2КонтекстноеМеню" id="1137"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный2РасширеннаяПодсказка" id="1138"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3" id="1139">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3КонтекстноеМеню" id="1140"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный3РасширеннаяПодсказка" id="1141"/>
 														</InputField>
 														<InputField name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4" id="1142">
 															<DataPath>Объект.Взносы.ПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4КонтекстноеМеню" id="1143"/>
 															<ExtendedTooltip name="ВзносыПФРЗаЗанятыхНаТяжелыхИПрочихРаботахВредный4РасширеннаяПодсказка" id="1144"/>
@@ -3390,6 +3499,7 @@
 														</InputField>
 														<InputField name="ПособияПерерасчетРезультатВТомЧислеЗаСчетФБ" id="1193">
 															<DataPath>Объект.ПособияПерерасчет.РезультатВТомЧислеЗаСчетФБ</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияПерерасчетРезультатВТомЧислеЗаСчетФБКонтекстноеМеню" id="1194"/>
 															<ExtendedTooltip name="ПособияПерерасчетРезультатВТомЧислеЗаСчетФБРасширеннаяПодсказка" id="1195"/>
@@ -3397,6 +3507,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ПособияПерерасчетГруппаПоУходуЗаПервымРебенком" id="1238">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -3407,6 +3518,7 @@
 													<ChildItems>
 														<InputField name="ПособияПерерасчетСуммаВсегоПоУходуЗаПервымРебенком" id="1220">
 															<DataPath>Объект.ПособияПерерасчет.СуммаВсегоПоУходуЗаПервымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -3419,6 +3531,7 @@
 														</InputField>
 														<InputField name="ПособияПерерасчетСуммаСверхНормПоУходуЗаПервымРебенком" id="1223">
 															<DataPath>Объект.ПособияПерерасчет.СуммаСверхНормПоУходуЗаПервымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -3432,6 +3545,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ПособияПерерасчетГруппаПоХодуЗаПоследующимиДетьми" id="1236">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -3442,6 +3556,7 @@
 													<ChildItems>
 														<InputField name="ПособияПерерасчетСуммаВсегоПоУходуЗаВторымРебенком" id="1226">
 															<DataPath>Объект.ПособияПерерасчет.СуммаВсегоПоУходуЗаВторымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -3454,6 +3569,7 @@
 														</InputField>
 														<InputField name="ПособияПерерасчетСуммаСверхНормПоУходуЗаВторымРебенком" id="1229">
 															<DataPath>Объект.ПособияПерерасчет.СуммаСверхНормПоУходуЗаВторымРебенком</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -3536,6 +3652,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ПособияПерерасчетГруппаКоличествоДетей" id="1287">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -3546,12 +3663,14 @@
 													<ChildItems>
 														<InputField name="ПособияПерерасчетКоличествоДетей" id="1289">
 															<DataPath>Объект.ПособияПерерасчет.КоличествоДетей</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияПерерасчетКоличествоДетейКонтекстноеМеню" id="1290"/>
 															<ExtendedTooltip name="ПособияПерерасчетКоличествоДетейРасширеннаяПодсказка" id="1291"/>
 														</InputField>
 														<InputField name="ПособияПерерасчетКоличествоПервыхДетей" id="1292">
 															<DataPath>Объект.ПособияПерерасчет.КоличествоПервыхДетей</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -3565,6 +3684,7 @@
 													</ChildItems>
 												</ColumnGroup>
 												<ColumnGroup name="ПособияПерерасчетГруппаДанныеДляРасчетаПособия" id="1295">
+													<Visible>false</Visible>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -3575,12 +3695,14 @@
 													<ChildItems>
 														<InputField name="ПособияПерерасчетФинансированиеФедеральнымБюджетом" id="1297">
 															<DataPath>Объект.ПособияПерерасчет.ФинансированиеФедеральнымБюджетом</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияПерерасчетФинансированиеФедеральнымБюджетомКонтекстноеМеню" id="1298"/>
 															<ExtendedTooltip name="ПособияПерерасчетФинансированиеФедеральнымБюджетомРасширеннаяПодсказка" id="1299"/>
 														</InputField>
 														<InputField name="ПособияПерерасчетСтраховойСлучай" id="1300">
 															<DataPath>Объект.ПособияПерерасчет.СтраховойСлучай</DataPath>
+															<Visible>false</Visible>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ПособияПерерасчетСтраховойСлучайКонтекстноеМеню" id="1301"/>
 															<ExtendedTooltip name="ПособияПерерасчетСтраховойСлучайРасширеннаяПодсказка" id="1302"/>
@@ -10031,6 +10153,60 @@
 				<v8:Type>cfg:EnumRef.СпособыУдержанияИзлишнеНачисленныхОтпускных</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ГруппаКарточкаПримененныйВычетЛичныйВторой" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа карточка примененный вычет личный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаКарточкаПримененныйВычетЛичныйВторойКЗачетуВозврату" id="95">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа карточка примененный вычет личный к зачету возврату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаКарточкаПримененныйВычетЛичныйВторойКЗачетуВозвратуКодВычета" id="96">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа карточка примененный вычет личный к зачету возврату код вычета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаКарточкаПримененныйВычетЛичныйВторойКодВычета" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа карточка примененный вычет личный код вычета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыВычетовНДФЛ</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОткрытьСреднийЗаработок" id="1">
@@ -10223,7 +10399,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подробнее см. Регистр налогового учета по НДФЛ</v8:content>
+					<v8:content>Подробнее см. Регистр налогового учета по подоходному налогу</v8:content>
 				</v8:item>
 			</Title>
 			<Use>

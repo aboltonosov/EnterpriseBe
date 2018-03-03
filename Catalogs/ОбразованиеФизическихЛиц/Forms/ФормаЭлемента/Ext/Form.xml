@@ -50,6 +50,100 @@
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Высшее образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.ВысшееОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дошкольное образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.ДошкольноеОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Общее базовое образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.ОбщееБазовоеОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Общее среднее образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.СреднееОбщееОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Послевузовское образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.ПослевузовскоеОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Профессионально-техническое образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.ПрофессиональноТехническоеОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Среднее специальное образование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыОбразованияФизическихЛиц.СреднееСпециальноеОбразование</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
 					<ContextMenu name="ВидОбразованияКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ВидОбразованияРасширеннаяПодсказка" id="9"/>
 					<Events>
@@ -58,6 +152,7 @@
 				</InputField>
 				<InputField name="ВидПослевузовскогоОбразования" id="10">
 					<DataPath>Объект.ВидПослевузовскогоОбразования</DataPath>
+					<Visible>false</Visible>
 					<TitleLocation>None</TitleLocation>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -322,7 +417,7 @@
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ThroughAlign>Use</ThroughAlign>
-			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="105"/>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="105"/>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>

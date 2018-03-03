@@ -679,7 +679,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>НДФЛ</v8:content>
+							<v8:content>Подоходный налог</v8:content>
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
@@ -876,6 +876,63 @@
 									<CommandName>Form.Command.РегистрНалоговогоУчетаПоНДФЛ</CommandName>
 									<ExtendedTooltip name="РегистрНалоговогоУчетаПоНДФЛРасширеннаяПодсказка" id="1489"/>
 								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКарточка" id="1762">
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаКарточкаExtendedTooltip" id="1763"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКарточкаГруппаВычетыНаДетейИИмущественные" id="1764">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На детей и имущественные</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаКарточкаГруппаВычетыНаДетейИИмущественныеРасширеннаяПодсказка" id="1765"/>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКарточкаГруппаВычетыЛичные" id="1766">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Личный</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Collapsible</Behavior>
+									<Collapsed>true</Collapsed>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаКарточкаГруппаВычетыЛичныеРасширеннаяПодсказка" id="1767"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаКарточкаГруппаВычетЛичный" id="1768">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Личный</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаКарточкаГруппаВычетЛичныйРасширеннаяПодсказка" id="1769"/>
+										</UsualGroup>
+										<UsualGroup name="ГруппаКарточкаГруппаВычетЛичныйВторой" id="1770">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Личный доп.</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаКарточкаГруппаВычетЛичныйВторойРасширеннаяПодсказка" id="1771"/>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>

@@ -204,6 +204,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПрочееОприходованиеТоваров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеАссортимента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратМатериаловИзПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеТоваров</xr:Item>
 			</BasedOn>
 			<InputByString>
 				<xr:Field>Document.УстановкаЦенНоменклатуры.StandardAttribute.Number</xr:Field>
@@ -401,6 +402,7 @@
 						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровУслуг</v8:Type>
 						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
 						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПеремещениеТоваров</v8:Type>
 						<v8:Type>cfg:DocumentRef.ДвижениеПродукцииИМатериалов</v8:Type>
 						<v8:Type>cfg:DocumentRef.СборкаТоваров</v8:Type>
 						<v8:Type>cfg:DocumentRef.ВозвратМатериаловИзПроизводства</v8:Type>
@@ -1180,6 +1182,9 @@
 			</TabularSection>
 			<Template>ПФ_MXL_ПереоценкаТоваровВРознице</Template>
 			<Template>ПФ_MXL_УстановкаЦенНоменклатуры</Template>
+			<Template>ПФ_MXL_ПереоценкаТоваровВРознице_Локализация</Template>
+			<Template>ПФ_MXL_ОписьАктПереоценки_Локализация</Template>
+			<Template>ЦеныРозничныеВводНаОсновании</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

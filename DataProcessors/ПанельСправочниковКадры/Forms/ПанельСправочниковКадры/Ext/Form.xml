@@ -77,6 +77,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияНастройкиПечатныхФорм" id="120">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки печати списков, документов, кадровых приказов.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияНастройкиПечатныхФормКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ДекорацияНастройкиПечатныхФормРасширеннаяПодсказка" id="122"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаГруппыСотрудниковПраво" id="123">
@@ -110,6 +123,20 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияГруппыСотрудников" id="127">
+									<Visible>false</Visible>
+									<Height>3</Height>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группы применяются для удобства работы со списком сотрудников, при оформлении списочных документов или построении аналитических отчетов.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияГруппыСотрудниковКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ДекорацияГруппыСотрудниковРасширеннаяПодсказка" id="129"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -160,7 +187,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>В справочнике хранится информация о бывших работодателях сотрудников предприятия. От ранее полученного у них заработка может зависеть размер пособий ФСС.</v8:content>
+										<v8:content>В справочнике хранится информация о бывших работодателях сотрудников предприятия. От ранее полученного у них заработка может зависеть размер пособий ФСЗН.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -175,7 +202,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Наиболее часто встречающиеся виды договоров авторского заказа. Вид договора определяет способ обложения дохода НДФЛ и страховыми взносами.</v8:content>
+										<v8:content>Наиболее часто встречающиеся виды договоров авторского заказа. Вид договора определяет способ обложения дохода ПН и страховыми взносами.</v8:content>
 									</v8:item>
 								</Title>
 								<VerticalAlign>Center</VerticalAlign>
@@ -297,7 +324,7 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Список профессий рабочих. Возможен подбор из ОКПДТР.</v8:content>
+												<v8:content>Список профессий рабочих.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -315,6 +342,32 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияПрофессии" id="34">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список профессий рабочих.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияПрофессииКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ДекорацияПрофессииРасширеннаяПодсказка" id="36"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОснованияУвольнения" id="52">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Просмотр статей увольнения по ТК. </v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияОснованияУвольненияКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ДекорацияОснованияУвольненияРасширеннаяПодсказка" id="54"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаКлассификаторы1Справа" id="30">
@@ -357,11 +410,25 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Список специальностей по образованию. Возможен подбор из ОКСО.</v8:content>
+												<v8:content>Список специальностей по образованию.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСпециальности" id="39">
+									<Visible>false</Visible>
+									<Height>2</Height>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список специальностей по образованию. </v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСпециальностиКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ДекорацияСпециальностиРасширеннаяПодсказка" id="41"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -412,11 +479,24 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Подбор языков мира из ОКИН.</v8:content>
+												<v8:content>Подбор языков мира.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияЯзыкиНародовМира" id="61">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подбор языков мира.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияЯзыкиНародовМираКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ДекорацияЯзыкиНародовМираРасширеннаяПодсказка" id="63"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаКлассификаторы2Справа" id="57">
@@ -450,6 +530,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСтепениЗнанияЯзыка" id="66">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список классификаций степени знания языка.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСтепениЗнанияЯзыкаКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ДекорацияСтепениЗнанияЯзыкаРасширеннаяПодсказка" id="68"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -519,6 +612,32 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСостояниеВБраке" id="77">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список классификаций состояния в браке.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСостояниеВБракеКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ДекорацияСостояниеВБракеРасширеннаяПодсказка" id="79"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНаграды" id="80">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Награды и другие знаки отличия физических лиц.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияНаградыКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДекорацияНаградыРасширеннаяПодсказка" id="82"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаКлассификаторы3Справа" id="71">
@@ -566,6 +685,19 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияСтепениРодства" id="85">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список степени родства для физических лиц.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияСтепениРодстваКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ДекорацияСтепениРодстваРасширеннаяПодсказка" id="87"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -617,7 +749,7 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Виды образования (среднее, высшее, специальное и т.д.).</v8:content>
+												<v8:content>Виды образования (среднее специальное, высшее и т.д.).</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -635,6 +767,32 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияВидыОбразования" id="99">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды образования (среднее, высшее, специальное и т.д.).</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияВидыОбразованияКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ДекорацияВидыОбразованияРасширеннаяПодсказка" id="101"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияУчебныеЗаведения" id="96">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список учебных заведений.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияУчебныеЗаведенияКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ДекорацияУчебныеЗаведенияРасширеннаяПодсказка" id="98"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаКлассификаторы4Справа" id="90">
@@ -677,11 +835,37 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Список ученых степеней (доктор наук, кандидат наук и т.д.).</v8:content>
+												<v8:content>Список ученых степеней (доктор наук, кандидат наук).</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<LabelDecoration name="ДекорацияУченыеЗвания" id="109">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ученых званий (профессор, доцент, МНС и т.д.).</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияУченыеЗванияКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ДекорацияУченыеЗванияРасширеннаяПодсказка" id="111"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияУченыеСтепени" id="106">
+									<Visible>false</Visible>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ученых степеней (доктор наук, кандидат наук и т.д.).</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ДекорацияУченыеСтепениКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ДекорацияУченыеСтепениРасширеннаяПодсказка" id="108"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -749,6 +933,32 @@
 								</Title>
 							</ExtendedTooltip>
 						</Button>
+						<LabelDecoration name="ДекорацияВоенкоматы" id="5">
+							<Visible>false</Visible>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыть список военкоматов.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ДекорацияВоенкоматыКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ДекорацияВоенкоматыExtendedTooltip" id="19"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияЗванияГражданскогоВоинскогоУчета" id="8">
+							<Visible>false</Visible>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыть справочник звания гражданского воинского учета.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ДекорацияЗванияГражданскогоВоинскогоУчетаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДекорацияЗванияГражданскогоВоинскогоУчетаExtendedTooltip" id="21"/>
+						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаВоинскийУчетПраво" id="144">
@@ -782,6 +992,19 @@
 								</Title>
 							</ExtendedTooltip>
 						</Button>
+						<LabelDecoration name="ДекорацияСоставыВоеннослужащих" id="11">
+							<Visible>false</Visible>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыть справочник составы военнослужащих.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ДекорацияСоставыВоеннослужащихКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ДекорацияСоставыВоеннослужащихExtendedTooltip" id="23"/>
+						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -853,7 +1076,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Основания увольнения (статьи ТК РФ)</v8:content>
+					<v8:content>Основания увольнения (статьи ТК РБ)</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>

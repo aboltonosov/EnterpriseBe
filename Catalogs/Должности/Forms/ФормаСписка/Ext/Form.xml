@@ -65,11 +65,10 @@
 							<CommandName>Form.Command.КомандаПодборИзКлассификатораПрофессий</CommandName>
 							<ExtendedTooltip name="ФормаКомандаПодборИзКлассификатораРасширеннаяПодсказка" id="27"/>
 						</Button>
-						<Button name="ФормаКомандаПодборИзКлассификатораДолжностей" id="30">
+						<Button name="ФормаПодборИзКД" id="67">
 							<Type>CommandBarButton</Type>
-							<OnlyInAllActions>true</OnlyInAllActions>
-							<CommandName>Form.Command.КомандаПодборИзКлассификатораДолжностей</CommandName>
-							<ExtendedTooltip name="ФормаКомандаПодборИзКлассификатораДолжностейРасширеннаяПодсказка" id="31"/>
+							<CommandName>Form.Command.ПодборИзКД</CommandName>
+							<ExtendedTooltip name="ФормаПодборИзКДРасширеннаяПодсказка" id="68"/>
 						</Button>
 					</ChildItems>
 				</Popup>
@@ -436,7 +435,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подбор информации из общероссийского классификатор а профессий рабочих, должностей служащих и тарифных разрядов</v8:content>
+					<v8:content>Подбор информации из общегосударственного классификатора профессий рабочих, должностей служащих и тарифных разрядов</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаПодборИзКлассификатораПрофессий</Action>
@@ -451,10 +450,25 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подбор информации из общероссийского классификатор а профессий рабочих, должностей служащих и тарифных разрядов</v8:content>
+					<v8:content>Подбор информации из общегосударственного классификатора профессий рабочих, должностей служащих и тарифных разрядов</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаПодборИзКлассификатораДолжностей</Action>
+		</Command>
+		<Command name="ПодборИзКД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должности служащих</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор из КД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборИзКД</Action>
 		</Command>
 	</Commands>
 </Form>

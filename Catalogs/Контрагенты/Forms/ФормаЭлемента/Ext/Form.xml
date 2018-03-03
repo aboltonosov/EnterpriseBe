@@ -224,7 +224,7 @@
 												<Presentation>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Юр. лицо, за пределами РФ</v8:content>
+														<v8:content>Юр. лицо, за пределами РБ</v8:content>
 													</v8:item>
 												</Presentation>
 												<Value xsi:type="xs:string">ЮрЛицоНеРезидент</Value>
@@ -252,6 +252,7 @@
 								</InputField>
 								<CheckBoxField name="НДСпоСтавкам4и2" id="61">
 									<DataPath>Объект.НДСпоСтавкам4и2</DataPath>
+									<Visible>false</Visible>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="НДСпоСтавкам4и2КонтекстноеМеню" id="62"/>
@@ -281,13 +282,13 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Данные регистрации в РФ</v8:content>
+											<v8:content>Данные регистрации в РБ</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Данные регистрации в Российской Федерации</v8:content>
+											<v8:content>Данные регистрации в Республике Беларусь</v8:content>
 										</v8:item>
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаСтраницаРоссийскогоКонтрагентаРасширеннаяПодсказка" id="129"/>
@@ -315,13 +316,13 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Страницы ИНН</v8:content>
+															<v8:content>Страницы УНП</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Страницы ИНН</v8:content>
+															<v8:content>Страницы УНП</v8:content>
 														</v8:item>
 													</ToolTip>
 													<PagesRepresentation>None</PagesRepresentation>
@@ -346,13 +347,19 @@
 																<Title formatted="true">
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
-																		<v8:content>&lt;colorstyle -3&gt;ИНН:  &lt;/&gt;                      </v8:content>
+																		<v8:content>&lt;colorstyle -3&gt;УНП:  &lt;/&gt;                      </v8:content>
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
 															<ChildItems>
 																<InputField name="ИНН" id="139">
 																	<DataPath>Объект.ИНН</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>УНП</v8:content>
+																		</v8:item>
+																	</Title>
 																	<TitleLocation>None</TitleLocation>
 																	<EditMode>EnterOnInput</EditMode>
 																	<Width>14</Width>
@@ -361,7 +368,7 @@
 																	<InputHint>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Введите ИНН 10 цифр</v8:content>
+																			<v8:content>Введите УНП 9 цифр</v8:content>
 																		</v8:item>
 																	</InputHint>
 																	<ContextMenu name="ИННКонтекстноеМеню" id="140"/>
@@ -378,6 +385,7 @@
 																</Button>
 																<InputField name="КПП" id="144">
 																	<DataPath>Объект.КПП</DataPath>
+																	<Visible>false</Visible>
 																	<EditMode>EnterOnInput</EditMode>
 																	<Width>14</Width>
 																	<HorizontalStretch>false</HorizontalStretch>
@@ -410,7 +418,7 @@
 																<Title formatted="true">
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
-																		<v8:content>&lt;colorstyle -11&gt;ИНН:         &lt;/&gt;&lt;colorstyle -11&gt;   &lt;/&gt;&lt;colorstyle -11&gt;      &lt;/&gt;&lt;colorstyle -11&gt;   &lt;/&gt;&lt;colorstyle -11&gt;   &lt;/&gt;</v8:content>
+																		<v8:content>&lt;colorstyle -11&gt;УНП:         &lt;/&gt;&lt;colorstyle -11&gt;   &lt;/&gt;&lt;colorstyle -11&gt;      &lt;/&gt;&lt;colorstyle -11&gt;   &lt;/&gt;&lt;colorstyle -11&gt;   &lt;/&gt;</v8:content>
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
@@ -423,7 +431,7 @@
 																	<InputHint>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Введите ИНН 12 цифр</v8:content>
+																			<v8:content>Введите УНП 9 цифр</v8:content>
 																		</v8:item>
 																	</InputHint>
 																	<ContextMenu name="ИННФизЛицоКонтекстноеМеню" id="150"/>
@@ -1049,7 +1057,7 @@
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Не заполнен головной контрагент. Счета-фактуры и книги продаж будут оформлены некорректно.</v8:content>
+											<v8:content>Не заполнен головной контрагент. </v8:content>
 										</v8:item>
 									</Title>
 									<VerticalAlign>Center</VerticalAlign>
@@ -1058,17 +1066,138 @@
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="ДополнительнаяИнформация" id="22">
-							<DataPath>Объект.ДополнительнаяИнформация</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<Height>3</Height>
-							<AutoMaxHeight>false</AutoMaxHeight>
-							<VerticalStretch>true</VerticalStretch>
-							<MultiLine>true</MultiLine>
-							<ContextMenu name="ДополнительнаяИнформацияКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="ДополнительнаяИнформацияExtendedTooltip" id="60"/>
-						</InputField>
+						<UsualGroup name="ГруппаЭСЧФ" id="255">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЭСЧФ</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЭСЧФ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЭСЧФ</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="ГруппаЭСЧФРасширеннаяПодсказка" id="256"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛево" id="257">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="258"/>
+									<ChildItems>
+										<CheckBoxField name="ВзаимозависимоеЛицо" id="259">
+											<DataPath>Объект.ВзаимозависимоеЛицо</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВзаимозависимоеЛицоКонтекстноеМеню" id="260"/>
+											<ExtendedTooltip name="ВзаимозависимоеЛицоРасширеннаяПодсказка" id="261"/>
+										</CheckBoxField>
+										<CheckBoxField name="СделкаСРезидентомОЗ" id="262">
+											<DataPath>Объект.РезидентОффшорнойЗоны</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СделкаСРезидентомОЗКонтекстноеМеню" id="263"/>
+											<ExtendedTooltip name="СделкаСРезидентомОЗРасширеннаяПодсказка" id="264"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПраво" id="265">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа право</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="266"/>
+									<ChildItems>
+										<CheckBoxField name="СделкаСТоварамиПоПеречню" id="267">
+											<DataPath>Объект.СделкаСТоварамиПоПеречню</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сделка с товарами по перечню,  определяемому Правительством Республики Беларусь, в соответствии с подпунктом. 1.3 пункта 1 статьи 30-1 налогового кодекса.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СделкаСТоварамиПоПеречнюКонтекстноеМеню" id="268"/>
+											<ExtendedTooltip name="СделкаСТоварамиПоПеречнюРасширеннаяПодсказка" id="269"/>
+										</CheckBoxField>
+										<CheckBoxField name="КрупныйПлательщикНДС" id="270">
+											<DataPath>Объект.КрупныйПлательщикНДС</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КрупныйПлательщикНДСКонтекстноеМеню" id="271"/>
+											<ExtendedTooltip name="КрупныйПлательщикНДСРасширеннаяПодсказка" id="272"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительнаяИнформация" id="273">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительная информация</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительная информация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительная информация</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="ГруппаДополнительнаяИнформацияРасширеннаяПодсказка" id="274"/>
+							<ChildItems>
+								<InputField name="ДополнительнаяИнформация" id="22">
+									<DataPath>Объект.ДополнительнаяИнформация</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>3</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<VerticalStretch>true</VerticalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ДополнительнаяИнформацияКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ДополнительнаяИнформацияExtendedTooltip" id="60"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаКонтактнаяИнформация" id="17">
@@ -1237,13 +1366,13 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить реквизиты контрагента по ИНН</v8:content>
+					<v8:content>Заполнить реквизиты контрагента по УНП</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить реквизиты контрагента по ИНН</v8:content>
+					<v8:content>Заполнить реквизиты контрагента по УНП</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>

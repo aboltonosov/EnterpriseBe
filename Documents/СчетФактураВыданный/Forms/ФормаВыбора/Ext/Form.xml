@@ -155,6 +155,12 @@
 					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НомерExtendedTooltip" id="21"/>
 				</LabelField>
+				<LabelField name="НомерЭД" id="52">
+					<DataPath>Список.НомерЭД</DataPath>
+					<Width>22</Width>
+					<ContextMenu name="НомерЭДКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="НомерЭДРасширеннаяПодсказка" id="54"/>
+				</LabelField>
 				<LabelField name="Дата" id="4">
 					<DataPath>Список.Дата</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -165,6 +171,7 @@
 				</LabelField>
 				<LabelField name="НомерИсправления" id="12">
 					<DataPath>Список.НомерИсправления</DataPath>
+					<Visible>false</Visible>
 					<Width>10</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерИсправленияКонтекстноеМеню" id="13"/>
@@ -172,6 +179,7 @@
 				</LabelField>
 				<LabelField name="ДатаИсправления" id="14">
 					<DataPath>Список.ДатаИсправления</DataPath>
+					<Visible>false</Visible>
 					<Width>14</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДатаИсправленияКонтекстноеМеню" id="15"/>
@@ -209,6 +217,28 @@
 					</Title>
 					<ContextMenu name="СостояниеВерсииЭДКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="СостояниеВерсииЭДExtendedTooltip" id="28"/>
+				</LabelField>
+				<LabelField name="СуммаНДС" id="61">
+					<DataPath>Список.СуммаНДС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НДС</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СуммаНДСКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="СуммаДокумента" id="58">
+					<DataPath>Список.СуммаДокумента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="60"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="29">
 					<DataPath>Список.Ссылка</DataPath>
@@ -266,8 +296,12 @@
 	СчетФактураВыданный.КодВидаОперации,
 	СчетФактураВыданный.МоментВремени,
 	СчетФактураВыданный.Контрагент,
+	СчетФактураВыданный.СуммаНДС,
+	СчетФактураВыданный.СуммаДокумента,
 	ТИПЗНАЧЕНИЯ(СчетФактураВыданный.ДокументОснование) КАК ТипОснования,
 	СостоянияЭД.СостояниеВерсииЭД,
+	СостоянияЭД.НомерЭД КАК НомерЭД,
+	СостоянияЭД.СостояниеВерсииЭД КАК Статус,
 	ВЫБОР
 		КОГДА ДокументыСОшибкамиПроверкиКонтрагентов.Документ ЕСТЬ NULL 
 			ТОГДА 3
@@ -278,7 +312,7 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК ИсходныйСчетФактура
 		ПО СчетФактураВыданный.Исправление
 			И ИсходныйСчетФактура.Ссылка = СчетФактураВыданный.СчетФактураОснование
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭД КАК СостоянияЭД
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЭСЧФ КАК СостоянияЭД
 		ПО (СостоянияЭД.СсылкаНаОбъект = СчетФактураВыданный.Ссылка)
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДокументыСОшибкамиПроверкиКонтрагентов КАК ДокументыСОшибкамиПроверкиКонтрагентов
 		ПО СчетФактураВыданный.Ссылка = ДокументыСОшибкамиПроверкиКонтрагентов.Документ
