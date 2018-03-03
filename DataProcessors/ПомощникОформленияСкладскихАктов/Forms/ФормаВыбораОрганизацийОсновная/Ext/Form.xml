@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройте приоритеты выбора организаций</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="17">
+			<Width>48</Width>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;Товары к списанию и оприходованию будут распределя&lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;ться на организации,&lt;/&gt;
+&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;у которых есть остатки выделенных товаров. Если остатки есть на нескольких организациях, то они подбираются в указанной последовательности.&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="19"/>
+		</LabelDecoration>
+		<Table name="ВыбранныеОрганизации" id="1">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ВыбранныеОрганизации</DataPath>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВыбранныеОрганизацииКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ВыбранныеОрганизацииКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ВыбранныеОрганизацииКнопкаПодбор" id="22">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КнопкаПодбор</CommandName>
+						<ExtendedTooltip name="ВыбранныеОрганизацииКнопкаПодборРасширеннаяПодсказка" id="23"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ВыбранныеОрганизацииРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ВыбранныеОрганизацииСтрокаПоиска" id="24">
+				<AdditionSource>
+					<Item>ВыбранныеОрганизации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеОрганизацииСтрокаПоискаКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ВыбранныеОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВыбранныеОрганизацииСостояниеПросмотра" id="27">
+				<AdditionSource>
+					<Item>ВыбранныеОрганизации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеОрганизацииСостояниеПросмотраКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ВыбранныеОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВыбранныеОрганизацииУправлениеПоиском" id="30">
+				<AdditionSource>
+					<Item>ВыбранныеОрганизации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеОрганизацииУправлениеПоискомКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="ВыбранныеОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВыбранныеОрганизацииНомерСтроки" id="5">
+					<DataPath>Объект.ВыбранныеОрганизации.LineNumber</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВыбранныеОрганизацииНомерСтрокиКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ВыбранныеОрганизацииНомерСтрокиРасширеннаяПодсказка" id="7"/>
+				</LabelField>
+				<InputField name="ВыбранныеОрганизацииОрганизация" id="8">
+					<DataPath>Объект.ВыбранныеОрганизации.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВыбранныеОрганизацииОрганизацияКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ВыбранныеОрганизацииОрганизацияРасширеннаяПодсказка" id="10"/>
+					<Events>
+						<Event name="ChoiceProcessing">ВыбранныеОрганизацииОрганизацияОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ГруппаКнопки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Button name="КнопкаОК" id="13">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.КнопкаОК</CommandName>
+					<ExtendedTooltip name="КнопкаОКРасширеннаяПодсказка" id="14"/>
+				</Button>
+				<Button name="КнопкаОтмена" id="15">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КнопкаОтмена</CommandName>
+					<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="16"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПомощникОформленияСкладскихАктов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаОК</Action>
+		</Command>
+		<Command name="КнопкаОтмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаОтмена</Action>
+		</Command>
+		<Command name="КнопкаПодбор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаПодбор</Action>
+		</Command>
+	</Commands>
+</Form>

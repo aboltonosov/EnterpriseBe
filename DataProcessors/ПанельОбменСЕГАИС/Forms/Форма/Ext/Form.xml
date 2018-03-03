@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки и справочники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиЛево" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиЛевоРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Button name="ПараметрыПодключенияКЕГАИС" id="5">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ПараметрыПодключенияКЕГАИС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ПараметрыПодключенияКЕГАИСРасширеннаяПодсказка" id="6">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="КлассификаторАлкогольнойПродукцииЕГАИС" id="7">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.КлассификаторАлкогольнойПродукцииЕГАИС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="КлассификаторАлкогольнойПродукцииЕГАИСРасширеннаяПодсказка" id="8">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="КлассификаторОрганизацийЕГАИС" id="9">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.КлассификаторОрганизацийЕГАИС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="КлассификаторОрганизацийЕГАИСРасширеннаяПодсказка" id="10">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкиПраво" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиПравоРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<Button name="Справки1ЕГАИС" id="13">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.Справки1ЕГАИС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="Справки1ЕГАИСРасширеннаяПодсказка" id="14">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="Справки2ЕГАИС" id="15">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.Справки2ЕГАИС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="Справки2ЕГАИСРасширеннаяПодсказка" id="16">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Документы" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДокументыРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЗакупки" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закупки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа закупки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаЗакупкиРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Button name="ТТНВходящиеЕГАИС" id="19">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ТТНВходящиеЕГАИС</CommandName>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="ТТНВходящиеЕГАИСРасширеннаяПодсказка" id="20"/>
+						</Button>
+						<Button name="ТТНИсходящиеЕГАИС" id="21">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ТТНИсходящиеЕГАИС</CommandName>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="ТТНИсходящиеЕГАИСРасширеннаяПодсказка" id="22"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСклад" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа склад</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаСкладРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСкладЛево" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа склад лево</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа склад лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>41</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСкладЛевоРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<Button name="ОстаткиЕГАИС" id="23">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОстаткиЕГАИС</CommandName>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="ОстаткиЕГАИСРасширеннаяПодсказка" id="24"/>
+								</Button>
+								<Button name="АктыПостановкиНаБалансЕГАИС" id="27">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.АктыПостановкиНаБалансЕГАИС</CommandName>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="АктыПостановкиНаБалансЕГАИСРасширеннаяПодсказка" id="28"/>
+								</Button>
+								<Button name="АктыСписанияЕГАИС" id="29">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.АктыСписанияЕГАИС</CommandName>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="АктыСписанияЕГАИСРасширеннаяПодсказка" id="30"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСкладПраво" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа склад право</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа склад право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСкладПравоРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<Button name="КорректировкаОстатковЕГАИС" id="41">
+									<Type>Hyperlink</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ПомощникКорректировкиОстатковЕГАИС</CommandName>
+									<ExtendedTooltip name="КорректировкаОстатковЕГАИСРасширеннаяПодсказка" id="42"/>
+								</Button>
+								<Button name="ПередачиВРегистр2ЕГАИС" id="45">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПередачиВРегистр2ЕГАИС</CommandName>
+									<ExtendedTooltip name="ПередачиВРегистр2ЕГАИСРасширеннаяПодсказка" id="46"/>
+								</Button>
+								<Button name="ВозвратыИзРегистра2ЕГАИС" id="43">
+									<Type>Hyperlink</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ВозвратыИзРегистра2ЕГАИС</CommandName>
+									<ExtendedTooltip name="ВозвратыИзРегистра2ЕГАИСРасширеннаяПодсказка" id="44"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПродажи" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа продажи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПродажиРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Button name="ЧекиЕГАИС" id="31">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЧекиЕГАИС</CommandName>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="ЧекиЕГАИСРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<Button name="ЧекиЕГАИСвозврат" id="33">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЧекиЕГАИСвозврат</CommandName>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="ЧекиЕГАИСвозвратРасширеннаяПодсказка" id="34"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПанельОбменСЕГАИС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КлассификаторОрганизацийЕГАИС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор организаций ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор организации для обмена информацией с ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КлассификаторОрганизацийЕГАИС</Action>
+		</Command>
+		<Command name="КлассификаторАлкогольнойПродукцииЕГАИС" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор алкогольной продукции ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор алкогольной продукции для обмена информацией с ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КлассификаторАлкогольнойПродукцииЕГАИС</Action>
+		</Command>
+		<Command name="ПараметрыПодключенияКЕГАИС" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключения к ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка способов подключения к ЕГАИС в разрезе складов и организаций.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПараметрыПодключенияКЕГАИС</Action>
+		</Command>
+		<Command name="Справки1ЕГАИС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справки 1 к ТТН ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справки 1 к ТТН ЕГАИС, по которым учитывается алкогольная продукция поступившая от поставщиков.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справки1ЕГАИС</Action>
+		</Command>
+		<Command name="Справки2ЕГАИС" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справки 2 к ТТН ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справки 2 к ТТН ЕГАИС, по которым учитывается алкогольная продукция поступившая от поставщиков.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Справки2ЕГАИС</Action>
+		</Command>
+		<Command name="ВыполнитьОбмен" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбмен</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ТТНВходящиеЕГАИС" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товарно-транспортные накладные ЕГАИС (входящие)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товарно-транспортные накладные, загруженные из ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТТНВходящиеЕГАИС</Action>
+		</Command>
+		<Command name="ТТНИсходящиеЕГАИС" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товарно-транспортные накладные ЕГАИС (исходящие)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товарно-транспортные накладные, отправленные в ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТТНИсходящиеЕГАИС</Action>
+		</Command>
+		<Command name="ОстаткиЕГАИС" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка остатков алкогольной продукции из ЕГАИС и сверка с остатками информационной базы.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстаткиЕГАИС</Action>
+		</Command>
+		<Command name="АктыПостановкиНаБалансЕГАИС" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акты постановки на баланс ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постановка алкогольной продукции на баланс в ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АктыПостановкиНаБалансЕГАИС</Action>
+		</Command>
+		<Command name="АктыСписанияЕГАИС" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акты списания ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание алкогольной продукции с баланса в ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АктыСписанияЕГАИС</Action>
+		</Command>
+		<Command name="ЧекиЕГАИС" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чеки ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализации розничным покупателям, отправленные в ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЧекиЕГАИС</Action>
+		</Command>
+		<Command name="ЧекиЕГАИСвозврат" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чеки ЕГАИС на возврат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвраты от розничных покупателей, отправленные в ЕГАИС.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЧекиЕГАИСвозврат</Action>
+		</Command>
+		<Command name="ПомощникКорректировкиОстатковЕГАИС" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помощник корректировки остатков ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помощник корректировки остатков ЕГАИС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПомощникКорректировкиОстатковЕГАИС</Action>
+		</Command>
+		<Command name="ВозвратыИзРегистра2ЕГАИС" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвраты из регистра №2 ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвраты из регистра №2 ЕГАИС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВозвратыИзРегистра2ЕГАИС</Action>
+		</Command>
+		<Command name="ПередачиВРегистр2ЕГАИС" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передачи в регистр №2 ЕГАИС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передачи в регистр №2 ЕГАИС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередачиВРегистр2ЕГАИС</Action>
+		</Command>
+	</Commands>
+</Form>

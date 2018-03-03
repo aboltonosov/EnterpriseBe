@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ДокументОснование" id="34">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основание</v8:content>
+				</v8:item>
+			</Title>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="36"/>
+		</LabelField>
+		<InputField name="РегистрационныйНомер" id="4">
+			<DataPath>Объект.РегистрационныйНомер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>28</MaxWidth>
+			<ContextMenu name="РегистрационныйНомерКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РегистрационныйНомерРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="АлкогольнаяПродукция" id="22">
+			<DataPath>Объект.АлкогольнаяПродукция</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>28</MaxWidth>
+			<ContextMenu name="АлкогольнаяПродукцияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="АлкогольнаяПродукцияРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<UsualGroup name="ГруппаШапка" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоРасширеннаяПодсказка" id="40"/>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="42"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Количество" id="25">
+			<DataPath>Объект.Количество</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>10</MaxWidth>
+			<ContextMenu name="КоличествоКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<Pages name="СтраницыСправка1" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы справка 1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы справка 1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыСправка1РасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Page name="СтраницаНомерСправки1" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница номер справки А</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница номер справки А</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СтраницаНомерСправки1РасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияНомерСправки1" id="52">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер справки 1:          </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияНомерСправки1КонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ДекорацияНомерСправки1РасширеннаяПодсказка" id="54"/>
+						</LabelDecoration>
+						<InputField name="НомерСправки1" id="28">
+							<DataPath>Объект.НомерСправки1</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>21</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="НомерСправки1КонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="НомерСправки1РасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияПолучитьСправку1" id="49">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Найти справку 1</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияПолучитьСправку1КонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ДекорацияПолучитьСправку1РасширеннаяПодсказка" id="51"/>
+							<Events>
+								<Event name="Click">ДекорацияПолучитьСправку1Нажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСправка1" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница справка 1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница справка 1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СтраницаСправка1РасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияСправка1" id="58">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Справка 1:                    </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияСправка1КонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ДекорацияСправка1РасширеннаяПодсказка" id="60"/>
+						</LabelDecoration>
+						<LabelField name="Справка1" id="55">
+							<DataPath>Объект.Справка1</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="Справка1КонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="Справка1РасширеннаяПодсказка" id="57"/>
+							<Events>
+								<Event name="URLProcessing">Справка1ОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Справки2ЕГАИС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

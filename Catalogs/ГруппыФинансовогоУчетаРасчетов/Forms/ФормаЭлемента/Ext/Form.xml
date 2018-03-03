@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="19"/>
+		</InputField>
+		<InputField name="Описание" id="11">
+			<DataPath>Объект.Описание</DataPath>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="20"/>
+		</InputField>
+		<InputField name="Родитель" id="3">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="РодительExtendedTooltip" id="21"/>
+		</InputField>
+		<UsualGroup name="ГруппаПорядокОплаты" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется для объектов расчетов, по которым:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа порядок оплаты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПорядокОплатыРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<RadioButtonField name="ПорядокОплаты" id="9">
+					<DataPath>Объект.ПорядокОплаты</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применяется для объектов расчетов с порядком оплаты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ColumnsCount>1</ColumnsCount>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокОплатыПоСоглашениям.EnumValue.РасчетыВРубляхОплатаВРублях</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокОплатыПоСоглашениям.EnumValue.РасчетыВВалютеОплатаВРублях</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокОплатыПоСоглашениям.EnumValue.РасчетыВВалютеОплатаВВалюте</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокОплатыПоСоглашениям.EnumValue.РасчетыВРубляхОплатаВВалюте</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПорядокОплатыКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ПорядокОплатыExtendedTooltip" id="22"/>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтражениеВРеглУчете" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отражение в регламентированном учете</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отражение в регл учете</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаОтражениеВРеглУчетеРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОтражениеВРеглУчетеГоризонтальная" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отражение в регл учете горизонтальная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отражение в регл учете горизонтальная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтражениеВРеглУчетеГоризонтальнаяРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСчетаРасчетаСПоставщикамиПоУмолчанию" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета расчета с поставщиками</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа счета расчета с поставщиками по умолчанию</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСчетаРасчетаСПоставщикамиПоУмолчаниюРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<InputField name="СчетУчетаРасчетовСПоставщиками" id="43">
+									<DataPath>Объект.СчетУчетаРасчетовСПоставщиками</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Долг</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаРасчетовСПоставщикамиКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СчетУчетаРасчетовСПоставщикамиРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="СчетУчетаАвансовВыданных" id="46">
+									<DataPath>Объект.СчетУчетаАвансовВыданных</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Авансы</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаАвансовВыданныхКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="СчетУчетаАвансовВыданныхРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="СчетУчетаРасчетовПоПретензиям" id="49">
+									<DataPath>Объект.СчетУчетаРасчетовПоПретензиям</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Претензии</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаРасчетовПоПретензиямКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="СчетУчетаРасчетовПоПретензиямРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="СчетУчетаРасчетовСПоставщикамиТара" id="57">
+									<DataPath>Объект.СчетУчетаРасчетовСПоставщикамиТара</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тара</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаРасчетовСПоставщикамиТараКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СчетУчетаРасчетовСПоставщикамиТараРасширеннаяПодсказка" id="59"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСчетаРасчетаСКлиентамиПоУмолчанию" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета расчета с клиентами</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа счета расчета с клиентами по умолчанию</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСчетаРасчетаСКлиентамиПоУмолчаниюРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<InputField name="СчетУчетаРасчетовСКлиентами" id="32">
+									<DataPath>Объект.СчетУчетаРасчетовСКлиентами</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Долг</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаРасчетовСКлиентамиКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="СчетУчетаРасчетовСКлиентамиРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="СчетУчетаАвансовПолученных" id="35">
+									<DataPath>Объект.СчетУчетаАвансовПолученных</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Авансы</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаАвансовПолученныхКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="СчетУчетаАвансовПолученныхРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="СчетУчетаРасчетовСКлиентамиТара" id="38">
+									<DataPath>Объект.СчетУчетаРасчетовСКлиентамиТара</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тара</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаРасчетовСКлиентамиТараКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="СчетУчетаРасчетовСКлиентамиТараРасширеннаяПодсказка" id="40"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСчетаРасчетаПоКомиссииПоУмолчанию" id="52">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета расчета по комиссии</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа счета расчета по комиссии по умолчанию</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСчетаРасчетаПоКомиссииПоУмолчаниюРасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<InputField name="СчетУчетаРасчетовПоВознаграждению" id="54">
+									<DataPath>Объект.СчетУчетаРасчетовПоВознаграждению</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вознаграждение</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаРасчетовПоВознаграждениюКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="СчетУчетаРасчетовПоВознаграждениюРасширеннаяПодсказка" id="56"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="НадписьПодсказкаСчетаУчетаПоУмолчанию" id="62">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета учета используются по умолчанию при отражении документов в учете, если для организации не определены индивидуальные значения.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьПодсказкаСчетаУчетаПоУмолчаниюКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="НадписьПодсказкаСчетаУчетаПоУмолчаниюРасширеннаяПодсказка" id="64"/>
+				</LabelDecoration>
+				<Button name="НастроитьСчетаРеглУчетаПоОрганизациям" id="65">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.НастроитьСчетаРеглУчетаПоОрганизациям</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить счета учета по организациям</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НастроитьСчетаРеглУчетаПоОрганизациямРасширеннаяПодсказка" id="66"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтражениеВМеждународномУчете" id="14">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отражение в международном учете</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтражениеВМеждународномУчетеРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУточнениеСчетовУчета" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отражение в международном учете</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа уточнение счетов учета</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаУточнениеСчетовУчетаExtendedTooltip" id="25"/>
+					<ChildItems>
+						<Button name="НастроитьУточнениеСчетов" id="18">
+							<Type>Hyperlink</Type>
+							<CommandName>InformationRegister.ПравилаУточненияСчетовВМеждународномУчете.Command.НастроитьУточнениеСчетов</CommandName>
+							<DataPath>Объект.Ref</DataPath>
+							<ExtendedTooltip name="НастроитьУточнениеСчетовExtendedTooltip" id="27"/>
+						</Button>
+						<LabelDecoration name="ПояснениеНастроитьУточнениеСчетов" id="69">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уточнение счетов учета расчетов в разрезе шаблонов проводок.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеНастроитьУточнениеСчетовКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ПояснениеНастроитьУточнениеСчетовРасширеннаяПодсказка" id="71"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ГруппыФинансовогоУчетаРасчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьСчетаРеглУчетаПоОрганизациям" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить счета учета по оранизациям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить счета регл учета по организациям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьСчетаРеглУчетаПоОрганизациям</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРеглУчет</Item>
+			</FunctionalOptions>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ПравилаУточненияСчетовВМеждународномУчете.Command.НастроитьУточнениеСчетов</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ПравилаУточненияСчетовВМеждународномУчете.StandardCommand.OpenByValue.ГруппаФинансовогоУчета</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

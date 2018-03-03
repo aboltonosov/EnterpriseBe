@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка применения постановления Правительства РФ №1137</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="НадписьЗаголовок" id="7">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>2</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применять формы документов, установленные постановлением Правительства РФ №1137, начиная с:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>[todo Декорация для заголовка]</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="НадписьЗаголовокКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НадписьЗаголовокРасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+		<InputField name="ДатаНачалаПримененияПостановления1137" id="1">
+			<DataPath>НаборКонстант.ДатаНачалаПримененияПостановления1137</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<TitleHeight>2</TitleHeight>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>9</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ДатаНачалаПримененияПостановления1137КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаНачалаПримененияПостановления1137РасширеннаяПодсказка" id="10"/>
+		</InputField>
+		<LabelDecoration name="НадписьПояснение" id="3">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>12</Height>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постановлением Правительства РФ от 26.12.2011 г. №1137 установлены формы счета-фактуры, корректировочного счета-фактуры, журнала учета полученных и выставленных счетов-фактур, книги покупок и книги продаж.
+
+Разъяснения о применении постановления даны в письме Минфина России от 31.01.2012 N 03-07-15/11.
+
+Дата начала применения постановления может быть установлена не ранее 01.01.2012 г. и не позднее 01.04.2012 г.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьПояснениеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НадписьПояснениеРасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ВариантОбособленияМатериаловВПроизводстве.Ref</Field>
+				<Field>НаборКонстант.ВариантПриемкиТоваров.Ref</Field>
+				<Field>НаборКонстант.ВедетсяРаботаЧерезТорговыхПредставителей</Field>
+				<Field>НаборКонстант.ВидКонтроляТоваровОрганизаций.Ref</Field>
+				<Field>НаборКонстант.ДатаУведомленияОНовыхЗадачах</Field>
+				<Field>НаборКонстант.ДетализироватьЗаданияТорговымПредставителямПоНоменклатуре</Field>
+				<Field>НаборКонстант.ДополнительнаяКолонкаПечатныхФормДокументов</Field>
+				<Field>НаборКонстант.ДополнительнаяКолонкаПечатныхФормДокументов.Ref</Field>
+				<Field>НаборКонстант.ИзменятьЗаданияЗаднимЧислом</Field>
+				<Field>НаборКонстант.ИспользованиеЗаданийТорговымПредставителям</Field>
+				<Field>НаборКонстант.ИспользованиеЗаданийТорговымПредставителям.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеСоглашенийСКлиентами.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВЗакупках.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВПродажах.Ref</Field>
+				<Field>НаборКонстант.ИспользоватьАвтоматическиеСкидкиВПродажах</Field>
+				<Field>НаборКонстант.ИспользоватьБизнесПроцессыИЗадачи</Field>
+				<Field>НаборКонстант.ИспользоватьБизнесРегионы</Field>
+				<Field>НаборКонстант.ИспользоватьВерсионированиеОбъектов</Field>
+				<Field>НаборКонстант.ИспользоватьЗаданияДляУправленияТорговымиПредставителями</Field>
+				<Field>НаборКонстант.ИспользоватьЗаказыКлиентов</Field>
+				<Field>НаборКонстант.ИспользоватьЗаказыНаВнутреннееПотребление</Field>
+				<Field>НаборКонстант.ИспользоватьЗаказыНаПеремещение</Field>
+				<Field>НаборКонстант.ИспользоватьЗаказыНаСборку</Field>
+				<Field>НаборКонстант.ИспользоватьЗаказыПоставщикам</Field>
+				<Field>НаборКонстант.ИспользоватьЗаявкиНаРасходованиеДенежныхСредств</Field>
+				<Field>НаборКонстант.ИспользоватьКомиссиюПриЗакупках</Field>
+				<Field>НаборКонстант.ИспользоватьКомиссиюПриПродажах</Field>
+				<Field>НаборКонстант.ИспользоватьКоммерческиеПредложенияКлиентам</Field>
+				<Field>НаборКонстант.ИспользоватьПеренаправлениеЗадач</Field>
+				<Field>НаборКонстант.ИспользоватьРозничныеПродажи</Field>
+				<Field>НаборКонстант.ИспользоватьРучныеСкидкиВЗакупках</Field>
+				<Field>НаборКонстант.ИспользоватьРучныеСкидкиВПродажах</Field>
+				<Field>НаборКонстант.ИспользоватьСделкиСКлиентами</Field>
+				<Field>НаборКонстант.ИспользоватьУпаковкиНоменклатуры</Field>
+				<Field>НаборКонстант.ИспользоватьУправлениеСделками</Field>
+				<Field>НаборКонстант.ИспользоватьХарактеристикиНоменклатуры</Field>
+				<Field>НаборКонстант.КоличествоПериодовXYZКлассификацииНоменклатуры</Field>
+				<Field>НаборКонстант.КоличествоПериодовXYZКлассификацииПартнеров</Field>
+				<Field>НаборКонстант.КонтролироватьОстаткиТоваровОрганизаций</Field>
+				<Field>НаборКонстант.МетодикаУправленияПроизводством.Ref</Field>
+				<Field>НаборКонстант.НеДетализироватьЗаданияТорговымПредставителямПоНоменклатуре</Field>
+				<Field>НаборКонстант.НеИспользоватьЗаявкиНаРасходованиеДенежныхСредств</Field>
+				<Field>НаборКонстант.НеИспользоватьСчетаНаОплатуНеВыбиратьВариантВыводаСкидок</Field>
+				<Field>НаборКонстант.ОперацияПриЗакрытииКассовойСмены.Ref</Field>
+				<Field>НаборКонстант.ОсновнойКалендарьПредприятия</Field>
+				<Field>НаборКонстант.ОтображениеСкидокВПечатныхФормахДокументовПродажи.Ref</Field>
+				<Field>НаборКонстант.ПериодABCКлассификацииНоменклатуры.Ref</Field>
+				<Field>НаборКонстант.ПериодABCКлассификацииПартнеров.Ref</Field>
+				<Field>НаборКонстант.ПериодXYZКлассификацииНоменклатуры.Ref</Field>
+				<Field>НаборКонстант.ПериодXYZКлассификацииПартнеров.Ref</Field>
+				<Field>НаборКонстант.ПериодРасчетаТоварныхОграничений.Ref</Field>
+				<Field>НаборКонстант.ПериодичностьВводаСезонныхКоэффициентов.Ref</Field>
+				<Field>НаборКонстант.ПериодичностьДляАнализаНоменклатурыПродаваемойСовместно.Ref</Field>
+				<Field>НаборКонстант.ПодпериодXYZКлассификацииНоменклатуры.Ref</Field>
+				<Field>НаборКонстант.ПодпериодXYZКлассификацииПартнеров.Ref</Field>
+				<Field>НаборКонстант.ПорядокОформленияНакладныхРасходныхОрдеров.Ref</Field>
+				<Field>НаборКонстант.ПровайдерSMS.Ref</Field>
+				<Field>НаборКонстант.РежимИспользованияИнформационнойБазы.Ref</Field>
+				<Field>НаборКонстант.РежимФормированияРасходныхОрдеров.Ref</Field>
+				<Field>НаборКонстант.СтоимостьТоваровПриОценкеРентабельностиПродажи.Ref</Field>
+				<Field>НаборКонстант.УдалитьКонтекстАвторизации.Ref</Field>
+				<Field>НаборКонстант.УдалитьКонтекстКриптографии.Ref</Field>
+				<Field>НаборКонстант.ФиксироватьПервичныйИнтерес</Field>
+				<Field>НаборКонстант.ФорматСохраненияРегистровУчета.Ref</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

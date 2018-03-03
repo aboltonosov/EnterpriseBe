@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandSet>
+		<ExcludedCommand>CreateByParameter</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтборы" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="ОтборОрганизация" id="24">
+					<DataPath>Организация</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>20</MaxWidth>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ОтборОрганизацияExtendedTooltip" id="28"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборОбъектЭксплуатации" id="40">
+					<DataPath>ОбъектЭксплуатации</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>20</MaxWidth>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборОбъектЭксплуатацииКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ОтборОбъектЭксплуатацииРасширеннаяПодсказка" id="42"/>
+					<Events>
+						<Event name="OnChange">ОтборОбъектЭксплуатацииПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборТипДокумента" id="45">
+					<DataPath>Тип</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<MaxWidth>20</MaxWidth>
+					<ClearButton>true</ClearButton>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ОтборТипДокументаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ОтборТипДокументаРасширеннаяПодсказка" id="47"/>
+					<Events>
+						<Event name="StartChoice">ОтборТипДокументаНачалоВыбора</Event>
+						<Event name="Clearing">ОтборТипДокументаОчистка</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="КоманднаяПанель" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<Popup name="ПодменюСоздать" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подменю создать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПодменюСоздатьРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<ButtonGroup name="ГруппаСоздатьПоступления" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать поступления</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать поступления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСоздатьПоступленияРасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<Button name="ФормаСоздатьВнутреннееПотребление" id="63">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьВнутреннееПотребление</CommandName>
+									<ExtendedTooltip name="ФормаСоздатьВнутреннееПотреблениеРасширеннаяПодсказка" id="64"/>
+								</Button>
+								<Button name="СоздатьПоступлениеУслугПрочихАктивов" id="69">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПоступлениеУслугПрочихАктивов</CommandName>
+									<ExtendedTooltip name="СоздатьПоступлениеУслугПрочихАктивовРасширеннаяПодсказка" id="70"/>
+								</Button>
+								<Button name="СоздатьПоступлениеПредметовЛизинга" id="115">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПоступлениеПредметовЛизинга</CommandName>
+									<ExtendedTooltip name="СоздатьПоступлениеПредметовЛизингаРасширеннаяПодсказка" id="116"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСоздатьПринятияКУчету" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать принятия к учету</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать принятия к учету</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСоздатьПринятияКУчетуРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<Button name="СоздатьПринятиеКУчету" id="71">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПринятиеКУчету</CommandName>
+									<ExtendedTooltip name="СоздатьПринятиеКУчетуРасширеннаяПодсказка" id="72"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСоздатьПеремещения" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать перемещения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать перемещения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСоздатьПеремещенияРасширеннаяПодсказка" id="76"/>
+							<ChildItems>
+								<Button name="СоздатьПеремещение" id="85">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПеремещение</CommandName>
+									<ExtendedTooltip name="СоздатьПеремещениеРасширеннаяПодсказка" id="86"/>
+								</Button>
+								<Button name="СодатьПередачуАрендатору" id="99">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СодатьПередачуАрендатору</CommandName>
+									<ExtendedTooltip name="СодатьПередачуАрендаторуРасширеннаяПодсказка" id="100"/>
+								</Button>
+								<Button name="СоздатьВозвратОтАрендатора" id="97">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьВозвратОтАрендатора</CommandName>
+									<ExtendedTooltip name="СоздатьВозвратОтАрендатораРасширеннаяПодсказка" id="98"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСоздатьИзмененияСостояния" id="111">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать изменения состояния</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать изменения состояния</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСоздатьИзмененияСостоянияРасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<Button name="СоздатьИзменениеПараметров" id="87">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьИзменениеПараметров</CommandName>
+									<ExtendedTooltip name="СоздатьИзменениеПараметровРасширеннаяПодсказка" id="88"/>
+								</Button>
+								<Button name="СоздатьИзменениеСостояния" id="89">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьИзменениеСостояния</CommandName>
+									<ExtendedTooltip name="СоздатьИзменениеСостоянияРасширеннаяПодсказка" id="90"/>
+								</Button>
+								<Button name="СоздатьРегистрациюНаработок" id="113">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьРегистрациюНаработок</CommandName>
+									<ExtendedTooltip name="СоздатьРегистрациюНаработокРасширеннаяПодсказка" id="114"/>
+								</Button>
+								<Button name="СоздатьИнвентаризацию" id="93">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьИнвентаризацию</CommandName>
+									<ExtendedTooltip name="СоздатьИнвентаризациюРасширеннаяПодсказка" id="94"/>
+								</Button>
+								<Button name="СоздатьМодернизацию" id="95">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьМодернизацию</CommandName>
+									<ExtendedTooltip name="СоздатьМодернизациюРасширеннаяПодсказка" id="96"/>
+								</Button>
+								<Button name="СоздатьПереоценку" id="117">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПереоценку</CommandName>
+									<ExtendedTooltip name="СоздатьПереоценкуРасширеннаяПодсказка" id="118"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСоздатьСписания" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать списания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать3</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСоздатьСписанияРасширеннаяПодсказка" id="82"/>
+							<ChildItems>
+								<Button name="СоздатьСписание" id="101">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьСписание</CommandName>
+									<ExtendedTooltip name="СоздатьСписаниеРасширеннаяПодсказка" id="102"/>
+								</Button>
+								<Button name="СоздатьПодготовкуКПередаче" id="103">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПодготовкуКПередаче</CommandName>
+									<ExtendedTooltip name="СоздатьПодготовкуКПередачеРасширеннаяПодсказка" id="104"/>
+								</Button>
+								<Button name="СоздатьРеализациюУслугПрочихАктивов" id="105">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьРеализациюУслугПрочихАктивов</CommandName>
+									<ExtendedTooltip name="СоздатьРеализациюУслугПрочихАктивовРасширеннаяПодсказка" id="106"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаСоздатьОперацииАрендованныхОС" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать операции арендованных ОС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа создать3</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСоздатьОперацииАрендованныхОСРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<Button name="СоздатьПоступлениеАрендованныхОС" id="109">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьПоступлениеАрендованныхОС</CommandName>
+									<ExtendedTooltip name="СоздатьПоступлениеАрендованныхОСРасширеннаяПодсказка" id="110"/>
+								</Button>
+								<Button name="СоздатьВыбытиеАрендованныхОС" id="107">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СоздатьВыбытиеАрендованныхОС</CommandName>
+									<ExtendedTooltip name="СоздатьВыбытиеАрендованныхОСРасширеннаяПодсказка" id="108"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<Popup name="ГруппаИмущественныеНалоги" id="140">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имущественные налоги</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа имущественные налоги</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаИмущественныеНалогиРасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<ButtonGroup name="ФормаГруппаНалогНаИмущество" id="144">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа налог на имущество</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа налог на имущество</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ФормаГруппаНалогНаИмуществоРасширеннаяПодсказка" id="145"/>
+									<ChildItems>
+										<Button name="ФормаСоздатьРегистрациюПорядкаНалогообложенияПоНалогуНаИмущество" id="138">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьРегистрациюПорядкаНалогообложенияПоНалогуНаИмущество</CommandName>
+											<ExtendedTooltip name="ФормаСоздатьРегистрациюПорядкаНалогообложенияПоНалогуНаИмуществоРасширеннаяПодсказка" id="139"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="ФормаГруппаЗемельныйНалог" id="146">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа земельный налог</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа земельный налог</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ФормаГруппаЗемельныйНалогРасширеннаяПодсказка" id="147"/>
+									<ChildItems>
+										<Button name="ФормаСоздатьРегистрациюЗемельныхУчастков" id="130">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьРегистрациюЗемельныхУчастков</CommandName>
+											<ExtendedTooltip name="ФормаСоздатьРегистрациюЗемельныхУчастковРасширеннаяПодсказка" id="131"/>
+										</Button>
+										<Button name="ФормаСоздатьОтменуРегистрацииЗемельныхУчастков" id="134">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьОтменуРегистрацииЗемельныхУчастков</CommandName>
+											<ExtendedTooltip name="ФормаСоздатьОтменуРегистрацииЗемельныхУчастковРасширеннаяПодсказка" id="135"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="ФормаГруппаТранспортныйНалог" id="148">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа транспортный налог</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа транспортный налог</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ФормаГруппаТранспортныйНалогРасширеннаяПодсказка" id="149"/>
+									<ChildItems>
+										<Button name="ФормаСоздатьРегистрациюТранспортныхСредств" id="132">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьРегистрациюТранспортныхСредств</CommandName>
+											<ExtendedTooltip name="ФормаСоздатьРегистрациюТранспортныхСредствРасширеннаяПодсказка" id="133"/>
+										</Button>
+										<Button name="ФормаСоздатьОтменуРегистрацииТранспортныхСредств" id="136">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьОтменуРегистрацииТранспортныхСредств</CommandName>
+											<ExtendedTooltip name="ФормаСоздатьОтменуРегистрацииТранспортныхСредствРасширеннаяПодсказка" id="137"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="ФормаГруппаОтражениеРасходов" id="150">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа отражение расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма группа отражение расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ФормаГруппаОтражениеРасходовРасширеннаяПодсказка" id="151"/>
+									<ChildItems>
+										<Button name="ФормаСоздатьИзменениеСпособаОтраженияИмущественныхНалогов" id="142">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьИзменениеСпособаОтраженияИмущественныхНалогов</CommandName>
+											<ExtendedTooltip name="ФормаСоздатьИзменениеСпособаОтраженияИмущественныхНалоговРасширеннаяПодсказка" id="143"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</Popup>
+				<Button name="Скопировать" id="126">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Copy</CommandName>
+					<ExtendedTooltip name="СкопироватьРасширеннаяПодсказка" id="127"/>
+				</Button>
+				<Button name="ДвиженияМФУ" id="124">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ДвиженияМФУ</CommandName>
+					<ExtendedTooltip name="ДвиженияМФУРасширеннаяПодсказка" id="125"/>
+				</Button>
+				<Button name="ДвиженияБУ" id="48">
+					<Type>CommandBarButton</Type>
+					<CommandName>DataProcessor.ОтражениеДокументовВРеглУчете.Command.ПроводкиРеглУчета</CommandName>
+					<DataPath>Items.Список.CurrentData.Ref</DataPath>
+					<ExtendedTooltip name="ДвиженияБУРасширеннаяПодсказка" id="49"/>
+				</Button>
+				<Popup name="ПодменюОтчеты" id="152">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подменю отчеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Report</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="153"/>
+					<ChildItems>
+						<ButtonGroup name="ПодменюОтчетыВажное" id="154">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты важное</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПодменюОтчетыВажноеРасширеннаяПодсказка" id="155"/>
+						</ButtonGroup>
+						<ButtonGroup name="ПодменюОтчетыПерейти" id="156">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты важное</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПодменюОтчетыПерейтиРасширеннаяПодсказка" id="157"/>
+						</ButtonGroup>
+						<ButtonGroup name="ПодменюОтчетыСмТакже" id="158">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты важное</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПодменюОтчетыСмТакжеРасширеннаяПодсказка" id="159"/>
+						</ButtonGroup>
+					</ChildItems>
+				</Popup>
+				<Button name="Справка" id="119">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="120"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="29"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="50">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="53">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="56">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Номер" id="6">
+					<DataPath>Список.Number</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="32"/>
+				</LabelField>
+				<LabelField name="Дата" id="121">
+					<DataPath>Список.Date</DataPath>
+					<Width>9</Width>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="123"/>
+				</LabelField>
+				<LabelField name="Тип" id="8">
+					<DataPath>Список.Type</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТипКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ТипExtendedTooltip" id="33"/>
+				</LabelField>
+				<LabelField name="СобытиеОС" id="14">
+					<DataPath>Список.СобытиеОС</DataPath>
+					<ContextMenu name="СобытиеОСКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СобытиеОСExtendedTooltip" id="35"/>
+				</LabelField>
+				<LabelField name="Организация" id="10">
+					<DataPath>Список.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="36"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="16">
+					<DataPath>Список.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="37"/>
+				</LabelField>
+				<LabelField name="Ответственный" id="18">
+					<DataPath>Список.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="38"/>
+				</LabelField>
+				<LabelField name="Ссылка" id="22">
+					<DataPath>Список.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СсылкаExtendedTooltip" id="39"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументыПоОС.Ссылка,
+	ДокументыПоОС.Дата,
+	ДокументыПоОС.ПометкаУдаления,
+	ДокументыПоОС.Номер,
+	ДокументыПоОС.Проведен,
+	ДокументыПоОС.Организация,
+	ДокументыПоОС.СобытиеОС,
+	ДокументыПоОС.Комментарий,
+	ДокументыПоОС.Ответственный,
+	ДокументыПоОС.Тип
+ИЗ
+	ЖурналДокументов.ДокументыПоОС КАК ДокументыПоОС
+		ЛЕВОЕ СОЕДИНЕНИЕ КритерийОтбора.ДокументыПоОС(&amp;ОбъектЭксплуатации) КАК КритерийОтбораПоОС
+		ПО ДокументыПоОС.Ссылка = КритерийОтбораПоОС.Ссылка
+ГДЕ
+	(НЕ &amp;ЗаданОбъектЭксплуатации ИЛИ НЕ КритерийОтбораПоОС.Ссылка ЕСТЬ NULL)
+	И ВЫБОР
+			КОГДА ДокументыПоОС.Тип = ТИП(Документ.ПоступлениеУслугПрочихАктивов)
+				ТОГДА ДокументыПоОС.Ссылка В
+						(ВЫБРАТЬ
+							ТабличнаяЧасть.Ссылка
+						ИЗ
+							Документ.ПоступлениеУслугПрочихАктивов.Расходы КАК ТабличнаяЧасть
+						ГДЕ
+							ТабличнаяЧасть.СтатьяРасходов.ВидЦенностиНДС В (ЗНАЧЕНИЕ(Перечисление.ВидыЦенностей.ОС), ЗНАЧЕНИЕ(Перечисление.ВидыЦенностей.ОбъектыНезавершенногоСтроительства)))
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА ДокументыПоОС.Тип = ТИП(Документ.ВнутреннееПотреблениеТоваров)
+				ТОГДА ДокументыПоОС.Ссылка В
+						(ВЫБРАТЬ
+							ТабличнаяЧасть.Ссылка
+						ИЗ
+							Документ.ВнутреннееПотреблениеТоваров.Товары КАК ТабличнаяЧасть
+						ГДЕ
+							ТабличнаяЧасть.СтатьяРасходов.ВидЦенностиНДС В (ЗНАЧЕНИЕ(Перечисление.ВидыЦенностей.ОС), ЗНАЧЕНИЕ(Перечисление.ВидыЦенностей.ОбъектыНезавершенногоСтроительства)))
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА ДокументыПоОС.Тип = ТИП(Документ.РеализацияУслугПрочихАктивов)
+				ТОГДА ДокументыПоОС.Ссылка В
+						(ВЫБРАТЬ
+							ТабличнаяЧасть.Ссылка
+						ИЗ
+							Документ.РеализацияУслугПрочихАктивов.Доходы КАК ТабличнаяЧасть
+						ГДЕ
+							ТабличнаяЧасть.СтатьяДоходов.ДоходыПоОбъектамЭксплуатации)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ</QueryText>
+				<MainTable>DocumentJournal.ДокументыПоОС</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<Save>
+				<Field>Организация</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизаций</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ОбъектЭксплуатации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОС / Объект строительства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ОбъектыЭксплуатации</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОбъектЭксплуатации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Тип" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>Тип</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтруктураБыстрогоОтбора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура быстрого отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьВнутреннееПотребление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внутреннее потребление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать внутреннее потребление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВнутреннееПотребление</Action>
+		</Command>
+		<Command name="СоздатьПоступлениеУслугПрочихАктивов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление услуг и прочих активов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать поступление услуг прочих активов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПоступлениеУслугПрочихАктивов</Action>
+		</Command>
+		<Command name="СоздатьПринятиеКУчету" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принятие к учету</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать принятие к учету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПринятиеКУчету</Action>
+		</Command>
+		<Command name="СоздатьПеремещение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемещение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать перемещение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПеремещение</Action>
+		</Command>
+		<Command name="СоздатьИзменениеПараметров" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение параметров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать изменение параметров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИзменениеПараметров</Action>
+		</Command>
+		<Command name="СоздатьИзменениеСостояния" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение состояния</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать изменение состояния</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИзменениеСостояния</Action>
+		</Command>
+		<Command name="СоздатьИнвентаризацию" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инвентаризация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать инвентаризацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИнвентаризацию</Action>
+		</Command>
+		<Command name="СоздатьМодернизацию" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модернизация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать модернизацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьМодернизацию</Action>
+		</Command>
+		<Command name="СодатьПередачуАрендатору" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передача арендатору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Содать передачу арендатору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СодатьПередачуАрендатору</Action>
+		</Command>
+		<Command name="СоздатьВозвратОтАрендатора" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возврат от арендатора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать возврат от арендатора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВозвратОтАрендатора</Action>
+		</Command>
+		<Command name="СоздатьПодготовкуКПередаче" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подготовка к передаче</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать подготовку к передаче</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПодготовкуКПередаче</Action>
+		</Command>
+		<Command name="СоздатьСписание" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать списание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьСписание</Action>
+		</Command>
+		<Command name="СоздатьРеализациюУслугПрочихАктивов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать реализацию услуг прочих активов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРеализациюУслугПрочихАктивов</Action>
+		</Command>
+		<Command name="СоздатьПоступлениеАрендованныхОС" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление арендованных ОС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать поступление арендованных ОС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПоступлениеАрендованныхОС</Action>
+		</Command>
+		<Command name="СоздатьВыбытиеАрендованныхОС" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбытие арендованных ОС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать выбытие арендованных ОС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВыбытиеАрендованныхОС</Action>
+		</Command>
+		<Command name="СоздатьРегистрациюНаработок" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация наработок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать регистрацию наработок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРегистрациюНаработок</Action>
+		</Command>
+		<Command name="СоздатьПоступлениеПредметовЛизинга" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление предметов лизинга</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать поступление арендованных ОС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПоступлениеПредметовЛизинга</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЛизинг</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="СоздатьПереоценку" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переоценка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать переоценку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПереоценку</Action>
+		</Command>
+		<Command name="ДвиженияМФУ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проводки международного учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движения МФУ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЖурналПроводокМеждународныйУчет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДвиженияМФУ</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьМеждународныйФинансовыйУчет</Item>
+			</FunctionalOptions>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СоздатьРегистрациюЗемельныхУчастков" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация земельных участков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать регистрацию земельных участков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРегистрациюЗемельныхУчастков</Action>
+		</Command>
+		<Command name="СоздатьРегистрациюТранспортныхСредств" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация транспортных средств</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать регистрацию транспортных средств</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРегистрациюТранспортныхСредств</Action>
+		</Command>
+		<Command name="СоздатьОтменуРегистрацииЗемельныхУчастков" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена регистрации земельных участков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать отмену регистрации земельных участков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьОтменуРегистрацииЗемельныхУчастков</Action>
+		</Command>
+		<Command name="СоздатьОтменуРегистрацииТранспортныхСредств" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена регистрации транспортных средств</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать отмену регистрации транспортных средств</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьОтменуРегистрацииТранспортныхСредств</Action>
+		</Command>
+		<Command name="СоздатьРегистрациюПорядкаНалогообложенияПоНалогуНаИмущество" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация порядка налогообложения по налогу на имущество</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать регистрацию порядка налогообложения по налогу на имущество</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРегистрациюПорядкаНалогообложенияПоНалогуНаИмущество</Action>
+		</Command>
+		<Command name="СоздатьИзменениеСпособаОтраженияИмущественныхНалогов" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение способа отражения имущественных налогов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать изменение способа отражения имущественных налогов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИзменениеСпособаОтраженияИмущественныхНалогов</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>0:453499cf-6a24-4ba2-b3dd-7b4f53972db1</Command>
+				<Type>Added</Type>
+				<Attribute>Items.Список.CurrentData.Ref</Attribute>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Added</Type>
+				<Attribute>Items.Список.CurrentData.Ref</Attribute>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Added</Type>
+				<Attribute>Items.Список.CurrentData.Ref</Attribute>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

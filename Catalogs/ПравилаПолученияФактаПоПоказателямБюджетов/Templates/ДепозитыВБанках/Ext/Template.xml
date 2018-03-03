@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ДоговорыКредитовИДепозитов</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчет</dataPath>
+			<field>БанковскийСчет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банковский счет</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.БанковскиеСчетаОрганизаций</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Контрагенты</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Организации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтруктураПредприятия</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Валюты</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВВалюте</dataPath>
+			<field>СуммаВВалюте</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма в валюте</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаУпр</dataPath>
+			<field>СуммаУпр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма упр</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРегл</dataPath>
+			<field>СуммаРегл</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма регл</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаправлениеДеятельности</dataPath>
+			<field>НаправлениеДеятельности</field>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НаправленияДеятельности</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторИсточникаДанных</dataPath>
+			<field>ИдентификаторИсточникаДанных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор источника данных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Договоры.Ссылка,
+	Договоры.Организация КАК Организация,
+	Договоры.Подразделение КАК Подразделение,
+	Договоры.Партнер КАК Партнер,
+	Договоры.Контрагент КАК Контрагент,
+	Договоры.БанковскийСчет КАК БанковскийСчет,
+	Договоры.ВалютаВзаиморасчетов КАК Валюта,
+	Договоры.НаправлениеДеятельности
+ПОМЕСТИТЬ Договоры
+ИЗ
+	Справочник.ДоговорыКредитовИДепозитов КАК Договоры
+ГДЕ
+	Договоры.ХарактерДоговора = ЗНАЧЕНИЕ(Перечисление.ХарактерДоговораКредитовИДепозитов.Депозит)
+{ГДЕ
+	Договоры.Ссылка.* КАК Договор,
+	Договоры.Партнер.* КАК Партнер,
+	Договоры.Контрагент.* КАК Контрагент,
+	Договоры.БанковскийСчет.* КАК БанковскийСчет,
+	Договоры.ВалютаВзаиморасчетов.* КАК Валюта,
+	Договоры.Организация.* КАК Организация,
+	Договоры.Подразделение.* КАК Подразделение,
+	Договоры.НаправлениеДеятельности.*}
+
+ИНДЕКСИРОВАТЬ ПО
+	Договоры.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РасчетыПоДоговорамКредитовИДепозитов.Договор,
+	РасчетыПоДоговорамКредитовИДепозитов.СуммаВВалютеОстаток КАК СуммаВВалюте,
+	РасчетыПоДоговорамКредитовИДепозитов.СуммаУпрОстаток КАК СуммаУпр,
+	РасчетыПоДоговорамКредитовИДепозитов.СуммаРеглОстаток КАК СуммаРегл
+ПОМЕСТИТЬ ДепозитыВБанках
+ИЗ
+	РегистрНакопления.РасчетыПоДоговорамКредитовИДепозитов.Остатки(
+			&amp;ПериодГраница,
+			Договор В
+				(ВЫБРАТЬ
+					Договоры.Ссылка
+				ИЗ
+					Договоры КАК Договоры) {("ИдентификаторИсточникаДанных") КАК ИдентификаторИсточникаДанных}) КАК РасчетыПоДоговорамКредитовИДепозитов
+ГДЕ
+	РасчетыПоДоговорамКредитовИДепозитов.СуммаВВалютеОстаток &gt; 0
+
+ИНДЕКСИРОВАТЬ ПО
+	РасчетыПоДоговорамКредитовИДепозитов.Договор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	&amp;Период КАК Период,
+	Договоры.Организация КАК Организация,
+	Договоры.Подразделение КАК Подразделение,
+	ДепозитыВБанках.Договор КАК Договор,
+	Договоры.Партнер КАК Партнер,
+	Договоры.Контрагент КАК Контрагент,
+	Договоры.БанковскийСчет КАК БанковскийСчет,
+	Договоры.Валюта КАК Валюта,
+	ДепозитыВБанках.СуммаВВалюте КАК СуммаВВалюте,
+	ДепозитыВБанках.СуммаУпр КАК СуммаУпр,
+	ДепозитыВБанках.СуммаРегл КАК СуммаРегл,
+	Договоры.НаправлениеДеятельности КАК НаправлениеДеятельности
+{ВЫБРАТЬ
+	Период,
+	Организация.*,
+	Подразделение.*,
+	Договор.*,
+	Контрагент.*,
+	БанковскийСчет.*,
+	Валюта.*,
+	СуммаВВалюте,
+	СуммаУпр,
+	СуммаРегл,
+	НаправлениеДеятельности.*}
+ИЗ
+	ДепозитыВБанках КАК ДепозитыВБанках
+		ЛЕВОЕ СОЕДИНЕНИЕ Договоры КАК Договоры
+		ПО ДепозитыВБанках.Договор = Договоры.Ссылка</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ПериодГраница</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период граница</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

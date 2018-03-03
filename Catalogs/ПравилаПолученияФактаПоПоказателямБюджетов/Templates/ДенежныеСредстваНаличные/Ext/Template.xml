@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Организации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Касса</dataPath>
+			<field>Касса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Касса</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.КассыККМ</v8:Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Кассы</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтруктураПредприятия</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Валюты</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаУпр</dataPath>
+			<field>СуммаУпр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма (упр.)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРегл</dataPath>
+			<field>СуммаРегл</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма (регл.)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВВалюте</dataPath>
+			<field>СуммаВВалюте</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма в валюте</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаправлениеДеятельности</dataPath>
+			<field>НаправлениеДеятельности</field>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.НаправленияДеятельности</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторИсточникаДанных</dataPath>
+			<field>ИдентификаторИсточникаДанных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор источника данных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Кассы.Ссылка КАК Ссылка,
+	Кассы.ВалютаДенежныхСредств КАК Валюта,
+	Кассы.Подразделение КАК Подразделение,
+	Кассы.НаправлениеДеятельности
+ПОМЕСТИТЬ Кассы
+ИЗ
+	Справочник.Кассы КАК Кассы
+{ГДЕ
+	Кассы.Ссылка.* КАК Касса,
+	Кассы.ВалютаДенежныхСредств.* КАК Валюта,
+	Кассы.Подразделение.* КАК Подразделение,
+	Кассы.НаправлениеДеятельности.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КассыККМ.Ссылка,
+	КассыККМ.ВалютаДенежныхСредств,
+	КассыККМ.Подразделение,
+	ЗНАЧЕНИЕ(Справочник.НаправленияДеятельности.ПустаяСсылка)
+ИЗ
+	Справочник.КассыККМ КАК КассыККМ
+{ГДЕ
+	КассыККМ.Ссылка.* КАК Касса,
+	КассыККМ.ВалютаДенежныхСредств.* КАК Валюта,
+	КассыККМ.Подразделение.* КАК Подразделение,
+	(ЗНАЧЕНИЕ(Справочник.НаправленияДеятельности.ПустаяСсылка)).* КАК НаправлениеДеятельности}
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДенежныеСредстваВКассахККМОстатки.Организация КАК Организация,
+	ДенежныеСредстваВКассахККМОстатки.КассаККМ КАК Касса,
+	ДенежныеСредстваВКассахККМОстатки.СуммаОстаток КАК СуммаВВалюте,
+	ДенежныеСредстваВКассахККМОстатки.СуммаУпрОстаток КАК СуммаУпр,
+	ДенежныеСредстваВКассахККМОстатки.СуммаРеглОстаток КАК СуммаРегл
+ПОМЕСТИТЬ ДенежныеСредстваНаличные
+ИЗ
+	РегистрНакопления.ДенежныеСредстваВКассахККМ.Остатки(
+			&amp;ПериодГраница,
+			КассаККМ В
+				(ВЫБРАТЬ
+					Кассы.Ссылка
+				ИЗ
+					Кассы КАК Кассы) {("ИдентификаторИсточникаДанных") КАК ИдентификаторИсточникаДанных, (Организация).* КАК Организация}) КАК ДенежныеСредстваВКассахККМОстатки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДенежныеСредстваНаличныеОстатки.Организация,
+	ДенежныеСредстваНаличныеОстатки.Касса,
+	ДенежныеСредстваНаличныеОстатки.СуммаОстаток,
+	ДенежныеСредстваНаличныеОстатки.СуммаУпрОстаток,
+	ДенежныеСредстваНаличныеОстатки.СуммаРеглОстаток
+ИЗ
+	РегистрНакопления.ДенежныеСредстваНаличные.Остатки(
+			&amp;ПериодГраница,
+			Касса В
+				(ВЫБРАТЬ
+					Кассы.Ссылка
+				ИЗ
+					Кассы КАК Кассы) {("ИдентификаторИсточникаДанных") КАК ИдентификаторИсточникаДанных, (Организация).* КАК Организация}) КАК ДенежныеСредстваНаличныеОстатки
+
+ИНДЕКСИРОВАТЬ ПО
+	Касса
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	&amp;Период КАК Период,
+	ДенежныеСредстваНаличные.Организация КАК Организация,
+	Кассы.Подразделение КАК Подразделение,
+	ДенежныеСредстваНаличные.Касса КАК Касса,
+	Кассы.Валюта КАК Валюта,
+	ДенежныеСредстваНаличные.СуммаВВалюте КАК СуммаВВалюте,
+	ДенежныеСредстваНаличные.СуммаУпр КАК СуммаУпр,
+	ДенежныеСредстваНаличные.СуммаРегл КАК СуммаРегл,
+	Кассы.НаправлениеДеятельности КАК НаправлениеДеятельности
+{ВЫБРАТЬ
+	Период,
+	Организация.*,
+	Подразделение.*,
+	Касса.*,
+	Валюта.*,
+	СуммаВВалюте,
+	СуммаУпр,
+	СуммаРегл,
+	НаправлениеДеятельности.*}
+ИЗ
+	ДенежныеСредстваНаличные КАК ДенежныеСредстваНаличные
+		ЛЕВОЕ СОЕДИНЕНИЕ Кассы КАК Кассы
+		ПО ДенежныеСредстваНаличные.Касса = Кассы.Ссылка</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ПериодГраница</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период граница</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

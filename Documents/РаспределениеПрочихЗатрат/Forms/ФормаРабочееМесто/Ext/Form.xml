@@ -1,0 +1,987 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Распределение расходов на себестоимость продукции</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="428">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="1015"/>
+			<ChildItems>
+				<InputField name="МесяцСтрока" id="694">
+					<DataPath>МесяцСтрока</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочий период</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="МесяцСтрокаКонтекстноеМеню" id="695"/>
+					<ExtendedTooltip name="МесяцСтрокаExtendedTooltip" id="1016"/>
+					<Events>
+						<Event name="StartChoice">МесяцСтрокаНачалоВыбора</Event>
+						<Event name="Tuning">МесяцСтрокаРегулирование</Event>
+						<Event name="Clearing">МесяцСтрокаОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборОрганизация" id="732">
+					<DataPath>Организация</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>18</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="733"/>
+					<ExtendedTooltip name="ОтборОрганизацияExtendedTooltip" id="1019"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборПодразделение" id="692">
+					<DataPath>Подразделение</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>18</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборПодразделениеКонтекстноеМеню" id="693"/>
+					<ExtendedTooltip name="ОтборПодразделениеExtendedTooltip" id="1018"/>
+					<Events>
+						<Event name="OnChange">ПодразделениеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборСостояние" id="833">
+					<DataPath>Состояние</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>18</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<AutoChoiceIncomplete>false</AutoChoiceIncomplete>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='К распределению'; БИ=Распределено</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияРаспределенияРасходов.EnumValue.ТребуетсяНастройкаРаспределения</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияРаспределенияРасходов.EnumValue.ГотовоКРаспределениюПоБазе</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияРаспределенияРасходов.EnumValue.Распределено</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияРаспределенияРасходов.EnumValue.ОшибкаРаспределения</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборСостояниеКонтекстноеМеню" id="834"/>
+					<ExtendedTooltip name="ОтборСостояниеExtendedTooltip" id="1017"/>
+					<Events>
+						<Event name="OnChange">СостояниеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CommandBar name="Группа1" id="1103">
+					<CommandSource>Form</CommandSource>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="1104"/>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СтатьиРасходов" id="918">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СтатьиРасходов</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СтатьиРасходовКонтекстноеМеню" id="919"/>
+			<AutoCommandBar name="СтатьиРасходовКоманднаяПанель" id="920">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СтатьиРасходовКнопкаОткрыть" id="936">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СтатьиРасходовОткрыть</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Change</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СтатьиРасходовКнопкаОткрытьExtendedTooltip" id="1022"/>
+					</Button>
+					<Button name="СтатьиРасходовКнопкаНайти" id="939">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СтатьиРасходов.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="СтатьиРасходовКнопкаНайтиExtendedTooltip" id="1023"/>
+					</Button>
+					<Button name="СтатьиРасходовКнопкаОтменитьПоиск" id="940">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СтатьиРасходов.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="СтатьиРасходовКнопкаОтменитьПоискExtendedTooltip" id="1024"/>
+					</Button>
+					<Button name="СтатьиРасходовКнопкаСортироватьПоВозрастанию" id="984">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СтатьиРасходов.StandardCommand.SortListAsc</CommandName>
+						<ExtendedTooltip name="СтатьиРасходовКнопкаСортироватьПоВозрастаниюExtendedTooltip" id="1025"/>
+					</Button>
+					<Button name="СтатьиРасходовКнопкаСортироватьПоУбыванию" id="985">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.СтатьиРасходов.StandardCommand.SortListDesc</CommandName>
+						<ExtendedTooltip name="СтатьиРасходовКнопкаСортироватьПоУбываниюExtendedTooltip" id="1026"/>
+					</Button>
+					<Popup name="СтатьиРасходовГруппаСформировать" id="988">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сформировать документы распределения</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статьи расходов группа сформировать</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СтатьиРасходовГруппаСформироватьExtendedTooltip" id="1027"/>
+						<ChildItems>
+							<Button name="СтатьиРасходовСформироватьДокументыСНастройкамиИзСтатьи" id="989">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СформироватьДокументыСНастройкамиИзСтатьи</CommandName>
+								<ExtendedTooltip name="СтатьиРасходовСформироватьДокументыСНастройкамиИзСтатьиExtendedTooltip" id="1028"/>
+							</Button>
+							<Button name="СтатьиРасходовСформироватьДокументыСУказаниемНастроекВручную" id="990">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СформироватьДокументыСУказаниемНастроекВручную</CommandName>
+								<ExtendedTooltip name="СтатьиРасходовСформироватьДокументыСУказаниемНастроекВручнуюExtendedTooltip" id="1029"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Button name="СтатьиРасходовОбновить" id="950">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СтатьиРасходовОбновитьExtendedTooltip" id="1014"/>
+					</Button>
+					<Popup name="ПодменюОтчеты" id="1105">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отчеты</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отчеты</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Representation>PictureAndText</Representation>
+						<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="1106"/>
+						<ChildItems>
+							<ButtonGroup name="ПодменюОтчетыВажное" id="1107">
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Подменю отчеты важное</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="ПодменюОтчетыВажноеРасширеннаяПодсказка" id="1108"/>
+							</ButtonGroup>
+							<ButtonGroup name="ПодменюОтчетыПерейти" id="1109">
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Подменю отчеты важное</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="ПодменюОтчетыПерейтиРасширеннаяПодсказка" id="1110"/>
+							</ButtonGroup>
+							<ButtonGroup name="ПодменюОтчетыСмТакже" id="1111">
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Подменю отчеты важное</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="ПодменюОтчетыСмТакжеРасширеннаяПодсказка" id="1112"/>
+							</ButtonGroup>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СтатьиРасходовExtendedTooltip" id="1030"/>
+			<SearchStringAddition name="СтатьиРасходовСтрокаПоиска" id="1069">
+				<AdditionSource>
+					<Item>СтатьиРасходов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатьиРасходовСтрокаПоискаКонтекстноеМеню" id="1070"/>
+				<ExtendedTooltip name="СтатьиРасходовСтрокаПоискаРасширеннаяПодсказка" id="1071"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтатьиРасходовСостояниеПросмотра" id="1072">
+				<AdditionSource>
+					<Item>СтатьиРасходов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатьиРасходовСостояниеПросмотраКонтекстноеМеню" id="1073"/>
+				<ExtendedTooltip name="СтатьиРасходовСостояниеПросмотраРасширеннаяПодсказка" id="1074"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтатьиРасходовУправлениеПоиском" id="1075">
+				<AdditionSource>
+					<Item>СтатьиРасходов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтатьиРасходовУправлениеПоискомКонтекстноеМеню" id="1076"/>
+				<ExtendedTooltip name="СтатьиРасходовУправлениеПоискомРасширеннаяПодсказка" id="1077"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СтатьиРасходовВыбор</Event>
+				<Event name="OnActivateRow">СтатьиРасходовПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СтатьиРасходовОрганизация" id="982">
+					<DataPath>СтатьиРасходов.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СтатьиРасходовОрганизацияКонтекстноеМеню" id="983"/>
+					<ExtendedTooltip name="СтатьиРасходовОрганизацияExtendedTooltip" id="1031"/>
+				</InputField>
+				<InputField name="СтатьиРасходовПодразделение" id="979">
+					<DataPath>СтатьиРасходов.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ContextMenu name="СтатьиРасходовПодразделениеКонтекстноеМеню" id="980"/>
+					<ExtendedTooltip name="СтатьиРасходовПодразделениеExtendedTooltip" id="1032"/>
+				</InputField>
+				<InputField name="НаправлениеДеятельности" id="1100">
+					<DataPath>СтатьиРасходов.НаправлениеДеятельности</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеДеятельностиКонтекстноеМеню" id="1101"/>
+					<ExtendedTooltip name="НаправлениеДеятельностиРасширеннаяПодсказка" id="1102"/>
+				</InputField>
+				<InputField name="ГруппаСтатей" id="986">
+					<DataPath>СтатьиРасходов.ГруппаСтатей</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГруппаСтатейКонтекстноеМеню" id="987"/>
+					<ExtendedTooltip name="ГруппаСтатейExtendedTooltip" id="1033"/>
+				</InputField>
+				<InputField name="СтатьяРасходов" id="921">
+					<DataPath>СтатьиРасходов.СтатьяРасходов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СтатьяРасходовКонтекстноеМеню" id="922"/>
+					<ExtendedTooltip name="СтатьяРасходовExtendedTooltip" id="1034"/>
+				</InputField>
+				<InputField name="АналитикаРасходов" id="948">
+					<DataPath>СтатьиРасходов.АналитикаРасходов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ContextMenu name="АналитикаРасходовКонтекстноеМеню" id="949"/>
+					<ExtendedTooltip name="АналитикаРасходовExtendedTooltip" id="1035"/>
+				</InputField>
+				<LabelField name="Состояние" id="923">
+					<DataPath>СтатьиРасходов.Состояние</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='Требуется распределить'; БИ=Распределено</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="924"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="1038"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодвал" id="1002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="1054"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПравилоРаспределенияИзКарточки" id="991">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило распределения статьи расходов (по умолчанию)</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПравилоРаспределенияИзКарточкиExtendedTooltip" id="1055"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВариантРаспределенияИзКарточки" id="1078">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариант распределения из карточки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаВариантРаспределенияИзКарточкиРасширеннаяПодсказка" id="1079"/>
+							<ChildItems>
+								<LabelField name="ВариантРаспределенияИзКарточки" id="1086">
+									<DataPath>ВариантРаспределенияИзКарточки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расходы распределяются</v8:content>
+										</v8:item>
+									</Title>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<ContextMenu name="ВариантРаспределенияИзКарточкиКонтекстноеМеню" id="1087"/>
+									<ExtendedTooltip name="ВариантРаспределенияИзКарточкиРасширеннаяПодсказка" id="1088"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоПодразделениямИзКарточки" id="993">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по подразделениям из карточки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по подразделениям из карточки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаПоПодразделениямИзКарточкиExtendedTooltip" id="1059"/>
+							<ChildItems>
+								<LabelField name="ПравилоРаспределенияПоПодразделениямИзКарточки" id="1000">
+									<DataPath>ПравилоРаспределенияПоПодразделениямИзКарточки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По подразделениям</v8:content>
+										</v8:item>
+									</Title>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<ContextMenu name="ПравилоРаспределенияПоПодразделениямИзКарточкиКонтекстноеМеню" id="1001"/>
+									<ExtendedTooltip name="ПравилоРаспределенияПоПодразделениямИзКарточкиExtendedTooltip" id="1061"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоЭтапамИзКарточки" id="992">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по этапам из карточки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по этапам из карточки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаПоЭтапамИзКарточкиExtendedTooltip" id="1056"/>
+							<ChildItems>
+								<LabelField name="ПравилоРаспределенияПоЭтапамИзКарточки" id="998">
+									<DataPath>ПравилоРаспределенияПоЭтапамИзКарточки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По этапам</v8:content>
+										</v8:item>
+									</Title>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<ContextMenu name="ПравилоРаспределенияПоЭтапамИзКарточкиКонтекстноеМеню" id="999"/>
+									<ExtendedTooltip name="ПравилоРаспределенияПоЭтапамИзКарточкиExtendedTooltip" id="1058"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПравилоРаспределенияИзДокумента" id="1003">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило распределения статьи расходов (из документа распределения)</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПравилоРаспределенияИзДокументаExtendedTooltip" id="1062"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВариантРаспределенияИзДокумента" id="1089">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариант распределения из документа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариант распределения из документа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаВариантРаспределенияИзДокументаРасширеннаяПодсказка" id="1090"/>
+							<ChildItems>
+								<LabelField name="ВариантРаспределенияИзДокумента" id="1097">
+									<DataPath>ВариантРаспределенияИзДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расходы распределяются</v8:content>
+										</v8:item>
+									</Title>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<ContextMenu name="ВариантРаспределенияИзДокументаКонтекстноеМеню" id="1098"/>
+									<ExtendedTooltip name="ВариантРаспределенияИзДокументаРасширеннаяПодсказка" id="1099"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоПодразделениямИзДокумента" id="1009">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по подразделениям из документа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по подразделениям из документа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаПоПодразделениямИзДокументаExtendedTooltip" id="1066"/>
+							<ChildItems>
+								<LabelField name="ПравилоРаспределенияПоПодразделениямИзДокумента" id="1012">
+									<DataPath>ПравилоРаспределенияПоПодразделениямИзДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По подразделениям</v8:content>
+										</v8:item>
+									</Title>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<ContextMenu name="ПравилоРаспределенияПоПодразделениямИзДокументаКонтекстноеМеню" id="1013"/>
+									<ExtendedTooltip name="ПравилоРаспределенияПоПодразделениямИзДокументаExtendedTooltip" id="1068"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоЭтапамИзДокумента" id="1004">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по этапам из документа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по этапам из документа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаПоЭтапамИзДокументаExtendedTooltip" id="1063"/>
+							<ChildItems>
+								<LabelField name="ПравилоРаспределенияПоЭтапамИзДокумента" id="1007">
+									<DataPath>ПравилоРаспределенияПоЭтапамИзДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По этапам</v8:content>
+										</v8:item>
+									</Title>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<ContextMenu name="ПравилоРаспределенияПоЭтапамИзДокументаКонтекстноеМеню" id="1008"/>
+									<ExtendedTooltip name="ПравилоРаспределенияПоЭтапамИзДокументаExtendedTooltip" id="1065"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="МесяцСтрока" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>2/0</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Состояние" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияРаспределенияРасходов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Подразделение" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+			</Type>
+			<Save>
+				<Field>Подразделение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Организация" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<Save>
+				<Field>Организация</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизаций</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СтатьиРасходов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи расходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СтатьяРасходов" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияРаспределенияРасходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Документ" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.РаспределениеПрочихЗатрат</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АналитикаРасходов" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика расходов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Организация" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+					<FunctionalOptions>
+						<Item>FunctionalOption.ИспользоватьНесколькоОрганизаций</Item>
+					</FunctionalOptions>
+				</Column>
+				<Column name="ГруппаСтатей" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа статей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаправлениеДеятельности" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Направление деятельности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НаправленияДеятельности</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Период" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПравилоРаспределенияПоЭтапамИзКарточки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило распределения по этапам из карточки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилоРаспределенияПоПодразделениямИзКарточки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило распределения по подразделениям из карточки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилоРаспределенияПоПодразделениямИзДокумента" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило распределения по подразделениям из документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилоРаспределенияПоЭтапамИзДокумента" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило распределения по этапам из документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилоРаспределенияПоГруппамПродукцииИзДокумента" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило распределения по группам продукции из документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилоРаспределенияПоГруппамПродукцииИзКарточки" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило распределения по группам продукции из карточки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВариантРаспределенияИзКарточки" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант распределения из карточки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВариантРаспределенияИзДокумента" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант распределения из документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СтатьиРасходовОткрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СтатьиРасходовОткрыть</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Action>Обновить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СформироватьДокументыСНастройкамиИзСтатьи" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>С использованием настроек по умолчанию для статьи расходов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В формируемых  документах настройки распределения статьи расходов берутся из карточки статьи.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьДокументыСНастройкамиИзСтатьи</Action>
+		</Command>
+		<Command name="СформироватьДокументыСУказаниемНастроекВручную" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>С указанием настроек вручную</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать документы с указанием настроек вручную</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьДокументыСУказаниемНастроекВручную</Action>
+		</Command>
+	</Commands>
+</Form>

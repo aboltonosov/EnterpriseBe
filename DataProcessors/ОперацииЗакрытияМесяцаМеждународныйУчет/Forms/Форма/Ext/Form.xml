@@ -1,0 +1,3811 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Регламентные операции по закрытию месяца в международном учете</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьЗакрытие" id="151">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыполнитьОперацииПоЗакрытиюМесяца</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить операции</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаВыполнитьЗакрытиеExtendedTooltip" id="894"/>
+			</Button>
+			<Button name="ФормаОбновитьСостоянияОпераций" id="69">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ОбновитьСостояниеОпераций</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьСостоянияОперацийExtendedTooltip" id="895"/>
+			</Button>
+			<Button name="ФормаПоказатьСкрытьПоясненияКЭтапам" id="857">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПоясненияКЭтапам</CommandName>
+				<ExtendedTooltip name="ФормаПоказатьСкрытьПоясненияКЭтапамExtendedTooltip" id="896"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="159">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="897"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПараметры" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаПараметрыExtendedTooltip" id="898"/>
+					<ChildItems>
+						<InputField name="ПредставлениеПериодаРегистрации" id="6">
+							<DataPath>ПредставлениеПериодаРегистрации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Месяц</v8:content>
+								</v8:item>
+							</Title>
+							<Width>13</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<SpinButton>true</SpinButton>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ПредставлениеПериодаРегистрацииКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ПредставлениеПериодаРегистрацииExtendedTooltip" id="899"/>
+							<Events>
+								<Event name="StartChoice">ПредставлениеПериодаРегистрацииНачалоВыбора</Event>
+								<Event name="Tuning">ПредставлениеПериодаРегистрацииРегулирование</Event>
+							</Events>
+						</InputField>
+						<InputField name="Организация" id="1">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>26</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="900"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<PictureDecoration name="ДекорацияВыполнено" id="160">
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.ЗеленаяГалка</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияВыполненоКонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="ДекорацияВыполненоExtendedTooltip" id="901"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияНеВыполнено" id="166">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация не выполнено</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.Внимание</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияНеВыполненоКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="ДекорацияНеВыполненоExtendedTooltip" id="902"/>
+						</PictureDecoration>
+						<LabelField name="Статус" id="168">
+							<DataPath>Статус</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="169"/>
+							<ExtendedTooltip name="СтатусExtendedTooltip" id="903"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭтапы" id="412">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа этапы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЭтапыExtendedTooltip" id="904"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЗакрытиеМесяцаОперативныйУчетОбщая" id="170">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа закрытие месяца оперативный учет общая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формирование движений по расчету с партнерами общая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗакрытиеМесяцаОперативныйУчетОбщаяРасширеннаяПодсказка" id="905"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗакрытиеМесяцаОперативныйУчетСостояние" id="789">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закрытие месяца оперативный учет состояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закрытие месяца оперативный учет состояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗакрытиеМесяцаОперативныйУчетСостояниеРасширеннаяПодсказка" id="906"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЗакрытиеМесяцаОперативныйУчет" id="702">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие месяца оперативный учет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие месяца оперативный учет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="907"/>
+									<ChildItems>
+										<Pages name="КартинкиЗакрытиеМесяцаОперативныйУчет" id="194">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки закрытие месяца оперативный учет</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="908"/>
+											<ChildItems>
+												<Page name="ЗакрытиеМесяцаОперативныйУчетНеТребуется" id="195">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие месяца оперативный учет не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие месяца оперативный учет не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеМесяцаОперативныйУчетНеТребуетсяРасширеннаяПодсказка" id="909"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация1" id="200">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация1КонтекстноеМеню" id="201"/>
+															<ExtendedTooltip name="Декорация1ExtendedTooltip" id="910"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеМесяцаОперативныйУчетОжидаетВыполненияПредыдущихОпераций" id="196">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие месяца оперативный учет ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеМесяцаОперативныйУчетОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="911"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация4" id="206">
+															<Width>1</Width>
+															<MaxWidth>1</MaxWidth>
+															<Height>1</Height>
+															<ContextMenu name="Декорация4КонтекстноеМеню" id="207"/>
+															<ExtendedTooltip name="Декорация4ExtendedTooltip" id="916"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеМесяцаОперативныйУчетВыполненоУспешно" id="197">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие месяца оперативный учет выполнено успешно</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеМесяцаОперативныйУчетВыполненоУспешноРасширеннаяПодсказка" id="913"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация3" id="204">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация3КонтекстноеМеню" id="205"/>
+															<ExtendedTooltip name="Декорация3ExtendedTooltip" id="914"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеМесяцаОперативныйУчетНеВыполнено" id="198">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие месяца оперативный учет не выполнено</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеМесяцаОперативныйУчетНеВыполненоРасширеннаяПодсказка" id="915"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация2" id="202">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация2КонтекстноеМеню" id="203"/>
+															<ExtendedTooltip name="Декорация2ExtendedTooltip" id="912"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеМесяцаОперативныйУчетВыполненоСОшибками" id="199">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие месяца оперативный учет выполнено с ошибками</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеМесяцаОперативныйУчетВыполненоСОшибкамиРасширеннаяПодсказка" id="917"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация5" id="208">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация5КонтекстноеМеню" id="209"/>
+															<ExtendedTooltip name="Декорация5ExtendedTooltip" id="918"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="ЗакрытиеМесяцаОперативныйУчет" id="210">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Закрытие месяца в оперативном учете</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ЗакрытиеМесяцаОперативныйУчетКонтекстноеМеню" id="211"/>
+											<ExtendedTooltip name="ЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="919"/>
+											<Events>
+												<Event name="Click">ЗакрытиеМесяцаОперативныйУчетНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеЗакрытиеМесяцаОперативныйУчет" id="824">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие месяца оперативный учет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие месяца оперативный учет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="920"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация126" id="825">
+											<ContextMenu name="Декорация126КонтекстноеМеню" id="826"/>
+											<ExtendedTooltip name="Декорация126ExtendedTooltip" id="921"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеЗакрытиеМесяцаОперативныйУчет" id="703">
+											<DataPath>ПояснениеЗакрытиеМесяцаОперативныйУчет</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеЗакрытиеМесяцаОперативныйУчетКонтекстноеМеню" id="704"/>
+											<ExtendedTooltip name="ПояснениеЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="922"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияЗакрытиеМесяцаОперативныйУчет" id="413">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия закрытие месяца оперативный учет</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="923"/>
+							<ChildItems>
+								<Page name="ДействиеЗакрытиеМесяцаОперативныйУчетВыполнять" id="414">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие месяца оперативный учет выполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие месяца оперативный учет выполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеЗакрытиеМесяцаОперативныйУчетВыполнятьРасширеннаяПодсказка" id="924"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеЗакрытиеМесяцаОперативныйУчет" id="174">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнено</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДействиеЗакрытиеМесяцаОперативныйУчетКонтекстноеМеню" id="175"/>
+											<ExtendedTooltip name="ДействиеЗакрытиеМесяцаОперативныйУчетРасширеннаяПодсказка" id="925"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеЗакрытиеМесяцаОперативныйУчетОжидание" id="415">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие месяца оперативный учет ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие месяца оперативный учет ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеЗакрытиеМесяцаОперативныйУчетОжиданиеРасширеннаяПодсказка" id="926"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация62" id="419">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не выполнено</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация62КонтекстноеМеню" id="420"/>
+											<ExtendedTooltip name="Декорация62ExtendedTooltip" id="927"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеЗакрытиеМесяцаОперативныйУчетНеТребуется" id="416">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие месяца оперативный учет не требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие месяца оперативный учет не требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеЗакрытиеМесяцаОперативныйУчетНеТребуетсяРасширеннаяПодсказка" id="928"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация61" id="417">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация61КонтекстноеМеню" id="418"/>
+											<ExtendedTooltip name="Декорация61ExtendedTooltip" id="929"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАмортизацияОСОбщая" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа амортизация ОСОбщая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа амортизация ОСОбщая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАмортизацияОСОбщаяРасширеннаяПодсказка" id="955"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАмортизацияОССостояние" id="791">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа амортизация ОССостояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа амортизация ОССостояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАмортизацияОССостояниеРасширеннаяПодсказка" id="956"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаАмортизацияОС" id="742">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа амортизация ОС</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа амортизация ОС</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАмортизацияОСРасширеннаяПодсказка" id="957"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация6" id="1362">
+											<Width>1</Width>
+											<ContextMenu name="Декорация6КонтекстноеМеню" id="1363"/>
+											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="1364"/>
+										</LabelDecoration>
+										<Pages name="КартинкиАмортизацияОС" id="230">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки амортизация ОС</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки распределение материалов и работ на продукцию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиАмортизацияОСРасширеннаяПодсказка" id="958"/>
+											<ChildItems>
+												<Page name="АмортизацияОСНеТребуется" id="231">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация ОСНе требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Распределение материалов и работ на продукцию не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияОСНеТребуетсяРасширеннаяПодсказка" id="959"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация11" id="232">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация11КонтекстноеМеню" id="233"/>
+															<ExtendedTooltip name="Декорация11ExtendedTooltip" id="960"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияОСОжидаетВыполненияПредыдущихОпераций" id="234">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация ОСОжидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияОСОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="961"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация12" id="235">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация12КонтекстноеМеню" id="236"/>
+															<ExtendedTooltip name="Декорация12ExtendedTooltip" id="962"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияОСВыполненоУспешно" id="237">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация ОСВыполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияОСВыполненоУспешноРасширеннаяПодсказка" id="963"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация13" id="238">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация13КонтекстноеМеню" id="239"/>
+															<ExtendedTooltip name="Декорация13ExtendedTooltip" id="964"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияОСНеВыполнено" id="240">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация ОСНе выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияОСНеВыполненоРасширеннаяПодсказка" id="965"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация14" id="241">
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация14КонтекстноеМеню" id="242"/>
+															<ExtendedTooltip name="Декорация14ExtendedTooltip" id="966"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияОСВыполненоСОшибками" id="243">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация ОСВыполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияОСВыполненоСОшибкамиРасширеннаяПодсказка" id="967"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация15" id="244">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация15КонтекстноеМеню" id="245"/>
+															<ExtendedTooltip name="Декорация15ExtendedTooltip" id="968"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="АмортизацияОС" id="246">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Амортизация ОС</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="АмортизацияОСКонтекстноеМеню" id="247"/>
+											<ExtendedTooltip name="АмортизацияОСРасширеннаяПодсказка" id="969"/>
+											<Events>
+												<Event name="Click">АмортизацияОСНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеАмортизацияОС" id="818">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение амортизация ОС</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение амортизация ОС</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеАмортизацияОСРасширеннаяПодсказка" id="970"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация124" id="819">
+											<Width>3</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация124КонтекстноеМеню" id="820"/>
+											<ExtendedTooltip name="Декорация124ExtendedTooltip" id="971"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеАмортизацияОС" id="743">
+											<DataPath>ПояснениеАмортизацияОС</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<MaxHeight>2</MaxHeight>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеАмортизацияОСКонтекстноеМеню" id="744"/>
+											<ExtendedTooltip name="ПояснениеАмортизацияОСРасширеннаяПодсказка" id="972"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияАмортизацияОС" id="431">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия амортизация ОС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия амортизация ОС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияАмортизацияОСРасширеннаяПодсказка" id="973"/>
+							<ChildItems>
+								<Page name="ДействиеАмортизацияОСВыполнять" id="432">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация ОСВыполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация ОСВыполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеАмортизацияОСВыполнятьРасширеннаяПодсказка" id="974"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеАмортизацияОС" id="135">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Начислить</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеАмортизацияОСКонтекстноеМеню" id="136"/>
+											<ExtendedTooltip name="ДействиеАмортизацияОСРасширеннаяПодсказка" id="975"/>
+											<Events>
+												<Event name="Click">ДействиеАмортизацияОСНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеАмортизацияОСОжидание" id="435">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация ОСОжидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация ОСОжидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеАмортизацияОСОжиданиеРасширеннаяПодсказка" id="976"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация65" id="436">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация65КонтекстноеМеню" id="437"/>
+											<ExtendedTooltip name="Декорация65ExtendedTooltip" id="977"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеАмортизацияОСНеТребуется" id="438">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация ОСНе требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация ОСНе требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеАмортизацияОСНеТребуетсяРасширеннаяПодсказка" id="978"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация66" id="439">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация66КонтекстноеМеню" id="440"/>
+											<ExtendedTooltip name="Декорация66ExtendedTooltip" id="979"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАмортизацияНМАОбщая" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа амортизация НМАОбщая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа амортизация НМАОбщая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАмортизацияНМАОбщаяРасширеннаяПодсказка" id="980"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАмортизацияНМАСостояние" id="792">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа амортизация НМАСостояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа амортизация НМАСостояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАмортизацияНМАСостояниеРасширеннаяПодсказка" id="981"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаАмортизацияНМА" id="745">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа амортизация НМА</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа амортизация НМА</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАмортизацияНМАРасширеннаяПодсказка" id="982"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация7" id="1365">
+											<Width>1</Width>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="1366"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="1367"/>
+										</LabelDecoration>
+										<Pages name="КартинкиАмортизацияНМА" id="250">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки амортизация НМА</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки распределение материалов и работ на продукцию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиАмортизацияНМАРасширеннаяПодсказка" id="983"/>
+											<ChildItems>
+												<Page name="АмортизацияНМАНеТребуется" id="251">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация НМАНе требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Распределение материалов и работ на продукцию не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияНМАНеТребуетсяРасширеннаяПодсказка" id="984"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация16" id="252">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация16КонтекстноеМеню" id="253"/>
+															<ExtendedTooltip name="Декорация16ExtendedTooltip" id="985"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияНМАОжидаетВыполненияПредыдущихОпераций" id="254">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация НМАОжидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияНМАОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="986"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация17" id="255">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация17КонтекстноеМеню" id="256"/>
+															<ExtendedTooltip name="Декорация17ExtendedTooltip" id="987"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияНМАВыполненоУспешно" id="257">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация НМАВыполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияНМАВыполненоУспешноРасширеннаяПодсказка" id="988"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация18" id="258">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация18КонтекстноеМеню" id="259"/>
+															<ExtendedTooltip name="Декорация18ExtendedTooltip" id="989"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияНМАНеВыполнено" id="260">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация НМАНе выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияНМАНеВыполненоРасширеннаяПодсказка" id="990"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация19" id="261">
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация19КонтекстноеМеню" id="262"/>
+															<ExtendedTooltip name="Декорация19ExtendedTooltip" id="991"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="АмортизацияНМАВыполненоСОшибками" id="263">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Амортизация НМАВыполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="АмортизацияНМАВыполненоСОшибкамиРасширеннаяПодсказка" id="992"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация20" id="264">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация20КонтекстноеМеню" id="265"/>
+															<ExtendedTooltip name="Декорация20ExtendedTooltip" id="993"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="АмортизацияНМА" id="248">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Амортизация НМА</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="АмортизацияНМАКонтекстноеМеню" id="249"/>
+											<ExtendedTooltip name="АмортизацияНМАРасширеннаяПодсказка" id="994"/>
+											<Events>
+												<Event name="Click">АмортизацияНМАНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеАмортизацияНМА" id="815">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение амортизация НМА</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение амортизация НМА</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеАмортизацияНМАРасширеннаяПодсказка" id="996"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация123" id="816">
+											<Width>3</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация123КонтекстноеМеню" id="817"/>
+											<ExtendedTooltip name="Декорация123ExtendedTooltip" id="997"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеАмортизацияНМА" id="746">
+											<DataPath>ПояснениеАмортизацияНМА</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>2</MaxHeight>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеАмортизацияНМАКонтекстноеМеню" id="747"/>
+											<ExtendedTooltip name="ПояснениеАмортизацияНМАРасширеннаяПодсказка" id="998"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияАмортизацияНМА" id="441">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия амортизация НМА</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия амортизация НМА</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияАмортизацияНМАРасширеннаяПодсказка" id="999"/>
+							<ChildItems>
+								<Page name="ДействиеАмортизацияНМАВыполнять" id="442">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация НМАВыполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация НМАВыполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеАмортизацияНМАВыполнятьРасширеннаяПодсказка" id="1000"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеАмортизацияНМА" id="137">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Начислить</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеАмортизацияНМАКонтекстноеМеню" id="138"/>
+											<ExtendedTooltip name="ДействиеАмортизацияНМАРасширеннаяПодсказка" id="1001"/>
+											<Events>
+												<Event name="Click">ДействиеАмортизацияНМАНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеАмортизацияНМАОжидание" id="445">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация НМАОжидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация НМАОжидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеАмортизацияНМАОжиданиеРасширеннаяПодсказка" id="1002"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация67" id="446">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация67КонтекстноеМеню" id="447"/>
+											<ExtendedTooltip name="Декорация67ExtendedTooltip" id="1003"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеАмортизацияНМАНеТребуется" id="448">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация НМАНе требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие амортизация НМАНе требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеАмортизацияНМАНеТребуетсяРасширеннаяПодсказка" id="1004"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация68" id="449">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация68КонтекстноеМеню" id="450"/>
+											<ExtendedTooltip name="Декорация68ExtendedTooltip" id="1005"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтражениеДокументовВМеждУчетеОбщая" id="113">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа распределение РБП Общая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отражение документов в межд учете общая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтражениеДокументовВМеждУчетеОбщаяРасширеннаяПодсказка" id="1006"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтражениеДокументовВМеждУчетеСостояние" id="793">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отражение документов в межд учете состояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отражение документов в межд учете состояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтражениеДокументовВМеждУчетеСостояниеРасширеннаяПодсказка" id="1007"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОтражениеДокументовВМеждУчете" id="748">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отражение документов в межд учете</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отражение документов в межд учете</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1008"/>
+									<ChildItems>
+										<Pages name="КартинкиОтражениеДокументовВМеждУчете" id="268">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки отражение документов в межд учете</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки распределение материалов и работ на продукцию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1009"/>
+											<ChildItems>
+												<Page name="ОтражениеДокументовВМеждУчетеНеТребуется" id="269">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отражение документов в межд учете не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Распределение материалов и работ на продукцию не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ОтражениеДокументовВМеждУчетеНеТребуетсяРасширеннаяПодсказка" id="1010"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация21" id="270">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация21КонтекстноеМеню" id="271"/>
+															<ExtendedTooltip name="Декорация21ExtendedTooltip" id="1011"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ОтражениеДокументовВМеждУчетеОжидаетВыполненияПредыдущихОпераций" id="272">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отражение документов в межд учете ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ОтражениеДокументовВМеждУчетеОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="1012"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация22" id="273">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация22КонтекстноеМеню" id="274"/>
+															<ExtendedTooltip name="Декорация22ExtendedTooltip" id="1013"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ОтражениеДокументовВМеждУчетеВыполненоУспешно" id="275">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отражение документов в межд учете выполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ОтражениеДокументовВМеждУчетеВыполненоУспешноРасширеннаяПодсказка" id="1014"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация23" id="276">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация23КонтекстноеМеню" id="277"/>
+															<ExtendedTooltip name="Декорация23ExtendedTooltip" id="1015"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ОтражениеДокументовВМеждУчетеНеВыполнено" id="278">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отражение документов в межд учете не выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ОтражениеДокументовВМеждУчетеНеВыполненоРасширеннаяПодсказка" id="1016"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация24" id="279">
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация24КонтекстноеМеню" id="280"/>
+															<ExtendedTooltip name="Декорация24ExtendedTooltip" id="1017"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ОтражениеДокументовВМеждУчетеВыполненоСОшибками" id="281">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отражение документов в межд учете выполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ОтражениеДокументовВМеждУчетеВыполненоСОшибкамиРасширеннаяПодсказка" id="1018"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация25" id="282">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация25КонтекстноеМеню" id="283"/>
+															<ExtendedTooltip name="Декорация25ExtendedTooltip" id="1019"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="ОтражениеДокументовВМеждУчете" id="266">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отражение документов в международном учете</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ОтражениеДокументовВМеждУчетеКонтекстноеМеню" id="267"/>
+											<ExtendedTooltip name="ОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1020"/>
+											<Events>
+												<Event name="Click">ОтражениеДокументовВМеждУчетеНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеОтражениеДокументовВМеждУчете" id="812">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение отражение документов в межд учете</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение отражение документов в межд учете</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1021"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация122" id="813">
+											<Width>2</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация122КонтекстноеМеню" id="814"/>
+											<ExtendedTooltip name="Декорация122ExtendedTooltip" id="1022"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеОтражениеДокументовВМеждУчете" id="749">
+											<DataPath>ПояснениеОтражениеДокументовВМеждУчете</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<MaxHeight>2</MaxHeight>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеОтражениеДокументовВМеждУчетеКонтекстноеМеню" id="750"/>
+											<ExtendedTooltip name="ПояснениеОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1023"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияОтражениеДокументовВМеждУчете" id="451">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия отражение документов в межд учете</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия отражение документов в межд учете</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1024"/>
+							<ChildItems>
+								<Page name="ДействиеОтражениеДокументовВМеждУчетеВыполнять" id="452">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие отражение документов в межд учете выполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие отражение документов в межд учете выполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеОтражениеДокументовВМеждУчетеВыполнятьРасширеннаяПодсказка" id="1025"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеОтражениеДокументовВМеждУчете" id="139">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отразить</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеОтражениеДокументовВМеждУчетеКонтекстноеМеню" id="140"/>
+											<ExtendedTooltip name="ДействиеОтражениеДокументовВМеждУчетеРасширеннаяПодсказка" id="1026"/>
+											<Events>
+												<Event name="Click">ДействиеОтражениеДокументовВМеждУчетеНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеОтражениеДокументовВМеждУчетеОжидание" id="455">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие отражение документов в межд учете ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие отражение документов в межд учете ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеОтражениеДокументовВМеждУчетеОжиданиеРасширеннаяПодсказка" id="1027"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация69" id="456">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация69КонтекстноеМеню" id="457"/>
+											<ExtendedTooltip name="Декорация69ExtendedTooltip" id="1028"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеОтражениеДокументовВМеждУчетеНеТребуется" id="458">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие отражение документов в межд учете не требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие отражение документов в межд учете не требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеОтражениеДокументовВМеждУчетеНеТребуетсяРасширеннаяПодсказка" id="1029"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация70" id="459">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация70КонтекстноеМеню" id="460"/>
+											<ExtendedTooltip name="Декорация70ExtendedTooltip" id="1030"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасчетКурсовыхРазницОбщая" id="1368">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчет курсовых разниц общая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа закрытие счетов доходов расходов общая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасчетКурсовыхРазницОбщаяРасширеннаяПодсказка" id="1369"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРасчетКурсовыхРазницСостояние" id="1370">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расчет курсовых разниц состояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закрытие счетов доходов расходов состояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасчетКурсовыхРазницСостояниеРасширеннаяПодсказка" id="1371"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРасчетКурсовыхРазниц" id="1372">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа расчет курсовых разниц</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРасчетКурсовыхРазницРасширеннаяПодсказка" id="1373"/>
+									<ChildItems>
+										<Pages name="КартинкиРасчетКурсовыхРазниц" id="1374">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки расчет курсовых разниц</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки закрытие счетов доходов расходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиРасчетКурсовыхРазницРасширеннаяПодсказка" id="1375"/>
+											<ChildItems>
+												<Page name="РасчетКурсовыхРазницНеТребуется" id="1376">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расчет курсовых разниц Не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="РасчетКурсовыхРазницНеТребуетсяРасширеннаяПодсказка" id="1377"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация99" id="1378">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация99КонтекстноеМеню" id="1379"/>
+															<ExtendedTooltip name="Декорация99РасширеннаяПодсказка" id="1380"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="РасчетКурсовыхРазницОжидаетВыполненияПредыдущихОпераций" id="1381">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расчет курсовых разниц ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="РасчетКурсовыхРазницОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="1382"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация100" id="1383">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация100КонтекстноеМеню" id="1384"/>
+															<ExtendedTooltip name="Декорация100РасширеннаяПодсказка" id="1385"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="РасчетКурсовыхРазницВыполненоУспешно" id="1386">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расчет курсовых разниц выполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено успешно</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="РасчетКурсовыхРазницВыполненоУспешноРасширеннаяПодсказка" id="1387"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация101" id="1388">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация101КонтекстноеМеню" id="1389"/>
+															<ExtendedTooltip name="Декорация101РасширеннаяПодсказка" id="1390"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="РасчетКурсовыхРазницНеВыполнено" id="1391">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расчет курсовых разниц не выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не выполнено</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="РасчетКурсовыхРазницНеВыполненоРасширеннаяПодсказка" id="1392"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация102" id="1393">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ж</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация102КонтекстноеМеню" id="1394"/>
+															<ExtendedTooltip name="Декорация102РасширеннаяПодсказка" id="1395"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="РасчетКурсовыхРазницВыполненоСОшибками" id="1396">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расчет курсовых разниц выполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено с ошибками</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="РасчетКурсовыхРазницВыполненоСОшибкамиРасширеннаяПодсказка" id="1397"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация103" id="1398">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация103КонтекстноеМеню" id="1399"/>
+															<ExtendedTooltip name="Декорация103РасширеннаяПодсказка" id="1400"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="РасчетКурсовыхРазниц" id="1401">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчет курсовых разниц в функциональной валюте</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="РасчетКурсовыхРазницКонтекстноеМеню" id="1402"/>
+											<ExtendedTooltip name="РасчетКурсовыхРазницРасширеннаяПодсказка" id="1403"/>
+											<Events>
+												<Event name="Click">РасчетКурсовыхРазницНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеРасчетКурсовыхРазниц" id="1404">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение расчет курсовых разниц</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеРасчетКурсовыхРазницРасширеннаяПодсказка" id="1405"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация125" id="1406">
+											<Width>2</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация125КонтекстноеМеню" id="1407"/>
+											<ExtendedTooltip name="Декорация125РасширеннаяПодсказка" id="1408"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеРасчетКурсовыхРазниц" id="1409">
+											<DataPath>ПояснениеРасчетКурсовыхРазниц</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
+											<MaxHeight>2</MaxHeight>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеРасчетКурсовыхРазницКонтекстноеМеню" id="1410"/>
+											<ExtendedTooltip name="ПояснениеРасчетКурсовыхРазницРасширеннаяПодсказка" id="1411"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияРасчетКурсовыхРазниц" id="1412">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия расчет курсовых разниц</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия закрытие счетов доходов расходов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияРасчетКурсовыхРазницРасширеннаяПодсказка" id="1413"/>
+							<ChildItems>
+								<Page name="ДействиеРасчетКурсовыхРазницВыполнять" id="1414">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов выполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов выполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеРасчетКурсовыхРазницВыполнятьРасширеннаяПодсказка" id="1415"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеРасчетКурсовыхРазниц" id="1416">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рассчитать</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеРасчетКурсовыхРазницКонтекстноеМеню" id="1417"/>
+											<ExtendedTooltip name="ДействиеРасчетКурсовыхРазницРасширеннаяПодсказка" id="1418"/>
+											<Events>
+												<Event name="Click">ДействиеРасчетКурсовыхРазницНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеРасчетКурсовыхРазницОжидание" id="1419">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеРасчетКурсовыхРазницОжиданиеРасширеннаяПодсказка" id="1420"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация104" id="1421">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация104КонтекстноеМеню" id="1422"/>
+											<ExtendedTooltip name="Декорация104РасширеннаяПодсказка" id="1423"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеРасчетКурсовыхРазницНеТребуется" id="1424">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов не требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов не требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеРасчетКурсовыхРазницНеТребуетсяРасширеннаяПодсказка" id="1425"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация105" id="1426">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация105КонтекстноеМеню" id="1427"/>
+											<ExtendedTooltip name="Декорация105РасширеннаяПодсказка" id="1428"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЗакрытиеСчетовДоходовРасходовОбщая" id="582">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа закрытие счетов доходов расходов общая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа закрытие счетов доходов расходов общая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗакрытиеСчетовДоходовРасходовОбщаяРасширеннаяПодсказка" id="1031"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗакрытиеСчетовДоходовРасходовСостояние" id="794">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закрытие счетов доходов расходов состояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закрытие счетов доходов расходов состояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗакрытиеСчетовДоходовРасходовСостояниеРасширеннаяПодсказка" id="1032"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЗакрытиеСчетовДоходовРасходов" id="751">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1033"/>
+									<ChildItems>
+										<Pages name="КартинкиЗакрытиеСчетовДоходовРасходов" id="583">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки закрытие счетов доходов расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки закрытие счетов доходов расходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1034"/>
+											<ChildItems>
+												<Page name="ЗакрытиеСчетовДоходовРасходовНеТребуется" id="584">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеСчетовДоходовРасходовНеТребуетсяРасширеннаяПодсказка" id="1035"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация92" id="585">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация92КонтекстноеМеню" id="586"/>
+															<ExtendedTooltip name="Декорация92ExtendedTooltip" id="1036"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеСчетовДоходовРасходовОжидаетВыполненияПредыдущихОпераций" id="587">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеСчетовДоходовРасходовОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="1037"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация93" id="588">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация93КонтекстноеМеню" id="589"/>
+															<ExtendedTooltip name="Декорация93ExtendedTooltip" id="1038"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеСчетовДоходовРасходовВыполненоУспешно" id="590">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено успешно</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеСчетовДоходовРасходовВыполненоУспешноРасширеннаяПодсказка" id="1039"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация94" id="591">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация94КонтекстноеМеню" id="592"/>
+															<ExtendedTooltip name="Декорация94ExtendedTooltip" id="1040"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеСчетовДоходовРасходовНеВыполнено" id="593">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не выполнено</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеСчетовДоходовРасходовНеВыполненоРасширеннаяПодсказка" id="1041"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация95" id="594">
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация95КонтекстноеМеню" id="595"/>
+															<ExtendedTooltip name="Декорация95ExtendedTooltip" id="1042"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ЗакрытиеСчетовДоходовРасходовВыполненоСОшибками" id="596">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено с ошибками</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗакрытиеСчетовДоходовРасходовВыполненоСОшибкамиРасширеннаяПодсказка" id="1043"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация96" id="597">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация96КонтекстноеМеню" id="598"/>
+															<ExtendedTooltip name="Декорация96ExtendedTooltip" id="1044"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="ЗакрытиеСчетовДоходовРасходов" id="599">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Закрытие счетов учета доходов и расходов</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ЗакрытиеСчетовДоходовРасходовКонтекстноеМеню" id="600"/>
+											<ExtendedTooltip name="ЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1045"/>
+											<Events>
+												<Event name="Click">ЗакрытиеСчетовДоходовРасходовНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеЗакрытиеСчетовДоходовРасходов" id="809">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1046"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация121" id="810">
+											<Width>2</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация121КонтекстноеМеню" id="811"/>
+											<ExtendedTooltip name="Декорация121ExtendedTooltip" id="1047"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеЗакрытиеСчетовДоходовРасходов" id="752">
+											<DataPath>ПояснениеЗакрытиеСчетовДоходовРасходов</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
+											<MaxHeight>2</MaxHeight>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеЗакрытиеСчетовДоходовРасходовКонтекстноеМеню" id="753"/>
+											<ExtendedTooltip name="ПояснениеЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1048"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияЗакрытиеСчетовДоходовРасходов" id="602">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия закрытие счетов доходов расходов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия закрытие счетов доходов расходов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1049"/>
+							<ChildItems>
+								<Page name="ДействиеЗакрытиеСчетовДоходовРасходовВыполнять" id="603">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов выполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов выполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеЗакрытиеСчетовДоходовРасходовВыполнятьРасширеннаяПодсказка" id="1050"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеЗакрытиеСчетовДоходовРасходов" id="604">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сформировать</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеЗакрытиеСчетовДоходовРасходовКонтекстноеМеню" id="605"/>
+											<ExtendedTooltip name="ДействиеЗакрытиеСчетовДоходовРасходовРасширеннаяПодсказка" id="1051"/>
+											<Events>
+												<Event name="Click">ДействиеЗакрытиеСчетовДоходовРасходовНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеЗакрытиеСчетовДоходовРасходовОжидание" id="606">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеЗакрытиеСчетовДоходовРасходовОжиданиеРасширеннаяПодсказка" id="1052"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация97" id="607">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация97КонтекстноеМеню" id="608"/>
+											<ExtendedTooltip name="Декорация97ExtendedTooltip" id="1053"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеЗакрытиеСчетовДоходовРасходовНеТребуется" id="609">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов не требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов не требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеЗакрытиеСчетовДоходовРасходовНеТребуетсяРасширеннаяПодсказка" id="1054"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация98" id="610">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация98КонтекстноеМеню" id="611"/>
+											<ExtendedTooltip name="Декорация98ExtendedTooltip" id="1055"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПересчетВВалютуПредставленияОбщая" id="1429">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пересчет в валюту представления общая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа закрытие счетов доходов расходов общая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПересчетВВалютуПредставленияОбщаяРасширеннаяПодсказка" id="1430"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПересчетВВалютуПредставленияСостояние" id="1431">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пересчет в валюту представления состояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закрытие счетов доходов расходов состояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПересчетВВалютуПредставленияСостояниеРасширеннаяПодсказка" id="1432"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПересчетВВалютуПредставления" id="1433">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1434"/>
+									<ChildItems>
+										<Pages name="КартинкиПересчетВВалютуПредставления" id="1435">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки закрытие счетов доходов расходов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки закрытие счетов доходов расходов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1436"/>
+											<ChildItems>
+												<Page name="ПересчетВВалютуПредставленияНеТребуется" id="1437">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПересчетВВалютуПредставленияНеТребуетсяРасширеннаяПодсказка" id="1438"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация106" id="1439">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация106КонтекстноеМеню" id="1440"/>
+															<ExtendedTooltip name="Декорация106РасширеннаяПодсказка" id="1441"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ПересчетВВалютуПредставленияОжидаетВыполненияПредыдущихОпераций" id="1442">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПересчетВВалютуПредставленияОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="1443"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация107" id="1444">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация107КонтекстноеМеню" id="1445"/>
+															<ExtendedTooltip name="Декорация107РасширеннаяПодсказка" id="1446"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ПересчетВВалютуПредставленияВыполненоУспешно" id="1447">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено успешно</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПересчетВВалютуПредставленияВыполненоУспешноРасширеннаяПодсказка" id="1448"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация108" id="1449">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация108КонтекстноеМеню" id="1450"/>
+															<ExtendedTooltip name="Декорация108РасширеннаяПодсказка" id="1451"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ПересчетВВалютуПредставленияНеВыполнено" id="1452">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов не выполнено</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПересчетВВалютуПредставленияНеВыполненоРасширеннаяПодсказка" id="1453"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация109" id="1454">
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация109КонтекстноеМеню" id="1455"/>
+															<ExtendedTooltip name="Декорация109РасширеннаяПодсказка" id="1456"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ПересчетВВалютуПредставленияВыполненоСОшибками" id="1457">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Закрытие счетов доходов расходов выполнено с ошибками</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПересчетВВалютуПредставленияВыполненоСОшибкамиРасширеннаяПодсказка" id="1458"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация110" id="1459">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация110КонтекстноеМеню" id="1460"/>
+															<ExtendedTooltip name="Декорация110РасширеннаяПодсказка" id="1461"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="ПересчетВВалютуПредставления" id="1462">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчет курсовых разниц в валюте представления</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ПересчетВВалютуПредставленияКонтекстноеМеню" id="1463"/>
+											<ExtendedTooltip name="ПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1464"/>
+											<Events>
+												<Event name="Click">ПересчетВВалютуПредставленияНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеПересчетВВалютуПредставления" id="1465">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение закрытие счетов доходов расходов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1466"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация127" id="1467">
+											<Width>2</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация127КонтекстноеМеню" id="1468"/>
+											<ExtendedTooltip name="Декорация127РасширеннаяПодсказка" id="1469"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеПересчетВВалютуПредставления" id="1470">
+											<DataPath>ПояснениеПересчетВВалютуПредставления</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
+											<MaxHeight>2</MaxHeight>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеПересчетВВалютуПредставленияКонтекстноеМеню" id="1471"/>
+											<ExtendedTooltip name="ПояснениеПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1472"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияПересчетВВалютуПредставления" id="1473">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия закрытие счетов доходов расходов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия закрытие счетов доходов расходов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1474"/>
+							<ChildItems>
+								<Page name="ДействиеПересчетВВалютуПредставленияВыполнять" id="1475">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов выполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов выполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеПересчетВВалютуПредставленияВыполнятьРасширеннаяПодсказка" id="1476"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеПересчетВВалютуПредставления" id="1477">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рассчитать</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеПересчетВВалютуПредставленияКонтекстноеМеню" id="1478"/>
+											<ExtendedTooltip name="ДействиеПересчетВВалютуПредставленияРасширеннаяПодсказка" id="1479"/>
+											<Events>
+												<Event name="Click">ДействиеПересчетВВалютуПредставленияНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеПересчетВВалютуПредставленияОжидание" id="1480">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеПересчетВВалютуПредставленияОжиданиеРасширеннаяПодсказка" id="1481"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация111" id="1482">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация111КонтекстноеМеню" id="1483"/>
+											<ExtendedTooltip name="Декорация111РасширеннаяПодсказка" id="1484"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеПересчетВВалютуПредставленияНеТребуется" id="1485">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов не требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие закрытие счетов доходов расходов не требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеПересчетВВалютуПредставленияНеТребуетсяРасширеннаяПодсказка" id="1486"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация112" id="1487">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация112КонтекстноеМеню" id="1488"/>
+											<ExtendedTooltip name="Декорация112РасширеннаяПодсказка" id="1489"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДатаЗапретаФормированияПроводокОбщая" id="178">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дата запрета формирования проводок общая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа действие расчет себестоимости общая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДатаЗапретаФормированияПроводокОбщаяРасширеннаяПодсказка" id="1156"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДатаЗапретаФормированияПроводокСостояние" id="799">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата запрета формирования проводок состояние</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата запрета формирования проводок состояние</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>55</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаЗапретаФормированияПроводокСостояниеРасширеннаяПодсказка" id="1157"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДатаЗапретаФормированияПроводок" id="766">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дата запрета формирования проводок</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дата запрета формирования проводок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДатаЗапретаФормированияПроводокРасширеннаяПодсказка" id="1158"/>
+									<ChildItems>
+										<Pages name="КартинкиДатаЗапретаФормированияПроводок" id="340">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки дата запрета формирования проводок</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинки распределение материалов и работ на продукцию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="КартинкиДатаЗапретаФормированияПроводокРасширеннаяПодсказка" id="1159"/>
+											<ChildItems>
+												<Page name="ДатаЗапретаФормированияПроводокНеТребуется" id="341">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата запрета формирования проводок не требуется</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата запрета формирования проводок не требуется</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДатаЗапретаФормированияПроводокНеТребуетсяРасширеннаяПодсказка" id="1160"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация41" id="342">
+															<Width>1</Width>
+															<Height>1</Height>
+															<ContextMenu name="Декорация41КонтекстноеМеню" id="343"/>
+															<ExtendedTooltip name="Декорация41ExtendedTooltip" id="1161"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ДатаЗапретаФормированияПроводокОжидаетВыполненияПредыдущихОпераций" id="344">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата запрета формирования проводок ожидает выполнения предыдущих операций</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДатаЗапретаФормированияПроводокОжидаетВыполненияПредыдущихОперацийРасширеннаяПодсказка" id="1162"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация42" id="345">
+															<Picture>
+																<xr:Ref>CommonPicture.ОжидаетВыполнения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация42КонтекстноеМеню" id="346"/>
+															<ExtendedTooltip name="Декорация42ExtendedTooltip" id="1163"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ДатаЗапретаФормированияПроводокВыполненоУспешно" id="347">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата запрета формирования проводок выполнено успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДатаЗапретаФормированияПроводокВыполненоУспешноРасширеннаяПодсказка" id="1164"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация43" id="348">
+															<Visible>false</Visible>
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация43КонтекстноеМеню" id="349"/>
+															<ExtendedTooltip name="Декорация43ExtendedTooltip" id="1165"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ДатаЗапретаФормированияПроводокНеВыполнено" id="350">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата запрета формирования проводок не выполнено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДатаЗапретаФормированияПроводокНеВыполненоРасширеннаяПодсказка" id="1166"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация44" id="351">
+															<Picture>
+																<xr:Ref>CommonPicture.НеВыполнено</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация44КонтекстноеМеню" id="352"/>
+															<ExtendedTooltip name="Декорация44ExtendedTooltip" id="1167"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="ДатаЗапретаФормированияПроводокВыполненоСОшибками" id="353">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата запрета формирования проводок выполнено с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исправление отрицательных остатков товаров ожидает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДатаЗапретаФормированияПроводокВыполненоСОшибкамиРасширеннаяПодсказка" id="1168"/>
+													<ChildItems>
+														<PictureDecoration name="Декорация45" id="354">
+															<Picture>
+																<xr:Ref>CommonPicture.ВыполненоСОшибками</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация45КонтекстноеМеню" id="355"/>
+															<ExtendedTooltip name="Декорация45ExtendedTooltip" id="1169"/>
+														</PictureDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+										<LabelDecoration name="ДатаЗапретаФормированияПроводок" id="338">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата запрета формирования проводок</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДатаЗапретаФормированияПроводокКонтекстноеМеню" id="339"/>
+											<ExtendedTooltip name="ДатаЗапретаФормированияПроводокРасширеннаяПодсказка" id="1170"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеДатаЗапретаФормированияПроводок" id="833">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение дата запрета формирования проводок</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение дата запрета формирования проводок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеДатаЗапретаФормированияПроводокРасширеннаяПодсказка" id="1171"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация129" id="834">
+											<Width>2</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация129КонтекстноеМеню" id="835"/>
+											<ExtendedTooltip name="Декорация129ExtendedTooltip" id="1172"/>
+										</PictureDecoration>
+										<LabelField name="ПояснениеДатаЗапрета" id="767">
+											<DataPath>ПояснениеДатаЗапрета</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<MaxHeight>1</MaxHeight>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ПояснениеДатаЗапретаКонтекстноеМеню" id="768"/>
+											<ExtendedTooltip name="ПояснениеДатаЗапретаРасширеннаяПодсказка" id="1173"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ДействияДатаЗапретаФормированияПроводок" id="491">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия дата запрета формирования проводок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действия дата запрета формирования проводок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ДействияДатаЗапретаФормированияПроводокРасширеннаяПодсказка" id="1174"/>
+							<ChildItems>
+								<Page name="ДействиеДатаЗапретаФормированияПроводокВыполнять" id="492">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие дата запрета формирования проводок выполнять</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие дата запрета формирования проводок выполнять</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеДатаЗапретаФормированияПроводокВыполнятьРасширеннаяПодсказка" id="1175"/>
+									<ChildItems>
+										<LabelDecoration name="ДействиеДатаЗапретаФормированияПроводок" id="182">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветГиперссылки</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Установить</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДействиеДатаЗапретаФормированияПроводокКонтекстноеМеню" id="183"/>
+											<ExtendedTooltip name="ДействиеДатаЗапретаФормированияПроводокРасширеннаяПодсказка" id="1176"/>
+											<Events>
+												<Event name="Click">ДействиеДатаЗапретаФормированияПроводокНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеДатаЗапретаФормированияПроводокОжидание" id="495">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие дата запрета формирования проводок ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие дата запрета формирования проводок ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеДатаЗапретаФормированияПроводокОжиданиеРасширеннаяПодсказка" id="1177"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация77" id="496">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация77КонтекстноеМеню" id="497"/>
+											<ExtendedTooltip name="Декорация77ExtendedTooltip" id="1178"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ДействиеДатаЗапретаФормированияПроводокНеТребуется" id="498">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие дата запрета формирования проводок не требуется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие дата запрета формирования проводок не требуется</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДействиеДатаЗапретаФормированияПроводокНеТребуетсяРасширеннаяПодсказка" id="1179"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация78" id="499">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветТекстаНеактуальногоСписка</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не требуется</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация78КонтекстноеМеню" id="500"/>
+											<ExtendedTooltip name="Декорация78ExtendedTooltip" id="1180"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВыполнениеОпераций" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнение операций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выполнение операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаВыполнениеОперацийExtendedTooltip" id="1356"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАвтоматическоеВыполнение" id="156">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа автоматическое выполнение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа автоматическое выполнение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАвтоматическоеВыполнениеExtendedTooltip" id="1357"/>
+					<ChildItems>
+						<CheckBoxField name="АвтоматическиВыполнятьОперацииПоЗакрытиюМесяца" id="66">
+							<DataPath>АвтоматическиВыполнятьОперацииПоЗакрытиюМесяца</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АвтоматическиВыполнятьОперацииПоЗакрытиюМесяцаКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="АвтоматическиВыполнятьОперацииПоЗакрытиюМесяцаExtendedTooltip" id="1358"/>
+							<Events>
+								<Event name="OnChange">АвтоматическиВыполнятьОперацииПоЗакрытиюМесяцаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ПредставлениеПериодРегистрацииРегламентный" id="157">
+							<DataPath>ПредставлениеПериодРегистрацииРегламентный</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<SpinButton>true</SpinButton>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ПредставлениеПериодРегистрацииРегламентныйКонтекстноеМеню" id="158"/>
+							<ExtendedTooltip name="ПредставлениеПериодРегистрацииРегламентныйExtendedTooltip" id="1359"/>
+							<Events>
+								<Event name="Tuning">ПредставлениеПериодРегистрацииРегламентныйРегулирование</Event>
+								<Event name="StartListChoice">ПредставлениеПериодРегистрацииРегламентныйНачалоВыбораИзСписка</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="НастроитьРасписаниеРегламентногоЗадания" id="68">
+					<Type>Hyperlink</Type>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Command.НастроитьРасписаниеРегламентногоЗадания</CommandName>
+					<ExtendedTooltip name="НастроитьРасписаниеРегламентногоЗаданияExtendedTooltip" id="1360"/>
+				</Button>
+				<UsualGroup name="ГруппаРасписаниеЗадания" id="1493">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расписание задания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расписание задания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасписаниеЗаданияРасширеннаяПодсказка" id="1494"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация8" id="1495">
+							<Picture>
+								<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация8КонтекстноеМеню" id="1496"/>
+							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="1497"/>
+						</PictureDecoration>
+						<LabelField name="ПредставлениеРасписания" id="1490">
+							<DataPath>ПредставлениеРасписания</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ПредставлениеРасписанияКонтекстноеМеню" id="1491"/>
+							<ExtendedTooltip name="ПредставлениеРасписанияExtendedTooltip" id="1492"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelField name="СостояниеАвтоматическогоВыполненияОпераций" id="152">
+					<DataPath>СостояниеАвтоматическогоВыполненияОпераций</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<ContextMenu name="СостояниеАвтоматическогоВыполненияОперацийКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="СостояниеАвтоматическогоВыполненияОперацийExtendedTooltip" id="1361"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОперацииЗакрытияМесяцаМеждународныйУчет</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Организация</Field>
+				<Field>Объект.ПериодРегистрации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПредставлениеПериодаРегистрации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление периода регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="АмортизацияОС" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Амортизация ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АмортизацияНМА" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Амортизация НМА</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтражениеДокументовВМеждУчете" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределение расходов будущих периодов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоматическиВыполнятьОперацииПоЗакрытиюМесяца" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически выполнять операции по закрытию месяца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеАвтоматическогоВыполненияОпераций" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗадания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="РегламентноеЗадание" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентное задание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодРегистрацииРегламентный" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период регистрации регламентный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеПериодРегистрацииРегламентный" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление период регистрации регламентный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Статус" id="17">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытиеМесяцаОперативныйУчет" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрытие месяца оперативный учет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаЗапретаФормированияПроводок" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата запрета формирования проводок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытиеСчетовДоходовРасходов" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрытие счетов доходов расходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеЗакрытиеМесяцаОперативныйУчет" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение закрытие месяца оперативный учет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеАмортизацияОС" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение амортизация ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеАмортизацияНМА" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение амортизация НМА</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеОтражениеДокументовВМеждУчете" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение отражение документов в межд учете</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеЗакрытиеСчетовДоходовРасходов" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение закрытие счетов доходов расходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеДатаЗапрета" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение дата запрета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказатьПоясненияКЭтапам" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пояснения к этапам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЭтаповЗакрытия" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список этапов закрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВидПериодаРегистрации" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид периода регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ДоступныеПериодыОтчета</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокДоступныхОрганизаций" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список доступных организаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Этапы" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этапы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КартинкаЭтапа" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка этапа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Действие" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаЗапрета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата запрета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасчетКурсовыхРазниц" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расчет курсовых разниц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПересчетВВалютуПредставления" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрытие счетов доходов расходов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияОперацийЗакрытияМесяца</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеРасчетКурсовыхРазниц" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение расчет курсовых разниц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПояснениеПересчетВВалютуПредставления" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение пересчет в валюту представления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВалютыСовпадают" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюты совпадают</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьОтражениеДокументов" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать отражение документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеРасписания" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление расписания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьОперацииПоЗакрытиюМесяца" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить операции по закрытию месяца</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить операции по закрытию месяца</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОперацииПоЗакрытиюМесяцаНажатие</Action>
+		</Command>
+		<Command name="НастроитьРасписаниеРегламентногоЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание автоматического выполнения операций по закрытию месяца</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание регламентного задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetTime</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписаниеРегламентногоЗадания</Action>
+		</Command>
+		<Command name="ОбновитьСостояниеОпераций" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить состояние операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСостояниеОпераций</Action>
+		</Command>
+		<Command name="ПоясненияКЭтапам" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснения к этапам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснения к этапам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоясненияКЭтапам</Action>
+		</Command>
+	</Commands>
+</Form>

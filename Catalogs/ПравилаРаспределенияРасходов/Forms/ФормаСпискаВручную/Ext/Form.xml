@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ввод показателей для  распределения расходов на себестоимость продукции</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<InputField name="Период" id="65">
+					<DataPath>МесяцСтрока</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочий период</v8:content>
+						</v8:item>
+					</Title>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ='ММММ гггг'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="67"/>
+					<Events>
+						<Event name="StartChoice">ПериодНачалоВыбора</Event>
+						<Event name="Tuning">ПериодРегулирование</Event>
+					</Events>
+				</InputField>
+				<CommandBar name="ГруппаКоманды" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<Button name="ПоказатьТолькоНезаполненныеПоказатели" id="51">
+							<Type>CommandBarButton</Type>
+							<Check>true</Check>
+							<CommandName>Form.Command.ПоказатьТолькоНезаполненныеПоказатели</CommandName>
+							<ExtendedTooltip name="ПоказатьТолькоНезаполненныеПоказателиРасширеннаяПодсказка" id="52"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="КЗаполнению" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К заполнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К заполнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftNarrow</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КЗаполнениюРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="ПоказателиКЗаполнению" id="3">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ПоказателиКЗаполнению</DataPath>
+					<RowPictureDataPath>ПоказателиКЗаполнению.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ПоказателиКЗаполнениюКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="ПоказателиКЗаполнениюКоманднаяПанель" id="5"/>
+					<ExtendedTooltip name="ПоказателиКЗаполнениюРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="ПоказателиКЗаполнениюСтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>ПоказателиКЗаполнению</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПоказателиКЗаполнениюСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ПоказателиКЗаполнениюСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПоказателиКЗаполнениюСостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>ПоказателиКЗаполнению</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПоказателиКЗаполнениюСостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ПоказателиКЗаполнениюСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПоказателиКЗаполнениюУправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>ПоказателиКЗаполнению</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПоказателиКЗаполнениюУправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ПоказателиКЗаполнениюУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">ПоказателиКЗаполнениюПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ПоказателиКЗаполнениюСсылка" id="86">
+							<DataPath>ПоказателиКЗаполнению.Ref</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показатель</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПоказателиКЗаполнениюСсылкаКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ПоказателиКЗаполнениюСсылкаРасширеннаяПодсказка" id="88"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="ЗначенияКЗаполнению" id="19">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ЗначенияКЗаполнению</DataPath>
+					<RowPictureDataPath>ЗначенияКЗаполнению.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ЗначенияКЗаполнениюКонтекстноеМеню" id="20"/>
+					<AutoCommandBar name="ЗначенияКЗаполнениюКоманднаяПанель" id="21">
+						<ChildItems>
+							<Button name="ЗначенияКЗаполнениюПоказатьТолькоНезаполненныеЗначения" id="44">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПоказатьТолькоНезаполненныеЗначения</CommandName>
+								<ExtendedTooltip name="ЗначенияКЗаполнениюПоказатьТолькоНезаполненныеЗначенияРасширеннаяПодсказка" id="45"/>
+							</Button>
+							<Button name="ЗначенияКЗаполнениюИзменитьФорму" id="89">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+								<ExtendedTooltip name="ЗначенияКЗаполнениюИзменитьФормуРасширеннаяПодсказка" id="90"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ЗначенияКЗаполнениюРасширеннаяПодсказка" id="22"/>
+					<SearchStringAddition name="ЗначенияКЗаполнениюСтрокаПоиска" id="23">
+						<AdditionSource>
+							<Item>ЗначенияКЗаполнению</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗначенияКЗаполнениюСтрокаПоискаКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="ЗначенияКЗаполнениюСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЗначенияКЗаполнениюСостояниеПросмотра" id="26">
+						<AdditionSource>
+							<Item>ЗначенияКЗаполнению</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗначенияКЗаполнениюСостояниеПросмотраКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ЗначенияКЗаполнениюСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЗначенияКЗаполнениюУправлениеПоиском" id="29">
+						<AdditionSource>
+							<Item>ЗначенияКЗаполнению</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗначенияКЗаполнениюУправлениеПоискомКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ЗначенияКЗаполнениюУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ЗначенияКЗаполнениюВыбор</Event>
+						<Event name="BeforeAddRow">ЗначенияКЗаполнениюПередНачаломДобавления</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ЗначенияКЗаполнениюПодразделение" id="74">
+							<DataPath>ЗначенияКЗаполнению.Подразделение</DataPath>
+							<ContextMenu name="ЗначенияКЗаполнениюПодразделениеКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ЗначенияКЗаполнениюПодразделениеРасширеннаяПодсказка" id="76"/>
+						</LabelField>
+						<LabelField name="ЗначенияКЗаполнениюЗначениеПоказателя" id="68">
+							<DataPath>ЗначенияКЗаполнению.ЗначениеПоказателя</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение показателя</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗначенияКЗаполнениюЗначениеПоказателяКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ЗначенияКЗаполнениюЗначениеПоказателяРасширеннаяПодсказка" id="70"/>
+						</LabelField>
+						<LabelField name="ЗначенияКЗаполнениюПоказатель" id="77">
+							<DataPath>ЗначенияКЗаполнению.Показатель</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показатель</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗначенияКЗаполнениюПоказательКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ЗначенияКЗаполнениюПоказательРасширеннаяПодсказка" id="79"/>
+						</LabelField>
+						<LabelField name="ЗначенияКЗаполнениюПериод" id="83">
+							<DataPath>ЗначенияКЗаполнению.Период</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действует с</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ЗначенияКЗаполнениюПериодКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ЗначенияКЗаполнениюПериодРасширеннаяПодсказка" id="85"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗначенияКЗаполнению" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значения к заполнению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ РАЗРЕШЕННЫЕ
+	ЕСТЬNULL(ЗначенияПриИзменении.Период, &amp;НачалоМесяца) КАК Период,
+	Подразделения.Ссылка КАК Подразделение,
+	ЕСТЬNULL(ЗначенияЕжемесячно.Показатель, ЕСТЬNULL(ЗначенияПриИзменении.Показатель, Значение(Справочник.ПравилаРаспределенияРасходов.ПустаяСсылка))) КАК Показатель,
+	ЕСТЬNULL(ЗначенияЕжемесячно.ЗначениеПоказателя, ЕСТЬNULL(ЗначенияПриИзменении.ЗначениеПоказателя,0)) КАК ЗначениеПоказателя
+ИЗ
+	Справочник.СтруктураПредприятия КАК Подразделения
+	
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗначенияПоказателейДляРаспределенияРасходов КАК ЗначенияЕжемесячно
+	ПО ЗначенияЕжемесячно.Подразделение = Подразделения.Ссылка
+		И ЗначенияЕжемесячно.Показатель.БазаРаспределения = ЗНАЧЕНИЕ(Перечисление.ТипыБазыРаспределенияРасходов.ВводитсяЕжемесячно)
+		И НАЧАЛОПЕРИОДА(ЗначенияЕжемесячно.Период, Месяц) = &amp;НачалоМесяца
+		И ЗначенияЕжемесячно.Показатель = &amp;Показатель
+		
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗначенияПоказателейДляРаспределенияРасходов.СрезПоследних(&amp;НачалоМесяца) КАК ЗначенияПриИзменении
+	ПО ЗначенияПриИзменении.Подразделение = Подразделения.Ссылка
+		И ЗначенияПриИзменении.Показатель.БазаРаспределения = ЗНАЧЕНИЕ(Перечисление.ТипыБазыРаспределенияРасходов.ВводитсяПриИзменении)
+		И ЗначенияПриИзменении.Показатель = &amp;Показатель
+ГДЕ
+	Подразделения.ПроизводственноеПодразделение
+	И &amp;Показатель &lt;&gt; Значение(Справочник.ПравилаРаспределенияРасходов.ПустаяСсылка)
+</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="МесяцСтрока" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказателиКЗаполнению" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатели к заполнению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Показатели.Ссылка,
+	Показатели.Наименование,
+	Показатели.НазначениеПравила,
+	Показатели.БазаРаспределения КАК ЗначениеПоказателя,
+	Показатели.Предопределенный,
+	Показатели.ИмяПредопределенныхДанных
+ИЗ
+	Справочник.ПравилаРаспределенияРасходов КАК Показатели
+ГДЕ
+	НЕ Показатели.ПометкаУдаления
+	И Показатели.БазаРаспределения В (
+		ЗНАЧЕНИЕ(Перечисление.ТипыБазыРаспределенияРасходов.ВводитсяПриИзменении),
+		ЗНАЧЕНИЕ(Перечисление.ТипыБазыРаспределенияРасходов.ВводитсяЕжемесячно))</QueryText>
+				<MainTable>Catalog.ПравилаРаспределенияРасходов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокОрганизаций" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список организаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокПодразделений" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список подразделений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Показатель" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПравилаРаспределенияРасходов</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьТолькоНезаполненныеЗначения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только незаполненные значения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать только незаполненные значения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьТолькоНезаполненныеЗначения</Action>
+		</Command>
+		<Command name="ПоказатьТолькоНезаполненныеПоказатели" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только незаполненные показатели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать только незаполненные показатели</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьТолькоНезаполненныеПоказатели</Action>
+		</Command>
+	</Commands>
+</Form>

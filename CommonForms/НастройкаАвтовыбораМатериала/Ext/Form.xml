@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройку" id="10">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьНастройку</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкуExtendedTooltip" id="221"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="130">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьExtendedTooltip" id="222"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="19">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="223"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКакОпределяетсяМатериал" id="184">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Как определяется материал</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа как определяется материал</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаКакОпределяетсяМатериалExtendedTooltip" id="224"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаМатериалУказываетсяВНСИ" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа материал указывается ВНСИ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа материал указывается ВНСИ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаМатериалУказываетсяВНСИExtendedTooltip" id="225"/>
+							<ChildItems>
+								<RadioButtonField name="МатериалУказываетсяВНСИ" id="174">
+									<DataPath>СпособАвтовыбораНоменклатуры</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Указан в спецификации:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораНоменклатуры.EnumValue.УказываетсяВНСИ</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="МатериалУказываетсяВНСИКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="МатериалУказываетсяВНСИExtendedTooltip" id="226"/>
+									<Events>
+										<Event name="OnChange">МатериалУказываетсяВНСИПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<Pages name="СтраницыНоменклатура" id="200">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы номенклатура</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыНоменклатураExtendedTooltip" id="227"/>
+									<ChildItems>
+										<Page name="СтраницаНоменклатураВыбрана" id="201">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница номенклатура выбрана</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница номенклатура выбрана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаНоменклатураВыбранаExtendedTooltip" id="228"/>
+											<ChildItems>
+												<LabelField name="Номенклатура" id="182">
+													<DataPath>Номенклатура</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<ContextMenu name="НоменклатураКонтекстноеМеню" id="183"/>
+													<ExtendedTooltip name="НоменклатураExtendedTooltip" id="229"/>
+												</LabelField>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаНоменклатураНеВыбрана" id="202">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница номенклатура не выбрана</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница номенклатура не выбрана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаНоменклатураНеВыбранаExtendedTooltip" id="230"/>
+											<ChildItems>
+												<LabelDecoration name="ПояснениеНоменклатура" id="203">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;Материал не указан&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеНоменклатураКонтекстноеМеню" id="204"/>
+													<ExtendedTooltip name="ПояснениеНоменклатураExtendedTooltip" id="231"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗадаетсяВСвойствеПродукции" id="146">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задается в свойстве продукции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задается в свойстве продукции</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗадаетсяВСвойствеПродукцииExtendedTooltip" id="232"/>
+							<ChildItems>
+								<Pages name="СтраницыЗадаетсяВСвойствеПродукции" id="158">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы задается в свойстве продукции</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы задается в свойстве продукции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыЗадаетсяВСвойствеПродукцииExtendedTooltip" id="233"/>
+									<ChildItems>
+										<Page name="СтраницаЗадаетсяВСвойствеПродукцииДоступна" id="159">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница задается в свойстве продукции доступна</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница задается в свойстве продукции доступна</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СтраницаЗадаетсяВСвойствеПродукцииДоступнаExtendedTooltip" id="234"/>
+											<ChildItems>
+												<RadioButtonField name="ЗадаетсяВСвойствеПродукцииДоступна" id="143">
+													<DataPath>СпособАвтовыбораНоменклатуры</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указан в свойстве характеристики продукции:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораНоменклатуры.EnumValue.ЗадаетсяВСвойствеПродукции</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ЗадаетсяВСвойствеПродукцииДоступнаКонтекстноеМеню" id="144"/>
+													<ExtendedTooltip name="ЗадаетсяВСвойствеПродукцииДоступнаExtendedTooltip" id="235"/>
+													<Events>
+														<Event name="OnChange">ЗадаетсяВСвойствеПродукцииДоступнаПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<InputField name="СвойствоСодержащееНоменклатуру" id="17">
+													<DataPath>СвойствоСодержащееНоменклатуру</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Материал указан в свойстве продукции</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalStretch>false</HorizontalStretch>
+													<OpenButton>false</OpenButton>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ContextMenu name="СвойствоСодержащееНоменклатуруКонтекстноеМеню" id="18"/>
+													<ExtendedTooltip name="СвойствоСодержащееНоменклатуруExtendedTooltip" id="236"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаЗадаетсяВСвойствеПродукцииНеДоступна" id="162">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница задается в свойстве продукции не доступна</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница задается в свойстве продукции не доступна</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СтраницаЗадаетсяВСвойствеПродукцииНеДоступнаExtendedTooltip" id="237"/>
+											<ChildItems>
+												<RadioButtonField name="ЗадаетсяВСвойствеПродукцииНеДоступна" id="165">
+													<DataPath>СпособАвтовыбораНоменклатуры</DataPath>
+													<Enabled>false</Enabled>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ItemHeight>1</ItemHeight>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указан в свойстве характеристики продукции (у продукции должно быть свойство, в котором можно задать материал)</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораНоменклатуры.EnumValue.ЗадаетсяВСвойствеПродукции</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ЗадаетсяВСвойствеПродукцииНеДоступнаКонтекстноеМеню" id="166"/>
+													<ExtendedTooltip name="ЗадаетсяВСвойствеПродукцииНеДоступнаExtendedTooltip" id="238"/>
+												</RadioButtonField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<UsualGroup name="ГруппаПояснениеЗадаетсяВСвойствеПродукции" id="277">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение задается в свойстве продукции</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение задается в свойстве продукции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеЗадаетсяВСвойствеПродукцииРасширеннаяПодсказка" id="278"/>
+									<ChildItems>
+										<LabelDecoration name="Оступ1" id="279">
+											<ContextMenu name="Оступ1КонтекстноеМеню" id="280"/>
+											<ExtendedTooltip name="Оступ1РасширеннаяПодсказка" id="281"/>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеЗадаетсяВСвойствеПродукции" id="147">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При производстве продукции будет использоваться материал, который указан в свойстве.
+Например, для продукции "Диван" можно создать характеристики "обивка из ткани", "обивка из кожи".
+При производстве дивана с характеристикой "обивка из ткани" будет использоваться материал "ткань", а при производстве с характеристикой "обивка из кожи" будет использоваться материал "кожа".</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеЗадаетсяВСвойствеПродукцииКонтекстноеМеню" id="148"/>
+											<ExtendedTooltip name="ПояснениеЗадаетсяВСвойствеПродукцииExtendedTooltip" id="239"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУточняетсяПриПроизводстве" id="142">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа уточняется при производстве</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа уточняется при производстве</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУточняетсяПриПроизводствеExtendedTooltip" id="240"/>
+							<ChildItems>
+								<RadioButtonField name="УточняетсяПриПроизводстве" id="138">
+									<DataPath>СпособАвтовыбораНоменклатуры</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Уточняется при производстве</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораНоменклатуры.EnumValue.УточняетсяПриПроизводстве</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="УточняетсяПриПроизводствеКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="УточняетсяПриПроизводствеExtendedTooltip" id="241"/>
+									<Events>
+										<Event name="OnChange">УточняетсяПриПроизводствеПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаПояснениеУточняетсяПриПроизводстве" id="282">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение уточняется при производстве</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение уточняется при производстве</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеУточняетсяПриПроизводствеРасширеннаяПодсказка" id="283"/>
+									<ChildItems>
+										<LabelDecoration name="Оступ2" id="284">
+											<ContextMenu name="Оступ2КонтекстноеМеню" id="285"/>
+											<ExtendedTooltip name="Оступ2РасширеннаяПодсказка" id="286"/>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеУточняетсяПриПроизводстве" id="140">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При уточнении материала будет доступна информация о применении материала и характеристике продукции.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеУточняетсяПриПроизводствеКонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="ПояснениеУточняетсяПриПроизводствеExtendedTooltip" id="242"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКакОпределяетсяХарактеристикаМатериала" id="152">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Как определяется характеристика материала</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа как определяется характеристика материала</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаКакОпределяетсяХарактеристикаМатериалаExtendedTooltip" id="243"/>
+					<ChildItems>
+						<Pages name="СтраницыКакОпределяетсяХарактеристикаМатериала" id="190">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы как определяется характеристика материала</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы как определяется характеристика материала</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыКакОпределяетсяХарактеристикаМатериалаExtendedTooltip" id="244"/>
+							<ChildItems>
+								<Page name="СтраницаКакОпределяетсяХарактеристикаМатериалаЕстьХарактеристика" id="191">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница как определяется характеристика материала есть характеристика</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница как определяется характеристика материала есть характеристика</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаКакОпределяетсяХарактеристикаМатериалаЕстьХарактеристикаExtendedTooltip" id="245"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаХарактеристикаУказываетсяВНСИ" id="186">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа характеристика указывается ВНСИ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа характеристика указывается ВНСИ</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаХарактеристикаУказываетсяВНСИExtendedTooltip" id="246"/>
+											<ChildItems>
+												<RadioButtonField name="ХарактеристикаУказываетсяВНСИ" id="176">
+													<DataPath>СпособАвтовыбораХарактеристики</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Указана в спецификации:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораХарактеристики.EnumValue.УказываетсяВНСИ</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ХарактеристикаУказываетсяВНСИКонтекстноеМеню" id="177"/>
+													<ExtendedTooltip name="ХарактеристикаУказываетсяВНСИExtendedTooltip" id="247"/>
+													<Events>
+														<Event name="OnChange">ХарактеристикаУказываетсяВНСИПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<Pages name="СтраницыХарактеристика" id="195">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы характеристика</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы характеристика</v8:content>
+														</v8:item>
+													</ToolTip>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="СтраницыХарактеристикаExtendedTooltip" id="248"/>
+													<ChildItems>
+														<Page name="СтраницаХарактеристикаВыбрана" id="196">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика выбрана</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика выбрана</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="СтраницаХарактеристикаВыбранаExtendedTooltip" id="249"/>
+															<ChildItems>
+																<LabelField name="Характеристика" id="187">
+																	<DataPath>Характеристика</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+																	<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="188"/>
+																	<ExtendedTooltip name="ХарактеристикаExtendedTooltip" id="250"/>
+																</LabelField>
+															</ChildItems>
+														</Page>
+														<Page name="СтраницаХарактеристикаНеВыбрана" id="197">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика не выбрана</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика не выбрана</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="СтраницаХарактеристикаНеВыбранаExtendedTooltip" id="251"/>
+															<ChildItems>
+																<LabelDecoration name="ПояснениеХарактеристика" id="198">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>style:ПоясняющийТекст</TextColor>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>&lt;Характеристика не указана&gt;</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ПояснениеХарактеристикаКонтекстноеМеню" id="199"/>
+																	<ExtendedTooltip name="ПояснениеХарактеристикаExtendedTooltip" id="252"/>
+																</LabelDecoration>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаХарактеристикаПодбираетсяПоСвойствамПродукции" id="210">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа характеристика подбирается по свойствам продукции</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа характеристика подбирается по свойствам продукции</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаХарактеристикаПодбираетсяПоСвойствамПродукцииExtendedTooltip" id="253"/>
+											<ChildItems>
+												<Pages name="СтраницыХарактеристикаПодбираетсяПоСвойствамПродукции" id="205">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы характеристика подбирается по свойствам продукции</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы характеристика подбирается по свойствам продукции</v8:content>
+														</v8:item>
+													</ToolTip>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="СтраницыХарактеристикаПодбираетсяПоСвойствамПродукцииExtendedTooltip" id="254"/>
+													<ChildItems>
+														<Page name="СтраницаХарактеристикаПодбираетсяПоСвойствамПродукцииДоступна" id="206">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика подбирается по свойствам продукции доступна</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика подбирается по свойствам продукции доступна</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="СтраницаХарактеристикаПодбираетсяПоСвойствамПродукцииДоступнаExtendedTooltip" id="255"/>
+															<ChildItems>
+																<RadioButtonField name="ПодбираетсяПоСвойствамПродукцииДоступна" id="153">
+																	<DataPath>СпособАвтовыбораХарактеристики</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Определяется по свойствам и характеристике продукции</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораХарактеристики.EnumValue.ПодбираетсяПоСвойствамПродукции</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ПодбираетсяПоСвойствамПродукцииДоступнаКонтекстноеМеню" id="154"/>
+																	<ExtendedTooltip name="ПодбираетсяПоСвойствамПродукцииДоступнаExtendedTooltip" id="256"/>
+																	<Events>
+																		<Event name="OnChange">ПодбираетсяПоСвойствамПродукцииДоступнаПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<Pages name="СтраницыНастройкаСоответствияСвойств" id="216">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страницы настройка соответствия свойств</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страницы настройка соответствия свойств</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<PagesRepresentation>None</PagesRepresentation>
+																	<ExtendedTooltip name="СтраницыНастройкаСоответствияСвойствExtendedTooltip" id="257"/>
+																	<ChildItems>
+																		<Page name="СтраницаНастройкаСоответствияСвойствНастройка" id="217">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Страница настройка соответствия свойств настройка</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ToolTip>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Страница настройка соответствия свойств настройка</v8:content>
+																				</v8:item>
+																			</ToolTip>
+																			<ExtendedTooltip name="СтраницаНастройкаСоответствияСвойствНастройкаExtendedTooltip" id="258"/>
+																			<ChildItems>
+																				<Button name="НастройкаСоответствияСвойств" id="189">
+																					<Type>Hyperlink</Type>
+																					<CommandName>Form.Command.НастройкаСоответствияСвойств</CommandName>
+																					<ExtendedTooltip name="НастройкаСоответствияСвойствExtendedTooltip" id="259"/>
+																				</Button>
+																			</ChildItems>
+																		</Page>
+																		<Page name="СтраницаНастройкаСоответствияСвойствНастройкаНеТребуется" id="218">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Страница настройка соответствия свойств настройка не требуется</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ToolTip>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Страница настройка соответствия свойств настройка не требуется</v8:content>
+																				</v8:item>
+																			</ToolTip>
+																			<ExtendedTooltip name="СтраницаНастройкаСоответствияСвойствНастройкаНеТребуетсяExtendedTooltip" id="260"/>
+																			<ChildItems>
+																				<LabelDecoration name="ДекорацияПустая" id="219">
+																					<ContextMenu name="ДекорацияПустаяКонтекстноеМеню" id="220"/>
+																					<ExtendedTooltip name="ДекорацияПустаяExtendedTooltip" id="261"/>
+																				</LabelDecoration>
+																			</ChildItems>
+																		</Page>
+																	</ChildItems>
+																</Pages>
+															</ChildItems>
+														</Page>
+														<Page name="СтраницаХарактеристикаПодбираетсяПоСвойствамПродукцииНеДоступна" id="207">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика подбирается по свойствам продукции не доступна</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница характеристика подбирается по свойствам продукции не доступна</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="СтраницаХарактеристикаПодбираетсяПоСвойствамПродукцииНеДоступнаExtendedTooltip" id="262"/>
+															<ChildItems>
+																<RadioButtonField name="ПодбираетсяПоСвойствамПродукцииНеДоступна" id="208">
+																	<DataPath>СпособАвтовыбораХарактеристики</DataPath>
+																	<Enabled>false</Enabled>
+																	<TitleLocation>None</TitleLocation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Определяется по свойствам и характеристике продукции (необходимо указать материал)</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораХарактеристики.EnumValue.ПодбираетсяПоСвойствамПродукции</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ПодбираетсяПоСвойствамПродукцииНеДоступнаКонтекстноеМеню" id="209"/>
+																	<ExtendedTooltip name="ПодбираетсяПоСвойствамПродукцииНеДоступнаExtendedTooltip" id="263"/>
+																</RadioButtonField>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+												<UsualGroup name="ГруппаПояснениеХарактеристикаПодбираетсяПоСвойствамПродукции" id="287">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа пояснение характеристика подбирается по свойствам продукции</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа пояснение характеристика подбирается по свойствам продукции</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПояснениеХарактеристикаПодбираетсяПоСвойствамПродукцииРасширеннаяПодсказка" id="288"/>
+													<ChildItems>
+														<LabelDecoration name="Оступ3" id="289">
+															<ContextMenu name="Оступ3КонтекстноеМеню" id="290"/>
+															<ExtendedTooltip name="Оступ3РасширеннаяПодсказка" id="291"/>
+														</LabelDecoration>
+														<LabelDecoration name="ПояснениеХарактеристикаПодбираетсяПоСвойствамПродукции" id="156">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Height>4</Height>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Будет подобрана характеристика свойства, которой соответствуют свойствам продукции или ее характеристике.
+Например, при производстве шкафов разных цветов используется краска соответствующего цвета. Чтобы описать потребление краски соответствующего цвета необходимо создать свойство "Цвет" и включить его в характеристики шкафа и краски. При производстве шкафа черного цвета будет подобрана краска черного цвета.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ПояснениеХарактеристикаПодбираетсяПоСвойствамПродукцииКонтекстноеМеню" id="157"/>
+															<ExtendedTooltip name="ПояснениеХарактеристикаПодбираетсяПоСвойствамПродукцииExtendedTooltip" id="264"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаХарактеристикаУточняетсяПриПроизводстве" id="211">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа характеристика уточняется при производстве</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа характеристика уточняется при производстве</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаХарактеристикаУточняетсяПриПроизводствеExtendedTooltip" id="265"/>
+											<ChildItems>
+												<RadioButtonField name="ХарактеристикаУточняетсяПриПроизводстве" id="214">
+													<DataPath>СпособАвтовыбораХарактеристики</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Уточняется при производстве</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.СпособыАвтовыбораХарактеристики.EnumValue.УточняетсяПриПроизводстве</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ХарактеристикаУточняетсяПриПроизводствеКонтекстноеМеню" id="215"/>
+													<ExtendedTooltip name="ХарактеристикаУточняетсяПриПроизводствеExtendedTooltip" id="266"/>
+													<Events>
+														<Event name="OnChange">ХарактеристикаУказываетсяВНСИПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<UsualGroup name="ГруппаПояснениеХарактеристикаУточняетсяПриПроизводстве" id="292">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа пояснение характеристика уточняется при производстве</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа пояснение характеристика уточняется при производстве</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПояснениеХарактеристикаУточняетсяПриПроизводствеРасширеннаяПодсказка" id="293"/>
+													<ChildItems>
+														<LabelDecoration name="Оступ4" id="294">
+															<ContextMenu name="Оступ4КонтекстноеМеню" id="295"/>
+															<ExtendedTooltip name="Оступ4РасширеннаяПодсказка" id="296"/>
+														</LabelDecoration>
+														<LabelDecoration name="ПояснениеХарактеристикаУточняетсяПриПроизводстве" id="212">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При уточнении характеристики будет доступна информация о применении материала и характеристике продукции.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ПояснениеХарактеристикаУточняетсяПриПроизводствеКонтекстноеМеню" id="213"/>
+															<ExtendedTooltip name="ПояснениеХарактеристикаУточняетсяПриПроизводствеExtendedTooltip" id="267"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаКакОпределяетсяХарактеристикаМатериалаНетХарактеристики" id="192">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница как определяется характеристика материала нет характеристики</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница как определяется характеристика материала нет характеристики</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаКакОпределяетсяХарактеристикаМатериалаНетХарактеристикиExtendedTooltip" id="268"/>
+									<ChildItems>
+										<LabelDecoration name="ПояснениеНетХарактеристик" id="193">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Для выбранного материала характеристики не используются.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеНетХарактеристикКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ПояснениеНетХарактеристикExtendedTooltip" id="269"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаКакОпределяетсяХарактеристикаМатериалаМатериалВСвойстве" id="272">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница как определяется характеристика материала материал в свойстве</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница как определяется характеристика материала материал в свойстве</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаКакОпределяетсяХарактеристикаМатериалаМатериалВСвойствеРасширеннаяПодсказка" id="273"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОпределениеХарактеристикиМатериалВСвойстве" id="274">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Характеристика уточняется при производстве.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияОпределениеХарактеристикиМатериалВСвойствеКонтекстноеМеню" id="275"/>
+											<ExtendedTooltip name="ДекорацияОпределениеХарактеристикиМатериалВСвойствеРасширеннаяПодсказка" id="276"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПрименениеМатериала" id="178">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применение материала</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа применение материала</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПрименениеМатериалаExtendedTooltip" id="270"/>
+					<ChildItems>
+						<InputField name="ПрименениеМатериала" id="76">
+							<DataPath>ПрименениеМатериала</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Height>3</Height>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПрименениеМатериалаКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ПрименениеМатериалаExtendedTooltip" id="271"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СвойствоСодержащееНоменклатуру" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойство в котором будет задана номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Номенклатура" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПрименениеМатериала" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применение материала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СпособАвтовыбораНоменклатуры" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ автовыбора номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СпособыАвтовыбораНоменклатуры</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СпособАвтовыбораХарактеристики" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ подбора Характеристики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СпособыАвтовыбораХарактеристики</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="Характеристика" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СписокВсехДоступныхСвойств" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список всех доступных свойств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Свойство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НетСвойствВКоторыхМожноЗадатьНоменклатуру" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет свойств в которых можно задать номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьХарактеристикиНоменклатуры" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать характеристики номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидИзделий" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Источник" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="СоответствиеСвойств" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствие свойств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СвойствоМатериала" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство материала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СвойствоПродукции" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство продукции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПродукцияИмеетХарактеристики" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продукция имеет характеристики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидМатериала" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид материала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройку и закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСохранитьНастройку</Action>
+		</Command>
+		<Command name="НастройкаСоответствияСвойств" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка соответствия свойств</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка соответствия свойств</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНастройкаСоответствияСвойств</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</Item>
+			</FunctionalOptions>
+		</Command>
+	</Commands>
+</Form>

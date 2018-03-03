@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<InputField name="ГруппаФинансовогоУчета" id="55">
+			<DataPath>ГруппаФинансовогоУчета</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ГруппаФинансовогоУчетаКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ГруппаФинансовогоУчетаРасширеннаяПодсказка" id="57"/>
+			<Events>
+				<Event name="OnChange">ГруппаФинансовогоУчетаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Page name="ГруппаСобственнаяНоменклатура" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Собственная номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа собственная номенклатура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСобственнаяНоменклатураРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<Table name="СписокСобственнаяНоменклатура" id="104">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокСобственнаяНоменклатура</DataPath>
+							<RowPictureDataPath>СписокСобственнаяНоменклатура.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокСобственнаяНоменклатураКонтекстноеМеню" id="105"/>
+							<AutoCommandBar name="СписокСобственнаяНоменклатураКоманднаяПанель" id="106"/>
+							<ExtendedTooltip name="СписокСобственнаяНоменклатураРасширеннаяПодсказка" id="107"/>
+							<SearchStringAddition name="СписокСобственнаяНоменклатураСтрокаПоиска" id="108">
+								<AdditionSource>
+									<Item>СписокСобственнаяНоменклатура</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСобственнаяНоменклатураСтрокаПоискаКонтекстноеМеню" id="111"/>
+								<ExtendedTooltip name="СписокСобственнаяНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="112"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСобственнаяНоменклатураСостояниеПросмотра" id="113">
+								<AdditionSource>
+									<Item>СписокСобственнаяНоменклатура</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСобственнаяНоменклатураСостояниеПросмотраКонтекстноеМеню" id="116"/>
+								<ExtendedTooltip name="СписокСобственнаяНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="117"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокСобственнаяНоменклатураУправлениеПоиском" id="118">
+								<AdditionSource>
+									<Item>СписокСобственнаяНоменклатура</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСобственнаяНоменклатураУправлениеПоискомКонтекстноеМеню" id="121"/>
+								<ExtendedTooltip name="СписокСобственнаяНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="122"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокСобственнаяНоменклатураОрганизация" id="123">
+									<DataPath>СписокСобственнаяНоменклатура.Организация</DataPath>
+									<ContextMenu name="СписокСобственнаяНоменклатураОрганизацияКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураОрганизацияРасширеннаяПодсказка" id="125"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСклад" id="126">
+									<DataPath>СписокСобственнаяНоменклатура.Склад</DataPath>
+									<ContextMenu name="СписокСобственнаяНоменклатураСкладКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСкладРасширеннаяПодсказка" id="128"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСчетУчетаНаСкладе" id="132">
+									<DataPath>СписокСобственнаяНоменклатура.СчетУчетаНаСкладе</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСчетУчетаНаСкладеКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСчетУчетаНаСкладеРасширеннаяПодсказка" id="134"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСчетУчетаВыручкиОтПродаж" id="135">
+									<DataPath>СписокСобственнаяНоменклатура.СчетУчетаВыручкиОтПродаж</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСчетУчетаВыручкиОтПродажКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСчетУчетаВыручкиОтПродажРасширеннаяПодсказка" id="137"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСчетУчетаСебестоимостиПродаж" id="138">
+									<DataPath>СписокСобственнаяНоменклатура.СчетУчетаСебестоимостиПродаж</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСчетУчетаСебестоимостиПродажКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСчетУчетаСебестоимостиПродажРасширеннаяПодсказка" id="140"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСчетУчетаНДСПриПродаже" id="141">
+									<DataPath>СписокСобственнаяНоменклатура.СчетУчетаНДСПриПродаже</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСчетУчетаНДСПриПродажеКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСчетУчетаНДСПриПродажеРасширеннаяПодсказка" id="143"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСтатьяДоходовРегл" id="144">
+									<DataPath>СписокСобственнаяНоменклатура.СтатьяДоходовРегл</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСтатьяДоходовРеглКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСтатьяДоходовРеглРасширеннаяПодсказка" id="146"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСчетУчетаВПути" id="150">
+									<DataPath>СписокСобственнаяНоменклатура.СчетУчетаВПути</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСчетУчетаВПутиКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСчетУчетаВПутиРасширеннаяПодсказка" id="152"/>
+								</LabelField>
+								<LabelField name="СписокСобственнаяНоменклатураСчетУчетаНДСВПути" id="153">
+									<DataPath>СписокСобственнаяНоменклатура.СчетУчетаНДСВПути</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>НДС товаров в пути</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокСобственнаяНоменклатураСчетУчетаНДСВПутиКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="СписокСобственнаяНоменклатураСчетУчетаНДСВПутиРасширеннаяПодсказка" id="155"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНоменклатураПереданнаяНаКомиссию" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура, переданная на комиссию</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номенклатура переданная на комиссию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНоменклатураПереданнаяНаКомиссиюРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Table name="СписокНоменклатураПереданная" id="64">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокНоменклатураПереданная</DataPath>
+							<RowPictureDataPath>СписокНоменклатураПереданная.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокНоменклатураПереданнаяКонтекстноеМеню" id="65"/>
+							<AutoCommandBar name="СписокНоменклатураПереданнаяКоманднаяПанель" id="66"/>
+							<ExtendedTooltip name="СписокНоменклатураПереданнаяРасширеннаяПодсказка" id="67"/>
+							<SearchStringAddition name="СписокНоменклатураПереданнаяСтрокаПоиска" id="68">
+								<AdditionSource>
+									<Item>СписокНоменклатураПереданная</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНоменклатураПереданнаяСтрокаПоискаКонтекстноеМеню" id="71"/>
+								<ExtendedTooltip name="СписокНоменклатураПереданнаяСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокНоменклатураПереданнаяСостояниеПросмотра" id="73">
+								<AdditionSource>
+									<Item>СписокНоменклатураПереданная</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНоменклатураПереданнаяСостояниеПросмотраКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="СписокНоменклатураПереданнаяСостояниеПросмотраРасширеннаяПодсказка" id="77"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокНоменклатураПереданнаяУправлениеПоиском" id="78">
+								<AdditionSource>
+									<Item>СписокНоменклатураПереданная</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНоменклатураПереданнаяУправлениеПоискомКонтекстноеМеню" id="81"/>
+								<ExtendedTooltip name="СписокНоменклатураПереданнаяУправлениеПоискомРасширеннаяПодсказка" id="82"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокНоменклатураПереданнаяОрганизация" id="83">
+									<DataPath>СписокНоменклатураПереданная.Организация</DataPath>
+									<ContextMenu name="СписокНоменклатураПереданнаяОрганизацияКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="СписокНоменклатураПереданнаяОрганизацияРасширеннаяПодсказка" id="85"/>
+								</LabelField>
+								<LabelField name="СписокНоменклатураПереданнаяСчетУчетаПередачиНаКомиссию" id="89">
+									<DataPath>СписокНоменклатураПереданная.СчетУчетаПередачиНаКомиссию</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокНоменклатураПереданнаяСчетУчетаПередачиНаКомиссиюКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="СписокНоменклатураПереданнаяСчетУчетаПередачиНаКомиссиюРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+								<LabelField name="СписокНоменклатураПереданнаяСчетУчетаВыручкиОтПродаж" id="92">
+									<DataPath>СписокНоменклатураПереданная.СчетУчетаВыручкиОтПродаж</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокНоменклатураПереданнаяСчетУчетаВыручкиОтПродажКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="СписокНоменклатураПереданнаяСчетУчетаВыручкиОтПродажРасширеннаяПодсказка" id="94"/>
+								</LabelField>
+								<LabelField name="СписокНоменклатураПереданнаяСчетУчетаСебестоимостиПродаж" id="95">
+									<DataPath>СписокНоменклатураПереданная.СчетУчетаСебестоимостиПродаж</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокНоменклатураПереданнаяСчетУчетаСебестоимостиПродажКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="СписокНоменклатураПереданнаяСчетУчетаСебестоимостиПродажРасширеннаяПодсказка" id="97"/>
+								</LabelField>
+								<LabelField name="СписокНоменклатураПереданнаяСчетУчетаНДСПриПродаже" id="98">
+									<DataPath>СписокНоменклатураПереданная.СчетУчетаНДСПриПродаже</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокНоменклатураПереданнаяСчетУчетаНДСПриПродажеКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="СписокНоменклатураПереданнаяСчетУчетаНДСПриПродажеРасширеннаяПодсказка" id="100"/>
+								</LabelField>
+								<LabelField name="СписокНоменклатураПереданнаяСтатьяДоходовРегл" id="101">
+									<DataPath>СписокНоменклатураПереданная.СтатьяДоходовРегл</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокНоменклатураПереданнаяСтатьяДоходовРеглКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="СписокНоменклатураПереданнаяСтатьяДоходовРеглРасширеннаяПодсказка" id="103"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокСобственнаяНоменклатура" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список собственная номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ПорядокОтраженияНоменклатуры</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ГруппаФинансовогоУчета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа финансового учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГруппыФинансовогоУчетаНоменклатуры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокНоменклатураПереданная" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список номенклатура переданная</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ПорядокОтраженияНоменклатурыПереданнойНаКомиссию</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

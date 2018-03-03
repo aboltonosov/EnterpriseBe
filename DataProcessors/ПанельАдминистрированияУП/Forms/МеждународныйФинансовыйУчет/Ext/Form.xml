@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="53">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="99"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="5">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление параметрами международного финансового учета.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="100"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="55">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа справка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="101"/>
+					<ChildItems>
+						<Button name="Справка" id="57">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="102"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользоватьМеждународныйФинансовыйУчет" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать международный финансовый учет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать международный финансовый учет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользоватьМеждународныйФинансовыйУчетExtendedTooltip" id="111"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИспользоватьМеждународныйФинансовыйУчет1" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать международный финансовый учет1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать международный финансовый учет1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИспользоватьМеждународныйФинансовыйУчет1ExtendedTooltip" id="112"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьМеждународныйФинансовыйУчет" id="1">
+							<DataPath>НаборКонстант.ИспользоватьМеждународныйФинансовыйУчет</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Международный финансовый учет</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подготовка отчетности в соответствии с принципами МСФО или иными правилами, построенными на основе МСФО.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьМеждународныйФинансовыйУчетКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИспользоватьМеждународныйФинансовыйУчетExtendedTooltip" id="113">
+								<AutoMaxWidth>false</AutoMaxWidth>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ИспользоватьМеждународныйФинансовыйУчетПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИспользоватьМеждународныйФинансовыйУчет2" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать международный финансовый учет2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать международный финансовый учет2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИспользоватьМеждународныйФинансовыйУчет2ExtendedTooltip" id="115"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="10">
+							<Width>2</Width>
+							<Height>1</Height>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="Декорация1ExtendedTooltip" id="116"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаФормированиеПроводокМеждународногоУчета" id="151">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формирование проводок международного учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формирование проводок международного учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФормированиеПроводокМеждународногоУчетаРасширеннаяПодсказка" id="152"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаФормированиеПроводокМеждународногоУчета1" id="153">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формирование проводок международного учета1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формирование проводок международного учета1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФормированиеПроводокМеждународногоУчета1РасширеннаяПодсказка" id="154"/>
+					<ChildItems>
+						<CheckBoxField name="ФормироватьПроводкиМеждународногоУчетаПоДаннымОперативного" id="157">
+							<DataPath>НаборКонстант.ФормироватьПроводкиМеждународногоУчетаПоДаннымОперативного</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проводки по данным оперативного учета</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формировать проводки международного учета отражением хозяйственных операций оперативного учета.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФормироватьПроводкиМеждународногоУчетаПоДаннымОперативногоКонтекстноеМеню" id="158"/>
+							<ExtendedTooltip name="ФормироватьПроводкиМеждународногоУчетаПоДаннымОперативногоРасширеннаяПодсказка" id="159">
+								<HorizontalStretch>true</HorizontalStretch>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ФормироватьПроводкиМеждународногоУчетаПоДаннымОперативногоПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаФормированиеПроводокМеждународногоУчета2" id="155">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формирование проводок международного учета1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формирование проводок международного учета1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФормированиеПроводокМеждународногоУчета2РасширеннаяПодсказка" id="156"/>
+					<ChildItems>
+						<CheckBoxField name="ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированного" id="163">
+							<DataPath>НаборКонстант.ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированного</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проводки по данным регламентированного учета</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формировать проводки международного учета трансляцией проводок регл. учета.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированногоКонтекстноеМеню" id="164"/>
+							<ExtendedTooltip name="ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированногоРасширеннаяПодсказка" id="165">
+								<HorizontalStretch>true</HorizontalStretch>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированногоПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаКомментарийПроводкиМеждународногоПоДаннымРегл" id="178">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа комментарий проводки международного по данным регл</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа комментарий проводки международного по данным регл</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомментарийПроводкиМеждународногоПоДаннымРеглРасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияКомментарийПроводкиМеждународногоПоДаннымРегл" id="180">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация комментарий проводки международного по данным регл</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияКомментарийПроводкиМеждународногоПоДаннымРеглКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ДекорацияКомментарийПроводкиМеждународногоПоДаннымРеглРасширеннаяПодсказка" id="182"/>
+								</PictureDecoration>
+								<LabelDecoration name="КомментарийИспользоватьПроводкиМеждународногоПоДаннымРегл" id="183">
+									<MaxWidth>40</MaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для использования этой опции, необходимо включить "Регламентированный учет" в разделе "НСИ и администрирование - "Регламентированный учет".</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КомментарийИспользоватьПроводкиМеждународногоПоДаннымРеглКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="КомментарийИспользоватьПроводкиМеждународногоПоДаннымРеглРасширеннаяПодсказка" id="185"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВалютыУчета" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВалютыУчетаExtendedTooltip" id="118"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВалютыФункциональнаяИПредставления" id="171">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа валюты функциональная и представления</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа валюты функциональная и представления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВалютыФункциональнаяИПредставленияРасширеннаяПодсказка" id="172"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВалютаФункциональная" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта функциональная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта функциональная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалютаФункциональнаяExtendedTooltip" id="119">
+								<HorizontalStretch>true</HorizontalStretch>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Валюта, используемая в основной экономической среде, в которой предприятие осуществляет свою деятельность. Функциональная валюта международного финансового учета — это валюта, в которой предприятие осуществляет большую часть своих операций.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<ChildItems>
+								<InputField name="ВалютаФункциональная" id="19">
+									<DataPath>НаборКонстант.ВалютаФункциональная</DataPath>
+									<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+									<WarningOnEdit>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменять валюту после начала работы с системой не рекомендуется</v8:content>
+										</v8:item>
+									</WarningOnEdit>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>9</MaxWidth>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ВалютаФункциональнаяКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ВалютаФункциональнаяExtendedTooltip" id="120"/>
+									<Events>
+										<Event name="OnChange">ВалютаФункциональнаяПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалютаПредставления" id="169">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта представления</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта представления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалютаПредставленияРасширеннаяПодсказка" id="170">
+								<HorizontalStretch>true</HorizontalStretch>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Валюта, в которой представляется международная финансовая отчетность.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<ChildItems>
+								<InputField name="ВалютаПредставления" id="23">
+									<DataPath>НаборКонстант.ВалютаПредставления</DataPath>
+									<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+									<WarningOnEdit>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменять валюту после начала работы с системой не рекомендуется</v8:content>
+										</v8:item>
+									</WarningOnEdit>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>9</MaxWidth>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ВалютаПредставленияКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ВалютаПредставленияExtendedTooltip" id="123"/>
+									<Events>
+										<Event name="OnChange">ВалютаПредставленияПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОткрытьВалюты" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа открыть валюты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа открыть валюты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОткрытьВалютыExtendedTooltip" id="126"/>
+					<ChildItems>
+						<Button name="ОткрытьВалюты" id="15">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьВалюты</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьВалютыExtendedTooltip" id="127">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Добавление, редактирование, удаление валют, используемых при расчетах на предприятии.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчет" id="173">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать документы внеоборотных активов международный учет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать документы внеоборотных активов международный учет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчетРасширеннаяПодсказка" id="174"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчет" id="175">
+					<DataPath>НаборКонстант.ИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчет</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учет внеоборотных активов</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование отдельных документов ведения основных средств и нематериальных активов для международного учета.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчетКонтекстноеМеню" id="176"/>
+					<ExtendedTooltip name="ИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчетРасширеннаяПодсказка" id="177">
+						<AutoMaxWidth>false</AutoMaxWidth>
+					</ExtendedTooltip>
+					<Events>
+						<Event name="OnChange">ИспользоватьДокументыВнеоборотныхАктивовМеждународныйУчетПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВыгрузкаЗагрузкаМоделиУчета" id="129">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка загрузка модели учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валюты учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыгрузкаЗагрузкаМоделиУчетаРасширеннаяПодсказка" id="130"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЗагрузитьМодельУчета" id="139">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузить модель учета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа валюта представления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗагрузитьМодельУчетаРасширеннаяПодсказка" id="140"/>
+					<ChildItems>
+						<Button name="ЗагрузитьМодельУчета" id="149">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЗагрузитьМодельУчета</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ЗагрузитьМодельУчетаРасширеннаяПодсказка" id="150">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Загрузка из файла методической модели учета: плана счетов, шаблонов проводок, финансовых отчетов, групп финансового учета, статей ДДС, доходов, расходов, активов и пассивов.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыгрузитьМодельУчета" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа валюта функциональная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа валюта функциональная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыгрузитьМодельУчетаРасширеннаяПодсказка" id="132"/>
+					<ChildItems>
+						<Button name="ВыгрузитьМодельУчетаВФайл" id="147">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ВыгрузитьМодельУчета</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ВыгрузитьМодельУчетаВФайлРасширеннаяПодсказка" id="148">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выгрузка в файл методической модели учета: плана счетов, шаблонов проводок, финансовых отчетов, групп финансового учета, статей ДДС, доходов, расходов, активов и пассивов.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ВариантОбособленияМатериаловВПроизводстве.Ref</Field>
+				<Field>НаборКонстант.ВариантПриемкиТоваров.Ref</Field>
+				<Field>НаборКонстант.ВидКонтроляТоваровОрганизаций.Ref</Field>
+				<Field>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ВерсияВнешнегоМодуля</Field>
+				<Field>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ИмяКриптопровайдера</Field>
+				<Field>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ИспользоватьВнешнийМодуль</Field>
+				<Field>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ОтпечатокСертификатаОнлайнПроверки</Field>
+				<Field>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ТипКриптопровайдера</Field>
+				<Field>НаборКонстант.ДополнительнаяКолонкаПечатныхФормДокументов.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеЗаданийТорговымПредставителям.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеСоглашенийСКлиентами.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВЗакупках.Ref</Field>
+				<Field>НаборКонстант.ИспользованиеЭтаповОплатыВПродажах.Ref</Field>
+				<Field>НаборКонстант.МетодикаУправленияПроизводством.Ref</Field>
+				<Field>НаборКонстант.ОперацияПриЗакрытииКассовойСмены.Ref</Field>
+				<Field>НаборКонстант.ОтображениеСкидокВПечатныхФормахДокументовПродажи.Ref</Field>
+				<Field>НаборКонстант.ПериодABCКлассификацииНоменклатуры.Ref</Field>
+				<Field>НаборКонстант.ПериодABCКлассификацииПартнеров.Ref</Field>
+				<Field>НаборКонстант.ПериодXYZКлассификацииНоменклатуры.Ref</Field>
+				<Field>НаборКонстант.ПериодXYZКлассификацииПартнеров.Ref</Field>
+				<Field>НаборКонстант.ПериодРасчетаТоварныхОграничений.Ref</Field>
+				<Field>НаборКонстант.ПериодичностьВводаСезонныхКоэффициентов.Ref</Field>
+				<Field>НаборКонстант.ПериодичностьДляАнализаНоменклатурыПродаваемойСовместно.Ref</Field>
+				<Field>НаборКонстант.ПодпериодXYZКлассификацииНоменклатуры.Ref</Field>
+				<Field>НаборКонстант.ПодпериодXYZКлассификацииПартнеров.Ref</Field>
+				<Field>НаборКонстант.ПорядокОформленияНакладныхРасходныхОрдеров.Ref</Field>
+				<Field>НаборКонстант.ПровайдерSMS.Ref</Field>
+				<Field>НаборКонстант.РежимИспользованияИнформационнойБазы.Ref</Field>
+				<Field>НаборКонстант.РежимФормированияРасходныхОрдеров.Ref</Field>
+				<Field>НаборКонстант.СтоимостьТоваровПриОценкеРентабельностиПродажи.Ref</Field>
+				<Field>НаборКонстант.УдалитьКонтекстАвторизации.Ref</Field>
+				<Field>НаборКонстант.УдалитьКонтекстКриптографии.Ref</Field>
+				<Field>НаборКонстант.ФорматСохраненияРегистровУчета.Ref</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьВалюты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть справочник валют</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВалюты</Action>
+		</Command>
+		<Command name="ВыгрузитьМодельУчета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить модель учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить модель учета в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьМодельУчета</Action>
+		</Command>
+		<Command name="ЗагрузитьМодельУчета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить модель учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить модель учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьМодельУчета</Action>
+		</Command>
+	</Commands>
+</Form>

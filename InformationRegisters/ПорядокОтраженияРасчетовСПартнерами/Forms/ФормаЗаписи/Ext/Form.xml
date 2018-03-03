@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="43">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="44"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="45">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="46"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Организация" id="1">
+			<DataPath>Запись.Организация</DataPath>
+			<Width>34</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="28"/>
+		</InputField>
+		<InputField name="ГруппаФинансовогоУчета" id="5">
+			<DataPath>Запись.ГруппаФинансовогоУчета</DataPath>
+			<Width>34</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ГруппаФинансовогоУчетаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ГруппаФинансовогоУчетаExtendedTooltip" id="29"/>
+		</InputField>
+		<UsualGroup name="ГруппаГоризонтальная" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРасчетыСПоставщиками" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчеты с поставщиками</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчеты с поставщиками</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРасчетыСПоставщикамиExtendedTooltip" id="34"/>
+					<ChildItems>
+						<InputField name="СчетУчетаРасчетовСПоставщиками" id="18">
+							<DataPath>Запись.СчетУчетаРасчетовСПоставщиками</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Долг</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаРасчетовСПоставщикамиКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="СчетУчетаРасчетовСПоставщикамиExtendedTooltip" id="35"/>
+						</InputField>
+						<InputField name="СчетУчетаАвансовВыданных" id="20">
+							<DataPath>Запись.СчетУчетаАвансовВыданных</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авансы</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаАвансовВыданныхКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СчетУчетаАвансовВыданныхExtendedTooltip" id="36"/>
+						</InputField>
+						<InputField name="СчетУчетаРасчетовПоПретензиям" id="22">
+							<DataPath>Запись.СчетУчетаРасчетовПоПретензиям</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Претензии</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаРасчетовПоПретензиямКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СчетУчетаРасчетовПоПретензиямExtendedTooltip" id="37"/>
+						</InputField>
+						<InputField name="СчетУчетаРасчетовСПоставщикамиТара" id="26">
+							<DataPath>Запись.СчетУчетаРасчетовСПоставщикамиТара</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тара</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаРасчетовСПоставщикамиТараКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СчетУчетаРасчетовСПоставщикамиТараExtendedTooltip" id="38"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасчетыСКлиентами" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчеты с клиентами</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчеты с клиентами</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРасчетыСКлиентамиExtendedTooltip" id="30"/>
+					<ChildItems>
+						<InputField name="СчетУчетаРасчетовСКлиентами" id="7">
+							<DataPath>Запись.СчетУчетаРасчетовСКлиентами</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Долг</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаРасчетовСКлиентамиКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СчетУчетаРасчетовСКлиентамиExtendedTooltip" id="31"/>
+						</InputField>
+						<InputField name="СчетУчетаАвансовПолученных" id="9">
+							<DataPath>Запись.СчетУчетаАвансовПолученных</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авансы</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаАвансовПолученныхКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="СчетУчетаАвансовПолученныхExtendedTooltip" id="32"/>
+						</InputField>
+						<InputField name="СчетУчетаРасчетовСКлиентамиТара" id="24">
+							<DataPath>Запись.СчетУчетаРасчетовСКлиентамиТара</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тара</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаРасчетовСКлиентамиТараКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="СчетУчетаРасчетовСКлиентамиТараExtendedTooltip" id="33"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасчетыПоВознаграждению" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчеты по комиссии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчеты по вознаграждению</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРасчетыПоВознаграждениюExtendedTooltip" id="39"/>
+					<ChildItems>
+						<InputField name="СчетУчетаРасчетовПоВознаграждению" id="11">
+							<DataPath>Запись.СчетУчетаРасчетовПоВознаграждению</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вознаграждение</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаРасчетовПоВознаграждениюКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="СчетУчетаРасчетовПоВознаграждениюExtendedTooltip" id="40"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ПорядокОтраженияРасчетовСПартнерами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВозвратЗначенияБезЗаписи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возврат значения без записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

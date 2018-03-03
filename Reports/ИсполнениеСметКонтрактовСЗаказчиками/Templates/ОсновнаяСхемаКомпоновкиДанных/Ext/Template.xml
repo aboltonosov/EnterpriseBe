@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяКалькуляции</dataPath>
+			<field>СтатьяКалькуляции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПлан</dataPath>
+			<field>СуммаПлан</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГосударственныйКонтракт</dataPath>
+			<field>ГосударственныйКонтракт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтрактСЗаказчиком</dataPath>
+			<field>КонтрактСЗаказчиком</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контракт с заказчиком</v8:content>
+				</v8:item>
+			</title>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameters">
+						<dcscor:item>
+							<dcscor:choiceParameter>ТипДоговора</dcscor:choiceParameter>
+							<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыДоговоров.СПокупателем</dcscor:value>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчет</dataPath>
+			<field>БанковскийСчет</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФакт</dataPath>
+			<field>СуммаФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЗаявлено</dataPath>
+			<field>СуммаЗаявлено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявлено</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаявкаНаРасходованиеДенежныхСредств</dataPath>
+			<field>ЗаявкаНаРасходованиеДенежныхСредств</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетКасса</dataPath>
+			<field>БанковскийСчетКасса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Получатель</dataPath>
+			<field>Получатель</field>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>КонтрактыСЗаказчиками</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяКалькуляции</dataPath>
+				<field>СтатьяКалькуляции</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПлан</dataPath>
+				<field>СуммаПлан</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>План</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГосударственныйКонтракт</dataPath>
+				<field>ГосударственныйКонтракт</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонтрактСЗаказчиком</dataPath>
+				<field>КонтрактСЗаказчиком</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Контракт с заказчиком</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчет</dataPath>
+				<field>БанковскийСчет</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДанныеДоговора.Ссылка КАК КонтрактСЗаказчиком,
+	ДанныеДоговора.ГосударственныйКонтракт КАК ГосударственныйКонтракт,
+	ДанныеДоговора.БанковскийСчет,
+	ДанныеКалькуляции.СтатьяКалькуляции,
+	ДанныеКалькуляции.Сумма КАК СуммаПлан
+	
+ИЗ
+	Справочник.ДоговорыКонтрагентов.КалькуляцияЗатрат КАК ДанныеКалькуляции
+	
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.ДоговорыКонтрагентов КАК ДанныеДоговора
+	ПО
+		ДанныеКалькуляции.Ссылка = ДанныеДоговора.Ссылка
+	
+ГДЕ
+	ДанныеДоговора.ДоговорСУчастникомГОЗ
+	И ДанныеДоговора.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипыДоговоров.СПокупателем)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫбРАТЬ
+	ДанныеДоговора.Ссылка КАК КонтрактСЗаказчиком,
+	ДанныеДоговора.ГосударственныйКонтракт КАК ГосударственныйКонтракт,
+	ДанныеДоговора.БанковскийСчет,
+	ЗНАЧЕНИЕ(Справочник.СтатьиКалькуляции.ПустаяСсылка),
+	ДанныеДоговора.СуммаПрибыли КАК СуммаПлан
+	
+ИЗ
+	Справочник.ДоговорыКонтрагентов КАК ДанныеДоговора
+	
+ГДЕ
+	ДанныеДоговора.ДоговорСУчастникомГОЗ
+	И ДанныеДоговора.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипыДоговоров.СПокупателем)
+	И ДанныеДоговора.СуммаПрибыли &lt;&gt; 0</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>ПлатежиПоКонтрактам</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГосударственныйКонтракт</dataPath>
+				<field>ГосударственныйКонтракт</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчет</dataPath>
+				<field>БанковскийСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаФакт</dataPath>
+				<field>СуммаФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Факт</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяКалькуляции</dataPath>
+				<field>СтатьяКалькуляции</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонтрактСЗаказчиком</dataPath>
+				<field>КонтрактСЗаказчиком</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Контракт с заказчиком</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДенежныеСредства.БанковскийСчет КАК БанковскийСчет,
+	ДоговорыКонтрагентов.Ссылка КАК КонтрактСЗаказчиком,
+	БанковскиеСчета.ГосударственныйКонтракт,
+	ДенежныеСредства.СтатьяКалькуляции,
+	СУММА(ДенежныеСредства.Сумма) КАК СуммаФакт,
+	ДенежныеСредства.Регистратор
+	
+ИЗ
+	РегистрНакопления.ДенежныеСредстваБезналичные КАК ДенежныеСредства
+	
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.БанковскиеСчетаОрганизаций КАК БанковскиеСчета
+	ПО
+		БанковскиеСчета.Ссылка = ДенежныеСредства.БанковскийСчет
+		
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+	ПО
+		ДоговорыКонтрагентов.БанковскийСчет = БанковскиеСчета.Ссылка
+		И ДоговорыКонтрагентов.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипыДоговоров.СПокупателем)
+		И ДоговорыКонтрагентов.ДоговорСУчастникомГОЗ
+		
+ГДЕ
+	БанковскиеСчета.ОтдельныйСчетГОЗ
+	И ДенежныеСредства.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	
+СГРУППИРОВАТЬ ПО
+	ДенежныеСредства.БанковскийСчет,
+	БанковскиеСчета.ГосударственныйКонтракт,
+	ДоговорыКонтрагентов.Ссылка,
+	ДенежныеСредства.СтатьяКалькуляции,
+	ДенежныеСредства.Регистратор
+	
+ИМЕЮЩИЕ
+	СУММА(ДенежныеСредства.Сумма) &lt;&gt; 0
+	
+ОБЪЕДИНИТЬ ВСЕ
+	
+ВЫБРАТЬ
+	ДенежныеСредства.БанковскийСчет КАК БанковскийСчет,
+	ДоговорыКонтрагентов.Ссылка КАК КонтрактСЗаказчиком,
+	БанковскиеСчета.ГосударственныйКонтракт,
+	ДенежныеСредства.СтатьяКалькуляции,
+	СУММА(ДенежныеСредства.КСписанию) КАК СуммаФакт,
+	ДенежныеСредства.Регистратор
+	
+ИЗ
+	РегистрНакопления.ДенежныеСредстваБезналичные КАК ДенежныеСредства
+	
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.БанковскиеСчетаОрганизаций КАК БанковскиеСчета
+	ПО
+		БанковскиеСчета.Ссылка = ДенежныеСредства.БанковскийСчет
+		
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+	ПО
+		ДоговорыКонтрагентов.БанковскийСчет = БанковскиеСчета.Ссылка
+		И ДоговорыКонтрагентов.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипыДоговоров.СПокупателем)
+		И ДоговорыКонтрагентов.ДоговорСУчастникомГОЗ
+		
+ГДЕ
+	БанковскиеСчета.ОтдельныйСчетГОЗ
+	И ДенежныеСредства.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+	
+СГРУППИРОВАТЬ ПО
+	ДенежныеСредства.БанковскийСчет,
+	БанковскиеСчета.ГосударственныйКонтракт,
+	ДоговорыКонтрагентов.Ссылка,
+	ДенежныеСредства.СтатьяКалькуляции,
+	ДенежныеСредства.Регистратор
+	
+ИМЕЮЩИЕ
+	СУММА(ДенежныеСредства.КСписанию) &lt;&gt; 0</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>ЗаявкиПоКонтрактам</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаЗаявлено</dataPath>
+				<field>СуммаЗаявлено</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма заявлено</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЗаявкаНаРасходованиеДенежныхСредств</dataPath>
+				<field>ЗаявкаНаРасходованиеДенежныхСредств</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГосударственныйКонтракт</dataPath>
+				<field>ГосударственныйКонтракт</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчетКасса</dataPath>
+				<field>БанковскийСчетКасса</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Получатель</dataPath>
+				<field>Получатель</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчет</dataPath>
+				<field>БанковскийСчет</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Банковский счет</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Регистратор</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонтрактСЗаказчиком</dataPath>
+				<field>КонтрактСЗаказчиком</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Контракт с заказчиком</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяКалькуляции</dataPath>
+				<field>СтатьяКалькуляции</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Статья калькуляции</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДенежныеСредства.БанковскийСчетКасса КАК БанковскийСчет,
+	ДоговорыКонтрагентов.Ссылка КАК КонтрактСЗаказчиком,
+	БанковскиеСчета.ГосударственныйКонтракт,
+	ЕСТЬNULL(ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств.СтатьяКалькуляции, ЗНАЧЕНИЕ(Справочник.СтатьиКалькуляции.ПустаяСсылка)) КАК СтатьяКалькуляции,
+	ДенежныеСредства.СуммаОстаток КАК СуммаЗаявлено,
+	ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств КАК Регистратор
+	
+ИЗ
+	РегистрНакопления.ДенежныеСредстваКВыплате.Остатки() КАК ДенежныеСредства
+	
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.БанковскиеСчетаОрганизаций КАК БанковскиеСчета
+	ПО
+		БанковскиеСчета.Ссылка = ДенежныеСредства.БанковскийСчетКасса
+		
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+	ПО
+		ДоговорыКонтрагентов.БанковскийСчет = БанковскиеСчета.Ссылка
+		И ДоговорыКонтрагентов.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипыДоговоров.СПокупателем)
+		И ДоговорыКонтрагентов.ДоговорСУчастникомГОЗ
+		
+ГДЕ
+	БанковскиеСчета.ОтдельныйСчетГОЗ
+	И ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств ССЫЛКА Документ.ЗаявкаНаРасходованиеДенежныхСредств
+	
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДенежныеСредства.БанковскийСчетКасса КАК БанковскийСчет,
+	ДоговорыКонтрагентов.Ссылка КАК КонтрактСЗаказчиком,
+	БанковскиеСчета.ГосударственныйКонтракт,
+	ЕСТЬNULL(ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств.СтатьяКалькуляции, ЗНАЧЕНИЕ(Справочник.СтатьиКалькуляции.ПустаяСсылка)) КАК СтатьяКалькуляции,
+	ДенежныеСредства.СуммаОстаток КАК СуммаЗаявлено,
+	ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств КАК Регистратор
+	
+ИЗ
+	РегистрНакопления.ДенежныеСредстваКВыплате.Остатки() КАК ДенежныеСредства
+	
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.БанковскиеСчетаОрганизаций КАК БанковскиеСчета
+	ПО
+		БанковскиеСчета.Ссылка = ДенежныеСредства.БанковскийСчетКасса
+		
+	ЛЕВОЕ СОЕДИНЕНИЕ
+		Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+	ПО
+		ДоговорыКонтрагентов.Ссылка = ВЫРАЗИТЬ(ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств КАК Документ.РаспоряжениеНаПеремещениеДенежныхСредств).ДоговорСЗаказчиком
+		И ДоговорыКонтрагентов.БанковскийСчет = БанковскиеСчета.Ссылка
+		И ДоговорыКонтрагентов.ТипДоговора = ЗНАЧЕНИЕ(Перечисление.ТипыДоговоров.СПокупателем)
+		И ДоговорыКонтрагентов.ДоговорСУчастникомГОЗ
+		
+ГДЕ
+	БанковскиеСчета.ОтдельныйСчетГОЗ
+	И ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств ССЫЛКА Документ.РаспоряжениеНаПеремещениеДенежныхСредств
+	И ВЫРАЗИТЬ(ДенежныеСредства.ЗаявкаНаРасходованиеДенежныхСредств КАК Документ.РаспоряжениеНаПеремещениеДенежныхСредств).ТипПлатежаФЗ275 &lt;&gt; ЗНАЧЕНИЕ(Справочник.ТипыПлатежейФЗ275.СписаниеНаВозмещениеЗатратЗаСчетСобственныхСредств)</query>
+		</item>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ИсполнениеПлана</dataPath>
+		<expression>100 * (СуммаФакт + СуммаЗаявлено) / СуммаПлан</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Исполнение плана, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=10; ЧДЦ=1</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДоступныйОстаток</dataPath>
+		<expression>СуммаПлан - СуммаФакт - СуммаЗаявлено</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Доступный остаток</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>СуммаПлан</dataPath>
+		<expression>Сумма(СуммаПлан)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФакт</dataPath>
+		<expression>Сумма(СуммаФакт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаЗаявлено</dataPath>
+		<expression>Сумма(СуммаЗаявлено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсполнениеПлана</dataPath>
+		<expression>ВЫБОР КОГДА ЕСТЬNULL(Сумма(СуммаПлан), 0) &lt;&gt; 0 ТОГДА 100 * 
+(ЕСТЬNULL(Сумма(СуммаФакт), 0) + ЕСТЬNULL(Сумма(СуммаЗаявлено), 0)) / ЕСТЬNULL(Сумма(СуммаПлан), 0) ИНАЧЕ 0 КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДоступныйОстаток</dataPath>
+		<expression>Сумма(СуммаПлан) - ЕСТЬNULL(Сумма(СуммаФакт), 0) - ЕСТЬNULL(Сумма(СуммаЗаявлено), 0))</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ИсполнениеСметКонтрактовСЗаказчиками</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Исполнение смет контрактов с заказчиками по госконтрактам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПлан</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаФакт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаЗаявлено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИсполнениеПлана</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоступныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>bc538c76-06b5-477f-872e-56bcecd9294e</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">КонтрактСЗаказчиком</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>99ed4176-3058-4b8a-a5f1-f360a59539d6</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ГосударственныйКонтракт</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтатьяКалькуляции</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>3d47b74a-c5b7-4235-bdd3-430bec2df1cd</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>0ad385cd-2572-440b-af7b-e828ed134d44</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтатьяКалькуляции</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СтатьяКалькуляции</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СтатьиКалькуляции.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прибыль</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнение смет контрактов с заказчиками</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КонтрактСЗаказчиком</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ГосударственныйКонтракт</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>БанковскийСчет</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КонтрактСЗаказчиком.ВалютаВзаиморасчетов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СтатьяКалькуляции</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Организация" id="3">
+			<DataPath>Запись.Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="45"/>
+		</InputField>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка применяется с</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодExtendedTooltip" id="46"/>
+		</InputField>
+		<UsualGroup name="ГруппаНалог" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налог на имущество</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаНалогExtendedTooltip" id="47"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНалоговаяСтавка" id="22">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа налоговая ставка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНалоговаяСтавкаExtendedTooltip" id="48"/>
+					<ChildItems>
+						<InputField name="НалоговаяСтавка" id="5">
+							<DataPath>Запись.НалоговаяСтавка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налоговая ставка</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="НалоговаяСтавкаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НалоговаяСтавкаExtendedTooltip" id="49"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияЗнакПроцента" id="23">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияЗнакПроцентаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДекорацияЗнакПроцентаExtendedTooltip" id="50"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНалоговыеЛьготы" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоговые льготы по налогу на имущество</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоговые льготы по налогу на имущество</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаНалоговыеЛьготыExtendedTooltip" id="51"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОсвобождениеОтНалогообложения" id="26">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсвобождениеОтНалогообложенияExtendedTooltip" id="52"/>
+					<ChildItems>
+						<CheckBoxField name="ОсвобождениеОтНалогообложения" id="27">
+							<DataPath>Запись.ОсвобождениеОтНалогообложения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Освобождение от налогообложения, код льготы</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОсвобождениеОтНалогообложенияКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ОсвобождениеОтНалогообложенияExtendedTooltip" id="53"/>
+							<Events>
+								<Event name="OnChange">ОсвобождениеОтНалогообложенияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="КодНалоговойЛьготыОсвобождениеОтНалогообложения" id="29">
+							<DataPath>Запись.КодНалоговойЛьготыОсвобождениеОтНалогообложения</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="КодНалоговойЛьготыОсвобождениеОтНалогообложенияКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="КодНалоговойЛьготыОсвобождениеОтНалогообложенияExtendedTooltip" id="54"/>
+							<Events>
+								<Event name="StartChoice">КодНалоговойЛьготыОсвобождениеОтНалогообложенияНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСнижениеНалоговойСтавки" id="31">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСнижениеНалоговойСтавкиExtendedTooltip" id="55"/>
+					<ChildItems>
+						<CheckBoxField name="СнижениеНалоговойСтавки" id="32">
+							<DataPath>Запись.СнижениеНалоговойСтавки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Снижение налоговой ставки до</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СнижениеНалоговойСтавкиКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СнижениеНалоговойСтавкиExtendedTooltip" id="56"/>
+							<Events>
+								<Event name="OnChange">СнижениеНалоговойСтавкиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="СниженнаяНалоговаяСтавка" id="34">
+							<DataPath>Запись.СниженнаяНалоговаяСтавка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>6</Width>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="СниженнаяНалоговаяСтавкаКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="СниженнаяНалоговаяСтавкаExtendedTooltip" id="57"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияСниженнаяНалоговаяСтавкаПроцент" id="36">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияСниженнаяНалоговаяСтавкаПроцентКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ДекорацияСниженнаяНалоговаяСтавкаПроцентExtendedTooltip" id="58"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУменьшениеСуммыНалогаВПроцентах" id="38">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУменьшениеСуммыНалогаВПроцентахExtendedTooltip" id="59"/>
+					<ChildItems>
+						<CheckBoxField name="УменьшениеСуммыНалогаВПроцентах" id="39">
+							<DataPath>Запись.УменьшениеСуммыНалогаВПроцентах</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уменьшение суммы налога на  </v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УменьшениеСуммыНалогаВПроцентахКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="УменьшениеСуммыНалогаВПроцентахExtendedTooltip" id="60"/>
+							<Events>
+								<Event name="OnChange">УменьшениеСуммыНалогаВПроцентахПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ПроцентУменьшения" id="41">
+							<DataPath>Запись.ПроцентУменьшения</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>6</Width>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="ПроцентУменьшенияКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ПроцентУменьшенияExtendedTooltip" id="61"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияПроцентУменьшенияПроцент" id="43">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПроцентУменьшенияПроцентКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ДекорацияПроцентУменьшенияПроцентExtendedTooltip" id="62"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="ПриНаличии1ЛьготыЗаполнять1ЛистРаздела2" id="63">
+					<DataPath>Запись.ПриНаличии1ЛьготыЗаполнять1ЛистРаздела2</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПриНаличии1ЛьготыЗаполнять1ЛистРаздела2КонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ПриНаличии1ЛьготыЗаполнять1ЛистРаздела2РасширеннаяПодсказка" id="65"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СтавкиНалогаНаИмущество</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

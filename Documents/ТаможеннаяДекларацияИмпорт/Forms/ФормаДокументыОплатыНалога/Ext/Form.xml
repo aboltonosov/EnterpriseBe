@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПеренестиВДокумент" id="17">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПеренестиВДокумент</CommandName>
+				<ExtendedTooltip name="ФормаПеренестиВДокументExtendedTooltip" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДокументыРасчетаБрокераСТаможней" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДокументыРасчетаБрокераСТаможней</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДокументыРасчетаБрокераСТаможнейКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДокументыРасчетаБрокераСТаможнейКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ДокументыРасчетаБрокераСТаможнейРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ДокументыРасчетаБрокераСТаможнейСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ДокументыРасчетаБрокераСТаможней</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыРасчетаБрокераСТаможнейСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ДокументыРасчетаБрокераСТаможнейСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДокументыРасчетаБрокераСТаможнейСостояниеПросмотра" id="28">
+				<AdditionSource>
+					<Item>ДокументыРасчетаБрокераСТаможней</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыРасчетаБрокераСТаможнейСостояниеПросмотраКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ДокументыРасчетаБрокераСТаможнейСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДокументыРасчетаБрокераСТаможнейУправлениеПоиском" id="31">
+				<AdditionSource>
+					<Item>ДокументыРасчетаБрокераСТаможней</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыРасчетаБрокераСТаможнейУправлениеПоискомКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ДокументыРасчетаБрокераСТаможнейУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">ДокументыРасчетаБрокераСТаможнейПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДокументыРасчетаБрокераСТаможнейНомерДокумента" id="11">
+					<DataPath>ДокументыРасчетаБрокераСТаможней.НомерДокумента</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер платежно - расчетного документа, которым оплачен аванс от клиента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ДокументыРасчетаБрокераСТаможнейНомерДокументаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ДокументыРасчетаБрокераСТаможнейНомерДокументаРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ДокументыРасчетаБрокераСТаможнейДатаДокумента" id="13">
+					<DataPath>ДокументыРасчетаБрокераСТаможней.ДатаДокумента</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата платежно - расчетного документа, которым оплачен аванс от клиента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>9</Width>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ДокументыРасчетаБрокераСТаможнейДатаДокументаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДокументыРасчетаБрокераСТаможнейДатаДокументаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДокументыРасчетаБрокераСТаможней" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы расчета брокера с таможней</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерДокумента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаДокумента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиВДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВДокумент</Action>
+		</Command>
+	</Commands>
+</Form>

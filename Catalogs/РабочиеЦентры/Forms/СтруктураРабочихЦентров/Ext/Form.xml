@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Структура рабочих центров</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandSet>
+		<ExcludedCommand>CancelSearch</ExcludedCommand>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>CreateFolder</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+		<ExcludedCommand>Find</ExcludedCommand>
+		<ExcludedCommand>HierarchicalList</ExcludedCommand>
+		<ExcludedCommand>LevelDown</ExcludedCommand>
+		<ExcludedCommand>LevelUp</ExcludedCommand>
+		<ExcludedCommand>List</ExcludedCommand>
+		<ExcludedCommand>ListSettings</ExcludedCommand>
+		<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+		<ExcludedCommand>MoveItem</ExcludedCommand>
+		<ExcludedCommand>OutputList</ExcludedCommand>
+		<ExcludedCommand>Refresh</ExcludedCommand>
+		<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>Tree</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="59"/>
+			<ChildItems>
+				<InputField name="ОтборПодразделение" id="44">
+					<DataPath>ОтборПодразделение</DataPath>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборПодразделениеКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ОтборПодразделениеExtendedTooltip" id="60"/>
+					<Events>
+						<Event name="OnChange">ОтборПодразделениеПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСписокСправочников" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа список справочников</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа список справочников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСписокСправочниковExtendedTooltip" id="61"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВидыРабочихЦентров" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды рабочих центров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа виды рабочих центров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаВидыРабочихЦентровExtendedTooltip" id="62"/>
+					<ChildItems>
+						<Table name="ВидыРабочихЦентров" id="10">
+							<Representation>Tree</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ВидыРабочихЦентров</DataPath>
+							<RowPictureDataPath>ВидыРабочихЦентров.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ВидыРабочихЦентровКонтекстноеМеню" id="11">
+								<ChildItems>
+									<Button name="ВидыРабочихЦентровКонтекстноеМенюОбновить" id="52">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ВидыРабочихЦентров.StandardCommand.Refresh</CommandName>
+										<ExtendedTooltip name="ВидыРабочихЦентровКонтекстноеМенюОбновитьExtendedTooltip" id="63"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ВидыРабочихЦентровКоманднаяПанель" id="12">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ВидыРабочихЦентровСоздать" id="34">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ВидыРабочихЦентров.StandardCommand.Create</CommandName>
+										<ExtendedTooltip name="ВидыРабочихЦентровСоздатьExtendedTooltip" id="64"/>
+									</Button>
+									<Button name="ВидыРабочихЦентровСоздатьГруппу" id="51">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ВидыРабочихЦентров.StandardCommand.CreateFolder</CommandName>
+										<ExtendedTooltip name="ВидыРабочихЦентровСоздатьГруппуExtendedTooltip" id="65"/>
+									</Button>
+									<Button name="ВидыРабочихЦентровИзменить" id="35">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ВидыРабочихЦентров.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="ВидыРабочихЦентровИзменитьExtendedTooltip" id="66"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВидыРабочихЦентровExtendedTooltip" id="67"/>
+							<SearchStringAddition name="ВидыРабочихЦентровСтрокаПоиска" id="83">
+								<AdditionSource>
+									<Item>ВидыРабочихЦентров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыРабочихЦентровСтрокаПоискаКонтекстноеМеню" id="84"/>
+								<ExtendedTooltip name="ВидыРабочихЦентровСтрокаПоискаРасширеннаяПодсказка" id="85"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВидыРабочихЦентровСостояниеПросмотра" id="86">
+								<AdditionSource>
+									<Item>ВидыРабочихЦентров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыРабочихЦентровСостояниеПросмотраКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="ВидыРабочихЦентровСостояниеПросмотраРасширеннаяПодсказка" id="88"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВидыРабочихЦентровУправлениеПоиском" id="89">
+								<AdditionSource>
+									<Item>ВидыРабочихЦентров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыРабочихЦентровУправлениеПоискомКонтекстноеМеню" id="90"/>
+								<ExtendedTooltip name="ВидыРабочихЦентровУправлениеПоискомРасширеннаяПодсказка" id="91"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ВидыРабочихЦентровПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ВидыРабочихЦентровНаименование" id="13">
+									<DataPath>ВидыРабочихЦентров.Наименование</DataPath>
+									<ContextMenu name="ВидыРабочихЦентровНаименованиеКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ВидыРабочихЦентровНаименованиеExtendedTooltip" id="68"/>
+								</LabelField>
+								<LabelField name="ВидыРабочихЦентровКоличествоРабочихЦентров" id="46">
+									<DataPath>ВидыРабочихЦентров.КоличествоРабочихЦентров</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество рабочих центров.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>5</Width>
+									<ContextMenu name="ВидыРабочихЦентровКоличествоРабочихЦентровКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ВидыРабочихЦентровКоличествоРабочихЦентровExtendedTooltip" id="69"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРабочиеЦентры" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочие центры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа рабочие центры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаРабочиеЦентрыExtendedTooltip" id="70"/>
+					<ChildItems>
+						<Table name="РабочиеЦентры" id="36">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>РабочиеЦентры</DataPath>
+							<RowPictureDataPath>РабочиеЦентры.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="РабочиеЦентрыКонтекстноеМеню" id="37">
+								<ChildItems>
+									<Button name="РабочиеЦентрыКонтекстноеМенюИзменитьВыделенные" id="58">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+										<ExtendedTooltip name="РабочиеЦентрыКонтекстноеМенюИзменитьВыделенныеExtendedTooltip" id="71"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="РабочиеЦентрыКоманднаяПанель" id="38">
+								<ChildItems>
+									<Button name="РабочиеЦентрыОтборРабочихЦентровПоВидуРабочегоЦентра" id="50">
+										<Type>CommandBarButton</Type>
+										<Check>true</Check>
+										<CommandName>Form.Command.ОтборРабочихЦентровПоВидуРабочегоЦентра</CommandName>
+										<ExtendedTooltip name="РабочиеЦентрыОтборРабочихЦентровПоВидуРабочегоЦентраExtendedTooltip" id="72"/>
+									</Button>
+									<ButtonGroup name="РабочиеЦентрыГруппаКомандыФормы" id="55">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Рабочие центры группа команды формы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Рабочие центры группа команды формы</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="РабочиеЦентрыГруппаКомандыФормыExtendedTooltip" id="73"/>
+										<ChildItems>
+											<Button name="ФормаПоказатьМножественноеВыделение" id="101">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.StandardCommand.ShowMultipleSelection</CommandName>
+												<ExtendedTooltip name="ФормаПоказатьМножественноеВыделениеРасширеннаяПодсказка" id="102"/>
+											</Button>
+											<Button name="ФормаИзменитьФорму" id="103">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+												<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="104"/>
+											</Button>
+											<Button name="ФормаСохранитьЗначения" id="105">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.StandardCommand.SaveValues</CommandName>
+												<ExtendedTooltip name="ФормаСохранитьЗначенияРасширеннаяПодсказка" id="106"/>
+											</Button>
+											<Button name="ФормаВосстановитьЗначения" id="107">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+												<ExtendedTooltip name="ФормаВосстановитьЗначенияРасширеннаяПодсказка" id="108"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="РабочиеЦентрыИзменитьВыделенные" id="57">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+										<ExtendedTooltip name="РабочиеЦентрыИзменитьВыделенныеExtendedTooltip" id="74"/>
+									</Button>
+									<Button name="РабочиеЦентрыСправка" id="56">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.StandardCommand.Help</CommandName>
+										<ExtendedTooltip name="РабочиеЦентрыСправкаExtendedTooltip" id="75"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РабочиеЦентрыExtendedTooltip" id="76"/>
+							<SearchStringAddition name="РабочиеЦентрыСтрокаПоиска" id="92">
+								<AdditionSource>
+									<Item>РабочиеЦентры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РабочиеЦентрыСтрокаПоискаКонтекстноеМеню" id="93"/>
+								<ExtendedTooltip name="РабочиеЦентрыСтрокаПоискаРасширеннаяПодсказка" id="94"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РабочиеЦентрыСостояниеПросмотра" id="95">
+								<AdditionSource>
+									<Item>РабочиеЦентры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РабочиеЦентрыСостояниеПросмотраКонтекстноеМеню" id="96"/>
+								<ExtendedTooltip name="РабочиеЦентрыСостояниеПросмотраРасширеннаяПодсказка" id="97"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РабочиеЦентрыУправлениеПоиском" id="98">
+								<AdditionSource>
+									<Item>РабочиеЦентры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РабочиеЦентрыУправлениеПоискомКонтекстноеМеню" id="99"/>
+								<ExtendedTooltip name="РабочиеЦентрыУправлениеПоискомРасширеннаяПодсказка" id="100"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">РабочиеЦентрыПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РабочиеЦентрыНаименование" id="39">
+									<DataPath>РабочиеЦентры.Наименование</DataPath>
+									<ContextMenu name="РабочиеЦентрыНаименованиеКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="РабочиеЦентрыНаименованиеExtendedTooltip" id="77"/>
+								</LabelField>
+								<LabelField name="РабочиеЦентрыВидРабочегоЦентра" id="48">
+									<DataPath>РабочиеЦентры.ВидРабочегоЦентра</DataPath>
+									<ContextMenu name="РабочиеЦентрыВидРабочегоЦентраКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="РабочиеЦентрыВидРабочегоЦентраРасширеннаяПодсказка" id="78"/>
+								</LabelField>
+								<LabelField name="РабочиеЦентрыВидРабочегоЦентраПодразделение" id="41">
+									<DataPath>РабочиеЦентры.ВидРабочегоЦентра.Подразделение</DataPath>
+									<ContextMenu name="РабочиеЦентрыВидРабочегоЦентраПодразделениеКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="РабочиеЦентрыВидРабочегоЦентраПодразделениеExtendedTooltip" id="79"/>
+								</LabelField>
+								<LabelField name="РабочиеЦентрыСсылка" id="80">
+									<DataPath>РабочиеЦентры.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="РабочиеЦентрыСсылкаКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="РабочиеЦентрыСсылкаРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РабочиеЦентры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочие центры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>РабочиеЦентры.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникРабочиеЦентры.Ссылка КАК Ссылка,
+	СправочникРабочиеЦентры.ВерсияДанных КАК ВерсияДанных,
+	СправочникРабочиеЦентры.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникРабочиеЦентры.Предопределенный КАК Предопределенный,
+	СправочникРабочиеЦентры.Родитель КАК Родитель,
+	СправочникРабочиеЦентры.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникРабочиеЦентры.Наименование КАК Наименование,
+	СправочникРабочиеЦентры.ВидРабочегоЦентра КАК ВидРабочегоЦентра,
+	СправочникРабочиеЦентры.Календарь КАК ГрафикРаботы,
+	СправочникРабочиеЦентры.Описание КАК Описание,
+	СправочникРабочиеЦентры.КоэффициентВремениРаботы КАК КоэффициентВремениРаботы,
+	СправочникРабочиеЦентры.МаксимальнаяЗагрузка КАК МаксимальнаяЗагрузка,
+	ИСТИНА КАК Отображать
+ИЗ
+	Справочник.РабочиеЦентры КАК СправочникРабочиеЦентры</QueryText>
+				<MainTable>Catalog.РабочиеЦентры</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВидыРабочихЦентров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды рабочих центров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ВидыРабочихЦентров.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникВидыРабочихЦентров.Ссылка КАК Ссылка,
+	СправочникВидыРабочихЦентров.Наименование КАК Наименование,
+	СправочникВидыРабочихЦентров.Подразделение КАК Подразделение,
+	КОЛИЧЕСТВО(РабочиеЦентры.Ссылка) КАК КоличествоРабочихЦентров
+ИЗ
+	Справочник.ВидыРабочихЦентров КАК СправочникВидыРабочихЦентров
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.РабочиеЦентры КАК РабочиеЦентры
+		ПО СправочникВидыРабочихЦентров.Ссылка = РабочиеЦентры.ВидРабочегоЦентра
+
+СГРУППИРОВАТЬ ПО
+	СправочникВидыРабочихЦентров.Ссылка,
+	СправочникВидыРабочихЦентров.Наименование,
+	СправочникВидыРабочихЦентров.Подразделение</QueryText>
+				<MainTable>Catalog.ВидыРабочихЦентров</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборРабочихЦентровПоВидуРабочегоЦентра" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор рабочих центров по виду рабочего центра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПодразделение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПустойВидРабочегоЦентра" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пустой вид рабочего центра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыРабочихЦентров</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтборРабочихЦентровПоВидуРабочегоЦентра" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по виду рабочих центров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать рабочие центры по выбранному виду рабочих центров.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ФильтрПоСвойствам</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОтборРабочихЦентровПоВидуРабочегоЦентра</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ИзменитьВыделенные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьВыделенные</Action>
+		</Command>
+	</Commands>
+</Form>

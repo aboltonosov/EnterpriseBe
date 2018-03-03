@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="228">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="229"/>
+			<ChildItems>
+				<InputField name="ОтборОрганизация" id="33">
+					<DataPath>Организация</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ОтборОрганизацияExtendedTooltip" id="35"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="ПомощникПоУчетуНДС" id="225">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оформление счетов-фактур и таможенных документов</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ПомощникПоУчетуНДСКонтекстноеМеню" id="226"/>
+					<ExtendedTooltip name="ПомощникПоУчетуНДСРасширеннаяПодсказка" id="227"/>
+					<Events>
+						<Event name="Click">ПомощникПоУчетуНДСНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<CommandBar name="ФормаГруппаКоманднаяПанельФормы" id="260">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма группа командная панель формы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма группа командная панель формы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CommandSource>Form</CommandSource>
+					<ExtendedTooltip name="ФормаГруппаКоманднаяПанельФормыРасширеннаяПодсказка" id="261"/>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Pages name="Страницы" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Page name="СтраницаВходящие" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВходящиеРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборыВходящие" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор входящих документов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор входящих документов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборыВходящиеРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<UsualGroup name="ВходящиеОтборПериод" id="197">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ВходящиеОтборПериодРасширеннаяПодсказка" id="198"/>
+									<ChildItems>
+										<InputField name="НачалоПериодаВходящие" id="199">
+											<DataPath>НачалоПериодаВходящие</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НачалоПериодаВходящиеКонтекстноеМеню" id="200"/>
+											<ExtendedTooltip name="НачалоПериодаВходящиеРасширеннаяПодсказка" id="201"/>
+											<Events>
+												<Event name="OnChange">НачалоПериодаВходящиеПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ДекорацияТире" id="202">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>—</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ДекорацияТиреКонтекстноеМеню" id="203"/>
+											<ExtendedTooltip name="ДекорацияТиреExtendedTooltip" id="204"/>
+										</LabelDecoration>
+										<InputField name="КонецПериодаВходящие" id="205">
+											<DataPath>КонецПериодаВходящие</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="КонецПериодаВходящиеКонтекстноеМеню" id="206"/>
+											<ExtendedTooltip name="КонецПериодаВходящиеРасширеннаяПодсказка" id="207"/>
+											<Events>
+												<Event name="OnChange">КонецПериодаВходящиеПриИзменении</Event>
+											</Events>
+										</InputField>
+										<Button name="ВыбратьПериодВходящие" id="208">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ВыбратьПериодВходящие</CommandName>
+											<ExtendedTooltip name="ВыбратьПериодВходящиеРасширеннаяПодсказка" id="209"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ОтборПоТипуДокументаВходящие" id="39">
+									<DataPath>ТипыВходящие</DataPath>
+									<ClearButton>true</ClearButton>
+									<TextEdit>false</TextEdit>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Все</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОтборПоТипуДокументаВходящиеКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ОтборПоТипуДокументаВходящиеРасширеннаяПодсказка" id="41"/>
+									<Events>
+										<Event name="StartChoice">ОтборПоТипуДокументаВходящиеНачалоВыбора</Event>
+										<Event name="Clearing">ОтборПоТипуДокументаВходящиеОчистка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокВходящие" id="3">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокВходящие</DataPath>
+							<RowPictureDataPath>СписокВходящие.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<ContextMenu name="СписокВходящиеКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокВходящиеКоманднаяПанель" id="5">
+								<ChildItems>
+									<Button name="ПроводкиРеглУчета" id="48">
+										<Type>CommandBarButton</Type>
+										<CommandName>DataProcessor.ОтражениеДокументовВРеглУчете.Command.ПроводкиРеглУчета</CommandName>
+										<DataPath>Items.СписокВходящие.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="ПроводкиРеглУчетаРасширеннаяПодсказка" id="49"/>
+									</Button>
+									<Button name="СписокВходящиеРегистрБухгалтерииМеждународныйПроводкиДокументаОперативногоУчета" id="262">
+										<Type>CommandBarButton</Type>
+										<CommandName>AccountingRegister.Международный.Command.ПроводкиДокументаОперативногоУчета</CommandName>
+										<DataPath>Items.СписокВходящие.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="СписокВходящиеРегистрБухгалтерииМеждународныйПроводкиДокументаОперативногоУчетаРасширеннаяПодсказка" id="263"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокВходящиеРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокВходящиеСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>СписокВходящие</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВходящиеСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокВходящиеСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокВходящиеСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>СписокВходящие</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВходящиеСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокВходящиеСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокВходящиеУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>СписокВходящие</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВходящиеУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокВходящиеУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СписокВходящиеПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокВходящиеНомер" id="19">
+									<DataPath>СписокВходящие.Number</DataPath>
+									<Width>12</Width>
+									<ContextMenu name="СписокВходящиеНомерКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="СписокВходящиеНомерРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеДата" id="16">
+									<DataPath>СписокВходящие.Date</DataPath>
+									<Width>9</Width>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="СписокВходящиеДатаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="СписокВходящиеДатаРасширеннаяПодсказка" id="18"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеНомерИсправления" id="55">
+									<DataPath>СписокВходящие.НомерИсправления</DataPath>
+									<ContextMenu name="СписокВходящиеНомерИсправленияКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СписокВходящиеНомерИсправленияРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеДатаИсправления" id="248">
+									<DataPath>СписокВходящие.ДатаИсправления</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="СписокВходящиеДатаИсправленияКонтекстноеМеню" id="249"/>
+									<ExtendedTooltip name="СписокВходящиеДатаИсправленияРасширеннаяПодсказка" id="250"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеТип" id="22">
+									<DataPath>СписокВходящие.Type</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<ContextMenu name="СписокВходящиеТипКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="СписокВходящиеТипРасширеннаяПодсказка" id="24"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеОрганизация" id="25">
+									<DataPath>СписокВходящие.Организация</DataPath>
+									<ContextMenu name="СписокВходящиеОрганизацияКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="СписокВходящиеОрганизацияРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеКонтрагент" id="52">
+									<DataPath>СписокВходящие.Контрагент</DataPath>
+									<ContextMenu name="СписокВходящиеКонтрагентКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СписокВходящиеКонтрагентРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеКомментарий" id="28">
+									<DataPath>СписокВходящие.Комментарий</DataPath>
+									<ContextMenu name="СписокВходящиеКомментарийКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="СписокВходящиеКомментарийРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+								<LabelField name="СписокВходящиеСсылка" id="254">
+									<DataPath>СписокВходящие.Ref</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="СписокВходящиеСсылкаКонтекстноеМеню" id="255"/>
+									<ExtendedTooltip name="СписокВходящиеСсылкаРасширеннаяПодсказка" id="256"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИсходящие" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходящие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходящие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИсходящиеРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборыИсходящие" id="223">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор исходящих документов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор исходящих документов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборыИсходящиеРасширеннаяПодсказка" id="224"/>
+							<ChildItems>
+								<UsualGroup name="ИсходящиеОтборПериод" id="210">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ИсходящиеОтборПериодРасширеннаяПодсказка" id="211"/>
+									<ChildItems>
+										<InputField name="НачалоПериодаИсходящие" id="212">
+											<DataPath>НачалоПериодаИсходящие</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НачалоПериодаИсходящиеКонтекстноеМеню" id="213"/>
+											<ExtendedTooltip name="НачалоПериодаИсходящиеРасширеннаяПодсказка" id="214"/>
+											<Events>
+												<Event name="OnChange">НачалоПериодаИсходящиеПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ДекорацияТире1" id="215">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>—</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ДекорацияТире1КонтекстноеМеню" id="216"/>
+											<ExtendedTooltip name="ДекорацияТире1РасширеннаяПодсказка" id="217"/>
+										</LabelDecoration>
+										<InputField name="КонецПериодаИсходящие" id="218">
+											<DataPath>КонецПериодаИсходящие</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="КонецПериодаИсходящиеКонтекстноеМеню" id="219"/>
+											<ExtendedTooltip name="КонецПериодаИсходящиеРасширеннаяПодсказка" id="220"/>
+											<Events>
+												<Event name="OnChange">КонецПериодаИсходящиеПриИзменении</Event>
+											</Events>
+										</InputField>
+										<Button name="ВыбратьПериодИсходящие" id="221">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ВыбратьПериодИсходящие</CommandName>
+											<ExtendedTooltip name="ВыбратьПериодИсходящиеРасширеннаяПодсказка" id="222"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ОтборПоТипуДокументаИсходящие" id="116">
+									<DataPath>ТипыИсходящие</DataPath>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Все</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОтборПоТипуДокументаИсходящиеКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ОтборПоТипуДокументаИсходящиеРасширеннаяПодсказка" id="118"/>
+									<Events>
+										<Event name="StartChoice">ОтборПоТипуДокументаИсходящиеНачалоВыбора</Event>
+										<Event name="Clearing">ОтборПоТипуДокументаИсходящиеОчистка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокИсходящие" id="119">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокИсходящие</DataPath>
+							<RowPictureDataPath>СписокИсходящие.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<ContextMenu name="СписокИсходящиеКонтекстноеМеню" id="120"/>
+							<AutoCommandBar name="СписокИсходящиеКоманднаяПанель" id="121">
+								<ChildItems>
+									<Button name="ПроводкиРеглУчетаИсходящие" id="156">
+										<Type>CommandBarButton</Type>
+										<CommandName>DataProcessor.ОтражениеДокументовВРеглУчете.Command.ПроводкиРеглУчета</CommandName>
+										<DataPath>Items.СписокИсходящие.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="ПроводкиРеглУчетаИсходящиеРасширеннаяПодсказка" id="157"/>
+									</Button>
+									<Popup name="СписокСчетФактураВыданныйГруппаЭД" id="230">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>ЭД</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>ЭД</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокСчетФактураВыданныйГруппаЭДРасширеннаяПодсказка" id="231"/>
+										<ChildItems>
+											<Button name="СписокИсходящиеОбработкаЭлектронныеДокументыСформироватьПодписатьОтправитьЭД" id="238">
+												<Type>CommandBarButton</Type>
+												<CommandName>DataProcessor.ОбменСКонтрагентами.Command.УдалитьСформироватьПодписатьОтправитьЭД</CommandName>
+												<DataPath>Items.СписокИсходящие.CurrentData.Ref</DataPath>
+												<ExtendedTooltip name="СписокИсходящиеОбработкаЭлектронныеДокументыСформироватьПодписатьОтправитьЭДРасширеннаяПодсказка" id="239"/>
+											</Button>
+											<Button name="СписокИсходящиеОбработкаЭлектронныеДокументыСформироватьЭД" id="240">
+												<Type>CommandBarButton</Type>
+												<CommandName>DataProcessor.ОбменСКонтрагентами.Command.УдалитьСформироватьЭД</CommandName>
+												<DataPath>Items.СписокИсходящие.CurrentData.Ref</DataPath>
+												<ExtendedTooltip name="СписокИсходящиеОбработкаЭлектронныеДокументыСформироватьЭДРасширеннаяПодсказка" id="241"/>
+											</Button>
+											<Button name="СписокИсходящиеОбработкаЭлектронныеДокументыОткрытьАктуальныйЭД" id="242">
+												<Type>CommandBarButton</Type>
+												<CommandName>DataProcessor.ОбменСКонтрагентами.Command.УдалитьОткрытьАктуальныйЭД</CommandName>
+												<DataPath>Items.СписокИсходящие.CurrentData.Ref</DataPath>
+												<ExtendedTooltip name="СписокИсходящиеОбработкаЭлектронныеДокументыОткрытьАктуальныйЭДРасширеннаяПодсказка" id="243"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="СписокИсходящиеРегистрБухгалтерииМеждународныйПроводкиДокументаРеглУчета" id="264">
+										<Type>CommandBarButton</Type>
+										<CommandName>AccountingRegister.Международный.Command.ПроводкиДокументаРеглУчета</CommandName>
+										<DataPath>Items.СписокИсходящие.CurrentData.Ref</DataPath>
+										<ExtendedTooltip name="СписокИсходящиеРегистрБухгалтерииМеждународныйПроводкиДокументаРеглУчетаРасширеннаяПодсказка" id="265"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокИсходящиеРасширеннаяПодсказка" id="122"/>
+							<SearchStringAddition name="СписокИсходящиеСтрокаПоиска" id="123">
+								<AdditionSource>
+									<Item>СписокИсходящие</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокИсходящиеСтрокаПоискаКонтекстноеМеню" id="124"/>
+								<ExtendedTooltip name="СписокИсходящиеСтрокаПоискаРасширеннаяПодсказка" id="125"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокИсходящиеСостояниеПросмотра" id="126">
+								<AdditionSource>
+									<Item>СписокИсходящие</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокИсходящиеСостояниеПросмотраКонтекстноеМеню" id="127"/>
+								<ExtendedTooltip name="СписокИсходящиеСостояниеПросмотраРасширеннаяПодсказка" id="128"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокИсходящиеУправлениеПоиском" id="129">
+								<AdditionSource>
+									<Item>СписокИсходящие</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокИсходящиеУправлениеПоискомКонтекстноеМеню" id="130"/>
+								<ExtendedTooltip name="СписокИсходящиеУправлениеПоискомРасширеннаяПодсказка" id="131"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СписокИсходящиеПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокИсходящиеНомер" id="185">
+									<DataPath>СписокИсходящие.Номер</DataPath>
+									<Width>12</Width>
+									<ContextMenu name="СписокИсходящиеНомерКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="СписокИсходящиеНомерРасширеннаяПодсказка" id="187"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеДата" id="158">
+									<DataPath>СписокИсходящие.Дата</DataPath>
+									<Width>9</Width>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="СписокИсходящиеДатаКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="СписокИсходящиеДатаРасширеннаяПодсказка" id="160"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеНомерИсправления" id="188">
+									<DataPath>СписокИсходящие.НомерИсправления</DataPath>
+									<Width>12</Width>
+									<ContextMenu name="СписокИсходящиеНомерИсправленияКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="СписокИсходящиеНомерИсправленияРасширеннаяПодсказка" id="190"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеДатаИсправления" id="251">
+									<DataPath>СписокИсходящие.ДатаИсправления</DataPath>
+									<Width>9</Width>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="СписокИсходящиеДатаИсправленияКонтекстноеМеню" id="252"/>
+									<ExtendedTooltip name="СписокИсходящиеДатаИсправленияРасширеннаяПодсказка" id="253"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеТип" id="170">
+									<DataPath>СписокИсходящие.Type</DataPath>
+									<ContextMenu name="СписокИсходящиеТипКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="СписокИсходящиеТипРасширеннаяПодсказка" id="172"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеОрганизация" id="191">
+									<DataPath>СписокИсходящие.Организация</DataPath>
+									<ContextMenu name="СписокИсходящиеОрганизацияКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="СписокИсходящиеОрганизацияРасширеннаяПодсказка" id="193"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеКонтрагент" id="182">
+									<DataPath>СписокИсходящие.Контрагент</DataPath>
+									<ContextMenu name="СписокИсходящиеКонтрагентКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="СписокИсходящиеКонтрагентРасширеннаяПодсказка" id="184"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеКомментарий" id="179">
+									<DataPath>СписокИсходящие.Комментарий</DataPath>
+									<ContextMenu name="СписокИсходящиеКомментарийКонтекстноеМеню" id="180"/>
+									<ExtendedTooltip name="СписокИсходящиеКомментарийРасширеннаяПодсказка" id="181"/>
+								</LabelField>
+								<LabelField name="СписокИсходящиеСсылка" id="257">
+									<DataPath>СписокИсходящие.Ref</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="СписокИсходящиеСсылкаКонтекстноеМеню" id="258"/>
+									<ExtendedTooltip name="СписокИсходящиеСсылкаРасширеннаяПодсказка" id="259"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокВходящие" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СчетаФактурыИТаможенныеДокументы.Ссылка,
+	СчетаФактурыИТаможенныеДокументы.ПометкаУдаления,
+	СчетаФактурыИТаможенныеДокументы.Номер,
+	СчетаФактурыИТаможенныеДокументы.Дата,
+	ВЫБОР
+		КОГДА НЕ СчетФактураКомитента.Ссылка ЕСТЬ NULL 
+			ТОГДА СчетФактураКомитента.НомерИсправления
+		КОГДА НЕ СчетФактураПолученный.Ссылка ЕСТЬ NULL 
+			ТОГДА СчетФактураПолученный.НомерИсправления
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК НомерИсправления,
+	ВЫБОР
+		КОГДА НЕ СчетФактураКомитента.Ссылка ЕСТЬ NULL 
+			ТОГДА СчетФактураКомитента.ДатаИсправления
+		КОГДА НЕ СчетФактураПолученный.Ссылка ЕСТЬ NULL 
+			ТОГДА СчетФактураПолученный.ДатаИсправления
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК ДатаИсправления,
+	СчетаФактурыИТаможенныеДокументы.Проведен,
+	СчетаФактурыИТаможенныеДокументы.Тип,
+	СчетаФактурыИТаможенныеДокументы.Организация,
+	СчетаФактурыИТаможенныеДокументы.Контрагент,
+	СчетаФактурыИТаможенныеДокументы.ДокументОснование,
+	СчетаФактурыИТаможенныеДокументы.Комментарий
+ИЗ
+	ЖурналДокументов.СчетаФактурыИТаможенныеДокументы КАК СчетаФактурыИТаможенныеДокументы
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураКомитента КАК СчетФактураКомитента
+		ПО (СчетФактураКомитента.Исправление)
+			И СчетаФактурыИТаможенныеДокументы.Ссылка = СчетФактураКомитента.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураПолученный КАК СчетФактураПолученный
+		ПО (СчетФактураПолученный.Исправление)
+			И СчетаФактурыИТаможенныеДокументы.Ссылка = СчетФактураПолученный.Ссылка
+ГДЕ
+	СчетаФактурыИТаможенныеДокументы.Тип В(
+			ТИП(Документ.СчетФактураПолученный),
+			ТИП(Документ.СчетФактураПолученныйАванс),
+			ТИП(Документ.СчетФактураКомитента),
+			ТИП(Документ.ТаможеннаяДекларацияИмпорт))
+	И (СчетаФактурыИТаможенныеДокументы.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			ИЛИ &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1)
+				И СчетаФактурыИТаможенныеДокументы.Дата &gt;= &amp;НачалоПериода)</QueryText>
+				<MainTable>DocumentJournal.СчетаФактурыИТаможенныеДокументы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<Save>
+				<Field>Организация</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизаций</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ТипыВходящие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтруктураБыстрогоОтбора" id="4">
+			<Type/>
+		</Attribute>
+		<Attribute name="ВидДокумента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИсходящие" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходящие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СчетаФактурыИТаможенныеДокументы.Ссылка,
+	ВЫБОР
+		КОГДА ИсходныйСчетФактура.Ссылка ЕСТЬ NULL 
+			ТОГДА СчетаФактурыИТаможенныеДокументы.Номер
+		ИНАЧЕ ИсходныйСчетФактура.Номер
+	КОНЕЦ КАК Номер,
+	ВЫБОР
+		КОГДА ИсходныйСчетФактура.Ссылка ЕСТЬ NULL 
+			ТОГДА СчетаФактурыИТаможенныеДокументы.Дата
+		ИНАЧЕ ИсходныйСчетФактура.Дата
+	КОНЕЦ КАК Дата,
+	СчетаФактурыИТаможенныеДокументы.НомерИсправления,
+	ВЫБОР
+		КОГДА ИсходныйСчетФактура.Ссылка ЕСТЬ NULL 
+			ТОГДА ""
+		ИНАЧЕ СчетаФактурыИТаможенныеДокументы.Дата
+	КОНЕЦ КАК ДатаИсправления,
+	СчетаФактурыИТаможенныеДокументы.Тип,
+	СчетаФактурыИТаможенныеДокументы.Организация,
+	СчетаФактурыИТаможенныеДокументы.Контрагент,
+	СчетаФактурыИТаможенныеДокументы.ДокументОснование,
+	СчетаФактурыИТаможенныеДокументы.Комментарий
+ИЗ
+	ЖурналДокументов.СчетаФактурыИТаможенныеДокументы КАК СчетаФактурыИТаможенныеДокументы
+	ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК ИсходныйСчетФактура
+			ПО СчетаФактурыИТаможенныеДокументы.Исправление
+				И ИсходныйСчетФактура.Ссылка = СчетаФактурыИТаможенныеДокументы.СчетФактураОснование	
+ГДЕ
+	СчетаФактурыИТаможенныеДокументы.Тип В (
+		ТИП(Документ.СчетФактураВыданный),
+		ТИП(Документ.СчетФактураВыданныйАванс),
+		ТИП(Документ.СчетФактураКомиссионеру),
+		ТИП(Документ.СчетФактураНалоговыйАгент),
+		ТИП(Документ.ЗаявлениеОВвозеТоваров),
+		ТИП(Документ.СчетФактураНаНеподтвержденнуюРеализацию0))
+	И (СчетаФактурыИТаможенныеДокументы.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			ИЛИ &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1)
+				И СчетаФактурыИТаможенныеДокументы.Дата &gt;= &amp;НачалоПериода)</QueryText>
+				<MainTable>DocumentJournal.СчетаФактурыИТаможенныеДокументы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТипыИсходящие" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачалоПериодаВходящие" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>НачалоПериодаВходящие</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НачалоПериодаИсходящие" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>НачалоПериодаИсходящие</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КонецПериодаВходящие" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>КонецПериодаВходящие</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КонецПериодаИсходящие" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>КонецПериодаИсходящие</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьПериодВходящие" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Select</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьПериодВходящие</Action>
+		</Command>
+		<Command name="ВыбратьПериодИсходящие" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Select</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьПериодИсходящие</Action>
+		</Command>
+	</Commands>
+</Form>
